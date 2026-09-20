@@ -16,12 +16,11 @@ Item {
     property bool presentationActive: false
     property var weatherSourceOverride: null
     readonly property string activeView: WidgetState.dashboardSidebarView
-    readonly property var activeViewLoader: activeView === "info" ? infoLoader : activeView === "drawer"
-                                                                    ? drawerLoader : weatherLoader
+    readonly property var activeViewLoader: infoLoader
     readonly property bool readyForPresentation: activeViewLoader.active && activeViewLoader.status
                                                  === Loader.Ready && activeViewLoader.item !== null
     readonly property int instantiatedViewCount: {
-        return (infoLoader.item ? 1 : 0) + (drawerLoader.item ? 1 : 0) + (weatherLoader.item ? 1 : 0);
+        return infoLoader.item ? 1 : 0;
     }
     readonly property var weatherView: weatherLoader.item
 
@@ -33,21 +32,13 @@ Item {
         Item {
             id: tabToolbar
 
+            // ЛОКАЛЬНАЯ ПРАВКА: вкладки «Drawer» и «Weather» убраны —
+            // не нужны. Осталась только информация.
             readonly property var tabs: [
                 {
                     id: "info",
                     icon: "info",
                     label: qsTr("Information")
-                },
-                {
-                    id: "drawer",
-                    icon: "widgets",
-                    label: qsTr("Drawer")
-                },
-                {
-                    id: "weather",
-                    icon: "cloud",
-                    label: qsTr("Weather")
                 }
             ]
             readonly property int currentIndex: Math.max(0, tabs.findIndex(tab => tab.id
@@ -201,32 +192,6 @@ Item {
                 onLoaded: loadedOnce = true
             }
 
-            Loader {
-                id: drawerLoader
-
-                property bool loadedOnce: false
-
-                anchors.fill: parent
-                active: root.activeView === "drawer" || loadedOnce
-                visible: active && root.activeView === "drawer"
-                asynchronous: true
-                sourceComponent: drawerComponent
-                onLoaded: loadedOnce = true
-            }
-
-            Loader {
-                id: weatherLoader
-
-                property bool loadedOnce: false
-
-                anchors.fill: parent
-                active: root.activeView === "weather" || loadedOnce
-                visible: active && root.activeView === "weather"
-                asynchronous: true
-                sourceComponent: weatherComponent
-                onLoaded: loadedOnce = true
-            }
-
             Component {
                 id: infoComponent
 
@@ -238,24 +203,6 @@ Item {
                 }
             }
 
-            Component {
-                id: drawerComponent
-
-                DrawerView {
-                    screenName: root.screenName
-                    foreground: root.foreground && root.activeView === "drawer"
-                }
-            }
-
-            Component {
-                id: weatherComponent
-
-                WeatherView {
-                    weatherSourceOverride: root.weatherSourceOverride
-                    foreground: root.foreground && root.activeView === "weather"
-                    presentationActive: root.presentationActive && root.activeView === "weather"
-                }
-            }
         }
     }
 }
