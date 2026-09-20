@@ -39,11 +39,22 @@ TopBarPill {
         rowSpacing: 6
         columnSpacing: 4
 
-        Row {
+        // МОЁ ИЗМЕНЕНИЕ: в панели осталась только волна. Клик по ней
+        // открывает мини-плеер островка (вкладка Media) — там перемотка,
+        // пауза и обложка. Кнопки и бегущее название отсюда убраны.
+        //
+        // MouseArea лежит в Item поверх Row, а не внутри Row: элемент с
+        // anchors внутри Row ломает раскладку («Row will not function»).
+        Item {
             Layout.alignment: Qt.AlignCenter
             Layout.preferredWidth: 28
             Layout.preferredHeight: 28
-            spacing: 2
+
+            Row {
+                id: spectrumRow
+
+                anchors.centerIn: parent
+                spacing: 2
 
             Repeater {
                 model: 6
@@ -70,134 +81,27 @@ TopBarPill {
                     }
                 }
             }
-        }
-
-        MediaButton {
-            iconName: "skip_previous"
-            accessibleName: qsTr("Previous track")
-            enabled: root.player !== null && root.player.canGoPrevious
-            onClicked: root.player.previous()
-        }
-
-        MediaButton {
-            iconName: root.player && root.player.isPlaying ? "pause" : "play_arrow"
-            accessibleName: root.player && root.player.isPlaying ? qsTr("Pause") : qsTr("Play")
-            enabled: root.player !== null && root.player.canTogglePlaying
-            iconColor: Appearance.colors.colPrimary
-            onClicked: root.player.togglePlaying()
-        }
-
-        MediaButton {
-            iconName: "skip_next"
-            accessibleName: qsTr("Next track")
-            enabled: root.player !== null && root.player.canGoNext
-            onClicked: root.player.next()
-        }
-
-        Item {
-            id: titleSlot
-
-            readonly property real titleExtent: Math.min(Math.max(0, root.maximumTitleWidth),
-                                                         titleText.implicitWidth)
-            implicitWidth: root.vertical ? 28 : titleExtent
-            implicitHeight: root.vertical ? titleExtent : 28
-            Layout.alignment: Qt.AlignCenter
-
-            Item {
-                id: titleViewport
-
-                anchors.centerIn: parent
-                width: titleSlot.titleExtent
-                height: 28
-                rotation: root.vertical ? (PersonalizationConfig.barPosition === "left" ? -90 : 90) : 0
-                clip: true
-                readonly property bool overflowing: titleText.implicitWidth > width
-
-                onWidthChanged: restartScroll()
-                Component.onCompleted: restartScroll()
-
-                function restartScroll() {
-                    titleScroll.stop();
-                    titleStrip.x = 0;
-                    if (overflowing && root.visible)
-                        titleScroll.start();
-                }
-
-                Item {
-                    id: titleStrip
-
-                    height: parent.height
-                    width: titleText.implicitWidth
-
-                    Text {
-                        id: titleText
-
-                        anchors.verticalCenter: parent.verticalCenter
-                        text: root.title
-                        textFormat: Text.PlainText
-                        font.family: Fonts.ui
-                        font.pointSize: 11
-                        color: Appearance.colors.colOnSurface
-                        onTextChanged: Qt.callLater(titleViewport.restartScroll)
-                        onImplicitWidthChanged: Qt.callLater(titleViewport.restartScroll)
-                    }
-
-                    Text {
-                        anchors.verticalCenter: parent.verticalCenter
-                        x: titleText.implicitWidth + 32
-                        text: root.title
-                        textFormat: Text.PlainText
-                        font: titleText.font
-                        color: titleText.color
-                        visible: titleViewport.overflowing
-                    }
-                }
-
-                Connections {
-                    target: root
-                    function onVisibleChanged() {
-                        titleViewport.restartScroll();
-                    }
-                }
-
-                SequentialAnimation {
-                    id: titleScroll
-
-                    loops: Animation.Infinite
-                    PropertyAction {
-                        target: titleStrip
-                        property: "x"
-                        value: 0
-                    }
-                    PauseAnimation {
-                        duration: 1200
-                    }
-                    NumberAnimation {
-                        target: titleStrip
-                        property: "x"
-                        from: 0
-                        to: -(titleText.implicitWidth + 32)
-                        duration: (titleText.implicitWidth + 32) * 35
-                        easing.type: Easing.Linear
-                    }
-                }
             }
 
-            HoverHandler {
-                id: titleHover
+            MouseArea {
+                anchors.fill: parent
+                anchors.margins: -4
+                cursorShape: Qt.PointingHandCursor
+                onClicked: KeystoneBridge.mediaRequested()
             }
 
             StyledToolTip {
-                text: root.title
-                extraVisibleCondition: titleHover.hovered && titleViewport.overflowing
+                text: root.title === "" ? qsTr("Open player") : root.title
+                extraVisibleCondition: spectrumHover.hovered
+            }
+
+            HoverHandler {
+                id: spectrumHover
             }
         }
+
+        // МОЁ ИЗМЕНЕНИЕ: бегущее название трека убрано из панели —
+        // оно видно в мини-плеере и во всплывающей подсказке волны.
     }
 
-    component MediaButton: IconButton {
-        Layout.alignment: Qt.AlignCenter
-        controlSize: 28
-        iconSize: 22
-        opacity: enabled ? 1 : 0.35
-    }
 }

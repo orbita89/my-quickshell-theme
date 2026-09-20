@@ -17,6 +17,20 @@ Item {
         return styleLoader.item[methodName]();
     }
 
+    // МОЁ ДОБАВЛЕНИЕ: панель не может дотянуться до островка напрямую,
+    // поэтому слушаем сигналы мостика KeystoneBridge.
+    Connections {
+        target: KeystoneBridge
+
+        function onMediaRequested() {
+            root.invoke("media");
+        }
+
+        function onHubRequested() {
+            root.invoke("hub");
+        }
+    }
+
     function openAvatarPicker(screen) {
         avatarFilePicker.targetScreen = screen;
         Qt.callLater(() => avatarFilePicker.openAt(avatarFilePicker.picturesDir !== ""
@@ -51,6 +65,9 @@ Item {
         }
         function dashboard(): string {
             return root.invoke("dashboard");
+        }
+        function media(): string {
+            return root.invoke("media");
         }
         function hub(): string {
             return root.invoke("hub");

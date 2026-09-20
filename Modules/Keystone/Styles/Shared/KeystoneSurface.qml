@@ -68,6 +68,10 @@ Variants {
         return invoke("dashboard");
     }
 
+    function media(): string {
+        return invoke("media");
+    }
+
     function lyrics(): string {
         return invoke("lyrics");
     }
@@ -125,6 +129,19 @@ Variants {
             root.hubTabIndex = 0;
             root.showHub = true;
             return "DASHBOARD_OPENED";
+        }
+
+        // МОЁ ДОБАВЛЕНИЕ: сразу вкладка «Media» — мини-плеер с обложкой,
+        // перемоткой и кнопками. Открывается кликом по волне в панели.
+        function media(): string {
+            if (root.showHub && root.hubTabIndex === 1) {
+                root.showHub = false;
+                return "MEDIA_CLOSED";
+            }
+            closeAllOthers();
+            root.hubTabIndex = 1;
+            root.showHub = true;
+            return "MEDIA_OPENED";
         }
 
         function lyrics(): string {
