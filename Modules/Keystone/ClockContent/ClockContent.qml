@@ -82,7 +82,10 @@ Item {
         if (DateFormat.isChinese(I18nService.language))
             return String(date.getMonth() + 1).padStart(2, "0") + "月" + String(date.getDate()).padStart(2, "0") + "日" + DateFormat.shortWeekdays(I18nService.language)[date.getDay()];
 
-        return DateFormat.compactDate(date, I18nService.language, Qt.locale(I18nService.language), "ddd dd MMM");
+        // МОЁ ИЗМЕНЕНИЕ: было "ddd dd MMM" («Sun 21 Sep») — день недели занимал
+        // место впустую. Оставлен только день и месяц строчными: «21 sep».
+        return DateFormat.compactDate(date, I18nService.language,
+                                      Qt.locale(I18nService.language), "dd MMM").toLowerCase();
     }
 
     // Side Keystone uses short horizontal rows: up to three Latin letters,

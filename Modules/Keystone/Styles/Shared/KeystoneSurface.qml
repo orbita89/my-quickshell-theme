@@ -176,6 +176,42 @@ Variants {
         WlrLayershell.keyboardFocus: root.keyboardInteractionActive ? WlrKeyboardFocus.OnDemand :
                                                                       WlrKeyboardFocus.None
 
+        // МОЁ ДОБАВЛЕНИЕ: закрытие островка кликом по пустому месту.
+        //
+        // Островок — layer-surface, клики мимо него уходят окнам под ним, и он
+        // о них не узнаёт. Свойства «окно потеряло фокус» Quickshell не даёт,
+        // поэтому под островок подкладывается прозрачное окно на весь экран:
+        // оно существует только пока островок раскрыт и по клику закрывает его.
+        //
+        // Слой Bottom — ниже самого островка (Top), поэтому клики по островку
+        // и его кнопкам работают как раньше. Hover-превью не перехватывается:
+        // при нём подложки нет, иначе она мешала бы обычной работе с окнами.
+        PanelWindow {
+            id: dismissCatcher
+
+            visible: root.escapeDismissActive && !root.hoverOpened && !root.isCollapsedMode
+            screen: keystoneWindow.screen
+            color: "transparent"
+            exclusiveZone: -1
+            WlrLayershell.namespace: "clavis-shell-keystone-dismiss"
+            WlrLayershell.layer: WlrLayer.Bottom
+            WlrLayershell.exclusionMode: ExclusionMode.Ignore
+            WlrLayershell.keyboardFocus: WlrKeyboardFocus.None
+
+            anchors {
+                top: true
+                bottom: true
+                left: true
+                right: true
+            }
+
+            MouseArea {
+                anchors.fill: parent
+                acceptedButtons: Qt.LeftButton | Qt.RightButton | Qt.MiddleButton
+                onPressed: keystoneWindow.closeAllOthers()
+            }
+        }
+
         PanelWindow {
             // Niri focuses newly mapped OnDemand surfaces. Keep that mapping
             // separate from the visible island so expansion never drops a frame.
