@@ -25,6 +25,14 @@ Singleton {
                                                                                                    focusTime
     property int pomodoroSecondsLeft: focusTime
 
+    // МОЁ ДОБАВЛЕНИЕ: макро-задача (таймбоксинг).
+    // Один «помидор» = фокус + следующий за ним перерыв.
+    readonly property string pomodoroTaskName: InfoDrawerState.pomodoroTaskName
+    readonly property int pomodoroTargetCycles: InfoDrawerState.pomodoroTargetCycles
+    readonly property int pomodoroDoneCycles: InfoDrawerState.pomodoroDoneCycles
+    readonly property bool pomodoroHasTask: pomodoroTargetCycles > 0
+    readonly property int pomodoroSingleCycleSeconds: focusTime + breakTime
+
     readonly property bool stopwatchRunning: InfoDrawerState.stopwatchRunning
     property int stopwatchTime: 0
     readonly property var stopwatchLaps: InfoDrawerState.stopwatchLaps
@@ -78,6 +86,72 @@ Singleton {
         InfoDrawerState.flushSave();
     }
 
+    // Принимает «5h», «300m», «2h30m», «90» (минуты) и возвращает минуты.
+    function parseDurationMinutes(text) {
+        const value = String(text || "").trim().toLowerCase();
+        if (value === "")
+            return 0;
+
+        let minutes = 0;
+        let matched = false;
+        const hours = value.match(/(\d+(?:[.,]\d+)?)\s*(?:h|ч)/);
+        if (hours) {
+            minutes += parseFloat(hours[1].replace(",", ".")) * 60;
+            matched = true;
+        }
+        const mins = value.match(/(\d+(?:[.,]\d+)?)\s*(?:m|м)/);
+        if (mins) {
+            minutes += parseFloat(mins[1].replace(",", "."));
+            matched = true;
+        }
+        if (!matched) {
+            const plain = parseFloat(value.replace(",", "."));
+            if (isFinite(plain))
+                minutes = plain;
+        }
+        return Math.max(0, Math.round(minutes));
+    }
+
+    // Считает, сколько помидоров укладывается в отведённое время.
+    function cyclesForMinutes(minutes) {
+        const perCycle = root.pomodoroSingleCycleSeconds / 60;
+        if (perCycle <= 0)
+            return 0;
+        return Math.max(1, Math.round(minutes / perCycle));
+    }
+
+    function startTask(name, durationText) {
+        const minutes = root.parseDurationMinutes(durationText);
+        if (minutes <= 0)
+            return false;
+
+        InfoDrawerState.pomodoroTaskName = String(name || "").trim();
+        InfoDrawerState.pomodoroTargetCycles = root.cyclesForMinutes(minutes);
+        InfoDrawerState.pomodoroDoneCycles = 0;
+        InfoDrawerState.pomodoroBreak = false;
+        InfoDrawerState.pomodoroCycle = 0;
+        InfoDrawerState.pomodoroStart = root.currentSeconds();
+        InfoDrawerState.pomodoroRunning = true;
+        root.pomodoroSecondsLeft = root.focusTime;
+        root.persistPomodoro();
+        root.notifyPomodoroStage();
+        return true;
+    }
+
+    function clearTask() {
+        InfoDrawerState.pomodoroTaskName = "";
+        InfoDrawerState.pomodoroTargetCycles = 0;
+        InfoDrawerState.pomodoroDoneCycles = 0;
+        root.persistPomodoro();
+    }
+
+    function notifyTaskFinished() {
+        const name = root.pomodoroTaskName;
+        const message = name === "" ? qsTr("🎉 All cycles completed!")
+                                    : qsTr("🎉 Task «%1» completed!").arg(name);
+        Quickshell.execDetached(["notify-send", qsTr("Pomodoro"), message, "-a", "Clavis"]);
+    }
+
     function notifyPomodoroStage() {
         let message = "";
         if (root.pomodoroLongBreak)
@@ -107,19 +181,52 @@ Singleton {
         }
 
         let duration = root.pomodoroDurationFor(isBreak, cycle);
+        // МОЁ ДОБАВЛЕНИЕ: считаем завершённые помидоры и останавливаемся,
+        // когда набрана цель макро-задачи.
+        let done = InfoDrawerState.pomodoroDoneCycles;
+        let taskFinished = false;
+
         while (now >= phaseStart + duration) {
             phaseStart += duration;
+
+            // Помидор считается завершённым в момент окончания перерыва:
+            // фокус отработан и отдых после него тоже.
+            if (isBreak)
+                done += 1;
+
             if (isBreak)
                 cycle = (cycle + 1) % root.cyclesBeforeLongBreak;
             isBreak = !isBreak;
             transitioned = true;
             duration = root.pomodoroDurationFor(isBreak, cycle);
 
+            if (root.pomodoroHasTask && done >= root.pomodoroTargetCycles) {
+                taskFinished = true;
+                break;
+            }
+
             if (!isBreak && cycle === 0) {
                 const fullSequences = Math.floor((now - phaseStart) / root.pomodoroSequenceDuration);
                 if (fullSequences > 0)
                     phaseStart += fullSequences * root.pomodoroSequenceDuration;
             }
+        }
+
+        if (done !== InfoDrawerState.pomodoroDoneCycles)
+            InfoDrawerState.pomodoroDoneCycles = done;
+
+        if (taskFinished) {
+            // Задача выполнена: останавливаемся и возвращаемся в исходное
+            // состояние, цель при этом сбрасывается.
+            InfoDrawerState.pomodoroRunning = false;
+            InfoDrawerState.pomodoroBreak = false;
+            InfoDrawerState.pomodoroCycle = 0;
+            InfoDrawerState.pomodoroStart = now;
+            root.pomodoroSecondsLeft = root.focusTime;
+            root.persistPomodoro();
+            root.notifyTaskFinished();
+            root.clearTask();
+            return;
         }
 
         InfoDrawerState.pomodoroBreak = isBreak;

@@ -7,6 +7,19 @@ import qs.Widgets.common
 Item {
     id: root
 
+    // МОЁ ДОБАВЛЕНИЕ: запуск и остановка макро-задачи.
+    function startTask() {
+        if (TimerService.startTask(taskNameField.text, taskDurationField.text)) {
+            taskNameField.text = "";
+            taskDurationField.text = "";
+        }
+    }
+
+    function stopTask() {
+        TimerService.clearTask();
+        TimerService.resetPomodoro();
+    }
+
     ColumnLayout {
         anchors.fill: parent
         spacing: 0
@@ -61,6 +74,83 @@ Item {
                     color: Appearance.colors.colOnLayer2
                     font.family: Fonts.numeric
                     font.pixelSize: 14
+                }
+            }
+        }
+
+        // МОЁ ДОБАВЛЕНИЕ: макро-задача (таймбоксинг). Вводим название и общее
+        // время — из него считается, сколько помидоров нужно отработать.
+        // Пока задача идёт, поля заблокированы, а вместо них виден прогресс.
+        ColumnLayout {
+            Layout.fillWidth: true
+            Layout.leftMargin: 12
+            Layout.rightMargin: 12
+            Layout.bottomMargin: 6
+            spacing: 6
+
+            RowLayout {
+                Layout.fillWidth: true
+                spacing: 8
+                visible: !TimerService.pomodoroHasTask
+
+                OutlinedTextField {
+                    id: taskNameField
+
+                    Layout.fillWidth: true
+                    labelText: qsTr("Task")
+                    placeholderText: qsTr("Work")
+                }
+
+                OutlinedTextField {
+                    id: taskDurationField
+
+                    Layout.preferredWidth: 96
+                    labelText: qsTr("Total")
+                    placeholderText: "5h"
+                    onAccepted: root.startTask()
+                }
+            }
+
+            // Прогресс по макро-задаче: «Работа · помидор 3 из 10».
+            Text {
+                Layout.alignment: Qt.AlignHCenter
+                visible: TimerService.pomodoroHasTask
+                text: {
+                    const done = Math.min(TimerService.pomodoroDoneCycles + 1,
+                                          TimerService.pomodoroTargetCycles);
+                    const name = TimerService.pomodoroTaskName;
+                    const counter = qsTr("pomodoro %1 of %2").arg(done).arg(
+                                        TimerService.pomodoroTargetCycles);
+                    return name === "" ? counter : name + " · " + counter;
+                }
+                color: Appearance.colors.colSubtext
+                font.family: Fonts.ui
+                font.pixelSize: 13
+                opacity: 0.85
+            }
+
+            RippleButton {
+                Layout.alignment: Qt.AlignHCenter
+                implicitWidth: 150
+                implicitHeight: 32
+                buttonRadius: Appearance.rounding.full
+                containerColor: TimerService.pomodoroHasTask ? Appearance.colors.colSecondaryContainer :
+                                                               Appearance.colors.colPrimaryContainer
+                onClicked: {
+                    if (TimerService.pomodoroHasTask)
+                        root.stopTask();
+                    else
+                        root.startTask();
+                }
+
+                contentItem: Text {
+                    text: TimerService.pomodoroHasTask ? qsTr("Stop task") : qsTr("Start task")
+                    color: Appearance.colors.colOnSecondaryContainer
+                    font.family: Fonts.ui
+                    font.pixelSize: 13
+                    font.weight: Font.Medium
+                    horizontalAlignment: Text.AlignHCenter
+                    verticalAlignment: Text.AlignVCenter
                 }
             }
         }

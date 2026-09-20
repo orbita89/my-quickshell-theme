@@ -24,6 +24,13 @@ Singleton {
     property real pomodoroStart: 0
     property int pomodoroSecondsLeft: 1500
 
+    // МОЁ ДОБАВЛЕНИЕ: макро-задача (таймбоксинг). Пользователь задаёт название
+    // и общее время, из него считается целевое число помидоров. Состояние
+    // переживает перезапуск оболочки вместе с остальным таймером.
+    property string pomodoroTaskName: ""
+    property int pomodoroTargetCycles: 0     // 0 — цель не задана, работаем бесконечно
+    property int pomodoroDoneCycles: 0       // сколько помидоров уже завершено
+
     property bool stopwatchRunning: false
     property real stopwatchStart: 0
     property int stopwatchElapsed: 0
@@ -92,7 +99,10 @@ Singleton {
                 "isBreak": root.pomodoroBreak,
                 "cycle": root.pomodoroCycle,
                 "start": root.pomodoroStart,
-                "secondsLeft": root.pomodoroSecondsLeft
+                "secondsLeft": root.pomodoroSecondsLeft,
+                "taskName": root.pomodoroTaskName,
+                "targetCycles": root.pomodoroTargetCycles,
+                "doneCycles": root.pomodoroDoneCycles
             },
             "stopwatch": {
                 "running": root.stopwatchRunning,
@@ -127,6 +137,12 @@ Singleton {
         root.pomodoroSecondsLeft = Number.isFinite(loadedPomodoroSecondsLeft)
             ? Math.max(0, Math.floor(loadedPomodoroSecondsLeft))
             : 1500;
+
+        root.pomodoroTaskName = String(pomodoro.taskName || "");
+        const loadedTarget = Number(pomodoro.targetCycles);
+        const loadedDone = Number(pomodoro.doneCycles);
+        root.pomodoroTargetCycles = Number.isFinite(loadedTarget) ? Math.max(0, Math.floor(loadedTarget)) : 0;
+        root.pomodoroDoneCycles = Number.isFinite(loadedDone) ? Math.max(0, Math.floor(loadedDone)) : 0;
 
         const loadedStopwatchStart = Number(stopwatch.start);
         const loadedStopwatchElapsed = Number(stopwatch.elapsed);
