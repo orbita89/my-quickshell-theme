@@ -131,7 +131,9 @@ Item {
                     id: taskDurationField
 
                     Layout.preferredWidth: 96
-                    labelText: qsTr("Total")
+                    // Сколько всего работать над задачей: «5h», «300m», «2h30m».
+                    // Из этого числа считается количество помидоров.
+                    labelText: qsTr("Time")
                     placeholderText: "5h"
                     onAccepted: root.startTask()
                 }
@@ -165,6 +167,11 @@ Item {
                     buttonRadius: Appearance.rounding.full
                     containerColor: TimerService.pomodoroHasTask ? Appearance.colors.colSecondaryContainer :
                                                                    Appearance.colors.colPrimaryContainer
+                    // Без этого подсветка наведения берётся светлая
+                    // (colOnSurface по умолчанию) и текст на кнопке пропадает.
+                    stateLayerColor: TimerService.pomodoroHasTask ?
+                                         Appearance.colors.colSecondaryContainerHover :
+                                         Appearance.colors.colPrimaryContainerHover
                     onClicked: {
                         if (TimerService.pomodoroHasTask)
                             root.stopTask();
@@ -191,6 +198,7 @@ Item {
                     implicitHeight: 32
                     buttonRadius: Appearance.rounding.full
                     containerColor: Appearance.colors.colLayer2
+                    stateLayerColor: Appearance.colors.colSurfaceContainerHighestHover
                     onClicked: root.saveCurrentTask()
 
                     contentItem: Text {
@@ -222,6 +230,7 @@ Item {
                         implicitHeight: 28
                         buttonRadius: Appearance.rounding.full
                         containerColor: Appearance.colors.colLayer2
+                        stateLayerColor: Appearance.colors.colSurfaceContainerHighestHover
                         Accessible.name: qsTr("Start saved task %1").arg(modelData.name)
                         onClicked: root.startSavedTask(modelData)
                         onPressAndHold: PomodoroTaskService.removeTask(index)
@@ -275,6 +284,7 @@ Item {
                     implicitWidth: 24
                     implicitHeight: 24
                     buttonRadius: Appearance.rounding.full
+                    stateLayerColor: Appearance.colors.colSurfaceContainerHighestHover
                     Accessible.name: qsTr("Decrease")
                     onClicked: stepper.changed(Math.max(stepper.minimum, stepper.value - 1))
 
@@ -302,6 +312,7 @@ Item {
                     implicitWidth: 24
                     implicitHeight: 24
                     buttonRadius: Appearance.rounding.full
+                    stateLayerColor: Appearance.colors.colSurfaceContainerHighestHover
                     Accessible.name: qsTr("Increase")
                     onClicked: stepper.changed(Math.min(stepper.maximum, stepper.value + 1))
 
