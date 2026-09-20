@@ -4,6 +4,7 @@ import qs.Common
 import qs.Components
 import qs.Services
 import qs.Widgets.common
+import "./infoTools"   // TodoWidget, TimerWidget — вкладки «To-do» и «Timer»
 
 Item {
     id: root
@@ -16,11 +17,13 @@ Item {
     property bool presentationActive: false
     property var weatherSourceOverride: null
     readonly property string activeView: WidgetState.dashboardSidebarView
-    readonly property var activeViewLoader: infoLoader
+    readonly property var activeViewLoader: activeView === "todo" ? todoLoader
+                                                                  : activeView === "timer" ? timerLoader
+                                                                                           : infoLoader
     readonly property bool readyForPresentation: activeViewLoader.active && activeViewLoader.status
                                                  === Loader.Ready && activeViewLoader.item !== null
     readonly property int instantiatedViewCount: {
-        return infoLoader.item ? 1 : 0;
+        return (infoLoader.item ? 1 : 0) + (todoLoader.item ? 1 : 0) + (timerLoader.item ? 1 : 0);
     }
     readonly property var weatherView: weatherLoader.item
 
@@ -32,13 +35,24 @@ Item {
         Item {
             id: tabToolbar
 
-            // ЛОКАЛЬНАЯ ПРАВКА: вкладки «Drawer» и «Weather» убраны —
-            // не нужны. Осталась только информация.
+            // ЛОКАЛЬНАЯ ПРАВКА: вкладки «Drawer» и «Weather» убраны.
+            // «To-do» и «Timer» вынесены сюда отдельными вкладками — раньше
+            // они прятались в выдвижной панели инструментов внутри «Information».
             readonly property var tabs: [
                 {
                     id: "info",
                     icon: "info",
                     label: qsTr("Information")
+                },
+                {
+                    id: "todo",
+                    icon: "done_outline",
+                    label: qsTr("To-do")
+                },
+                {
+                    id: "timer",
+                    icon: "schedule",
+                    label: qsTr("Timer")
                 }
             ]
             readonly property int currentIndex: Math.max(0, tabs.findIndex(tab => tab.id
@@ -190,6 +204,46 @@ Item {
                 asynchronous: true
                 sourceComponent: infoComponent
                 onLoaded: loadedOnce = true
+            }
+
+            Loader {
+                id: todoLoader
+
+                property bool loadedOnce: false
+
+                anchors.fill: parent
+                active: root.activeView === "todo" || loadedOnce
+                visible: active && root.activeView === "todo"
+                asynchronous: true
+                sourceComponent: todoComponent
+                onLoaded: loadedOnce = true
+            }
+
+            Loader {
+                id: timerLoader
+
+                property bool loadedOnce: false
+
+                anchors.fill: parent
+                active: root.activeView === "timer" || loadedOnce
+                visible: active && root.activeView === "timer"
+                asynchronous: true
+                sourceComponent: timerComponent
+                onLoaded: loadedOnce = true
+            }
+
+            Component {
+                id: todoComponent
+
+                TodoWidget {}
+            }
+
+            Component {
+                id: timerComponent
+
+                TimerWidget {
+                    shortcutsEnabled: root.activeView === "timer" && root.foreground
+                }
             }
 
             Component {

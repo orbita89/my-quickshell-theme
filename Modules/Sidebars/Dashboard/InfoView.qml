@@ -31,23 +31,18 @@ Item {
         anchors.fill: parent
         spacing: 12
 
-        ProfileHeaderCard {
-            Layout.fillWidth: true
-            Layout.preferredHeight: implicitHeight
-            screenName: root.screenName
-            onBannerColorRequested: root.bannerColorRequested()
-            onImageSelectionRequested: forAvatar => root.imageSelectionRequested(forAvatar)
-        }
-
+        // ЛОКАЛЬНАЯ ПРАВКА: карточка профиля (аватар, имя машины, аптайм)
+        // убрана — не нужна. Вместо выдвижной панели с тремя инструментами
+        // здесь остался только календарь: «To-do» и «Timer» вынесены в
+        // отдельные вкладки боковой панели (см. DashboardSidebarContent.qml).
         NotificationList {
             Layout.fillWidth: true
             Layout.fillHeight: true
         }
 
-        InfoToolDrawer {
+        CalendarWidget {
             Layout.fillWidth: true
-            Layout.preferredHeight: implicitHeight
-            active: root.isForeground
+            Layout.preferredHeight: 320
         }
     }
 }
