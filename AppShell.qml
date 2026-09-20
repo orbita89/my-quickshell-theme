@@ -94,9 +94,11 @@ Item {
 
     WallpaperBackground {}
 
+    // ОТКЛЮЧЕНО: карточки на рабочем столе не нужны. Они же были источником
+    // предупреждений cellGap is not defined и isWallpaperLayoutMode в журнале.
     // Desktop cards are an independent bottom-layer subsystem.  It remains
     // loaded when the awww backend hides Clavis' wallpaper renderer.
-    DesktopCardHost {}
+    // DesktopCardHost {}
 
     LazyLoader {
         id: controlCenterLoader
@@ -173,13 +175,17 @@ Item {
         target: sessionLocker
     }
 
-    Connections {
-        function onLockRequested() {
-            IdleService.reportLockResult(sessionLocker.open());
-        }
-
-        target: IdleService
-    }
+    // ОТКЛЮЧЕНО: блокировкой занимается swayidle + swaylock (10 мин — блок,
+    // 15 — гашение экрана, см. ~/.config/systemd/user/swayidle.service).
+    // Сам модуль Lock оставлен: на него ссылается меню питания, но сам он
+    // больше не срабатывает по бездействию.
+    // Connections {
+    //     function onLockRequested() {
+    //         IdleService.reportLockResult(sessionLocker.open());
+    //     }
+    //
+    //     target: IdleService
+    // }
 
     Loader {
         active: ShortcutMapService.visible
@@ -272,6 +278,27 @@ Item {
                 function openMode(mode: string): string {
                     if (spotlightLauncher.normalizedMode(mode || "") === "")
                         return "INVALID_MODE";
+
+                    spotlightLauncher.openSpotlight(mode);
+                    return String(mode).toUpperCase();
+                }
+
+                // МОЁ ДОБАВЛЕНИЕ: открыть сразу в нужном режиме, а повторным
+                // нажатием — закрыть. Штатный toggle() открывает только общий
+                // поиск, а openMode() умеет открывать, но не закрывать, из-за
+                // чего одна и та же клавиша переставала работать на закрытие.
+                function toggleMode(mode: string): string {
+                    if (spotlightLauncher.normalizedMode(mode || "") === "")
+                        return "INVALID_MODE";
+
+                    // Фазы окна: hidden, opening, open, closing
+                    // (см. LauncherWindow.qml, свойство windowPhase).
+                    // hidden/closing — окна на экране нет, значит открываем.
+                    const phase = String(spotlightLauncher.windowPhase);
+                    if (phase !== "hidden" && phase !== "closing") {
+                        spotlightLauncher.requestClose();
+                        return "CLOSING";
+                    }
 
                     spotlightLauncher.openSpotlight(mode);
                     return String(mode).toUpperCase();

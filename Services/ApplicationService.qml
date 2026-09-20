@@ -37,10 +37,18 @@ Singleton {
         return root.launchCommand(["xdg-open", value]);
     }
 
+    // МОЁ ДОБАВЛЕНИЕ: прячем консольные программы. В их .desktop стоит
+    // Terminal=true (btop, htop, ranger и подобные), Quickshell отдаёт этот
+    // признак как runInTerminal. В поиске они лезли выше браузера, потому что
+    // имена короче. Вернуть их в выдачу — поставить здесь false.
+    readonly property bool hideTerminalApplications: true
+
     function isVisibleApplication(application) {
         if (!application)
             return false;
         if (application.noDisplay === true || application.hidden === true)
+            return false;
+        if (root.hideTerminalApplications && application.runInTerminal === true)
             return false;
         return String(application.id || "").trim() !== "" && String(application.execString || application.exec
                                                                     || "").trim() !== "";
