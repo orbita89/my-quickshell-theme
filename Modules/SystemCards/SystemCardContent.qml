@@ -146,8 +146,6 @@ Item {
             return storageCapacityComponent;
         case "calendar":
             return calendarComponent;
-        case "weather":
-            return weatherComponent;
         default:
             return null;
         }
@@ -391,9 +389,4 @@ Item {
         }
     }
 
-    Component {
-        id: weatherComponent
-
-        SystemWeatherCard {}
-    }
 }

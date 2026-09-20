@@ -27,15 +27,7 @@ TopBarPill {
             activeContentColor: Appearance.colors.colOnSecondary
         }
 
-        SidebarPillButton {
-            viewName: "drawer"
-            sidebarIconName: "widgets"
-            activeColor: Appearance.colors.colTertiary
-            activeContentColor: Appearance.colors.colOnTertiary
-        }
-
-        SidebarWeatherButton {
-            vertical: root.vertical
-        }
+        // ЛОКАЛЬНАЯ ПРАВКА: кнопки «ящик» и «погода» убраны — эти вкладки
+        // боковой панели удалены. Осталась кнопка уведомлений.
     }
 }

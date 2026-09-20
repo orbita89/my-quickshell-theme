@@ -337,13 +337,10 @@ Singleton {
     property int cursorHideAfterInactiveMs: 0
     property string iconTheme: ""
     property string keystoneStyle: "bangs"
-    readonly property var keystoneKeyholeCardIds: ["weather", "quickSettings", "pomodoro"]
+    // ЛОКАЛЬНАЯ ПРАВКА: "weather" убран из списка карточек островка.
+    readonly property var keystoneKeyholeCardIds: ["quickSettings", "pomodoro"]
     readonly property var defaultKeystoneKeyholeCards: root.keystoneKeyholeCardIds.slice()
     readonly property var keystoneKeyholeCardOptions: [({
-                                                            "value": "weather",
-                                                            "label": qsTr("Weather"),
-                                                            "icon": "partly_cloudy_day"
-                                                        }), ({
                                                                  "value": "quickSettings",
                                                                  "label": qsTr("Quick Settings"),
                                                                  "icon": "tune"
@@ -461,10 +458,6 @@ Singleton {
         {
             value: "upload",
             label: qsTr("Upload")
-        },
-        {
-            value: "weather",
-            label: qsTr("Weather")
         },
         {
             value: "tools",

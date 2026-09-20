@@ -6,7 +6,6 @@ import qs.Components
 import qs.Modules.Keystone.CloudUploadContent
 import qs.Modules.Keystone.DashboardContent
 import qs.Modules.Keystone.Media
-import qs.Modules.Keystone.WeatherContent
 
 Item {
     id: root
@@ -28,17 +27,18 @@ Item {
     implicitWidth: currentIndex === 0 ? dashboardContent.implicitWidth : currentIndex === 2 ? 960 : currentIndex
                                                                                               === 3 ? 960 :
                                                                                                       760
-    implicitHeight: 80 + 20 + (currentIndex === 0 ? 520 : currentIndex === 1 ? 480 : currentIndex === 2 ? 480 :
-                                                                                                          weatherContent.height)
+    // ЛОКАЛЬНАЯ ПРАВКА: панель погоды (была четвёртой) убрана, высота
+    // последней вкладки задана числом вместо weatherContent.height.
+    implicitHeight: 80 + 20 + (currentIndex === 0 ? 520 : currentIndex === 1 ? 480 : 480)
 
     Shortcut {
         sequence: "Tab"
-        onActivated: root.currentIndex = (root.currentIndex + 1) % 4
+        onActivated: root.currentIndex = (root.currentIndex + 1) % 3
     }
 
     Shortcut {
         sequence: "Shift+Tab"
-        onActivated: root.currentIndex = (root.currentIndex + 3) % 4
+        onActivated: root.currentIndex = (root.currentIndex + 2) % 3
     }
 
     RowLayout {
@@ -69,11 +69,6 @@ Item {
             index: 2
         }
 
-        TabBtn {
-            icon: "sunny"
-            title: qsTr("Weather")
-            index: 3
-        }
     }
 
     component TabBtn: Item {
@@ -207,20 +202,5 @@ Item {
             }
         }
 
-        WeatherContent {
-            id: weatherContent
-
-            anchors.top: parent.top
-            anchors.horizontalCenter: parent.horizontalCenter
-            active: root.currentIndex === 3 && root.visible
-            visible: root.currentIndex === 3
-            opacity: visible ? 1 : 0
-
-            Behavior on opacity {
-                NumberAnimation {
-                    duration: 300
-                }
-            }
-        }
     }
 }

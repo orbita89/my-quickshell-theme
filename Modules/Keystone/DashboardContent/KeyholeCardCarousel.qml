@@ -144,15 +144,7 @@ Item {
             x: root.cardX(index)
             contentMargin: 0
 
-            Loader {
-                anchors.fill: parent
-                active: cardDelegate.cardId === "weather"
-
-                sourceComponent: DashboardWeatherCard {
-                    active: cardDelegate.cardActive
-                }
-
-            }
+            // ЛОКАЛЬНАЯ ПРАВКА: карточка погоды убрана из карусели островка.
 
             Loader {
                 id: quickSettingsLoader

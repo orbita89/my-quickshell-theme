@@ -34,12 +34,7 @@ Item {
             Layout.fillHeight: true
             spacing: Metrics.lockCardGap
 
-            WeatherCard {
-                Layout.fillWidth: true
-                radius: Metrics.lockCardRadiusSmall
-                topLeftRadius: Metrics.lockCardRadius
-                availableHeight: root.availableHeight
-            }
+            // ЛОКАЛЬНАЯ ПРАВКА: карточка погоды на экране блокировки убрана.
 
             LockFetchCard {
                 Layout.fillWidth: true
