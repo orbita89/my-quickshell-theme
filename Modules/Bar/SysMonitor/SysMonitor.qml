@@ -75,8 +75,16 @@ TopBarPill {
 
     implicitHeight: root.vertical ? resourceLayout.implicitHeight + 2 * Sizes.barPillHorizontalPadding :
                                     Sizes.barPillThickness
-    Component.onCompleted: SystemMonitorService.setConsumerModules(root.ownerId, ["cpu", "memory", "disk"])
-    Component.onDestruction: SystemMonitorService.clearConsumer(root.ownerId)
+    // МОЁ ИСПРАВЛЕНИЕ: идентификатор потребителя делаем уникальным для каждого
+    // экземпляра виджета. Раньше он был один на экран ("bar-sysmonitor:eDP-1"),
+    // и при пересоздании панели возникала гонка: новый виджет регистрировался,
+    // а следом умирающий старый вызывал clearConsumer с тем же именем и стирал
+    // регистрацию нового. Потребителей становилось ноль, сервис останавливал
+    // keytop — и монитор показывал прочерки вместо данных.
+    readonly property string consumerId: root.ownerId + ":" + Math.floor(Math.random() * 1e9).toString(36)
+
+    Component.onCompleted: SystemMonitorService.setConsumerModules(root.consumerId, ["cpu", "memory", "disk"])
+    Component.onDestruction: SystemMonitorService.clearConsumer(root.consumerId)
 
     GridLayout {
         id: resourceLayout
@@ -145,7 +153,14 @@ TopBarPill {
         anchors.fill: parent
         hoverEnabled: true
         cursorShape: Qt.PointingHandCursor
-        onClicked: ApplicationService.launchCommand(["gnome-system-monitor"])
+        // МОЁ ИЗМЕНЕНИЕ: по клику открываем btop в терминале вместо
+        // gnome-system-monitor.
+        //
+        // Терминал — Alacritty, а не Warp: Warp не умеет запускать команду из
+        // командной строки (опции вроде -e у него нет, а на --exec он отвечает
+        // "unexpected argument"). Если появится способ — достаточно поменять
+        // строку ниже.
+        onClicked: ApplicationService.launchCommand(["alacritty", "--title", "btop", "-e", "btop"])
     }
 
     PopupToolTip {
