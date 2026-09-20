@@ -27,8 +27,11 @@ QtObject {
     readonly property real expandedHeight: 210
     readonly property real volumeWidth: 320
     readonly property real volumeHeight: 64
-    readonly property real collapsedWidth: 220
-    readonly property real collapsedHeight: 42
+    // МОЁ ИЗМЕНЕНИЕ: было 220 — плашка задавалась фиксированной шириной и
+    // оставляла много пустого места по бокам от «21 sep | 03:00». После
+    // перехода на 24 часа и уменьшения шрифта содержимое стало у́же.
+    readonly property real collapsedWidth: 150
+    readonly property real collapsedHeight: 36
     readonly property real attachedRecordingWidth: 220
     readonly property real attachedRecordingHeight: 42
     readonly property real targetWidth: recordingActive ? recordingWidth : audioActive ? audioWidth : toolsActive ? toolsWidth : hubActive ? hubWidth : lyricsActive ? lyricsWidth : expandedActive ? expandedWidth : volumeActive ? volumeWidth : notificationsActive ? notificationsWidth : collapsedWidth + (collapsedHovered ? 16 : 0)
