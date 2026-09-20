@@ -283,7 +283,7 @@ Singleton {
     }
 
     // SidebarHostWindow owns exclusive keyboard focus while a sidebar is
-    // open.  Before commit, route Escape to DrawerView.  After commit, only
+    // open.  Before commit, route Escape to the drawer view.  After commit, only
     // finish visual cleanup; never emit a rollback-capable cancel request.
     function requestCancel() {
         if (!root.active)
