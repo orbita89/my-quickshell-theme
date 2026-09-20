@@ -28,6 +28,15 @@ Item {
         }
     }
 
+    // Подставляет сохранённую задачу в поля выше. Меняете время и жмёте
+    // «Save task» — запись обновится, потому что совпадает название.
+    function editSavedTask(task) {
+        if (!task)
+            return;
+        taskNameField.text = task.name;
+        taskDurationField.text = root.humanMinutes(task.minutes);
+    }
+
     function startSavedTask(task) {
         if (!task)
             return;
@@ -212,7 +221,10 @@ Item {
                 }
             }
 
-            // Сохранённые задачи: клик — запустить, долгое нажатие — удалить.
+            // Сохранённые задачи. У каждой три действия, все видимые:
+            //   по названию   — запустить;
+            //   карандаш      — подставить в поля выше для изменения;
+            //   крестик       — удалить.
             Flow {
                 Layout.fillWidth: true
                 Layout.topMargin: 2
@@ -222,28 +234,79 @@ Item {
                 Repeater {
                     model: PomodoroTaskService.list
 
-                    delegate: RippleButton {
+                    delegate: Rectangle {
+                        id: savedChip
+
                         required property var modelData
                         required property int index
 
-                        implicitWidth: savedLabel.implicitWidth + 22
+                        implicitWidth: chipRow.implicitWidth + 16
                         implicitHeight: 28
-                        buttonRadius: Appearance.rounding.full
-                        containerColor: Appearance.colors.colLayer2
-                        stateLayerColor: Appearance.colors.colSurfaceContainerHighestHover
-                        Accessible.name: qsTr("Start saved task %1").arg(modelData.name)
-                        onClicked: root.startSavedTask(modelData)
-                        onPressAndHold: PomodoroTaskService.removeTask(index)
+                        radius: Appearance.rounding.full
+                        color: Appearance.colors.colLayer2
 
-                        contentItem: Text {
-                            id: savedLabel
+                        RowLayout {
+                            id: chipRow
 
-                            text: modelData.name + " · " + root.humanMinutes(modelData.minutes)
-                            color: Appearance.colors.colOnLayer1
-                            font.family: Fonts.ui
-                            font.pixelSize: 12
-                            horizontalAlignment: Text.AlignHCenter
-                            verticalAlignment: Text.AlignVCenter
+                            anchors.centerIn: parent
+                            spacing: 4
+
+                            RippleButton {
+                                implicitWidth: savedLabel.implicitWidth + 10
+                                implicitHeight: 24
+                                buttonRadius: Appearance.rounding.full
+                                stateLayerColor: Appearance.colors.colSurfaceContainerHighestHover
+                                Accessible.name: qsTr("Start saved task %1").arg(savedChip.modelData.name)
+                                onClicked: root.startSavedTask(savedChip.modelData)
+
+                                contentItem: Text {
+                                    id: savedLabel
+
+                                    text: savedChip.modelData.name + " · " + root.humanMinutes(
+                                              savedChip.modelData.minutes)
+                                    color: Appearance.colors.colOnLayer1
+                                    font.family: Fonts.ui
+                                    font.pixelSize: 12
+                                    horizontalAlignment: Text.AlignHCenter
+                                    verticalAlignment: Text.AlignVCenter
+                                }
+                            }
+
+                            RippleButton {
+                                implicitWidth: 20
+                                implicitHeight: 20
+                                buttonRadius: Appearance.rounding.full
+                                stateLayerColor: Appearance.colors.colSurfaceContainerHighestHover
+                                Accessible.name: qsTr("Edit saved task %1").arg(savedChip.modelData.name)
+                                onClicked: root.editSavedTask(savedChip.modelData)
+
+                                contentItem: Text {
+                                    text: "✎"
+                                    color: Appearance.colors.colSubtext
+                                    font.family: Fonts.ui
+                                    font.pixelSize: 12
+                                    horizontalAlignment: Text.AlignHCenter
+                                    verticalAlignment: Text.AlignVCenter
+                                }
+                            }
+
+                            RippleButton {
+                                implicitWidth: 20
+                                implicitHeight: 20
+                                buttonRadius: Appearance.rounding.full
+                                stateLayerColor: Appearance.colors.colErrorContainerHover
+                                Accessible.name: qsTr("Delete saved task %1").arg(savedChip.modelData.name)
+                                onClicked: PomodoroTaskService.removeTask(savedChip.index)
+
+                                contentItem: Text {
+                                    text: "×"
+                                    color: Appearance.colors.colSubtext
+                                    font.family: Fonts.ui
+                                    font.pixelSize: 14
+                                    horizontalAlignment: Text.AlignHCenter
+                                    verticalAlignment: Text.AlignVCenter
+                                }
+                            }
                         }
                     }
                 }
