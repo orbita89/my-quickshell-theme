@@ -40,10 +40,14 @@ Item {
             Layout.fillHeight: true
             spacing: 16
 
-            UserCard {
+            // ЛОКАЛЬНАЯ ПРАВКА: вместо карточки с данными о системе
+            // (пользователь, дистрибутив, аптайм) — список прожорливых
+            // процессов с кнопкой снятия.
+            TopProcesses {
                 Layout.fillWidth: true
-                Layout.preferredHeight: 150
-                onAvatarEditRequested: root.avatarEditRequested()
+                // Поля 12+12, заголовок 16, отступ 8 и четыре строки по 26
+                // с промежутками 8 — ровно столько, чтобы список не обрезался.
+                Layout.preferredHeight: 176
             }
 
             CalendarCard {
