@@ -124,7 +124,8 @@ Item {
 
     Row {
         anchors.centerIn: parent
-        spacing: root.hideDate ? 0 : 10
+        // МОЁ ИЗМЕНЕНИЕ: было 10 — островок занимал лишнюю ширину.
+        spacing: root.hideDate ? 0 : 6
         visible: !root.vertical
 
         // --- 左侧日期部分 ---
@@ -134,14 +135,14 @@ Item {
             width: root.hideDate ? 0 : implicitWidth
             color: Appearance.colors.colPrimary
             font.family: Fonts.ui
-            font.pixelSize: 13
+            font.pixelSize: 12   // МОЁ ИЗМЕНЕНИЕ: было 13
             font.bold: true
             anchors.verticalCenter: parent.verticalCenter
         }
 
         Item {
             visible: !root.hideDate
-            width: root.hideDate ? 0 : 8
+            width: root.hideDate ? 0 : 5   // МОЁ ИЗМЕНЕНИЕ: было 8
             height: root.horizontalFontSize + 2
             anchors.verticalCenter: parent.verticalCenter
 

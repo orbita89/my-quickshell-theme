@@ -176,42 +176,6 @@ Variants {
         WlrLayershell.keyboardFocus: root.keyboardInteractionActive ? WlrKeyboardFocus.OnDemand :
                                                                       WlrKeyboardFocus.None
 
-        // МОЁ ДОБАВЛЕНИЕ: закрытие островка кликом по пустому месту.
-        //
-        // Островок — layer-surface, клики мимо него уходят окнам под ним, и он
-        // о них не узнаёт. Свойства «окно потеряло фокус» Quickshell не даёт,
-        // поэтому под островок подкладывается прозрачное окно на весь экран:
-        // оно существует только пока островок раскрыт и по клику закрывает его.
-        //
-        // Слой Bottom — ниже самого островка (Top), поэтому клики по островку
-        // и его кнопкам работают как раньше. Hover-превью не перехватывается:
-        // при нём подложки нет, иначе она мешала бы обычной работе с окнами.
-        PanelWindow {
-            id: dismissCatcher
-
-            visible: root.escapeDismissActive && !root.hoverOpened && !root.isCollapsedMode
-            screen: keystoneWindow.screen
-            color: "transparent"
-            exclusiveZone: -1
-            WlrLayershell.namespace: "clavis-shell-keystone-dismiss"
-            WlrLayershell.layer: WlrLayer.Bottom
-            WlrLayershell.exclusionMode: ExclusionMode.Ignore
-            WlrLayershell.keyboardFocus: WlrKeyboardFocus.None
-
-            anchors {
-                top: true
-                bottom: true
-                left: true
-                right: true
-            }
-
-            MouseArea {
-                anchors.fill: parent
-                acceptedButtons: Qt.LeftButton | Qt.RightButton | Qt.MiddleButton
-                onPressed: keystoneWindow.closeAllOthers()
-            }
-        }
-
         PanelWindow {
             // Niri focuses newly mapped OnDemand surfaces. Keep that mapping
             // separate from the visible island so expansion never drops a frame.
@@ -542,13 +506,41 @@ Variants {
                     }
                 }
 
+                // МОЁ ДОБАВЛЕНИЕ: островок закрывается, когда курсор ушёл с него.
+                //
+                // Раньше так закрывалось только hover-превью, а раскрытый кликом
+                // островок висел, пока не нажмёшь Escape. Клик по пустому месту
+                // поймать нельзя: островок — layer-surface, чужие клики до него
+                // не доходят, а «окно потеряло фокус» Quickshell не сообщает.
+                //
+                // Задержка нужна, чтобы островок не захлопывался, если курсор
+                // на мгновение выскользнул за край или прошёл по зазору между
+                // свёрнутой полоской и раскрытой панелью.
+                Timer {
+                    id: leaveCloseTimer
+
+                    interval: 450
+                    onTriggered: {
+                        if (!root.isCollapsedMode && !root.contentPresentationActive)
+                            keystoneWindow.closeAllOthers();
+                    }
+                }
+
                 HoverHandler {
                     onHoveredChanged: {
                         if (!hovered) {
-                            if (root.hoverOpened)
+                            if (root.hoverOpened) {
                                 keystoneWindow.closeAllOthers();
+                                return;
+                            }
+                            // Раскрыт кликом — закрываем с задержкой.
+                            if (!root.isCollapsedMode)
+                                leaveCloseTimer.restart();
                             return;
                         }
+
+                        // Вернулись на островок — отменяем закрытие.
+                        leaveCloseTimer.stop();
                         if (!root.isCollapsedMode)
                             return;
                         const action = PersonalizationConfig.keystoneHoverAction;
