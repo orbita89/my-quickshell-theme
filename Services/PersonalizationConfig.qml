@@ -432,16 +432,13 @@ Singleton {
     property bool keystoneNumLockOsd: true
     property bool keystoneHideDate: false
     property string keystoneHoverAction: "peak"
-    property string keystoneLeftClickAction: "media"
+    // ЛОКАЛЬНАЯ ПРАВКА: было "media" — компактный плеер удалён.
+    property string keystoneLeftClickAction: "dashboard"
     property string keystoneMiddleClickAction: "lyrics"
     readonly property var keystoneActionOptions: [
         {
             value: "none",
             label: qsTr("Do not open")
-        },
-        {
-            value: "media",
-            label: qsTr("Media controls")
         },
         {
             value: "lyrics",

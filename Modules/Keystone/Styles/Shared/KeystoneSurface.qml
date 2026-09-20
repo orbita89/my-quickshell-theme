@@ -11,7 +11,6 @@ import qs.Services
 import qs.Common
 import qs.Widgets.common
 import qs.Modules.Keystone.ClockContent
-import qs.Modules.Keystone.MediaContent
 import qs.Modules.Keystone.NotificationContent
 import qs.Modules.Keystone.VolumeContent
 import qs.Modules.Keystone.LyricsContent
@@ -479,24 +478,22 @@ Variants {
                     if (action === "none" || action === "peak" || root.contentPresentationActive
                             || root.isNotifMode || root.isVolumeMode)
                         return;
+                    // ЛОКАЛЬНАЯ ПРАВКА: "weather" убран вместе с погодой.
+                    // "library" — вкладка Media хаба (полноценный плеер).
                     const tabs = {
                         dashboard: 0,
                         library: 1,
-                        upload: 2,
-                        weather: 3
+                        upload: 2
                     };
                     const isTab = Object.prototype.hasOwnProperty.call(tabs, action);
-                    const alreadyOpen = action === "media" ? root.expanded : action === "lyrics"
-                                                             ? root.showLyrics : action === "tools"
+                    const alreadyOpen = action === "lyrics" ? root.showLyrics : action === "tools"
                                                                ? root.showTools : isTab && root.showHub
                                                                  && root.hubTabIndex === tabs[action];
                     keystoneWindow.closeAllOthers();
                     if (toggle && alreadyOpen)
                         return;
                     root.hoverOpened = fromHover;
-                    if (action === "media")
-                        root.expanded = true;
-                    else if (action === "lyrics")
+                    if (action === "lyrics")
                         root.showLyrics = true;
                     else if (action === "tools")
                         root.showTools = true;
@@ -560,6 +557,10 @@ Variants {
                 }
 
                 property bool showLyrics: false
+                // ЛОКАЛЬНАЯ ПРАВКА: режим компактного плеера удалён, флаг
+                // всегда false. Оставлен намеренно: на него завязаны проверки
+                // остальных режимов (isCollapsedMode, escapeDismissActive и
+                // другие), а вычищать их — риск сломать логику ради пустяка.
                 property bool expanded: false
                 property bool showVolume: false
                 property bool showHub: false
@@ -1489,24 +1490,9 @@ Variants {
                         }
                     }
 
-                    MediaContent {
-                        anchors.top: parent.top
-                        anchors.horizontalCenter: parent.horizontalCenter
-                        anchors.topMargin: 20
-                        width: root.activeLayout.expandedWidth - 40
-                        height: root.activeLayout.expandedHeight - 40
-                        opacity: (!root.contentPresentationActive && root.expanded && !root.isLyricsMode &&
-                                  !root.isHubMode) ? 1 : 0
-                        visible: opacity > 0.01
-
-                        Behavior on opacity {
-                            NumberAnimation {
-                                duration: Appearance.animation.expressiveEffects.duration
-                                easing.type: Appearance.animation.expressiveEffects.type
-                                easing.bezierCurve: Appearance.animation.expressiveEffects.bezierCurve
-                            }
-                        }
-                    }
+                    // ЛОКАЛЬНАЯ ПРАВКА: компактный плеер (режим "media") удалён.
+                    // Полноценный остался во вкладке Media хаба — она
+                    // открывается кликом по волне в панели.
 
                     HubContent {
                         id: hub
