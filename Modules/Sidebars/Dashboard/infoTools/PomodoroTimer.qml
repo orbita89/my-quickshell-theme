@@ -65,6 +65,106 @@ Item {
             }
         }
 
+        // МОЁ ДОБАВЛЕНИЕ: настройка длительностей. Раньше 25/5/15 минут были
+        // зашиты в TimerService и поменять их было нельзя. Значения хранятся
+        // в ~/.config/clavis/ui-preferences.json и применяются сразу.
+        RowLayout {
+            Layout.alignment: Qt.AlignHCenter
+            Layout.bottomMargin: 8
+            spacing: 14
+            // Во время отсчёта менять длительности нельзя — сбилась бы текущая
+            // фаза; сначала «Reset».
+            enabled: !TimerService.pomodoroRunning
+            opacity: enabled ? 1 : 0.4
+
+            component MinuteStepper: RowLayout {
+                id: stepper
+
+                property string label: ""
+                property int value: 0
+                property int minimum: 1
+                property int maximum: 180
+                signal changed(int value)
+
+                spacing: 4
+
+                Text {
+                    text: stepper.label
+                    color: Appearance.colors.colSubtext
+                    font.family: Fonts.ui
+                    font.pixelSize: 12
+                }
+
+                RippleButton {
+                    implicitWidth: 24
+                    implicitHeight: 24
+                    buttonRadius: Appearance.rounding.full
+                    Accessible.name: qsTr("Decrease")
+                    onClicked: stepper.changed(Math.max(stepper.minimum, stepper.value - 1))
+
+                    contentItem: Text {
+                        text: "−"
+                        color: Appearance.colors.colOnLayer1
+                        font.family: Fonts.ui
+                        font.pixelSize: 15
+                        horizontalAlignment: Text.AlignHCenter
+                        verticalAlignment: Text.AlignVCenter
+                    }
+                }
+
+                Text {
+                    text: stepper.value
+                    color: Appearance.colors.colOnLayer1
+                    font.family: Fonts.ui
+                    font.pixelSize: 14
+                    font.weight: Font.Medium
+                    horizontalAlignment: Text.AlignHCenter
+                    Layout.minimumWidth: 22
+                }
+
+                RippleButton {
+                    implicitWidth: 24
+                    implicitHeight: 24
+                    buttonRadius: Appearance.rounding.full
+                    Accessible.name: qsTr("Increase")
+                    onClicked: stepper.changed(Math.min(stepper.maximum, stepper.value + 1))
+
+                    contentItem: Text {
+                        text: "+"
+                        color: Appearance.colors.colOnLayer1
+                        font.family: Fonts.ui
+                        font.pixelSize: 15
+                        horizontalAlignment: Text.AlignHCenter
+                        verticalAlignment: Text.AlignVCenter
+                    }
+                }
+            }
+
+            MinuteStepper {
+                label: qsTr("Focus")
+                value: UiPreferences.pomodoroFocusMinutes
+                minimum: 1
+                maximum: 180
+                onChanged: value => UiPreferences.setPomodoroFocusMinutes(value)
+            }
+
+            MinuteStepper {
+                label: qsTr("Break")
+                value: UiPreferences.pomodoroBreakMinutes
+                minimum: 1
+                maximum: 60
+                onChanged: value => UiPreferences.setPomodoroBreakMinutes(value)
+            }
+
+            MinuteStepper {
+                label: qsTr("Long")
+                value: UiPreferences.pomodoroLongBreakMinutes
+                minimum: 1
+                maximum: 120
+                onChanged: value => UiPreferences.setPomodoroLongBreakMinutes(value)
+            }
+        }
+
         RowLayout {
             Layout.alignment: Qt.AlignHCenter
             spacing: 10

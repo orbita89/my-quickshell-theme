@@ -29,6 +29,13 @@ Singleton {
     property string systemMonitorNetworkInterface: ""
     property string storageCapacityDiskDevice: "follow-io"
     property int systemMonitorIntervalMs: 2000
+
+    // МОЁ ДОБАВЛЕНИЕ: длительности помидорного таймера в минутах. Раньше они
+    // были зашиты константами в Services/TimerService.qml и не настраивались.
+    property int pomodoroFocusMinutes: 25
+    property int pomodoroBreakMinutes: 5
+    property int pomodoroLongBreakMinutes: 15
+    property int pomodoroCyclesBeforeLongBreak: 4
     property bool useTwelveHourClock: true
     property string sidebarClockStyle: "digital"
     property int sidebarCookieSides: 14
@@ -240,6 +247,46 @@ Singleton {
             return;
 
         root.systemMonitorIntervalMs = normalized;
+        root.save();
+    }
+
+    // МОЁ ДОБАВЛЕНИЕ: нормализация числа минут в заданных границах.
+    function clampedMinutes(value, fallback, minimum, maximum) {
+        const number = Math.round(Number(value === undefined ? fallback : value));
+        if (!isFinite(number))
+            return fallback;
+        return Math.max(minimum, Math.min(maximum, number));
+    }
+
+    function setPomodoroFocusMinutes(value) {
+        const next = root.clampedMinutes(value, 25, 1, 180);
+        if (root.pomodoroFocusMinutes === next)
+            return;
+        root.pomodoroFocusMinutes = next;
+        root.save();
+    }
+
+    function setPomodoroBreakMinutes(value) {
+        const next = root.clampedMinutes(value, 5, 1, 60);
+        if (root.pomodoroBreakMinutes === next)
+            return;
+        root.pomodoroBreakMinutes = next;
+        root.save();
+    }
+
+    function setPomodoroLongBreakMinutes(value) {
+        const next = root.clampedMinutes(value, 15, 1, 120);
+        if (root.pomodoroLongBreakMinutes === next)
+            return;
+        root.pomodoroLongBreakMinutes = next;
+        root.save();
+    }
+
+    function setPomodoroCyclesBeforeLongBreak(value) {
+        const next = root.clampedMinutes(value, 4, 1, 12);
+        if (root.pomodoroCyclesBeforeLongBreak === next)
+            return;
+        root.pomodoroCyclesBeforeLongBreak = next;
         root.save();
     }
 
@@ -543,6 +590,10 @@ Singleton {
                                              root.systemMonitorNetworkInterface,
                                              "storageCapacityDiskDevice": root.storageCapacityDiskDevice,
                                              "systemMonitorIntervalMs": root.systemMonitorIntervalMs,
+                                             "pomodoroFocusMinutes": root.pomodoroFocusMinutes,
+                                             "pomodoroBreakMinutes": root.pomodoroBreakMinutes,
+                                             "pomodoroLongBreakMinutes": root.pomodoroLongBreakMinutes,
+                                             "pomodoroCyclesBeforeLongBreak": root.pomodoroCyclesBeforeLongBreak,
                                              "useTwelveHourClock": root.useTwelveHourClock,
                                              "sidebarClockStyle": root.sidebarClockStyle,
                                              "sidebarCookieSides": root.sidebarCookieSides,
@@ -624,6 +675,15 @@ Singleton {
                                                                                === undefined ? 2000 :
                                                                                                parsed.systemMonitorIntervalMs);
                 root.systemMonitorIntervalMs = monitorInterval < 0 ? 2000 : monitorInterval;
+
+                // Длительности помидора: читаем с разумными границами,
+                // чтобы битый файл настроек не сломал таймер.
+                root.pomodoroFocusMinutes = root.clampedMinutes(parsed.pomodoroFocusMinutes, 25, 1, 180);
+                root.pomodoroBreakMinutes = root.clampedMinutes(parsed.pomodoroBreakMinutes, 5, 1, 60);
+                root.pomodoroLongBreakMinutes = root.clampedMinutes(parsed.pomodoroLongBreakMinutes, 15, 1,
+                                                                    120);
+                root.pomodoroCyclesBeforeLongBreak = root.clampedMinutes(
+                            parsed.pomodoroCyclesBeforeLongBreak, 4, 1, 12);
                 root.useTwelveHourClock = typeof parsed.useTwelveHourClock === "boolean"
                         ? parsed.useTwelveHourClock : true;
                 root.sidebarClockStyle = root.allowedValue(parsed.sidebarClockStyle, ["digital", "cookie"],

@@ -33,16 +33,12 @@ Item {
 
         // ЛОКАЛЬНАЯ ПРАВКА: карточка профиля (аватар, имя машины, аптайм)
         // убрана — не нужна. Вместо выдвижной панели с тремя инструментами
-        // здесь остался только календарь: «To-do» и «Timer» вынесены в
-        // отдельные вкладки боковой панели (см. DashboardSidebarContent.qml).
+        // здесь остались только уведомления: календарь убран, а «To-do» и
+        // «Timer» вынесены в отдельные вкладки (см. DashboardSidebarContent.qml).
         NotificationList {
             Layout.fillWidth: true
             Layout.fillHeight: true
         }
 
-        CalendarWidget {
-            Layout.fillWidth: true
-            Layout.preferredHeight: 320
-        }
     }
 }

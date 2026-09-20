@@ -7,10 +7,13 @@ import qs.Services
 Singleton {
     id: root
 
-    readonly property int focusTime: 25 * 60
-    readonly property int breakTime: 5 * 60
-    readonly property int longBreakTime: 15 * 60
-    readonly property int cyclesBeforeLongBreak: 4
+    // МОЁ ИЗМЕНЕНИЕ: длительности берутся из настроек, а не зашиты числами.
+    // Меняются во вкладке «Timer» боковой панели; хранятся в
+    // ~/.config/clavis/ui-preferences.json.
+    readonly property int focusTime: UiPreferences.pomodoroFocusMinutes * 60
+    readonly property int breakTime: UiPreferences.pomodoroBreakMinutes * 60
+    readonly property int longBreakTime: UiPreferences.pomodoroLongBreakMinutes * 60
+    readonly property int cyclesBeforeLongBreak: UiPreferences.pomodoroCyclesBeforeLongBreak
     readonly property int pomodoroSequenceDuration: focusTime * cyclesBeforeLongBreak + breakTime * (
                                                         cyclesBeforeLongBreak - 1) + longBreakTime
 
