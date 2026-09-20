@@ -20,6 +20,32 @@ Item {
         TimerService.resetPomodoro();
     }
 
+    function saveCurrentTask() {
+        const minutes = TimerService.parseDurationMinutes(taskDurationField.text);
+        if (PomodoroTaskService.saveTask(taskNameField.text, minutes)) {
+            taskNameField.text = "";
+            taskDurationField.text = "";
+        }
+    }
+
+    function startSavedTask(task) {
+        if (!task)
+            return;
+        TimerService.startTask(task.name, task.minutes + "m");
+    }
+
+    // 300 → «5h», 90 → «1h 30m», 45 → «45m»
+    function humanMinutes(minutes) {
+        const total = Math.max(0, Math.round(Number(minutes) || 0));
+        const hours = Math.floor(total / 60);
+        const rest = total % 60;
+        if (hours > 0 && rest > 0)
+            return qsTr("%1h %2m").arg(hours).arg(rest);
+        if (hours > 0)
+            return qsTr("%1h").arg(hours);
+        return qsTr("%1m").arg(rest);
+    }
+
     ColumnLayout {
         anchors.fill: parent
         spacing: 0
@@ -129,28 +155,88 @@ Item {
                 opacity: 0.85
             }
 
-            RippleButton {
+            RowLayout {
                 Layout.alignment: Qt.AlignHCenter
-                implicitWidth: 150
-                implicitHeight: 32
-                buttonRadius: Appearance.rounding.full
-                containerColor: TimerService.pomodoroHasTask ? Appearance.colors.colSecondaryContainer :
-                                                               Appearance.colors.colPrimaryContainer
-                onClicked: {
-                    if (TimerService.pomodoroHasTask)
-                        root.stopTask();
-                    else
-                        root.startTask();
+                spacing: 8
+
+                RippleButton {
+                    implicitWidth: TimerService.pomodoroHasTask ? 150 : 110
+                    implicitHeight: 32
+                    buttonRadius: Appearance.rounding.full
+                    containerColor: TimerService.pomodoroHasTask ? Appearance.colors.colSecondaryContainer :
+                                                                   Appearance.colors.colPrimaryContainer
+                    onClicked: {
+                        if (TimerService.pomodoroHasTask)
+                            root.stopTask();
+                        else
+                            root.startTask();
+                    }
+
+                    contentItem: Text {
+                        text: TimerService.pomodoroHasTask ? qsTr("Stop task") : qsTr("Start task")
+                        color: Appearance.colors.colOnSecondaryContainer
+                        font.family: Fonts.ui
+                        font.pixelSize: 13
+                        font.weight: Font.Medium
+                        horizontalAlignment: Text.AlignHCenter
+                        verticalAlignment: Text.AlignVCenter
+                    }
                 }
 
-                contentItem: Text {
-                    text: TimerService.pomodoroHasTask ? qsTr("Stop task") : qsTr("Start task")
-                    color: Appearance.colors.colOnSecondaryContainer
-                    font.family: Fonts.ui
-                    font.pixelSize: 13
-                    font.weight: Font.Medium
-                    horizontalAlignment: Text.AlignHCenter
-                    verticalAlignment: Text.AlignVCenter
+                // Сохранить задачу, чтобы запускать её в следующие дни.
+                // Повторное сохранение с тем же названием обновляет время.
+                RippleButton {
+                    visible: !TimerService.pomodoroHasTask
+                    implicitWidth: 110
+                    implicitHeight: 32
+                    buttonRadius: Appearance.rounding.full
+                    containerColor: Appearance.colors.colLayer2
+                    onClicked: root.saveCurrentTask()
+
+                    contentItem: Text {
+                        text: qsTr("Save task")
+                        color: Appearance.colors.colOnLayer1
+                        font.family: Fonts.ui
+                        font.pixelSize: 13
+                        horizontalAlignment: Text.AlignHCenter
+                        verticalAlignment: Text.AlignVCenter
+                    }
+                }
+            }
+
+            // Сохранённые задачи: клик — запустить, долгое нажатие — удалить.
+            Flow {
+                Layout.fillWidth: true
+                Layout.topMargin: 2
+                spacing: 6
+                visible: !TimerService.pomodoroHasTask && PomodoroTaskService.list.length > 0
+
+                Repeater {
+                    model: PomodoroTaskService.list
+
+                    delegate: RippleButton {
+                        required property var modelData
+                        required property int index
+
+                        implicitWidth: savedLabel.implicitWidth + 22
+                        implicitHeight: 28
+                        buttonRadius: Appearance.rounding.full
+                        containerColor: Appearance.colors.colLayer2
+                        Accessible.name: qsTr("Start saved task %1").arg(modelData.name)
+                        onClicked: root.startSavedTask(modelData)
+                        onPressAndHold: PomodoroTaskService.removeTask(index)
+
+                        contentItem: Text {
+                            id: savedLabel
+
+                            text: modelData.name + " · " + root.humanMinutes(modelData.minutes)
+                            color: Appearance.colors.colOnLayer1
+                            font.family: Fonts.ui
+                            font.pixelSize: 12
+                            horizontalAlignment: Text.AlignHCenter
+                            verticalAlignment: Text.AlignVCenter
+                        }
+                    }
                 }
             }
         }
