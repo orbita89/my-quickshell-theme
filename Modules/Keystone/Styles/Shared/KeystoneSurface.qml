@@ -360,7 +360,15 @@ Variants {
 
         DropShadow {
             anchors.fill: shadowSource
-            source: root.showDashboardKeyhole ? rootSurface : shadowSource
+            // ЛОКАЛЬНАЯ ПРАВКА: при открытой скважине тень строилась по фигуре
+            // с дырой (rootSurface). У края дыры размытие в 20 px ослабляет
+            // тень, а фон панели полупрозрачный — в узком просвете между
+            // календарём и плашкой это читалось как светлая полоса.
+            //
+            // Дыра в тени нужна только когда сквозь стекло карточки видно
+            // фон, то есть при включённом размытии: иначе стекло непрозрачно
+            // и тень под ним всё равно не видна.
+            source: root.showDashboardKeyhole && BlurService.enabled ? rootSurface : shadowSource
             horizontalOffset: keystoneWindow.leftEdge ? 6 : keystoneWindow.rightEdge ? -6 : 0
             verticalOffset: keystoneWindow.topEdge ? 6 : keystoneWindow.bottomEdge ? -6 : 0
             radius: 20
