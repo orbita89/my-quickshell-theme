@@ -63,7 +63,7 @@ WidgetPanel {
 
     function hasAltActionForType(type) {
         return type === "network" || type === "bluetooth" || type === "caffeine" || type === "audio" || type
-                === "mic" || type === "night";
+                === "mic" || type === "night" || type === "power";
     }
 
     function titleForType(type) {
@@ -84,6 +84,8 @@ WidgetPanel {
             return qsTr("Appearance");
         case "dnd":
             return qsTr("Do not disturb");
+        case "power":
+            return qsTr("Power mode");
         default:
             return type;
         }
@@ -117,6 +119,12 @@ WidgetPanel {
             return PersonalizationConfig.themeMode === "dark" ? qsTr("Dark") : qsTr("Light");
         case "dnd":
             return UiPreferences.dndEnabled ? qsTr("On") : qsTr("Off");
+        case "power":
+            // Когда производительный режим урезан нагревом, об этом лучше
+            // сказать сразу: иначе непонятно, почему машина не ускоряется.
+            return PowerProfileService.degraded ? PowerProfileService.labelFor(
+                                                      PowerProfileService.profile) + qsTr(" · limited") :
+                                                  PowerProfileService.labelFor(PowerProfileService.profile);
         default:
             return "";
         }
@@ -141,6 +149,8 @@ WidgetPanel {
             return PersonalizationConfig.themeMode === "dark" ? "dark_mode" : "light_mode";
         case "dnd":
             return UiPreferences.dndEnabled ? "notifications_paused" : "notifications";
+        case "power":
+            return PowerProfileService.iconFor(PowerProfileService.profile);
         default:
             return "toggle_off";
         }
@@ -164,6 +174,9 @@ WidgetPanel {
             return PersonalizationConfig.themeMode === "dark";
         case "dnd":
             return UiPreferences.dndEnabled;
+        case "power":
+            // Подсвечиваем, когда режим не обычный: значит его меняли руками.
+            return PowerProfileService.profile !== "" && PowerProfileService.profile !== "balanced";
         default:
             return false;
         }
@@ -177,6 +190,8 @@ WidgetPanel {
             return NetworkService.available && NetworkService.wifiAvailable;
         case "bluetooth":
             return BluetoothService.available;
+        case "power":
+            return PowerProfileService.available;
         default:
             return true;
         }
@@ -205,6 +220,9 @@ WidgetPanel {
         case "theme":
             ThemeService.setThemeMode(PersonalizationConfig.themeMode === "dark" ? "light" : "dark");
             break;
+        case "power":
+            PowerProfileService.cycle();
+            break;
         case "dnd":
             UiPreferences.toggleDnd();
             break;
@@ -225,6 +243,8 @@ WidgetPanel {
             view = "microphone";
         else if (type === "night")
             view = "night";
+        else if (type === "power")
+            view = "power";
 
         if (view.length === 0)
             return;

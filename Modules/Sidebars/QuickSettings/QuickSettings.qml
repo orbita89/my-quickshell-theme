@@ -16,27 +16,36 @@ Item {
         case "audio":
         case "microphone":
         case "night":
+        case "power":
         case "settings":
             return WidgetState.quickSettingsView;
         default:
             return "settings";
         }
     }
-    readonly property var activeViewLoader: activeView === "network" ? networkLoader : activeView
-                                                                       === "bluetooth" ? bluetoothLoader :
-                                                                                         activeView
-                                                                                         === "idle"
-                                                                                         ? idleLoader :
-                                                                                           activeView
-                                                                                           === "audio"
-                                                                                           ? audioLoader :
-                                                                                             activeView
-                                                                                             === "microphone"
-                                                                                             ? microphoneLoader :
-                                                                                               activeView
-                                                                                               === "night"
-                                                                                               ? nightLoader :
-                                                                                                 settingsLoader
+    // ЛОКАЛЬНАЯ ПРАВКА: была цепочка тернарных операторов на пятнадцать строк
+    // с лесенкой отступов — дописать в неё страницу, не сломав форматирование,
+    // почти невозможно. Тот же выбор списком.
+    readonly property var activeViewLoader: {
+        switch (activeView) {
+        case "network":
+            return networkLoader;
+        case "bluetooth":
+            return bluetoothLoader;
+        case "idle":
+            return idleLoader;
+        case "audio":
+            return audioLoader;
+        case "microphone":
+            return microphoneLoader;
+        case "night":
+            return nightLoader;
+        case "power":
+            return powerLoader;
+        default:
+            return settingsLoader;
+        }
+    }
     readonly property bool readyForPresentation: activeViewLoader.active && activeViewLoader.status
                                                  === Loader.Ready && activeViewLoader.item !== null
                                                  && displayedView === activeView
@@ -179,6 +188,27 @@ Item {
 
     PageTransitionLayer {
         anchors.fill: parent
+        active: root.displayedView === "power"
+        transitionsEnabled: root.foreground
+
+        Loader {
+            id: powerLoader
+
+            property bool loadedOnce: false
+
+            anchors.fill: parent
+            active: root.activeView === "power" || loadedOnce
+            asynchronous: true
+            sourceComponent: powerComponent
+            onLoaded: {
+                loadedOnce = true;
+                root.syncDisplayedView();
+            }
+        }
+    }
+
+    PageTransitionLayer {
+        anchors.fill: parent
         active: root.displayedView === "settings"
         hubPage: true
         transitionsEnabled: root.foreground
@@ -243,6 +273,12 @@ Item {
         id: nightComponent
 
         NightModeContent {}
+    }
+
+    Component {
+        id: powerComponent
+
+        PowerProfileContent {}
     }
 
     Component {

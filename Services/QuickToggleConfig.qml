@@ -47,6 +47,10 @@ Singleton {
                     {
                         "type": "night",
                         "size": 2
+                    },
+                    {
+                        "type": "power",
+                        "size": 2
                     }
                 ];
     }

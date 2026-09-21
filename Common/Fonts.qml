@@ -18,7 +18,13 @@ Singleton {
     property string configuredMono: ""
     property string configuredNumeric: ""
     property string configuredExpressive: ""
-    readonly property string ui: root.resolveFamily(root.configuredUi, root.defaultUi, "")
+    // ЛОКАЛЬНАЯ ПРАВКА: последним запасным вариантом было пустое имя, а пустое
+    // имя семейства означает шрифт приложения по умолчанию — им оказывался
+    // шрифт значков. Слова, совпадающие с названиями лигатур Material Symbols
+    // ("balance", "power"), превращались в картинки прямо посреди текста.
+    // "sans-serif" — родовое имя, его разбирает fontconfig, как "monospace"
+    // ниже.
+    readonly property string ui: root.resolveFamily(root.configuredUi, root.defaultUi, "sans-serif")
     readonly property string mono: root.resolveFamily(root.configuredMono, root.defaultMono, "monospace")
     readonly property string numeric: root.resolveFamily(root.configuredNumeric, root.defaultNumeric,
                                                          "monospace")
