@@ -98,12 +98,20 @@ StyledFlickable {
         return options;
     }
 
+    // ЛОКАЛЬНАЯ ПРАВКА: модуль "gpu" убран из запроса.
+    //
+    // Нужен он был только чтобы заполнить выпадающий список видеокарт ниже,
+    // а стоит дорого: keytop открывает /dev/nvidia0 и постоянно будит
+    // дискретную NVIDIA. Замер: cpu 0.03 с, memory 0.01 с, disk 0.04 с
+    // процессорного времени за 8 секунд, gpu — 4.47 с, то есть около 58%
+    // ядра, пока страница открыта, плюс лишний расход батареи.
+    //
+    // Без него в списке остаётся только «Auto». Выбор конкретной карты нужен,
+    // лишь когда где-то показывается карточка GPU; здесь её нет.
     onPresentationActiveChanged: SystemMonitorService.setConsumerModules("general-sidebar-settings",
-                                                                         root.presentationActive ? ["gpu",
-                                                                                                    "disk"] : [])
+                                                                         root.presentationActive ? ["disk"] : [])
     Component.onCompleted: SystemMonitorService.setConsumerModules("general-sidebar-settings",
-                                                                   root.presentationActive ? ["gpu", "disk"] :
-                                                                                             [])
+                                                                   root.presentationActive ? ["disk"] : [])
     Component.onDestruction: SystemMonitorService.clearConsumer("general-sidebar-settings")
     clip: true
     contentWidth: width
