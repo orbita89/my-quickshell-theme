@@ -11,7 +11,10 @@ Item {
     // в плашке островка. Освободившиеся 184 px (160 колонка + 24 промежуток)
     // частично ушли в правую карточку: она была 340, потом 400, теперь 440.
     readonly property real profileColumnWidth: 392
-    readonly property real layoutMargin: 32
+    // ЛОКАЛЬНАЯ ПРАВКА: было 32. Поле отделяло плашку от правого края
+    // панели заметной полосой, а сверху и снизу съедало высоту, которой
+    // не хватало быстрым настройкам.
+    readonly property real layoutMargin: 20
     readonly property real layoutSpacing: 24
     readonly property real keyholeWidth: 440
     readonly property real keyholeLeftMargin: 14

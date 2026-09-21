@@ -30,8 +30,6 @@ Item {
     readonly property real switcherInset: switcherHeight > 0 ? switcherHeight + 8 : 0
 
     property real cardOffset: 0
-    property real wheelRemainder: 0
-    property bool wheelUsesPixels: false
     property int pendingSteps: 0
     property int transitionDirection: 0
 
@@ -112,7 +110,6 @@ Item {
         settleAnimation.stop();
         currentIndex = 0;
         cardOffset = 0;
-        wheelRemainder = 0;
         pendingSteps = 0;
         transitionDirection = 0;
     }
@@ -133,7 +130,7 @@ Item {
     }
 
     // Переход сразу к нужной карточке: идём кратчайшим путём, по шагу за раз,
-    // чтобы сработала та же анимация, что и при прокрутке.
+    // чтобы сработала обычная анимация перелистывания.
     function showCard(index) {
         const target = wrappedIndex(index);
         if (target === currentIndex || cardCount < 2)
@@ -143,16 +140,6 @@ Item {
         const direction = delta > 0 ? 1 : -1;
         for (let step = 0; step < Math.abs(delta); step += 1)
             queueStep(direction);
-    }
-
-    function quickSettingsCard() {
-        for (let index = 0; index < cardRepeater.count; index += 1) {
-            const card = cardRepeater.itemAt(index);
-            if (card && card.cardId === "quickSettings")
-                return card.quickSettingsItem;
-
-        }
-        return null;
     }
 
     clip: true
@@ -171,7 +158,6 @@ Item {
             required property string modelData
             readonly property string cardId: modelData
             readonly property bool cardActive: root.visible && root.currentIndex === index
-            readonly property var quickSettingsItem: quickSettingsLoader.item
 
             width: root.width
             height: root.height
@@ -183,8 +169,6 @@ Item {
             // ЛОКАЛЬНАЯ ПРАВКА: карточка погоды убрана из карусели островка.
 
             Loader {
-                id: quickSettingsLoader
-
                 anchors.fill: parent
                 active: cardDelegate.cardId === "quickSettings"
 
@@ -343,34 +327,6 @@ Item {
                 root.animateTo(0, 0);
 
             dragActive = false;
-        }
-        onWheel: (event) => {
-            const quickSettings = root.currentCardId === "quickSettings" ? root.quickSettingsCard() : null;
-            if (quickSettings) {
-                const point = quickSettings.mapFromItem(root, event.x, event.y);
-                if (quickSettings.capturesWheelAt(point.x, point.y)) {
-                    event.accepted = false;
-                    return ;
-                }
-            }
-            const angleDelta = event.angleDelta.y !== 0 ? event.angleDelta.y : event.angleDelta.x;
-            const usesPixels = angleDelta === 0;
-            const delta = usesPixels ? (event.pixelDelta.y !== 0 ? event.pixelDelta.y : event.pixelDelta.x) : angleDelta;
-            const threshold = usesPixels ? 48 : 120;
-            if (delta === 0)
-                return ;
-
-            if (root.wheelUsesPixels !== usesPixels || root.wheelRemainder * delta < 0)
-                root.wheelRemainder = 0;
-
-            root.wheelUsesPixels = usesPixels;
-            root.wheelRemainder += delta;
-            while (Math.abs(root.wheelRemainder) >= threshold) {
-                const wheelDirection = root.wheelRemainder > 0 ? 1 : -1;
-                root.wheelRemainder -= wheelDirection * threshold;
-                root.queueStep(wheelDirection > 0 ? -1 : 1);
-            }
-            event.accepted = true;
         }
     }
 

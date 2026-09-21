@@ -8,14 +8,6 @@ Item {
 
     clip: true
 
-    function capturesWheelAt(x, y) {
-        if (!quickSettings.capturesWheel)
-            return false;
-
-        const point = quickSettings.mapFromItem(root, x, y);
-        return quickSettings.capturesWheelAt(point.x, point.y);
-    }
-
     // ЛОКАЛЬНАЯ ПРАВКА: поверхность занимает карточку целиком.
     //
     // Раньше она рисовалась на холсте 420×572 и вся целиком масштабировалась

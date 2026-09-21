@@ -311,12 +311,6 @@ WidgetPanel {
             radius: Appearance.rounding.large
             color: Appearance.colors.colLayer1
 
-            readonly property real baseCellWidth: {
-                const availableWidth = width - root.togglePadding * 2 - root.toggleSpacing
-                      * root.toggleColumns;
-                return Math.max(root.baseCellHeight, availableWidth / root.toggleColumns);
-            }
-
             Behavior on Layout.preferredHeight {
                 NumberAnimation {
                     duration: Appearance.animation.expressiveDefaultSpatial.duration
@@ -352,6 +346,29 @@ WidgetPanel {
                             required property int modelData
                             readonly property var rowData: root.toggleRows[modelData] || []
 
+                            // ЛОКАЛЬНАЯ ПРАВКА: ширина ячейки считается по
+                            // самому ряду, а не по сетке из пяти колонок.
+                            //
+                            // Плитки занимают одну или две колонки, и в сумме
+                            // их 13 — последний ряд набирал только три колонки
+                            // из пяти и обрывался, оставляя пустоту справа.
+                            // Теперь ряд всегда делит всю ширину между своими
+                            // плитками, сохраняя их пропорцию 1:2.
+                            //
+                            // Ширина ряда = ячейка × колонки + промежуток ×
+                            // (колонки - 1), отсюда и формула.
+                            readonly property int rowColumns: {
+                                let total = 0;
+                                for (let i = 0; i < toggleRow.rowData.length; i += 1)
+                                    total += root.sizeForToggle(toggleRow.rowData[i]);
+                                return Math.max(1, total);
+                            }
+                            readonly property real rowCellWidth: {
+                                const available = togglePanel.width - root.togglePadding * 2;
+                                const forCells = available - root.toggleSpacing * (toggleRow.rowColumns - 1);
+                                return Math.max(root.baseCellHeight, forCells / toggleRow.rowColumns);
+                            }
+
                             spacing: root.toggleSpacing
 
                             Repeater {
@@ -374,7 +391,7 @@ WidgetPanel {
                                     expanded: toggleSize === 2
                                     editMode: root.editMode
                                     hasAltAction: root.hasAltActionForType(toggleType)
-                                    baseCellWidth: togglePanel.baseCellWidth
+                                    baseCellWidth: toggleRow.rowCellWidth
                                     baseCellHeight: root.baseCellHeight
                                     cellSpacing: root.toggleSpacing
                                     cellSize: toggleSize
