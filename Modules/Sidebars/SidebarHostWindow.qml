@@ -72,7 +72,9 @@ PanelWindow {
 
     screen: retainedScreen || fallbackScreen
     onScreenChanged: WidgetState.sidebarScreenName = screen ? screen.name : ""
-    visible: retainedScreen !== null || fallbackScreen !== null
+    // ЛОКАЛЬНАЯ ПРАВКА: окно во весь экран существовало всегда, даже когда
+    // обе панели закрыты, и держало буферы композитора впустую.
+    visible: (retainedScreen !== null || fallbackScreen !== null) && root.anySidebarOpen
     color: "transparent"
     exclusiveZone: 0
 

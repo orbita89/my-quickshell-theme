@@ -14,39 +14,28 @@ Item {
     property var screen: null
     property int currentIndex: 0
     property bool dragActive: false
-    readonly property var dashboardKeyholeGlassItems: dashboardContent.keyholeGlassItems
-    readonly property real dashboardKeyholeCenterOffset: dashboardContent.keyholeCenterOffset
-    readonly property real dashboardKeyholeWidth: dashboardContent.keyholeWidth
-    readonly property real dashboardKeyholeHeight: dashboardContent.keyholeHeight
+    // Вкладка Dashboard создаётся лениво, поэтому её может не быть.
+    readonly property var dashboard: dashboardLoader.item
+    readonly property var dashboardKeyholeGlassItems: root.dashboard ? root.dashboard.keyholeGlassItems : []
+    readonly property real dashboardKeyholeCenterOffset: root.dashboard ? root.dashboard.keyholeCenterOffset : 0
+    readonly property real dashboardKeyholeWidth: root.dashboard ? root.dashboard.keyholeWidth : 0
+    readonly property real dashboardKeyholeHeight: root.dashboard ? root.dashboard.keyholeHeight : 0
     // 10 — отступ панели вкладок сверху, 80 — её высота, ещё 10 — зазор до
     // содержимого; дальше начинается сам Dashboard со своими полями.
-    readonly property real dashboardKeyholeTopOffset: 100 + dashboardContent.keyholeTopOffset
+    readonly property real dashboardKeyholeTopOffset: 100 + (root.dashboard ? root.dashboard.keyholeTopOffset : 0)
+
+    // Пока вкладка не создана, островку нужен размер для анимации открытия —
+    // иначе он раскрылся бы в ноль и дёрнулся. Значения те же, что выдаёт
+    // DashboardContent: поля 20, колонка 392, промежуток 16, плашка 462.
+    readonly property real dashboardFallbackWidth: 910
 
     signal closeRequested
     signal avatarEditRequested
 
-    function finishCloudUploadDrop(addedCount) {
-        // Вкладка загрузки создаётся лениво: до первого открытия её нет.
-        if (cloudUploadLoader.item)
-            cloudUploadLoader.item.finishDrop(addedCount);
-    }
-
-    implicitWidth: currentIndex === 0 ? dashboardContent.implicitWidth : currentIndex === 2 ? 960 : currentIndex
-                                                                                              === 3 ? 960 :
-                                                                                                      760
-    // ЛОКАЛЬНАЯ ПРАВКА: панель погоды (была четвёртой) убрана, высота
-    // последней вкладки задана числом вместо weatherContent.height.
-    implicitHeight: 80 + 20 + (currentIndex === 0 ? 520 : currentIndex === 1 ? 480 : 480)
-
-    Shortcut {
-        sequence: "Tab"
-        onActivated: root.currentIndex = (root.currentIndex + 1) % 3
-    }
-
-    Shortcut {
-        sequence: "Shift+Tab"
-        onActivated: root.currentIndex = (root.currentIndex + 2) % 3
-    }
+    // Вкладки остаются в памяти после первого открытия. Выгружать их по
+    // таймеру я пробовал — не имеет смысла: после уничтожения объектов
+    // glibc не отдаёт кучу обратно системе, замер показал возврат всего
+    // 5 МБ из 27. Зато пересборка при каждом открытии давала бы рывок.
 
     RowLayout {
         id: tabBar
@@ -159,16 +148,27 @@ Item {
         anchors.bottom: parent.bottom
         anchors.topMargin: 10
 
-        DashboardContent {
-            id: dashboardContent
+        // Создаётся при первом открытии вкладки и отпускается, когда
+        // островок долго закрыт (см. releaseTimer ниже). Загрузка
+        // синхронная: вкладка открывается по умолчанию, и асинхронная
+        // давала бы скачок размера островка на первом кадре.
+        Loader {
+            id: dashboardLoader
+
+            property bool loadedOnce: false
 
             anchors.top: parent.top
             anchors.horizontalCenter: parent.horizontalCenter
-            screen: root.screen
-            visible: root.currentIndex === 0
-            opacity: visible ? 1 : 0
-            onCloseRequested: root.closeRequested()
-            onAvatarEditRequested: root.avatarEditRequested()
+            active: (root.visible && root.currentIndex === 0) || dashboardLoader.loadedOnce
+            visible: opacity > 0.01
+            opacity: root.currentIndex === 0 ? 1 : 0
+            onLoaded: dashboardLoader.loadedOnce = true
+
+            sourceComponent: DashboardContent {
+                screen: root.screen
+                onCloseRequested: root.closeRequested()
+                onAvatarEditRequested: root.avatarEditRequested()
+            }
 
             Behavior on opacity {
                 NumberAnimation {
@@ -192,7 +192,7 @@ Item {
 
             anchors.top: parent.top
             anchors.horizontalCenter: parent.horizontalCenter
-            active: root.currentIndex === 1 || mediaLoader.loadedOnce
+            active: (root.visible && root.currentIndex === 1) || mediaLoader.loadedOnce
             asynchronous: true
             visible: opacity > 0.01
             opacity: root.currentIndex === 1 ? 1 : 0
@@ -218,7 +218,7 @@ Item {
             anchors.horizontalCenter: parent.horizontalCenter
             width: parent.width * 0.95
             height: 480
-            active: root.currentIndex === 2 || cloudUploadLoader.loadedOnce
+            active: (root.visible && root.currentIndex === 2) || cloudUploadLoader.loadedOnce
             asynchronous: true
             visible: opacity > 0.01
             opacity: root.currentIndex === 2 ? 1 : 0

@@ -6,6 +6,14 @@ After=graphical-session.target
 Requisite=graphical-session.target
 
 [Service]
+# Память. У процесса 41 поток, и glibc заводит под каждый свою арену: с
+# ограничением до двух RSS падает примерно на 7 МБ. Пороги trim и mmap
+# заставляют возвращать освобождённое системе, а крупные блоки брать через
+# mmap — ещё около 12 МБ. Замерять: scripts/memory-report.sh
+Environment=MALLOC_ARENA_MAX=2
+Environment=MALLOC_TRIM_THRESHOLD_=131072
+Environment=MALLOC_MMAP_THRESHOLD_=131072
+
 ExecCondition=/bin/sh -c '[ -n "$WAYLAND_DISPLAY" ]'
 # Запуск через обёртку ~/.local/bin/quickshell: она подставляет пути к Qt 6.9.3
 # из ~/.local/opt/Qt, к QML-модулям темы и к libcava. Системного Qt (6.4.2)

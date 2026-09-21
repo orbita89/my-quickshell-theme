@@ -51,7 +51,7 @@
       "transitionWave": "20,20"
     },
     "overview": {
-      "enabled": true,
+      "enabled": false,
       "useDesktopWallpaper": true,
       "path": "",
       "fillMode": "Fill",
