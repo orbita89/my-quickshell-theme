@@ -7,16 +7,11 @@ Item {
 
     property var panelScreen: null
     readonly property bool onLeft: PersonalizationConfig.quickSettingsSidebarSide === "left"
-    // ЛОКАЛЬНАЯ ПРАВКА: та же ширина, что у Dashboard. Обе панели выезжают
-    // с одного края и подменяют друг друга; когда быстрые настройки были на
-    // 120 px уже, при переключении справа открывалась полоса рабочего стола.
-    property real sidebarWidth: Math.min(Metrics.sidebarWidthComfortable, Math.max(0, width - gap * 2))
+    property real sidebarWidth: Math.min(Metrics.sidebarWidthCompact, Math.max(0, width - gap * 2))
     property int gap: Math.min(Metrics.pageMargin, Math.max(Metrics.spacingS, Math.min(width, height)
                                                             * 0.025))
     readonly property alias blurBackgroundItem: panelSurface
-    // ЛОКАЛЬНАЯ ПРАВКА: во всю высоту, как Dashboard — иначе снизу оставался
-    // просвет там, где только что была вторая панель.
-    readonly property int panelTargetHeight: Math.max(0, height - sidebarY - gap)
+    property int panelTargetHeight: 640
     // The host window already starts inside layer-shell's usable geometry.
     readonly property int sidebarY: gap
     readonly property real closedSlideOffset: (onLeft ? -1 : 1) * (sidebarWidth + gap)
@@ -172,7 +167,7 @@ Item {
         x: (root.onLeft ? root.gap : root.width - root.sidebarWidth - root.gap) + animController.slideOffset
         y: root.sidebarY
         width: root.sidebarWidth
-        height: root.panelTargetHeight
+        height: Math.min(root.panelTargetHeight, Math.max(0, root.height - root.sidebarY - root.gap))
         color: BlurService.backgroundColor(Appearance.colors.colLayer0)
         radius: Appearance.rounding.large
     }
