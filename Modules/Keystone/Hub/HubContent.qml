@@ -37,6 +37,34 @@ Item {
     // glibc не отдаёт кучу обратно системе, замер показал возврат всего
     // 5 МБ из 27. Зато пересборка при каждом открытии давала бы рывок.
 
+    function finishCloudUploadDrop(addedCount) {
+        // Вкладка загрузки создаётся лениво: до первого открытия её нет.
+        if (cloudUploadLoader.item)
+            cloudUploadLoader.item.finishDrop(addedCount);
+    }
+
+    // Размер островка в режиме хаба берётся отсюда (KeystoneSurface передаёт
+    // его в раскладку как hubWidth/hubHeight). Пока вкладка Dashboard не
+    // создана, ширину даёт запасное значение — иначе островок раскрылся бы
+    // в нулевой размер и на экране не появилось бы ничего.
+    implicitWidth: currentIndex === 0 ? (root.dashboard ? root.dashboard.implicitWidth : root.dashboardFallbackWidth) : currentIndex
+                                                                                              === 2 ? 960 : currentIndex
+                                                                                              === 3 ? 960 :
+                                                                                                      760
+    // ЛОКАЛЬНАЯ ПРАВКА: панель погоды (была четвёртой) убрана, высота
+    // последней вкладки задана числом вместо weatherContent.height.
+    implicitHeight: 80 + 20 + (currentIndex === 0 ? 520 : currentIndex === 1 ? 480 : 480)
+
+    Shortcut {
+        sequence: "Tab"
+        onActivated: root.currentIndex = (root.currentIndex + 1) % 3
+    }
+
+    Shortcut {
+        sequence: "Shift+Tab"
+        onActivated: root.currentIndex = (root.currentIndex + 2) % 3
+    }
+
     RowLayout {
         id: tabBar
 
