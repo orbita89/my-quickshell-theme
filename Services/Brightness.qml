@@ -59,11 +59,17 @@ Singleton {
         }
     }
 
+    // ЛОКАЛЬНАЯ ПРАВКА: вместо прямого вызова brightnessctl — свой скрипт
+    // ~/.local/bin/backlight-set.
+    //
+    // brightnessctl здесь не работает: udev отдаёт файл
+    // /sys/class/backlight/*/brightness группе video, а пользователь в ней не
+    // состоит, поэтому подсветка не менялась вовсе. Скрипт сначала пробует
+    // brightnessctl, а если тот не смог — просит logind, которому права не
+    // нужны. Подробности и причина в комментарии внутри скрипта.
     function backlightCommand(percent) {
-        const command = ["brightnessctl", "--class", "backlight"];
-        if (BacklightState.deviceName.length > 0)
-            command.push("--device", BacklightState.deviceName);
-        return command.concat(["s", percent + "%", "--quiet"]);
+        const device = BacklightState.deviceName.length > 0 ? BacklightState.deviceName : "-";
+        return ["backlight-set", device, String(percent)];
     }
 
     function clampBrightness(value, allowZero) {
