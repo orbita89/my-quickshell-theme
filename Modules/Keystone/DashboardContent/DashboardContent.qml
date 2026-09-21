@@ -15,10 +15,14 @@ Item {
     // панели заметной полосой, а сверху и снизу съедало высоту, которой
     // не хватало быстрым настройкам.
     readonly property real layoutMargin: 20
-    readonly property real layoutSpacing: 24
-    readonly property real keyholeWidth: 440
-    readonly property real keyholeLeftMargin: 14
-    readonly property real keyholeLeft: layoutMargin + profileColumnWidth + layoutSpacing + keyholeLeftMargin
+    // ЛОКАЛЬНАЯ ПРАВКА: было 24 плюс ещё 14 отступа у самой плашки — между
+    // ней и календарём набегало 38. Теперь промежуток один и такой же, как
+    // между карточками внутри левой колонки.
+    readonly property real layoutSpacing: 16
+    // Плашка забрала освободившиеся 22 px: её правый край остался на месте,
+    // сдвинулся только левый.
+    readonly property real keyholeWidth: 462
+    readonly property real keyholeLeft: layoutMargin + profileColumnWidth + layoutSpacing
     readonly property real keyholeCenterOffset: keyholeLeft - implicitWidth / 2
     // Вырез в фоне островка рисуется по этим числам (KeystoneSurface.qml),
     // раньше они были продублированы там вручную.
@@ -71,7 +75,6 @@ Item {
 
                 width: root.keyholeWidth
                 anchors.left: parent.left
-                anchors.leftMargin: root.keyholeLeftMargin
                 anchors.top: parent.top
                 anchors.bottom: parent.bottom
                 screen: root.screen
