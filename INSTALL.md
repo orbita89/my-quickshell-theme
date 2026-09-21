@@ -177,6 +177,11 @@ sudo apt install git cmake ninja-build pkgconf build-essential python3-venv \
 **Тема btop.** Чтобы btop перекрашивался вместе с оболочкой, в
 `~/.config/btop/btop.conf` поставьте `color_theme = "matugen"`.
 
+**Шрифт значков.** После установки стоит прогнать
+`scripts/subset-icon-font.sh` — он урежет Material Symbols с 14 МБ до 1.6 МБ,
+оставив только те иконки, которые оболочка рисует. Не обязательно, но
+экономит около 15 МБ памяти в долгой сессии.
+
 **Шрифт интерфейса.** В настройках стоит `LXGW WenKai GB Screen`. Если его
 нет, подставляется `sans-serif` — работает, но выглядит иначе. Поменять
 можно в настройках оформления.
