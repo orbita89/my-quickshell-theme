@@ -247,21 +247,34 @@ Item {
                 height: 220
                 y: 10
 
-                RadialSpectrum {
+                // ЛОКАЛЬНАЯ ПРАВКА: визуализатор существует только когда
+                // страница на виду.
+                //
+                // Раньше он был обычным элементом с привязкой
+                // values: AudioSpectrum.values. Значения спектра меняются
+                // около шестидесяти раз в секунду, а привязки в QML
+                // пересчитываются и у невидимых элементов: скрытая вкладка
+                // Media пересобирала 45 лучей вхолостую и стоила 13% ядра,
+                // пока играет музыка. Загрузчик снимает и сами привязки.
+                Loader {
                     anchors.fill: parent
-                    values: AudioSpectrum.values
-                    barCount: AudioSpectrum.bars
-                    innerRadius: 70
-                    maxMagnitude: 36
-                    strokeWidth: 4
-                    strokeColor: root.dynamicThemeColor
-                    valueScale: 1.08
-                    opacity: root.isActive && AudioSpectrum.available ? 1 : 0.35
+                    active: root.isActive
 
-                    Behavior on opacity {
-                        NumberAnimation {
-                            duration: 250
-                            easing.type: Easing.OutCubic
+                    sourceComponent: RadialSpectrum {
+                        values: AudioSpectrum.values
+                        barCount: AudioSpectrum.bars
+                        innerRadius: 70
+                        maxMagnitude: 36
+                        strokeWidth: 4
+                        strokeColor: root.dynamicThemeColor
+                        valueScale: 1.08
+                        opacity: AudioSpectrum.available ? 1 : 0.35
+
+                        Behavior on opacity {
+                            NumberAnimation {
+                                duration: 250
+                                easing.type: Easing.OutCubic
+                            }
                         }
                     }
                 }

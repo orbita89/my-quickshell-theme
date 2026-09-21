@@ -188,7 +188,7 @@ Item {
             anchors.top: parent.top
             anchors.horizontalCenter: parent.horizontalCenter
             active: (root.visible && root.currentIndex === 0) || dashboardLoader.loadedOnce
-            visible: opacity > 0.01
+            visible: root.visible && opacity > 0.01
             opacity: root.currentIndex === 0 ? 1 : 0
             onLoaded: dashboardLoader.loadedOnce = true
 
@@ -222,7 +222,7 @@ Item {
             anchors.horizontalCenter: parent.horizontalCenter
             active: (root.visible && root.currentIndex === 1) || mediaLoader.loadedOnce
             asynchronous: true
-            visible: opacity > 0.01
+            visible: root.visible && opacity > 0.01
             opacity: root.currentIndex === 1 ? 1 : 0
             onLoaded: mediaLoader.loadedOnce = true
 
@@ -248,7 +248,7 @@ Item {
             height: 480
             active: (root.visible && root.currentIndex === 2) || cloudUploadLoader.loadedOnce
             asynchronous: true
-            visible: opacity > 0.01
+            visible: root.visible && opacity > 0.01
             opacity: root.currentIndex === 2 ? 1 : 0
             onLoaded: cloudUploadLoader.loadedOnce = true
 

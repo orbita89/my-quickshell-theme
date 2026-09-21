@@ -47,6 +47,14 @@ case " $* " in
         ;;
 esac
 
+# На гибридных ноутбуках libglvnd перебирает поставщиков EGL по порядку
+# приоритета, и NVIDIA (10_nvidia.json) идёт раньше Mesa (50_mesa.json).
+# Панель всё равно рисуется на встроенной Intel, а библиотеки NVIDIA при этом
+# отображаются в память: замер показал 38 МБ и 51 отображение впустую.
+# Оставляем только Mesa, если её файл на месте.
+mesa_egl="/usr/share/glvnd/egl_vendor.d/50_mesa.json"
+[ -f "$mesa_egl" ] && export __EGL_VENDOR_LIBRARY_FILENAMES="$mesa_egl"
+
 # Движок: своей сборки или системный пакет. Имя quickshell без пути брать
 # нельзя — в PATH по нему лежит эта же обёртка, получилась бы рекурсия.
 for engine in "$HOME/.local/bin/quickshell-bin" /usr/bin/quickshell /usr/local/bin/quickshell; do

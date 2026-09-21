@@ -87,12 +87,18 @@ Item {
             }
         }
 
+        // ЛОКАЛЬНАЯ ПРАВКА: добавлена проверка видимости.
+        //
+        // Анимация шла, пока играет музыка, независимо от того, видно её или
+        // нет. Путь волны — Shape, и он пересобирается строкой в JS на каждом
+        // кадре: скрытая вкладка Media жгла 15% ядра впустую. Соседний
+        // Behavior on playheadX проверку видимости уже имел.
         NumberAnimation on wavePhase {
             from: 0
             to: Math.PI * 2
             duration: root.phaseDuration
             loops: Animation.Infinite
-            running: root.isPlaying
+            running: root.isPlaying && root.visible
         }
 
         Shape {
