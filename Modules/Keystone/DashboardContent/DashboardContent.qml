@@ -7,16 +7,16 @@ Item {
 
     property var screen: null
     readonly property var keyholeGlassItems: keyholeCardCarousel.blurBackgroundItems
-    readonly property real clockColumnWidth: 160
+    // ЛОКАЛЬНАЯ ПРАВКА: колонка с большими часами убрана — время и так есть
+    // в плашке островка. Освободившиеся 184 px (160 колонка + 24 промежуток)
+    // частично ушли в правую карточку: она была 340, потом 400, теперь 440.
     readonly property real profileColumnWidth: 392
     readonly property real layoutMargin: 32
     readonly property real layoutSpacing: 24
-    // ЛОКАЛЬНАЯ ПРАВКА: плашка была 340 и отстояла от календаря на 30 —
-    // вместе с промежутком колонок это давало 54 px пустоты, а справа от
-    // самой плашки оставалось ещё 38. Теперь она шире, а отступ меньше.
-    readonly property real keyholeWidth: 400
+    readonly property real keyholeWidth: 440
     readonly property real keyholeLeftMargin: 14
-    readonly property real keyholeCenterOffset: layoutMargin + clockColumnWidth + layoutSpacing + profileColumnWidth + layoutSpacing + keyholeLeftMargin - implicitWidth / 2
+    readonly property real keyholeLeft: layoutMargin + profileColumnWidth + layoutSpacing + keyholeLeftMargin
+    readonly property real keyholeCenterOffset: keyholeLeft - implicitWidth / 2
     // Вырез в фоне островка рисуется по этим числам (KeystoneSurface.qml),
     // раньше они были продублированы там вручную.
     readonly property real keyholeHeight: implicitHeight - layoutMargin * 2
@@ -27,21 +27,13 @@ Item {
 
     // Ширина складывается из колонок, иначе её пришлось бы пересчитывать
     // руками при каждом изменении плашки.
-    implicitWidth: layoutMargin + clockColumnWidth + layoutSpacing + profileColumnWidth + layoutSpacing
-                   + keyholeLeftMargin + keyholeWidth + layoutMargin
+    implicitWidth: keyholeLeft + keyholeWidth + layoutMargin
     implicitHeight: 520
 
     RowLayout {
         anchors.fill: parent
         anchors.margins: root.layoutMargin
         spacing: root.layoutSpacing
-
-        DashboardClock {
-            Layout.minimumWidth: root.clockColumnWidth
-            Layout.preferredWidth: root.clockColumnWidth
-            Layout.maximumWidth: root.clockColumnWidth
-            Layout.fillHeight: true
-        }
 
         ColumnLayout {
             Layout.minimumWidth: root.profileColumnWidth
