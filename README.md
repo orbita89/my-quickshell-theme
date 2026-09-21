@@ -23,6 +23,33 @@
 | M3Shapes | `~/.local/lib/qt6/qml/M3Shapes` | QML-плагин фигур |
 | cliphist | `~/.local/bin/cliphist` (обёртка) | чинит несовместимость с версией 0.4.0 из Ubuntu |
 | backlight-set | `~/.local/bin/backlight-set` | яркость подсветки: brightnessctl здесь без прав |
+| matugen 4.2.0 | `~/.local/bin/matugen` | палитра из обоев; пакета в Ubuntu нет |
+
+### Палитра из обоев (matugen)
+
+Ставится из crates.io, root не нужен:
+
+```sh
+cargo install matugen --root ~/.local --locked
+```
+
+Без него оболочка молча берёт встроенные цвета, а плитка «Appearance» в
+быстрых настройках пишет режим в конфиг и ничего не меняет. В логе это видно
+как `Read of .../generated/clavis/colors.json failed`.
+
+Палитра пересчитывается сама при смене обоев и при переключении светлой и
+тёмной темы. Из шаблонов оставлен только `btop` — остальные (cava, kitty,
+yazi) выключены, этих программ в системе нет. Включаются в настройках
+оформления.
+
+Чтобы btop пользовался сгенерированной темой, в `~/.config/btop/btop.conf`
+стоит `color_theme = "matugen"` (было `"Default"`).
+
+Пересчитать вручную:
+
+```sh
+scripts/theme/generate_matugen_colors.sh --image ПУТЬ --mode dark --dry-run
+```
 
 ### Native-модули
 
