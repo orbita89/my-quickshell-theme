@@ -265,12 +265,16 @@ Item {
         property real contentMargin: 14
         readonly property Item glassBackgroundItem: glassBackground
 
+        // ЛОКАЛЬНАЯ ПРАВКА: стекло занимает весь вырез. Раньше оно было
+        // вложено на 10 px внутрь, а вырез в фоне панели прорезан на полный
+        // размер — вокруг карточки оставалось сквозное кольцо, через которое
+        // просвечивал рабочий стол. Радиус 24 — как у самого выреза
+        // (dashboardKeyholeCutout в KeystoneSurface.qml).
         Rectangle {
             id: glassBackground
 
             anchors.fill: parent
-            anchors.margins: 10
-            radius: 20
+            radius: 24
             color: Appearance.applyAlpha(Appearance.colors.colLayer0, root.glassAlpha)
         }
 
