@@ -16,8 +16,9 @@
 # `rclt`, а не через обычные `liga`. Если оставить только `liga`, из шрифта
 # пропадут все подстановки и вместо иконок будут видны их названия буквами.
 #
-# Полный шрифт сохраняется рядом как material-symbols-rounded-full.ttf и
-# служит источником для пересборки.
+# Полный шрифт хранится в ~/.local/opt/material-symbols и служит источником
+# для пересборки. Именно вне каталога шрифтов: fontconfig ищет по имени
+# семейства, и две версии с одним именем спорят между собой.
 #
 # Использование:
 #   scripts/subset-icon-font.sh            пересобрать и поставить
@@ -29,7 +30,11 @@ set -eu
 root=$(cd "$(dirname "$0")/.." && pwd)
 font_dir="$HOME/.local/share/fonts/material-symbols"
 installed="$font_dir/material-symbols-rounded.ttf"
-full="$font_dir/material-symbols-rounded-full.ttf"
+# Полный шрифт держим ВНЕ каталога шрифтов. Если положить его рядом,
+# fontconfig увидит два файла с одним именем семейства «Material Symbols
+# Rounded» и выберет полный — урезанный окажется бесполезен. Я на это
+# наступил: экономии не было, пока копия лежала в font_dir.
+full="$HOME/.local/opt/material-symbols/material-symbols-rounded-full.ttf"
 venv="$HOME/.local/opt/fonttools-venv"
 mode=${1:-}
 
@@ -43,13 +48,45 @@ if [ "$mode" = "--restore" ]; then
     exit 0
 fi
 
-# Первый запуск: то, что сейчас установлено, и есть полный шрифт.
-[ -f "$full" ] || cp "$installed" "$full"
-
 if [ ! -x "$venv/bin/pyftsubset" ]; then
     echo "Ставлю fonttools в $venv"
     python3 -m venv "$venv"
     "$venv/bin/pip" install -q fonttools brotli
+fi
+
+mkdir -p "$(dirname "$full")"
+
+# Источником всегда служит $full. Если его ещё нет, им становится
+# установленный шрифт — но только после проверки, что он действительно
+# полный. Без этой проверки повторный запуск взял бы за источник уже
+# урезанный файл и стёр бы всё остальное: я так и потерял оригинал.
+if [ ! -f "$full" ]; then
+    if "$venv/bin/python" - "$installed" <<'PY'
+import sys
+from fontTools.ttLib import TTFont
+font = TTFont(sys.argv[1])
+order = font.getGlyphOrder()
+full_enough = len(order) > 3000
+named = any(not n.startswith('glyph') for n in order[3:20])
+sys.exit(0 if (full_enough and named) else 1)
+PY
+    then
+        cp "$installed" "$full"
+        echo "Сохранил полный шрифт как источник: $full"
+    else
+        echo "Установленный шрифт уже урезан, а источника нет: $full" >&2
+        echo "Положите туда полный Material Symbols Rounded и запустите снова." >&2
+        exit 1
+    fi
+fi
+
+# Копия из прошлых версий скрипта лежала в каталоге шрифтов, и fontconfig
+# выбирал её вместо урезанной — экономии не было. Убираем, но только когда
+# источник уже на месте.
+stale="$font_dir/material-symbols-rounded-full.ttf"
+if [ -f "$stale" ] && [ -f "$full" ]; then
+    rm -f "$stale"
+    echo "Убрал лишнюю копию из каталога шрифтов: $stale"
 fi
 
 glyphs=$(mktemp)
