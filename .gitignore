@@ -1,3 +1,9 @@
 __pycache__/
 *.pyc
 *.orig
+
+# Дерево сборки native-модулей (scripts/build-native.sh)
+build/
+
+# Файлы переводов создаёт сборка (lupdate по нашим же исходникам)
+i18n/

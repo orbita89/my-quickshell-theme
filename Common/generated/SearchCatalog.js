@@ -997,19 +997,6 @@ var catalog = {
       "anchor": true,
       "context": "AdvancedPage",
       "icon": "tune",
-      "id": "advanced.section.map-and-weather-services",
-      "path": [
-        "advanced"
-      ],
-      "route": "advanced",
-      "source": "AdvancedPage.qml",
-      "title": "Map and weather services"
-    },
-    {
-      "aliases": [],
-      "anchor": true,
-      "context": "AdvancedPage",
-      "icon": "tune",
       "id": "advanced.section.cloud-storage",
       "path": [
         "advanced"
@@ -1495,34 +1482,6 @@ var catalog = {
       "anchor": true,
       "context": "LanguageAndRegionPage",
       "icon": "language",
-      "id": "general.language-region.section.region-weather-location",
-      "path": [
-        "general",
-        "language-region"
-      ],
-      "route": "general.language-region",
-      "source": "LanguageAndRegionPage.qml",
-      "title": "Region & weather location"
-    },
-    {
-      "aliases": [],
-      "anchor": true,
-      "context": "LanguageAndRegionPage",
-      "icon": "language",
-      "id": "general.language-region.section.weather-map",
-      "path": [
-        "general",
-        "language-region"
-      ],
-      "route": "general.language-region",
-      "source": "LanguageAndRegionPage.qml",
-      "title": "Weather map"
-    },
-    {
-      "aliases": [],
-      "anchor": true,
-      "context": "LanguageAndRegionPage",
-      "icon": "language",
       "id": "general.language-region.section.units",
       "path": [
         "general",
@@ -1818,7 +1777,6 @@ function title(id) {
     case "account.section.keyboard-shortcuts": return qsTranslate("AccountPage", "Keyboard shortcuts");
     case "account.section.cloud-storage": return qsTranslate("AccountPage", "Cloud storage");
     case "account.section.personalization": return qsTranslate("AccountPage", "Personalization");
-    case "advanced.section.map-and-weather-services": return qsTranslate("AdvancedPage", "Map and weather services");
     case "advanced.section.cloud-storage": return qsTranslate("AdvancedPage", "Cloud storage");
     case "advanced.section.matugen-template-generation": return qsTranslate("AdvancedPage", "Matugen template generation");
     case "general.autostart.section.add-application-to-autostart": return qsTranslate("AutostartPage", "Add application to autostart");
@@ -1854,8 +1812,6 @@ function title(id) {
     case "keystone.section.horizontal-clock": return qsTranslate("KeystonePage", "Horizontal clock");
     case "keystone.section.recording": return qsTranslate("KeystonePage", "Recording");
     case "general.language-region.section.language": return qsTranslate("LanguageAndRegionPage", "Language");
-    case "general.language-region.section.region-weather-location": return qsTranslate("LanguageAndRegionPage", "Region & weather location");
-    case "general.language-region.section.weather-map": return qsTranslate("LanguageAndRegionPage", "Weather map");
     case "general.language-region.section.units": return qsTranslate("LanguageAndRegionPage", "Units");
     case "general.language-region.section.time-date": return qsTranslate("LanguageAndRegionPage", "Time & date");
     case "general.network.section.wired-connections": return qsTranslate("NetworkPage", "Wired connections");
