@@ -10,6 +10,14 @@ clavis_paths_init() {
     local cache_base=${XDG_CACHE_HOME:-$clavis_home/.cache}
     local runtime_base=${XDG_RUNTIME_DIR:-$cache_base/runtime}
 
+    # ЛОКАЛЬНАЯ ПРАВКА: настройки живут в репозитории, в config/. Без этого
+    # скрипт, запущенный из терминала, читал бы ~/.config/clavis, а оболочка —
+    # репозиторий, и палитра генерировалась бы мимо.
+    local repo_config
+    repo_config=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/../.." && pwd)/config
+    if [ -z "${CLAVIS_CONFIG_HOME:-}" ] && [ -d "$repo_config" ]; then
+        CLAVIS_CONFIG_HOME=$repo_config
+    fi
     CLAVIS_CONFIG_HOME=${CLAVIS_CONFIG_HOME:-$config_base/clavis}
     CLAVIS_DATA_HOME=${CLAVIS_DATA_HOME:-$data_base/clavis}
     CLAVIS_STATE_HOME=${CLAVIS_STATE_HOME:-$state_base/clavis}

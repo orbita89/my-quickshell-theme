@@ -25,4 +25,19 @@ export QML_IMPORT_PATH="$QML2_IMPORT_PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export CLAVIS_KEY="$HOME/.local/bin/key"
 
+# Настройки этой оболочки лежат в самом репозитории (config/), а не в
+# ~/.config/clavis: так они попадают в коммиты вместе с кодом и не остаются
+# на одной машине. Путь вычисляется от самого скрипта, поэтому репозиторий
+# можно положить куда угодно.
+#
+# Подменяем только для конфигурации "my". Апстримная копия Clavis, если её
+# когда-нибудь запустят этой же обёрткой, останется при своих настройках.
+self=$(readlink -f "$0" 2>/dev/null || echo "$0")
+repo=${self%/system/bin/*}
+case " $* " in
+    *" -c my "*|*" --config my "*)
+        [ -d "$repo/config" ] && export CLAVIS_CONFIG_HOME="$repo/config"
+        ;;
+esac
+
 exec "$HOME/.local/bin/quickshell-bin" "$@"

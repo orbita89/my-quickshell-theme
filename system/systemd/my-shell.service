@@ -16,10 +16,10 @@ ExecCondition=/bin/sh -c '[ -n "$WAYLAND_DISPLAY" ]'
 # один такой процесс с модулем gpu съедал 58% ядра и не давал заснуть
 # дискретной видеокарте. KillMode=control-group убирает только тех, кто
 # внутри cgroup службы, — а сироты из сессии остаются.
-ExecStartPre=-/usr/bin/pkill --full "^/home/dev/\\.local/bin/keytop-bin value stream"
-ExecStart=/home/dev/.local/bin/quickshell -c my
-ExecReload=/home/dev/.local/bin/quickshell -c my ipc call shell reload
-ExecStopPost=-/usr/bin/pkill --full "^/home/dev/\\.local/bin/keytop-bin value stream"
+ExecStartPre=-/usr/bin/pkill --full "^%h/\\.local/bin/keytop-bin value stream"
+ExecStart=%h/.local/bin/quickshell -c my
+ExecReload=%h/.local/bin/quickshell -c my ipc call shell reload
+ExecStopPost=-/usr/bin/pkill --full "^%h/\\.local/bin/keytop-bin value stream"
 Restart=on-failure
 RestartSec=3
 
