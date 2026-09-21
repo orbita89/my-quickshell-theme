@@ -1,0 +1,32 @@
+#!/bin/sh
+# Обёртка над /usr/bin/cliphist ради одной несовместимости.
+#
+# key-cli (а через него — буфер обмена в Clavis) декодирует запись так:
+#     printf '255' | cliphist decode
+# То есть подаёт на вход голый идентификатор. Свежие версии cliphist это
+# понимают, а в Ubuntu 24.04 стоит 0.4.0, которая требует строку целиком —
+# «id<TAB>превью», иначе отвечает:
+#     error in "decode": decoding: extracting id: input not prefixed with id
+#
+# Здесь голый id достраивается до полной строки через cliphist list, всё
+# остальное уходит в настоящий cliphist без изменений.
+#
+# Обёртка перестанет быть нужной, когда в системе появится cliphist новее
+# 0.4.0 — тогда этот файл можно просто удалить.
+
+REAL=/usr/bin/cliphist
+
+if [ "$1" != "decode" ]; then
+    exec "$REAL" "$@"
+fi
+
+input=$(cat)
+payload=$input
+
+# Достраиваем только голый номер; строку с табуляцией отдаём как есть.
+if printf '%s' "$input" | grep -qE '^[0-9]+$'; then
+    line=$("$REAL" list | grep -m1 -P "^$input\t")
+    [ -n "$line" ] && payload=$line
+fi
+
+printf '%s' "$payload" | "$REAL" "$@"

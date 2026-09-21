@@ -1,0 +1,9 @@
+#!/bin/sh
+# Обёртка над keytop (системный монитор Clavis).
+#
+# Собран против Qt 6.9.3 из ~/.local/opt/Qt; системный Qt в Ubuntu 24.04 —
+# 6.4.2, и без этой подстановки запуск падает с «version Qt_6.9 not found».
+QTROOT="$HOME/.local/opt/Qt/6.9.3/gcc_64"
+export LD_LIBRARY_PATH="$QTROOT/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+
+exec "$HOME/.local/bin/keytop-bin" "$@"

@@ -1,0 +1,27 @@
+[Unit]
+Description=Моя оболочка на Quickshell
+Documentation=https://quickshell.org/
+PartOf=graphical-session.target
+After=graphical-session.target
+Requisite=graphical-session.target
+
+[Service]
+ExecCondition=/bin/sh -c '[ -n "$WAYLAND_DISPLAY" ]'
+# Запуск через обёртку ~/.local/bin/quickshell: она подставляет пути к Qt 6.9.3
+# из ~/.local/opt/Qt, к QML-модулям темы и к libcava. Системного Qt (6.4.2)
+# для Quickshell недостаточно — ему нужен минимум 6.6, а теме 6.9.
+# Зачистка хвостов перед запуском. Оболочка держит keytop как долгоживущий
+# поток данных для системного монитора. Если прошлый экземпляр оболочки умер
+# резко или был запущен не этой службой, его keytop остаётся жить сиротой:
+# один такой процесс с модулем gpu съедал 58% ядра и не давал заснуть
+# дискретной видеокарте. KillMode=control-group убирает только тех, кто
+# внутри cgroup службы, — а сироты из сессии остаются.
+ExecStartPre=-/usr/bin/pkill --full "^/home/dev/\\.local/bin/keytop-bin value stream"
+ExecStart=/home/dev/.local/bin/quickshell -c my
+ExecReload=/home/dev/.local/bin/quickshell -c my ipc call shell reload
+ExecStopPost=-/usr/bin/pkill --full "^/home/dev/\\.local/bin/keytop-bin value stream"
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=graphical-session.target

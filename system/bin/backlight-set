@@ -1,0 +1,103 @@
+#!/bin/sh
+# Яркость подсветки экрана без прав root.
+#
+# Зачем нужен. Оболочка звала `brightnessctl`, а он здесь не работает:
+# udev-правило /usr/lib/udev/rules.d/90-brightnessctl.rules отдаёт файл
+# /sys/class/backlight/*/brightness группе video с правом записи, а
+# пользователь dev в этой группе не состоит. brightnessctl печатает
+# «You should run this program with root privileges» и ничего не меняет —
+# ползунок яркости в панели не двигал подсветку.
+#
+# Что делает. Сначала пробует brightnessctl: если когда-нибудь появится
+# членство в группе video или setuid, путь останется штатным. Если не вышло —
+# просит logind выставить яркость через D-Bus. Так это делают GNOME и KDE:
+# systemd-logind пишет в sysfs от своего имени, права пользователю не нужны.
+#
+# Почему не `session/self`. Оболочка запускается пользовательской службой
+# systemd, а та живёт вне сессии входа, поэтому короткий путь
+# /org/freedesktop/login1/session/self не разрешается. Идентификатор
+# графической сессии берём у logind и превращаем в путь объекта через
+# GetSession.
+#
+# Использование:
+#   backlight-set <устройство|-> <процент>
+#   backlight-set intel_backlight 40      выставить 40%
+#   backlight-set - 40                    устройство выбрать самому
+#   backlight-set - +10                   прибавить 10 процентных пунктов
+#   backlight-set - -10                   убавить
+
+set -eu
+
+device="${1:--}"
+percent="${2:-}"
+
+if [ -z "$percent" ]; then
+    echo "Использование: ${0##*/} <устройство|-> <процент>" >&2
+    exit 2
+fi
+
+if [ "$device" = "-" ] || [ -z "$device" ]; then
+    for candidate in /sys/class/backlight/*; do
+        [ -e "$candidate/brightness" ] || continue
+        device="${candidate##*/}"
+        break
+    done
+fi
+
+base="/sys/class/backlight/$device"
+if [ ! -r "$base/max_brightness" ]; then
+    # Имя пришло от оболочки и может не совпадать с тем, что есть в системе —
+    # тогда берём первую подсветку, а не падаем.
+    for candidate in /sys/class/backlight/*; do
+        [ -e "$candidate/brightness" ] || continue
+        device="${candidate##*/}"
+        base="$candidate"
+        break
+    done
+fi
+if [ ! -r "$base/max_brightness" ]; then
+    echo "Подсветка не найдена в /sys/class/backlight" >&2
+    exit 1
+fi
+
+# Относительный шаг нужен клавишам яркости: они прибавляют и убавляют,
+# а не выставляют значение.
+case "$percent" in
+    +*|-*)
+        max_now=$(cat "$base/max_brightness")
+        now=$(cat "$base/actual_brightness" 2>/dev/null || cat "$base/brightness")
+        current=$((now * 100 / max_now))
+        percent=$((current + $(printf '%.0f' "$percent")))
+        ;;
+esac
+
+# Проценты приходят дробными (ползунок), sysfs ждёт целое.
+percent=$(printf '%.0f' "$percent")
+[ "$percent" -lt 0 ] && percent=0
+[ "$percent" -gt 100 ] && percent=100
+
+if brightnessctl --class backlight --device "$device" --quiet s "$percent%" 2>/dev/null; then
+    # Проверяем результат: brightnessctl возвращает 0 и когда записать не смог.
+    if [ "$(cat "$base/brightness")" != "$(cat "$base/actual_brightness" 2>/dev/null || echo x)" ] ||
+       [ "$percent" -eq 0 ]; then
+        exit 0
+    fi
+fi
+
+max=$(cat "$base/max_brightness")
+value=$((max * percent / 100))
+
+session=$(loginctl show-user "$(id -u)" --property=Display --value 2>/dev/null || true)
+if [ -z "$session" ]; then
+    # Запасной путь: первая активная графическая сессия пользователя.
+    session=$(loginctl list-sessions --no-legend 2>/dev/null | awk -v u="$(id -un)" '$3 == u {print $1; exit}')
+fi
+[ -n "$session" ] || { echo "Не нашёл сессию logind" >&2; exit 1; }
+
+object=$(busctl call org.freedesktop.login1 /org/freedesktop/login1 \
+    org.freedesktop.login1.Manager GetSession s "$session" |
+    sed -n 's/^o "\(.*\)"$/\1/p')
+[ -n "$object" ] || { echo "Не нашёл объект сессии $session" >&2; exit 1; }
+
+exec busctl call org.freedesktop.login1 "$object" \
+    org.freedesktop.login1.Session SetBrightness ssu backlight "$device" "$value"

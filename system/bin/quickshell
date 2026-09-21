@@ -1,0 +1,28 @@
+#!/bin/sh
+# Обёртка над quickshell.
+#
+# Движок собран против Qt 6.8 из ~/.local/opt/Qt (в Ubuntu 24.04 системный Qt
+# версии 6.4.2, а Quickshell требует минимум 6.6 — см. QT_MIN_VERSION в его
+# CMakeLists.txt). RPATH бинарника на этот Qt не указывает, поэтому пути к
+# библиотекам, плагинам и QML-модулям задаются здесь.
+QTROOT="$HOME/.local/opt/Qt/6.9.3/gcc_64"
+
+# ~/.local/lib — libcava.so, собранная из исходников cava 0.9.1: в Ubuntu
+# такой библиотеки нет (в Arch это AUR-пакет libcava), а плагин Clavis.Cava
+# линкуется с ней. Версия именно 0.9.1: в 1.0.0 у cava_init появился лишний
+# аргумент, и сборка плагина падает.
+export LD_LIBRARY_PATH="$HOME/.local/lib:$QTROOT/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+export QT_PLUGIN_PATH="$QTROOT/plugins${QT_PLUGIN_PATH:+:$QT_PLUGIN_PATH}"
+# ~/.local/lib/qt6/qml — сюда встали нативные QML-модули темы Clavis
+# (Clavis.Cava, Clavis.Niri, Clavis.Keyboard и остальные плагины).
+export QML2_IMPORT_PATH="$HOME/.local/lib/qt6/qml:$QTROOT/qml${QML2_IMPORT_PATH:+:$QML2_IMPORT_PATH}"
+export QML_IMPORT_PATH="$QML2_IMPORT_PATH"
+
+# Оболочка Clavis вызывает утилиту key (key-cli) для буфера обмена, поиска
+# файлов, записи экрана и системного монитора. В PATH процесса, запущенного
+# из systemd, каталога ~/.local/bin нет, поэтому путь задаётся явно:
+# Paths.qml читает CLAVIS_KEY, а PATH нужен остальным вызовам.
+export PATH="$HOME/.local/bin:$PATH"
+export CLAVIS_KEY="$HOME/.local/bin/key"
+
+exec "$HOME/.local/bin/quickshell-bin" "$@"
