@@ -52,9 +52,11 @@ scripts/install-system.sh --check    показать, что не связан�
 
 ## Установка на другую машину
 
-Репозиторий переносится целиком, окружение под ним собирается заново:
-движок, Qt, keytop, key-cli, libcava, M3Shapes и matugen лежат в `~/.local`
-и в git не попадают.
+Подробная инструкция с пакетами для Ubuntu и CachyOS, разбором шагов и
+частыми поломками — в [INSTALL.md](INSTALL.md). Коротко: репозиторий
+переносится целиком, окружение под ним собирается заново — движок, Qt,
+keytop, key-cli, libcava, M3Shapes и matugen лежат в `~/.local` и в git
+не попадают.
 
 ```sh
 git clone <адрес> ~/.config/quickshell/my
