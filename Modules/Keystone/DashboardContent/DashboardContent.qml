@@ -11,14 +11,24 @@ Item {
     readonly property real profileColumnWidth: 392
     readonly property real layoutMargin: 32
     readonly property real layoutSpacing: 24
-    readonly property real keyholeWidth: 340
-    readonly property real keyholeLeftMargin: 30
+    // ЛОКАЛЬНАЯ ПРАВКА: плашка была 340 и отстояла от календаря на 30 —
+    // вместе с промежутком колонок это давало 54 px пустоты, а справа от
+    // самой плашки оставалось ещё 38. Теперь она шире, а отступ меньше.
+    readonly property real keyholeWidth: 400
+    readonly property real keyholeLeftMargin: 14
     readonly property real keyholeCenterOffset: layoutMargin + clockColumnWidth + layoutSpacing + profileColumnWidth + layoutSpacing + keyholeLeftMargin - implicitWidth / 2
+    // Вырез в фоне островка рисуется по этим числам (KeystoneSurface.qml),
+    // раньше они были продублированы там вручную.
+    readonly property real keyholeHeight: implicitHeight - layoutMargin * 2
+    readonly property real keyholeTopOffset: layoutMargin
 
     signal closeRequested()
     signal avatarEditRequested()
 
-    implicitWidth: 1040
+    // Ширина складывается из колонок, иначе её пришлось бы пересчитывать
+    // руками при каждом изменении плашки.
+    implicitWidth: layoutMargin + clockColumnWidth + layoutSpacing + profileColumnWidth + layoutSpacing
+                   + keyholeLeftMargin + keyholeWidth + layoutMargin
     implicitHeight: 520
 
     RowLayout {

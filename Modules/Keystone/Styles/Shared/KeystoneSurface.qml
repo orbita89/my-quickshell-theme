@@ -1220,12 +1220,15 @@ Variants {
                 Rectangle {
                     id: dashboardKeyholeCutout
 
-                    width: 340
-                    height: 456
+                    // ЛОКАЛЬНАЯ ПРАВКА: размеры берутся у самого Dashboard.
+                    // Раньше здесь стояли 340×456 и отступ 132 числами, и при
+                    // изменении плашки вырез с ней расходился.
+                    width: hub.dashboardKeyholeWidth
+                    height: hub.dashboardKeyholeHeight
                     anchors.left: parent.horizontalCenter
                     anchors.leftMargin: hub.dashboardKeyholeCenterOffset
                     anchors.top: parent.top
-                    anchors.topMargin: 132
+                    anchors.topMargin: hub.dashboardKeyholeTopOffset
                     radius: 24
                     color: "transparent"
                     visible: root.showDashboardKeyhole

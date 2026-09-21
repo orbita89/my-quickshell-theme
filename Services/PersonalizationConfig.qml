@@ -338,7 +338,7 @@ Singleton {
     property string iconTheme: ""
     property string keystoneStyle: "bangs"
     // ЛОКАЛЬНАЯ ПРАВКА: "weather" убран из списка карточек островка.
-    readonly property var keystoneKeyholeCardIds: ["quickSettings", "pomodoro"]
+    readonly property var keystoneKeyholeCardIds: ["quickSettings", "pomodoro", "todo"]
     readonly property var defaultKeystoneKeyholeCards: root.keystoneKeyholeCardIds.slice()
     readonly property var keystoneKeyholeCardOptions: [({
                                                                  "value": "quickSettings",
@@ -348,7 +348,11 @@ Singleton {
                                                                       "value": "pomodoro",
                                                                       "label": qsTr("Pomodoro"),
                                                                       "icon": "timer"
-                                                                  })]
+                                                                  }), ({
+                                                                           "value": "todo",
+                                                                           "label": qsTr("To-do"),
+                                                                           "icon": "checklist"
+                                                                       })]
     property var keystoneKeyholeCards: root.defaultKeystoneKeyholeCards.slice()
     property string barPosition: "top"
     readonly property var barComponentIds: ["workspaces", "information", "activeWindow", "media", "tray",

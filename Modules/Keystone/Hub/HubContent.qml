@@ -16,6 +16,11 @@ Item {
     property bool dragActive: false
     readonly property var dashboardKeyholeGlassItems: dashboardContent.keyholeGlassItems
     readonly property real dashboardKeyholeCenterOffset: dashboardContent.keyholeCenterOffset
+    readonly property real dashboardKeyholeWidth: dashboardContent.keyholeWidth
+    readonly property real dashboardKeyholeHeight: dashboardContent.keyholeHeight
+    // 10 — отступ панели вкладок сверху, 80 — её высота, ещё 10 — зазор до
+    // содержимого; дальше начинается сам Dashboard со своими полями.
+    readonly property real dashboardKeyholeTopOffset: 100 + dashboardContent.keyholeTopOffset
 
     signal closeRequested
     signal avatarEditRequested

@@ -1,6 +1,7 @@
 import QtQuick
 import Qt5Compat.GraphicalEffects
 import qs.Common
+import qs.Components
 import qs.Services
 
 Item {
@@ -23,6 +24,11 @@ Item {
         }
         return items;
     }
+    // Полоса переключателя поверх карточек. Раньше между ними можно было
+    // перейти только колесом или средней кнопкой — про это не догадаешься.
+    readonly property real switcherHeight: cardCount > 1 ? 30 : 0
+    readonly property real switcherInset: switcherHeight > 0 ? switcherHeight + 8 : 0
+
     property real cardOffset: 0
     property real wheelRemainder: 0
     property bool wheelUsesPixels: false
@@ -111,6 +117,34 @@ Item {
         transitionDirection = 0;
     }
 
+    // Подпись и значок берём из того же списка, что и настройки островка,
+    // чтобы новая карточка появлялась в переключателе сама.
+    function cardOption(id) {
+        const options = PersonalizationConfig.keystoneKeyholeCardOptions;
+        for (let index = 0; index < options.length; index += 1) {
+            if (options[index].value === id)
+                return options[index];
+        }
+        return {
+            "value": id,
+            "label": id,
+            "icon": "widgets"
+        };
+    }
+
+    // Переход сразу к нужной карточке: идём кратчайшим путём, по шагу за раз,
+    // чтобы сработала та же анимация, что и при прокрутке.
+    function showCard(index) {
+        const target = wrappedIndex(index);
+        if (target === currentIndex || cardCount < 2)
+            return;
+
+        const delta = relativeIndex(target);
+        const direction = delta > 0 ? 1 : -1;
+        for (let step = 0; step < Math.abs(delta); step += 1)
+            queueStep(direction);
+    }
+
     function quickSettingsCard() {
         for (let index = 0; index < cardRepeater.count; index += 1) {
             const card = cardRepeater.itemAt(index);
@@ -143,6 +177,8 @@ Item {
             height: root.height
             x: root.cardX(index)
             contentMargin: 0
+            // Стекло остаётся во весь вырез, вниз сдвигается только содержимое.
+            topInset: root.switcherInset
 
             // ЛОКАЛЬНАЯ ПРАВКА: карточка погоды убрана из карусели островка.
 
@@ -168,8 +204,98 @@ Item {
 
             }
 
+            Loader {
+                anchors.fill: parent
+                active: cardDelegate.cardId === "todo"
+
+                sourceComponent: DashboardTodoCard {
+                    active: cardDelegate.cardActive
+                }
+
+            }
+
         }
 
+    }
+
+    Row {
+        id: switcherRow
+
+        visible: root.cardCount > 1
+        z: 2
+        spacing: 6
+
+        anchors {
+            top: parent.top
+            topMargin: 12
+            left: parent.left
+            leftMargin: 14
+            right: parent.right
+            rightMargin: 14
+        }
+
+        Repeater {
+            model: root.cardIds
+
+            delegate: Rectangle {
+                id: switcherTab
+
+                required property int index
+                required property string modelData
+                readonly property var option: root.cardOption(switcherTab.modelData)
+                readonly property bool selected: root.currentIndex === switcherTab.index
+
+                width: (switcherRow.width - switcherRow.spacing * (root.cardCount - 1)) / root.cardCount
+                height: root.switcherHeight
+                radius: Appearance.rounding.full
+                color: switcherTab.selected ? Appearance.colors.colPrimary : (tabHover.containsMouse ?
+                                                                                  Appearance.applyAlpha(
+                                                                                      Appearance.colors.colOnLayer0,
+                                                                                      0.16) :
+                                                                                  Appearance.applyAlpha(
+                                                                                      Appearance.colors.colOnLayer0,
+                                                                                      0.07))
+
+                Behavior on color {
+                    ColorAnimation {
+                        duration: 150
+                    }
+                }
+
+                Row {
+                    anchors.centerIn: parent
+                    spacing: 5
+
+                    MaterialSymbol {
+                        anchors.verticalCenter: parent.verticalCenter
+                        text: switcherTab.option.icon
+                        iconSize: 16
+                        fill: switcherTab.selected ? 1 : 0
+                        color: switcherTab.selected ? Appearance.colors.colOnPrimary :
+                                                      Appearance.colors.colSubtext
+                    }
+
+                    Text {
+                        anchors.verticalCenter: parent.verticalCenter
+                        text: switcherTab.option.label
+                        color: switcherTab.selected ? Appearance.colors.colOnPrimary :
+                                                      Appearance.colors.colSubtext
+                        font.family: Fonts.ui
+                        font.pixelSize: 12
+                        font.weight: switcherTab.selected ? Font.Medium : Font.Normal
+                    }
+                }
+
+                MouseArea {
+                    id: tabHover
+
+                    anchors.fill: parent
+                    hoverEnabled: true
+                    cursorShape: Qt.PointingHandCursor
+                    onClicked: root.showCard(switcherTab.index)
+                }
+            }
+        }
     }
 
     NumberAnimation {
@@ -263,6 +389,7 @@ Item {
 
         default property alias content: innerContainer.data
         property real contentMargin: 14
+        property real topInset: 0
         readonly property Item glassBackgroundItem: glassBackground
 
         // ЛОКАЛЬНАЯ ПРАВКА: стекло занимает весь вырез. Раньше оно было
@@ -283,6 +410,7 @@ Item {
 
             anchors.fill: parent
             anchors.margins: 10 + cardRoot.contentMargin
+            anchors.topMargin: 10 + cardRoot.contentMargin + cardRoot.topInset
         }
 
     }
