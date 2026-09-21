@@ -128,6 +128,7 @@ Singleton {
         if (ddcDetectProcess.running)
             ddcDetectProcess.running = false;
         pendingDdcMonitors = [];
+        ddcDetectProcess.settled = false;
         ddcDetectProcess.running = true;
     }
 
@@ -164,6 +165,27 @@ Singleton {
     Process {
         id: ddcDetectProcess
 
+        // ЛОКАЛЬНАЯ ПРАВКА: раньше мониторы начинали работать только после
+        // выхода ddcutil. Здесь его нет вовсе (внешних мониторов по DDC тоже
+        // нет), запуск проваливался, onExited не приходил — и мониторы
+        // навсегда оставались с ready = false. Из-за этого ползунок яркости
+        // не делал ничего: каждое изменение вставало в pendingSync и там
+        // и оставалось.
+        //
+        // Теперь итог опроса подводится в одном месте и срабатывает в любом
+        // случае: и когда ddcutil отработал, и когда его не удалось
+        // запустить (тогда running просто вернётся в false).
+        property bool settled: false
+
+        function settle() {
+            if (settled)
+                return;
+            settled = true;
+            root.ddcMonitors = root.pendingDdcMonitors;
+            root.pendingDdcMonitors = [];
+            root.initializeMonitor(0);
+        }
+
         command: ["ddcutil", "detect", "--brief"]
 
         stdout: SplitParser {
@@ -171,10 +193,10 @@ Singleton {
             onRead: data => root.parseDdcBlock(data)
         }
 
-        onExited: {
-            root.ddcMonitors = root.pendingDdcMonitors;
-            root.pendingDdcMonitors = [];
-            root.initializeMonitor(0);
+        onExited: settle()
+        onRunningChanged: {
+            if (!running)
+                settle();
         }
     }
 
