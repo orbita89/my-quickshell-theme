@@ -26,7 +26,9 @@ Item {
     signal avatarEditRequested
 
     function finishCloudUploadDrop(addedCount) {
-        cloudUploadContent.finishDrop(addedCount);
+        // Вкладка загрузки создаётся лениво: до первого открытия её нет.
+        if (cloudUploadLoader.item)
+            cloudUploadLoader.item.finishDrop(addedCount);
     }
 
     implicitWidth: currentIndex === 0 ? dashboardContent.implicitWidth : currentIndex === 2 ? 960 : currentIndex
@@ -175,12 +177,30 @@ Item {
             }
         }
 
-        Media {
-            player: root.player
+        // ЛОКАЛЬНАЯ ПРАВКА: вкладки Media и Upload создаются при первом
+        // открытии, а не при старте оболочки.
+        //
+        // Раньше они строились сразу вместе со всем деревом: плеер с
+        // обложками и панель загрузки висели в памяти, даже если хаб ни разу
+        // не открывали. Замер показал 14 МБ на двоих. Однажды загруженная
+        // вкладка остаётся жить (loadedOnce) — переключение между вкладками
+        // не должно каждый раз всё пересобирать.
+        Loader {
+            id: mediaLoader
+
+            property bool loadedOnce: false
+
             anchors.top: parent.top
             anchors.horizontalCenter: parent.horizontalCenter
-            visible: root.currentIndex === 1
-            opacity: visible ? 1 : 0
+            active: root.currentIndex === 1 || mediaLoader.loadedOnce
+            asynchronous: true
+            visible: opacity > 0.01
+            opacity: root.currentIndex === 1 ? 1 : 0
+            onLoaded: mediaLoader.loadedOnce = true
+
+            sourceComponent: Media {
+                player: root.player
+            }
 
             Behavior on opacity {
                 NumberAnimation {
@@ -189,16 +209,24 @@ Item {
             }
         }
 
-        CloudUploadContent {
-            id: cloudUploadContent
+        Loader {
+            id: cloudUploadLoader
+
+            property bool loadedOnce: false
 
             anchors.top: parent.top
             anchors.horizontalCenter: parent.horizontalCenter
             width: parent.width * 0.95
             height: 480
-            dragActive: root.dragActive
-            visible: root.currentIndex === 2
-            opacity: visible ? 1 : 0
+            active: root.currentIndex === 2 || cloudUploadLoader.loadedOnce
+            asynchronous: true
+            visible: opacity > 0.01
+            opacity: root.currentIndex === 2 ? 1 : 0
+            onLoaded: cloudUploadLoader.loadedOnce = true
+
+            sourceComponent: CloudUploadContent {
+                dragActive: root.dragActive
+            }
 
             Behavior on opacity {
                 NumberAnimation {
