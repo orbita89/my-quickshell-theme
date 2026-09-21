@@ -7,6 +7,12 @@ import qs.Widgets.common
 Item {
     id: root
 
+    // Размер кольца задаётся снаружи: в боковой панели места много, а в
+    // плашке Dashboard тот же виджет должен помещаться в карточку.
+    property real ringSize: 200
+    // Анимацию кольца выключаем, когда виджет не на виду.
+    property bool ringAnimated: true
+
     // МОЁ ДОБАВЛЕНИЕ: запуск и остановка макро-задачи.
     function startTask() {
         if (TimerService.startTask(taskNameField.text, taskDurationField.text)) {
@@ -61,11 +67,11 @@ Item {
 
         ToolCircularProgress {
             Layout.alignment: Qt.AlignHCenter
-            implicitSize: 200
-            lineWidth: 8
+            implicitSize: root.ringSize
+            lineWidth: root.ringSize >= 180 ? 8 : 6
             value: TimerService.pomodoroLapDuration > 0 ? TimerService.pomodoroSecondsLeft
                                                           / TimerService.pomodoroLapDuration : 0
-            enableAnimation: true
+            enableAnimation: root.ringAnimated
 
             ColumnLayout {
                 anchors.centerIn: parent
@@ -82,7 +88,7 @@ Item {
                     }
                     color: Appearance.colors.colOnSurface
                     font.family: Fonts.numeric
-                    font.pixelSize: 40
+                    font.pixelSize: Math.round(root.ringSize * 0.2)
                 }
 
                 Text {
