@@ -2,7 +2,9 @@
 // ЛОКАЛЬНАЯ ПРАВКА: режим "files" убран — поиск по файлам не нужен.
 // Вернуть: дописать "files" обратно в список (и см. LauncherWindow.qml,
 // SpotlightStyle.qml, SpotlightLocalSearch.js).
-var modes = ["search", "apps", "wallpapers", "clipboard", "commands"];
+// ЛОКАЛЬНАЯ ПРАВКА: режим "files" возвращён в список. Без него switchMode
+// молча отказывался переключаться, и кнопка «Файлы» с Ctrl+4 не работали.
+var modes = ["search", "apps", "wallpapers", "clipboard", "commands", "files"];
 var tools = ["web", "settings", "actions", "calculator", "currency", "time"];
 var overrideValues = {
     appsLayout: ["list", "grid"],

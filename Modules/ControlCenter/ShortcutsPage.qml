@@ -206,7 +206,7 @@ Item {
     function addAction() {
         clearDraft();
         const group = {
-            id: "draft",
+            id: "description",
             name: qsTr("New action"),
             expression: "",
             supported: true,

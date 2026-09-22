@@ -926,7 +926,7 @@ FloatingWindow {
                                                 anchors.centerIn: parent
                                                 text: fileItem.fileIsDir ? "folder" : root.isImageName(
                                                                                fileItem.fileName) ? "image" :
-                                                                                                    "draft"
+                                                                                                    "description"
                                                 iconSize: 38
                                                 fill: fileItem.fileIsDir ? 1 : 0
                                                 color: fileItem.fileIsDir ? Appearance.colors.colPrimary :

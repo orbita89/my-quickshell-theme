@@ -36,8 +36,15 @@ Item {
     property string fileState: "idle"
     property var fileError: null
     readonly property bool fileMode: mode === "files"
-    readonly property int fileHeaderHeight: fileMode && results.length > 0 ? 32 : 0
+    // ЛОКАЛЬНАЯ ПРАВКА: шапка режима «Файлы» показывается всегда, а не
+    // только при непустом списке — в ней теперь переключатель папок, и он
+    // нужен как раз тогда, когда ничего не нашлось.
+    readonly property int fileHeaderHeight: fileMode ? 36 : 0
+    // Папки для чипов и текущая; приходят от провайдера через LauncherWindow.
+    property var fileDirs: []
+    property string fileCurrentDir: ""
     signal revealRequested(int index)
+    signal fileDirRequested(string path)
     property bool expanded: mode !== "web"
     property bool loading: false
     property bool providerAvailable: true
@@ -1005,19 +1012,79 @@ Item {
         }
     }
 
-    Text {
+    // Шапка режима «Файлы»: слева выбор папки, справа подсказка о действиях.
+    Item {
         visible: root.fileHeaderHeight > 0
         x: 20
-        y: 8
+        y: 4
         width: parent.width - 40
-        text: root.fileError ? root.fileError.message : root.fileState === "limited" ? qsTr(
-                                                                                           "Limited results — refine your search") :
-                                                                                       qsTr("Enter — Open · Ctrl+Enter — Show in file manager")
-        textFormat: Text.PlainText
-        elide: Text.ElideRight
-        font.family: Fonts.ui
-        font.pixelSize: 12
-        color: root.fileError ? Appearance.colors.colError : Appearance.colors.colOnSurfaceVariant
+        height: root.fileHeaderHeight - 4
+
+        Row {
+            id: fileDirRow
+
+            anchors.verticalCenter: parent.verticalCenter
+            spacing: 6
+
+            Repeater {
+                model: root.fileDirs
+
+                delegate: Rectangle {
+                    id: dirChip
+
+                    required property var modelData
+                    readonly property bool selected: root.fileCurrentDir === dirChip.modelData.path
+
+                    implicitWidth: dirLabel.implicitWidth + 20
+                    implicitHeight: 26
+                    radius: Appearance.rounding.full
+                    color: dirChip.selected ? Appearance.colors.colPrimary : (dirHover.containsMouse ?
+                                                                                  Appearance.colors.colLayer2 :
+                                                                                  Appearance.colors.colLayer1)
+
+                    Behavior on color {
+                        ColorAnimation {
+                            duration: 150
+                        }
+                    }
+
+                    Text {
+                        id: dirLabel
+
+                        anchors.centerIn: parent
+                        text: dirChip.modelData.label
+                        color: dirChip.selected ? Appearance.colors.colOnPrimary :
+                                                  Appearance.colors.colOnLayer1
+                        font.family: Fonts.ui
+                        font.pixelSize: 12
+                        font.weight: dirChip.selected ? Font.Medium : Font.Normal
+                    }
+
+                    MouseArea {
+                        id: dirHover
+
+                        anchors.fill: parent
+                        hoverEnabled: true
+                        cursorShape: Qt.PointingHandCursor
+                        onClicked: root.fileDirRequested(dirChip.modelData.path)
+                    }
+                }
+            }
+        }
+
+        Text {
+            anchors.right: parent.right
+            anchors.left: fileDirRow.right
+            anchors.leftMargin: 12
+            anchors.verticalCenter: parent.verticalCenter
+            horizontalAlignment: Text.AlignRight
+            text: root.fileError ? root.fileError.message : qsTr("Enter — copy file · Ctrl+Enter — show in folder")
+            textFormat: Text.PlainText
+            elide: Text.ElideRight
+            font.family: Fonts.ui
+            font.pixelSize: 12
+            color: root.fileError ? Appearance.colors.colError : Appearance.colors.colOnSurfaceVariant
+        }
     }
 
     Item {

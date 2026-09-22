@@ -23,7 +23,10 @@ QtObject {
     readonly property int searchHorizontalPadding: 22
     readonly property int searchIconSize: 24
     // ЛОКАЛЬНАЯ ПРАВКА: было 4, режим файлов убран.
-    readonly property int modeButtonCount: 3
+    // ЛОКАЛЬНАЯ ПРАВКА: было 3, а кнопок в ряду четыре (apps, wallpapers,
+    // clipboard, files). Из-за расхождения индекс четвёртой кнопки
+    // обрезался до третьей, и режим «Файлы» был недостижим.
+    readonly property int modeButtonCount: 4
     readonly property int modeButtonDiameter: searchHeight
     readonly property int modeButtonGap: 10
     readonly property int modeRailReservedWidth: modeButtonCount * (modeButtonDiameter + modeButtonGap)

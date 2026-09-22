@@ -410,7 +410,7 @@ Item {
                 label: qsTr("Clipboard")
             },
             {
-                icon: "draft",
+                icon: "description",
                 label: qsTr("Files")
             }
         ]

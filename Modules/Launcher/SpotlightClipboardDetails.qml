@@ -278,7 +278,7 @@ ColumnLayout {
                 themeIcon: root.singleFile ? String(root.singleFile.themeIcon || "") : ""
                 mimeType: root.singleFile ? String(root.singleFile.mimeType || "") : ""
                 directory: root.singleFile ? root.singleFile.directory === true : false
-                fallbackSymbol: root.singleFile ? String(root.singleFile.icon || "draft") : "draft"
+                fallbackSymbol: root.singleFile ? String(root.singleFile.icon || "description") : "description"
             }
             Text {
                 id: fileNameLabel

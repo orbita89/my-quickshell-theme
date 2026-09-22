@@ -324,8 +324,10 @@ PanelWindow {
     }
 
     function modeForIndex(index) {
-        // ЛОКАЛЬНАЯ ПРАВКА: кнопка "files" убрана из переключателя режимов.
-        return ["apps", "wallpapers", "clipboard"][Math.max(0, Math.min(style.modeButtonCount - 1,
+        // ЛОКАЛЬНАЯ ПРАВКА: режим "files" возвращён в переключатель. Кнопка
+        // четвёртая в ряду (Ctrl+4) никуда не переключала, потому что в этом
+        // списке её не было: индекс 3 упирался в конец массива.
+        return ["apps", "wallpapers", "clipboard", "files"][Math.max(0, Math.min(style.modeButtonCount - 1,
                                                                                  index))];
     }
 
@@ -1181,6 +1183,10 @@ PanelWindow {
             fileState: fileProvider.searchState
             fileError: fileProvider.error
             onRevealRequested: index => fileProvider.execute(index, true)
+            // Чипы выбора папки в шапке режима «Файлы».
+            fileDirs: fileProvider.availableDirs
+            fileCurrentDir: fileProvider.currentSearchDir
+            onFileDirRequested: path => fileProvider.setSearchDir(path)
             loading: root.mode === "files" ? fileProvider.searchState === "loading" : root.clipboardMode
                                              && clipboardProvider.loading
             providerAvailable: root.mode === "files" ? fileProvider.searchState !== "unavailable" :
