@@ -2,7 +2,7 @@
   "wallpaper": {
     "bannerSource": "",
     "folder": "/home/dev/Pictures/Wallpapers",
-    "path": "/home/dev/Pictures/Wallpapers/originals/2026-09-18_07-15-00.jpg",
+    "path": "/home/dev/Pictures/Wallpapers/originals/ian-schneider-dqMxDqdhg_4-unsplash.jpg",
     "pathLight": "",
     "pathDark": "",
     "perMode": false,
@@ -12,7 +12,7 @@
       "eDP-1": "Fill"
     },
     "recentColors": [],
-    "fillMode": "panorama",
+    "fillMode": "Fill",
     "desktopBackend": "quickshell",
     "autoCycle": {
       "enabled": false,
@@ -51,15 +51,15 @@
       "transitionWave": "20,20"
     },
     "overview": {
-      "enabled": false,
-      "useDesktopWallpaper": true,
+      "enabled": true,
+      "useDesktopWallpaper": false,
       "path": "",
       "fillMode": "Fill",
       "perMonitor": false,
       "monitorWallpapers": {},
       "monitorFillModes": {},
       "transitionType": "fade",
-      "blurRadius": 0,
+      "blurRadius": 28,
       "dim": 0,
       "saturation": 1,
       "contrast": 1
@@ -67,7 +67,7 @@
     "parallax": {
       "verticalEnabled": false,
       "followWorkspaces": true,
-      "followSidebars": false,
+      "followSidebars": true,
       "followTiledColumns": false,
       "preferredScale": 1.1,
       "tiledColumnSpan": 6
