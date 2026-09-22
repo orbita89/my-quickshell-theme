@@ -23,6 +23,17 @@ project(MyShellCore VERSION ${PROJECT_DATE_VERSION} LANGUAGES C CXX)
 
 include(GNUInstallDirs)
 
+# ЛОКАЛЬНАЯ ПРАВКА: пути к библиотекам внутри модулей делаем относительными.
+#
+# scripts/build-native.sh копирует собранные модули из build/qml в
+# ~/.local/lib/qt6/qml. По умолчанию CMake прописывает в них абсолютный RPATH
+# на дерево сборки, и скопированный плагин продолжает искать свою библиотеку
+# там. Пока build/ на месте, это работает и выглядит правильным — а стоит
+# переименовать каталог проекта или удалить build/, как оболочка перестаёт
+# запускаться с «Cannot load library ... libClavisCava.so». Я на это наступил
+# при переименовании проекта.
+set(CMAKE_BUILD_RPATH_USE_ORIGIN ON)
+
 # Каталог, из которого Quickshell берёт модули Clavis.*; тот же, что в
 # обёртке ~/.local/bin/quickshell (QML2_IMPORT_PATH).
 set(CLAVIS_QML_BUILD_DIR "${CMAKE_BINARY_DIR}/qml" CACHE PATH

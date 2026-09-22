@@ -57,8 +57,8 @@ paru -S libcava matugen ttf-material-symbols-variable qt6-m3shapes-git \
 ### 2. Сам проект
 
 ```sh
-git clone <адрес> ~/.config/quickshell/my
-cd ~/.config/quickshell/my
+git clone <адрес> ~/.config/quickshell/my-quickshell-theme
+cd ~/.config/quickshell/my-quickshell-theme
 scripts/build-native.sh        # соберёт модули Clavis.* из core/
 scripts/install-system.sh      # свяжет юнит и обёртки
 systemctl --user enable --now my-shell.service
@@ -87,8 +87,8 @@ journalctl --user -u my-shell.service -n 30
 Большую часть делает скрипт:
 
 ```sh
-git clone <адрес> ~/.config/quickshell/my
-cd ~/.config/quickshell/my
+git clone <адрес> ~/.config/quickshell/my-quickshell-theme
+cd ~/.config/quickshell/my-quickshell-theme
 scripts/install-fresh.sh --check     # что уже есть, чего не хватает
 scripts/install-fresh.sh             # поставить недостающее
 ```

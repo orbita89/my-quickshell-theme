@@ -42,7 +42,7 @@ export CLAVIS_KEY="$HOME/.local/bin/key"
 self=$(readlink -f "$0" 2>/dev/null || echo "$0")
 repo=${self%/system/bin/*}
 case " $* " in
-    *" -c my "*|*" --config my "*)
+    *" -c my-quickshell-theme "*|*" --config my-quickshell-theme "*)
         [ -d "$repo/config" ] && export CLAVIS_CONFIG_HOME="$repo/config"
         ;;
 esac

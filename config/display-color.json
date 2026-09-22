@@ -1,9 +1,9 @@
 {
-  "gamma": 0.92,
-  "contrast": 1.18,
+  "gamma": 1.36,
+  "contrast": 1.2,
   "dimming": 1,
   "nightEnabled": true,
-  "nightTemperature": 5000,
+  "nightTemperature": 5500,
   "dayTemperature": 6500,
   "useIP": false,
   "mode": "fixed",

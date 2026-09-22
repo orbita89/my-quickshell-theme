@@ -5,7 +5,7 @@
 
 ## Запуск
 
-    quickshell -c my
+    quickshell -c my-quickshell-theme
 
 Автозапуск — служба `my-shell.service`.
 
@@ -59,8 +59,8 @@ keytop, key-cli, libcava, M3Shapes и matugen лежат в `~/.local` и в git
 не попадают.
 
 ```sh
-git clone <адрес> ~/.config/quickshell/my
-cd ~/.config/quickshell/my
+git clone <адрес> ~/.config/quickshell/my-quickshell-theme
+cd ~/.config/quickshell/my-quickshell-theme
 scripts/install-fresh.sh --check     # что уже есть, чего не хватает
 scripts/install-fresh.sh             # поставить недостающее
 ```

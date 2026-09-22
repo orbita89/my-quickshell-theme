@@ -25,8 +25,8 @@ ExecCondition=/bin/sh -c '[ -n "$WAYLAND_DISPLAY" ]'
 # дискретной видеокарте. KillMode=control-group убирает только тех, кто
 # внутри cgroup службы, — а сироты из сессии остаются.
 ExecStartPre=-/usr/bin/pkill --full "^%h/\\.local/bin/keytop-bin value stream"
-ExecStart=%h/.local/bin/quickshell -c my
-ExecReload=%h/.local/bin/quickshell -c my ipc call shell reload
+ExecStart=%h/.local/bin/quickshell -c my-quickshell-theme
+ExecReload=%h/.local/bin/quickshell -c my-quickshell-theme ipc call shell reload
 ExecStopPost=-/usr/bin/pkill --full "^%h/\\.local/bin/keytop-bin value stream"
 Restart=on-failure
 RestartSec=3
