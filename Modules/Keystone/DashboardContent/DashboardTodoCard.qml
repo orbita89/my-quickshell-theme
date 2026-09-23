@@ -196,7 +196,9 @@ Item {
         property string content: ""
         property bool done: false
 
-        implicitHeight: 32
+        // Строка растёт вместе с текстом: длинные задачи переносятся
+        // целиком и не обрезаются (минимум — как одна строка, 32 px).
+        implicitHeight: Math.max(32, taskRowLayout.implicitHeight + 6)
 
         MouseArea {
             id: rowHover
@@ -206,6 +208,8 @@ Item {
         }
 
         RowLayout {
+            id: taskRowLayout
+
             anchors.fill: parent
             spacing: 8
 
@@ -246,6 +250,10 @@ Item {
                 font.family: Fonts.ui
                 font.pixelSize: 14
                 font.strikeout: taskRow.done
+                wrapMode: Text.Wrap
+                // Держим первую строку текста на уровне кружка, а не по центру.
+                verticalAlignment: Text.AlignVCenter
+                maximumLineCount: 3
                 elide: Text.ElideRight
             }
 

@@ -438,12 +438,48 @@ Item {
             opacity: reveal
             scale: 0.9 + reveal * 0.1
 
+            // ЛОКАЛЬНАЯ ПРАВКА: hover был невидим — style.hoverColor сам по
+            // себе полупрозрачный (alpha >= 0.30), а applyAlpha(..., 0.42)
+            // перемножал альфы до ~0.13. Теперь state-layer по образцу
+            // StyledMenuItem: непрозрачная краска + токены opacity.
             Rectangle {
                 anchors.fill: parent
                 radius: width / 2
-                color: modeMouse.pressed || modeMouse.containsMouse ? Appearance.applyAlpha(
-                                                                          root.style.hoverColor, 0.42) :
-                                                                      "transparent"
+                color: Appearance.colors.colOnSurface
+                opacity: modeMouse.pressed ? Appearance.interaction.pressedStateLayerOpacity :
+                                             modeMouse.containsMouse ? Appearance.interaction.hoverStateLayerOpacity :
+                                                                       0
+                Behavior on opacity {
+                    NumberAnimation {
+                        duration: Appearance.interaction.stateLayerTransitionDuration
+                        easing.type: Easing.OutQuint
+                    }
+                }
+            }
+
+            // ЛОКАЛЬНАЯ ПРАВКА: выделение, набранное Tab, не рисовалось —
+            // logicalFocus менял только fill иконки. Добавлено кольцо из
+            // colPrimary: видно и на hover, и на активной кнопке.
+            Rectangle {
+                anchors.fill: parent
+                anchors.margins: 1
+                radius: width / 2
+                color: "transparent"
+                border.width: 2
+                border.color: Appearance.colors.colPrimary
+                scale: modeButton.logicalFocus ? 1 : 0.85
+                opacity: modeButton.logicalFocus ? 1 : 0
+                Behavior on scale {
+                    NumberAnimation {
+                        duration: Animations.durations.expressiveFastEffects
+                        easing.type: Easing.OutQuint
+                    }
+                }
+                Behavior on opacity {
+                    NumberAnimation {
+                        duration: Animations.durations.expressiveFastEffects
+                    }
+                }
             }
 
             MaterialSymbol {
