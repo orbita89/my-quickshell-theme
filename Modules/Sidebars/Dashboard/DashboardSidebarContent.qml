@@ -25,7 +25,6 @@ Item {
     readonly property int instantiatedViewCount: {
         return (infoLoader.item ? 1 : 0) + (todoLoader.item ? 1 : 0) + (timerLoader.item ? 1 : 0);
     }
-    readonly property var weatherView: weatherLoader.item
 
     ColumnLayout {
         anchors.fill: parent

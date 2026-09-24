@@ -7,7 +7,13 @@ ListView {
     spacing: 0
     clip: true
     maximumFlickVelocity: 3500
-    boundsBehavior: Flickable.DragOverBounds
+    // Touchpad wheel events arrive with a scroll phase, so Flickable treats them
+    // as a drag. DragOverBounds would let that drag pull the content past the
+    // last row and then rubber-band it back — the list appears to jump instead
+    // of stopping. WheelScrollController deliberately stops accepting events at
+    // the edge (to leave scrolling to an enclosing view), so those leftover
+    // events reach Flickable directly and this is the only thing guarding them.
+    boundsBehavior: Flickable.StopAtBounds
 
     property real removeOvershoot: 20
     property bool popin: true

@@ -2,7 +2,7 @@
   "wallpaper": {
     "bannerSource": "",
     "folder": "/home/dev/Pictures/Wallpapers",
-    "path": "/home/dev/Pictures/Wallpapers/originals/ayumi-kubo-46aPkqSz6dA-unsplash.jpg",
+    "path": "/home/dev/Pictures/Wallpapers/originals/p-c-FqWMzwQnE44-unsplash.jpg",
     "pathLight": "",
     "pathDark": "",
     "perMode": false,
@@ -12,7 +12,7 @@
       "eDP-1": "Fill"
     },
     "recentColors": [],
-    "fillMode": "Fit",
+    "fillMode": "Stretch",
     "desktopBackend": "quickshell",
     "autoCycle": {
       "enabled": false,
@@ -21,7 +21,7 @@
       "time": "06:00"
     },
     "transition": {
-      "type": "fade",
+      "type": "none",
       "included": [
         "fade",
         "wipe",

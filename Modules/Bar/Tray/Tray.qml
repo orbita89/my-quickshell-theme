@@ -37,7 +37,7 @@ TopBarPill {
             root.trayOverflowOpen = false;
             root.overflowAnchorReady = false;
         } else if (root.trayOverflowOpen) {
-            Qt.callLater(root.updateOverflowPosition);
+            overflowPositionQueue.restart();
         }
     }
 
@@ -132,13 +132,26 @@ TopBarPill {
         root.activeMenu = null;
     }
 
+    // Repositioning has to wait for the surface to settle, but Qt.callLater()
+    // outlives the object: when a monitor is unplugged the bar goes away with
+    // the call still queued, and firing it into a destroyed context is the
+    // «Internal error - attempted to evaluate a function in an invalid
+    // context» pair in the log. A Timer coalesces the same way and dies with
+    // the component.
+    Timer {
+        id: overflowPositionQueue
+
+        interval: 0
+        onTriggered: root.updateOverflowPosition()
+    }
+
     onTrayOverflowOpenChanged: {
         if (!root.trayOverflowOpen)
             root.overflowAnchorReady = false;
     }
     onEdgeChanged: {
         if (root.trayOverflowOpen)
-            Qt.callLater(root.updateOverflowPosition);
+            overflowPositionQueue.restart();
     }
 
     GridLayout {
@@ -243,10 +256,19 @@ TopBarPill {
 
         onVisibleChanged: {
             if (visible)
-                Qt.callLater(() => {
-                    root.updateOverflowPosition();
-                    overflowKeyScope.forceActiveFocus();
-                });
+                overflowPresentQueue.restart();
+        }
+
+        // Same reason as overflowPositionQueue: this one also grabs focus, so
+        // it must not fire into a popup that has already gone.
+        Timer {
+            id: overflowPresentQueue
+
+            interval: 0
+            onTriggered: {
+                root.updateOverflowPosition();
+                overflowKeyScope.forceActiveFocus();
+            }
         }
 
         Item {
@@ -293,8 +315,8 @@ TopBarPill {
                 width: implicitWidth
                 height: implicitHeight
 
-                onImplicitWidthChanged: Qt.callLater(root.updateOverflowPosition)
-                onImplicitHeightChanged: Qt.callLater(root.updateOverflowPosition)
+                onImplicitWidthChanged: overflowPositionQueue.restart()
+                onImplicitHeightChanged: overflowPositionQueue.restart()
 
                 StyledRectangularShadow {
                     target: popupBackground

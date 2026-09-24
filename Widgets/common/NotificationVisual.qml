@@ -68,6 +68,10 @@ Item {
         fillMode: root.appIconIsFile ? Image.PreserveAspectCrop : Image.PreserveAspectFit
         asynchronous: true
         visible: root.showAppIcon && !root.appIconIsFile
+        // Report the failure and let showSymbol swap in the bell glyph. Do not
+        // assign a source here: an imperative write kills the binding above,
+        // and a bare name resolves against this file's directory rather than
+        // the icon theme, so the retry fails the same way and loops.
         onStatusChanged: root.appIconLoadFailed = status === Image.Error
     }
 

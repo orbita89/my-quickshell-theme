@@ -63,12 +63,23 @@ MouseArea {
         if (!enabled || !flickable.interactive || flickable.dragging)
             return;
 
+        // Past this point the event is ours, whatever we end up doing with it.
+        // Declining it does not offer it to an enclosing view: the next item in
+        // line is the Flickable itself, and it always takes wheel input. It then
+        // treats the event as a drag measured from its own press anchor, which
+        // is stale because this controller has been writing contentY behind its
+        // back — so the view snaps to wherever it sat during an earlier gesture.
+        event.accepted = true;
+
         // Pixel deltas are already distances. Small angle deltas are fractional
         // mouse notches, not evidence that the device is a touchpad.
         const pixelInput = event.pixelDelta.x !== 0 || event.pixelDelta.y !== 0;
         const vector = pixelInput ? event.pixelDelta : event.angleDelta;
         const amount = horizontal ? (vector.x || vector.y) : vector.y;
         const delta = -amount * (pixelInput ? pixelMultiplier : mouseStep / 120);
+        // Zero-delta events bracket a touchpad gesture. There is nothing to
+        // scroll, but handing them over is what lets the Flickable start and
+        // end a phantom drag.
         if (!isFinite(delta) || delta === 0)
             return;
 
@@ -76,12 +87,9 @@ MouseArea {
         // Reverse immediately rather than first finishing the previous direction.
         const base = scrollAnimation.running && delta * (destination - current) > 0 ? destination : current;
         const next = clamp(base + delta);
-        if (next === clamp(base)) {
-            // Consume remaining ticks while still approaching the edge. Once
-            // there, leave outward input available to the enclosing view.
-            event.accepted = scrollAnimation.running && current !== next;
+        // Already at the edge: stay put and keep the event.
+        if (next === clamp(base))
             return;
-        }
 
         stop();
         flickable.cancelFlick();
@@ -94,7 +102,6 @@ MouseArea {
             scrollAnimation.to = next;
             scrollAnimation.start();
         }
-        event.accepted = true;
     }
 
     onWheel: event => handleWheel(event)

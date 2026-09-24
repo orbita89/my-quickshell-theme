@@ -38,8 +38,6 @@ Item {
     readonly property string activeView: WidgetState.dashboardSidebarView
     readonly property int instantiatedViewCount: sidebarContentLoader.item
                                                  ? sidebarContentLoader.item.instantiatedViewCount : 0
-    readonly property var weatherView: sidebarContentLoader.item ? sidebarContentLoader.item.weatherView :
-                                                                   null
     function preparePresentation() {
         contentRetained = true;
         startPresentation();

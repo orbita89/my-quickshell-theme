@@ -7,7 +7,9 @@ GridView {
     clip: true
     keyNavigationWraps: true
     maximumFlickVelocity: 3500
-    boundsBehavior: Flickable.DragOverBounds
+    // See StyledListView: a touchpad scroll phase is a drag to Flickable, and
+    // DragOverBounds turns the end of the grid into an overshoot-and-snap jump.
+    boundsBehavior: Flickable.StopAtBounds
 
     property real removeOvershoot: 20
     property bool popin: true

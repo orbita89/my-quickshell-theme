@@ -483,7 +483,9 @@ Item {
         clip: true
         contentWidth: width
         maximumFlickVelocity: 3500
-        boundsBehavior: Flickable.DragOverBounds
+        // Как в StyledListView: иначе тачпад утягивает список за последнюю
+        // строку и отпружинивает обратно.
+        boundsBehavior: Flickable.StopAtBounds
         spacing: Metrics.spacingM
         bottomMargin: Metrics.pageMargin
         model: root.visibleGroups

@@ -49,7 +49,9 @@ ColumnLayout {
     GridLayout {
         Layout.fillWidth: true
         columns: width > 420 ? 2 : 1
-        visible: root.settings.hotCorners && root.settings.hotCorners.indexOf("off") < 0
+        // hotCorners is absent until the profile sets it, and `undefined && …`
+        // is undefined rather than false — which `visible` will not take.
+        visible: !!root.settings.hotCorners && root.settings.hotCorners.indexOf("off") < 0
         Repeater {
             model: [
                 {

@@ -6,7 +6,9 @@ Flickable {
 
     clip: true
     maximumFlickVelocity: 3500
-    boundsBehavior: Flickable.DragOverBounds
+    // See StyledListView: a touchpad scroll phase is a drag to Flickable, and
+    // DragOverBounds turns the end of the page into an overshoot-and-snap jump.
+    boundsBehavior: Flickable.StopAtBounds
 
     property bool smoothWheelScrolling: true
     // Compatibility for existing callers; the shared policy is now enabled by default.

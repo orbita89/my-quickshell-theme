@@ -1,4 +1,5 @@
 import QtQuick
+import QtQuick.Layouts
 import qs.Common
 import qs.Services
 
@@ -20,6 +21,44 @@ Item {
     visible: false
     width: 0
     height: 0
+
+    // QtQuick.Layouts manages every visible child it has, so a highlight
+    // parented into one cannot use anchors (that is the warning) and, once
+    // visible, would claim a cell of its own and push the section's content
+    // aside. Some targets are plain items (SettingsSection, MaterialCard) and
+    // some are layouts (KeystoneSection, the Section components of ThemePage
+    // and WallpaperPage), so the host is resolved per target: the target
+    // itself when it can hold a free-floating child, otherwise its nearest
+    // non-layout ancestor.
+    function isLayout(item) {
+        return item instanceof RowLayout || item instanceof ColumnLayout || item instanceof GridLayout
+                || item instanceof StackLayout;
+    }
+
+    readonly property Item highlightHost: {
+        let item = root.target;
+        while (item && root.isLayout(item))
+            item = item.parent;
+        return item;
+    }
+
+    // Target geometry in host coordinates. mapToItem() is not reactive, so the
+    // target's own position and size are read first: they are what the binding
+    // depends on, and a layout moving the target updates them.
+    readonly property rect highlightArea: {
+        const target = root.target;
+        const host = root.highlightHost;
+        if (!target || !host)
+            return Qt.rect(0, 0, 0, 0);
+        const width = target.width;
+        const height = target.height;
+        const x = target.x;
+        const y = target.y;
+        if (host === target)
+            return Qt.rect(0, 0, width, height);
+        const point = target.mapToItem(host, 0, 0);
+        return Qt.rect(point.x, point.y, width, height);
+    }
 
     function polishTarget() {
         const ancestors = [];
@@ -81,8 +120,11 @@ Item {
         }
     }
     Rectangle {
-        parent: root.target
-        anchors.fill: parent
+        parent: root.highlightHost
+        x: root.highlightArea.x
+        y: root.highlightArea.y
+        width: root.highlightArea.width
+        height: root.highlightArea.height
         radius: Metrics.cornerM
         color: Appearance.applyAlpha(Appearance.colors.colPrimary, 0.10)
         border.width: 1

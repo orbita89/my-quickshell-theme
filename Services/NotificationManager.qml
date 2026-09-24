@@ -22,7 +22,15 @@ Singleton {
     property var pendingSavedFiles: []
     property int unread: 0
     property int idOffset: 0
-    property list<Notif> list: []
+    // Deliberately `var` and not `list<Notif>`. Notif is an inline component,
+    // so its type identity belongs to the compilation unit and is minted anew
+    // on every config reload. A typed list checks the element type on append,
+    // and after a reload that check started rejecting every entry: the whole
+    // history (260 items) failed to append, the list came out full of nulls,
+    // and the bindings below then read properties off them. Nothing here needs
+    // the typed list — every use, in this file and in the four consumers, is a
+    // plain JS array operation, exactly like popupList and groupsByAppName.
+    property var list: []
     property var popupList: list.filter(notif => notif.popup).sort((a, b) => b.receivedAt - a.receivedAt)
     property var latestTimeForApp: ({})
     property var groupsByAppName: groupsForList(root.list)

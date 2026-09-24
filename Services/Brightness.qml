@@ -129,7 +129,7 @@ Singleton {
             ddcDetectProcess.running = false;
         pendingDdcMonitors = [];
         ddcDetectProcess.settled = false;
-        ddcDetectProcess.running = true;
+        ddcProbeProcess.running = true;
     }
 
     function parseDdcBlock(data) {
@@ -160,6 +160,24 @@ Singleton {
         if (index >= root.monitors.length)
             return;
         root.monitors[index].initialize();
+    }
+
+    // Наличие ddcutil проверяется через sh, а не попыткой его запустить.
+    // Quickshell пишет в лог предупреждение на каждый непойманный запуск, а в
+    // 0.3.1 у Process нет failedToStart, чтобы его подавить из QML — и на
+    // машине без ddcutil лог засорялся строкой на каждую перезагрузку конфига.
+    // sh есть всегда, так что сама проверка молчит.
+    Process {
+        id: ddcProbeProcess
+
+        command: ["sh", "-c", "command -v ddcutil > /dev/null"]
+
+        onExited: exitCode => {
+            if (exitCode === 0)
+                ddcDetectProcess.running = true;
+            else
+                ddcDetectProcess.settle();
+        }
     }
 
     Process {

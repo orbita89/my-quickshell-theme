@@ -15,6 +15,10 @@ Loader {
     required property var axis
     required property Item barVisualItem
     property bool vertical: false
+    // The screen object is null while a monitor is being added or removed, and
+    // the bar is rebuilt in that window. Reading .name straight off it threw
+    // «Cannot read property 'name' of null» on every hotplug.
+    readonly property string screenName: root.screen ? (root.screen.name ?? "") : ""
 
     sourceComponent: {
         switch (root.componentId) {
@@ -41,7 +45,7 @@ Loader {
         id: workspacesComponent
 
         Workspaces {
-            screenName: root.screen.name
+            screenName: root.screenName
             vertical: root.vertical
         }
     }
@@ -89,7 +93,7 @@ Loader {
         id: systemMonitorComponent
 
         SysMonitor {
-            ownerId: "bar-sysmonitor:" + root.screen.name
+            ownerId: "bar-sysmonitor:" + root.screenName
             vertical: root.vertical
         }
     }

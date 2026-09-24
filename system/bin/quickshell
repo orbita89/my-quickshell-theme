@@ -47,6 +47,22 @@ case " $* " in
         ;;
 esac
 
+# Тема значков. Под niri некому сообщить её Qt: QIcon::themeName остаётся
+# пустой, и не резолвится вообще ничего — проверка Quickshell.hasThemeIcon
+# возвращала false даже для application-x-executable и folder. Отсюда пустые
+# значки приложений в Spotlight и настройках и строки «Could not load icon»
+# в логе на каждый запрос. Плагин gtk3 (берётся из того же ~/.local/opt/Qt,
+# версия совпадает с движком) читает тему из настроек GTK — сейчас
+# Yaru-prussiangreen-dark. Проверить:
+#   qs -p <проба с Quickshell.hasThemeIcon("folder")>
+export QT_QPA_PLATFORMTHEME="${QT_QPA_PLATFORMTHEME:-gtk3}"
+
+# Qt Wayland при переключении фокуса между слоями оболочки пишет
+# «QWaylandTextInputv3 … Try to disable surface … with focusing surface …».
+# На работу ввода это не влияет, а из QML не чинится — глушим ровно эту
+# категорию. Правила пользователя идут после и перекрывают наше.
+export QT_LOGGING_RULES="qt.qpa.wayland.textinput=false${QT_LOGGING_RULES:+;$QT_LOGGING_RULES}"
+
 # На гибридных ноутбуках libglvnd перебирает поставщиков EGL по порядку
 # приоритета, и NVIDIA (10_nvidia.json) идёт раньше Mesa (50_mesa.json).
 # Панель всё равно рисуется на встроенной Intel, а библиотеки NVIDIA при этом
