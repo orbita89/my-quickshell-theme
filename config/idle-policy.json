@@ -5,7 +5,7 @@
   "dimTimeout": 300,
   "dimRespectInhibitors": true,
   "dimFraction": 0.35,
-  "lockEnabled": true,
+  "lockEnabled": false,
   "lockTimeout": 600,
   "lockRespectInhibitors": true,
   "displayOffEnabled": true,

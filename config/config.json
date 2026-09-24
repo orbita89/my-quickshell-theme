@@ -12,7 +12,7 @@
       "eDP-1": "Fill"
     },
     "recentColors": [],
-    "fillMode": "Fill",
+    "fillMode": "Fit",
     "desktopBackend": "quickshell",
     "autoCycle": {
       "enabled": false,

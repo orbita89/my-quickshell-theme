@@ -137,7 +137,7 @@ class NiriWorkspaceDeriverTest : public QObject {
         QCOMPARE(workspace.tiledWindowCount, 3);
         QCOMPARE(workspace.tiledColumnCount, 1);
     }
-
+npm install -g @anthropic-ai/claude-code@latest
     void modelExportsTiledRolesAndMaps()
     {
         NiriWorkspace workspace;

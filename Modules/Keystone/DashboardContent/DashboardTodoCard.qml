@@ -258,12 +258,13 @@ Item {
             }
 
             // Удаление показывается только при наведении, чтобы список
-            // не пестрел крестиками.
+            // не пестрел крестиками. Слот под кнопку резервируется всегда:
+            // иначе при наведении текст сужается и переносится заново
+            // (visible: false исключает элемент из RowLayout).
             Item {
                 Layout.preferredWidth: 22
                 Layout.preferredHeight: 22
                 opacity: rowHover.containsMouse || deleteHover.containsMouse ? 1 : 0
-                visible: opacity > 0.01
 
                 Behavior on opacity {
                     NumberAnimation {

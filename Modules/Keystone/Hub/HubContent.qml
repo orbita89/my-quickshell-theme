@@ -5,6 +5,7 @@ import qs.Common
 import qs.Components
 import qs.Modules.Keystone.CloudUploadContent
 import qs.Modules.Keystone.DashboardContent
+import qs.Modules.Keystone.DeveloperContent
 import qs.Modules.Keystone.Media
 
 Item {
@@ -48,8 +49,7 @@ Item {
     // создана, ширину даёт запасное значение — иначе островок раскрылся бы
     // в нулевой размер и на экране не появилось бы ничего.
     implicitWidth: currentIndex === 0 ? (root.dashboard ? root.dashboard.implicitWidth : root.dashboardFallbackWidth) : currentIndex
-                                                                                              === 2 ? 960 : currentIndex
-                                                                                              === 3 ? 960 :
+                                                                                              === 2 ? 960 :
                                                                                                       760
     // ЛОКАЛЬНАЯ ПРАВКА: панель погоды (была четвёртой) убрана, высота
     // последней вкладки задана числом вместо weatherContent.height.
@@ -57,12 +57,12 @@ Item {
 
     Shortcut {
         sequence: "Tab"
-        onActivated: root.currentIndex = (root.currentIndex + 1) % 3
+        onActivated: root.currentIndex = (root.currentIndex + 1) % 4
     }
 
     Shortcut {
         sequence: "Shift+Tab"
-        onActivated: root.currentIndex = (root.currentIndex + 2) % 3
+        onActivated: root.currentIndex = (root.currentIndex + 3) % 4
     }
 
     RowLayout {
@@ -91,6 +91,12 @@ Item {
             icon: "cloud_upload"
             title: qsTr("Upload")
             index: 2
+        }
+
+        TabBtn {
+            icon: "terminal"
+            title: qsTr("Developer")
+            index: 3
         }
 
     }
@@ -254,6 +260,33 @@ Item {
 
             sourceComponent: CloudUploadContent {
                 dragActive: root.dragActive
+            }
+
+            Behavior on opacity {
+                NumberAnimation {
+                    duration: 300
+                }
+            }
+        }
+
+        // ЛОКАЛЬНАЯ ПРАВКА: вкладка Developer (Docker-виджет), тот же ленивый
+        // паттерн, что у Media и Upload.
+        Loader {
+            id: developerLoader
+
+            property bool loadedOnce: false
+
+            anchors.top: parent.top
+            anchors.horizontalCenter: parent.horizontalCenter
+            width: 760
+            height: 480
+            active: (root.visible && root.currentIndex === 3) || developerLoader.loadedOnce
+            asynchronous: true
+            visible: root.visible && opacity > 0.01
+            opacity: root.currentIndex === 3 ? 1 : 0
+            onLoaded: developerLoader.loadedOnce = true
+
+            sourceComponent: DockerWidget {
             }
 
             Behavior on opacity {
