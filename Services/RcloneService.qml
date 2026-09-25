@@ -277,7 +277,7 @@ Singleton {
         _remotesRefreshPending = false;
         remotesError = "";
         _remotesOutput = "";
-        remoteListProcess.command = [commandName, "listremotes", "--json"];
+        remoteListProcess.command = [commandName, "listremotes", "--long"];
         remoteListProcess.running = true;
         remoteTimeout.restart();
     }
@@ -790,14 +790,24 @@ Singleton {
                 return;
             }
             try {
-                const parsed = JSON.parse(root._remotesOutput || "[]");
-                root.remotes = Array.isArray(parsed) ? parsed.map(item => {
-                    return ({
-                                "name": root.normalizeRemoteName(item.name),
-                                "type": String(item.type || ""),
-                                "description": String(item.description || "")
-                            });
-                }) : [];
+                // Разбирается вывод `listremotes --long`: строка на хранилище,
+                // «имя: тип». Формат простой, зато `--long` понимают все версии
+                // rclone, а `--json` появился только в свежих — в 1.60.1 из
+                // Ubuntu 24.04 он валится с «unknown flag: --json», и список
+                // хранилищ оставался пустым при полностью рабочем конфиге.
+                // Двоеточие в имени хранилища rclone не допускает, поэтому
+                // делить по первому безопасно.
+                root.remotes = String(root._remotesOutput || "").split("\n").map(line => line.trim()).filter(
+                            line => line.length > 0).map(line => {
+                                const separator = line.indexOf(":");
+                                const name = separator < 0 ? line : line.slice(0, separator);
+                                const type = separator < 0 ? "" : line.slice(separator + 1).trim();
+                                return ({
+                                            "name": root.normalizeRemoteName(name),
+                                            "type": type,
+                                            "description": ""
+                                        });
+                            }).filter(item => item.name !== "");
                 root.remotesRevision += 1;
             } catch (error) {
                 root.remotesError = qsTr("rclone returned an invalid remote list");

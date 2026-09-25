@@ -172,14 +172,27 @@ Variants {
         WlrLayershell.exclusionMode: ExclusionMode.Ignore
         // On-demand focus lets desktop clicks leave the island and clicks on
         // the island focus it again. Hover previews never request keyboard input.
-        WlrLayershell.keyboardFocus: root.keyboardInteractionActive ? WlrKeyboardFocus.OnDemand :
+        // Пока вы печатаете в поле островка, фокус берётся Exclusive, иначе
+        // остаётся OnDemand. OnDemand значит «дай клавиатуру, если по мне
+        // кликнули», но в niri включён focus-follows-mouse, и он отдаёт
+        // клавиатуру окну под курсором — островок её терял. Qt при этом
+        // рисовал курсор в поле, а текст уходил в окно позади (терминал).
+        // Боковая панель и Spotlight берут Exclusive и печатают нормально.
+        // Держать Exclusive всегда нельзя: пока хаб открыт, не получилось бы
+        // печатать в других окнах — поэтому только на время редактирования.
+        WlrLayershell.keyboardFocus: root.textEditingActive ? WlrKeyboardFocus.Exclusive :
+                                     root.keyboardInteractionActive ? WlrKeyboardFocus.OnDemand :
                                                                       WlrKeyboardFocus.None
 
         PanelWindow {
             // Niri focuses newly mapped OnDemand surfaces. Keep that mapping
             // separate from the visible island so expansion never drops a frame.
             // After a desktop click, neither window requests focus again.
-            visible: root.keyboardInteractionActive
+            // Во время редактирования поля клавиатуру держит сам островок
+            // (Exclusive), а это окно не открывается: niri фокусирует каждое
+            // только что открытое OnDemand-окно, и оно перетягивало клавиатуру
+            // у поля в самый момент первого нажатия.
+            visible: root.keyboardInteractionActive && !root.textEditingActive
             screen: keystoneWindow.screen
             implicitWidth: 1
             implicitHeight: 1
@@ -212,6 +225,17 @@ Variants {
                     enabled: root.isHubMode
                     sequence: "Shift+Tab"
                     onActivated: hub.currentIndex = (hub.currentIndex + 3) % 4
+                }
+
+                // Ctrl+V на вкладке Upload ставит в очередь файлы и папки из
+                // буфера обмена — альтернатива перетаскиванию. Только здесь:
+                // на других вкладках вставка ничего не должна делать молча.
+                Shortcut {
+                    enabled: root.isHubMode && root.hubTabIndex === 2
+                    // Paste — это несколько сочетаний сразу (Ctrl+V и
+                    // Shift+Insert), а `sequence` привязал бы только одно.
+                    sequences: [StandardKey.Paste]
+                    onActivated: CloudUploadService.pasteFromClipboard()
                 }
             }
         }
@@ -524,9 +548,19 @@ Variants {
                 Timer {
                     id: leaveCloseTimer
 
+                    // Вкладка Upload живёт по другим правилам. Чтобы перетащить
+                    // файл, курсор обязан уйти с островка в файловый менеджер —
+                    // а закрытие по уходу мыши успевало захлопнуть панель
+                    // раньше, чем пользователь донесёт файл обратно. Пока
+                    // открыт Upload или пока над островком уже тащат файл,
+                    // автозакрытие выключено: островок закрывается крестиком,
+                    // Escape или кликом по свёрнутой полоске.
+                    readonly property bool suppressed: (root.isHubMode && root.hubTabIndex === 2)
+                                                       || cloudUploadDropArea.containsDrag
+
                     interval: 450
                     onTriggered: {
-                        if (!root.isCollapsedMode && !root.contentPresentationActive)
+                        if (!suppressed && !root.isCollapsedMode && !root.contentPresentationActive)
                             keystoneWindow.closeAllOthers();
                     }
                 }
@@ -534,6 +568,8 @@ Variants {
                 HoverHandler {
                     onHoveredChanged: {
                         if (!hovered) {
+                            if (leaveCloseTimer.suppressed)
+                                return;
                             if (root.hoverOpened) {
                                 keystoneWindow.closeAllOthers();
                                 return;
@@ -562,6 +598,43 @@ Variants {
                     enabled: root.hoverOpened && !root.isCollapsedMode
                     acceptedButtons: Qt.LeftButton | Qt.MiddleButton | Qt.RightButton
                     onTapped: root.hoverOpened = false
+                }
+
+                // Клик по полю ввода превращает превью в панель так же, как клик
+                // по любому другому месту. TapHandler выше этого не ловит: поле
+                // забирает нажатие себе, onTapped не приходит, и островок
+                // оставался превью — а превью по задумке клавиатуру не просит
+                // (keyboardFocus: None). Замер показал ровно это:
+                //   hoverOpened=true focused=MaterialTextField keyboardFocus=0
+                // Курсор в поле рисовался, а текст уходил в окно позади.
+                onFocusedItemChanged: {
+                    if (root.hoverOpened && root.focusedItem && (root.focusedItem instanceof TextInput
+                                                                 || root.focusedItem instanceof TextEdit)) {
+                        editingPromotion.field = root.focusedItem;
+                        editingPromotion.restart();
+                    }
+                }
+
+                // Превращение превью в панель — на следующем шаге, а не прямо в
+                // обработчике смены фокуса. Панель включает `focus:` у root, тот
+                // перетягивает активный фокус на себя, и если сделать это посреди
+                // смены activeFocusItem, Qt ловит петлю привязки focusedItem —
+                // это и была запинка на первом нажатии. После переключения фокус
+                // явно возвращается полю, в которое кликнули.
+                // Timer, а не Qt.callLater: вызов не должен пережить объект.
+                Timer {
+                    id: editingPromotion
+
+                    property Item field: null
+
+                    interval: 0
+                    onTriggered: {
+                        const target = field;
+                        field = null;
+                        root.hoverOpened = false;
+                        if (target)
+                            target.forceActiveFocus();
+                    }
                 }
 
                 property bool showLyrics: false
@@ -620,6 +693,15 @@ Variants {
                                                                                            || isCollapsedHovered)
                 readonly property bool keyboardInteractionActive: escapeDismissActive && !hoverOpened &&
                                                                   !isCollapsedMode
+                // Редактируется ли сейчас поле ввода в островке — по нему окно
+                // переключает фокус клавиатуры на Exclusive (см. keyboardFocus).
+                // TextField и все поля на его основе — это TextInput, TextArea —
+                // TextEdit.
+                readonly property Item focusedItem: root.Window.activeFocusItem
+
+                readonly property bool textEditingActive: keyboardInteractionActive && focusedItem !== null
+                                                          && (focusedItem instanceof TextInput
+                                                              || focusedItem instanceof TextEdit)
                 onKeyboardInteractionActiveChanged: {
                     if (keyboardInteractionActive)
                         root.requestKeyboardFocus();
@@ -745,6 +827,13 @@ Variants {
                 function requestKeyboardFocus() {
                     Qt.callLater(() => {
                         if (!root.keyboardInteractionActive)
+                            return;
+                        // Если уже редактируют поле — не трогать. Иначе клик по
+                        // полю в превью превращал его в панель, а этот вызов
+                        // тут же уводил фокус с поля на root, и поле получало
+                        // его обратно только со следующим событием — отсюда
+                        // заметная задержка на первом нажатии.
+                        if (root.textEditingActive)
                             return;
 
                         if (root.isToolsMode)
@@ -1607,6 +1696,18 @@ Variants {
                     target: WidgetState
                 }
 
+                // Итог Ctrl+V: как после drop, показать очередь. Сигнал общий
+                // на все экраны, поэтому откликается только островок, где
+                // Upload действительно открыт — там и нажали вставку.
+                Connections {
+                    function onClipboardPasted(addedCount) {
+                        if (root.isHubMode && root.hubTabIndex === 2)
+                            hub.finishCloudUploadDrop(addedCount);
+                    }
+
+                    target: CloudUploadService
+                }
+
                 MouseArea {
                     id: collapsedInputArea
 
@@ -1833,9 +1934,54 @@ Variants {
             }
         }
 
+        // Клик мимо островка закрывает хаб на вкладке Upload. Остальные вкладки
+        // закрываются уходом мыши, а Upload — нет: иначе не успеть сходить за
+        // файлом (см. leaveCloseTimer.suppressed).
+        //
+        // Живёт на уровне окна, а не внутри `root`: `root` — это сам островок
+        // (width: targetW, clip: true), и перехватчик внутри него получал бы
+        // клики только по площади островка, то есть ровно там, где закрывать не
+        // надо. Окно же растянуто на весь экран.
+        //
+        // Лежит под островком (z ниже root.z = 100), поэтому кнопки панели
+        // работают как раньше. Пустые места внутри панели островок не
+        // перехватывает, поэтому попадание в его прямоугольник проверяется
+        // явно — иначе клик по фону панели закрывал бы её.
+        //
+        // Размер нулевой, когда перехватчик не нужен: он же попадает в маску
+        // ввода окна ниже, а маска считается по геометрии элемента.
+        MouseArea {
+            id: dismissCatcher
+
+            readonly property bool armed: root.isHubMode && root.hubTabIndex === 2 && !root.isCollapsedMode
+
+            x: 0
+            y: 0
+            width: armed ? keystoneWindow.width : 0
+            height: armed ? keystoneWindow.height : 0
+            z: -1
+            enabled: armed
+            acceptedButtons: Qt.LeftButton | Qt.RightButton | Qt.MiddleButton
+            onPressed: mouse => {
+                const point = mapToItem(maskContainer, mouse.x, mouse.y);
+                if (point.x >= 0 && point.y >= 0 && point.x < maskContainer.width
+                        && point.y < maskContainer.height) {
+                    mouse.accepted = false;
+                    return;
+                }
+                keystoneWindow.closeAllOthers();
+                mouse.accepted = true;
+            }
+        }
+
         mask: Region {
             Region {
                 item: maskContainer
+            }
+            // Перехватчик клика мимо островка. Вне вкладки Upload он нулевого
+            // размера и в область ввода ничего не добавляет.
+            Region {
+                item: dismissCatcher
             }
         }
     }

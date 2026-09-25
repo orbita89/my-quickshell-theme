@@ -48,12 +48,17 @@ Item {
     // его в раскладку как hubWidth/hubHeight). Пока вкладка Dashboard не
     // создана, ширину даёт запасное значение — иначе островок раскрылся бы
     // в нулевой размер и на экране не появилось бы ничего.
+    // ЛОКАЛЬНАЯ ПРАВКА: вкладка Upload заметно уже и ниже остальных — на
+    // ноутбучном экране 1536x864 прежние 960x580 занимали две трети высоты.
+    readonly property int uploadWidth: 440
+    readonly property int uploadHeight: 220
+
     implicitWidth: currentIndex === 0 ? (root.dashboard ? root.dashboard.implicitWidth : root.dashboardFallbackWidth) : currentIndex
-                                                                                              === 2 ? 960 :
+                                                                                              === 2 ? root.uploadWidth :
                                                                                                       760
     // ЛОКАЛЬНАЯ ПРАВКА: панель погоды (была четвёртой) убрана, высота
     // последней вкладки задана числом вместо weatherContent.height.
-    implicitHeight: 80 + 20 + (currentIndex === 0 ? 520 : currentIndex === 1 ? 480 : 480)
+    implicitHeight: 80 + 20 + (currentIndex === 0 ? 520 : currentIndex === 2 ? root.uploadHeight : 480)
 
     Shortcut {
         sequence: "Tab"
@@ -251,7 +256,7 @@ Item {
             anchors.top: parent.top
             anchors.horizontalCenter: parent.horizontalCenter
             width: parent.width * 0.95
-            height: 480
+            height: root.uploadHeight
             active: (root.visible && root.currentIndex === 2) || cloudUploadLoader.loadedOnce
             asynchronous: true
             visible: root.visible && opacity > 0.01

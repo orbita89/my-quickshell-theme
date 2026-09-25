@@ -16,6 +16,11 @@ Singleton {
         return ["queued", "preparing", "uploading"].indexOf(job.state) >= 0;
     })
     property var uploadJobs: []
+    property bool pasteBusy: false
+
+    // Вставка асинхронная (читается процессом), поэтому итог сообщается
+    // сигналом — вкладка по нему переключается на очередь, как после drop.
+    signal clipboardPasted(int addedCount)
     property bool uploadsPaused: false
     property int currentJobId: -1
     property int nextJobId: 1
@@ -75,6 +80,52 @@ Singleton {
 
     function hasLocalUrls(urls) {
         return localUrlInfos(urls).length > 0;
+    }
+
+    // ---- Вставка из буфера обмена (Ctrl+V) ----
+    //
+    // Тот же вход, что у перетаскивания: список file://-адресов уходит в
+    // enqueueUrls. Разница только в источнике — буфер вместо drag-and-drop.
+    //
+    // Буфер читается через wl-paste. `key clipboard` здесь не подходит: это
+    // менеджер истории, а нужен живой буфер с конкретным MIME-типом.
+    //
+    // Разбор одинаково переваривает три формата, которые кладут файловые
+    // менеджеры и терминалы:
+    //   text/uri-list                 — строки file://…, могут быть #-комментарии;
+    //   x-special/gnome-copied-files  — первая строка «copy» или «cut», дальше адреса;
+    //   обычный текст                 — просто абсолютный путь, скопированный руками.
+    function clipboardUrlsFromText(text) {
+        const urls = [];
+        for (const rawLine of String(text || "").split("\n")) {
+            const line = rawLine.trim();
+            if (line === "" || line.startsWith("#") || line === "copy" || line === "cut")
+                continue;
+
+            if (line.startsWith("file://")) {
+                urls.push(line);
+                continue;
+            }
+            // Голый путь кодируем сами: пробелы и кириллица иначе не доедут.
+            // Готовый file://-адрес трогать нельзя — получилось бы двойное
+            // кодирование знака процента.
+            if (line.startsWith("/"))
+                urls.push("file://" + encodeURI(line));
+        }
+        return urls;
+    }
+
+    function pasteFromClipboard() {
+        if (pasteBusy || clipboardPasteProcess.running)
+            return;
+
+        if (!hasWritableRemote) {
+            lastMessage = qsTr("Choose a writable default cloud storage first");
+            lastMessageTone = "error";
+            return;
+        }
+        pasteBusy = true;
+        clipboardPasteProcess.running = true;
     }
 
     function enqueueUrls(urls) {
@@ -288,6 +339,36 @@ Singleton {
                 uploadProcess.signal(18);
 
             uploadProcess.signal(2);
+        }
+    }
+
+    // Типы перебираются по приоритету: список адресов надёжнее голого текста.
+    // Если ни одного файлового типа нет, берётся обычный текст — вдруг там
+    // вставленный руками путь. Всё выводится как есть, разбор — в QML.
+    Process {
+        id: clipboardPasteProcess
+
+        command: ["sh", "-c", "types=$(wl-paste --list-types 2>/dev/null) || exit 1\n"
+            + "for t in text/uri-list x-special/gnome-copied-files; do\n"
+            + "  if printf '%s\\n' \"$types\" | grep -qx \"$t\"; then\n"
+            + "    exec wl-paste --no-newline --type \"$t\"\n"
+            + "  fi\n"
+            + "done\n"
+            + "exec wl-paste --no-newline"]
+
+        stdout: StdioCollector {
+            id: clipboardPasteOutput
+        }
+
+        onExited: exitCode => {
+            root.pasteBusy = false;
+            const urls = exitCode === 0 ? root.clipboardUrlsFromText(clipboardPasteOutput.text) : [];
+            if (urls.length === 0) {
+                root.lastMessage = qsTr("The clipboard has no files or folders to upload");
+                root.lastMessageTone = "error";
+                return;
+            }
+            root.clipboardPasted(root.enqueueUrls(urls));
         }
     }
 

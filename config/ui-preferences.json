@@ -318,7 +318,7 @@
   "cloudBackupFoldersInitialized": false,
   "cloudBackupFoldersVersion": 0,
   "cloudBackupFolders": [],
-  "cloudDefaultRemoteName": "",
+  "cloudDefaultRemoteName": "anton",
   "cloudBackupRoot": "Backups",
   "cloudUploadRoot": "Uploads",
   "recordingVideoDirectory": "/home/dev/Videos/Recordings",

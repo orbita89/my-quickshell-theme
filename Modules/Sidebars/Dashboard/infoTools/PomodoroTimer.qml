@@ -176,9 +176,12 @@ Item {
                 Layout.alignment: Qt.AlignHCenter
                 spacing: 8
 
+                // Ширина от текста, а не числом: в 110 px влезали «Start task»
+                // и «Save task», а русские «Запустить задачу» и «Сохранить
+                // задачу» выползали за края кнопки и налезали друг на друга.
                 RippleButton {
-                    implicitWidth: TimerService.pomodoroHasTask ? 150 : 110
-                    implicitHeight: 32
+                    implicitWidth: startTaskLabel.implicitWidth + 24
+                    implicitHeight: 30
                     buttonRadius: Appearance.rounding.full
                     containerColor: TimerService.pomodoroHasTask ? Appearance.colors.colSecondaryContainer :
                                                                    Appearance.colors.colPrimaryContainer
@@ -195,10 +198,12 @@ Item {
                     }
 
                     contentItem: Text {
+                        id: startTaskLabel
+
                         text: TimerService.pomodoroHasTask ? qsTr("Stop task") : qsTr("Start task")
                         color: Appearance.colors.colOnSecondaryContainer
                         font.family: Fonts.ui
-                        font.pixelSize: 13
+                        font.pixelSize: 12
                         font.weight: Font.Medium
                         horizontalAlignment: Text.AlignHCenter
                         verticalAlignment: Text.AlignVCenter
@@ -209,18 +214,20 @@ Item {
                 // Повторное сохранение с тем же названием обновляет время.
                 RippleButton {
                     visible: !TimerService.pomodoroHasTask
-                    implicitWidth: 110
-                    implicitHeight: 32
+                    implicitWidth: saveTaskLabel.implicitWidth + 24
+                    implicitHeight: 30
                     buttonRadius: Appearance.rounding.full
                     containerColor: Appearance.colors.colLayer2
                     stateLayerColor: Appearance.colors.colSurfaceContainerHighestHover
                     onClicked: root.saveCurrentTask()
 
                     contentItem: Text {
+                        id: saveTaskLabel
+
                         text: qsTr("Save task")
                         color: Appearance.colors.colOnLayer1
                         font.family: Fonts.ui
-                        font.pixelSize: 13
+                        font.pixelSize: 12
                         horizontalAlignment: Text.AlignHCenter
                         verticalAlignment: Text.AlignVCenter
                     }
@@ -325,13 +332,18 @@ Item {
         RowLayout {
             Layout.alignment: Qt.AlignHCenter
             Layout.bottomMargin: 8
-            spacing: 14
+            spacing: 18
             // Во время отсчёта менять длительности нельзя — сбилась бы текущая
             // фаза; сначала «Reset».
             enabled: !TimerService.pomodoroRunning
             opacity: enabled ? 1 : 0.4
 
-            component MinuteStepper: RowLayout {
+            // Подпись стоит над кнопками, а не слева от них. В русском
+            // «Сфокусировать» втрое длиннее «Focus», и три счётчика в ряд с
+            // подписями сбоку выходили шире панели (~464 px против ~374 в
+            // английском). Самая широкая строка задаёт ширину всей колонки,
+            // поэтому вместе с ней расползались и поля «Задача»/«Время» выше.
+            component MinuteStepper: ColumnLayout {
                 id: stepper
 
                 property string label: ""
@@ -340,58 +352,64 @@ Item {
                 property int maximum: 180
                 signal changed(int value)
 
-                spacing: 4
+                spacing: 0
 
                 Text {
+                    Layout.alignment: Qt.AlignHCenter
                     text: stepper.label
                     color: Appearance.colors.colSubtext
                     font.family: Fonts.ui
-                    font.pixelSize: 12
+                    font.pixelSize: 11
                 }
 
-                RippleButton {
-                    implicitWidth: 24
-                    implicitHeight: 24
-                    buttonRadius: Appearance.rounding.full
-                    stateLayerColor: Appearance.colors.colSurfaceContainerHighestHover
-                    Accessible.name: qsTr("Decrease")
-                    onClicked: stepper.changed(Math.max(stepper.minimum, stepper.value - 1))
+                RowLayout {
+                    Layout.alignment: Qt.AlignHCenter
+                    spacing: 2
 
-                    contentItem: Text {
-                        text: "−"
-                        color: Appearance.colors.colOnLayer1
-                        font.family: Fonts.ui
-                        font.pixelSize: 15
-                        horizontalAlignment: Text.AlignHCenter
-                        verticalAlignment: Text.AlignVCenter
+                    RippleButton {
+                        implicitWidth: 22
+                        implicitHeight: 22
+                        buttonRadius: Appearance.rounding.full
+                        stateLayerColor: Appearance.colors.colSurfaceContainerHighestHover
+                        Accessible.name: qsTr("Decrease")
+                        onClicked: stepper.changed(Math.max(stepper.minimum, stepper.value - 1))
+
+                        contentItem: Text {
+                            text: "−"
+                            color: Appearance.colors.colOnLayer1
+                            font.family: Fonts.ui
+                            font.pixelSize: 14
+                            horizontalAlignment: Text.AlignHCenter
+                            verticalAlignment: Text.AlignVCenter
+                        }
                     }
-                }
 
-                Text {
-                    text: stepper.value
-                    color: Appearance.colors.colOnLayer1
-                    font.family: Fonts.ui
-                    font.pixelSize: 14
-                    font.weight: Font.Medium
-                    horizontalAlignment: Text.AlignHCenter
-                    Layout.minimumWidth: 22
-                }
-
-                RippleButton {
-                    implicitWidth: 24
-                    implicitHeight: 24
-                    buttonRadius: Appearance.rounding.full
-                    stateLayerColor: Appearance.colors.colSurfaceContainerHighestHover
-                    Accessible.name: qsTr("Increase")
-                    onClicked: stepper.changed(Math.min(stepper.maximum, stepper.value + 1))
-
-                    contentItem: Text {
-                        text: "+"
+                    Text {
+                        text: stepper.value
                         color: Appearance.colors.colOnLayer1
                         font.family: Fonts.ui
-                        font.pixelSize: 15
+                        font.pixelSize: 13
+                        font.weight: Font.Medium
                         horizontalAlignment: Text.AlignHCenter
-                        verticalAlignment: Text.AlignVCenter
+                        Layout.minimumWidth: 22
+                    }
+
+                    RippleButton {
+                        implicitWidth: 22
+                        implicitHeight: 22
+                        buttonRadius: Appearance.rounding.full
+                        stateLayerColor: Appearance.colors.colSurfaceContainerHighestHover
+                        Accessible.name: qsTr("Increase")
+                        onClicked: stepper.changed(Math.min(stepper.maximum, stepper.value + 1))
+
+                        contentItem: Text {
+                            text: "+"
+                            color: Appearance.colors.colOnLayer1
+                            font.family: Fonts.ui
+                            font.pixelSize: 14
+                            horizontalAlignment: Text.AlignHCenter
+                            verticalAlignment: Text.AlignVCenter
+                        }
                     }
                 }
             }

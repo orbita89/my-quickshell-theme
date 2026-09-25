@@ -130,8 +130,8 @@ Item {
                 Layout.fillWidth: true
                 text: qsTr("No default cloud storage is available")
                 color: Appearance.colors.colOnSurface
-                font.family: Typography.headlineSmall.family
-                font.pixelSize: Typography.headlineSmall.pixelSize
+                font.family: Typography.titleMedium.family
+                font.pixelSize: Typography.titleMedium.pixelSize
                 font.weight: Font.DemiBold
                 horizontalAlignment: Text.AlignHCenter
             }
@@ -140,8 +140,8 @@ Item {
                 Layout.fillWidth: true
                 text: qsTr("Choose a writable default cloud storage in Settings first")
                 color: Appearance.colors.colOnSurfaceVariant
-                font.family: Typography.bodyLarge.family
-                font.pixelSize: Typography.bodyLarge.pixelSize
+                font.family: Typography.bodySmall.family
+                font.pixelSize: Typography.bodySmall.pixelSize
                 horizontalAlignment: Text.AlignHCenter
                 wrapMode: Text.Wrap
             }
@@ -176,8 +176,8 @@ Item {
             }
 
             anchors.fill: parent
-            anchors.margins: Metrics.spacingL
-            spacing: Metrics.spacingM
+            anchors.margins: Metrics.spacingM
+            spacing: Metrics.spacingS
 
             Timer {
                 id: clearCompletedTimer
@@ -192,33 +192,45 @@ Item {
 
             RowLayout {
                 Layout.fillWidth: true
-                spacing: Metrics.spacingS
+                // Четыре кнопки значками и заголовок: с промежутком spacingS
+                // заголовку не хватало 6 px из 440.
+                spacing: Metrics.spacingXS
 
                 Text {
                     Layout.fillWidth: true
                     text: qsTr("Upload queue")
                     color: Appearance.colors.colOnSurface
-                    font.family: Typography.headlineSmall.family
-                    font.pixelSize: Typography.headlineSmall.pixelSize
+                    font.family: Typography.bodyMedium.family
+                    font.pixelSize: Typography.bodyMedium.pixelSize
                     font.weight: Font.DemiBold
+                    elide: Text.ElideRight
                 }
 
+                // Кнопки шапки — только значками. С подписями три штуки не
+                // влезали в узкую панель и уезжали за её край под clip.
                 ActionButton {
-                    text: CloudUploadService.uploadsPaused ? qsTr("Resume all") : qsTr("Pause all")
+                    Accessible.name: CloudUploadService.uploadsPaused ? qsTr("Resume all") : qsTr("Pause all")
                     iconName: CloudUploadService.uploadsPaused ? "play_arrow" : "pause"
                     enabled: CloudUploadService.hasPendingUploads || CloudUploadService.uploadsPaused
                     onClicked: CloudUploadService.toggleUploadsPaused()
                 }
 
                 ActionButton {
-                    text: qsTr("Clear completed")
+                    Accessible.name: qsTr("Paste")
+                    iconName: "content_paste"
+                    enabled: !CloudUploadService.pasteBusy && !root.clearingCompletedJobs
+                    onClicked: CloudUploadService.pasteFromClipboard()
+                }
+
+                ActionButton {
+                    Accessible.name: qsTr("Clear completed")
                     iconName: "done_all"
                     enabled: root.hasCompletedJobs && !root.clearingCompletedJobs
                     onClicked: queueLayout.clearCompletedWithAnimation()
                 }
 
                 ActionButton {
-                    text: qsTr("Back to upload")
+                    Accessible.name: qsTr("Back to upload")
                     iconName: "add"
                     filled: true
                     enabled: !root.clearingCompletedJobs
@@ -275,7 +287,23 @@ Item {
                     }
 
                     width: uploadList.width
-                    height: Math.max(92, jobContent.implicitHeight + Metrics.spacingM * 2)
+                    // Высота считается из состояния строки, а не из
+                    // implicitHeight вложенного ColumnLayout: тот доспевает
+                    // только на следующем проходе QtQuick.Layouts, и ListView
+                    // успевал поставить свежую строку по ещё не готовой высоте
+                    // — отсюда наезжающий друг на друга текст. Та же ловушка,
+                    // что разобрана в bug_3.
+                    readonly property bool showsProgress: jobRow.job.state === "uploading"
+                                                          && jobRow.job.progress >= 0
+                    readonly property string detailText: jobRow.job.state === "error" ? String(
+                                                             jobRow.job.errorMessage
+                                                             || "") : root.progressDetail(jobRow.job)
+
+                    height: Metrics.spacingM * 2 + Math.round(Typography.bodyMedium.pixelSize * 1.4)
+                            + (jobRow.showsProgress ? 6 + Metrics.spacingXS : 0)
+                            + (jobRow.detailText.length > 0 ? Math.round(
+                                                                  Typography.bodySmall.pixelSize * 1.4)
+                                                              + Metrics.spacingXS : 0)
 
                     SequentialAnimation {
                         id: dismissAnimation
@@ -381,8 +409,8 @@ Item {
                                         color: jobRow.job.state === "error"
                                                ? Appearance.colors.colOnErrorContainer :
                                                  Appearance.colors.colOnSurface
-                                        font.family: Typography.titleMedium.family
-                                        font.pixelSize: Typography.titleMedium.pixelSize
+                                        font.family: Typography.bodyMedium.family
+                                        font.pixelSize: Typography.bodyMedium.pixelSize
                                         font.weight: Font.DemiBold
                                         elide: Text.ElideMiddle
                                     }
@@ -392,15 +420,15 @@ Item {
                                         color: jobRow.job.state === "error"
                                                ? Appearance.colors.colOnErrorContainer :
                                                  Appearance.colors.colOnSurfaceVariant
-                                        font.family: Typography.labelLarge.family
-                                        font.pixelSize: Typography.labelLarge.pixelSize
+                                        font.family: Typography.labelSmall.family
+                                        font.pixelSize: Typography.labelSmall.pixelSize
                                     }
                                 }
 
                                 Rectangle {
                                     Layout.fillWidth: true
                                     Layout.preferredHeight: 6
-                                    visible: jobRow.job.state === "uploading" && jobRow.job.progress >= 0
+                                    visible: jobRow.showsProgress
                                     radius: height / 2
                                     color: Appearance.colors.colSecondaryContainer
 
@@ -423,9 +451,8 @@ Item {
 
                                 Text {
                                     Layout.fillWidth: true
-                                    text: jobRow.job.state === "error" ? jobRow.job.errorMessage : root.progressDetail(
-                                                                             jobRow.job)
-                                    visible: text.length > 0
+                                    text: jobRow.detailText
+                                    visible: jobRow.detailText.length > 0
                                     color: jobRow.job.state === "error"
                                            ? Appearance.colors.colOnErrorContainer :
                                              Appearance.colors.colOnSurfaceVariant
@@ -437,7 +464,7 @@ Item {
 
                             ActionButton {
                                 visible: jobRow.job.state === "error"
-                                text: qsTr("Retry")
+                                Accessible.name: qsTr("Retry")
                                 iconName: "refresh"
                                 onClicked: CloudUploadService.retryUpload(jobRow.job.id)
                             }
@@ -517,33 +544,42 @@ Item {
             width: Math.min(parent.width - Metrics.spacingXL * 2, 620)
             spacing: Metrics.spacingM
 
+            // Подпись «перетащите сюда / отпустите для загрузки» убрана: на
+            // маленькой панели она занимала половину высоты, а смысл и так
+            // передаёт значок, который меняется под курсором с файлом.
             MaterialSymbol {
                 Layout.alignment: Qt.AlignHCenter
                 text: dropSurface.dropPrompt ? "move_to_inbox" : "cloud_upload"
-                iconSize: 72
+                iconSize: 40
                 fill: dropSurface.dropPrompt ? 1 : 0
                 color: dropSurface.dropPrompt ? Appearance.colors.colOnPrimaryContainer :
                                                 Appearance.colors.colPrimary
                 scale: dropSurface.dropPrompt ? 1.12 : 1
             }
 
-            Text {
-                Layout.fillWidth: true
-                text: dropSurface.dropPrompt ? qsTr("Drop to upload") : qsTr("Drag files or folders here")
-                color: dropSurface.dropPrompt ? Appearance.colors.colOnPrimaryContainer :
-                                                Appearance.colors.colOnSurface
-                font.family: Typography.headlineMedium.family
-                font.pixelSize: Typography.headlineMedium.pixelSize
-                font.weight: Font.DemiBold
-                horizontalAlignment: Text.AlignHCenter
-            }
-
-            ActionButton {
+            RowLayout {
                 Layout.alignment: Qt.AlignHCenter
-                visible: !dropSurface.dropPrompt && root.hasJobs
-                text: qsTr("Uploads in queue: %1").arg(CloudUploadService.uploadJobCount)
-                iconName: "format_list_bulleted"
-                onClicked: root.showQueue = true
+                visible: !dropSurface.dropPrompt
+                spacing: Metrics.spacingS
+
+                // Явная кнопка вставки: Ctrl+V срабатывает, только когда у
+                // островка фокус клавиатуры, а на кнопку можно просто нажать.
+                // Итог приходит сигналом clipboardPasted — по нему островок
+                // переключает вкладку на очередь, как после перетаскивания.
+                ActionButton {
+                    text: qsTr("Paste")
+                    iconName: "content_paste"
+                    filled: true
+                    enabled: !CloudUploadService.pasteBusy
+                    onClicked: CloudUploadService.pasteFromClipboard()
+                }
+
+                ActionButton {
+                    visible: root.hasJobs
+                    text: qsTr("Uploads in queue: %1").arg(CloudUploadService.uploadJobCount)
+                    iconName: "format_list_bulleted"
+                    onClicked: root.showQueue = true
+                }
             }
 
             Text {
