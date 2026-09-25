@@ -96,6 +96,15 @@ StyledFlickable {
 
             SettingsActionRow {
                 Layout.fillWidth: true
+                iconName: "power_settings_new"
+                text: SpotlightCatalog.title("general.power-sleep")
+                description: qsTr("Screen off, lock & sleep")
+                trailingIconName: "chevron_right"
+                onClicked: root.sectionRequested("power-sleep")
+            }
+
+            SettingsActionRow {
+                Layout.fillWidth: true
                 iconName: "keyboard"
                 text: SpotlightCatalog.title("general.shortcuts")
                 trailingIconName: "chevron_right"

@@ -523,6 +523,25 @@ var catalog = {
       "title": "Mouse & touchpad"
     },
     {
+      "aliases": [
+        "screen timeout",
+        "turn off screen",
+        "lock screen",
+        "sleep",
+        "suspend",
+        "idle"
+      ],
+      "context": "GeneralPage",
+      "icon": "power_settings_new",
+      "id": "general.power-sleep",
+      "path": [
+        "general",
+        "power-sleep"
+      ],
+      "source": "PowerAndSleepPage.qml",
+      "title": "Screen & Sleep"
+    },
+    {
       "aliases": [],
       "context": "GeneralPage",
       "icon": "keyboard",
@@ -815,6 +834,27 @@ var catalog = {
       "route": "general.mouse-touchpad",
       "source": "MouseTouchpadPage.qml",
       "title": "Mouse & touchpad"
+    },
+    {
+      "aliases": [
+        "screen timeout",
+        "turn off screen",
+        "lock screen",
+        "sleep",
+        "suspend",
+        "idle"
+      ],
+      "anchor": false,
+      "context": "GeneralPage",
+      "icon": "power_settings_new",
+      "id": "general.power-sleep",
+      "path": [
+        "general",
+        "power-sleep"
+      ],
+      "route": "general.power-sleep",
+      "source": "PowerAndSleepPage.qml",
+      "title": "Screen & Sleep"
     },
     {
       "aliases": [],
@@ -1665,6 +1705,82 @@ var catalog = {
       "title": "Connection information"
     },
     {
+      "aliases": [
+        "screen timeout",
+        "turn off display",
+        "dim screen",
+        "brightness"
+      ],
+      "anchor": true,
+      "context": "PowerAndSleepPage",
+      "icon": "monitor",
+      "id": "general.power-sleep.section.screen",
+      "path": [
+        "general",
+        "power-sleep"
+      ],
+      "route": "general.power-sleep",
+      "source": "PowerAndSleepPage.qml",
+      "title": "Screen & Display"
+    },
+    {
+      "aliases": [
+        "lock screen",
+        "auto lock",
+        "lock timeout",
+        "security"
+      ],
+      "anchor": true,
+      "context": "PowerAndSleepPage",
+      "icon": "lock",
+      "id": "general.power-sleep.section.lock",
+      "path": [
+        "general",
+        "power-sleep"
+      ],
+      "route": "general.power-sleep",
+      "source": "PowerAndSleepPage.qml",
+      "title": "Screen Lock"
+    },
+    {
+      "aliases": [
+        "sleep",
+        "suspend",
+        "laptop sleep",
+        "power down",
+        "idle timeout"
+      ],
+      "anchor": true,
+      "context": "PowerAndSleepPage",
+      "icon": "bedtime",
+      "id": "general.power-sleep.section.suspend",
+      "path": [
+        "general",
+        "power-sleep"
+      ],
+      "route": "general.power-sleep",
+      "source": "PowerAndSleepPage.qml",
+      "title": "Sleep & Suspend"
+    },
+    {
+      "aliases": [
+        "idle policy",
+        "inhibit",
+        "keep awake"
+      ],
+      "anchor": true,
+      "context": "PowerAndSleepPage",
+      "icon": "tune",
+      "id": "general.power-sleep.section.policy",
+      "path": [
+        "general",
+        "power-sleep"
+      ],
+      "route": "general.power-sleep",
+      "source": "PowerAndSleepPage.qml",
+      "title": "Idle Policy"
+    },
+    {
       "aliases": [],
       "anchor": true,
       "context": "SpotlightPage",
@@ -1866,6 +1982,7 @@ function title(id) {
     case "general.spotlight": return qsTranslate("GeneralPage", "Spotlight");
     case "general.effects": return qsTranslate("GeneralPage", "Transparency and blur");
     case "general.mouse-touchpad": return qsTranslate("GeneralPage", "Mouse & touchpad");
+    case "general.power-sleep": return qsTranslate("GeneralPage", "Screen & Sleep");
     case "general.shortcuts": return qsTranslate("GeneralPage", "Keyboard shortcuts");
     case "general.language-region": return qsTranslate("GeneralPage", "Language & region");
     case "general.autostart": return qsTranslate("GeneralPage", "Autostart");
@@ -1926,6 +2043,10 @@ function title(id) {
     case "general.network.section.wi-fi": return qsTranslate("NetworkPage", "Wi-Fi");
     case "general.network.section.other-settings": return qsTranslate("NetworkPage", "Other settings");
     case "general.network.section.connection-information": return qsTranslate("NetworkPage", "Connection information");
+    case "general.power-sleep.section.screen": return qsTranslate("PowerAndSleepPage", "Screen & Display");
+    case "general.power-sleep.section.lock": return qsTranslate("PowerAndSleepPage", "Screen Lock");
+    case "general.power-sleep.section.suspend": return qsTranslate("PowerAndSleepPage", "Sleep & Suspend");
+    case "general.power-sleep.section.policy": return qsTranslate("PowerAndSleepPage", "Idle Policy");
     case "general.spotlight.section.applications": return qsTranslate("SpotlightPage", "Applications");
     case "general.spotlight.section.web-search": return qsTranslate("SpotlightPage", "Web search");
     case "general.spotlight.section.clipboard": return qsTranslate("SpotlightPage", "Clipboard");

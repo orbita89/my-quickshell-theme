@@ -175,17 +175,13 @@ Item {
         target: sessionLocker
     }
 
-    // ОТКЛЮЧЕНО: блокировкой занимается swayidle + swaylock (10 мин — блок,
-    // 15 — гашение экрана, см. ~/.config/systemd/user/swayidle.service).
-    // Сам модуль Lock оставлен: на него ссылается меню питания, но сам он
-    // больше не срабатывает по бездействию.
-    // Connections {
-    //     function onLockRequested() {
-    //         IdleService.reportLockResult(sessionLocker.open());
-    //     }
-    //
-    //     target: IdleService
-    // }
+    Connections {
+        function onLockRequested() {
+            IdleService.reportLockResult(sessionLocker.open());
+        }
+
+        target: IdleService
+    }
 
     Loader {
         active: ShortcutMapService.visible

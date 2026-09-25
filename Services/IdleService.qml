@@ -308,13 +308,14 @@ Singleton {
         suspendProcess.exec(["loginctl", "suspend"]);
     }
 
-    IdleInhibitorSurface {
-        id: inhibitorSurface
-    }
+    PanelWindow {
+        id: inhibitorWindow
+        visible: false
 
-    IdleInhibitor {
-        window: inhibitorSurface
-        enabled: root.inhibited
+        IdleInhibitor {
+            window: inhibitorWindow
+            enabled: root.inhibited
+        }
     }
 
     IdleMonitor {
@@ -378,6 +379,9 @@ Singleton {
         blockLoading: true
         blockWrites: true
         atomicWrites: true
+        watchChanges: true
+
+        onFileChanged: reload()
 
         onLoaded: {
             let repair = false;
@@ -394,7 +398,8 @@ Singleton {
                 root.savePolicy();
         }
 
-        onLoadFailed: {
+        onLoadFailed: error => {
+            root.policyStoreReady = true;
             root.loadPolicy({});
             root.savePolicy();
         }

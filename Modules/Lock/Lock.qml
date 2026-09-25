@@ -26,8 +26,14 @@ Scope {
         internalContext.currentText = "";
         internalContext.unlockInProgress = false;
         internalContext.showFailure = false;
-        capturePending = true;
-        activeCaptureRequestId = preLockCapture.capture();
+        // Мгновенная блокировка: НЕ ждём предварительный снимок экрана.
+        // Захват через LockSnapshot.qml занимает ~1.3 c (подпроцесс
+        // quickshell + screencopy) и +0.85 c entrance-анимация — итого
+        // локскрин появлялся через ~3 c после нажатия. Без снимка фоном
+        // служат размытые обои (DefaultLock уже умеет этот путь: reveal=1).
+        // Вернуть снимок: раскомментировать строки с preLockCapture.capture()
+        // и поднять deadline.interval в PreLockCapture.qml.
+        sessionLock.locked = true;
         return "LOCKED";
     }
 

@@ -31,10 +31,15 @@ Item {
             return;
         useSnapshot = snapshotReady;
         started = true;
-        if (snapshotReady)
+        if (snapshotReady) {
             entrance.start();
-        else
+        } else {
             reveal = 1;
+            // Лёгкий фейд вместо жёсткого скачка: сразу видна тёмная базовая
+            // поверхность, сцена (обои + часы + поле пароля) плавно проявляется.
+            root.sceneOpacity = 0;
+            entranceFade.start();
+        }
         content.forceAuthFocus();
     }
 
@@ -73,7 +78,7 @@ Item {
     Item {
         id: scene
         anchors.fill: parent
-        opacity: root.started ? (root.useSnapshot ? root.sceneOpacity : 1) : 0
+        opacity: root.started ? root.sceneOpacity : 0
         layer.enabled: true
         layer.effect: MultiEffect {
             maskEnabled: true
@@ -126,6 +131,7 @@ Item {
                 return;
             root.exiting = true;
             entrance.stop();
+            entranceFade.stop();
             exitAnimation.start();
         }
     }
@@ -137,6 +143,19 @@ Item {
         from: 0
         to: 1
         duration: 850
+        easing.type: Easing.BezierSpline
+        easing.bezierCurve: [0.2, 0, 0, 1, 1, 1]
+    }
+
+    // Фейд-ин для режима без снимка (см. startReveal): короткое и мягкое
+    // появление вместо резкого включения. Длительность намеренно скромная.
+    NumberAnimation {
+        id: entranceFade
+        target: root
+        property: "sceneOpacity"
+        from: 0
+        to: 1
+        duration: 200
         easing.type: Easing.BezierSpline
         easing.bezierCurve: [0.2, 0, 0, 1, 1, 1]
     }

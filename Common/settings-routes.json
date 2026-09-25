@@ -144,6 +144,25 @@
       ]
     },
     {
+      "id": "general.power-sleep",
+      "title": "Screen & Sleep",
+      "context": "GeneralPage",
+      "icon": "power_settings_new",
+      "source": "PowerAndSleepPage.qml",
+      "path": [
+        "general",
+        "power-sleep"
+      ],
+      "aliases": [
+        "screen timeout",
+        "turn off screen",
+        "lock screen",
+        "sleep",
+        "suspend",
+        "idle"
+      ]
+    },
+    {
       "id": "general.shortcuts",
       "title": "Keyboard shortcuts",
       "context": "GeneralPage",
