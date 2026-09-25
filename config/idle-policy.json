@@ -1,5 +1,5 @@
 {
-  "inhibited": false,
+  "inhibited": true,
   "policyEnabled": true,
   "dimEnabled": false,
   "dimTimeout": 60,

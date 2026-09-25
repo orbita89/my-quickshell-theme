@@ -107,9 +107,9 @@
     "capsLockOsd": true,
     "numLockOsd": true,
     "hideDate": false,
-    "hoverAction": "peak",
-    "leftClickAction": "dashboard",
-    "middleClickAction": "lyrics",
+    "hoverAction": "dashboard",
+    "leftClickAction": "none",
+    "middleClickAction": "none",
     "keyhole": {
       "cards": [
         "quickSettings",

@@ -1,6 +1,6 @@
 {
-  "dndEnabled": true,
-  "language": "en_US",
+  "dndEnabled": false,
+  "language": "ru_RU",
   "weatherTemperatureUnit": "celsius",
   "systemTemperatureUnit": "celsius",
   "spotlightSearchEngine": "google",

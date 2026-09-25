@@ -8,6 +8,16 @@ Singleton {
 
     readonly property string commandName: Quickshell.env("CLAVIS_RCLONE") || "rclone"
     property bool available: false
+    // Установлен ли сам rclone. Проверяется отдельно и один раз за сессию,
+    // потому что без него Process не стартует вовсе: Quickshell пишет в лог
+    // предупреждение на каждую попытку, а onExited не приходит — и
+    // remotesLoading висел бы вечно, оставляя вкладку «Upload» в пустом
+    // состоянии без объяснения причины. sh есть всегда, проверка молчит.
+    // 0 — не проверяли, 1 — проверяем, 2 — есть, 3 — нет.
+    property int binaryState: 0
+    readonly property bool binaryMissing: binaryState === 3
+    property bool remotesWanted: false
+    property bool providersWanted: false
     property bool remotesLoading: false
     property var remotes: []
     property string selectedRemoteName: ""
@@ -229,7 +239,35 @@ Singleton {
         return setDefaultRemote(name);
     }
 
+    function ensureBinary() {
+        if (binaryState === 0) {
+            binaryState = 1;
+            binaryProbeProcess.running = true;
+        }
+        return binaryState;
+    }
+
+    function reportMissingBinary() {
+        available = false;
+        remotesLoading = false;
+        providersLoading = false;
+        remotesError = qsTr("rclone is not installed");
+        providersError = remotesError;
+        quotaState = "error";
+        quotaMessage = remotesError;
+    }
+
     function refreshRemotes() {
+        const binary = ensureBinary();
+        if (binary === 3) {
+            reportMissingBinary();
+            return;
+        }
+        if (binary !== 2) {
+            remotesWanted = true;
+            remotesLoading = true;
+            return;
+        }
         if (remoteListProcess.running) {
             _remotesRefreshPending = true;
             return;
@@ -245,6 +283,16 @@ Singleton {
     }
 
     function loadProviders() {
+        const binary = ensureBinary();
+        if (binary === 3) {
+            reportMissingBinary();
+            return;
+        }
+        if (binary !== 2) {
+            providersWanted = true;
+            providersLoading = true;
+            return;
+        }
         if (providersProcess.running)
             return;
 
@@ -697,6 +745,30 @@ Singleton {
         function onCloudDefaultRemoteNameChanged() {
             if (UiPreferences.preferencesReady)
                 root.reconcileDefaultRemote();
+        }
+    }
+
+    // Аргумент передаётся через $1, а не склейкой в строку: имя команды может
+    // прийти из CLAVIS_RCLONE и содержать что угодно.
+    Process {
+        id: binaryProbeProcess
+
+        command: ["sh", "-c", "command -v \"$1\" > /dev/null 2>&1", "sh", root.commandName]
+
+        onExited: exitCode => {
+            root.binaryState = exitCode === 0 ? 2 : 3;
+            if (root.binaryState === 3) {
+                root.reportMissingBinary();
+                return;
+            }
+            if (root.remotesWanted) {
+                root.remotesWanted = false;
+                root.refreshRemotes();
+            }
+            if (root.providersWanted) {
+                root.providersWanted = false;
+                root.loadProviders();
+            }
         }
     }
 
