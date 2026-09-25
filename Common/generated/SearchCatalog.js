@@ -507,6 +507,22 @@ var catalog = {
       "title": "Transparency and blur"
     },
     {
+      "aliases": [
+        "pointer",
+        "scroll speed",
+        "acceleration"
+      ],
+      "context": "GeneralPage",
+      "icon": "mouse",
+      "id": "general.mouse-touchpad",
+      "path": [
+        "general",
+        "mouse-touchpad"
+      ],
+      "source": "MouseTouchpadPage.qml",
+      "title": "Mouse & touchpad"
+    },
+    {
       "aliases": [],
       "context": "GeneralPage",
       "icon": "keyboard",
@@ -781,6 +797,24 @@ var catalog = {
       "route": "general.effects",
       "source": "GeneralEffectsPage.qml",
       "title": "Transparency and blur"
+    },
+    {
+      "aliases": [
+        "pointer",
+        "scroll speed",
+        "acceleration"
+      ],
+      "anchor": false,
+      "context": "GeneralPage",
+      "icon": "mouse",
+      "id": "general.mouse-touchpad",
+      "path": [
+        "general",
+        "mouse-touchpad"
+      ],
+      "route": "general.mouse-touchpad",
+      "source": "MouseTouchpadPage.qml",
+      "title": "Mouse & touchpad"
     },
     {
       "aliases": [],
@@ -1506,6 +1540,75 @@ var catalog = {
       "title": "Time & date"
     },
     {
+      "aliases": [
+        "pointer speed",
+        "acceleration",
+        "scroll speed"
+      ],
+      "anchor": true,
+      "context": "MouseTouchpadPage",
+      "icon": "mouse",
+      "id": "general.mouse-touchpad.section.mouse",
+      "path": [
+        "general",
+        "mouse-touchpad"
+      ],
+      "route": "general.mouse-touchpad",
+      "source": "MouseTouchpadPage.qml",
+      "title": "Mouse"
+    },
+    {
+      "aliases": [
+        "tap to click",
+        "natural scrolling",
+        "gestures"
+      ],
+      "anchor": true,
+      "context": "MouseTouchpadPage",
+      "icon": "touchpad_mouse",
+      "id": "general.mouse-touchpad.section.touchpad",
+      "path": [
+        "general",
+        "mouse-touchpad"
+      ],
+      "route": "general.mouse-touchpad",
+      "source": "MouseTouchpadPage.qml",
+      "title": "Touchpad"
+    },
+    {
+      "aliases": [
+        "pointing stick"
+      ],
+      "anchor": true,
+      "context": "MouseTouchpadPage",
+      "icon": "radio_button_checked",
+      "id": "general.mouse-touchpad.section.trackpoint",
+      "path": [
+        "general",
+        "mouse-touchpad"
+      ],
+      "route": "general.mouse-touchpad",
+      "source": "MouseTouchpadPage.qml",
+      "title": "Trackpoint"
+    },
+    {
+      "aliases": [
+        "focus follows mouse",
+        "warp"
+      ],
+      "anchor": true,
+      "context": "MouseTouchpadPage",
+      "icon": "highlight_alt",
+      "id": "general.mouse-touchpad.section.pointer",
+      "path": [
+        "general",
+        "mouse-touchpad"
+      ],
+      "route": "general.mouse-touchpad",
+      "source": "MouseTouchpadPage.qml",
+      "title": "Pointer behavior"
+    },
+    {
       "aliases": [],
       "anchor": true,
       "context": "NetworkPage",
@@ -1762,6 +1865,7 @@ function title(id) {
     case "general.sidebar": return qsTranslate("GeneralPage", "Sidebars");
     case "general.spotlight": return qsTranslate("GeneralPage", "Spotlight");
     case "general.effects": return qsTranslate("GeneralPage", "Transparency and blur");
+    case "general.mouse-touchpad": return qsTranslate("GeneralPage", "Mouse & touchpad");
     case "general.shortcuts": return qsTranslate("GeneralPage", "Keyboard shortcuts");
     case "general.language-region": return qsTranslate("GeneralPage", "Language & region");
     case "general.autostart": return qsTranslate("GeneralPage", "Autostart");
@@ -1814,6 +1918,10 @@ function title(id) {
     case "general.language-region.section.language": return qsTranslate("LanguageAndRegionPage", "Language");
     case "general.language-region.section.units": return qsTranslate("LanguageAndRegionPage", "Units");
     case "general.language-region.section.time-date": return qsTranslate("LanguageAndRegionPage", "Time & date");
+    case "general.mouse-touchpad.section.mouse": return qsTranslate("MouseTouchpadPage", "Mouse");
+    case "general.mouse-touchpad.section.touchpad": return qsTranslate("MouseTouchpadPage", "Touchpad");
+    case "general.mouse-touchpad.section.trackpoint": return qsTranslate("MouseTouchpadPage", "Trackpoint");
+    case "general.mouse-touchpad.section.pointer": return qsTranslate("MouseTouchpadPage", "Pointer behavior");
     case "general.network.section.wired-connections": return qsTranslate("NetworkPage", "Wired connections");
     case "general.network.section.wi-fi": return qsTranslate("NetworkPage", "Wi-Fi");
     case "general.network.section.other-settings": return qsTranslate("NetworkPage", "Other settings");

@@ -60,6 +60,8 @@ ColumnLayout {
     }
 
     MaterialSlider {
+        id: slider
+
         Layout.fillWidth: true
         Layout.minimumHeight: implicitHeight
         Layout.preferredHeight: implicitHeight
@@ -72,6 +74,6 @@ ColumnLayout {
         valueFormatter: sliderValue => {
             return Math.round(sliderValue).toString() + root.suffix;
         }
-        onMoved: root.moved(Math.round(value))
+        onMoved: root.moved(Math.round(slider.value))
     }
 }

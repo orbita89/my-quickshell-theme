@@ -339,7 +339,8 @@ PYEOF
 
 cp -f "$glyphs.ttf" "$installed"
 fc-cache -f "$font_dir" >/dev/null
+# awk с локалью ru печатает запятую, и printf %f её не принимает: держим C.
 printf 'Готово: %.2f МБ вместо %.2f МБ\n' \
-    "$(stat -c %s "$installed" | awk '{print $1/1048576}')" \
-    "$(stat -c %s "$full" | awk '{print $1/1048576}')"
+    "$(stat -c %s "$installed" | LC_ALL=C awk '{print $1/1048576}')" \
+    "$(stat -c %s "$full" | LC_ALL=C awk '{print $1/1048576}')"
 echo "Перезапустить оболочку: systemctl --user restart my-shell.service"

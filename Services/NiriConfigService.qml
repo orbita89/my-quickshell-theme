@@ -108,6 +108,16 @@ Singleton {
                              }));
     }
 
+    // Pointer devices live in the user's own input section; the editor splices
+    // the requested settings instead of publishing a managed fragment.
+    function saveInput(request) {
+        invoke(Object.assign({}, request, {
+                                 operation: "input",
+                                 feature: "input",
+                                 revision: revision
+                             }));
+    }
+
     function save(request) {
         invoke(Object.assign({}, request, {
                                  feature: "binds"

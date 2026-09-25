@@ -23,6 +23,35 @@ import kdl
 PRINT = kdl.PrintConfig(indent='    ', semicolons=True)
 FRAGMENTS = ('effects', 'cursor', 'layer-rules', 'binds', 'outputs')
 
+# Pointer devices are edited in place: niri rejects a second input section, so a
+# managed fragment cannot own them. Only the settings below are ever touched;
+# every other node, including the user's comments, keeps its original bytes.
+INPUT_RANGES = {'accel-speed': (-1.0, 1.0), 'scroll-factor': (0.1, 10.0)}
+POINTER_COMMON = {
+    'off': 'flag',
+    'natural-scroll': 'flag',
+    'middle-emulation': 'flag',
+    'left-handed': 'flag',
+    'accel-speed': 'number',
+    'scroll-factor': 'number',
+    'accel-profile': ('adaptive', 'flat'),
+    'scroll-method': ('no-scroll', 'two-finger', 'edge', 'on-button-down'),
+}
+INPUT_SETTINGS = {
+    'mouse': POINTER_COMMON,
+    'trackpoint': POINTER_COMMON,
+    'touchpad': dict(POINTER_COMMON, **{
+        'tap': 'flag',
+        'dwt': 'flag',
+        'dwtp': 'flag',
+        'drag-lock': 'flag',
+        'disabled-on-external-mouse': 'flag',
+        'click-method': ('button-areas', 'clickfinger'),
+        'tap-button-map': ('left-right-middle', 'left-middle-right'),
+    }),
+}
+INPUT_FLAGS = ('warp-mouse-to-focus', 'focus-follows-mouse')
+
 # Stable first-setup defaults. Existing fragments, including empty ones, are preserved.
 DEFAULT_BINDINGS = (
     ('Mod+Space', 'spotlight', 'toggle'),
@@ -374,6 +403,190 @@ def bindings(graph, managed):
     return rows, mod
 
 
+def input_section(graph):
+    for path, node in graph.ordered:
+        if node.name == 'input':
+            return path, node
+    return None, None
+
+
+def setting_value(node, kind):
+    if kind == 'flag':
+        return not node.args or node.args[0] is True
+    if not node.args:
+        raise ValueError('Input setting without a value: ' + node.name)
+    value = node.args[0]
+    if kind == 'number':
+        return float(value)
+    return str(value)
+
+
+def read_input(graph):
+    path, section = input_section(graph)
+    state = dict(available=section is not None, source=str(path) if path else '', writable=False, locked=[], devices={})
+    for flag in INPUT_FLAGS:
+        state[flag] = False
+    for device, schema in INPUT_SETTINGS.items():
+        state['devices'][device] = dict(present=False, settings={})
+    if section is None:
+        return state
+    try:
+        safe_target(Path(path))
+        state['writable'] = True
+    except (OSError, ValueError):
+        pass
+    for child in section.nodes:
+        if child.name in INPUT_FLAGS:
+            state[child.name] = setting_value(child, 'flag')
+            if child.props or child.args:
+                state['locked'].append(child.name)
+        schema = INPUT_SETTINGS.get(child.name)
+        if schema is None:
+            continue
+        device = state['devices'][child.name]
+        device['present'] = True
+        for node in child.nodes:
+            kind = schema.get(node.name)
+            if kind is None:
+                continue
+            device['settings'][node.name] = setting_value(node, 'flag' if kind == 'flag' else (
+                'number' if kind == 'number' else 'choice'))
+    return state
+
+
+def setting_node(name, kind, value):
+    if kind == 'flag':
+        return kdl.Node(name)
+    if kind == 'number':
+        low, high = INPUT_RANGES[name]
+        number = round(float(value), 3)
+        if not low <= number <= high:
+            raise ValueError('Value out of range: ' + name)
+        return kdl.Node(name, args=[number])
+    if value not in kind:
+        raise ValueError('Unsupported value for ' + name)
+    return kdl.Node(name, args=[value])
+
+
+def bounds(text, node):
+    # source_end swallows the separator up to the next node; keep the node only.
+    end = node.source_end
+    while end > node.source_start and text[end - 1] in ' \t\r\n;':
+        end -= 1
+    return node.source_start, end
+
+
+def removal(text, node):
+    start, end = bounds(text, node)
+    while start > 0 and text[start - 1] in ' \t':
+        start -= 1
+    while end < len(text) and text[end] in ' \t;':
+        end += 1
+    if (start == 0 or text[start - 1] == '\n') and end < len(text) and text[end] == '\n':
+        end += 1
+    return start, end
+
+
+def insertion(text, parent, value, indent):
+    # Reuse the closing brace indentation so appended settings stay aligned.
+    at = parent.children_end
+    line = text.rfind('\n', 0, at) + 1
+    if text[line:at].strip() != '':
+        return at, at, '\n' + indent + value + '\n'
+    return line, line, indent + value + '\n'
+
+
+def edit_device(text, device, schema, requested, edits):
+    indent = '        '
+    for name, value in requested.items():
+        kind = schema.get(name)
+        if kind is None:
+            raise ValueError('Unsupported input setting: ' + name)
+        existing = [node for node in device.nodes if node.name == name]
+        if len(existing) > 1:
+            raise ValueError('Duplicate input setting; fix the configuration manually: ' + name)
+        drop = value is False if kind == 'flag' else value is None or value == ''
+        if drop:
+            for node in existing:
+                edits.append((*removal(text, node), ''))
+            continue
+        rendered = render(setting_node(name, kind, value)).strip().rstrip(';')
+        if existing:
+            edits.append((*bounds(text, existing[0]), rendered))
+        elif hasattr(device, 'children_end'):
+            edits.append(insertion(text, device, rendered, indent))
+        else:
+            raise ValueError('The ' + device.name + ' section needs a child block')
+
+
+def edit_input(text, section, request):
+    edits = []
+    devices = request.get('devices') or {}
+    for name, requested in devices.items():
+        schema = INPUT_SETTINGS.get(name)
+        if schema is None:
+            raise ValueError('Unsupported input device: ' + name)
+        if not isinstance(requested, dict):
+            raise ValueError('Invalid input settings for ' + name)
+        matches = [node for node in section.nodes if node.name == name]
+        if len(matches) > 1:
+            raise ValueError('Duplicate ' + name + ' section; fix the configuration manually')
+        if matches:
+            edit_device(text, matches[0], schema, requested, edits)
+            continue
+        device = kdl.Node(name)
+        for setting, value in requested.items():
+            kind = schema.get(setting)
+            if kind is None:
+                raise ValueError('Unsupported input setting: ' + setting)
+            if value is False or value is None or value == '':
+                continue
+            device.nodes.append(setting_node(setting, kind, value))
+        if not device.nodes or not hasattr(section, 'children_end'):
+            continue
+        body = '\n'.join('    ' + line for line in render(device).strip().rstrip(';').splitlines()).strip()
+        edits.append(insertion(text, section, body, '    '))
+    for flag in INPUT_FLAGS:
+        if flag not in request:
+            continue
+        existing = [node for node in section.nodes if node.name == flag]
+        if request[flag]:
+            if not existing and hasattr(section, 'children_end'):
+                edits.append(insertion(text, section, flag, '    '))
+        else:
+            for node in existing:
+                # Options such as focus-follows-mouse carry tuning properties.
+                # Deleting them here would silently drop the user's values.
+                if node.props or node.args:
+                    raise ValueError('This option has extra parameters; edit ' + flag + ' in the configuration file')
+                edits.append((*removal(text, node), ''))
+    for start, end, value in sorted(edits, key=lambda edit: edit[0], reverse=True):
+        text = text[:start] + value + text[end:]
+    return text
+
+
+def mutate_input(request):
+    main = main_path(request)
+    safe_target(main)
+    with configuration_lock(main):
+        graph = Graph(main)
+        if request.get('revision') and request['revision'] != graph.revision():
+            raise ValueError('Configuration changed externally; reload before saving')
+        path, section = input_section(graph)
+        if section is None:
+            raise ValueError('The niri configuration has no input section')
+        target = Path(path)
+        safe_target(target)
+        text = graph.files[path]
+        candidate = edit_input(text, section, request)
+        if candidate != text:
+            parse(candidate)  # Never publish a fragment the parser cannot read back.
+            Graph(main, replacements={path: candidate}).validate(request.get('niri', 'niri'))
+            graph.unchanged()
+            replace_file(target, candidate)
+    return status(dict(request, operation='status'))
+
+
 def status(request):
     main = main_path(request)
     managed_dir = main.parent / 'clavis'
@@ -387,6 +600,7 @@ def status(request):
         state['revision'] = graph.revision()
         state['outputs'] = niri_outputs.inspect(graph, path_key(managed_dir / 'outputs.kdl'))
         state['bindings'], state['modKey'] = bindings(graph, path_key(managed_dir / 'binds.kdl'))
+        state['input'] = read_input(graph)
         state['diagnostics']['conflicts'] = any(row['collision'] for row in state['bindings'])
         try:
             safe_target(managed_dir / 'binds.kdl', missing=True)
@@ -631,6 +845,8 @@ def run(request):
         return catalog(request)
     if request.get('operation', 'status') == 'status':
         return status(request)
+    if request['operation'] == 'input':
+        return mutate_input(request)
     return mutate(request)
 
 

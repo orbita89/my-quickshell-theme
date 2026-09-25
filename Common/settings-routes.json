@@ -128,6 +128,22 @@
       "aliases": []
     },
     {
+      "id": "general.mouse-touchpad",
+      "title": "Mouse & touchpad",
+      "context": "GeneralPage",
+      "icon": "mouse",
+      "source": "MouseTouchpadPage.qml",
+      "path": [
+        "general",
+        "mouse-touchpad"
+      ],
+      "aliases": [
+        "pointer",
+        "scroll speed",
+        "acceleration"
+      ]
+    },
+    {
       "id": "general.shortcuts",
       "title": "Keyboard shortcuts",
       "context": "GeneralPage",

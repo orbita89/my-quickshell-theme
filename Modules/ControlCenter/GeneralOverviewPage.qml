@@ -88,6 +88,14 @@ StyledFlickable {
 
             SettingsActionRow {
                 Layout.fillWidth: true
+                iconName: "mouse"
+                text: SpotlightCatalog.title("general.mouse-touchpad")
+                trailingIconName: "chevron_right"
+                onClicked: root.sectionRequested("mouse-touchpad")
+            }
+
+            SettingsActionRow {
+                Layout.fillWidth: true
                 iconName: "keyboard"
                 text: SpotlightCatalog.title("general.shortcuts")
                 trailingIconName: "chevron_right"

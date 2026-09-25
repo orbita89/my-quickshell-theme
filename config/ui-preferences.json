@@ -1,5 +1,5 @@
 {
-  "dndEnabled": false,
+  "dndEnabled": true,
   "language": "en_US",
   "weatherTemperatureUnit": "celsius",
   "systemTemperatureUnit": "celsius",
