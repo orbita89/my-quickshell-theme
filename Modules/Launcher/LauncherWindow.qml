@@ -65,7 +65,7 @@ PanelWindow {
 
     onWebProgressChanged: spotlightBlur.publish()
 
-    readonly property var activeResults: mode === "commands" ? commandProvider.results : ["search", "settings",
+    readonly property var activeResults: session.slashDraft ? slashProvider.results : mode === "commands" ? commandProvider.results : ["search", "settings",
                                                                                           "actions"].includes(
                                                                    mode) ? searchProvider.results : mode
                                                                            === "apps" ? appProvider.results : (
@@ -153,6 +153,19 @@ PanelWindow {
         id: commandProvider
         active: root.showing && root.mode === "commands"
         query: root.contentQuery
+        sessionState: ({
+                           mode: session.baseMode,
+                           tool: session.tool
+                       })
+    }
+    // ЛОКАЛЬНАЯ ПРАВКА: подсказки при наборе «/имя» — список команд,
+    // отфильтрованный по набранному имени. Аргументы («/calc 1+2») на
+    // фильтр не влияют.
+    SpotlightCommandProvider {
+        id: slashProvider
+        active: root.showing && session.slashDraft
+        slash: true
+        query: session.slashDraft ? session.route.name : ""
         sessionState: ({
                            mode: session.baseMode,
                            tool: session.tool
@@ -546,8 +559,14 @@ PanelWindow {
     }
 
     function reconcileSelection() {
-        if (session.slashDraft)
+        if (session.slashDraft) {
+            if (root.commandSelectionExplicit && root.selectedResultIndex < root.activeResults.length)
+                return;
+            const exact = Commands.exact(session.route.name);
+            const exactIndex = exact ? root.activeResults.findIndex(result => result.id === exact.id) : -1;
+            root.selectResult(exactIndex >= 0 ? exactIndex : 0);
             return;
+        }
         if (root.activeResults.length === 0) {
             root.clipboardSelectionRecoveryPending = false;
             root.clipboardSelectionRecoveryTargetId = "";
@@ -703,8 +722,12 @@ PanelWindow {
             root.setRailExpanded(false);
             return true;
         }
-        if (session.slashDraft)
+        if (session.slashDraft) {
+            if ((root.commandSelectionExplicit || !Commands.exact(session.route.name))
+                    && root.selectedResultId !== "")
+                return session.activate(root.selectedResultId, session.route.arguments, true);
             return session.executeSlash();
+        }
         if (root.mode === "commands")
             return session.activate(root.selectedResultId, "", false);
         if (root.toolMode) {
@@ -850,7 +873,7 @@ PanelWindow {
             event.accepted = true;
             return;
         }
-        if (event.key === Qt.Key_Tab || event.key === Qt.Key_Backtab) {
+        if (!session.slashDraft && (event.key === Qt.Key_Tab || event.key === Qt.Key_Backtab)) {
             root.moveModeFocus(event.key === Qt.Key_Backtab || shift ? -1 : 1);
             event.accepted = true;
             return;
@@ -880,7 +903,17 @@ PanelWindow {
             event.accepted = true;
             return;
         }
-        if (session.slashDraft && event.key !== Qt.Key_Return && event.key !== Qt.Key_Enter) {
+        if (session.slashDraft && event.key === Qt.Key_Tab && root.selectedResultIndex >= 0) {
+            const picked = root.activeResults[root.selectedResultIndex];
+            if (picked && picked.entry) {
+                const args = session.route.arguments;
+                root.query = "/" + picked.entry.slashName + (picked.entry.kind === "tool" || args ? " "
+                                                                                                    + args : "");
+            }
+            event.accepted = true;
+            return;
+        }
+        if (session.slashDraft && ![Qt.Key_Return, Qt.Key_Enter, Qt.Key_Up, Qt.Key_Down].includes(event.key)) {
             event.accepted = false;
             return;
         }
@@ -1166,11 +1199,10 @@ PanelWindow {
             anchors.topMargin: style.resultGap
             anchors.horizontalCenter: parent.horizontalCenter
             style: style
-            mode: root.mode
-            enabled: !session.slashDraft
+            mode: session.slashDraft ? "slash" : root.mode
             appsLayout: session.appsLayout
             clipboardLayout: session.clipboardLayout
-            expanded: !root.toolMode && root.mode !== "web" && (root.mode !== "search"
+            expanded: session.slashDraft || !root.toolMode && root.mode !== "web" && (root.mode !== "search"
                                                                 || root.contentQuery.trim() !== "")
 
             searchError: searchProvider.error
@@ -1178,7 +1210,7 @@ PanelWindow {
             query: root.contentQuery
             wallpaperModel: wallpaperProvider.resultModel
             clipboardModel: clipboardProvider.resultModel
-            selectedIndex: session.slashDraft ? -1 : root.selectedResultIndex
+            selectedIndex: root.selectedResultIndex
             controlHeld: root.controlHeld
             fileState: fileProvider.searchState
             fileError: fileProvider.error

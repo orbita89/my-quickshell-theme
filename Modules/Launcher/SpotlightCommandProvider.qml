@@ -16,7 +16,21 @@ QtObject {
         const currentLanguage = language;
         if (!active)
             return [];
-        return SpotlightCatalog.commandMatches(query, !slash).map(entry => ({
+        let entries = SpotlightCatalog.commandMatches(query, !slash);
+        // ЛОКАЛЬНАЯ ПРАВКА: при наборе «/имя» наверх идут команды, чьё имя
+        // или псевдоним начинается с набранного, дальше — совпадения по
+        // названию. Порядок внутри групп — как в SpotlightCommands.js.
+        if (slash) {
+            const prefix = query.trim().toLocaleLowerCase();
+            const rank = entry => [entry.slashName].concat(entry.aliases || []).some(name => name.startsWith(
+                                                                                            prefix)) ? 0 : 1;
+            entries = entries.map((entry, index) => ({
+                                                          entry: entry,
+                                                          index: index
+                                                      })).sort((a, b) => rank(a.entry) - rank(b.entry) || a.index
+                                                                         - b.index).map(item => item.entry);
+        }
+        return entries.map(entry => ({
             id: entry.id,
             title: SpotlightCatalog.commandTitle(entry),
             icon: entry.icon,
