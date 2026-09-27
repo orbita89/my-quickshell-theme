@@ -499,7 +499,7 @@ StyledFlickable {
 
                 StyledButtonGroup {
                     Layout.alignment: Qt.AlignLeft
-                    model: PersonalizationConfig.matugenSchemes.slice(0, 5)
+                    model: PersonalizationConfig.matugenSchemes.slice(0, 4)
                     currentValue: PersonalizationConfig.matugenScheme
                     horizontalPadding: 24
                     onValueSelected: value => ThemeService.setMatugenScheme(value)
@@ -507,7 +507,7 @@ StyledFlickable {
 
                 StyledButtonGroup {
                     Layout.alignment: Qt.AlignLeft
-                    model: PersonalizationConfig.matugenSchemes.slice(5, 9)
+                    model: PersonalizationConfig.matugenSchemes.slice(4, 8)
                     currentValue: PersonalizationConfig.matugenScheme
                     horizontalPadding: 24
                     onValueSelected: value => ThemeService.setMatugenScheme(value)

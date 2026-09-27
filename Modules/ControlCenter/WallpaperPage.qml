@@ -64,8 +64,18 @@ StyledFlickable {
         "label": option.label,
         "enabled": root.desktopFillModeOptionEnabled(option.value, root.desktopUsesAwww)
     }))
+    readonly property var tiledFillModeValues: ["TileVertically", "TileHorizontally"]
     readonly property real pageContentWidth: 600
     property real fillModeGroupRestingWidth: 0
+
+    // Translated fill mode labels do not fit one row, so directional tiling gets its own row.
+    function primaryFillModes(options) {
+        return options.filter(option => root.tiledFillModeValues.indexOf(option.value) < 0);
+    }
+
+    function tiledFillModes(options) {
+        return options.filter(option => root.tiledFillModeValues.indexOf(option.value) >= 0);
+    }
 
     Component.onCompleted: WallpaperService.refreshOverviewBackdropRule()
 
@@ -425,9 +435,17 @@ StyledFlickable {
                     id: fillModeButtonGroup
 
                     Layout.alignment: Qt.AlignHCenter
-                    model: root.desktopFillModeOptions
+                    model: root.primaryFillModes(root.desktopFillModeOptions)
                     currentValue: root.currentDesktopFillMode
                     Component.onCompleted: root.fillModeGroupRestingWidth = implicitWidth
+                    onValueSelected: value => WallpaperService.setWallpaperFillModeForScreen(
+                                                  root.selectedDesktopOutput, value)
+                }
+
+                StyledButtonGroup {
+                    Layout.alignment: Qt.AlignHCenter
+                    model: root.tiledFillModes(root.desktopFillModeOptions)
+                    currentValue: root.currentDesktopFillMode
                     onValueSelected: value => WallpaperService.setWallpaperFillModeForScreen(
                                                   root.selectedDesktopOutput, value)
                 }
@@ -989,7 +1007,18 @@ StyledFlickable {
 
                 StyledButtonGroup {
                     Layout.alignment: Qt.AlignHCenter
-                    model: PersonalizationConfig.fillModes
+                    model: root.primaryFillModes(PersonalizationConfig.fillModes)
+                    currentValue: root.selectedOverviewOutput !== ""
+                                  ? PersonalizationConfig.overviewMonitorFillMode(
+                                        root.selectedOverviewOutput) :
+                                    PersonalizationConfig.overviewWallpaperFillMode
+                    onValueSelected: value => WallpaperService.setOverviewFillModeForScreen(
+                                                  root.selectedOverviewOutput, value)
+                }
+
+                StyledButtonGroup {
+                    Layout.alignment: Qt.AlignHCenter
+                    model: root.tiledFillModes(PersonalizationConfig.fillModes)
                     currentValue: root.selectedOverviewOutput !== ""
                                   ? PersonalizationConfig.overviewMonitorFillMode(
                                         root.selectedOverviewOutput) :
