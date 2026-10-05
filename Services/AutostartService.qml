@@ -530,27 +530,28 @@ Singleton {
         }
     }
 
-    Repeater {
+    // ЛОКАЛЬНАЯ ПРАВКА: Instantiator, а не Repeater. Служба — синглтон без
+    // визуального родителя, а Repeater создаёт делегаты только внутри Item:
+    // здесь он молча не создавал ничего, файлы автозапуска не читались, и
+    // страница показывала «Нет приложений автозапуска» при живых файлах.
+    Instantiator {
         id: fileReaderRepeater
         model: 0
 
-        Item {
-            required property int index
+        delegate: FileView {
+            id: fileView
 
+            required property int index
             readonly property string filePath: root.pathForModel(index)
 
-            FileView {
-                id: fileView
+            path: filePath ? Paths.fileUrl(filePath) : ""
+            watchChanges: true
+            printErrors: false
 
-                path: filePath ? Paths.fileUrl(filePath) : ""
-                watchChanges: true
-                printErrors: false
-
-                onLoaded: root.addOrUpdateEntry(root.parseDesktopFile(fileView.text(), filePath))
-                onFileChanged: reload()
-                onLoadFailed: error => root.addOrUpdateEntry(root.invalidEntry(filePath,
-                                                                               FileViewError.toString(error)))
-            }
+            onLoaded: root.addOrUpdateEntry(root.parseDesktopFile(fileView.text(), fileView.filePath))
+            onFileChanged: reload()
+            onLoadFailed: error => root.addOrUpdateEntry(root.invalidEntry(fileView.filePath,
+                                                                           FileViewError.toString(error)))
         }
     }
 
