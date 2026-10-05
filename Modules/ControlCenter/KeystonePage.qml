@@ -156,6 +156,59 @@ Item {
                 }
             }
 
+            // МОЁ ДОБАВЛЕНИЕ: свёрнутый островок (часы) на маленьком экране
+            // закрывает адресную строку браузера и открывается случайно.
+            KeystoneSection {
+                id: collapsedSearchSection
+                title: collapsedSearchAnchor.title
+                SettingsSearchAnchor {
+                    id: collapsedSearchAnchor
+                    target: collapsedSearchSection
+                    declaration:
+                        '{"id":"keystone.section.collapsed","route":"keystone","title":"Collapsed island","context":"KeystonePage","icon":"visibility","aliases":["clock","transparent","hide","hover zone","часы","прозрачный"]}'
+                }
+                iconName: "visibility"
+
+                SettingsRow {
+                    Layout.fillWidth: true
+                    title: qsTr("Appearance")
+                    supportingText: qsTr("How the island with the clock looks when nothing is open")
+
+                    trailing: StyledButtonGroup {
+                        model: [({
+                                     "value": "visible",
+                                     "label": qsTr("Show")
+                                 }), ({
+                                          "value": "transparent",
+                                          "label": qsTr("Transparent")
+                                      }), ({
+                                               "value": "hidden",
+                                               "label": qsTr("Hide")
+                                           })]
+                        currentValue: PersonalizationConfig.keystoneCollapsedAppearance
+                        onValueSelected: value => PersonalizationConfig.setKeystoneCollapsedAppearance(value)
+                    }
+                }
+
+                SettingsRow {
+                    Layout.fillWidth: true
+                    title: qsTr("Hover and click zone")
+                    supportingText: qsTr("Center only: the island reacts only to a small spot in the middle of the edge; elsewhere clicks go to the window below")
+
+                    trailing: StyledButtonGroup {
+                        model: [({
+                                     "value": "island",
+                                     "label": qsTr("Whole island")
+                                 }), ({
+                                          "value": "center",
+                                          "label": qsTr("Center only")
+                                      })]
+                        currentValue: PersonalizationConfig.keystoneHoverZone
+                        onValueSelected: value => PersonalizationConfig.setKeystoneHoverZone(value)
+                    }
+                }
+            }
+
             KeystoneSection {
                 id: searchSection1
                 title: searchAnchor1.title

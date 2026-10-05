@@ -452,6 +452,15 @@ Singleton {
     property bool keystoneCapsLockOsd: true
     property bool keystoneNumLockOsd: true
     property bool keystoneHideDate: false
+    // МОЁ ДОБАВЛЕНИЕ: свёрнутый островок (часы) может закрывать адресную строку
+    // браузера на маленьком экране — его можно сделать прозрачным или скрыть.
+    readonly property var keystoneCollapsedAppearances: ["visible", "transparent", "hidden"]
+    property string keystoneCollapsedAppearance: "visible"
+    // Где в свёрнутом виде срабатывают наведение и клик: весь островок или
+    // только узкая зона по центру края. Во втором случае остальная площадь
+    // островка пропускает мышь в окно под ним.
+    readonly property var keystoneHoverZones: ["island", "center"]
+    property string keystoneHoverZone: "island"
     property string keystoneHoverAction: "peak"
     // ЛОКАЛЬНАЯ ПРАВКА: было "media" — компактный плеер удалён.
     property string keystoneLeftClickAction: "dashboard"
@@ -1641,6 +1650,15 @@ Singleton {
         setValue("keystoneHideDate", !!value);
     }
 
+    function setKeystoneCollapsedAppearance(value) {
+        setValue("keystoneCollapsedAppearance", root.keystoneCollapsedAppearances.indexOf(value) !== -1 ? value :
+                                                                                                         "visible");
+    }
+
+    function setKeystoneHoverZone(value) {
+        setValue("keystoneHoverZone", root.keystoneHoverZones.indexOf(value) !== -1 ? value : "island");
+    }
+
     function setHorizontalClockFontSize(value, persist) {
         const next = root.normalizedBoundedInt(value, 22, 16, 28);
         if (root.horizontalClockFontSize === next) {
@@ -1808,6 +1826,8 @@ Singleton {
                 "capsLockOsd": root.keystoneCapsLockOsd,
                 "numLockOsd": root.keystoneNumLockOsd,
                 "hideDate": root.keystoneHideDate,
+                "collapsedAppearance": root.keystoneCollapsedAppearance,
+                "hoverZone": root.keystoneHoverZone,
                 "hoverAction": root.keystoneHoverAction,
                 "leftClickAction": root.keystoneLeftClickAction,
                 "middleClickAction": root.keystoneMiddleClickAction,
@@ -1942,6 +1962,10 @@ Singleton {
         root.keystoneCapsLockOsd = typeof keystone.capsLockOsd === "boolean" ? keystone.capsLockOsd : true;
         root.keystoneNumLockOsd = typeof keystone.numLockOsd === "boolean" ? keystone.numLockOsd : true;
         root.keystoneHideDate = typeof keystone.hideDate === "boolean" ? keystone.hideDate : false;
+        root.keystoneCollapsedAppearance = root.keystoneCollapsedAppearances.indexOf(keystone.collapsedAppearance)
+                !== -1 ? keystone.collapsedAppearance : "visible";
+        root.keystoneHoverZone = root.keystoneHoverZones.indexOf(keystone.hoverZone) !== -1 ? keystone.hoverZone :
+                                                                                               "island";
         root.keystoneHoverAction = normalizedOption(root.keystoneHoverActionOptions, keystone.hoverAction,
                                                     "peak");
         root.keystoneLeftClickAction = normalizedOption(root.keystoneActionOptions, keystone.leftClickAction,

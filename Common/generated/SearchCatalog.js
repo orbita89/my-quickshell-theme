@@ -1567,6 +1567,26 @@ var catalog = {
       "title": "Keystone style"
     },
     {
+      "aliases": [
+        "clock",
+        "transparent",
+        "hide",
+        "hover zone",
+        "часы",
+        "прозрачный"
+      ],
+      "anchor": true,
+      "context": "KeystonePage",
+      "icon": "visibility",
+      "id": "keystone.section.collapsed",
+      "path": [
+        "keystone"
+      ],
+      "route": "keystone",
+      "source": "KeystonePage.qml",
+      "title": "Collapsed island"
+    },
+    {
       "aliases": [],
       "anchor": true,
       "context": "KeystonePage",
@@ -2129,6 +2149,7 @@ function title(id) {
     case "keystone.hub.section.dashboard-widgets": return qsTranslate("KeystoneHubPage", "Dashboard widgets");
     case "keystone.hub.section.keyhole": return qsTranslate("KeystoneHubPage", "Keyhole");
     case "keystone.section.keystone-style": return qsTranslate("KeystonePage", "Keystone style");
+    case "keystone.section.collapsed": return qsTranslate("KeystonePage", "Collapsed island");
     case "keystone.section.mouse-actions": return qsTranslate("KeystonePage", "Mouse actions");
     case "keystone.section.keyboard-indicators": return qsTranslate("KeystonePage", "Keyboard indicators");
     case "keystone.section.main-menu": return qsTranslate("KeystonePage", "Main menu");

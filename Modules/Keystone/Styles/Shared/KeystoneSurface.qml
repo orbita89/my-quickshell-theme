@@ -407,6 +407,7 @@ Variants {
             color: "#80000000"
             cached: true
             opacity: root.color.a * (styleSurface.detached && root.recordingPresentationActive ? 0 : 1)
+                     * root.collapsedChromeOpacity
         }
 
         // ============================================================
@@ -414,6 +415,18 @@ Variants {
         // ============================================================
         Item {
             id: maskContainer
+
+            // Свёрнутый островок можно сделать прозрачным или скрыть
+            // (Keystone → Свёрнутый островок). Раскрытый всегда непрозрачен.
+            opacity: root.collapsedChromeOpacity
+
+            Behavior on opacity {
+                NumberAnimation {
+                    duration: Appearance.animation.expressiveFastEffects.duration
+                    easing.type: Appearance.animation.expressiveFastEffects.type
+                    easing.bezierCurve: Appearance.animation.expressiveFastEffects.bezierCurve
+                }
+            }
 
             anchors.topMargin: keystoneWindow.topEdge ? styleSurface.edgeMargin : 0
             anchors.bottomMargin: keystoneWindow.bottomEdge ? styleSurface.edgeMargin : 0
@@ -717,6 +730,18 @@ Variants {
                                                !isVolumeMode && !isLyricsMode && !isHubMode && !isToolsMode
                 property bool isCollapsedHovered: PersonalizationConfig.keystoneHoverAction === "peak"
                                                   && isCollapsedMode && root.hoverOpened
+                // МОЁ ДОБАВЛЕНИЕ: островок свёрнут и ничего не показывает — только
+                // часы. Именно это состояние можно сделать прозрачным или
+                // скрыть и сузить до зоны по центру, чтобы оно не закрывало
+                // адресную строку браузера и не открывалось случайно.
+                readonly property bool collapsedIdle: isCollapsedMode && !isCollapsedHovered
+                readonly property real collapsedChromeOpacity: !collapsedIdle ? 1 :
+                                                               PersonalizationConfig.keystoneCollapsedAppearance
+                                                               === "hidden" ? 0 :
+                                                                              PersonalizationConfig.keystoneCollapsedAppearance
+                                                                              === "transparent" ? 0.3 : 1
+                readonly property bool collapsedHoverZoneOnly: collapsedIdle && PersonalizationConfig.keystoneHoverZone
+                                                               === "center"
                 readonly property bool escapeDismissActive: !contentPresentationActive && (expanded
                                                                                            || isLyricsMode
                                                                                            || isHubMode
@@ -1942,6 +1967,41 @@ Variants {
                                                                             []
                 postSubtractionClipItem: root.showDashboardKeyhole ? dashboardKeyholeCutout : null
                 radius: root.radius
+                // Под прозрачным или скрытым островком размытие сделало бы
+                // нечитаемым то, что под ним (адресную строку).
+                blurEnabled: root.collapsedChromeOpacity >= 1
+            }
+        }
+
+        // МОЁ ДОБАВЛЕНИЕ: узкая зона по центру края. Когда наведение настроено
+        // «только по центру», свёрнутый островок принимает мышь лишь здесь (см.
+        // mask ниже): остальная его площадь пропускает клики в окно под ним, а
+        // меню не открывается от случайного касания края экрана. Зона лежит
+        // внутри островка, поэтому его HoverHandler её видит.
+        Item {
+            id: collapsedHoverZone
+
+            readonly property bool horizontal: keystoneWindow.horizontalEdge
+
+            width: horizontal ? 48 : 10
+            height: horizontal ? 10 : 48
+            anchors.horizontalCenter: horizontal ? maskContainer.horizontalCenter : undefined
+            anchors.verticalCenter: horizontal ? undefined : maskContainer.verticalCenter
+            anchors.top: keystoneWindow.topEdge ? maskContainer.top : undefined
+            anchors.bottom: keystoneWindow.bottomEdge ? maskContainer.bottom : undefined
+            anchors.left: keystoneWindow.leftEdge ? maskContainer.left : undefined
+            anchors.right: keystoneWindow.rightEdge ? maskContainer.right : undefined
+
+            // Метка, куда наводить, когда сам островок скрыт.
+            Rectangle {
+                anchors.centerIn: parent
+                width: collapsedHoverZone.horizontal ? 32 : 4
+                height: collapsedHoverZone.horizontal ? 4 : 32
+                radius: 2
+                color: Appearance.colors.colOnLayer0
+                opacity: 0.35
+                visible: root.collapsedHoverZoneOnly
+                         && PersonalizationConfig.keystoneCollapsedAppearance === "hidden"
             }
         }
 
@@ -1987,7 +2047,7 @@ Variants {
 
         mask: Region {
             Region {
-                item: maskContainer
+                item: root.collapsedHoverZoneOnly ? collapsedHoverZone : maskContainer
             }
             // Перехватчик клика мимо островка. Вне вкладки Upload он нулевого
             // размера и в область ввода ничего не добавляет.
