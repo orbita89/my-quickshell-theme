@@ -3,6 +3,7 @@ import Qt5Compat.GraphicalEffects
 import qs.Common
 import qs.Components
 import qs.Services
+import qs.Widgets.common
 
 Item {
     id: root
@@ -190,6 +191,16 @@ Item {
 
             Loader {
                 anchors.fill: parent
+                active: cardDelegate.cardId === "stopwatch"
+
+                sourceComponent: DashboardStopwatchCard {
+                    active: cardDelegate.cardActive
+                }
+
+            }
+
+            Loader {
+                anchors.fill: parent
                 active: cardDelegate.cardId === "todo"
 
                 sourceComponent: DashboardTodoCard {
@@ -246,6 +257,21 @@ Item {
                     }
                 }
 
+                // ЛОКАЛЬНАЯ ПРАВКА: при четырёх карточках подписи («Быстрые
+                // настройки», «Секундомер») не влезали в кнопку и налезали на
+                // соседей. Не влезает — остаётся только значок, название в
+                // подсказке.
+                readonly property bool labelFits: 16 + 5 + labelMetrics.advanceWidth <= switcherTab.width - 16
+
+                TextMetrics {
+                    id: labelMetrics
+
+                    text: switcherTab.option.label
+                    font.family: Fonts.ui
+                    font.pixelSize: 12
+                    font.weight: Font.Medium
+                }
+
                 Row {
                     anchors.centerIn: parent
                     spacing: 5
@@ -261,6 +287,7 @@ Item {
 
                     Text {
                         anchors.verticalCenter: parent.verticalCenter
+                        visible: switcherTab.labelFits
                         text: switcherTab.option.label
                         color: switcherTab.selected ? Appearance.colors.colOnPrimary :
                                                       Appearance.colors.colSubtext
@@ -277,6 +304,11 @@ Item {
                     hoverEnabled: true
                     cursorShape: Qt.PointingHandCursor
                     onClicked: root.showCard(switcherTab.index)
+                }
+
+                StyledToolTip {
+                    text: switcherTab.option.label
+                    extraVisibleCondition: !switcherTab.labelFits && tabHover.containsMouse
                 }
             }
         }

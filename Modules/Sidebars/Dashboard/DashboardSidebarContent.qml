@@ -4,7 +4,6 @@ import qs.Common
 import qs.Components
 import qs.Services
 import qs.Widgets.common
-import "./infoTools"   // TodoWidget, TimerWidget — вкладки «To-do» и «Timer»
 
 Item {
     id: root
@@ -17,13 +16,14 @@ Item {
     property bool presentationActive: false
     property var weatherSourceOverride: null
     readonly property string activeView: WidgetState.dashboardSidebarView
-    readonly property var activeViewLoader: activeView === "todo" ? todoLoader
-                                                                  : activeView === "timer" ? timerLoader
-                                                                                           : infoLoader
+    // ЛОКАЛЬНАЯ ПРАВКА: вкладки «Задачи» и «Таймер» убраны — задачи, помидор
+    // и секундомер живут в замочной скважине главного меню (Dashboard).
+    // Осталась одна вкладка «Информация».
+    readonly property var activeViewLoader: infoLoader
     readonly property bool readyForPresentation: activeViewLoader.active && activeViewLoader.status
                                                  === Loader.Ready && activeViewLoader.item !== null
     readonly property int instantiatedViewCount: {
-        return (infoLoader.item ? 1 : 0) + (todoLoader.item ? 1 : 0) + (timerLoader.item ? 1 : 0);
+        return infoLoader.item ? 1 : 0;
     }
 
     ColumnLayout {
@@ -34,24 +34,14 @@ Item {
         Item {
             id: tabToolbar
 
-            // ЛОКАЛЬНАЯ ПРАВКА: вкладки «Drawer» и «Weather» убраны.
-            // «To-do» и «Timer» вынесены сюда отдельными вкладками — раньше
-            // они прятались в выдвижной панели инструментов внутри «Information».
+            // ЛОКАЛЬНАЯ ПРАВКА: вкладки «Drawer» и «Weather» убраны, «To-do» и
+            // «Timer» переехали в замочную скважину главного меню. Пока вкладка
+            // одна, полоса не показывается; новые вкладки добавляются сюда.
             readonly property var tabs: [
                 {
                     id: "info",
                     icon: "info",
                     label: qsTr("Information")
-                },
-                {
-                    id: "todo",
-                    icon: "done_outline",
-                    label: qsTr("To-do")
-                },
-                {
-                    id: "timer",
-                    icon: "schedule",
-                    label: qsTr("Timer")
                 }
             ]
             readonly property int currentIndex: Math.max(0, tabs.findIndex(tab => tab.id
@@ -64,6 +54,7 @@ Item {
             property real rightFast: targetRight
             property real rightSlow: targetRight
 
+            visible: tabs.length > 1
             Layout.alignment: Qt.AlignHCenter | Qt.AlignTop
             Layout.preferredWidth: buttonWidth * tabs.length + Appearance.spacing.small * 2
             Layout.preferredHeight: 56
@@ -198,51 +189,11 @@ Item {
                 property bool loadedOnce: false
 
                 anchors.fill: parent
-                active: root.activeView === "info" || loadedOnce
-                visible: active && root.activeView === "info"
+                active: true
+                visible: true
                 asynchronous: true
                 sourceComponent: infoComponent
                 onLoaded: loadedOnce = true
-            }
-
-            Loader {
-                id: todoLoader
-
-                property bool loadedOnce: false
-
-                anchors.fill: parent
-                active: root.activeView === "todo" || loadedOnce
-                visible: active && root.activeView === "todo"
-                asynchronous: true
-                sourceComponent: todoComponent
-                onLoaded: loadedOnce = true
-            }
-
-            Loader {
-                id: timerLoader
-
-                property bool loadedOnce: false
-
-                anchors.fill: parent
-                active: root.activeView === "timer" || loadedOnce
-                visible: active && root.activeView === "timer"
-                asynchronous: true
-                sourceComponent: timerComponent
-                onLoaded: loadedOnce = true
-            }
-
-            Component {
-                id: todoComponent
-
-                TodoWidget {}
-            }
-
-            Component {
-                id: timerComponent
-
-                TimerWidget {
-                    shortcutsEnabled: root.activeView === "timer" && root.foreground
-                }
             }
 
             Component {
@@ -252,7 +203,7 @@ Item {
                     onBannerColorRequested: root.bannerColorRequested()
                     onImageSelectionRequested: forAvatar => root.imageSelectionRequested(forAvatar)
                     screenName: root.screenName
-                    foreground: root.foreground && root.activeView === "info"
+                    foreground: root.foreground
                 }
             }
 

@@ -886,7 +886,7 @@
         <translation>Не удалось создать каталог автозапуска пользователя</translation>
     </message>
     <message>
-        <location filename="../Services/AutostartService.qml" line="569"/>
+        <location filename="../Services/AutostartService.qml" line="570"/>
         <source>Could not delete the user autostart entry</source>
         <translation>Не удалось удалить запись автозапуска пользователя</translation>
     </message>
@@ -2811,16 +2811,6 @@ Scroll to adjust</source>
         <location filename="../Modules/Sidebars/Dashboard/DashboardSidebarContent.qml" line="44"/>
         <source>Information</source>
         <translation>Сведения</translation>
-    </message>
-    <message>
-        <location filename="../Modules/Sidebars/Dashboard/DashboardSidebarContent.qml" line="49"/>
-        <source>To-do</source>
-        <translation>Задачи</translation>
-    </message>
-    <message>
-        <location filename="../Modules/Sidebars/Dashboard/DashboardSidebarContent.qml" line="54"/>
-        <source>Timer</source>
-        <translation>Таймер</translation>
     </message>
 </context>
 <context>
@@ -8113,128 +8103,133 @@ Click to open network settings</source>
         <translation>Справа</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="345"/>
-        <location filename="../Services/PersonalizationConfig.qml" line="405"/>
+        <location filename="../Services/PersonalizationConfig.qml" line="346"/>
+        <location filename="../Services/PersonalizationConfig.qml" line="410"/>
         <source>Quick Settings</source>
         <translation>Быстрые настройки</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="349"/>
+        <location filename="../Services/PersonalizationConfig.qml" line="350"/>
         <source>Pomodoro</source>
         <translation>Помидор</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="353"/>
+        <location filename="../Services/PersonalizationConfig.qml" line="354"/>
+        <source>Stopwatch</source>
+        <translation>Секундомер</translation>
+    </message>
+    <message>
+        <location filename="../Services/PersonalizationConfig.qml" line="358"/>
         <source>To-do</source>
         <translation>Задачи</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="381"/>
+        <location filename="../Services/PersonalizationConfig.qml" line="386"/>
         <source>Media</source>
         <translation>Media</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="385"/>
+        <location filename="../Services/PersonalizationConfig.qml" line="390"/>
         <source>Workspaces</source>
         <translation>Рабочие места</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="389"/>
+        <location filename="../Services/PersonalizationConfig.qml" line="394"/>
         <source>Information</source>
         <translation>Сведения</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="393"/>
+        <location filename="../Services/PersonalizationConfig.qml" line="398"/>
         <source>Active Window</source>
         <translation>Активное окно</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="397"/>
+        <location filename="../Services/PersonalizationConfig.qml" line="402"/>
         <source>Tray</source>
         <translation>Трей</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="401"/>
+        <location filename="../Services/PersonalizationConfig.qml" line="406"/>
         <source>System Monitor</source>
         <translation>Системный монитор</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="414"/>
+        <location filename="../Services/PersonalizationConfig.qml" line="419"/>
         <source>Network</source>
         <translation>Сеть</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="418"/>
+        <location filename="../Services/PersonalizationConfig.qml" line="423"/>
         <source>Bluetooth</source>
         <translation>Bluetooth</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="422"/>
+        <location filename="../Services/PersonalizationConfig.qml" line="427"/>
         <source>Brightness</source>
         <translation>Яркость</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="426"/>
+        <location filename="../Services/PersonalizationConfig.qml" line="431"/>
         <source>Volume</source>
         <translation>Громкость</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="430"/>
+        <location filename="../Services/PersonalizationConfig.qml" line="435"/>
         <source>Microphone</source>
         <translation>Микрофон</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="434"/>
+        <location filename="../Services/PersonalizationConfig.qml" line="439"/>
         <source>Battery</source>
         <translation>Батарея</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="439"/>
+        <location filename="../Services/PersonalizationConfig.qml" line="444"/>
         <source>Settings</source>
         <translation>Настройки</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="444"/>
+        <location filename="../Services/PersonalizationConfig.qml" line="449"/>
         <source>Power</source>
         <translation>Питание</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="471"/>
+        <location filename="../Services/PersonalizationConfig.qml" line="476"/>
         <source>Do not open</source>
         <translation>Не открывать</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="476"/>
+        <location filename="../Services/PersonalizationConfig.qml" line="481"/>
         <source>Main menu (last tab)</source>
         <translation>Главное меню (последняя вкладка)</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="480"/>
+        <location filename="../Services/PersonalizationConfig.qml" line="485"/>
         <source>Lyrics</source>
         <translation>Текст песни</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="484"/>
+        <location filename="../Services/PersonalizationConfig.qml" line="489"/>
         <source>Dashboard</source>
         <translation>Dashboard</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="488"/>
+        <location filename="../Services/PersonalizationConfig.qml" line="493"/>
         <source>Media library</source>
         <translation>Media library</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="492"/>
+        <location filename="../Services/PersonalizationConfig.qml" line="497"/>
         <source>Upload</source>
         <translation>Upload</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="496"/>
+        <location filename="../Services/PersonalizationConfig.qml" line="501"/>
         <source>Tools</source>
         <translation>Инструменты</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="503"/>
+        <location filename="../Services/PersonalizationConfig.qml" line="508"/>
         <source>Peak</source>
         <translation>Пик</translation>
     </message>

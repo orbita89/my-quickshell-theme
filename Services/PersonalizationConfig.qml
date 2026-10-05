@@ -338,7 +338,8 @@ Singleton {
     property string iconTheme: ""
     property string keystoneStyle: "bangs"
     // ЛОКАЛЬНАЯ ПРАВКА: "weather" убран из списка карточек островка.
-    readonly property var keystoneKeyholeCardIds: ["quickSettings", "pomodoro", "todo"]
+    // МОЁ ДОБАВЛЕНИЕ: «stopwatch» — секундомер, перенесённый из центра уведомлений.
+    readonly property var keystoneKeyholeCardIds: ["quickSettings", "pomodoro", "stopwatch", "todo"]
     readonly property var defaultKeystoneKeyholeCards: root.keystoneKeyholeCardIds.slice()
     readonly property var keystoneKeyholeCardOptions: [({
                                                                  "value": "quickSettings",
@@ -349,6 +350,10 @@ Singleton {
                                                                       "label": qsTr("Pomodoro"),
                                                                       "icon": "timer"
                                                                   }), ({
+                                                                           "value": "stopwatch",
+                                                                           "label": qsTr("Stopwatch"),
+                                                                           "icon": "schedule"
+                                                                       }), ({
                                                                            "value": "todo",
                                                                            "label": qsTr("To-do"),
                                                                            "icon": "checklist"
