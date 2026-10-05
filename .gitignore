@@ -14,3 +14,8 @@ i18n/*
 !core/plugin/i18n/
 !core/plugin/i18n/**
 /.idea/
+# Настройки у каждого свои: службы сами создают файлы со значениями
+# по умолчанию. Сам каталог остаётся в git — обёртка system/bin/quickshell
+# направляет CLAVIS_CONFIG_HOME сюда, только если он существует.
+config/*
+!config/.gitkeep
