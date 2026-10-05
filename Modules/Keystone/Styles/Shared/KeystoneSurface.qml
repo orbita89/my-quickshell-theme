@@ -526,13 +526,16 @@ Variants {
                         upload: "upload"
                     };
                     const isTab = Object.prototype.hasOwnProperty.call(tabs, action);
-                    // Вкладка выключена в настройках — действие ничего не делает,
-                    // как "none".
-                    if (isTab && !root.hubTabEnabled(tabs[action]))
+                    // Вкладка выключена в настройках — открываем хаб на первой
+                    // включённой (порядок из настроек), иначе наведение и клик
+                    // перестали бы открывать меню вовсе.
+                    const tabId = isTab ? (root.hubTabEnabled(tabs[action]) ? tabs[action] : (root.hubTabs[0]
+                                                                                               || "")) : "";
+                    if (isTab && tabId === "")
                         return;
                     const alreadyOpen = action === "lyrics" ? root.showLyrics : action === "tools"
                                                                ? root.showTools : isTab && root.showHub
-                                                                 && root.activeHubTabId === tabs[action];
+                                                                 && root.activeHubTabId === tabId;
                     keystoneWindow.closeAllOthers();
                     if (toggle && alreadyOpen)
                         return;
@@ -542,7 +545,7 @@ Variants {
                     else if (action === "tools")
                         root.showTools = true;
                     else if (isTab) {
-                        root.hubTabId = tabs[action];
+                        root.hubTabId = tabId;
                         root.showHub = true;
                     }
                 }

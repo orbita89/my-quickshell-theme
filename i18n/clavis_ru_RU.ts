@@ -5091,7 +5091,7 @@ Scroll to adjust</source>
     </message>
     <message>
         <location filename="../Common/generated/SearchCatalog.js" line="2094"/>
-        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="288"/>
+        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="289"/>
         <source>Horizontal clock style</source>
         <translation>Стиль горизонтальных часов</translation>
     </message>
@@ -5121,118 +5121,118 @@ Scroll to adjust</source>
         <translation>Запись</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="77"/>
-        <source>%1 (tab is off)</source>
-        <translation>%1 (вкладка выключена)</translation>
+        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="78"/>
+        <source>%1 (tab is off, opens the first tab)</source>
+        <translation>%1 (вкладка выключена — откроется первая)</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="103"/>
+        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="104"/>
         <source>Back to Keystone settings</source>
         <translation>Назад к настройкам Keystone</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="136"/>
+        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="137"/>
         <source>Style</source>
         <translation>Стиль</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="139"/>
+        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="140"/>
         <source>Choose Keystone style</source>
         <translation>Выберите стиль Keystone</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="147"/>
+        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="148"/>
         <source>Screen edge</source>
         <translation>Край экрана</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="170"/>
+        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="171"/>
         <source>Hover</source>
         <translation>Наведение</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="177"/>
+        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="178"/>
         <source>Left click</source>
         <translation>Левый клик</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="184"/>
+        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="185"/>
         <source>Middle click</source>
         <translation>Средний клик</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="205"/>
-        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="208"/>
+        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="206"/>
+        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="209"/>
         <source>Caps Lock changes</source>
         <translation>Caps Lock изменяет</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="215"/>
-        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="218"/>
+        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="216"/>
+        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="219"/>
         <source>Num Lock changes</source>
         <translation>Num Lock изменяет</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="241"/>
+        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="242"/>
         <source>Tabs, Dashboard widgets and the keyhole</source>
         <translation>Вкладки, виджеты Dashboard и замочная скважина</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="276"/>
-        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="280"/>
+        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="277"/>
+        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="281"/>
         <source>Hide date</source>
         <translation>Скрыть дату</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="289"/>
+        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="290"/>
         <source>Font, digit positions, and colors</source>
         <translation>Шрифт, позиции цифр и цвета</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="307"/>
+        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="308"/>
         <source>Video recording</source>
         <translation>Видеозапись</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="313"/>
+        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="314"/>
         <source>GIF recording</source>
         <translation>Запись GIF</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="319"/>
+        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="320"/>
         <source>Microphone recording</source>
         <translation>Запись микрофона</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="325"/>
+        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="326"/>
         <source>System audio recording</source>
         <translation>Запись системного звука</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="360"/>
-        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="407"/>
+        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="361"/>
+        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="408"/>
         <source>Save location</source>
         <translation>Место сохранения</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="364"/>
+        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="365"/>
         <source>This folder is empty</source>
         <translation>Эта папка пуста</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="365"/>
-        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="417"/>
+        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="366"/>
         <location filename="../Modules/ControlCenter/KeystonePage.qml" line="418"/>
+        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="419"/>
         <source>Choose folder</source>
         <translation>Выберите папку</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="366"/>
+        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="367"/>
         <source>Choose</source>
         <translation>Выбрать</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="367"/>
+        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="368"/>
         <source>Choose the current folder or a selected subfolder</source>
         <translation>Выберите текущую папку или выбранную подпапку</translation>
     </message>

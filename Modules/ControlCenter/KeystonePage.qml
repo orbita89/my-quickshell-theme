@@ -65,7 +65,8 @@ Item {
                                            "upload": "upload"
                                        })
 
-    // Варианты действий с пометкой у тех, чья вкладка выключена. Сами
+    // Варианты действий с пометкой у тех, чья вкладка выключена: такое
+    // действие откроет первую включённую вкладку. Сами
     // варианты не убираем: иначе сохранённый выбор сбросился бы при
     // нормализации, а после включения вкладки не вернулся.
     function markedActionOptions(options) {
@@ -74,7 +75,7 @@ Item {
                                if (!tabId || PersonalizationConfig.keystoneHubTabEnabled(tabId))
                                    return option;
                                const marked = Object.assign({}, option);
-                               marked.label = qsTr("%1 (tab is off)").arg(option.label);
+                               marked.label = qsTr("%1 (tab is off, opens the first tab)").arg(option.label);
                                return marked;
                            });
     }
