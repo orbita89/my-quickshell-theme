@@ -1,88 +1,118 @@
 import QtQuick
-import QtQuick.Layouts
+import qs.Common
+import qs.Components
+import qs.Services
+// Папки виджетов импортируются только для регистрации модулей в Quickshell
+// (см. Hub/HubContent.qml): сами виджеты грузятся по пути из реестра.
+// Новый виджет в новой папке — добавьте её импорт сюда.
+import qs.Modules.Keystone.DashboardContent.Widgets.Calendar
+import qs.Modules.Keystone.DashboardContent.Widgets.ResourceStats
+import "DashboardLayout.js" as DashboardLayout
 
+// Раскладка вкладки Dashboard: колонка виджетов и плашка с карточками.
 // Layout adapted from Caelestia Shell's dashboard composition (GPL-3.0).
+//
+// Что включено и в каком порядке — PersonalizationConfig
+// (keystoneDashboardColumn, keystoneDashboardKeyhole*). Список виджетов —
+// Common/KeystoneHubRegistry.qml. Расчёт координат — DashboardLayout.js.
+// Как добавить виджет — README.md рядом.
 Item {
     id: root
 
     property var screen: null
-    readonly property bool keyholeVisible: true
-    readonly property var keyholeGlassItems: keyholeCardCarousel.blurBackgroundItems
-    // ЛОКАЛЬНАЯ ПРАВКА: колонка с большими часами убрана — время и так есть
-    // в плашке островка. Освободившиеся 184 px (160 колонка + 24 промежуток)
-    // частично ушли в правую карточку: она была 340, потом 400, теперь 440.
-    readonly property real profileColumnWidth: 392
-    // ЛОКАЛЬНАЯ ПРАВКА: было 32. Поле отделяло плашку от правого края
-    // панели заметной полосой, а сверху и снизу съедало высоту, которой
-    // не хватало быстрым настройкам.
-    readonly property real layoutMargin: 20
-    // ЛОКАЛЬНАЯ ПРАВКА: было 24 плюс ещё 14 отступа у самой плашки — между
-    // ней и календарём набегало 38. Теперь промежуток один и такой же, как
-    // между карточками внутри левой колонки.
-    readonly property real layoutSpacing: 16
-    // Плашка забрала освободившиеся 22 px: её правый край остался на месте,
-    // сдвинулся только левый.
-    readonly property real keyholeWidth: 462
-    readonly property real keyholeLeft: layoutMargin + profileColumnWidth + layoutSpacing
-    readonly property real keyholeCenterOffset: keyholeLeft - implicitWidth / 2
-    // Вырез в фоне островка рисуется по этим числам (KeystoneSurface.qml),
-    // раньше они были продублированы там вручную.
-    readonly property real keyholeHeight: implicitHeight - layoutMargin * 2
-    readonly property real keyholeTopOffset: layoutMargin
 
-    signal closeRequested()
-    signal avatarEditRequested()
+    readonly property bool keyholeWanted: PersonalizationConfig.keystoneDashboardKeyholeEnabled
+                                          && PersonalizationConfig.keystoneKeyholeCards.length > 0
+    readonly property var layout: DashboardLayout.compute(PersonalizationConfig.keystoneDashboardColumn,
+                                                          KeystoneHubRegistry.dashboardWidgets, root.keyholeWanted,
+                                                          PersonalizationConfig.keystoneDashboardKeyholeSide, {
+                                                              "margin": KeystoneHubRegistry.dashboardMargin,
+                                                              "spacing": KeystoneHubRegistry.dashboardSpacing,
+                                                              "columnWidth": KeystoneHubRegistry.dashboardColumnWidth,
+                                                              "keyholeWidth": KeystoneHubRegistry.keyholeWidth,
+                                                              "keyholeHeight": KeystoneHubRegistry.keyholeHeight,
+                                                              "emptyHeight": 200
+                                                          })
 
-    // Ширина складывается из колонок, иначе её пришлось бы пересчитывать
-    // руками при каждом изменении плашки.
-    implicitWidth: keyholeLeft + keyholeWidth + layoutMargin
-    implicitHeight: 520
+    // Вырез в фоне островка рисуется по этим числам (KeystoneSurface.qml
+    // через HubContent). Без плашки выреза нет.
+    readonly property bool keyholeVisible: root.layout.keyholeVisible
+    readonly property var keyholeGlassItems: keyholeLoader.item ? keyholeLoader.item.blurBackgroundItems : []
+    readonly property real keyholeWidth: root.keyholeVisible ? KeystoneHubRegistry.keyholeWidth : 0
+    readonly property real keyholeLeft: root.layout.keyholeX
+    readonly property real keyholeCenterOffset: root.keyholeLeft - implicitWidth / 2
+    readonly property real keyholeHeight: root.layout.innerHeight
+    readonly property real keyholeTopOffset: KeystoneHubRegistry.dashboardMargin
 
-    RowLayout {
-        anchors.fill: parent
-        anchors.margins: root.layoutMargin
-        spacing: root.layoutSpacing
+    implicitWidth: root.layout.width
+    implicitHeight: root.layout.height
 
-        ColumnLayout {
-            Layout.minimumWidth: root.profileColumnWidth
-            Layout.preferredWidth: root.profileColumnWidth
-            Layout.maximumWidth: root.profileColumnWidth
-            Layout.fillHeight: true
-            spacing: 16
+    // Виджеты колонки. Loader на каждый виджет реестра; выключенный не
+    // создаётся вовсе — и не будит свои службы (ResourceStats → ps).
+    Repeater {
+        model: KeystoneHubRegistry.dashboardWidgets
 
-            // ЛОКАЛЬНАЯ ПРАВКА: вместо карточки с данными о системе
-            // (пользователь, дистрибутив, аптайм) — накопленный расход
-            // ресурсов по программам за час, день и неделю.
-            ResourceStats {
-                Layout.fillWidth: true
-                // Поля 12+12, шапка 20, отступ 8 и четыре строки по 26
-                // с промежутками 8 — ровно столько, чтобы список не обрезался.
-                Layout.preferredHeight: 180
-            }
+        Loader {
+            required property var modelData
+            readonly property var slot: root.layout.items[modelData.id] || null
 
-            CalendarCard {
-                Layout.fillWidth: true
-                Layout.fillHeight: true
-            }
-
+            active: slot !== null
+            // Синхронно: Dashboard открывается первой, и размер островка
+            // не должен меняться на первом кадре.
+            asynchronous: false
+            source: modelData.source
+            x: root.layout.stackX
+            y: slot ? slot.y : 0
+            width: KeystoneHubRegistry.dashboardColumnWidth
+            height: slot ? slot.height : 0
         }
-
-        Item {
-            Layout.fillWidth: true
-            Layout.fillHeight: true
-
-            KeyholeCardCarousel {
-                id: keyholeCardCarousel
-
-                width: root.keyholeWidth
-                anchors.left: parent.left
-                anchors.top: parent.top
-                anchors.bottom: parent.bottom
-                screen: root.screen
-            }
-
-        }
-
     }
 
+    Loader {
+        id: keyholeLoader
+
+        active: root.layout.keyholeVisible
+        x: root.layout.keyholeX
+        y: KeystoneHubRegistry.dashboardMargin
+        width: KeystoneHubRegistry.keyholeWidth
+        height: root.layout.innerHeight
+
+        sourceComponent: KeyholeCardCarousel {
+            screen: root.screen
+        }
+    }
+
+    // Всё выключено: подсказка, где включить.
+    Rectangle {
+        visible: root.layout.empty
+        x: KeystoneHubRegistry.dashboardMargin
+        y: KeystoneHubRegistry.dashboardMargin
+        width: KeystoneHubRegistry.dashboardColumnWidth
+        height: root.layout.innerHeight
+        radius: Appearance.rounding.normal
+        color: Appearance.colors.colLayer1
+
+        Column {
+            anchors.centerIn: parent
+            width: parent.width - 48
+            spacing: 8
+
+            MaterialSymbol {
+                anchors.horizontalCenter: parent.horizontalCenter
+                text: "widgets"
+                iconSize: 28
+                color: Appearance.colors.colSubtext
+            }
+
+            Text {
+                width: parent.width
+                horizontalAlignment: Text.AlignHCenter
+                wrapMode: Text.Wrap
+                text: qsTr("All widgets are turned off. Turn them on in Control Center → Keystone → Main menu.")
+                color: Appearance.colors.colSubtext
+                font.family: Fonts.ui
+                font.pixelSize: 13
+            }
+        }
+    }
 }
