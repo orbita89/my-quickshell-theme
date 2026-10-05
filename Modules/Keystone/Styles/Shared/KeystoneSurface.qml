@@ -707,8 +707,6 @@ Variants {
                         root.requestKeyboardFocus();
                 }
                 readonly property bool dashboardTabActive: isHubMode && hubTabIndex === 0
-                readonly property string dashboardUptimeOwner: "keystone-dashboard:" + String(
-                                                                   keystoneWindow.modelData.name || "default")
                 readonly property bool showDashboardKeyhole: dashboardTabActive
                 property real pillMorphProgress: 0
                 property real recordingInfoProgress: 0
@@ -847,10 +845,6 @@ Variants {
                     if (root.isToolsMode)
                         root.requestKeyboardFocus();
                 }
-                onDashboardTabActiveChanged: SystemIdentityService.setUptimeConsumer(root.dashboardUptimeOwner,
-                                                                                     root.dashboardTabActive)
-                Component.onDestruction: SystemIdentityService.setUptimeConsumer(root.dashboardUptimeOwner,
-                                                                                 false)
                 focus: root.keyboardInteractionActive
                 Keys.onEscapePressed: event => {
                     WidgetState.closeAllPopups();
@@ -945,8 +939,6 @@ Variants {
                 }
                 Component.onCompleted: {
                     root.updateKeyboardLocks();
-                    SystemIdentityService.setUptimeConsumer(root.dashboardUptimeOwner,
-                                                            root.dashboardTabActive);
                     root.componentReady = true;
                     recordingContentIn.stop();
                     recordingPresentationOut.stop();
