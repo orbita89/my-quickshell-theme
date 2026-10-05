@@ -1,12720 +1,12812 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
 <TS version="2.1" language="ru_RU" sourcelanguage="en">
 <context>
     <name>AccountPage</name>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="1996" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2095"/>
         <source>Language</source>
-        <translation type="finished">Язык</translation>
+        <translation>Язык</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="1997" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2096"/>
         <source>Bluetooth devices</source>
-        <translation type="finished">Устройства Bluetooth</translation>
+        <translation>Устройства Bluetooth</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="1998" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2097"/>
         <source>Keyboard shortcuts</source>
-        <translation type="finished">Сочетания клавиш</translation>
+        <translation>Сочетания клавиш</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="1999" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2098"/>
         <source>Cloud storage</source>
-        <translation type="finished">Облачное хранилище</translation>
+        <translation>Облачное хранилище</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2000" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2099"/>
         <source>Personalization</source>
-        <translation type="finished">Персонализация</translation>
+        <translation>Персонализация</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AccountPage.qml" line="78" />
+        <location filename="../Modules/ControlCenter/AccountPage.qml" line="78"/>
         <source>Unknown</source>
-        <translation type="finished">Неизвестно</translation>
+        <translation>Неизвестно</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AccountPage.qml" line="79" />
+        <location filename="../Modules/ControlCenter/AccountPage.qml" line="79"/>
         <source>B</source>
-        <translation type="finished">Б</translation>
+        <translation>Б</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AccountPage.qml" line="79" />
+        <location filename="../Modules/ControlCenter/AccountPage.qml" line="79"/>
         <source>KB</source>
-        <translation type="finished">КБ</translation>
+        <translation>КБ</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AccountPage.qml" line="79" />
+        <location filename="../Modules/ControlCenter/AccountPage.qml" line="79"/>
         <source>MB</source>
-        <translation type="finished">МБ</translation>
+        <translation>МБ</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AccountPage.qml" line="79" />
+        <location filename="../Modules/ControlCenter/AccountPage.qml" line="79"/>
         <source>GB</source>
-        <translation type="finished">ГБ</translation>
+        <translation>ГБ</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AccountPage.qml" line="79" />
+        <location filename="../Modules/ControlCenter/AccountPage.qml" line="79"/>
         <source>TB</source>
-        <translation type="finished">ТБ</translation>
+        <translation>ТБ</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AccountPage.qml" line="79" />
+        <location filename="../Modules/ControlCenter/AccountPage.qml" line="79"/>
         <source>PB</source>
-        <translation type="finished">ПБ</translation>
+        <translation>ПБ</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AccountPage.qml" line="92" />
+        <location filename="../Modules/ControlCenter/AccountPage.qml" line="92"/>
         <source>Not connected to cloud storage</source>
-        <translation type="finished">Не подключено к облачному хранилищу</translation>
+        <translation>Не подключено к облачному хранилищу</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AccountPage.qml" line="115" />
+        <location filename="../Modules/ControlCenter/AccountPage.qml" line="115"/>
         <source>Other cloud storage</source>
-        <translation type="finished">Другое облачное хранилище</translation>
+        <translation>Другое облачное хранилище</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AccountPage.qml" line="134" />
+        <location filename="../Modules/ControlCenter/AccountPage.qml" line="134"/>
         <source>Connected</source>
-        <translation type="finished">Подключено</translation>
+        <translation>Подключено</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AccountPage.qml" line="135" />
+        <location filename="../Modules/ControlCenter/AccountPage.qml" line="135"/>
         <source>Paired</source>
-        <translation type="finished">Сопряжено</translation>
+        <translation>Сопряжено</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AccountPage.qml" line="147" />
+        <location filename="../Modules/ControlCenter/AccountPage.qml" line="147"/>
         <source>Disconnect</source>
-        <translation type="finished">Отключить</translation>
+        <translation>Отключить</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AccountPage.qml" line="148" />
+        <location filename="../Modules/ControlCenter/AccountPage.qml" line="148"/>
         <source>Connect</source>
-        <translation type="finished">Подключить</translation>
+        <translation>Подключить</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AccountPage.qml" line="167" />
+        <location filename="../Modules/ControlCenter/AccountPage.qml" line="167"/>
         <source>Network unavailable</source>
-        <translation type="finished">Сеть недоступна</translation>
+        <translation>Сеть недоступна</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AccountPage.qml" line="169" />
-        <location filename="../Modules/ControlCenter/AccountPage.qml" line="177" />
+        <location filename="../Modules/ControlCenter/AccountPage.qml" line="169"/>
+        <location filename="../Modules/ControlCenter/AccountPage.qml" line="177"/>
         <source>Connecting</source>
-        <translation type="finished">Подключение</translation>
+        <translation>Подключение</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AccountPage.qml" line="172" />
+        <location filename="../Modules/ControlCenter/AccountPage.qml" line="172"/>
         <source>Not connected</source>
-        <translation type="finished">Не подключено</translation>
+        <translation>Не подключено</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AccountPage.qml" line="181" />
+        <location filename="../Modules/ControlCenter/AccountPage.qml" line="181"/>
         <source>Connected, wired</source>
-        <translation type="finished">Подключено, проводная сеть</translation>
+        <translation>Подключено, проводная сеть</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AccountPage.qml" line="182" />
+        <location filename="../Modules/ControlCenter/AccountPage.qml" line="182"/>
         <source>Connected, secure</source>
-        <translation type="finished">Подключено, защищённая сеть</translation>
+        <translation>Подключено, защищённая сеть</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AccountPage.qml" line="183" />
+        <location filename="../Modules/ControlCenter/AccountPage.qml" line="183"/>
         <source>Connected, open</source>
-        <translation type="finished">Подключено, открытая сеть</translation>
+        <translation>Подключено, открытая сеть</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AccountPage.qml" line="258" />
+        <location filename="../Modules/ControlCenter/AccountPage.qml" line="258"/>
         <source>Display language</source>
-        <translation type="finished">Язык интерфейса</translation>
+        <translation>Язык интерфейса</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AccountPage.qml" line="269" />
+        <location filename="../Modules/ControlCenter/AccountPage.qml" line="269"/>
         <source>Choose language</source>
-        <translation type="finished">Выберите язык</translation>
+        <translation>Выберите язык</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AccountPage.qml" line="299" />
+        <location filename="../Modules/ControlCenter/AccountPage.qml" line="299"/>
         <source>Bluetooth</source>
-        <translation type="finished">Bluetooth</translation>
+        <translation>Bluetooth</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AccountPage.qml" line="299" />
+        <location filename="../Modules/ControlCenter/AccountPage.qml" line="299"/>
         <source>Turn on Bluetooth to connect devices</source>
-        <translation type="finished">Включите Bluetooth, чтобы подключать устройства</translation>
+        <translation>Включите Bluetooth, чтобы подключать устройства</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AccountPage.qml" line="309" />
+        <location filename="../Modules/ControlCenter/AccountPage.qml" line="309"/>
         <source>Bluetooth switch</source>
-        <translation type="finished">Переключатель Bluetooth</translation>
+        <translation>Переключатель Bluetooth</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AccountPage.qml" line="363" />
-        <location filename="../Modules/ControlCenter/AccountPage.qml" line="398" />
+        <location filename="../Modules/ControlCenter/AccountPage.qml" line="363"/>
+        <location filename="../Modules/ControlCenter/AccountPage.qml" line="398"/>
         <source>Unnamed device</source>
-        <translation type="finished">Устройство без имени</translation>
+        <translation>Устройство без имени</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AccountPage.qml" line="397" />
+        <location filename="../Modules/ControlCenter/AccountPage.qml" line="397"/>
         <source>More options for %1</source>
-        <translation type="finished">Дополнительные параметры для %1</translation>
+        <translation>Дополнительные параметры для %1</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AccountPage.qml" line="413" />
+        <location filename="../Modules/ControlCenter/AccountPage.qml" line="413"/>
         <source>Forget device</source>
-        <translation type="finished">Забыть устройство</translation>
+        <translation>Забыть устройство</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AccountPage.qml" line="428" />
+        <location filename="../Modules/ControlCenter/AccountPage.qml" line="428"/>
         <source>No paired devices</source>
-        <translation type="finished">Нет сопряжённых устройств</translation>
+        <translation>Нет сопряжённых устройств</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AccountPage.qml" line="437" />
+        <location filename="../Modules/ControlCenter/AccountPage.qml" line="437"/>
         <source>More Bluetooth settings</source>
-        <translation type="finished">Дополнительные настройки Bluetooth</translation>
+        <translation>Дополнительные настройки Bluetooth</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AccountPage.qml" line="459" />
+        <location filename="../Modules/ControlCenter/AccountPage.qml" line="459"/>
         <source>Configure shortcuts</source>
-        <translation type="finished">Настроить сочетания клавиш</translation>
+        <translation>Настроить сочетания клавиш</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AccountPage.qml" line="465" />
+        <location filename="../Modules/ControlCenter/AccountPage.qml" line="465"/>
         <source>Shortcut map</source>
-        <translation type="finished">Карта сочетаний клавиш</translation>
+        <translation>Карта сочетаний клавиш</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AccountPage.qml" line="512" />
+        <location filename="../Modules/ControlCenter/AccountPage.qml" line="512"/>
         <source>Refresh cloud storage information</source>
-        <translation type="finished">Обновить сведения об облачном хранилище</translation>
+        <translation>Обновить сведения об облачном хранилище</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AccountPage.qml" line="525" />
+        <location filename="../Modules/ControlCenter/AccountPage.qml" line="525"/>
         <source>Storage: Used %1 of %2 (%3%)</source>
-        <translation type="finished">Хранилище: занято %1 из %2 (%3%)</translation>
+        <translation>Хранилище: занято %1 из %2 (%3%)</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AccountPage.qml" line="532" />
+        <location filename="../Modules/ControlCenter/AccountPage.qml" line="532"/>
         <source>Reading capacity…</source>
-        <translation type="finished">Чтение ёмкости…</translation>
+        <translation>Чтение ёмкости…</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AccountPage.qml" line="543" />
+        <location filename="../Modules/ControlCenter/AccountPage.qml" line="543"/>
         <source>Cloud storage used capacity</source>
-        <translation type="finished">Занятый объём облачного хранилища</translation>
+        <translation>Занятый объём облачного хранилища</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AccountPage.qml" line="571" />
+        <location filename="../Modules/ControlCenter/AccountPage.qml" line="571"/>
         <source>Backing up</source>
-        <translation type="finished">Создание резервной копии</translation>
+        <translation>Создание резервной копии</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AccountPage.qml" line="576" />
+        <location filename="../Modules/ControlCenter/AccountPage.qml" line="576"/>
         <source>Stopping backup…</source>
-        <translation type="finished">Остановка резервного копирования…</translation>
+        <translation>Остановка резервного копирования…</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AccountPage.qml" line="580" />
+        <location filename="../Modules/ControlCenter/AccountPage.qml" line="580"/>
         <source>%1: current folder %2%</source>
-        <translation type="finished">%1: текущая папка %2%</translation>
+        <translation>%1: текущая папка %2%</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AccountPage.qml" line="588" />
+        <location filename="../Modules/ControlCenter/AccountPage.qml" line="588"/>
         <source>Checking files…</source>
-        <translation type="finished">Проверка файлов…</translation>
+        <translation>Проверка файлов…</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AccountPage.qml" line="591" />
+        <location filename="../Modules/ControlCenter/AccountPage.qml" line="591"/>
         <source>%1 items scanned</source>
-        <translation type="finished">просканировано элементов: %1</translation>
+        <translation>просканировано элементов: %1</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AccountPage.qml" line="594" />
+        <location filename="../Modules/ControlCenter/AccountPage.qml" line="594"/>
         <source>Scanning files…</source>
-        <translation type="finished">Сканирование файлов…</translation>
+        <translation>Сканирование файлов…</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AccountPage.qml" line="595" />
+        <location filename="../Modules/ControlCenter/AccountPage.qml" line="595"/>
         <source>Preparing backup</source>
-        <translation type="finished">Подготовка резервной копии</translation>
+        <translation>Подготовка резервной копии</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AccountPage.qml" line="610" />
+        <location filename="../Modules/ControlCenter/AccountPage.qml" line="610"/>
         <source>Computer backup</source>
-        <translation type="finished">Резервная копия компьютера</translation>
+        <translation>Резервная копия компьютера</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AccountPage.qml" line="619" />
+        <location filename="../Modules/ControlCenter/AccountPage.qml" line="619"/>
         <source>Manage cloud storage</source>
-        <translation type="finished">Управление облачным хранилищем</translation>
+        <translation>Управление облачным хранилищем</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AccountPage.qml" line="668" />
+        <location filename="../Modules/ControlCenter/AccountPage.qml" line="668"/>
         <source>Use wallpaper %1</source>
-        <translation type="finished">Использовать обои %1</translation>
+        <translation>Использовать обои %1</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AccountPage.qml" line="747" />
+        <location filename="../Modules/ControlCenter/AccountPage.qml" line="747"/>
         <source>Color mode</source>
-        <translation type="finished">Режим цвета</translation>
+        <translation>Режим цвета</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AccountPage.qml" line="757" />
+        <location filename="../Modules/ControlCenter/AccountPage.qml" line="757"/>
         <source>Light</source>
-        <translation type="finished">Светлый</translation>
+        <translation>Светлый</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AccountPage.qml" line="760" />
+        <location filename="../Modules/ControlCenter/AccountPage.qml" line="760"/>
         <source>Dark</source>
-        <translation type="finished">Тёмный</translation>
+        <translation>Тёмный</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AccountPage.qml" line="764" />
+        <location filename="../Modules/ControlCenter/AccountPage.qml" line="764"/>
         <source>Choose color mode</source>
-        <translation type="finished">Выберите режим цвета</translation>
+        <translation>Выберите режим цвета</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AccountPage.qml" line="776" />
+        <location filename="../Modules/ControlCenter/AccountPage.qml" line="776"/>
         <source>Wallpaper</source>
-        <translation type="finished">Обои</translation>
+        <translation>Обои</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AccountPage.qml" line="784" />
+        <location filename="../Modules/ControlCenter/AccountPage.qml" line="784"/>
         <source>Theme</source>
-        <translation type="finished">Тема</translation>
+        <translation>Тема</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AccountPage.qml" line="805" />
-        <location filename="../Modules/Sidebars/Dashboard/DashboardSidebar.qml" line="208" />
+        <location filename="../Modules/ControlCenter/AccountPage.qml" line="805"/>
+        <location filename="../Modules/Sidebars/Dashboard/DashboardSidebar.qml" line="208"/>
         <source>Choose avatar</source>
-        <translation type="finished">Выберите аватар</translation>
+        <translation>Выберите аватар</translation>
     </message>
 </context>
 <context>
     <name>AccountProfileHeader</name>
     <message>
-        <location filename="../Modules/ControlCenter/ProfileBannerEditor.qml" line="30" />
-        <location filename="../Modules/Sidebars/Dashboard/DashboardSidebar.qml" line="208" />
-        <location filename="../Widgets/common/AccountProfileHeader.qml" line="156" />
+        <location filename="../Modules/ControlCenter/ProfileBannerEditor.qml" line="30"/>
+        <location filename="../Modules/Sidebars/Dashboard/DashboardSidebar.qml" line="208"/>
+        <location filename="../Widgets/common/AccountProfileHeader.qml" line="156"/>
         <source>Choose banner image</source>
-        <translation type="finished">Выберите изображение баннера</translation>
+        <translation>Выберите изображение баннера</translation>
     </message>
     <message>
-        <location filename="../Widgets/common/AccountProfileHeader.qml" line="27" />
+        <location filename="../Widgets/common/AccountProfileHeader.qml" line="27"/>
         <source>Change avatar</source>
-        <translation type="finished">Изменить аватар</translation>
+        <translation>Изменить аватар</translation>
     </message>
     <message>
-        <location filename="../Widgets/common/AccountProfileHeader.qml" line="157" />
+        <location filename="../Widgets/common/AccountProfileHeader.qml" line="157"/>
         <source>Reset to desktop wallpaper</source>
-        <translation type="finished">Сбросить к обоям рабочего стола</translation>
+        <translation>Сбросить к обоям рабочего стола</translation>
     </message>
     <message>
-        <location filename="../Widgets/common/AccountProfileHeader.qml" line="322" />
+        <location filename="../Widgets/common/AccountProfileHeader.qml" line="322"/>
         <source>Up for %1</source>
-        <translation type="finished">Работает %1</translation>
+        <translation>Работает %1</translation>
     </message>
 </context>
 <context>
     <name>ActiveWindow</name>
     <message>
-        <location filename="../Modules/Bar/ActiveWindow/ActiveWindow.qml" line="16" />
-        <location filename="../Modules/Bar/ActiveWindow/ActiveWindow.qml" line="20" />
+        <location filename="../Modules/Bar/ActiveWindow/ActiveWindow.qml" line="16"/>
+        <location filename="../Modules/Bar/ActiveWindow/ActiveWindow.qml" line="20"/>
         <source>Desktop</source>
-        <translation type="finished">Рабочий стол</translation>
+        <translation>Рабочий стол</translation>
     </message>
 </context>
 <context>
     <name>AddNetworkPage</name>
     <message>
-        <location filename="../Modules/ControlCenter/AddNetworkPage.qml" line="74" />
+        <location filename="../Modules/ControlCenter/AddNetworkPage.qml" line="74"/>
         <source>Network information</source>
-        <translation type="finished">Сведения о сети</translation>
+        <translation>Сведения о сети</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AddNetworkPage.qml" line="86" />
+        <location filename="../Modules/ControlCenter/AddNetworkPage.qml" line="86"/>
         <source>SSID</source>
-        <translation type="finished">SSID</translation>
+        <translation>SSID</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AddNetworkPage.qml" line="87" />
+        <location filename="../Modules/ControlCenter/AddNetworkPage.qml" line="87"/>
         <source>SSID can be at most 32 UTF-8 bytes</source>
-        <translation type="finished">SSID может быть длиной не более 32 байт UTF-8</translation>
+        <translation>SSID может быть длиной не более 32 байт UTF-8</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AddNetworkPage.qml" line="93" />
+        <location filename="../Modules/ControlCenter/AddNetworkPage.qml" line="93"/>
         <source>Hidden network</source>
-        <translation type="finished">Скрытая сеть</translation>
+        <translation>Скрытая сеть</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AddNetworkPage.qml" line="94" />
+        <location filename="../Modules/ControlCenter/AddNetworkPage.qml" line="94"/>
         <source>Try to connect even when this SSID is not in the scan results</source>
-        <translation type="finished">Пробовать подключение, даже когда этого SSID нет в результатах сканирования</translation>
+        <translation>Пробовать подключение, даже когда этого SSID нет в результатах сканирования</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AddNetworkPage.qml" line="103" />
+        <location filename="../Modules/ControlCenter/AddNetworkPage.qml" line="103"/>
         <source>Security type</source>
-        <translation type="finished">Тип безопасности</translation>
+        <translation>Тип безопасности</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AddNetworkPage.qml" line="114" />
+        <location filename="../Modules/ControlCenter/AddNetworkPage.qml" line="114"/>
         <source>WPA/WPA2 Personal</source>
-        <translation type="finished">WPA/WPA2 Personal</translation>
+        <translation>WPA/WPA2 Personal</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AddNetworkPage.qml" line="118" />
+        <location filename="../Modules/ControlCenter/AddNetworkPage.qml" line="118"/>
         <source>None / Open</source>
-        <translation type="finished">Нет / Открыть</translation>
+        <translation>Нет / Открыть</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AddNetworkPage.qml" line="136" />
+        <location filename="../Modules/ControlCenter/AddNetworkPage.qml" line="136"/>
         <source>Password</source>
-        <translation type="finished">Пароль</translation>
+        <translation>Пароль</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AddNetworkPage.qml" line="138" />
+        <location filename="../Modules/ControlCenter/AddNetworkPage.qml" line="138"/>
         <source>Password must be 8–63 characters or a 64-digit hexadecimal PSK</source>
-        <translation type="finished">Пароль должен быть длиной 8–63 символа или 64-значным шестнадцатеричным PSK</translation>
+        <translation>Пароль должен быть длиной 8–63 символа или 64-значным шестнадцатеричным PSK</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AddNetworkPage.qml" line="168" />
+        <location filename="../Modules/ControlCenter/AddNetworkPage.qml" line="168"/>
         <source>Connect and add</source>
-        <translation type="finished">Подключить и добавить</translation>
+        <translation>Подключить и добавить</translation>
     </message>
 </context>
 <context>
     <name>AdvancedPage</name>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2001" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2100"/>
         <source>Cloud storage</source>
-        <translation type="finished">Облачное хранилище</translation>
+        <translation>Облачное хранилище</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2002" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2101"/>
         <source>Matugen template generation</source>
-        <translation type="finished">Генерация шаблона Matugen</translation>
+        <translation>Генерация шаблона Matugen</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AdvancedPage.qml" line="25" />
+        <location filename="../Modules/ControlCenter/AdvancedPage.qml" line="25"/>
         <source>This cloud storage is read-only and cannot be set as default</source>
-        <translation type="finished">Это облачное хранилище только для чтения и не может быть задано по умолчанию</translation>
+        <translation>Это облачное хранилище только для чтения и не может быть задано по умолчанию</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AdvancedPage.qml" line="47" />
+        <location filename="../Modules/ControlCenter/AdvancedPage.qml" line="47"/>
         <source>Enter a relative directory inside the remote; do not include a remote name or colon</source>
-        <translation type="finished">Введите относительный каталог внутри удалённого; без имени удалённого и двоеточия</translation>
+        <translation>Введите относительный каталог внутри удалённого; без имени удалённого и двоеточия</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AdvancedPage.qml" line="52" />
+        <location filename="../Modules/ControlCenter/AdvancedPage.qml" line="52"/>
         <source>Enter a valid remote directory</source>
-        <translation type="finished">Введите корректный удалённый каталог</translation>
+        <translation>Введите корректный удалённый каталог</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AdvancedPage.qml" line="146" />
+        <location filename="../Modules/ControlCenter/AdvancedPage.qml" line="146"/>
         <source>No cloud storage selected</source>
-        <translation type="finished">Облачное хранилище не выбрано</translation>
+        <translation>Облачное хранилище не выбрано</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AdvancedPage.qml" line="179" />
+        <location filename="../Modules/ControlCenter/AdvancedPage.qml" line="179"/>
         <source>Refreshing configuration</source>
-        <translation type="finished">Обновление конфигурации</translation>
+        <translation>Обновление конфигурации</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AdvancedPage.qml" line="182" />
+        <location filename="../Modules/ControlCenter/AdvancedPage.qml" line="182"/>
         <source>Configuration refreshed</source>
-        <translation type="finished">Конфигурация обновлена</translation>
+        <translation>Конфигурация обновлена</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AdvancedPage.qml" line="184" />
+        <location filename="../Modules/ControlCenter/AdvancedPage.qml" line="184"/>
         <source>Refresh configuration</source>
-        <translation type="finished">Обновить конфигурацию</translation>
+        <translation>Обновить конфигурацию</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AdvancedPage.qml" line="193" />
+        <location filename="../Modules/ControlCenter/AdvancedPage.qml" line="193"/>
         <source>View cloud storage</source>
-        <translation type="finished">Просмотреть облачное хранилище</translation>
+        <translation>Просмотреть облачное хранилище</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AdvancedPage.qml" line="201" />
+        <location filename="../Modules/ControlCenter/AdvancedPage.qml" line="201"/>
         <source>Add cloud storage</source>
-        <translation type="finished">Добавить облачное хранилище</translation>
+        <translation>Добавить облачное хранилище</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AdvancedPage.qml" line="212" />
+        <location filename="../Modules/ControlCenter/AdvancedPage.qml" line="212"/>
         <source>File upload location</source>
-        <translation type="finished">Расположение загрузки файлов</translation>
+        <translation>Расположение загрузки файлов</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AdvancedPage.qml" line="223" />
+        <location filename="../Modules/ControlCenter/AdvancedPage.qml" line="223"/>
         <source>Computer backup location</source>
-        <translation type="finished">Расположение резервной копии компьютера</translation>
+        <translation>Расположение резервной копии компьютера</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AdvancedPage.qml" line="263" />
+        <location filename="../Modules/ControlCenter/AdvancedPage.qml" line="263"/>
         <source>Refresh templates</source>
-        <translation type="finished">Обновить шаблоны</translation>
+        <translation>Обновить шаблоны</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AdvancedPage.qml" line="267" />
+        <location filename="../Modules/ControlCenter/AdvancedPage.qml" line="267"/>
         <source>Add</source>
-        <translation type="finished">Добавить</translation>
+        <translation>Добавить</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AdvancedPage.qml" line="291" />
+        <location filename="../Modules/ControlCenter/AdvancedPage.qml" line="291"/>
         <source>Failed to generate Matugen colors</source>
-        <translation type="finished">Не удалось сгенерировать цвета Matugen</translation>
+        <translation>Не удалось сгенерировать цвета Matugen</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AdvancedPage.qml" line="292" />
+        <location filename="../Modules/ControlCenter/AdvancedPage.qml" line="292"/>
         <source>Some Matugen templates failed to generate</source>
-        <translation type="finished">Некоторые шаблоны Matugen не сгенерировались</translation>
+        <translation>Некоторые шаблоны Matugen не сгенерировались</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AdvancedPage.qml" line="312" />
+        <location filename="../Modules/ControlCenter/AdvancedPage.qml" line="312"/>
         <source>User templates</source>
-        <translation type="finished">Пользовательские шаблоны</translation>
+        <translation>Пользовательские шаблоны</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AdvancedPage.qml" line="341" />
+        <location filename="../Modules/ControlCenter/AdvancedPage.qml" line="341"/>
         <source>Run after each generation: %1</source>
-        <translation type="finished">Выполнять после каждой генерации: %1</translation>
+        <translation>Выполнять после каждой генерации: %1</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AdvancedPage.qml" line="355" />
+        <location filename="../Modules/ControlCenter/AdvancedPage.qml" line="355"/>
         <source>Run after each generation:
 %1</source>
-        <translation type="finished">Выполнять после каждой генерации:
+        <translation>Выполнять после каждой генерации:
 %1</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AdvancedPage.qml" line="362" />
+        <location filename="../Modules/ControlCenter/AdvancedPage.qml" line="362"/>
         <source>Open template location</source>
-        <translation type="finished">Открыть расположение шаблона</translation>
+        <translation>Открыть расположение шаблона</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AdvancedPage.qml" line="363" />
+        <location filename="../Modules/ControlCenter/AdvancedPage.qml" line="363"/>
         <source>Output: %1</source>
-        <translation type="finished">Вывод: %1</translation>
+        <translation>Вывод: %1</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AdvancedPage.qml" line="370" />
+        <location filename="../Modules/ControlCenter/AdvancedPage.qml" line="370"/>
         <source>Delete template</source>
-        <translation type="finished">Удалить шаблон</translation>
+        <translation>Удалить шаблон</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AdvancedPage.qml" line="381" />
+        <location filename="../Modules/ControlCenter/AdvancedPage.qml" line="381"/>
         <source>Enable the %1 Matugen template</source>
-        <translation type="finished">Включить шаблон Matugen %1</translation>
+        <translation>Включить шаблон Matugen %1</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AdvancedPage.qml" line="407" />
+        <location filename="../Modules/ControlCenter/AdvancedPage.qml" line="407"/>
         <source>Delete “%1”?</source>
-        <translation type="finished">Удалить «%1»?</translation>
+        <translation>Удалить «%1»?</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AdvancedPage.qml" line="409" />
+        <location filename="../Modules/ControlCenter/AdvancedPage.qml" line="409"/>
         <source>Delete the template and its registration. Keep generated output files.</source>
-        <translation type="finished">Удалить шаблон и его регистрацию. Сгенерированные файлы останутся.</translation>
+        <translation>Удалить шаблон и его регистрацию. Сгенерированные файлы останутся.</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AdvancedPage.qml" line="417" />
+        <location filename="../Modules/ControlCenter/AdvancedPage.qml" line="417"/>
         <source>Cancel</source>
-        <translation type="finished">Отмена</translation>
+        <translation>Отмена</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AdvancedPage.qml" line="421" />
+        <location filename="../Modules/ControlCenter/AdvancedPage.qml" line="421"/>
         <source>Delete</source>
-        <translation type="finished">Удалить</translation>
+        <translation>Удалить</translation>
     </message>
 </context>
 <context>
     <name>AppBrowserPopup</name>
     <message>
-        <location filename="../Modules/ControlCenter/AppBrowserPopup.qml" line="186" />
+        <location filename="../Modules/ControlCenter/AppBrowserPopup.qml" line="186"/>
         <source>Select application</source>
-        <translation type="finished">Выберите приложение</translation>
+        <translation>Выберите приложение</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AppBrowserPopup.qml" line="195" />
+        <location filename="../Modules/ControlCenter/AppBrowserPopup.qml" line="195"/>
         <source>Select an installed application to add to user autostart</source>
-        <translation type="finished">Выберите установленное приложение для добавления в автозапуск пользователя</translation>
+        <translation>Выберите установленное приложение для добавления в автозапуск пользователя</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AppBrowserPopup.qml" line="204" />
+        <location filename="../Modules/ControlCenter/AppBrowserPopup.qml" line="204"/>
         <source>Close</source>
-        <translation type="finished">Закрыть</translation>
+        <translation>Закрыть</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AppBrowserPopup.qml" line="223" />
+        <location filename="../Modules/ControlCenter/AppBrowserPopup.qml" line="223"/>
         <source>Search by application name, ID, or description</source>
-        <translation type="finished">Поиск по имени, ID или описанию приложения</translation>
+        <translation>Поиск по имени, ID или описанию приложения</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AppBrowserPopup.qml" line="336" />
+        <location filename="../Modules/ControlCenter/AppBrowserPopup.qml" line="336"/>
         <source>No matching applications</source>
-        <translation type="finished">Нет подходящих приложений</translation>
+        <translation>Нет подходящих приложений</translation>
     </message>
 </context>
 <context>
     <name>ApplicationVolumeRow</name>
     <message>
-        <location filename="../Widgets/audio/ApplicationVolumeRow.qml" line="87" />
+        <location filename="../Widgets/audio/ApplicationVolumeRow.qml" line="87"/>
         <source>%1 volume</source>
-        <translation type="finished">громкость %1</translation>
+        <translation>громкость %1</translation>
     </message>
     <message>
-        <location filename="../Widgets/audio/ApplicationVolumeRow.qml" line="111" />
+        <location filename="../Widgets/audio/ApplicationVolumeRow.qml" line="111"/>
         <source>Unmute %1</source>
-        <translation type="finished">Включить звук для %1</translation>
+        <translation>Включить звук для %1</translation>
     </message>
     <message>
-        <location filename="../Widgets/audio/ApplicationVolumeRow.qml" line="111" />
+        <location filename="../Widgets/audio/ApplicationVolumeRow.qml" line="111"/>
         <source>Mute %1</source>
-        <translation type="finished">Выключить звук для %1</translation>
+        <translation>Выключить звук для %1</translation>
     </message>
     <message>
-        <location filename="../Widgets/audio/ApplicationVolumeRow.qml" line="112" />
+        <location filename="../Widgets/audio/ApplicationVolumeRow.qml" line="112"/>
         <source>Unmute</source>
-        <translation type="finished">Включить звук</translation>
+        <translation>Включить звук</translation>
     </message>
     <message>
-        <location filename="../Widgets/audio/ApplicationVolumeRow.qml" line="112" />
+        <location filename="../Widgets/audio/ApplicationVolumeRow.qml" line="112"/>
         <source>Mute</source>
-        <translation type="finished">Выключить звук</translation>
+        <translation>Выключить звук</translation>
     </message>
 </context>
 <context>
     <name>AudioContent</name>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/AudioContent.qml" line="14" />
+        <location filename="../Modules/Sidebars/QuickSettings/AudioContent.qml" line="14"/>
         <source>Sound</source>
-        <translation type="finished">Звук</translation>
+        <translation>Звук</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/AudioContent.qml" line="27" />
+        <location filename="../Modules/Sidebars/QuickSettings/AudioContent.qml" line="27"/>
         <source>Connecting to the PipeWire audio service</source>
-        <translation type="finished">Подключение к звуковой службе PipeWire</translation>
+        <translation>Подключение к звуковой службе PipeWire</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/AudioContent.qml" line="29" />
+        <location filename="../Modules/Sidebars/QuickSettings/AudioContent.qml" line="29"/>
         <source>No audio output devices detected</source>
-        <translation type="finished">Устройства вывода звука не обнаружены</translation>
+        <translation>Устройства вывода звука не обнаружены</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/AudioContent.qml" line="43" />
+        <location filename="../Modules/Sidebars/QuickSettings/AudioContent.qml" line="43"/>
         <source>Open advanced sound settings</source>
-        <translation type="finished">Открыть дополнительные настройки звука</translation>
+        <translation>Открыть дополнительные настройки звука</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/AudioContent.qml" line="92" />
+        <location filename="../Modules/Sidebars/QuickSettings/AudioContent.qml" line="92"/>
         <source>Output</source>
-        <translation type="finished">Вывод</translation>
+        <translation>Вывод</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/AudioContent.qml" line="97" />
+        <location filename="../Modules/Sidebars/QuickSettings/AudioContent.qml" line="97"/>
         <source>Default output</source>
-        <translation type="finished">Выход по умолчанию</translation>
+        <translation>Выход по умолчанию</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/AudioContent.qml" line="113" />
+        <location filename="../Modules/Sidebars/QuickSettings/AudioContent.qml" line="113"/>
         <source>Output devices</source>
-        <translation type="finished">Устройства вывода</translation>
+        <translation>Устройства вывода</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/AudioContent.qml" line="130" />
+        <location filename="../Modules/Sidebars/QuickSettings/AudioContent.qml" line="130"/>
         <source>Collapse output devices</source>
-        <translation type="finished">Свернуть устройства вывода</translation>
+        <translation>Свернуть устройства вывода</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/AudioContent.qml" line="131" />
+        <location filename="../Modules/Sidebars/QuickSettings/AudioContent.qml" line="131"/>
         <source>Expand output devices</source>
-        <translation type="finished">Развернуть устройства вывода</translation>
+        <translation>Развернуть устройства вывода</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/AudioContent.qml" line="188" />
+        <location filename="../Modules/Sidebars/QuickSettings/AudioContent.qml" line="188"/>
         <source>Application volume</source>
-        <translation type="finished">Громкость приложений</translation>
+        <translation>Громкость приложений</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/AudioContent.qml" line="227" />
+        <location filename="../Modules/Sidebars/QuickSettings/AudioContent.qml" line="227"/>
         <source>No active application audio</source>
-        <translation type="finished">Нет активного звука приложений</translation>
+        <translation>Нет активного звука приложений</translation>
     </message>
 </context>
 <context>
     <name>AudioRecordingService</name>
     <message>
-        <location filename="../Services/AudioRecordingService.qml" line="53" />
-        <location filename="../Services/AudioRecordingService.qml" line="87" />
-        <location filename="../Services/AudioRecordingService.qml" line="109" />
-        <location filename="../Services/AudioRecordingService.qml" line="193" />
-        <location filename="../Services/AudioRecordingService.qml" line="217" />
+        <location filename="../Services/AudioRecordingService.qml" line="53"/>
+        <location filename="../Services/AudioRecordingService.qml" line="87"/>
+        <location filename="../Services/AudioRecordingService.qml" line="109"/>
+        <location filename="../Services/AudioRecordingService.qml" line="193"/>
+        <location filename="../Services/AudioRecordingService.qml" line="217"/>
         <source>Recording command failed</source>
-        <translation type="finished">Команда записи не удалась</translation>
+        <translation>Команда записи не удалась</translation>
     </message>
     <message>
-        <location filename="../Services/AudioRecordingService.qml" line="60" />
+        <location filename="../Services/AudioRecordingService.qml" line="60"/>
         <source>Recording failed</source>
-        <translation type="finished">Запись не удалась</translation>
+        <translation>Запись не удалась</translation>
     </message>
     <message>
-        <location filename="../Services/AudioRecordingService.qml" line="144" />
+        <location filename="../Services/AudioRecordingService.qml" line="144"/>
         <source>System audio recording saved</source>
-        <translation type="finished">Запись системного звука сохранена</translation>
+        <translation>Запись системного звука сохранена</translation>
     </message>
     <message>
-        <location filename="../Services/AudioRecordingService.qml" line="145" />
+        <location filename="../Services/AudioRecordingService.qml" line="145"/>
         <source>Microphone recording saved</source>
-        <translation type="finished">Запись микрофона сохранена</translation>
+        <translation>Запись микрофона сохранена</translation>
     </message>
     <message>
-        <location filename="../Services/AudioRecordingService.qml" line="242" />
+        <location filename="../Services/AudioRecordingService.qml" line="242"/>
         <source>Could not query recording status through key</source>
-        <translation type="finished">Не удалось получить статус записи через key</translation>
+        <translation>Не удалось получить статус записи через key</translation>
     </message>
 </context>
 <context>
     <name>AudioStopButton</name>
     <message>
-        <location filename="../Modules/Keystone/Styles/Recording/AudioStopButton.qml" line="74" />
+        <location filename="../Modules/Keystone/Styles/Recording/AudioStopButton.qml" line="74"/>
         <source>Finishing recording</source>
-        <translation type="finished">Завершение записи</translation>
+        <translation>Завершение записи</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/Styles/Recording/AudioStopButton.qml" line="74" />
+        <location filename="../Modules/Keystone/Styles/Recording/AudioStopButton.qml" line="74"/>
         <source>Stop recording</source>
-        <translation type="finished">Остановить запись</translation>
+        <translation>Остановить запись</translation>
     </message>
 </context>
 <context>
     <name>AuthCard</name>
     <message>
-        <location filename="../Modules/Lock/Cards/AuthCard.qml" line="173" />
+        <location filename="../Modules/Lock/Cards/AuthCard.qml" line="173"/>
         <source>Loading…</source>
-        <translation type="finished">Загрузка…</translation>
+        <translation>Загрузка…</translation>
     </message>
     <message>
-        <location filename="../Modules/Lock/Cards/AuthCard.qml" line="173" />
+        <location filename="../Modules/Lock/Cards/AuthCard.qml" line="173"/>
         <source>Enter password</source>
-        <translation type="finished">Введите пароль</translation>
+        <translation>Введите пароль</translation>
     </message>
 </context>
 <context>
     <name>AutostartPage</name>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2003" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2102"/>
         <source>Add application to autostart</source>
-        <translation type="finished">Добавить приложение в автозапуск</translation>
+        <translation>Добавить приложение в автозапуск</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2004" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2103"/>
         <source>User autostart applications</source>
-        <translation type="finished">Приложения автозапуска пользователя</translation>
+        <translation>Приложения автозапуска пользователя</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AutostartPage.qml" line="100" />
+        <location filename="../Modules/ControlCenter/AutostartPage.qml" line="100"/>
         <source>Initializing the user autostart directory…</source>
-        <translation type="finished">Инициализация каталога автозапуска пользователя…</translation>
+        <translation>Инициализация каталога автозапуска пользователя…</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AutostartPage.qml" line="107" />
+        <location filename="../Modules/ControlCenter/AutostartPage.qml" line="107"/>
         <source>Loading user autostart entries…</source>
-        <translation type="finished">Загрузка записей автозапуска пользователя…</translation>
+        <translation>Загрузка записей автозапуска пользователя…</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AutostartPage.qml" line="122" />
+        <location filename="../Modules/ControlCenter/AutostartPage.qml" line="122"/>
         <source>Retry</source>
-        <translation type="finished">Повторить</translation>
+        <translation>Повторить</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AutostartPage.qml" line="149" />
-        <location filename="../Modules/ControlCenter/AutostartPage.qml" line="153" />
+        <location filename="../Modules/ControlCenter/AutostartPage.qml" line="149"/>
+        <location filename="../Modules/ControlCenter/AutostartPage.qml" line="153"/>
         <source>Browse applications</source>
-        <translation type="finished">Обзор приложений</translation>
+        <translation>Обзор приложений</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AutostartPage.qml" line="150" />
+        <location filename="../Modules/ControlCenter/AutostartPage.qml" line="150"/>
         <source>Select an installed app to add to user-level startup</source>
-        <translation type="finished">Выберите установленное приложение для добавления в автозапуск пользователя</translation>
+        <translation>Выберите установленное приложение для добавления в автозапуск пользователя</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AutostartPage.qml" line="178" />
+        <location filename="../Modules/ControlCenter/AutostartPage.qml" line="178"/>
         <source>Refresh</source>
-        <translation type="finished">Обновить</translation>
+        <translation>Обновить</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AutostartPage.qml" line="222" />
+        <location filename="../Modules/ControlCenter/AutostartPage.qml" line="222"/>
         <source>Invalid entry: %1</source>
-        <translation type="finished">Некорректная запись: %1</translation>
+        <translation>Некорректная запись: %1</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AutostartPage.qml" line="251" />
-        <location filename="../Modules/ControlCenter/AutostartPage.qml" line="309" />
+        <location filename="../Modules/ControlCenter/AutostartPage.qml" line="251"/>
+        <location filename="../Modules/ControlCenter/AutostartPage.qml" line="309"/>
         <source>Delete</source>
-        <translation type="finished">Удалить</translation>
+        <translation>Удалить</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AutostartPage.qml" line="273" />
+        <location filename="../Modules/ControlCenter/AutostartPage.qml" line="273"/>
         <source>No autostart applications</source>
-        <translation type="finished">Нет приложений автозапуска</translation>
+        <translation>Нет приложений автозапуска</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AutostartPage.qml" line="291" />
+        <location filename="../Modules/ControlCenter/AutostartPage.qml" line="291"/>
         <source>Delete autostart entry?</source>
-        <translation type="finished">Удалить запись автозапуска?</translation>
+        <translation>Удалить запись автозапуска?</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AutostartPage.qml" line="292" />
+        <location filename="../Modules/ControlCenter/AutostartPage.qml" line="292"/>
         <source>The autostart entry “%1” will be deleted.</source>
-        <translation type="finished">Запись автозапуска «%1» будет удалена.</translation>
+        <translation>Запись автозапуска «%1» будет удалена.</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/AutostartPage.qml" line="304" />
+        <location filename="../Modules/ControlCenter/AutostartPage.qml" line="304"/>
         <source>Cancel</source>
-        <translation type="finished">Отмена</translation>
+        <translation>Отмена</translation>
     </message>
 </context>
 <context>
     <name>AutostartService</name>
     <message>
-        <location filename="../Services/AutostartService.qml" line="130" />
+        <location filename="../Services/AutostartService.qml" line="130"/>
         <source>%1 contains invalid newline characters</source>
-        <translation type="finished">%1 содержит некорректные символы переноса строки</translation>
+        <translation>%1 содержит некорректные символы переноса строки</translation>
     </message>
     <message>
-        <location filename="../Services/AutostartService.qml" line="132" />
+        <location filename="../Services/AutostartService.qml" line="132"/>
         <source>%1 cannot be empty</source>
-        <translation type="finished">%1 не может быть пустым</translation>
+        <translation>%1 не может быть пустым</translation>
     </message>
     <message>
-        <location filename="../Services/AutostartService.qml" line="147" />
+        <location filename="../Services/AutostartService.qml" line="147"/>
         <source>Application name</source>
-        <translation type="finished">Название приложения</translation>
+        <translation>Название приложения</translation>
     </message>
     <message>
-        <location filename="../Services/AutostartService.qml" line="157" />
+        <location filename="../Services/AutostartService.qml" line="157"/>
         <source>Refusing to modify files outside the user autostart directory</source>
-        <translation type="finished">Отказ изменить файлы вне каталога автозапуска пользователя</translation>
+        <translation>Отказ изменить файлы вне каталога автозапуска пользователя</translation>
     </message>
     <message>
-        <location filename="../Services/AutostartService.qml" line="161" />
+        <location filename="../Services/AutostartService.qml" line="161"/>
         <source>The user autostart directory is not ready</source>
-        <translation type="finished">Каталог автозапуска пользователя не готов</translation>
+        <translation>Каталог автозапуска пользователя не готов</translation>
     </message>
     <message>
-        <location filename="../Services/AutostartService.qml" line="189" />
+        <location filename="../Services/AutostartService.qml" line="189"/>
         <source>Application added to autostart</source>
-        <translation type="finished">Приложение добавлено в автозапуск</translation>
+        <translation>Приложение добавлено в автозапуск</translation>
     </message>
     <message>
-        <location filename="../Services/AutostartService.qml" line="191" />
+        <location filename="../Services/AutostartService.qml" line="191"/>
         <source>Autostart status updated</source>
-        <translation type="finished">Статус автозапуска обновлён</translation>
+        <translation>Статус автозапуска обновлён</translation>
     </message>
     <message>
-        <location filename="../Services/AutostartService.qml" line="200" />
+        <location filename="../Services/AutostartService.qml" line="200"/>
         <source>Failed to write the autostart file</source>
-        <translation type="finished">Не удалось записать файл автозапуска</translation>
+        <translation>Не удалось записать файл автозапуска</translation>
     </message>
     <message>
-        <location filename="../Services/AutostartService.qml" line="211" />
+        <location filename="../Services/AutostartService.qml" line="211"/>
         <source>The user autostart directory is loading; please wait</source>
-        <translation type="finished">Каталог автозапуска пользователя загружается; подождите</translation>
+        <translation>Каталог автозапуска пользователя загружается; подождите</translation>
     </message>
     <message>
-        <location filename="../Services/AutostartService.qml" line="217" />
+        <location filename="../Services/AutostartService.qml" line="217"/>
         <source>The selected application has no valid Desktop Entry ID</source>
-        <translation type="finished">У выбранного приложения нет корректного ID Desktop Entry</translation>
+        <translation>У выбранного приложения нет корректного ID Desktop Entry</translation>
     </message>
     <message>
-        <location filename="../Services/AutostartService.qml" line="222" />
+        <location filename="../Services/AutostartService.qml" line="222"/>
         <source>This application is already added to autostart</source>
-        <translation type="finished">Это приложение уже добавлено в автозапуск</translation>
+        <translation>Это приложение уже добавлено в автозапуск</translation>
     </message>
     <message>
-        <location filename="../Services/AutostartService.qml" line="272" />
-        <location filename="../Services/AutostartService.qml" line="415" />
+        <location filename="../Services/AutostartService.qml" line="272"/>
+        <location filename="../Services/AutostartService.qml" line="415"/>
         <source>File is missing the [Desktop Entry] section</source>
-        <translation type="finished">В файле отсутствует раздел [Desktop Entry]</translation>
+        <translation>В файле отсутствует раздел [Desktop Entry]</translation>
     </message>
     <message>
-        <location filename="../Services/AutostartService.qml" line="283" />
+        <location filename="../Services/AutostartService.qml" line="283"/>
         <source>This user autostart entry cannot be modified</source>
-        <translation type="finished">Эту запись автозапуска пользователя нельзя изменить</translation>
+        <translation>Эту запись автозапуска пользователя нельзя изменить</translation>
     </message>
     <message>
-        <location filename="../Services/AutostartService.qml" line="307" />
+        <location filename="../Services/AutostartService.qml" line="307"/>
         <source>Refusing to delete files outside the user autostart directory</source>
-        <translation type="finished">Отказ удалить файлы вне каталога автозапуска пользователя</translation>
+        <translation>Отказ удалить файлы вне каталога автозапуска пользователя</translation>
     </message>
     <message>
-        <location filename="../Services/AutostartService.qml" line="323" />
+        <location filename="../Services/AutostartService.qml" line="323"/>
         <source>Could not start the delete operation</source>
-        <translation type="finished">Не удалось запустить операцию удаления</translation>
+        <translation>Не удалось запустить операцию удаления</translation>
     </message>
     <message>
-        <location filename="../Services/AutostartService.qml" line="334" />
+        <location filename="../Services/AutostartService.qml" line="334"/>
         <source>Autostart entry deleted</source>
-        <translation type="finished">Запись автозапуска удалена</translation>
+        <translation>Запись автозапуска удалена</translation>
     </message>
     <message>
-        <location filename="../Services/AutostartService.qml" line="337" />
+        <location filename="../Services/AutostartService.qml" line="337"/>
         <source>Failed to delete the autostart entry</source>
-        <translation type="finished">Не удалось удалить запись автозапуска</translation>
+        <translation>Не удалось удалить запись автозапуска</translation>
     </message>
     <message>
-        <location filename="../Services/AutostartService.qml" line="372" />
-        <location filename="../Services/AutostartService.qml" line="422" />
+        <location filename="../Services/AutostartService.qml" line="372"/>
+        <location filename="../Services/AutostartService.qml" line="422"/>
         <source>Invalid startup entry</source>
-        <translation type="finished">Некорректная запись автозапуска</translation>
+        <translation>Некорректная запись автозапуска</translation>
     </message>
     <message>
-        <location filename="../Services/AutostartService.qml" line="380" />
+        <location filename="../Services/AutostartService.qml" line="380"/>
         <source>Could not read Desktop Entry</source>
-        <translation type="finished">Не удалось прочитать Desktop Entry</translation>
+        <translation>Не удалось прочитать Desktop Entry</translation>
     </message>
     <message>
-        <location filename="../Services/AutostartService.qml" line="430" />
+        <location filename="../Services/AutostartService.qml" line="430"/>
         <source>Desktop Entry is missing the Exec field</source>
-        <translation type="finished">В Desktop Entry отсутствует поле Exec</translation>
+        <translation>В Desktop Entry отсутствует поле Exec</translation>
     </message>
     <message>
-        <location filename="../Services/AutostartService.qml" line="484" />
+        <location filename="../Services/AutostartService.qml" line="484"/>
         <source>Could not create the user autostart directory</source>
-        <translation type="finished">Не удалось создать каталог автозапуска пользователя</translation>
+        <translation>Не удалось создать каталог автозапуска пользователя</translation>
     </message>
     <message>
-        <location filename="../Services/AutostartService.qml" line="569" />
+        <location filename="../Services/AutostartService.qml" line="569"/>
         <source>Could not delete the user autostart entry</source>
-        <translation type="finished">Не удалось удалить запись автозапуска пользователя</translation>
+        <translation>Не удалось удалить запись автозапуска пользователя</translation>
     </message>
 </context>
 <context>
     <name>AvatarService</name>
     <message>
-        <location filename="../Services/AvatarService.qml" line="23" />
+        <location filename="../Services/AvatarService.qml" line="23"/>
         <source>No valid avatar file selected</source>
-        <translation type="finished">Корректный файл аватара не выбран</translation>
+        <translation>Корректный файл аватара не выбран</translation>
     </message>
     <message>
-        <location filename="../Services/AvatarService.qml" line="40" />
-        <location filename="../Services/AvatarService.qml" line="41" />
+        <location filename="../Services/AvatarService.qml" line="40"/>
+        <location filename="../Services/AvatarService.qml" line="41"/>
         <source>Avatar updated</source>
-        <translation type="finished">Аватар обновлён</translation>
+        <translation>Аватар обновлён</translation>
     </message>
     <message>
-        <location filename="../Services/AvatarService.qml" line="44" />
+        <location filename="../Services/AvatarService.qml" line="44"/>
         <source>Could not update avatar</source>
-        <translation type="finished">Не удалось обновить аватар</translation>
+        <translation>Не удалось обновить аватар</translation>
     </message>
     <message>
-        <location filename="../Services/AvatarService.qml" line="45" />
+        <location filename="../Services/AvatarService.qml" line="45"/>
         <source>Avatar update failed</source>
-        <translation type="finished">Не удалось обновить аватар</translation>
+        <translation>Не удалось обновить аватар</translation>
     </message>
 </context>
 <context>
     <name>AwwwWallpaperService</name>
     <message>
-        <location filename="../Services/AwwwWallpaperService.qml" line="117" />
+        <location filename="../Services/AwwwWallpaperService.qml" line="117"/>
         <source>awww or awww-daemon was not found; fell back to Quickshell</source>
-        <translation type="finished">awww или awww-daemon не найден; используется Quickshell</translation>
+        <translation>awww или awww-daemon не найден; используется Quickshell</translation>
     </message>
     <message>
-        <location filename="../Services/AwwwWallpaperService.qml" line="168" />
+        <location filename="../Services/AwwwWallpaperService.qml" line="168"/>
         <source>Failed to start the awww desktop backend</source>
-        <translation type="finished">Не удалось запустить фоновый процесс рабочего стола awww</translation>
+        <translation>Не удалось запустить фоновый процесс рабочего стола awww</translation>
     </message>
     <message>
-        <location filename="../Services/AwwwWallpaperService.qml" line="208" />
+        <location filename="../Services/AwwwWallpaperService.qml" line="208"/>
         <source>Select an image wallpaper before switching to awww</source>
-        <translation type="finished">Сначала выберите обои-изображение, прежде чем переключаться на awww</translation>
+        <translation>Сначала выберите обои-изображение, прежде чем переключаться на awww</translation>
     </message>
     <message>
-        <location filename="../Services/AwwwWallpaperService.qml" line="278" />
+        <location filename="../Services/AwwwWallpaperService.qml" line="278"/>
         <source>No desktop wallpaper is available for %1</source>
-        <translation type="finished">Нет обоев рабочего стола для %1</translation>
+        <translation>Нет обоев рабочего стола для %1</translation>
     </message>
     <message>
-        <location filename="../Services/AwwwWallpaperService.qml" line="382" />
+        <location filename="../Services/AwwwWallpaperService.qml" line="382"/>
         <source>awww-daemon exited unexpectedly with code %1</source>
-        <translation type="finished">awww-daemon неожиданно завершился с кодом %1</translation>
+        <translation>awww-daemon неожиданно завершился с кодом %1</translation>
     </message>
     <message>
-        <location filename="../Services/AwwwWallpaperService.qml" line="422" />
+        <location filename="../Services/AwwwWallpaperService.qml" line="422"/>
         <source>The clavis-desktop awww namespace did not become ready before timeout</source>
-        <translation type="finished">Namespace clavis-desktop awww не стал готовым до истечения таймаута</translation>
+        <translation>Namespace clavis-desktop awww не стал готовым до истечения таймаута</translation>
     </message>
     <message>
-        <location filename="../Services/AwwwWallpaperService.qml" line="455" />
+        <location filename="../Services/AwwwWallpaperService.qml" line="455"/>
         <source>awww could not apply the desktop wallpaper to %1; exit code %2</source>
-        <translation type="finished">awww не смог применить обои рабочего стола к %1; код выхода %2</translation>
+        <translation>awww не смог применить обои рабочего стола к %1; код выхода %2</translation>
     </message>
     <message>
-        <location filename="../Services/AwwwWallpaperService.qml" line="474" />
+        <location filename="../Services/AwwwWallpaperService.qml" line="474"/>
         <source>Failed to stop the clavis-desktop awww namespace; exit code %1</source>
-        <translation type="finished">Не удалось остановить namespace clavis-desktop awww; код выхода %1</translation>
+        <translation>Не удалось остановить namespace clavis-desktop awww; код выхода %1</translation>
     </message>
 </context>
 <context>
     <name>BackupSetupPage</name>
     <message>
-        <location filename="../Modules/ControlCenter/BackupSetupPage.qml" line="53" />
+        <location filename="../Modules/ControlCenter/BackupSetupPage.qml" line="53"/>
         <source>Computer backup</source>
-        <translation type="finished">Резервная копия компьютера</translation>
+        <translation>Резервная копия компьютера</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BackupSetupPage.qml" line="62" />
-        <location filename="../Modules/ControlCenter/BackupSetupPage.qml" line="244" />
+        <location filename="../Modules/ControlCenter/BackupSetupPage.qml" line="62"/>
+        <location filename="../Modules/ControlCenter/BackupSetupPage.qml" line="244"/>
         <source>Close</source>
-        <translation type="finished">Закрыть</translation>
+        <translation>Закрыть</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BackupSetupPage.qml" line="69" />
+        <location filename="../Modules/ControlCenter/BackupSetupPage.qml" line="69"/>
         <source>Selected folders are synchronized to the cloud. Replaced or deleted files are retained in timestamped history versions.</source>
-        <translation type="finished">Выбранные папки синхронизируются с облаком. Заменённые или удалённые файлы сохраняются в версиях истории с отметками времени.</translation>
+        <translation>Выбранные папки синхронизируются с облаком. Заменённые или удалённые файлы сохраняются в версиях истории с отметками времени.</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BackupSetupPage.qml" line="96" />
+        <location filename="../Modules/ControlCenter/BackupSetupPage.qml" line="96"/>
         <source>Backup in progress</source>
-        <translation type="finished">Идёт резервное копирование</translation>
+        <translation>Идёт резервное копирование</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BackupSetupPage.qml" line="101" />
+        <location filename="../Modules/ControlCenter/BackupSetupPage.qml" line="101"/>
         <source>A backup is in progress. Folder settings cannot be changed temporarily.</source>
-        <translation type="finished">Выполняется резервное копирование. Настройки папок временно изменить нельзя.</translation>
+        <translation>Выполняется резервное копирование. Настройки папок временно изменить нельзя.</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BackupSetupPage.qml" line="110" />
+        <location filename="../Modules/ControlCenter/BackupSetupPage.qml" line="110"/>
         <source>View details</source>
-        <translation type="finished">Показать сведения</translation>
+        <translation>Показать сведения</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BackupSetupPage.qml" line="150" />
+        <location filename="../Modules/ControlCenter/BackupSetupPage.qml" line="150"/>
         <source>No backup folders added</source>
-        <translation type="finished">Папки для резервного копирования не добавлены</translation>
+        <translation>Папки для резервного копирования не добавлены</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BackupSetupPage.qml" line="213" />
+        <location filename="../Modules/ControlCenter/BackupSetupPage.qml" line="213"/>
         <source>Back up %1</source>
-        <translation type="finished">Резервная копия %1</translation>
+        <translation>Резервная копия %1</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BackupSetupPage.qml" line="221" />
+        <location filename="../Modules/ControlCenter/BackupSetupPage.qml" line="221"/>
         <source>Remove %1</source>
-        <translation type="finished">Удалить %1</translation>
+        <translation>Удалить %1</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BackupSetupPage.qml" line="233" />
+        <location filename="../Modules/ControlCenter/BackupSetupPage.qml" line="233"/>
         <source>Add another path</source>
-        <translation type="finished">Добавить ещё один путь</translation>
+        <translation>Добавить ещё один путь</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BackupSetupPage.qml" line="249" />
+        <location filename="../Modules/ControlCenter/BackupSetupPage.qml" line="249"/>
         <source>Start backup</source>
-        <translation type="finished">Начать резервное копирование</translation>
+        <translation>Начать резервное копирование</translation>
     </message>
 </context>
 <context>
     <name>BackupTaskPage</name>
     <message>
-        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="34" />
+        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="34"/>
         <source>Folder %1 / %2</source>
-        <translation type="finished">Папка %1 / %2</translation>
+        <translation>Папка %1 / %2</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="41" />
+        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="41"/>
         <source>Checked %1 / %2</source>
-        <translation type="finished">Проверено %1 / %2</translation>
+        <translation>Проверено %1 / %2</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="44" />
+        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="44"/>
         <source>%1 items checked</source>
-        <translation type="finished">проверено элементов: %1</translation>
+        <translation>проверено элементов: %1</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="47" />
+        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="47"/>
         <source>%1 items scanned</source>
-        <translation type="finished">просканировано элементов: %1</translation>
+        <translation>просканировано элементов: %1</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="49" />
+        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="49"/>
         <source>Reading the file list…</source>
-        <translation type="finished">Чтение списка файлов…</translation>
+        <translation>Чтение списка файлов…</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="54" />
+        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="54"/>
         <source>Stopping backup…</source>
-        <translation type="finished">Остановка резервного копирования…</translation>
+        <translation>Остановка резервного копирования…</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="57" />
+        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="57"/>
         <source>Preparing backup</source>
-        <translation type="finished">Подготовка резервной копии</translation>
+        <translation>Подготовка резервной копии</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="60" />
+        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="60"/>
         <source>Checking files…</source>
-        <translation type="finished">Проверка файлов…</translation>
+        <translation>Проверка файлов…</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="60" />
+        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="60"/>
         <source>Scanning files…</source>
-        <translation type="finished">Сканирование файлов…</translation>
+        <translation>Сканирование файлов…</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="62" />
+        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="62"/>
         <source>Backing up</source>
-        <translation type="finished">Создание резервной копии</translation>
+        <translation>Создание резервной копии</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="68" />
+        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="68"/>
         <source>Backup complete</source>
-        <translation type="finished">Резервное копирование завершено</translation>
+        <translation>Резервное копирование завершено</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="70" />
+        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="70"/>
         <source>Backup stopped</source>
-        <translation type="finished">Резервное копирование остановлено</translation>
+        <translation>Резервное копирование остановлено</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="72" />
+        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="72"/>
         <source>Backup failed</source>
-        <translation type="finished">Резервное копирование не удалось</translation>
+        <translation>Резервное копирование не удалось</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="102" />
+        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="102"/>
         <source>Back to backup settings</source>
-        <translation type="finished">Назад к настройкам резервного копирования</translation>
+        <translation>Назад к настройкам резервного копирования</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="108" />
+        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="108"/>
         <source>Computer backup</source>
-        <translation type="finished">Резервная копия компьютера</translation>
+        <translation>Резервная копия компьютера</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="117" />
+        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="117"/>
         <source>Close</source>
-        <translation type="finished">Закрыть</translation>
+        <translation>Закрыть</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="219" />
-        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="410" />
+        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="219"/>
+        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="410"/>
         <source>%1%</source>
-        <translation type="finished">%1%</translation>
+        <translation>%1%</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="231" />
-        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="312" />
-        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="337" />
+        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="231"/>
+        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="312"/>
+        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="337"/>
         <source>%1 / %2</source>
-        <translation type="finished">%1 / %2</translation>
+        <translation>%1 / %2</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="263" />
+        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="263"/>
         <source>Transfer speed</source>
-        <translation type="finished">Скорость передачи</translation>
+        <translation>Скорость передачи</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="283" />
+        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="283"/>
         <source>Time remaining</source>
-        <translation type="finished">Осталось времени</translation>
+        <translation>Осталось времени</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="290" />
+        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="290"/>
         <source>About %1</source>
-        <translation type="finished">О программе %1</translation>
+        <translation>О программе %1</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="292" />
+        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="292"/>
         <source>Calculating</source>
-        <translation type="finished">Вычисление</translation>
+        <translation>Вычисление</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="305" />
+        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="305"/>
         <source>Transferred</source>
-        <translation type="finished">Передано</translation>
+        <translation>Передано</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="330" />
+        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="330"/>
         <source>Checked</source>
-        <translation type="finished">Проверено</translation>
+        <translation>Проверено</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="354" />
+        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="354"/>
         <source>Errors %1</source>
-        <translation type="finished">Ошибок: %1</translation>
+        <translation>Ошибок: %1</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="364" />
+        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="364"/>
         <source>Current transfers</source>
-        <translation type="finished">Текущие передачи</translation>
+        <translation>Текущие передачи</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="442" />
+        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="442"/>
         <source>Waiting for the next transfer…</source>
-        <translation type="finished">Ожидание следующей передачи…</translation>
+        <translation>Ожидание следующей передачи…</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="462" />
+        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="462"/>
         <source>Stopping</source>
-        <translation type="finished">Остановка</translation>
+        <translation>Остановка</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="462" />
+        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="462"/>
         <source>Stop backup</source>
-        <translation type="finished">Остановить резервное копирование</translation>
+        <translation>Остановить резервное копирование</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="522" />
+        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="522"/>
         <source>Files already synchronized to the remote will be retained.</source>
-        <translation type="finished">Файлы, уже синхронизированные с удалённым, будут сохранены.</translation>
+        <translation>Файлы, уже синхронизированные с удалённым, будут сохранены.</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="533" />
+        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="533"/>
         <source>%1 · %2 files synchronized</source>
-        <translation type="finished">%1 · синхронизировано файлов: %2</translation>
+        <translation>%1 · синхронизировано файлов: %2</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="546" />
+        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="546"/>
         <source>Elapsed %1</source>
-        <translation type="finished">Прошло %1</translation>
+        <translation>Прошло %1</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="565" />
+        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="565"/>
         <source>Back</source>
-        <translation type="finished">Назад</translation>
+        <translation>Назад</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="573" />
+        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="573"/>
         <source>Retry</source>
-        <translation type="finished">Повторить</translation>
+        <translation>Повторить</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="573" />
+        <location filename="../Modules/ControlCenter/BackupTaskPage.qml" line="573"/>
         <source>Start again</source>
-        <translation type="finished">Начать заново</translation>
+        <translation>Начать заново</translation>
     </message>
 </context>
 <context>
     <name>BangsRecordingVisual</name>
     <message>
-        <location filename="../Modules/Keystone/Styles/Recording/BangsRecordingVisual.qml" line="76" />
-        <location filename="../Modules/Keystone/Styles/Recording/BangsRecordingVisual.qml" line="82" />
-        <location filename="../Modules/Keystone/Styles/Recording/BangsRecordingVisual.qml" line="311" />
-        <location filename="../Modules/Keystone/Styles/Recording/BangsRecordingVisual.qml" line="317" />
+        <location filename="../Modules/Keystone/Styles/Recording/BangsRecordingVisual.qml" line="76"/>
+        <location filename="../Modules/Keystone/Styles/Recording/BangsRecordingVisual.qml" line="82"/>
+        <location filename="../Modules/Keystone/Styles/Recording/BangsRecordingVisual.qml" line="311"/>
+        <location filename="../Modules/Keystone/Styles/Recording/BangsRecordingVisual.qml" line="317"/>
         <source>Stop recording</source>
-        <translation type="finished">Остановить запись</translation>
+        <translation>Остановить запись</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/Styles/Recording/BangsRecordingVisual.qml" line="253" />
-        <location filename="../Modules/Keystone/Styles/Recording/BangsRecordingVisual.qml" line="367" />
+        <location filename="../Modules/Keystone/Styles/Recording/BangsRecordingVisual.qml" line="253"/>
+        <location filename="../Modules/Keystone/Styles/Recording/BangsRecordingVisual.qml" line="367"/>
         <source>Processing</source>
-        <translation type="finished">Обработка</translation>
+        <translation>Обработка</translation>
     </message>
 </context>
 <context>
     <name>Battery</name>
     <message>
-        <location filename="../Modules/Bar/QuickSettings/Battery.qml" line="49" />
+        <location filename="../Modules/Bar/QuickSettings/Battery.qml" line="49"/>
         <source>Status: Fully charged</source>
-        <translation type="finished">Состояние: полностью заряжена</translation>
+        <translation>Состояние: полностью заряжена</translation>
     </message>
     <message>
-        <location filename="../Modules/Bar/QuickSettings/Battery.qml" line="52" />
+        <location filename="../Modules/Bar/QuickSettings/Battery.qml" line="52"/>
         <source>Status: Charging · Full in </source>
-        <translation type="finished">Состояние: зарядка · полный через </translation>
+        <translation>Состояние: зарядка · полный через </translation>
     </message>
     <message>
-        <location filename="../Modules/Bar/QuickSettings/Battery.qml" line="54" />
+        <location filename="../Modules/Bar/QuickSettings/Battery.qml" line="54"/>
         <source>Status: Charging · Time to full unknown</source>
-        <translation type="finished">Состояние: зарядка · время до полного заряда неизвестно</translation>
+        <translation>Состояние: зарядка · время до полного заряда неизвестно</translation>
     </message>
     <message>
-        <location filename="../Modules/Bar/QuickSettings/Battery.qml" line="57" />
+        <location filename="../Modules/Bar/QuickSettings/Battery.qml" line="57"/>
         <source>Status: Discharging · </source>
-        <translation type="finished">Состояние: разрядка · </translation>
+        <translation>Состояние: разрядка · </translation>
     </message>
     <message>
-        <location filename="../Modules/Bar/QuickSettings/Battery.qml" line="59" />
+        <location filename="../Modules/Bar/QuickSettings/Battery.qml" line="59"/>
         <source>Status: Discharging · Remaining time unknown</source>
-        <translation type="finished">Состояние: разрядка · оставшееся время неизвестно</translation>
+        <translation>Состояние: разрядка · оставшееся время неизвестно</translation>
     </message>
     <message>
-        <location filename="../Modules/Bar/QuickSettings/Battery.qml" line="62" />
+        <location filename="../Modules/Bar/QuickSettings/Battery.qml" line="62"/>
         <source>Status: Empty</source>
-        <translation type="finished">Состояние: разряжена</translation>
+        <translation>Состояние: разряжена</translation>
     </message>
     <message>
-        <location filename="../Modules/Bar/QuickSettings/Battery.qml" line="65" />
+        <location filename="../Modules/Bar/QuickSettings/Battery.qml" line="65"/>
         <source>Status: Pending charge</source>
-        <translation type="finished">Состояние: ожидание зарядки</translation>
+        <translation>Состояние: ожидание зарядки</translation>
     </message>
     <message>
-        <location filename="../Modules/Bar/QuickSettings/Battery.qml" line="68" />
+        <location filename="../Modules/Bar/QuickSettings/Battery.qml" line="68"/>
         <source>Status: Pending discharge</source>
-        <translation type="finished">Состояние: ожидание разряда</translation>
+        <translation>Состояние: ожидание разряда</translation>
     </message>
     <message>
-        <location filename="../Modules/Bar/QuickSettings/Battery.qml" line="70" />
+        <location filename="../Modules/Bar/QuickSettings/Battery.qml" line="70"/>
         <source>Status: Plugged in, not charging</source>
-        <translation type="finished">Состояние: подключено к сети, не заряжается</translation>
+        <translation>Состояние: подключено к сети, не заряжается</translation>
     </message>
     <message>
-        <location filename="../Modules/Bar/QuickSettings/Battery.qml" line="70" />
+        <location filename="../Modules/Bar/QuickSettings/Battery.qml" line="70"/>
         <source>Status: Unknown</source>
-        <translation type="finished">Состояние: неизвестно</translation>
+        <translation>Состояние: неизвестно</translation>
     </message>
     <message>
-        <location filename="../Modules/Bar/QuickSettings/Battery.qml" line="75" />
+        <location filename="../Modules/Bar/QuickSettings/Battery.qml" line="75"/>
         <source>Live charging power: </source>
-        <translation type="finished">Текущая мощность зарядки: </translation>
+        <translation>Текущая мощность зарядки: </translation>
     </message>
     <message>
-        <location filename="../Modules/Bar/QuickSettings/Battery.qml" line="75" />
+        <location filename="../Modules/Bar/QuickSettings/Battery.qml" line="75"/>
         <source>Live discharging power: </source>
-        <translation type="finished">Текущая мощность разряда: </translation>
+        <translation>Текущая мощность разряда: </translation>
     </message>
     <message>
-        <location filename="../Modules/Bar/QuickSettings/Battery.qml" line="77" />
+        <location filename="../Modules/Bar/QuickSettings/Battery.qml" line="77"/>
         <source>Live power: </source>
-        <translation type="finished">Текущая мощность: </translation>
+        <translation>Текущая мощность: </translation>
     </message>
     <message>
-        <location filename="../Modules/Bar/QuickSettings/Battery.qml" line="80" />
-        <location filename="../Modules/Bar/QuickSettings/Battery.qml" line="100" />
+        <location filename="../Modules/Bar/QuickSettings/Battery.qml" line="80"/>
+        <location filename="../Modules/Bar/QuickSettings/Battery.qml" line="100"/>
         <source>Unknown</source>
-        <translation type="finished">Неизвестно</translation>
+        <translation>Неизвестно</translation>
     </message>
     <message>
-        <location filename="../Modules/Bar/QuickSettings/Battery.qml" line="85" />
+        <location filename="../Modules/Bar/QuickSettings/Battery.qml" line="85"/>
         <source>Detecting battery</source>
-        <translation type="finished">Обнаружение батареи</translation>
+        <translation>Обнаружение батареи</translation>
     </message>
     <message>
-        <location filename="../Modules/Bar/QuickSettings/Battery.qml" line="85" />
+        <location filename="../Modules/Bar/QuickSettings/Battery.qml" line="85"/>
         <source>UPower has not provided battery data yet</source>
-        <translation type="finished">UPower ещё не предоставил данные об аккумуляторе</translation>
+        <translation>UPower ещё не предоставил данные об аккумуляторе</translation>
     </message>
     <message>
-        <location filename="../Modules/Bar/QuickSettings/Battery.qml" line="85" />
+        <location filename="../Modules/Bar/QuickSettings/Battery.qml" line="85"/>
         <source>Plug status, power, and health are temporarily unavailable</source>
-        <translation type="finished">Статус зарядки, мощность и срок службы временно недоступны</translation>
+        <translation>Статус зарядки, мощность и срок службы временно недоступны</translation>
     </message>
     <message>
-        <location filename="../Modules/Bar/QuickSettings/Battery.qml" line="89" />
+        <location filename="../Modules/Bar/QuickSettings/Battery.qml" line="89"/>
         <source>No battery detected</source>
-        <translation type="finished">Батарея не обнаружена</translation>
+        <translation>Батарея не обнаружена</translation>
     </message>
     <message>
-        <location filename="../Modules/Bar/QuickSettings/Battery.qml" line="89" />
+        <location filename="../Modules/Bar/QuickSettings/Battery.qml" line="89"/>
         <source>This device may not have a built-in battery</source>
-        <translation type="finished">Возможно, у этого устройства нет встроенного аккумулятора</translation>
+        <translation>Возможно, у этого устройства нет встроенного аккумулятора</translation>
     </message>
     <message>
-        <location filename="../Modules/Bar/QuickSettings/Battery.qml" line="89" />
-        <location filename="../Modules/Bar/QuickSettings/Battery.qml" line="93" />
+        <location filename="../Modules/Bar/QuickSettings/Battery.qml" line="89"/>
+        <location filename="../Modules/Bar/QuickSettings/Battery.qml" line="93"/>
         <source>Plugged in: </source>
-        <translation type="finished">Подключено: </translation>
+        <translation>Подключено: </translation>
     </message>
     <message>
-        <location filename="../Modules/Bar/QuickSettings/Battery.qml" line="90" />
-        <location filename="../Modules/Bar/QuickSettings/Battery.qml" line="94" />
+        <location filename="../Modules/Bar/QuickSettings/Battery.qml" line="90"/>
+        <location filename="../Modules/Bar/QuickSettings/Battery.qml" line="94"/>
         <source>Yes</source>
-        <translation type="finished">Да</translation>
+        <translation>Да</translation>
     </message>
     <message>
-        <location filename="../Modules/Bar/QuickSettings/Battery.qml" line="90" />
-        <location filename="../Modules/Bar/QuickSettings/Battery.qml" line="95" />
+        <location filename="../Modules/Bar/QuickSettings/Battery.qml" line="90"/>
+        <location filename="../Modules/Bar/QuickSettings/Battery.qml" line="95"/>
         <source>No</source>
-        <translation type="finished">Нет</translation>
+        <translation>Нет</translation>
     </message>
     <message>
-        <location filename="../Modules/Bar/QuickSettings/Battery.qml" line="90" />
+        <location filename="../Modules/Bar/QuickSettings/Battery.qml" line="90"/>
         <source>Charge state, power, and health are unavailable</source>
-        <translation type="finished">Состояние заряда, мощность и срок службы недоступны</translation>
+        <translation>Состояние заряда, мощность и срок службы недоступны</translation>
     </message>
     <message>
-        <location filename="../Modules/Bar/QuickSettings/Battery.qml" line="93" />
+        <location filename="../Modules/Bar/QuickSettings/Battery.qml" line="93"/>
         <source>Battery level: </source>
-        <translation type="finished">Уровень заряда: </translation>
+        <translation>Уровень заряда: </translation>
     </message>
     <message>
-        <location filename="../Modules/Bar/QuickSettings/Battery.qml" line="96" />
+        <location filename="../Modules/Bar/QuickSettings/Battery.qml" line="96"/>
         <source>Health: </source>
-        <translation type="finished">Срок службы: </translation>
+        <translation>Срок службы: </translation>
     </message>
 </context>
 <context>
     <name>BezierCurveEditor</name>
     <message>
-        <location filename="../Modules/ControlCenter/BezierCurveEditor.qml" line="801" />
+        <location filename="../Modules/ControlCenter/BezierCurveEditor.qml" line="801"/>
         <source>Copy coordinates</source>
-        <translation type="finished">Копировать координаты</translation>
+        <translation>Копировать координаты</translation>
     </message>
 </context>
 <context>
     <name>BezierCurveLayerEditor</name>
     <message>
-        <location filename="../Modules/ControlCenter/BezierCurveLayerEditor.qml" line="782" />
+        <location filename="../Modules/ControlCenter/BezierCurveLayerEditor.qml" line="782"/>
         <source>Copy</source>
-        <translation type="finished">Копировать</translation>
+        <translation>Копировать</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BezierCurveLayerEditor.qml" line="788" />
+        <location filename="../Modules/ControlCenter/BezierCurveLayerEditor.qml" line="788"/>
         <source>Save</source>
-        <translation type="finished">Сохранить</translation>
+        <translation>Сохранить</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BezierCurveLayerEditor.qml" line="794" />
+        <location filename="../Modules/ControlCenter/BezierCurveLayerEditor.qml" line="794"/>
         <source>Reset view</source>
-        <translation type="finished">Сбросить вид</translation>
+        <translation>Сбросить вид</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BezierCurveLayerEditor.qml" line="800" />
+        <location filename="../Modules/ControlCenter/BezierCurveLayerEditor.qml" line="800"/>
         <source>Close</source>
-        <translation type="finished">Закрыть</translation>
+        <translation>Закрыть</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BezierCurveLayerEditor.qml" line="861" />
+        <location filename="../Modules/ControlCenter/BezierCurveLayerEditor.qml" line="861"/>
         <source>Pause</source>
-        <translation type="finished">Пауза</translation>
+        <translation>Пауза</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BezierCurveLayerEditor.qml" line="861" />
+        <location filename="../Modules/ControlCenter/BezierCurveLayerEditor.qml" line="861"/>
         <source>Play</source>
-        <translation type="finished">Воспроизвести</translation>
+        <translation>Воспроизвести</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BezierCurveLayerEditor.qml" line="875" />
+        <location filename="../Modules/ControlCenter/BezierCurveLayerEditor.qml" line="875"/>
         <source>Reverse</source>
-        <translation type="finished">Обратное</translation>
+        <translation>Обратное</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BezierCurveLayerEditor.qml" line="889" />
+        <location filename="../Modules/ControlCenter/BezierCurveLayerEditor.qml" line="889"/>
         <source>Flip</source>
-        <translation type="finished">Отразить</translation>
+        <translation>Отразить</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BezierCurveLayerEditor.qml" line="903" />
+        <location filename="../Modules/ControlCenter/BezierCurveLayerEditor.qml" line="903"/>
         <source>Enter manually</source>
-        <translation type="finished">Ввести вручную</translation>
+        <translation>Ввести вручную</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BezierCurveLayerEditor.qml" line="1146" />
+        <location filename="../Modules/ControlCenter/BezierCurveLayerEditor.qml" line="1146"/>
         <source>Apply to draft</source>
-        <translation type="finished">Применить к черновику</translation>
+        <translation>Применить к черновику</translation>
     </message>
 </context>
 <context>
     <name>BluetoothButton</name>
     <message>
-        <location filename="../Modules/Bar/QuickSettings/BluetoothButton.qml" line="20" />
+        <location filename="../Modules/Bar/QuickSettings/BluetoothButton.qml" line="20"/>
         <source>Bluetooth connected</source>
-        <translation type="finished">Bluetooth подключён</translation>
+        <translation>Bluetooth подключён</translation>
     </message>
     <message>
-        <location filename="../Modules/Bar/QuickSettings/BluetoothButton.qml" line="21" />
+        <location filename="../Modules/Bar/QuickSettings/BluetoothButton.qml" line="21"/>
         <source>Bluetooth on</source>
-        <translation type="finished">Bluetooth вкл.</translation>
+        <translation>Bluetooth вкл.</translation>
     </message>
     <message>
-        <location filename="../Modules/Bar/QuickSettings/BluetoothButton.qml" line="21" />
+        <location filename="../Modules/Bar/QuickSettings/BluetoothButton.qml" line="21"/>
         <source>Bluetooth off</source>
-        <translation type="finished">Bluetooth выкл.</translation>
+        <translation>Bluetooth выкл.</translation>
     </message>
 </context>
 <context>
     <name>BluetoothContent</name>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="26" />
+        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="26"/>
         <source>No Bluetooth adapter detected or BlueZ is unavailable</source>
-        <translation type="finished">Адаптер Bluetooth не обнаружен или BlueZ недоступен</translation>
+        <translation>Адаптер Bluetooth не обнаружен или BlueZ недоступен</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="29" />
+        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="29"/>
         <source>Bluetooth is off</source>
-        <translation type="finished">Bluetooth выключен</translation>
+        <translation>Bluetooth выключен</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="32" />
+        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="32"/>
         <source>No Bluetooth devices discovered yet</source>
-        <translation type="finished">Устройства Bluetooth ещё не обнаружены</translation>
+        <translation>Устройства Bluetooth ещё не обнаружены</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="86" />
+        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="86"/>
         <source>Blocked</source>
-        <translation type="finished">Заблокировано</translation>
+        <translation>Заблокировано</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="88" />
+        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="88"/>
         <source>Pairing</source>
-        <translation type="finished">Сопряжение</translation>
+        <translation>Сопряжение</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="90" />
-        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="199" />
+        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="90"/>
+        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="199"/>
         <source>Connected</source>
-        <translation type="finished">Подключено</translation>
+        <translation>Подключено</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="92" />
-        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="207" />
+        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="92"/>
+        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="207"/>
         <source>Paired</source>
-        <translation type="finished">Сопряжено</translation>
+        <translation>Сопряжено</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="94" />
-        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="215" />
+        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="94"/>
+        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="215"/>
         <source>Available devices</source>
-        <translation type="finished">Доступные устройства</translation>
+        <translation>Доступные устройства</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="96" />
+        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="96"/>
         <source>Trusted</source>
-        <translation type="finished">Надёжное</translation>
+        <translation>Надёжное</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="99" />
+        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="99"/>
         <source>Battery </source>
-        <translation type="finished">Батарея </translation>
+        <translation>Батарея </translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="104" />
+        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="104"/>
         <source>Bluetooth</source>
-        <translation type="finished">Bluetooth</translation>
+        <translation>Bluetooth</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="231" />
+        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="231"/>
         <source>Searching for available Bluetooth devices</source>
-        <translation type="finished">Поиск доступных устройств Bluetooth</translation>
+        <translation>Поиск доступных устройств Bluetooth</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="236" />
-        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="293" />
+        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="236"/>
+        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="293"/>
         <source>Searching for nearby devices</source>
-        <translation type="finished">Поиск устройств поблизости</translation>
+        <translation>Поиск устройств поблизости</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="286" />
+        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="286"/>
         <source>No available devices found</source>
-        <translation type="finished">Доступные устройства не найдены</translation>
+        <translation>Доступные устройства не найдены</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="292" />
+        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="292"/>
         <source>Adapters</source>
-        <translation type="finished">Адаптеры</translation>
+        <translation>Адаптеры</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="294" />
+        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="294"/>
         <source>Device discovery is paused</source>
-        <translation type="finished">Обнаружение устройств приостановлено</translation>
+        <translation>Обнаружение устройств приостановлено</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="296" />
+        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="296"/>
         <source>Turn on Bluetooth to start discovery</source>
-        <translation type="finished">Включите Bluetooth для начала поиска</translation>
+        <translation>Включите Bluetooth для начала поиска</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="306" />
+        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="306"/>
         <source>Bluetooth adapter</source>
-        <translation type="finished">Адаптер Bluetooth</translation>
+        <translation>Адаптер Bluetooth</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="307" />
+        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="307"/>
         <source>Blocked by rfkill</source>
-        <translation type="finished">Заблокировано rfkill</translation>
+        <translation>Заблокировано rfkill</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="308" />
+        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="308"/>
         <source>Off</source>
-        <translation type="finished">Выкл.</translation>
+        <translation>Выкл.</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="315" />
+        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="315"/>
         <source>Toggle adapter </source>
-        <translation type="finished">Включить/выключить адаптер </translation>
+        <translation>Включить/выключить адаптер </translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="325" />
+        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="325"/>
         <source>Allow discovery</source>
-        <translation type="finished">Разрешить обнаружение</translation>
+        <translation>Разрешить обнаружение</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="326" />
+        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="326"/>
         <source>Let nearby devices find this computer</source>
-        <translation type="finished">Разрешить устройствам поблизости находить этот компьютер</translation>
+        <translation>Разрешить устройствам поблизости находить этот компьютер</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="333" />
+        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="333"/>
         <source>Bluetooth discoverability</source>
-        <translation type="finished">Обнаружение Bluetooth</translation>
+        <translation>Обнаружение Bluetooth</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="342" />
+        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="342"/>
         <source>Allow pairing</source>
-        <translation type="finished">Разрешить сопряжение</translation>
+        <translation>Разрешить сопряжение</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="343" />
+        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="343"/>
         <source>Accept pairing requests supported by the official module</source>
-        <translation type="finished">Принимать запросы сопряжения, поддерживаемые официальным модулем</translation>
+        <translation>Принимать запросы сопряжения, поддерживаемые официальным модулем</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="350" />
+        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="350"/>
         <source>Bluetooth pairing</source>
-        <translation type="finished">Сопряжение Bluetooth</translation>
+        <translation>Сопряжение Bluetooth</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="370" />
+        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="370"/>
         <source>Forget Bluetooth device</source>
-        <translation type="finished">Забыть устройство Bluetooth</translation>
+        <translation>Забыть устройство Bluetooth</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="371" />
+        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="371"/>
         <source>This will delete the pairing information for “%1”.</source>
-        <translation type="finished">Это удалит данные сопряжения для «%1».</translation>
+        <translation>Это удалит данные сопряжения для «%1».</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="383" />
+        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="383"/>
         <source>Cancel</source>
-        <translation type="finished">Отмена</translation>
+        <translation>Отмена</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="391" />
+        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="391"/>
         <source>Forget</source>
-        <translation type="finished">Забыть</translation>
+        <translation>Забыть</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="413" />
+        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="413"/>
         <source>Scan for Bluetooth devices again</source>
-        <translation type="finished">Сканировать устройства Bluetooth снова</translation>
+        <translation>Сканировать устройства Bluetooth снова</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="431" />
+        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="431"/>
         <source>Bluetooth switch</source>
-        <translation type="finished">Переключатель Bluetooth</translation>
+        <translation>Переключатель Bluetooth</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="485" />
+        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="485"/>
         <source>Disconnect</source>
-        <translation type="finished">Отключить</translation>
+        <translation>Отключить</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="486" />
+        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="486"/>
         <source>Connect</source>
-        <translation type="finished">Подключить</translation>
+        <translation>Подключить</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="488" />
+        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="488"/>
         <source>Pair</source>
-        <translation type="finished">Сопрячь</translation>
+        <translation>Сопрячь</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="508" />
+        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="508"/>
         <source>Bluetooth device action</source>
-        <translation type="finished">Действие с устройством Bluetooth</translation>
+        <translation>Действие с устройством Bluetooth</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="519" />
+        <location filename="../Modules/Sidebars/QuickSettings/BluetoothContent.qml" line="519"/>
         <source>Forget device</source>
-        <translation type="finished">Забыть устройство</translation>
+        <translation>Забыть устройство</translation>
     </message>
 </context>
 <context>
     <name>BluetoothDevicePage</name>
     <message>
-        <location filename="../Modules/ControlCenter/BluetoothDevicePage.qml" line="18" />
+        <location filename="../Modules/ControlCenter/BluetoothDevicePage.qml" line="18"/>
         <source>Bluetooth device</source>
-        <translation type="finished">Устройство Bluetooth</translation>
+        <translation>Устройство Bluetooth</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BluetoothDevicePage.qml" line="30" />
+        <location filename="../Modules/ControlCenter/BluetoothDevicePage.qml" line="30"/>
         <source>Blocked</source>
-        <translation type="finished">Заблокировано</translation>
+        <translation>Заблокировано</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BluetoothDevicePage.qml" line="33" />
+        <location filename="../Modules/ControlCenter/BluetoothDevicePage.qml" line="33"/>
         <source>Connecting…</source>
-        <translation type="finished">Подключение…</translation>
+        <translation>Подключение…</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BluetoothDevicePage.qml" line="36" />
+        <location filename="../Modules/ControlCenter/BluetoothDevicePage.qml" line="36"/>
         <source>Disconnecting…</source>
-        <translation type="finished">Отключение…</translation>
+        <translation>Отключение…</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BluetoothDevicePage.qml" line="39" />
+        <location filename="../Modules/ControlCenter/BluetoothDevicePage.qml" line="39"/>
         <source>Connected · %1%</source>
-        <translation type="finished">Подключено · %1%</translation>
+        <translation>Подключено · %1%</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BluetoothDevicePage.qml" line="39" />
+        <location filename="../Modules/ControlCenter/BluetoothDevicePage.qml" line="39"/>
         <source>Connected</source>
-        <translation type="finished">Подключено</translation>
+        <translation>Подключено</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BluetoothDevicePage.qml" line="42" />
+        <location filename="../Modules/ControlCenter/BluetoothDevicePage.qml" line="42"/>
         <source>Saved</source>
-        <translation type="finished">Сохранено</translation>
+        <translation>Сохранено</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BluetoothDevicePage.qml" line="103" />
+        <location filename="../Modules/ControlCenter/BluetoothDevicePage.qml" line="103"/>
         <source>Disconnect</source>
-        <translation type="finished">Отключить</translation>
+        <translation>Отключить</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BluetoothDevicePage.qml" line="103" />
+        <location filename="../Modules/ControlCenter/BluetoothDevicePage.qml" line="103"/>
         <source>Connect</source>
-        <translation type="finished">Подключить</translation>
+        <translation>Подключить</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BluetoothDevicePage.qml" line="120" />
+        <location filename="../Modules/ControlCenter/BluetoothDevicePage.qml" line="120"/>
         <source>Forget device</source>
-        <translation type="finished">Забыть устройство</translation>
+        <translation>Забыть устройство</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BluetoothDevicePage.qml" line="128" />
+        <location filename="../Modules/ControlCenter/BluetoothDevicePage.qml" line="128"/>
         <source>Connection</source>
         <comment>Bluetooth settings section</comment>
-        <translation type="finished">Подключение</translation>
+        <translation>Подключение</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BluetoothDevicePage.qml" line="134" />
-        <location filename="../Modules/ControlCenter/BluetoothDevicePage.qml" line="139" />
+        <location filename="../Modules/ControlCenter/BluetoothDevicePage.qml" line="134"/>
+        <location filename="../Modules/ControlCenter/BluetoothDevicePage.qml" line="139"/>
         <source>Trusted device</source>
-        <translation type="finished">Надёжное устройство</translation>
+        <translation>Надёжное устройство</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BluetoothDevicePage.qml" line="150" />
-        <location filename="../Modules/ControlCenter/BluetoothDevicePage.qml" line="155" />
+        <location filename="../Modules/ControlCenter/BluetoothDevicePage.qml" line="150"/>
+        <location filename="../Modules/ControlCenter/BluetoothDevicePage.qml" line="155"/>
         <source>Block device</source>
-        <translation type="finished">Блочное устройство</translation>
+        <translation>Блочное устройство</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BluetoothDevicePage.qml" line="166" />
+        <location filename="../Modules/ControlCenter/BluetoothDevicePage.qml" line="166"/>
         <source>Allow wake</source>
-        <translation type="finished">Разрешить пробуждение</translation>
+        <translation>Разрешить пробуждение</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BluetoothDevicePage.qml" line="171" />
+        <location filename="../Modules/ControlCenter/BluetoothDevicePage.qml" line="171"/>
         <source>Allow device to wake the system</source>
-        <translation type="finished">Разрешить устройству выводить систему из сна</translation>
+        <translation>Разрешить устройству выводить систему из сна</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BluetoothDevicePage.qml" line="182" />
+        <location filename="../Modules/ControlCenter/BluetoothDevicePage.qml" line="182"/>
         <source>Device information</source>
-        <translation type="finished">Сведения об устройстве</translation>
+        <translation>Сведения об устройстве</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BluetoothDevicePage.qml" line="188" />
+        <location filename="../Modules/ControlCenter/BluetoothDevicePage.qml" line="188"/>
         <source>Battery</source>
-        <translation type="finished">Батарея</translation>
+        <translation>Батарея</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BluetoothDevicePage.qml" line="189" />
+        <location filename="../Modules/ControlCenter/BluetoothDevicePage.qml" line="189"/>
         <source>%1%</source>
-        <translation type="finished">%1%</translation>
+        <translation>%1%</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BluetoothDevicePage.qml" line="190" />
+        <location filename="../Modules/ControlCenter/BluetoothDevicePage.qml" line="190"/>
         <source>Unavailable</source>
-        <translation type="finished">Недоступно</translation>
+        <translation>Недоступно</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BluetoothDevicePage.qml" line="196" />
+        <location filename="../Modules/ControlCenter/BluetoothDevicePage.qml" line="196"/>
         <source>Device battery %1%</source>
-        <translation type="finished">Батарея устройства %1%</translation>
+        <translation>Батарея устройства %1%</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BluetoothDevicePage.qml" line="199" />
+        <location filename="../Modules/ControlCenter/BluetoothDevicePage.qml" line="199"/>
         <source>Device battery unavailable</source>
-        <translation type="finished">Батарея устройства недоступна</translation>
+        <translation>Батарея устройства недоступна</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BluetoothDevicePage.qml" line="206" />
+        <location filename="../Modules/ControlCenter/BluetoothDevicePage.qml" line="206"/>
         <source>Address</source>
-        <translation type="finished">Адрес</translation>
+        <translation>Адрес</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BluetoothDevicePage.qml" line="213" />
+        <location filename="../Modules/ControlCenter/BluetoothDevicePage.qml" line="213"/>
         <source>Adapter</source>
-        <translation type="finished">Адаптер</translation>
+        <translation>Адаптер</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BluetoothDevicePage.qml" line="224" />
+        <location filename="../Modules/ControlCenter/BluetoothDevicePage.qml" line="224"/>
         <source>Forget “%1”?</source>
-        <translation type="finished">Забыть «%1»?</translation>
+        <translation>Забыть «%1»?</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BluetoothDevicePage.qml" line="224" />
+        <location filename="../Modules/ControlCenter/BluetoothDevicePage.qml" line="224"/>
         <source>Forget device?</source>
-        <translation type="finished">Забыть устройство?</translation>
+        <translation>Забыть устройство?</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BluetoothDevicePage.qml" line="225" />
+        <location filename="../Modules/ControlCenter/BluetoothDevicePage.qml" line="225"/>
         <source>This removes the saved Bluetooth pairing information for this device.</source>
-        <translation type="finished">Это удалит сохранённые данные сопряжения Bluetooth для этого устройства.</translation>
+        <translation>Это удалит сохранённые данные сопряжения Bluetooth для этого устройства.</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BluetoothDevicePage.qml" line="236" />
+        <location filename="../Modules/ControlCenter/BluetoothDevicePage.qml" line="236"/>
         <source>Cancel</source>
-        <translation type="finished">Отмена</translation>
+        <translation>Отмена</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BluetoothDevicePage.qml" line="242" />
+        <location filename="../Modules/ControlCenter/BluetoothDevicePage.qml" line="242"/>
         <source>Forget</source>
-        <translation type="finished">Забыть</translation>
+        <translation>Забыть</translation>
     </message>
 </context>
 <context>
     <name>BluetoothPairingPage</name>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2005" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2104"/>
         <source>Nearby devices</source>
-        <translation type="finished">Устройства поблизости</translation>
+        <translation>Устройства поблизости</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BluetoothPairingPage.qml" line="104" />
+        <location filename="../Modules/ControlCenter/BluetoothPairingPage.qml" line="104"/>
         <source>Searching for nearby devices</source>
-        <translation type="finished">Поиск устройств поблизости</translation>
+        <translation>Поиск устройств поблизости</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BluetoothPairingPage.qml" line="104" />
+        <location filename="../Modules/ControlCenter/BluetoothPairingPage.qml" line="104"/>
         <source>Waiting for Bluetooth scan</source>
-        <translation type="finished">Ожидание сканирования Bluetooth</translation>
+        <translation>Ожидание сканирования Bluetooth</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BluetoothPairingPage.qml" line="113" />
+        <location filename="../Modules/ControlCenter/BluetoothPairingPage.qml" line="113"/>
         <source>Searching for nearby Bluetooth devices</source>
-        <translation type="finished">Поиск устройств Bluetooth поблизости</translation>
+        <translation>Поиск устройств Bluetooth поблизости</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BluetoothPairingPage.qml" line="128" />
+        <location filename="../Modules/ControlCenter/BluetoothPairingPage.qml" line="128"/>
         <source>Pairing…</source>
-        <translation type="finished">Сопряжение…</translation>
+        <translation>Сопряжение…</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BluetoothPairingPage.qml" line="143" />
+        <location filename="../Modules/ControlCenter/BluetoothPairingPage.qml" line="143"/>
         <source>Pairing %1</source>
-        <translation type="finished">Сопряжение %1</translation>
+        <translation>Сопряжение %1</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/BluetoothPairingPage.qml" line="152" />
+        <location filename="../Modules/ControlCenter/BluetoothPairingPage.qml" line="152"/>
         <source>No nearby devices found yet</source>
-        <translation type="finished">Устройства поблизости ещё не найдены</translation>
+        <translation>Устройства поблизости ещё не найдены</translation>
     </message>
 </context>
 <context>
     <name>BluetoothService</name>
     <message>
-        <location filename="../Services/BluetoothService.qml" line="89" />
+        <location filename="../Services/BluetoothService.qml" line="89"/>
         <source>Unknown device</source>
-        <translation type="finished">Неизвестное устройство</translation>
+        <translation>Неизвестное устройство</translation>
     </message>
     <message>
-        <location filename="../Services/BluetoothService.qml" line="164" />
+        <location filename="../Services/BluetoothService.qml" line="164"/>
         <source>Another Bluetooth operation is already in progress</source>
-        <translation type="finished">Другая операция Bluetooth уже выполняется</translation>
+        <translation>Другая операция Bluetooth уже выполняется</translation>
     </message>
     <message>
-        <location filename="../Services/BluetoothService.qml" line="191" />
+        <location filename="../Services/BluetoothService.qml" line="191"/>
         <source>Bluetooth operation failed</source>
-        <translation type="finished">Операция Bluetooth не удалась</translation>
+        <translation>Операция Bluetooth не удалась</translation>
     </message>
     <message>
-        <location filename="../Services/BluetoothService.qml" line="212" />
-        <location filename="../Services/BluetoothService.qml" line="245" />
-        <location filename="../Services/BluetoothService.qml" line="265" />
+        <location filename="../Services/BluetoothService.qml" line="212"/>
+        <location filename="../Services/BluetoothService.qml" line="245"/>
+        <location filename="../Services/BluetoothService.qml" line="265"/>
         <source>No Bluetooth adapter detected</source>
-        <translation type="finished">Адаптер Bluetooth не обнаружен</translation>
+        <translation>Адаптер Bluetooth не обнаружен</translation>
     </message>
     <message>
-        <location filename="../Services/BluetoothService.qml" line="217" />
+        <location filename="../Services/BluetoothService.qml" line="217"/>
         <source>The Bluetooth adapter is blocked by rfkill</source>
-        <translation type="finished">Адаптер Bluetooth заблокирован rfkill</translation>
+        <translation>Адаптер Bluetooth заблокирован rfkill</translation>
     </message>
     <message>
-        <location filename="../Services/BluetoothService.qml" line="245" />
-        <location filename="../Services/BluetoothService.qml" line="265" />
-        <location filename="../Services/BluetoothService.qml" line="314" />
+        <location filename="../Services/BluetoothService.qml" line="245"/>
+        <location filename="../Services/BluetoothService.qml" line="265"/>
+        <location filename="../Services/BluetoothService.qml" line="314"/>
         <source>The Bluetooth adapter is off</source>
-        <translation type="finished">Адаптер Bluetooth выключен</translation>
+        <translation>Адаптер Bluetooth выключен</translation>
     </message>
     <message>
-        <location filename="../Services/BluetoothService.qml" line="309" />
+        <location filename="../Services/BluetoothService.qml" line="309"/>
         <source>No Bluetooth adapter detected or BlueZ is unavailable</source>
-        <translation type="finished">Адаптер Bluetooth не обнаружен или BlueZ недоступен</translation>
+        <translation>Адаптер Bluetooth не обнаружен или BlueZ недоступен</translation>
     </message>
     <message>
-        <location filename="../Services/BluetoothService.qml" line="347" />
+        <location filename="../Services/BluetoothService.qml" line="347"/>
         <source>The target Bluetooth device is no longer available</source>
-        <translation type="finished">Целевое устройство Bluetooth больше не доступно</translation>
+        <translation>Целевое устройство Bluetooth больше не доступно</translation>
     </message>
     <message>
-        <location filename="../Services/BluetoothService.qml" line="352" />
+        <location filename="../Services/BluetoothService.qml" line="352"/>
         <source>The target Bluetooth device is blocked</source>
-        <translation type="finished">Целевое устройство Bluetooth заблокировано</translation>
+        <translation>Целевое устройство Bluetooth заблокировано</translation>
     </message>
     <message>
-        <location filename="../Services/BluetoothService.qml" line="523" />
+        <location filename="../Services/BluetoothService.qml" line="523"/>
         <source>Could not connect to the device</source>
-        <translation type="finished">Не удалось подключиться к устройству</translation>
+        <translation>Не удалось подключиться к устройству</translation>
     </message>
     <message>
-        <location filename="../Services/BluetoothService.qml" line="536" />
+        <location filename="../Services/BluetoothService.qml" line="536"/>
         <source>Pairing failed</source>
-        <translation type="finished">Сопряжение не удалось</translation>
+        <translation>Сопряжение не удалось</translation>
     </message>
     <message>
-        <location filename="../Services/BluetoothService.qml" line="592" />
+        <location filename="../Services/BluetoothService.qml" line="592"/>
         <source>Bluetooth operation timed out; the current Quickshell API provides no more detailed BlueZ error</source>
-        <translation type="finished">Операция Bluetooth истекла по времени; текущий API Quickshell не даёт более подробной ошибки BlueZ</translation>
+        <translation>Операция Bluetooth истекла по времени; текущий API Quickshell не даёт более подробной ошибки BlueZ</translation>
     </message>
 </context>
 <context>
     <name>BlurService</name>
     <message>
-        <location filename="../Services/BlurService.qml" line="94" />
+        <location filename="../Services/BlurService.qml" line="94"/>
         <source>The current Niri version does not support background blur</source>
-        <translation type="finished">Текущая версия Niri не поддерживает размытие фона</translation>
+        <translation>Текущая версия Niri не поддерживает размытие фона</translation>
     </message>
     <message>
-        <location filename="../Services/BlurService.qml" line="96" />
+        <location filename="../Services/BlurService.qml" line="96"/>
         <source>Unable to detect the Niri version</source>
-        <translation type="finished">Не удалось определить версию Niri</translation>
+        <translation>Не удалось определить версию Niri</translation>
     </message>
 </context>
 <context>
     <name>Brightness</name>
     <message>
-        <location filename="../Modules/Bar/QuickSettings/Brightness.qml" line="48" />
+        <location filename="../Modules/Bar/QuickSettings/Brightness.qml" line="48"/>
         <source>Brightness: </source>
-        <translation type="finished">Яркость: </translation>
+        <translation>Яркость: </translation>
     </message>
     <message>
-        <location filename="../Modules/Bar/QuickSettings/Brightness.qml" line="48" />
+        <location filename="../Modules/Bar/QuickSettings/Brightness.qml" line="48"/>
         <source>%
 Scroll to adjust</source>
-        <translation type="finished">%
+        <translation>%
 Прокрутите для изменения</translation>
     </message>
 </context>
 <context>
     <name>CalendarCard</name>
     <message>
-        <location filename="../Modules/Keystone/DashboardContent/CalendarCard.qml" line="118" />
+        <location filename="../Modules/Keystone/DashboardContent/Widgets/Calendar/CalendarCard.qml" line="118"/>
         <source>Previous month</source>
-        <translation type="finished">Предыдущий месяц</translation>
+        <translation>Предыдущий месяц</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/DashboardContent/CalendarCard.qml" line="165" />
+        <location filename="../Modules/Keystone/DashboardContent/Widgets/Calendar/CalendarCard.qml" line="165"/>
         <source>Next month</source>
-        <translation type="finished">Следующий месяц</translation>
+        <translation>Следующий месяц</translation>
     </message>
 </context>
 <context>
     <name>CalendarWidget</name>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/CalendarWidget.qml" line="65" />
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/CalendarWidget.qml" line="65"/>
         <source>Jump to current month</source>
-        <translation type="finished">Перейти к текущему месяцу</translation>
+        <translation>Перейти к текущему месяцу</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/CalendarWidget.qml" line="76" />
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/CalendarWidget.qml" line="76"/>
         <source>Previous month</source>
-        <translation type="finished">Предыдущий месяц</translation>
+        <translation>Предыдущий месяц</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/CalendarWidget.qml" line="83" />
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/CalendarWidget.qml" line="83"/>
         <source>Next month</source>
-        <translation type="finished">Следующий месяц</translation>
+        <translation>Следующий месяц</translation>
     </message>
 </context>
 <context>
     <name>ClipboardService</name>
     <message>
-        <location filename="../Services/ClipboardService.qml" line="82" />
+        <location filename="../Services/ClipboardService.qml" line="82"/>
         <source>The cliphist watcher is not running; enable the service and copy content again</source>
-        <translation type="finished">Наблюдатель cliphist не запущен; включите службу и скопируйте содержимое снова</translation>
+        <translation>Наблюдатель cliphist не запущен; включите службу и скопируйте содержимое снова</translation>
     </message>
     <message>
-        <location filename="../Services/ClipboardService.qml" line="84" />
+        <location filename="../Services/ClipboardService.qml" line="84"/>
         <source>cliphist is missing; clipboard history cannot be read</source>
-        <translation type="finished">cliphist отсутствует; историю буфера обмена прочитать нельзя</translation>
+        <translation>cliphist отсутствует; историю буфера обмена прочитать нельзя</translation>
     </message>
     <message>
-        <location filename="../Services/ClipboardService.qml" line="85" />
+        <location filename="../Services/ClipboardService.qml" line="85"/>
         <source>wl-copy is missing; clipboard contents cannot be restored</source>
-        <translation type="finished">wl-copy отсутствует; содержимое буфера обмена восстановить нельзя</translation>
+        <translation>wl-copy отсутствует; содержимое буфера обмена восстановить нельзя</translation>
     </message>
     <message>
-        <location filename="../Services/ClipboardService.qml" line="86" />
+        <location filename="../Services/ClipboardService.qml" line="86"/>
         <source>cliphist or wl-copy is missing; clipboard history is unavailable</source>
-        <translation type="finished">cliphist или wl-copy отсутствует; история буфера обмена недоступна</translation>
+        <translation>cliphist или wl-copy отсутствует; история буфера обмена недоступна</translation>
     </message>
     <message>
-        <location filename="../Services/ClipboardService.qml" line="88" />
+        <location filename="../Services/ClipboardService.qml" line="88"/>
         <source>Unable to decode this entry from cliphist</source>
-        <translation type="finished">Не удалось декодировать эту запись из cliphist</translation>
+        <translation>Не удалось декодировать эту запись из cliphist</translation>
     </message>
     <message>
-        <location filename="../Services/ClipboardService.qml" line="89" />
+        <location filename="../Services/ClipboardService.qml" line="89"/>
         <source>Unable to inspect this clipboard entry</source>
-        <translation type="finished">Не удалось просмотреть эту запись буфера обмена</translation>
+        <translation>Не удалось просмотреть эту запись буфера обмена</translation>
     </message>
     <message>
-        <location filename="../Services/ClipboardService.qml" line="90" />
+        <location filename="../Services/ClipboardService.qml" line="90"/>
         <source>Unable to generate a clipboard preview</source>
-        <translation type="finished">Не удалось создать предпросмотр буфера обмена</translation>
+        <translation>Не удалось создать предпросмотр буфера обмена</translation>
     </message>
     <message>
-        <location filename="../Services/ClipboardService.qml" line="91" />
+        <location filename="../Services/ClipboardService.qml" line="91"/>
         <source>This clipboard content exceeds the safe size limit</source>
-        <translation type="finished">Это содержимое буфера обмена превышает безопасный предел размера</translation>
+        <translation>Это содержимое буфера обмена превышает безопасный предел размера</translation>
     </message>
     <message>
-        <location filename="../Services/ClipboardService.qml" line="92" />
+        <location filename="../Services/ClipboardService.qml" line="92"/>
         <source>Image data is damaged or too large</source>
-        <translation type="finished">Данные изображения повреждены или слишком велики</translation>
+        <translation>Данные изображения повреждены или слишком велики</translation>
     </message>
     <message>
-        <location filename="../Services/ClipboardService.qml" line="93" />
+        <location filename="../Services/ClipboardService.qml" line="93"/>
         <source>The file in the clipboard no longer exists</source>
-        <translation type="finished">Файл в буфере обмена больше не существует</translation>
+        <translation>Файл в буфере обмена больше не существует</translation>
     </message>
     <message>
-        <location filename="../Services/ClipboardService.qml" line="94" />
+        <location filename="../Services/ClipboardService.qml" line="94"/>
         <source>This clipboard format cannot be restored reliably</source>
-        <translation type="finished">Этот формат буфера обмена нельзя надёжно восстановить</translation>
+        <translation>Этот формат буфера обмена нельзя надёжно восстановить</translation>
     </message>
     <message>
-        <location filename="../Services/ClipboardService.qml" line="95" />
+        <location filename="../Services/ClipboardService.qml" line="95"/>
         <source>wl-copy failed to write the system clipboard</source>
-        <translation type="finished">wl-copy не удалось записать системный буфер обмена</translation>
+        <translation>wl-copy не удалось записать системный буфер обмена</translation>
     </message>
     <message>
-        <location filename="../Services/ClipboardService.qml" line="96" />
-        <location filename="../Services/ClipboardService.qml" line="140" />
-        <location filename="../Services/ClipboardService.qml" line="153" />
-        <location filename="../Services/ClipboardService.qml" line="264" />
+        <location filename="../Services/ClipboardService.qml" line="96"/>
+        <location filename="../Services/ClipboardService.qml" line="140"/>
+        <location filename="../Services/ClipboardService.qml" line="153"/>
+        <location filename="../Services/ClipboardService.qml" line="264"/>
         <source>The clipboard service returned invalid data</source>
-        <translation type="finished">Служба буфера обмена вернула недействительные данные</translation>
+        <translation>Служба буфера обмена вернула недействительные данные</translation>
     </message>
     <message>
-        <location filename="../Services/ClipboardService.qml" line="97" />
+        <location filename="../Services/ClipboardService.qml" line="97"/>
         <source>The current key does not provide the required clipboard capability</source>
-        <translation type="finished">Текущий key не предоставляет требуемую возможность буфера обмена</translation>
+        <translation>Текущий key не предоставляет требуемую возможность буфера обмена</translation>
     </message>
     <message>
-        <location filename="../Services/ClipboardService.qml" line="99" />
+        <location filename="../Services/ClipboardService.qml" line="99"/>
         <source>Unable to read clipboard settings</source>
-        <translation type="finished">Не удалось прочитать настройки буфера обмена</translation>
+        <translation>Не удалось прочитать настройки буфера обмена</translation>
     </message>
     <message>
-        <location filename="../Services/ClipboardService.qml" line="100" />
+        <location filename="../Services/ClipboardService.qml" line="100"/>
         <source>Unable to save clipboard settings</source>
-        <translation type="finished">Не удалось сохранить настройки буфера обмена</translation>
+        <translation>Не удалось сохранить настройки буфера обмена</translation>
     </message>
     <message>
-        <location filename="../Services/ClipboardService.qml" line="101" />
+        <location filename="../Services/ClipboardService.qml" line="101"/>
         <source>History limit must be from 50 to 750 in steps of 50</source>
-        <translation type="finished">Лимит истории должен быть от 50 до 750 с шагом 50</translation>
+        <translation>Лимит истории должен быть от 50 до 750 с шагом 50</translation>
     </message>
     <message>
-        <location filename="../Services/ClipboardService.qml" line="102" />
-        <location filename="../Services/ClipboardService.qml" line="301" />
+        <location filename="../Services/ClipboardService.qml" line="102"/>
+        <location filename="../Services/ClipboardService.qml" line="301"/>
         <source>A clipboard operation is already running</source>
-        <translation type="finished">Операция с буфером обмена уже выполняется</translation>
+        <translation>Операция с буфером обмена уже выполняется</translation>
     </message>
     <message>
-        <location filename="../Services/ClipboardService.qml" line="175" />
+        <location filename="../Services/ClipboardService.qml" line="175"/>
         <source>The current key does not support the required clipboard capabilities</source>
-        <translation type="finished">Текущий key не поддерживает требуемые возможности буфера обмена</translation>
+        <translation>Текущий key не поддерживает требуемые возможности буфера обмена</translation>
     </message>
     <message>
-        <location filename="../Services/ClipboardService.qml" line="195" />
+        <location filename="../Services/ClipboardService.qml" line="195"/>
         <source>Clipboard history is unavailable</source>
-        <translation type="finished">История буфера обмена недоступна</translation>
+        <translation>История буфера обмена недоступна</translation>
     </message>
     <message>
-        <location filename="../Services/ClipboardService.qml" line="348" />
+        <location filename="../Services/ClipboardService.qml" line="348"/>
         <source>Clipboard operation failed</source>
-        <translation type="finished">Операция с буфером обмена не удалась</translation>
+        <translation>Операция с буфером обмена не удалась</translation>
     </message>
     <message>
-        <location filename="../Services/ClipboardService.qml" line="475" />
+        <location filename="../Services/ClipboardService.qml" line="475"/>
         <source>Unable to inspect clipboard entry</source>
-        <translation type="finished">Не удалось просмотреть запись буфера обмена</translation>
+        <translation>Не удалось просмотреть запись буфера обмена</translation>
     </message>
 </context>
 <context>
     <name>CloudRemoteManagerWindow</name>
     <message>
-        <location filename="../Modules/ControlCenter/CloudRemoteManagerWindow.qml" line="47" />
+        <location filename="../Modules/ControlCenter/CloudRemoteManagerWindow.qml" line="47"/>
         <source>Could not start deleting the cloud storage configuration</source>
-        <translation type="finished">Не удалось начать удаление конфигурации облачного хранилища</translation>
+        <translation>Не удалось начать удаление конфигурации облачного хранилища</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/CloudRemoteManagerWindow.qml" line="68" />
+        <location filename="../Modules/ControlCenter/CloudRemoteManagerWindow.qml" line="68"/>
         <source>Cloud storage “%1” was removed</source>
-        <translation type="finished">Облачное хранилище «%1» удалено</translation>
+        <translation>Облачное хранилище «%1» удалено</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/CloudRemoteManagerWindow.qml" line="115" />
+        <location filename="../Modules/ControlCenter/CloudRemoteManagerWindow.qml" line="115"/>
         <source>Manage cloud storage</source>
-        <translation type="finished">Управление облачным хранилищем</translation>
+        <translation>Управление облачным хранилищем</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/CloudRemoteManagerWindow.qml" line="165" />
+        <location filename="../Modules/ControlCenter/CloudRemoteManagerWindow.qml" line="165"/>
         <source>Current default cloud storage</source>
-        <translation type="finished">Текущее облачное хранилище по умолчанию</translation>
+        <translation>Текущее облачное хранилище по умолчанию</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/CloudRemoteManagerWindow.qml" line="165" />
+        <location filename="../Modules/ControlCenter/CloudRemoteManagerWindow.qml" line="165"/>
         <source>Set as default</source>
-        <translation type="finished">Установить по умолчанию</translation>
+        <translation>Установить по умолчанию</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/CloudRemoteManagerWindow.qml" line="176" />
-        <location filename="../Modules/ControlCenter/CloudRemoteManagerWindow.qml" line="263" />
+        <location filename="../Modules/ControlCenter/CloudRemoteManagerWindow.qml" line="176"/>
+        <location filename="../Modules/ControlCenter/CloudRemoteManagerWindow.qml" line="263"/>
         <source>Delete</source>
-        <translation type="finished">Удалить</translation>
+        <translation>Удалить</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/CloudRemoteManagerWindow.qml" line="206" />
+        <location filename="../Modules/ControlCenter/CloudRemoteManagerWindow.qml" line="206"/>
         <source>No cloud storage configured</source>
-        <translation type="finished">Облачное хранилище не настроено</translation>
+        <translation>Облачное хранилище не настроено</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/CloudRemoteManagerWindow.qml" line="244" />
+        <location filename="../Modules/ControlCenter/CloudRemoteManagerWindow.qml" line="244"/>
         <source>Remove “%1”?</source>
-        <translation type="finished">Удалить «%1»?</translation>
+        <translation>Удалить «%1»?</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/CloudRemoteManagerWindow.qml" line="247" />
+        <location filename="../Modules/ControlCenter/CloudRemoteManagerWindow.qml" line="247"/>
         <source>Remove cloud storage</source>
-        <translation type="finished">Удалить облачное хранилище</translation>
+        <translation>Удалить облачное хранилище</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/CloudRemoteManagerWindow.qml" line="248" />
+        <location filename="../Modules/ControlCenter/CloudRemoteManagerWindow.qml" line="248"/>
         <source>Remote “%1” will be removed from the rclone configuration. Existing cloud files will not be deleted.</source>
-        <translation type="finished">Удалённое «%1» будет удалено из конфигурации rclone. Существующие облачные файлы не будут удалены.</translation>
+        <translation>Удалённое «%1» будет удалено из конфигурации rclone. Существующие облачные файлы не будут удалены.</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/CloudRemoteManagerWindow.qml" line="259" />
+        <location filename="../Modules/ControlCenter/CloudRemoteManagerWindow.qml" line="259"/>
         <source>Cancel</source>
-        <translation type="finished">Отмена</translation>
+        <translation>Отмена</translation>
     </message>
 </context>
 <context>
     <name>CloudRemoteWizard</name>
     <message>
-        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="99" />
+        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="99"/>
         <source>Name cannot be empty</source>
-        <translation type="finished">Имя не может быть пустым</translation>
+        <translation>Имя не может быть пустым</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="101" />
+        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="101"/>
         <source>Names cannot contain a colon or path separator</source>
-        <translation type="finished">Имена не могут содержать двоеточие или разделитель пути</translation>
+        <translation>Имена не могут содержать двоеточие или разделитель пути</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="103" />
+        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="103"/>
         <source>Cloud storage with this name already exists</source>
-        <translation type="finished">Облачное хранилище с таким именем уже существует</translation>
+        <translation>Облачное хранилище с таким именем уже существует</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="121" />
+        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="121"/>
         <source>Could not start cloud storage setup</source>
-        <translation type="finished">Не удалось запустить настройку облачного хранилища</translation>
+        <translation>Не удалось запустить настройку облачного хранилища</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="168" />
+        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="168"/>
         <source>The configuration question is unavailable</source>
-        <translation type="finished">Конфигурационный вопрос недоступен</translation>
+        <translation>Конфигурационный вопрос недоступен</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="171" />
+        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="171"/>
         <source>This field is required</source>
-        <translation type="finished">Это поле обязательно</translation>
+        <translation>Это поле обязательно</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="173" />
+        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="173"/>
         <source>Enter a valid number</source>
-        <translation type="finished">Введите корректное число</translation>
+        <translation>Введите корректное число</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="301" />
-        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="385" />
+        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="301"/>
+        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="385"/>
         <source>Add cloud storage</source>
-        <translation type="finished">Добавить облачное хранилище</translation>
+        <translation>Добавить облачное хранилище</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="302" />
+        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="302"/>
         <source>Choose a service</source>
-        <translation type="finished">Выберите службу</translation>
+        <translation>Выберите службу</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="311" />
+        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="311"/>
         <source>Search cloud storage services</source>
-        <translation type="finished">Поиск служб облачного хранилища</translation>
+        <translation>Поиск служб облачного хранилища</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="337" />
+        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="337"/>
         <source>Loading cloud storage services</source>
-        <translation type="finished">Загрузка служб облачного хранилища</translation>
+        <translation>Загрузка служб облачного хранилища</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="401" />
+        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="401"/>
         <source>Name</source>
-        <translation type="finished">Имя</translation>
+        <translation>Имя</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="403" />
+        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="403"/>
         <source>Used to identify this cloud storage in Clavis and rclone.</source>
-        <translation type="finished">Используется для идентификации этого облачного хранилища в Clavis и rclone.</translation>
+        <translation>Используется для идентификации этого облачного хранилища в Clavis и rclone.</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="413" />
+        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="413"/>
         <source>Show advanced options</source>
-        <translation type="finished">Показать дополнительные параметры</translation>
+        <translation>Показать дополнительные параметры</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="414" />
+        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="414"/>
         <source>Enable only when custom backend settings are needed</source>
-        <translation type="finished">Включать только когда нужны свои настройки бэкенда</translation>
+        <translation>Включать только когда нужны свои настройки бэкенда</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="432" />
-        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="580" />
-        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="634" />
+        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="432"/>
+        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="580"/>
+        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="634"/>
         <source>Cancel</source>
-        <translation type="finished">Отмена</translation>
+        <translation>Отмена</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="436" />
-        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="584" />
+        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="436"/>
+        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="584"/>
         <source>Continue</source>
-        <translation type="finished">Продолжить</translation>
+        <translation>Продолжить</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="456" />
+        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="456"/>
         <source>Setup failed</source>
-        <translation type="finished">Настройка не удалась</translation>
+        <translation>Настройка не удалась</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="456" />
-        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="602" />
+        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="456"/>
+        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="602"/>
         <source>Setting up</source>
-        <translation type="finished">Настройка</translation>
+        <translation>Настройка</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="506" />
+        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="506"/>
         <source>Choose an option</source>
-        <translation type="finished">Выберите вариант</translation>
+        <translation>Выберите вариант</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="517" />
+        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="517"/>
         <source>Yes</source>
-        <translation type="finished">Да</translation>
+        <translation>Да</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="517" />
+        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="517"/>
         <source>No</source>
-        <translation type="finished">Нет</translation>
+        <translation>Нет</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="532" />
+        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="532"/>
         <source>Value</source>
-        <translation type="finished">Значение</translation>
+        <translation>Значение</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="540" />
+        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="540"/>
         <source>You can also enter a custom value</source>
-        <translation type="finished">Также можно ввести своё значение</translation>
+        <translation>Также можно ввести своё значение</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="564" />
+        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="564"/>
         <source>Use a suggested value</source>
-        <translation type="finished">Использовать предлагаемое значение</translation>
+        <translation>Использовать предлагаемое значение</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="602" />
-        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="608" />
+        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="602"/>
+        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="608"/>
         <source>Completing authorization</source>
-        <translation type="finished">Завершение авторизации</translation>
+        <translation>Завершение авторизации</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="607" />
+        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="607"/>
         <source>Cancelling setup…</source>
-        <translation type="finished">Отмена настройки…</translation>
+        <translation>Отмена настройки…</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="610" />
+        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="610"/>
         <source>Applying configuration…</source>
-        <translation type="finished">Применение конфигурации…</translation>
+        <translation>Применение конфигурации…</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="620" />
+        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="620"/>
         <source>If a browser opened, complete sign-in and authorization there. Clavis will continue automatically afterward.</source>
-        <translation type="finished">Если открылся браузер, завершите вход и авторизацию там. Clavis продолжит автоматически.</translation>
+        <translation>Если открылся браузер, завершите вход и авторизацию там. Clavis продолжит автоматически.</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="655" />
-        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="734" />
+        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="655"/>
+        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="734"/>
         <source>Done</source>
-        <translation type="finished">Готово</translation>
+        <translation>Готово</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="678" />
-        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="697" />
+        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="678"/>
+        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="697"/>
         <source>Cloud storage connected</source>
-        <translation type="finished">Облачное хранилище подключено</translation>
+        <translation>Облачное хранилище подключено</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="694" />
+        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="694"/>
         <source>%1 is connected</source>
-        <translation type="finished">%1 подключено</translation>
+        <translation>%1 подключено</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="727" />
+        <location filename="../Modules/ControlCenter/CloudRemoteWizard.qml" line="727"/>
         <source>Set as default cloud storage</source>
-        <translation type="finished">Сделать облачным хранилищем по умолчанию</translation>
+        <translation>Сделать облачным хранилищем по умолчанию</translation>
     </message>
 </context>
 <context>
     <name>CloudUploadContent</name>
     <message>
-        <location filename="../Modules/Keystone/CloudUploadContent/CloudUploadContent.qml" line="40" />
+        <location filename="../Modules/Keystone/CloudUploadContent/CloudUploadContent.qml" line="40"/>
         <source>Paused</source>
-        <translation type="finished">На паузе</translation>
+        <translation>На паузе</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/CloudUploadContent/CloudUploadContent.qml" line="44" />
+        <location filename="../Modules/Keystone/CloudUploadContent/CloudUploadContent.qml" line="44"/>
         <source>Upload complete</source>
-        <translation type="finished">Загрузка завершена</translation>
+        <translation>Загрузка завершена</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/CloudUploadContent/CloudUploadContent.qml" line="46" />
+        <location filename="../Modules/Keystone/CloudUploadContent/CloudUploadContent.qml" line="46"/>
         <source>Upload failed</source>
-        <translation type="finished">Загрузка не удалась</translation>
+        <translation>Загрузка не удалась</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/CloudUploadContent/CloudUploadContent.qml" line="48" />
+        <location filename="../Modules/Keystone/CloudUploadContent/CloudUploadContent.qml" line="48"/>
         <source>Cancelled</source>
-        <translation type="finished">Отменено</translation>
+        <translation>Отменено</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/CloudUploadContent/CloudUploadContent.qml" line="50" />
+        <location filename="../Modules/Keystone/CloudUploadContent/CloudUploadContent.qml" line="50"/>
         <source>Uploading</source>
-        <translation type="finished">Загрузка</translation>
+        <translation>Загрузка</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/CloudUploadContent/CloudUploadContent.qml" line="52" />
+        <location filename="../Modules/Keystone/CloudUploadContent/CloudUploadContent.qml" line="52"/>
         <source>Preparing</source>
-        <translation type="finished">Подготовка</translation>
+        <translation>Подготовка</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/CloudUploadContent/CloudUploadContent.qml" line="54" />
+        <location filename="../Modules/Keystone/CloudUploadContent/CloudUploadContent.qml" line="54"/>
         <source>Waiting to upload</source>
-        <translation type="finished">Ожидание загрузки</translation>
+        <translation>Ожидание загрузки</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/CloudUploadContent/CloudUploadContent.qml" line="61" />
+        <location filename="../Modules/Keystone/CloudUploadContent/CloudUploadContent.qml" line="61"/>
         <source>%1 / %2</source>
-        <translation type="finished">%1 / %2</translation>
+        <translation>%1 / %2</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/CloudUploadContent/CloudUploadContent.qml" line="68" />
+        <location filename="../Modules/Keystone/CloudUploadContent/CloudUploadContent.qml" line="68"/>
         <source>%1 remaining</source>
-        <translation type="finished">осталось %1</translation>
+        <translation>осталось %1</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/CloudUploadContent/CloudUploadContent.qml" line="131" />
+        <location filename="../Modules/Keystone/CloudUploadContent/CloudUploadContent.qml" line="131"/>
         <source>No default cloud storage is available</source>
-        <translation type="finished">Нет облачного хранилища по умолчанию</translation>
+        <translation>Нет облачного хранилища по умолчанию</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/CloudUploadContent/CloudUploadContent.qml" line="141" />
+        <location filename="../Modules/Keystone/CloudUploadContent/CloudUploadContent.qml" line="141"/>
         <source>Choose a writable default cloud storage in Settings first</source>
-        <translation type="finished">Сначала в настройках выберите доступную для записи облачную учётку по умолчанию</translation>
+        <translation>Сначала в настройках выберите доступную для записи облачную учётку по умолчанию</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/CloudUploadContent/CloudUploadContent.qml" line="151" />
+        <location filename="../Modules/Keystone/CloudUploadContent/CloudUploadContent.qml" line="151"/>
         <source>Open cloud storage settings</source>
-        <translation type="finished">Открыть настройки облачного хранилища</translation>
+        <translation>Открыть настройки облачного хранилища</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/CloudUploadContent/CloudUploadContent.qml" line="199" />
+        <location filename="../Modules/Keystone/CloudUploadContent/CloudUploadContent.qml" line="201"/>
         <source>Upload queue</source>
-        <translation type="finished">Очередь загрузки</translation>
+        <translation>Очередь загрузки</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/CloudUploadContent/CloudUploadContent.qml" line="207" />
+        <location filename="../Modules/Keystone/CloudUploadContent/CloudUploadContent.qml" line="212"/>
         <source>Resume all</source>
-        <translation type="finished">Продолжить все</translation>
+        <translation>Продолжить все</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/CloudUploadContent/CloudUploadContent.qml" line="207" />
+        <location filename="../Modules/Keystone/CloudUploadContent/CloudUploadContent.qml" line="212"/>
         <source>Pause all</source>
-        <translation type="finished">Пауза для всех</translation>
+        <translation>Пауза для всех</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/CloudUploadContent/CloudUploadContent.qml" line="214" />
+        <location filename="../Modules/Keystone/CloudUploadContent/CloudUploadContent.qml" line="219"/>
+        <location filename="../Modules/Keystone/CloudUploadContent/CloudUploadContent.qml" line="570"/>
+        <source>Paste</source>
+        <translation>Вставить</translation>
+    </message>
+    <message>
+        <location filename="../Modules/Keystone/CloudUploadContent/CloudUploadContent.qml" line="226"/>
         <source>Clear completed</source>
-        <translation type="finished">Очистить выполненные</translation>
+        <translation>Очистить выполненные</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/CloudUploadContent/CloudUploadContent.qml" line="221" />
+        <location filename="../Modules/Keystone/CloudUploadContent/CloudUploadContent.qml" line="233"/>
         <source>Back to upload</source>
-        <translation type="finished">Назад к загрузке</translation>
+        <translation>Назад к загрузке</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/CloudUploadContent/CloudUploadContent.qml" line="440" />
+        <location filename="../Modules/Keystone/CloudUploadContent/CloudUploadContent.qml" line="467"/>
         <source>Retry</source>
-        <translation type="finished">Повторить</translation>
+        <translation>Повторить</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/CloudUploadContent/CloudUploadContent.qml" line="448" />
+        <location filename="../Modules/Keystone/CloudUploadContent/CloudUploadContent.qml" line="475"/>
         <source>Cancel upload</source>
-        <translation type="finished">Отменить загрузку</translation>
+        <translation>Отменить загрузку</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/CloudUploadContent/CloudUploadContent.qml" line="532" />
-        <source>Drop to upload</source>
-        <translation type="finished">Отпустите для загрузки</translation>
-    </message>
-    <message>
-        <location filename="../Modules/Keystone/CloudUploadContent/CloudUploadContent.qml" line="532" />
-        <source>Drag files or folders here</source>
-        <translation type="finished">Перетащите сюда файлы или папки</translation>
-    </message>
-    <message>
-        <location filename="../Modules/Keystone/CloudUploadContent/CloudUploadContent.qml" line="544" />
+        <location filename="../Modules/Keystone/CloudUploadContent/CloudUploadContent.qml" line="579"/>
         <source>Uploads in queue: %1</source>
-        <translation type="finished">Загрузок в очереди: %1</translation>
+        <translation>Загрузок в очереди: %1</translation>
     </message>
 </context>
 <context>
     <name>CloudUploadService</name>
     <message>
-        <location filename="../Services/CloudUploadService.qml" line="83" />
+        <location filename="../Services/CloudUploadService.qml" line="134"/>
         <source>No local files or folders are available to upload</source>
-        <translation type="finished">Нет локальных файлов или папок для загрузки</translation>
+        <translation>Нет локальных файлов или папок для загрузки</translation>
     </message>
     <message>
-        <location filename="../Services/CloudUploadService.qml" line="88" />
+        <location filename="../Services/CloudUploadService.qml" line="123"/>
+        <location filename="../Services/CloudUploadService.qml" line="139"/>
         <source>Choose a writable default cloud storage first</source>
-        <translation type="finished">Сначала выберите доступную для записи облачную учётку по умолчанию</translation>
+        <translation>Сначала выберите доступную для записи облачную учётку по умолчанию</translation>
     </message>
     <message>
-        <location filename="../Services/CloudUploadService.qml" line="121" />
+        <location filename="../Services/CloudUploadService.qml" line="172"/>
         <source>The same path is already in the upload queue</source>
-        <translation type="finished">Этот путь уже в очереди загрузки</translation>
+        <translation>Этот путь уже в очереди загрузки</translation>
     </message>
     <message>
-        <location filename="../Services/CloudUploadService.qml" line="211" />
+        <location filename="../Services/CloudUploadService.qml" line="262"/>
         <source>Upload failed. Check the network or remote permissions</source>
-        <translation type="finished">Загрузка не удалась. Проверьте сеть или права удалённого доступа</translation>
+        <translation>Загрузка не удалась. Проверьте сеть или права удалённого доступа</translation>
+    </message>
+    <message>
+        <location filename="../Services/CloudUploadService.qml" line="367"/>
+        <source>The clipboard has no files or folders to upload</source>
+        <translation>В буфере обмена нет файлов или папок для загрузки</translation>
     </message>
 </context>
 <context>
     <name>ComputerBackupWindow</name>
     <message>
-        <location filename="../Modules/ControlCenter/ComputerBackupWindow.qml" line="37" />
+        <location filename="../Modules/ControlCenter/ComputerBackupWindow.qml" line="37"/>
         <source>Desktop</source>
-        <translation type="finished">Рабочий стол</translation>
+        <translation>Рабочий стол</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ComputerBackupWindow.qml" line="44" />
+        <location filename="../Modules/ControlCenter/ComputerBackupWindow.qml" line="44"/>
         <source>Documents</source>
-        <translation type="finished">Документы</translation>
+        <translation>Документы</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ComputerBackupWindow.qml" line="51" />
+        <location filename="../Modules/ControlCenter/ComputerBackupWindow.qml" line="51"/>
         <source>Downloads</source>
-        <translation type="finished">Загрузки</translation>
+        <translation>Загрузки</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ComputerBackupWindow.qml" line="58" />
+        <location filename="../Modules/ControlCenter/ComputerBackupWindow.qml" line="58"/>
         <source>Music</source>
-        <translation type="finished">Музыка</translation>
+        <translation>Музыка</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ComputerBackupWindow.qml" line="65" />
+        <location filename="../Modules/ControlCenter/ComputerBackupWindow.qml" line="65"/>
         <source>Pictures</source>
-        <translation type="finished">Изображения</translation>
+        <translation>Изображения</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ComputerBackupWindow.qml" line="72" />
+        <location filename="../Modules/ControlCenter/ComputerBackupWindow.qml" line="72"/>
         <source>Videos</source>
-        <translation type="finished">Видео</translation>
+        <translation>Видео</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ComputerBackupWindow.qml" line="366" />
+        <location filename="../Modules/ControlCenter/ComputerBackupWindow.qml" line="366"/>
         <source>Add backup folder</source>
-        <translation type="finished">Добавить папку для резервного копирования</translation>
+        <translation>Добавить папку для резервного копирования</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ComputerBackupWindow.qml" line="367" />
+        <location filename="../Modules/ControlCenter/ComputerBackupWindow.qml" line="367"/>
         <source>Choose a folder to include in the computer backup</source>
-        <translation type="finished">Выберите папку для компьютерной резервной копии</translation>
+        <translation>Выберите папку для компьютерной резервной копии</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ComputerBackupWindow.qml" line="371" />
+        <location filename="../Modules/ControlCenter/ComputerBackupWindow.qml" line="371"/>
         <source>This folder is empty</source>
-        <translation type="finished">Эта папка пуста</translation>
+        <translation>Эта папка пуста</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ComputerBackupWindow.qml" line="372" />
+        <location filename="../Modules/ControlCenter/ComputerBackupWindow.qml" line="372"/>
         <source>Choose folder</source>
-        <translation type="finished">Выберите папку</translation>
+        <translation>Выберите папку</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ComputerBackupWindow.qml" line="373" />
+        <location filename="../Modules/ControlCenter/ComputerBackupWindow.qml" line="373"/>
         <source>Add folder</source>
-        <translation type="finished">Добавить папку</translation>
+        <translation>Добавить папку</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ComputerBackupWindow.qml" line="374" />
+        <location filename="../Modules/ControlCenter/ComputerBackupWindow.qml" line="374"/>
         <source>Add the current folder or a selected subfolder</source>
-        <translation type="finished">Добавить текущую папку или выбранную подпапку</translation>
+        <translation>Добавить текущую папку или выбранную подпапку</translation>
     </message>
 </context>
 <context>
     <name>ConnectedDevicesPage</name>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2006" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2105"/>
         <source>Saved devices</source>
-        <translation type="finished">Сохранённые устройства</translation>
+        <translation>Сохранённые устройства</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2007" />
-        <location filename="../Modules/ControlCenter/ConnectedDevicesPage.qml" line="155" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2106"/>
+        <location filename="../Modules/ControlCenter/ConnectedDevicesPage.qml" line="155"/>
         <source>Bluetooth adapter</source>
-        <translation type="finished">Адаптер Bluetooth</translation>
+        <translation>Адаптер Bluetooth</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2008" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2107"/>
         <source>Advanced settings</source>
-        <translation type="finished">Дополнительные настройки</translation>
+        <translation>Дополнительные настройки</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ConnectedDevicesPage.qml" line="19" />
+        <location filename="../Modules/ControlCenter/ConnectedDevicesPage.qml" line="19"/>
         <source>No Bluetooth adapter detected or BlueZ is unavailable</source>
-        <translation type="finished">Адаптер Bluetooth не обнаружен или BlueZ недоступен</translation>
+        <translation>Адаптер Bluetooth не обнаружен или BlueZ недоступен</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ConnectedDevicesPage.qml" line="22" />
+        <location filename="../Modules/ControlCenter/ConnectedDevicesPage.qml" line="22"/>
         <source>The Bluetooth adapter is blocked by rfkill</source>
-        <translation type="finished">Адаптер Bluetooth заблокирован rfkill</translation>
+        <translation>Адаптер Bluetooth заблокирован rfkill</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ConnectedDevicesPage.qml" line="32" />
+        <location filename="../Modules/ControlCenter/ConnectedDevicesPage.qml" line="32"/>
         <source>Blocked</source>
-        <translation type="finished">Заблокировано</translation>
+        <translation>Заблокировано</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ConnectedDevicesPage.qml" line="35" />
+        <location filename="../Modules/ControlCenter/ConnectedDevicesPage.qml" line="35"/>
         <source>Connected · %1%</source>
-        <translation type="finished">Подключено · %1%</translation>
+        <translation>Подключено · %1%</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ConnectedDevicesPage.qml" line="35" />
+        <location filename="../Modules/ControlCenter/ConnectedDevicesPage.qml" line="35"/>
         <source>Connected</source>
-        <translation type="finished">Подключено</translation>
+        <translation>Подключено</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ConnectedDevicesPage.qml" line="66" />
+        <location filename="../Modules/ControlCenter/ConnectedDevicesPage.qml" line="66"/>
         <source>Bluetooth</source>
-        <translation type="finished">Bluetooth</translation>
+        <translation>Bluetooth</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ConnectedDevicesPage.qml" line="71" />
+        <location filename="../Modules/ControlCenter/ConnectedDevicesPage.qml" line="71"/>
         <source>Bluetooth switch</source>
-        <translation type="finished">Переключатель Bluetooth</translation>
+        <translation>Переключатель Bluetooth</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ConnectedDevicesPage.qml" line="118" />
+        <location filename="../Modules/ControlCenter/ConnectedDevicesPage.qml" line="118"/>
         <source>No saved devices</source>
-        <translation type="finished">Нет сохранённых устройств</translation>
+        <translation>Нет сохранённых устройств</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ConnectedDevicesPage.qml" line="126" />
+        <location filename="../Modules/ControlCenter/ConnectedDevicesPage.qml" line="126"/>
         <source>Pair new device</source>
-        <translation type="finished">Сопрячь новое устройство</translation>
+        <translation>Сопрячь новое устройство</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ConnectedDevicesPage.qml" line="156" />
+        <location filename="../Modules/ControlCenter/ConnectedDevicesPage.qml" line="156"/>
         <source>%1 · Blocked by rfkill</source>
-        <translation type="finished">%1 · Заблокировано rfkill</translation>
+        <translation>%1 · Заблокировано rfkill</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ConnectedDevicesPage.qml" line="163" />
+        <location filename="../Modules/ControlCenter/ConnectedDevicesPage.qml" line="163"/>
         <source>Toggle adapter %1</source>
-        <translation type="finished">Переключить адаптер %1</translation>
+        <translation>Переключить адаптер %1</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ConnectedDevicesPage.qml" line="186" />
-        <location filename="../Modules/ControlCenter/ConnectedDevicesPage.qml" line="191" />
+        <location filename="../Modules/ControlCenter/ConnectedDevicesPage.qml" line="186"/>
+        <location filename="../Modules/ControlCenter/ConnectedDevicesPage.qml" line="191"/>
         <source>Allow discovery</source>
-        <translation type="finished">Разрешить обнаружение</translation>
+        <translation>Разрешить обнаружение</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ConnectedDevicesPage.qml" line="199" />
-        <location filename="../Modules/ControlCenter/ConnectedDevicesPage.qml" line="204" />
+        <location filename="../Modules/ControlCenter/ConnectedDevicesPage.qml" line="199"/>
+        <location filename="../Modules/ControlCenter/ConnectedDevicesPage.qml" line="204"/>
         <source>Allow pairing</source>
-        <translation type="finished">Разрешить сопряжение</translation>
+        <translation>Разрешить сопряжение</translation>
     </message>
 </context>
 <context>
     <name>ControlCenterService</name>
     <message>
-        <location filename="../Services/ControlCenterService.qml" line="51" />
-        <location filename="../Services/ControlCenterService.qml" line="106" />
+        <location filename="../Services/ControlCenterService.qml" line="51"/>
+        <location filename="../Services/ControlCenterService.qml" line="106"/>
         <source>This setting is currently unavailable</source>
-        <translation type="finished">Эта настройка сейчас недоступна</translation>
+        <translation>Эта настройка сейчас недоступна</translation>
     </message>
     <message>
-        <location filename="../Services/ControlCenterService.qml" line="59" />
+        <location filename="../Services/ControlCenterService.qml" line="59"/>
         <source>Settings could not be opened</source>
-        <translation type="finished">Настройки не удалось открыть</translation>
+        <translation>Настройки не удалось открыть</translation>
     </message>
 </context>
 <context>
     <name>ControlCenterWindow</name>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="1973" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2071"/>
         <source>Account</source>
-        <translation type="finished">Аккаунт</translation>
+        <translation>Аккаунт</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="1974" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2072"/>
         <source>General</source>
-        <translation type="finished">Общие</translation>
+        <translation>Общие</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="1975" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2073"/>
         <source>Wallpaper</source>
-        <translation type="finished">Обои</translation>
+        <translation>Обои</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="1976" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2074"/>
         <source>Theme</source>
-        <translation type="finished">Тема</translation>
+        <translation>Тема</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="1977" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2075"/>
         <source>Keystone</source>
-        <translation type="finished">Keystone</translation>
+        <translation>Keystone</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="1978" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2076"/>
         <source>Advanced</source>
-        <translation type="finished">Дополнительно</translation>
+        <translation>Дополнительно</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ControlCenterWindow.qml" line="233" />
-        <location filename="../Services/ControlCenterService.qml" line="43" />
+        <location filename="../Modules/ControlCenter/ControlCenterWindow.qml" line="233"/>
+        <location filename="../Services/ControlCenterService.qml" line="43"/>
         <source>Settings</source>
-        <translation type="finished">Настройки</translation>
+        <translation>Настройки</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ControlCenterWindow.qml" line="317" />
+        <location filename="../Modules/ControlCenter/ControlCenterWindow.qml" line="317"/>
         <source>Path copied</source>
-        <translation type="finished">Путь скопирован</translation>
+        <translation>Путь скопирован</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ControlCenterWindow.qml" line="317" />
+        <location filename="../Modules/ControlCenter/ControlCenterWindow.qml" line="317"/>
         <source>config file</source>
-        <translation type="finished">файл конфигурации</translation>
+        <translation>файл конфигурации</translation>
     </message>
 </context>
 <context>
     <name>CursorThemeSelect</name>
     <message>
-        <location filename="../Modules/ControlCenter/CursorThemeSelect.qml" line="25" />
+        <location filename="../Modules/ControlCenter/CursorThemeSelect.qml" line="25"/>
         <source>Cursor theme</source>
-        <translation type="finished">Тема курсора</translation>
+        <translation>Тема курсора</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/CursorThemeSelect.qml" line="39" />
+        <location filename="../Modules/ControlCenter/CursorThemeSelect.qml" line="39"/>
         <source>Choose cursor theme</source>
-        <translation type="finished">Выберите тему курсора</translation>
+        <translation>Выберите тему курсора</translation>
     </message>
 </context>
 <context>
     <name>DailyAirQualityTrendPane</name>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/DailyAirQualityTrendPane.qml" line="40" />
+        <location filename="../Modules/Sidebars/Dashboard/DailyAirQualityTrendPane.qml" line="40"/>
         <source>Excellent</source>
-        <translation type="finished">Отличный</translation>
+        <translation>Отличный</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/DailyAirQualityTrendPane.qml" line="40" />
+        <location filename="../Modules/Sidebars/Dashboard/DailyAirQualityTrendPane.qml" line="40"/>
         <source>Good</source>
-        <translation type="finished">Хороший</translation>
+        <translation>Хороший</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/DailyAirQualityTrendPane.qml" line="40" />
+        <location filename="../Modules/Sidebars/Dashboard/DailyAirQualityTrendPane.qml" line="40"/>
         <source>Poor</source>
-        <translation type="finished">Слабый</translation>
+        <translation>Слабый</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/DailyAirQualityTrendPane.qml" line="40" />
+        <location filename="../Modules/Sidebars/Dashboard/DailyAirQualityTrendPane.qml" line="40"/>
         <source>Unhealthy</source>
-        <translation type="finished">Неблагоприятное</translation>
+        <translation>Неблагоприятное</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/DailyAirQualityTrendPane.qml" line="40" />
+        <location filename="../Modules/Sidebars/Dashboard/DailyAirQualityTrendPane.qml" line="40"/>
         <source>Very unhealthy</source>
-        <translation type="finished">Очень неблагоприятное</translation>
+        <translation>Очень неблагоприятное</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/DailyAirQualityTrendPane.qml" line="41" />
+        <location filename="../Modules/Sidebars/Dashboard/DailyAirQualityTrendPane.qml" line="41"/>
         <source>Hazardous</source>
-        <translation type="finished">Опасный</translation>
+        <translation>Опасный</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/DailyAirQualityTrendPane.qml" line="86" />
+        <location filename="../Modules/Sidebars/Dashboard/DailyAirQualityTrendPane.qml" line="86"/>
         <source>Yesterday</source>
-        <translation type="finished">Вчера</translation>
+        <translation>Вчера</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/DailyAirQualityTrendPane.qml" line="88" />
-        <location filename="../Modules/Sidebars/Dashboard/DailyAirQualityTrendPane.qml" line="288" />
-        <location filename="../Modules/Sidebars/Dashboard/DailyAirQualityTrendPane.qml" line="318" />
+        <location filename="../Modules/Sidebars/Dashboard/DailyAirQualityTrendPane.qml" line="88"/>
+        <location filename="../Modules/Sidebars/Dashboard/DailyAirQualityTrendPane.qml" line="288"/>
+        <location filename="../Modules/Sidebars/Dashboard/DailyAirQualityTrendPane.qml" line="318"/>
         <source>Today</source>
-        <translation type="finished">Сегодня</translation>
+        <translation>Сегодня</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/DailyAirQualityTrendPane.qml" line="90" />
+        <location filename="../Modules/Sidebars/Dashboard/DailyAirQualityTrendPane.qml" line="90"/>
         <source>Tomorrow</source>
-        <translation type="finished">Завтра</translation>
+        <translation>Завтра</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/DailyAirQualityTrendPane.qml" line="93" />
+        <location filename="../Modules/Sidebars/Dashboard/DailyAirQualityTrendPane.qml" line="93"/>
         <source>Sun</source>
-        <translation type="finished">Вс</translation>
+        <translation>Вс</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/DailyAirQualityTrendPane.qml" line="93" />
+        <location filename="../Modules/Sidebars/Dashboard/DailyAirQualityTrendPane.qml" line="93"/>
         <source>Mon</source>
-        <translation type="finished">Пн</translation>
+        <translation>Пн</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/DailyAirQualityTrendPane.qml" line="93" />
+        <location filename="../Modules/Sidebars/Dashboard/DailyAirQualityTrendPane.qml" line="93"/>
         <source>Tue</source>
-        <translation type="finished">Вт</translation>
+        <translation>Вт</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/DailyAirQualityTrendPane.qml" line="93" />
+        <location filename="../Modules/Sidebars/Dashboard/DailyAirQualityTrendPane.qml" line="93"/>
         <source>Wed</source>
-        <translation type="finished">Ср</translation>
+        <translation>Ср</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/DailyAirQualityTrendPane.qml" line="93" />
+        <location filename="../Modules/Sidebars/Dashboard/DailyAirQualityTrendPane.qml" line="93"/>
         <source>Thu</source>
-        <translation type="finished">Чт</translation>
+        <translation>Чт</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/DailyAirQualityTrendPane.qml" line="93" />
+        <location filename="../Modules/Sidebars/Dashboard/DailyAirQualityTrendPane.qml" line="93"/>
         <source>Fri</source>
-        <translation type="finished">Пт</translation>
+        <translation>Пт</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/DailyAirQualityTrendPane.qml" line="93" />
+        <location filename="../Modules/Sidebars/Dashboard/DailyAirQualityTrendPane.qml" line="93"/>
         <source>Sat</source>
-        <translation type="finished">Сб</translation>
+        <translation>Сб</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/DailyAirQualityTrendPane.qml" line="326" />
+        <location filename="../Modules/Sidebars/Dashboard/DailyAirQualityTrendPane.qml" line="326"/>
         <source>Air quality data is unavailable</source>
-        <translation type="finished">Данные о качестве воздуха недоступны</translation>
+        <translation>Данные о качестве воздуха недоступны</translation>
     </message>
 </context>
 <context>
     <name>DailyWindTrendPane</name>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/DailyWindTrendPane.qml" line="28" />
+        <location filename="../Modules/Sidebars/Dashboard/DailyWindTrendPane.qml" line="28"/>
         <source>Yesterday</source>
-        <translation type="finished">Вчера</translation>
+        <translation>Вчера</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/DailyWindTrendPane.qml" line="30" />
-        <location filename="../Modules/Sidebars/Dashboard/DailyWindTrendPane.qml" line="240" />
+        <location filename="../Modules/Sidebars/Dashboard/DailyWindTrendPane.qml" line="30"/>
+        <location filename="../Modules/Sidebars/Dashboard/DailyWindTrendPane.qml" line="240"/>
         <source>Today</source>
-        <translation type="finished">Сегодня</translation>
+        <translation>Сегодня</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/DailyWindTrendPane.qml" line="32" />
+        <location filename="../Modules/Sidebars/Dashboard/DailyWindTrendPane.qml" line="32"/>
         <source>Tomorrow</source>
-        <translation type="finished">Завтра</translation>
+        <translation>Завтра</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/DailyWindTrendPane.qml" line="35" />
+        <location filename="../Modules/Sidebars/Dashboard/DailyWindTrendPane.qml" line="35"/>
         <source>Sun</source>
-        <translation type="finished">Вс</translation>
+        <translation>Вс</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/DailyWindTrendPane.qml" line="35" />
+        <location filename="../Modules/Sidebars/Dashboard/DailyWindTrendPane.qml" line="35"/>
         <source>Mon</source>
-        <translation type="finished">Пн</translation>
+        <translation>Пн</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/DailyWindTrendPane.qml" line="35" />
+        <location filename="../Modules/Sidebars/Dashboard/DailyWindTrendPane.qml" line="35"/>
         <source>Tue</source>
-        <translation type="finished">Вт</translation>
+        <translation>Вт</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/DailyWindTrendPane.qml" line="35" />
+        <location filename="../Modules/Sidebars/Dashboard/DailyWindTrendPane.qml" line="35"/>
         <source>Wed</source>
-        <translation type="finished">Ср</translation>
+        <translation>Ср</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/DailyWindTrendPane.qml" line="35" />
+        <location filename="../Modules/Sidebars/Dashboard/DailyWindTrendPane.qml" line="35"/>
         <source>Thu</source>
-        <translation type="finished">Чт</translation>
+        <translation>Чт</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/DailyWindTrendPane.qml" line="35" />
+        <location filename="../Modules/Sidebars/Dashboard/DailyWindTrendPane.qml" line="35"/>
         <source>Fri</source>
-        <translation type="finished">Пт</translation>
+        <translation>Пт</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/DailyWindTrendPane.qml" line="35" />
+        <location filename="../Modules/Sidebars/Dashboard/DailyWindTrendPane.qml" line="35"/>
         <source>Sat</source>
-        <translation type="finished">Сб</translation>
+        <translation>Сб</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/DailyWindTrendPane.qml" line="348" />
+        <location filename="../Modules/Sidebars/Dashboard/DailyWindTrendPane.qml" line="348"/>
         <source>Wind data is unavailable</source>
-        <translation type="finished">Данные о ветре недоступны</translation>
+        <translation>Данные о ветре недоступны</translation>
+    </message>
+</context>
+<context>
+    <name>DashboardContent</name>
+    <message>
+        <location filename="../Modules/Keystone/DashboardContent/DashboardContent.qml" line="111"/>
+        <source>All widgets are turned off. Turn them on in Control Center → Keystone → Main menu.</source>
+        <translation>Все виджеты выключены. Включите их в Центре управления → Keystone → Главное меню.</translation>
     </message>
 </context>
 <context>
     <name>DashboardSidebarContent</name>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/DashboardSidebarContent.qml" line="44" />
+        <location filename="../Modules/Sidebars/Dashboard/DashboardSidebarContent.qml" line="44"/>
         <source>Information</source>
-        <translation type="finished">Сведения</translation>
+        <translation>Сведения</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/DashboardSidebarContent.qml" line="49" />
+        <location filename="../Modules/Sidebars/Dashboard/DashboardSidebarContent.qml" line="49"/>
         <source>To-do</source>
-        <translation type="finished">Задачи</translation>
+        <translation>Задачи</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/DashboardSidebarContent.qml" line="54" />
+        <location filename="../Modules/Sidebars/Dashboard/DashboardSidebarContent.qml" line="54"/>
         <source>Timer</source>
-        <translation type="finished">Таймер</translation>
+        <translation>Таймер</translation>
     </message>
 </context>
 <context>
     <name>DashboardTodoCard</name>
     <message>
-        <location filename="../Modules/Keystone/DashboardContent/DashboardTodoCard.qml" line="66" />
+        <location filename="../Modules/Keystone/DashboardContent/DashboardTodoCard.qml" line="66"/>
         <source>To-do</source>
-        <translation type="finished">Задачи</translation>
+        <translation>Задачи</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/DashboardContent/DashboardTodoCard.qml" line="74" />
+        <location filename="../Modules/Keystone/DashboardContent/DashboardTodoCard.qml" line="74"/>
         <source>%1 left</source>
-        <translation type="finished">осталось %1</translation>
+        <translation>осталось %1</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/DashboardContent/DashboardTodoCard.qml" line="74" />
+        <location filename="../Modules/Keystone/DashboardContent/DashboardTodoCard.qml" line="74"/>
         <source>all done</source>
-        <translation type="finished">всё готово</translation>
+        <translation>всё готово</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/DashboardContent/DashboardTodoCard.qml" line="89" />
+        <location filename="../Modules/Keystone/DashboardContent/DashboardTodoCard.qml" line="89"/>
         <source>New task</source>
-        <translation type="finished">Новая задача</translation>
+        <translation>Новая задача</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/DashboardContent/DashboardTodoCard.qml" line="133" />
+        <location filename="../Modules/Keystone/DashboardContent/DashboardTodoCard.qml" line="133"/>
         <source>Nothing planned yet</source>
-        <translation type="finished">Пока ничего не запланировано</translation>
+        <translation>Пока ничего не запланировано</translation>
     </message>
 </context>
 <context>
     <name>DefaultApplicationsService</name>
     <message>
-        <location filename="../Services/DefaultApplicationsService.qml" line="19" />
+        <location filename="../Services/DefaultApplicationsService.qml" line="19"/>
         <source>Web browser</source>
-        <translation type="finished">Веб-браузер</translation>
+        <translation>Веб-браузер</translation>
     </message>
     <message>
-        <location filename="../Services/DefaultApplicationsService.qml" line="20" />
+        <location filename="../Services/DefaultApplicationsService.qml" line="20"/>
         <source>Opens web pages and HTTP links</source>
-        <translation type="finished">Открывает веб-страницы и HTTP-ссылки</translation>
+        <translation>Открывает веб-страницы и HTTP-ссылки</translation>
     </message>
     <message>
-        <location filename="../Services/DefaultApplicationsService.qml" line="29" />
+        <location filename="../Services/DefaultApplicationsService.qml" line="29"/>
         <source>Email</source>
-        <translation type="finished">Эл. почта</translation>
+        <translation>Эл. почта</translation>
     </message>
     <message>
-        <location filename="../Services/DefaultApplicationsService.qml" line="30" />
+        <location filename="../Services/DefaultApplicationsService.qml" line="30"/>
         <source>Handles email links</source>
-        <translation type="finished">Обрабатывает ссылки на почту</translation>
+        <translation>Обрабатывает ссылки на почту</translation>
     </message>
     <message>
-        <location filename="../Services/DefaultApplicationsService.qml" line="38" />
+        <location filename="../Services/DefaultApplicationsService.qml" line="38"/>
         <source>File manager</source>
-        <translation type="finished">Файловый менеджер</translation>
+        <translation>Файловый менеджер</translation>
     </message>
     <message>
-        <location filename="../Services/DefaultApplicationsService.qml" line="39" />
+        <location filename="../Services/DefaultApplicationsService.qml" line="39"/>
         <source>Opens folders and directories</source>
-        <translation type="finished">Открывает папки и каталоги</translation>
+        <translation>Открывает папки и каталоги</translation>
     </message>
     <message>
-        <location filename="../Services/DefaultApplicationsService.qml" line="49" />
+        <location filename="../Services/DefaultApplicationsService.qml" line="49"/>
         <source>Terminal</source>
-        <translation type="finished">Терминал</translation>
+        <translation>Терминал</translation>
     </message>
     <message>
-        <location filename="../Services/DefaultApplicationsService.qml" line="50" />
+        <location filename="../Services/DefaultApplicationsService.qml" line="50"/>
         <source>System default terminal emulator</source>
-        <translation type="finished">Системный терминал по умолчанию</translation>
+        <translation>Системный терминал по умолчанию</translation>
     </message>
     <message>
-        <location filename="../Services/DefaultApplicationsService.qml" line="59" />
+        <location filename="../Services/DefaultApplicationsService.qml" line="59"/>
         <source>Text editor</source>
-        <translation type="finished">Текстовый редактор</translation>
+        <translation>Текстовый редактор</translation>
     </message>
     <message>
-        <location filename="../Services/DefaultApplicationsService.qml" line="60" />
+        <location filename="../Services/DefaultApplicationsService.qml" line="60"/>
         <source>Opens plain-text files</source>
-        <translation type="finished">Открывает текстовые файлы</translation>
+        <translation>Открывает текстовые файлы</translation>
     </message>
     <message>
-        <location filename="../Services/DefaultApplicationsService.qml" line="70" />
+        <location filename="../Services/DefaultApplicationsService.qml" line="70"/>
         <source>PDF reader</source>
-        <translation type="finished">Чтение PDF</translation>
+        <translation>Чтение PDF</translation>
     </message>
     <message>
-        <location filename="../Services/DefaultApplicationsService.qml" line="71" />
+        <location filename="../Services/DefaultApplicationsService.qml" line="71"/>
         <source>Opens PDF documents</source>
-        <translation type="finished">Открывает PDF-документы</translation>
+        <translation>Открывает PDF-документы</translation>
     </message>
     <message>
-        <location filename="../Services/DefaultApplicationsService.qml" line="80" />
+        <location filename="../Services/DefaultApplicationsService.qml" line="80"/>
         <source>Image viewer</source>
-        <translation type="finished">Просмотр изображений</translation>
+        <translation>Просмотр изображений</translation>
     </message>
     <message>
-        <location filename="../Services/DefaultApplicationsService.qml" line="81" />
+        <location filename="../Services/DefaultApplicationsService.qml" line="81"/>
         <source>Opens common image files</source>
-        <translation type="finished">Открывает распространённые файлы изображений</translation>
+        <translation>Открывает распространённые файлы изображений</translation>
     </message>
     <message>
-        <location filename="../Services/DefaultApplicationsService.qml" line="94" />
+        <location filename="../Services/DefaultApplicationsService.qml" line="94"/>
         <source>Video player</source>
-        <translation type="finished">Видеоплеер</translation>
+        <translation>Видеоплеер</translation>
     </message>
     <message>
-        <location filename="../Services/DefaultApplicationsService.qml" line="96" />
+        <location filename="../Services/DefaultApplicationsService.qml" line="96"/>
         <source>Plays video files</source>
-        <translation type="finished">Воспроизводит видеофайлы</translation>
+        <translation>Воспроизводит видеофайлы</translation>
     </message>
     <message>
-        <location filename="../Services/DefaultApplicationsService.qml" line="110" />
+        <location filename="../Services/DefaultApplicationsService.qml" line="110"/>
         <source>Music player</source>
-        <translation type="finished">Музыкальный плеер</translation>
+        <translation>Музыкальный плеер</translation>
     </message>
     <message>
-        <location filename="../Services/DefaultApplicationsService.qml" line="112" />
+        <location filename="../Services/DefaultApplicationsService.qml" line="112"/>
         <source>Plays audio files</source>
-        <translation type="finished">Воспроизводит аудиофайлы</translation>
+        <translation>Воспроизводит аудиофайлы</translation>
     </message>
     <message>
-        <location filename="../Services/DefaultApplicationsService.qml" line="357" />
+        <location filename="../Services/DefaultApplicationsService.qml" line="357"/>
         <source>Invalid terminal Desktop Entry ID</source>
-        <translation type="finished">Некорректный идентификатор Desktop Entry терминала</translation>
+        <translation>Некорректный идентификатор Desktop Entry терминала</translation>
     </message>
     <message>
-        <location filename="../Services/DefaultApplicationsService.qml" line="483" />
+        <location filename="../Services/DefaultApplicationsService.qml" line="483"/>
         <source>Could not start the system command</source>
-        <translation type="finished">Не удалось запустить системную команду</translation>
+        <translation>Не удалось запустить системную команду</translation>
     </message>
     <message>
-        <location filename="../Services/DefaultApplicationsService.qml" line="500" />
+        <location filename="../Services/DefaultApplicationsService.qml" line="500"/>
         <source>Could not query system default applications</source>
-        <translation type="finished">Не удалось получить приложения по умолчанию</translation>
+        <translation>Не удалось получить приложения по умолчанию</translation>
     </message>
     <message>
-        <location filename="../Services/DefaultApplicationsService.qml" line="504" />
+        <location filename="../Services/DefaultApplicationsService.qml" line="504"/>
         <source>xdg-utils is missing; default applications cannot be managed</source>
-        <translation type="finished">xdg-utils отсутствует; приложениями по умолчанию нельзя управлять</translation>
+        <translation>xdg-utils отсутствует; приложениями по умолчанию нельзя управлять</translation>
     </message>
     <message>
-        <location filename="../Services/DefaultApplicationsService.qml" line="538" />
+        <location filename="../Services/DefaultApplicationsService.qml" line="538"/>
         <source>Could not read the application candidate list</source>
-        <translation type="finished">Не удалось прочитать список кандидатов приложений</translation>
+        <translation>Не удалось прочитать список кандидатов приложений</translation>
     </message>
     <message>
-        <location filename="../Services/DefaultApplicationsService.qml" line="580" />
+        <location filename="../Services/DefaultApplicationsService.qml" line="580"/>
         <source>Failed to set default applications</source>
-        <translation type="finished">Не удалось настроить приложения по умолчанию</translation>
+        <translation>Не удалось настроить приложения по умолчанию</translation>
     </message>
     <message>
-        <location filename="../Services/DefaultApplicationsService.qml" line="581" />
+        <location filename="../Services/DefaultApplicationsService.qml" line="581"/>
         <source>Default applications updated</source>
-        <translation type="finished">Приложения по умолчанию обновлены</translation>
+        <translation>Приложения по умолчанию обновлены</translation>
     </message>
     <message>
-        <location filename="../Services/DefaultApplicationsService.qml" line="595" />
+        <location filename="../Services/DefaultApplicationsService.qml" line="595"/>
         <source>Cannot set an unknown default application</source>
-        <translation type="finished">Нельзя назначить неизвестное приложение по умолчанию</translation>
+        <translation>Нельзя назначить неизвестное приложение по умолчанию</translation>
     </message>
     <message>
-        <location filename="../Services/DefaultApplicationsService.qml" line="600" />
+        <location filename="../Services/DefaultApplicationsService.qml" line="600"/>
         <source>The selected application is not a system-provided candidate</source>
-        <translation type="finished">Выбранное приложение не является системным кандидатом</translation>
+        <translation>Выбранное приложение не является системным кандидатом</translation>
     </message>
     <message>
-        <location filename="../Services/DefaultApplicationsService.qml" line="658" />
+        <location filename="../Services/DefaultApplicationsService.qml" line="658"/>
         <source>Failed to set the default terminal</source>
-        <translation type="finished">Не удалось установить терминал по умолчанию</translation>
+        <translation>Не удалось установить терминал по умолчанию</translation>
     </message>
     <message>
-        <location filename="../Services/DefaultApplicationsService.qml" line="659" />
+        <location filename="../Services/DefaultApplicationsService.qml" line="659"/>
         <source>Default terminal updated</source>
-        <translation type="finished">Терминал по умолчанию обновлён</translation>
+        <translation>Терминал по умолчанию обновлён</translation>
     </message>
     <message>
-        <location filename="../Services/DefaultApplicationsService.qml" line="697" />
+        <location filename="../Services/DefaultApplicationsService.qml" line="697"/>
         <source>Could not set: %1</source>
-        <translation type="finished">Не удалось установить: %1</translation>
+        <translation>Не удалось установить: %1</translation>
     </message>
     <message>
-        <location filename="../Services/DefaultApplicationsService.qml" line="703" />
+        <location filename="../Services/DefaultApplicationsService.qml" line="703"/>
         <source>Could not create the XDG configuration directory</source>
-        <translation type="finished">Не удалось создать каталог конфигурации XDG</translation>
+        <translation>Не удалось создать каталог конфигурации XDG</translation>
     </message>
     <message>
-        <location filename="../Services/DefaultApplicationsService.qml" line="732" />
+        <location filename="../Services/DefaultApplicationsService.qml" line="732"/>
         <source>The system did not accept the new default terminal</source>
-        <translation type="finished">Система не приняла новый терминал по умолчанию</translation>
+        <translation>Система не приняла новый терминал по умолчанию</translation>
     </message>
 </context>
 <context>
     <name>DefaultAppsPage</name>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2009" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2108"/>
         <source>Internet</source>
-        <translation type="finished">Интернет</translation>
+        <translation>Интернет</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2010" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2109"/>
         <source>Utilities</source>
-        <translation type="finished">Утилиты</translation>
+        <translation>Утилиты</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2011" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2110"/>
         <source>Documents</source>
-        <translation type="finished">Документы</translation>
+        <translation>Документы</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2012" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2111"/>
         <source>Multimedia</source>
-        <translation type="finished">Мультимедиа</translation>
+        <translation>Мультимедиа</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DefaultAppsPage.qml" line="84" />
+        <location filename="../Modules/ControlCenter/DefaultAppsPage.qml" line="84"/>
         <source>Loading…</source>
-        <translation type="finished">Загрузка…</translation>
+        <translation>Загрузка…</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DefaultAppsPage.qml" line="87" />
+        <location filename="../Modules/ControlCenter/DefaultAppsPage.qml" line="87"/>
         <source>System default</source>
-        <translation type="finished">Системный по умолчанию</translation>
+        <translation>Системный по умолчанию</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DefaultAppsPage.qml" line="87" />
+        <location filename="../Modules/ControlCenter/DefaultAppsPage.qml" line="87"/>
         <source>No available applications</source>
-        <translation type="finished">Нет доступных приложений</translation>
+        <translation>Нет доступных приложений</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DefaultAppsPage.qml" line="104" />
+        <location filename="../Modules/ControlCenter/DefaultAppsPage.qml" line="104"/>
         <source>No available system applications were found</source>
-        <translation type="finished">Системные приложения не найдены</translation>
+        <translation>Системные приложения не найдены</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DefaultAppsPage.qml" line="154" />
+        <location filename="../Modules/ControlCenter/DefaultAppsPage.qml" line="154"/>
         <source>Web browser</source>
-        <translation type="finished">Веб-браузер</translation>
+        <translation>Веб-браузер</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DefaultAppsPage.qml" line="160" />
+        <location filename="../Modules/ControlCenter/DefaultAppsPage.qml" line="160"/>
         <source>Email</source>
-        <translation type="finished">Эл. почта</translation>
+        <translation>Эл. почта</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DefaultAppsPage.qml" line="179" />
+        <location filename="../Modules/ControlCenter/DefaultAppsPage.qml" line="179"/>
         <source>File manager</source>
-        <translation type="finished">Файловый менеджер</translation>
+        <translation>Файловый менеджер</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DefaultAppsPage.qml" line="185" />
+        <location filename="../Modules/ControlCenter/DefaultAppsPage.qml" line="185"/>
         <source>Terminal</source>
-        <translation type="finished">Терминал</translation>
+        <translation>Терминал</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DefaultAppsPage.qml" line="204" />
+        <location filename="../Modules/ControlCenter/DefaultAppsPage.qml" line="204"/>
         <source>Text editor</source>
-        <translation type="finished">Текстовый редактор</translation>
+        <translation>Текстовый редактор</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DefaultAppsPage.qml" line="210" />
+        <location filename="../Modules/ControlCenter/DefaultAppsPage.qml" line="210"/>
         <source>PDF reader</source>
-        <translation type="finished">Чтение PDF</translation>
+        <translation>Чтение PDF</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DefaultAppsPage.qml" line="229" />
+        <location filename="../Modules/ControlCenter/DefaultAppsPage.qml" line="229"/>
         <source>Image viewer</source>
-        <translation type="finished">Просмотр изображений</translation>
+        <translation>Просмотр изображений</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DefaultAppsPage.qml" line="235" />
+        <location filename="../Modules/ControlCenter/DefaultAppsPage.qml" line="235"/>
         <source>Video player</source>
-        <translation type="finished">Видеоплеер</translation>
+        <translation>Видеоплеер</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DefaultAppsPage.qml" line="241" />
+        <location filename="../Modules/ControlCenter/DefaultAppsPage.qml" line="241"/>
         <source>Music player</source>
-        <translation type="finished">Музыкальный плеер</translation>
+        <translation>Музыкальный плеер</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DefaultAppsPage.qml" line="264" />
+        <location filename="../Modules/ControlCenter/DefaultAppsPage.qml" line="264"/>
         <source>Reading system default applications…</source>
-        <translation type="finished">Чтение системных приложений по умолчанию…</translation>
+        <translation>Чтение системных приложений по умолчанию…</translation>
     </message>
 </context>
 <context>
     <name>DefaultLockContent</name>
     <message>
-        <location filename="../Modules/Lock/DefaultLockContent.qml" line="134" />
+        <location filename="../Modules/Lock/DefaultLockContent.qml" line="138"/>
         <source>yyyy MMMM d, dddd</source>
-        <translation type="finished">d MMMM yyyy, dddd</translation>
+        <translation>d MMMM yyyy, dddd</translation>
     </message>
     <message>
-        <location filename="../Modules/Lock/DefaultLockContent.qml" line="230" />
-        <location filename="../Modules/Lock/DefaultLockContent.qml" line="265" />
+        <location filename="../Modules/Lock/DefaultLockContent.qml" line="234"/>
+        <location filename="../Modules/Lock/DefaultLockContent.qml" line="269"/>
         <source>Password</source>
-        <translation type="finished">Пароль</translation>
+        <translation>Пароль</translation>
     </message>
     <message>
-        <location filename="../Modules/Lock/DefaultLockContent.qml" line="231" />
+        <location filename="../Modules/Lock/DefaultLockContent.qml" line="235"/>
         <source>Incorrect password</source>
-        <translation type="finished">Неверный пароль</translation>
+        <translation>Неверный пароль</translation>
     </message>
 </context>
 <context>
     <name>DefaultLockStatus</name>
     <message>
-        <location filename="../Modules/Lock/DefaultLockStatus.qml" line="12" />
+        <location filename="../Modules/Lock/DefaultLockStatus.qml" line="12"/>
         <source>No media</source>
-        <translation type="finished">Нет медиа</translation>
+        <translation>Нет медиа</translation>
     </message>
     <message>
-        <location filename="../Modules/Lock/DefaultLockStatus.qml" line="78" />
+        <location filename="../Modules/Lock/DefaultLockStatus.qml" line="78"/>
         <source>Previous track</source>
-        <translation type="finished">Предыдущий трек</translation>
+        <translation>Предыдущий трек</translation>
     </message>
     <message>
-        <location filename="../Modules/Lock/DefaultLockStatus.qml" line="84" />
+        <location filename="../Modules/Lock/DefaultLockStatus.qml" line="84"/>
         <source>Pause</source>
-        <translation type="finished">Пауза</translation>
+        <translation>Пауза</translation>
     </message>
     <message>
-        <location filename="../Modules/Lock/DefaultLockStatus.qml" line="84" />
+        <location filename="../Modules/Lock/DefaultLockStatus.qml" line="84"/>
         <source>Play</source>
-        <translation type="finished">Воспроизвести</translation>
+        <translation>Воспроизвести</translation>
     </message>
     <message>
-        <location filename="../Modules/Lock/DefaultLockStatus.qml" line="90" />
+        <location filename="../Modules/Lock/DefaultLockStatus.qml" line="90"/>
         <source>Next track</source>
-        <translation type="finished">Следующий трек</translation>
+        <translation>Следующий трек</translation>
     </message>
     <message>
-        <location filename="../Modules/Lock/DefaultLockStatus.qml" line="156" />
+        <location filename="../Modules/Lock/DefaultLockStatus.qml" line="156"/>
         <source>Weather unavailable</source>
-        <translation type="finished">Погода недоступна</translation>
+        <translation>Погода недоступна</translation>
     </message>
     <message>
-        <location filename="../Modules/Lock/DefaultLockStatus.qml" line="174" />
+        <location filename="../Modules/Lock/DefaultLockStatus.qml" line="174"/>
         <source>Network unavailable</source>
-        <translation type="finished">Сеть недоступна</translation>
+        <translation>Сеть недоступна</translation>
     </message>
     <message>
-        <location filename="../Modules/Lock/DefaultLockStatus.qml" line="175" />
+        <location filename="../Modules/Lock/DefaultLockStatus.qml" line="175"/>
         <source>Connected</source>
-        <translation type="finished">Подключено</translation>
+        <translation>Подключено</translation>
     </message>
     <message>
-        <location filename="../Modules/Lock/DefaultLockStatus.qml" line="176" />
+        <location filename="../Modules/Lock/DefaultLockStatus.qml" line="176"/>
         <source>Disconnected</source>
-        <translation type="finished">Отключено</translation>
+        <translation>Отключено</translation>
     </message>
     <message>
-        <location filename="../Modules/Lock/DefaultLockStatus.qml" line="182" />
+        <location filename="../Modules/Lock/DefaultLockStatus.qml" line="182"/>
         <source>Caps Lock on</source>
-        <translation type="finished">Caps Lock вкл.</translation>
+        <translation>Caps Lock вкл.</translation>
     </message>
     <message>
-        <location filename="../Modules/Lock/DefaultLockStatus.qml" line="182" />
+        <location filename="../Modules/Lock/DefaultLockStatus.qml" line="182"/>
         <source>Caps Lock off</source>
-        <translation type="finished">Caps Lock выкл.</translation>
+        <translation>Caps Lock выкл.</translation>
     </message>
     <message>
-        <location filename="../Modules/Lock/DefaultLockStatus.qml" line="188" />
+        <location filename="../Modules/Lock/DefaultLockStatus.qml" line="188"/>
         <source>Num Lock on</source>
-        <translation type="finished">Num Lock вкл.</translation>
+        <translation>Num Lock вкл.</translation>
     </message>
     <message>
-        <location filename="../Modules/Lock/DefaultLockStatus.qml" line="188" />
+        <location filename="../Modules/Lock/DefaultLockStatus.qml" line="188"/>
         <source>Num Lock off</source>
-        <translation type="finished">Num Lock выкл.</translation>
+        <translation>Num Lock выкл.</translation>
     </message>
     <message>
-        <location filename="../Modules/Lock/DefaultLockStatus.qml" line="201" />
+        <location filename="../Modules/Lock/DefaultLockStatus.qml" line="201"/>
         <source>Fully charged</source>
-        <translation type="finished">Полностью заряжен</translation>
+        <translation>Полностью заряжен</translation>
     </message>
     <message>
-        <location filename="../Modules/Lock/DefaultLockStatus.qml" line="201" />
+        <location filename="../Modules/Lock/DefaultLockStatus.qml" line="201"/>
         <source>Charging</source>
-        <translation type="finished">Зарядка</translation>
+        <translation>Зарядка</translation>
     </message>
     <message>
-        <location filename="../Modules/Lock/DefaultLockStatus.qml" line="204" />
+        <location filename="../Modules/Lock/DefaultLockStatus.qml" line="204"/>
         <source>Plugged in</source>
-        <translation type="finished">Подключено к сети</translation>
+        <translation>Подключено к сети</translation>
     </message>
     <message>
-        <location filename="../Modules/Lock/DefaultLockStatus.qml" line="205" />
+        <location filename="../Modules/Lock/DefaultLockStatus.qml" line="205"/>
         <source>On battery</source>
-        <translation type="finished">От батареи</translation>
+        <translation>От батареи</translation>
     </message>
 </context>
 <context>
     <name>DesktopCard</name>
     <message>
-        <location filename="../Modules/DesktopCards/DesktopCard.qml" line="156" />
+        <location filename="../Modules/DesktopCards/DesktopCard.qml" line="156"/>
         <source>Return to sidebar</source>
-        <translation type="finished">Вернуться к боковой панели</translation>
+        <translation>Вернуться к боковой панели</translation>
     </message>
 </context>
 <context>
     <name>DisplayAdvancedSettings</name>
     <message>
-        <location filename="../Modules/ControlCenter/DisplayAdvancedSettings.qml" line="18" />
-        <location filename="../Modules/ControlCenter/DisplayAdvancedSettings.qml" line="21" />
+        <location filename="../Modules/ControlCenter/DisplayAdvancedSettings.qml" line="18"/>
+        <location filename="../Modules/ControlCenter/DisplayAdvancedSettings.qml" line="21"/>
         <source>Focus at Startup</source>
-        <translation type="finished">Фокус при запуске</translation>
+        <translation>Фокус при запуске</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DisplayAdvancedSettings.qml" line="27" />
+        <location filename="../Modules/ControlCenter/DisplayAdvancedSettings.qml" line="27"/>
         <source>Hot corners</source>
-        <translation type="finished">Горячие углы</translation>
+        <translation>Горячие углы</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DisplayAdvancedSettings.qml" line="31" />
-        <location filename="../Modules/ControlCenter/DisplayAdvancedSettings.qml" line="95" />
-        <location filename="../Modules/ControlCenter/DisplayAdvancedSettings.qml" line="110" />
+        <location filename="../Modules/ControlCenter/DisplayAdvancedSettings.qml" line="31"/>
+        <location filename="../Modules/ControlCenter/DisplayAdvancedSettings.qml" line="95"/>
+        <location filename="../Modules/ControlCenter/DisplayAdvancedSettings.qml" line="110"/>
         <source>Inherit</source>
-        <translation type="finished">Наследовать</translation>
+        <translation>Наследовать</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DisplayAdvancedSettings.qml" line="35" />
-        <location filename="../Modules/ControlCenter/DisplayAdvancedSettings.qml" line="118" />
+        <location filename="../Modules/ControlCenter/DisplayAdvancedSettings.qml" line="35"/>
+        <location filename="../Modules/ControlCenter/DisplayAdvancedSettings.qml" line="118"/>
         <source>Off</source>
-        <translation type="finished">Выкл.</translation>
+        <translation>Выкл.</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DisplayAdvancedSettings.qml" line="39" />
+        <location filename="../Modules/ControlCenter/DisplayAdvancedSettings.qml" line="39"/>
         <source>Select corners</source>
-        <translation type="finished">Выберите углы</translation>
+        <translation>Выберите углы</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DisplayAdvancedSettings.qml" line="59" />
+        <location filename="../Modules/ControlCenter/DisplayAdvancedSettings.qml" line="59"/>
         <source>Top left</source>
-        <translation type="finished">Слева сверху</translation>
+        <translation>Слева сверху</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DisplayAdvancedSettings.qml" line="63" />
+        <location filename="../Modules/ControlCenter/DisplayAdvancedSettings.qml" line="63"/>
         <source>Top right</source>
-        <translation type="finished">Справа сверху</translation>
+        <translation>Справа сверху</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DisplayAdvancedSettings.qml" line="67" />
+        <location filename="../Modules/ControlCenter/DisplayAdvancedSettings.qml" line="67"/>
         <source>Bottom left</source>
-        <translation type="finished">Слева внизу</translation>
+        <translation>Слева внизу</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DisplayAdvancedSettings.qml" line="71" />
+        <location filename="../Modules/ControlCenter/DisplayAdvancedSettings.qml" line="71"/>
         <source>Bottom right</source>
-        <translation type="finished">Справа внизу</translation>
+        <translation>Справа внизу</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DisplayAdvancedSettings.qml" line="94" />
+        <location filename="../Modules/ControlCenter/DisplayAdvancedSettings.qml" line="94"/>
         <source>Window gaps</source>
-        <translation type="finished">Зазоры окон</translation>
+        <translation>Зазоры окон</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DisplayAdvancedSettings.qml" line="106" />
+        <location filename="../Modules/ControlCenter/DisplayAdvancedSettings.qml" line="106"/>
         <source>Always center single column</source>
-        <translation type="finished">Всегда центрировать одну колонку</translation>
+        <translation>Всегда центрировать одну колонку</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DisplayAdvancedSettings.qml" line="114" />
+        <location filename="../Modules/ControlCenter/DisplayAdvancedSettings.qml" line="114"/>
         <source>On</source>
-        <translation type="finished">Вкл.</translation>
+        <translation>Вкл.</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DisplayAdvancedSettings.qml" line="130" />
+        <location filename="../Modules/ControlCenter/DisplayAdvancedSettings.qml" line="130"/>
         <source>Default column width</source>
-        <translation type="finished">Ширина колонки по умолчанию</translation>
+        <translation>Ширина колонки по умолчанию</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DisplayAdvancedSettings.qml" line="137" />
+        <location filename="../Modules/ControlCenter/DisplayAdvancedSettings.qml" line="137"/>
         <source>Preset column widths</source>
-        <translation type="finished">Пресетные ширины колонок</translation>
+        <translation>Пресетные ширины колонок</translation>
     </message>
 </context>
 <context>
     <name>DisplayColor</name>
     <message>
-        <location filename="../Services/DisplayColor.qml" line="31" />
+        <location filename="../Services/DisplayColor.qml" line="31"/>
         <source>Set a location. Using the fixed night temperature.</source>
-        <translation type="finished">Укажите местоположение. Используется фиксированная ночная температура.</translation>
+        <translation>Укажите местоположение. Используется фиксированная ночная температура.</translation>
     </message>
     <message>
-        <location filename="../Services/DisplayColor.qml" line="33" />
+        <location filename="../Services/DisplayColor.qml" line="33"/>
         <source>Midnight sun: using the day temperature.</source>
-        <translation type="finished">Полярный день: используется дневная температура.</translation>
+        <translation>Полярный день: используется дневная температура.</translation>
     </message>
     <message>
-        <location filename="../Services/DisplayColor.qml" line="35" />
+        <location filename="../Services/DisplayColor.qml" line="35"/>
         <source>Polar night: using the night temperature.</source>
-        <translation type="finished">Полярная ночь: используется ночная температура.</translation>
+        <translation>Полярная ночь: используется ночная температура.</translation>
     </message>
     <message>
-        <location filename="../Services/DisplayColor.qml" line="37" />
+        <location filename="../Services/DisplayColor.qml" line="37"/>
         <source>Choose different start and end times. Using the fixed night temperature.</source>
-        <translation type="finished">Выберите другие время начала и окончания. Используется фиксированная ночная температура.</translation>
+        <translation>Выберите другие время начала и окончания. Используется фиксированная ночная температура.</translation>
     </message>
     <message>
-        <location filename="../Services/DisplayColor.qml" line="99" />
+        <location filename="../Services/DisplayColor.qml" line="99"/>
         <source>Location lookup failed. Using the manual location or fixed night temperature.</source>
-        <translation type="finished">Не удалось определить местоположение. Используется ручное местоположение или фиксированная ночная температура.</translation>
+        <translation>Не удалось определить местоположение. Используется ручное местоположение или фиксированная ночная температура.</translation>
     </message>
     <message>
-        <location filename="../Services/DisplayColor.qml" line="135" />
+        <location filename="../Services/DisplayColor.qml" line="135"/>
         <source>Location lookup timed out. Using the manual location or fixed night temperature.</source>
-        <translation type="finished">Истекло время определения местоположения. Используется ручное местоположение или фиксированная ночная температура.</translation>
+        <translation>Истекло время определения местоположения. Используется ручное местоположение или фиксированная ночная температура.</translation>
     </message>
     <message>
-        <location filename="../Services/DisplayColor.qml" line="153" />
+        <location filename="../Services/DisplayColor.qml" line="153"/>
         <source>Unable to open display preferences</source>
-        <translation type="finished">Не удалось открыть настройки дисплеев</translation>
+        <translation>Не удалось открыть настройки дисплеев</translation>
     </message>
     <message>
-        <location filename="../Services/DisplayColor.qml" line="172" />
+        <location filename="../Services/DisplayColor.qml" line="172"/>
         <source>Invalid display preferences: %1</source>
-        <translation type="finished">Некорректные настройки дисплея: %1</translation>
+        <translation>Некорректные настройки дисплея: %1</translation>
     </message>
     <message>
-        <location filename="../Services/DisplayColor.qml" line="180" />
+        <location filename="../Services/DisplayColor.qml" line="180"/>
         <source>Unable to read display preferences</source>
-        <translation type="finished">Не удалось прочитать настройки дисплеев</translation>
+        <translation>Не удалось прочитать настройки дисплеев</translation>
     </message>
     <message>
-        <location filename="../Services/DisplayColor.qml" line="182" />
+        <location filename="../Services/DisplayColor.qml" line="182"/>
         <source>Unable to save display preferences</source>
-        <translation type="finished">Не удалось сохранить настройки дисплеев</translation>
+        <translation>Не удалось сохранить настройки дисплеев</translation>
     </message>
 </context>
 <context>
     <name>DisplayColumnWidths</name>
     <message>
-        <location filename="../Modules/ControlCenter/DisplayColumnWidths.qml" line="32" />
+        <location filename="../Modules/ControlCenter/DisplayColumnWidths.qml" line="32"/>
         <source>Proportion</source>
-        <translation type="finished">Пропорция</translation>
+        <translation>Пропорция</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DisplayColumnWidths.qml" line="36" />
-        <location filename="../Modules/ControlCenter/DisplayColumnWidths.qml" line="53" />
+        <location filename="../Modules/ControlCenter/DisplayColumnWidths.qml" line="36"/>
+        <location filename="../Modules/ControlCenter/DisplayColumnWidths.qml" line="53"/>
         <source>Pixels</source>
-        <translation type="finished">Пиксели</translation>
+        <translation>Пиксели</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DisplayColumnWidths.qml" line="53" />
+        <location filename="../Modules/ControlCenter/DisplayColumnWidths.qml" line="53"/>
         <source>Proportion (1 = full width)</source>
-        <translation type="finished">Пропорция (1 = полная ширина)</translation>
+        <translation>Пропорция (1 = полная ширина)</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DisplayColumnWidths.qml" line="72" />
+        <location filename="../Modules/ControlCenter/DisplayColumnWidths.qml" line="72"/>
         <source>Remove column width</source>
-        <translation type="finished">Удалить ширину колонки</translation>
+        <translation>Удалить ширину колонки</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DisplayColumnWidths.qml" line="80" />
+        <location filename="../Modules/ControlCenter/DisplayColumnWidths.qml" line="80"/>
         <source>Set custom width</source>
-        <translation type="finished">Задать свою ширину</translation>
+        <translation>Задать свою ширину</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DisplayColumnWidths.qml" line="80" />
+        <location filename="../Modules/ControlCenter/DisplayColumnWidths.qml" line="80"/>
         <source>Add column width</source>
-        <translation type="finished">Добавить ширину колонки</translation>
+        <translation>Добавить ширину колонки</translation>
     </message>
 </context>
 <context>
     <name>DisplayConfigService</name>
     <message>
-        <location filename="../Services/DisplayConfigService.qml" line="37" />
+        <location filename="../Services/DisplayConfigService.qml" line="37"/>
         <source>At least one connected display must remain enabled</source>
-        <translation type="finished">Должен остаться включённым хотя бы один подключённый дисплей</translation>
+        <translation>Должен остаться включённым хотя бы один подключённый дисплей</translation>
     </message>
     <message>
-        <location filename="../Services/DisplayConfigService.qml" line="38" />
+        <location filename="../Services/DisplayConfigService.qml" line="38"/>
         <source>Display rectangles overlap</source>
-        <translation type="finished">Прямоугольники дисплеев пересекаются</translation>
+        <translation>Прямоугольники дисплеев пересекаются</translation>
     </message>
     <message>
-        <location filename="../Services/DisplayConfigService.qml" line="39" />
+        <location filename="../Services/DisplayConfigService.qml" line="39"/>
         <source>Select an available display mode</source>
-        <translation type="finished">Выберите доступный режим дисплея</translation>
+        <translation>Выберите доступный режим дисплея</translation>
     </message>
     <message>
-        <location filename="../Services/DisplayConfigService.qml" line="160" />
+        <location filename="../Services/DisplayConfigService.qml" line="160"/>
         <source>Connected displays changed. Reload before applying.</source>
-        <translation type="finished">Подключённые дисплеи изменились. Перезагрузите конфигурацию перед применением.</translation>
+        <translation>Подключённые дисплеи изменились. Перезагрузите конфигурацию перед применением.</translation>
     </message>
     <message>
-        <location filename="../Services/DisplayConfigService.qml" line="172" />
+        <location filename="../Services/DisplayConfigService.qml" line="172"/>
         <source>Configuration changed externally. Reload before applying.</source>
-        <translation type="finished">Конфигурация изменена извне. Перезагрузите её перед применением.</translation>
+        <translation>Конфигурация изменена извне. Перезагрузите её перед применением.</translation>
     </message>
 </context>
 <context>
     <name>DisplayConfigurationPage</name>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2013" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2112"/>
         <source>Layout</source>
-        <translation type="finished">Раскладка</translation>
+        <translation>Раскладка</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2014" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2113"/>
         <source>Output settings</source>
-        <translation type="finished">Настройки вывода</translation>
+        <translation>Настройки вывода</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="41" />
+        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="41"/>
         <source>Display configuration</source>
-        <translation type="finished">Конфигурация дисплеев</translation>
+        <translation>Конфигурация дисплеев</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="77" />
+        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="77"/>
         <source>Identify displays</source>
-        <translation type="finished">Определить дисплеи</translation>
+        <translation>Определить дисплеи</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="90" />
+        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="90"/>
         <source>This output is read-only. Resolve conflicting or unsupported settings in %1.</source>
-        <translation type="finished">Этот вывод только для чтения. Разрешите конфликтующие или неподдерживаемые настройки в %1.</translation>
+        <translation>Этот вывод только для чтения. Разрешите конфликтующие или неподдерживаемые настройки в %1.</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="108" />
+        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="108"/>
         <source>Display</source>
-        <translation type="finished">Дисплей</translation>
+        <translation>Дисплей</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="112" />
+        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="112"/>
         <source>%1 (disconnected)</source>
-        <translation type="finished">%1 (отключено)</translation>
+        <translation>%1 (отключено)</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="123" />
-        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="130" />
+        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="123"/>
+        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="130"/>
         <source>Enabled</source>
-        <translation type="finished">Включено</translation>
+        <translation>Включено</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="137" />
+        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="137"/>
         <source>Resolution and refresh rate</source>
-        <translation type="finished">Разрешение и частота обновления</translation>
+        <translation>Разрешение и частота обновления</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="142" />
+        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="142"/>
         <source>%1 × %2 · %3 Hz</source>
-        <translation type="finished">%1 × %2 · %3 Гц</translation>
+        <translation>%1 × %2 · %3 Гц</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="149" />
+        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="149"/>
         <source>Scale</source>
-        <translation type="finished">Масштаб</translation>
+        <translation>Масштаб</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="161" />
+        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="161"/>
         <source>%1% (Custom)</source>
-        <translation type="finished">%1% (своё)</translation>
+        <translation>%1% (своё)</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="166" />
+        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="166"/>
         <source>Custom</source>
-        <translation type="finished">Свой</translation>
+        <translation>Свой</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="187" />
+        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="187"/>
         <source>Logical X</source>
-        <translation type="finished">Логическая X</translation>
+        <translation>Логическая X</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="191" />
+        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="191"/>
         <source>Logical Y</source>
-        <translation type="finished">Логическая Y</translation>
+        <translation>Логическая Y</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="210" />
+        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="210"/>
         <source>Rotation and reflection</source>
-        <translation type="finished">Поворот и отражение</translation>
+        <translation>Поворот и отражение</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="214" />
+        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="214"/>
         <source>Normal</source>
-        <translation type="finished">Обычный</translation>
+        <translation>Обычный</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="230" />
+        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="230"/>
         <source>Flipped</source>
-        <translation type="finished">Отразить</translation>
+        <translation>Отразить</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="234" />
+        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="234"/>
         <source>Flipped · 90°</source>
-        <translation type="finished">Поворот · 90°</translation>
+        <translation>Поворот · 90°</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="238" />
+        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="238"/>
         <source>Flipped · 180°</source>
-        <translation type="finished">Поворот · 180°</translation>
+        <translation>Поворот · 180°</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="242" />
+        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="242"/>
         <source>Flipped · 270°</source>
-        <translation type="finished">Поворот · 270°</translation>
+        <translation>Поворот · 270°</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="250" />
+        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="250"/>
         <source>Variable refresh rate</source>
-        <translation type="finished">Переменная частота обновления</translation>
+        <translation>Переменная частота обновления</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="256" />
+        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="256"/>
         <source>Off</source>
-        <translation type="finished">Выкл.</translation>
+        <translation>Выкл.</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="260" />
+        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="260"/>
         <source>On</source>
-        <translation type="finished">Вкл.</translation>
+        <translation>Вкл.</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="264" />
+        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="264"/>
         <source>On-Demand</source>
-        <translation type="finished">По запросу</translation>
+        <translation>По запросу</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="272" />
+        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="272"/>
         <source>Advanced settings</source>
-        <translation type="finished">Дополнительные настройки</translation>
+        <translation>Дополнительные настройки</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="284" />
+        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="284"/>
         <source>Delete saved display</source>
-        <translation type="finished">Удалить сохранённый дисплей</translation>
+        <translation>Удалить сохранённый дисплей</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="297" />
+        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="297"/>
         <source>Discard</source>
-        <translation type="finished">Сбросить</translation>
+        <translation>Сбросить</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="308" />
-        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="404" />
+        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="308"/>
+        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="404"/>
         <source>Apply</source>
-        <translation type="finished">Применить</translation>
+        <translation>Применить</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="371" />
+        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="371"/>
         <source>Custom scale</source>
-        <translation type="finished">Свой масштаб</translation>
+        <translation>Свой масштаб</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="381" />
+        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="381"/>
         <source>Scale (%)</source>
-        <translation type="finished">Масштаб (%)</translation>
+        <translation>Масштаб (%)</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="400" />
+        <location filename="../Modules/ControlCenter/DisplayConfigurationPage.qml" line="400"/>
         <source>Cancel</source>
-        <translation type="finished">Отмена</translation>
+        <translation>Отмена</translation>
     </message>
 </context>
 <context>
     <name>DisplayOverlays</name>
     <message>
-        <location filename="../Modules/ControlCenter/DisplayOverlays.qml" line="107" />
+        <location filename="../Modules/ControlCenter/DisplayOverlays.qml" line="107"/>
         <source>Keep display changes?</source>
-        <translation type="finished">Сохранить изменения дисплея?</translation>
+        <translation>Сохранить изменения дисплея?</translation>
     </message>
     <message numerus="yes">
-        <location filename="../Modules/ControlCenter/DisplayOverlays.qml" line="115" />
+        <location filename="../Modules/ControlCenter/DisplayOverlays.qml" line="115"/>
         <source>Reverting in %n second(s)</source>
-        <translation type="finished">
+        <translation>
             <numerusform>Возврат через %n секунду</numerusform>
             <numerusform>Возврат через %n секунды</numerusform>
             <numerusform>Возврат через %n секунд</numerusform>
         </translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DisplayOverlays.qml" line="124" />
+        <location filename="../Modules/ControlCenter/DisplayOverlays.qml" line="124"/>
         <source>Revert</source>
-        <translation type="finished">Отменить изменения</translation>
+        <translation>Отменить изменения</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/DisplayOverlays.qml" line="128" />
+        <location filename="../Modules/ControlCenter/DisplayOverlays.qml" line="128"/>
         <source>Keep Changes</source>
-        <translation type="finished">Сохранить изменения</translation>
+        <translation>Сохранить изменения</translation>
     </message>
 </context>
 <context>
     <name>DisplaysPage</name>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="1993" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2091"/>
         <source>Display configuration</source>
-        <translation type="finished">Конфигурация дисплеев</translation>
+        <translation>Конфигурация дисплеев</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="1994" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2092"/>
         <source>Gamma Control</source>
-        <translation type="finished">Управление гаммой</translation>
+        <translation>Управление гаммой</translation>
     </message>
 </context>
 <context>
     <name>DockerWidget</name>
     <message>
-        <location filename="../Modules/Keystone/DeveloperContent/DockerWidget.qml" line="172" />
+        <location filename="../Modules/Keystone/DeveloperContent/DockerWidget.qml" line="172"/>
         <source>Standalone</source>
-        <translation type="finished">Автономный</translation>
+        <translation>Автономный</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/DeveloperContent/DockerWidget.qml" line="290" />
+        <location filename="../Modules/Keystone/DeveloperContent/DockerWidget.qml" line="290"/>
         <source>Docker</source>
-        <translation type="finished">Docker</translation>
+        <translation>Docker</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/DeveloperContent/DockerWidget.qml" line="313" />
+        <location filename="../Modules/Keystone/DeveloperContent/DockerWidget.qml" line="313"/>
         <source> running</source>
-        <translation type="finished"> запущено</translation>
+        <translation> запущено</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/DeveloperContent/DockerWidget.qml" line="330" />
+        <location filename="../Modules/Keystone/DeveloperContent/DockerWidget.qml" line="330"/>
         <source>Refresh</source>
-        <translation type="finished">Обновить</translation>
+        <translation>Обновить</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/DeveloperContent/DockerWidget.qml" line="349" />
+        <location filename="../Modules/Keystone/DeveloperContent/DockerWidget.qml" line="349"/>
         <source>docker CLI was not found in PATH</source>
-        <translation type="finished">docker CLI не найден в PATH</translation>
+        <translation>docker CLI не найден в PATH</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/DeveloperContent/DockerWidget.qml" line="351" />
+        <location filename="../Modules/Keystone/DeveloperContent/DockerWidget.qml" line="351"/>
         <source>No permission to talk to the Docker daemon</source>
-        <translation type="finished">Нет прав для общения с демоном Docker</translation>
+        <translation>Нет прав для общения с демоном Docker</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/DeveloperContent/DockerWidget.qml" line="351" />
-        <source> — add the user to the 'docker' group</source>
-        <translation type="finished"> — добавьте пользователя в группу «docker»</translation>
+        <location filename="../Modules/Keystone/DeveloperContent/DockerWidget.qml" line="351"/>
+        <source> — add the user to the &apos;docker&apos; group</source>
+        <translation> — добавьте пользователя в группу «docker»</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/DeveloperContent/DockerWidget.qml" line="354" />
+        <location filename="../Modules/Keystone/DeveloperContent/DockerWidget.qml" line="354"/>
         <source>Docker daemon is not reachable</source>
-        <translation type="finished">Демон Docker недоступен</translation>
+        <translation>Демон Docker недоступен</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/DeveloperContent/DockerWidget.qml" line="365" />
+        <location filename="../Modules/Keystone/DeveloperContent/DockerWidget.qml" line="365"/>
         <source>No containers</source>
-        <translation type="finished">Нет контейнеров</translation>
+        <translation>Нет контейнеров</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/DeveloperContent/DockerWidget.qml" line="487" />
+        <location filename="../Modules/Keystone/DeveloperContent/DockerWidget.qml" line="487"/>
         <source>show</source>
-        <translation type="finished">показать</translation>
+        <translation>показать</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/DeveloperContent/DockerWidget.qml" line="487" />
+        <location filename="../Modules/Keystone/DeveloperContent/DockerWidget.qml" line="487"/>
         <source>hide</source>
-        <translation type="finished">скрыть</translation>
+        <translation>скрыть</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/DeveloperContent/DockerWidget.qml" line="573" />
+        <location filename="../Modules/Keystone/DeveloperContent/DockerWidget.qml" line="573"/>
         <source>Start container</source>
-        <translation type="finished">Запустить контейнер</translation>
+        <translation>Запустить контейнер</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/DeveloperContent/DockerWidget.qml" line="580" />
+        <location filename="../Modules/Keystone/DeveloperContent/DockerWidget.qml" line="580"/>
         <source>Stop container</source>
-        <translation type="finished">Остановить контейнер</translation>
+        <translation>Остановить контейнер</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/DeveloperContent/DockerWidget.qml" line="587" />
+        <location filename="../Modules/Keystone/DeveloperContent/DockerWidget.qml" line="587"/>
         <source>Restart container</source>
-        <translation type="finished">Перезапустить контейнер</translation>
+        <translation>Перезапустить контейнер</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/DeveloperContent/DockerWidget.qml" line="597" />
+        <location filename="../Modules/Keystone/DeveloperContent/DockerWidget.qml" line="597"/>
         <source>Delete container</source>
-        <translation type="finished">Удалить контейнер</translation>
+        <translation>Удалить контейнер</translation>
     </message>
 </context>
 <context>
     <name>ExpressiveMetricTile</name>
     <message>
-        <location filename="../Modules/SystemCards/ExpressiveMetricTile.qml" line="85" />
+        <location filename="../Modules/SystemCards/ExpressiveMetricTile.qml" line="85"/>
         <source> icon</source>
-        <translation type="finished"> значок</translation>
+        <translation> значок</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/ExpressiveMetricTile.qml" line="181" />
+        <location filename="../Modules/SystemCards/ExpressiveMetricTile.qml" line="181"/>
         <source> trend over the last minute</source>
-        <translation type="finished"> тенденция за последнюю минуту</translation>
+        <translation> тенденция за последнюю минуту</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/ExpressiveMetricTile.qml" line="182" />
+        <location filename="../Modules/SystemCards/ExpressiveMetricTile.qml" line="182"/>
         <source>Current value </source>
-        <translation type="finished">Текущее значение </translation>
+        <translation>Текущее значение </translation>
     </message>
 </context>
 <context>
     <name>FilePickerWindow</name>
     <message>
-        <location filename="../Modules/FilePicker/FilePickerWindow.qml" line="28" />
-        <location filename="../Modules/Sidebars/Dashboard/DashboardSidebar.qml" line="210" />
+        <location filename="../Modules/FilePicker/FilePickerWindow.qml" line="28"/>
+        <location filename="../Modules/Sidebars/Dashboard/DashboardSidebar.qml" line="210"/>
         <source>Choose an image for your user avatar</source>
-        <translation type="finished">Выберите изображение для аватара пользователя</translation>
+        <translation>Выберите изображение для аватара пользователя</translation>
     </message>
     <message>
-        <location filename="../Modules/FilePicker/FilePickerWindow.qml" line="29" />
+        <location filename="../Modules/FilePicker/FilePickerWindow.qml" line="29"/>
         <source>Choose image</source>
-        <translation type="finished">Выберите изображение</translation>
+        <translation>Выберите изображение</translation>
     </message>
     <message>
-        <location filename="../Modules/FilePicker/FilePickerWindow.qml" line="33" />
+        <location filename="../Modules/FilePicker/FilePickerWindow.qml" line="33"/>
         <source>No selectable images in this folder</source>
-        <translation type="finished">В этой папке нет изображений для выбора</translation>
+        <translation>В этой папке нет изображений для выбора</translation>
     </message>
     <message>
-        <location filename="../Modules/FilePicker/FilePickerWindow.qml" line="34" />
-        <location filename="../Modules/Sidebars/Dashboard/DashboardSidebar.qml" line="211" />
+        <location filename="../Modules/FilePicker/FilePickerWindow.qml" line="34"/>
+        <location filename="../Modules/Sidebars/Dashboard/DashboardSidebar.qml" line="211"/>
         <source>Choose an image</source>
-        <translation type="finished">Выберите изображение</translation>
+        <translation>Выберите изображение</translation>
     </message>
     <message>
-        <location filename="../Modules/FilePicker/FilePickerWindow.qml" line="35" />
+        <location filename="../Modules/FilePicker/FilePickerWindow.qml" line="35"/>
         <source>Choose</source>
-        <translation type="finished">Выбрать</translation>
+        <translation>Выбрать</translation>
     </message>
     <message>
-        <location filename="../Modules/FilePicker/FilePickerWindow.qml" line="154" />
-        <location filename="../Modules/FilePicker/FilePickerWindow.qml" line="533" />
+        <location filename="../Modules/FilePicker/FilePickerWindow.qml" line="154"/>
+        <location filename="../Modules/FilePicker/FilePickerWindow.qml" line="533"/>
         <source>Home</source>
-        <translation type="finished">Дом</translation>
+        <translation>Дом</translation>
     </message>
     <message>
-        <location filename="../Modules/FilePicker/FilePickerWindow.qml" line="161" />
+        <location filename="../Modules/FilePicker/FilePickerWindow.qml" line="161"/>
         <source>File system</source>
-        <translation type="finished">Файловая система</translation>
+        <translation>Файловая система</translation>
     </message>
     <message>
-        <location filename="../Modules/FilePicker/FilePickerWindow.qml" line="490" />
+        <location filename="../Modules/FilePicker/FilePickerWindow.qml" line="490"/>
         <source>Close</source>
-        <translation type="finished">Закрыть</translation>
+        <translation>Закрыть</translation>
     </message>
     <message>
-        <location filename="../Modules/FilePicker/FilePickerWindow.qml" line="525" />
+        <location filename="../Modules/FilePicker/FilePickerWindow.qml" line="525"/>
         <source>Location</source>
-        <translation type="finished">Местоположение</translation>
+        <translation>Местоположение</translation>
     </message>
     <message>
-        <location filename="../Modules/FilePicker/FilePickerWindow.qml" line="538" />
+        <location filename="../Modules/FilePicker/FilePickerWindow.qml" line="538"/>
         <source>Desktop</source>
-        <translation type="finished">Рабочий стол</translation>
+        <translation>Рабочий стол</translation>
     </message>
     <message>
-        <location filename="../Modules/FilePicker/FilePickerWindow.qml" line="544" />
+        <location filename="../Modules/FilePicker/FilePickerWindow.qml" line="544"/>
         <source>Documents</source>
-        <translation type="finished">Документы</translation>
+        <translation>Документы</translation>
     </message>
     <message>
-        <location filename="../Modules/FilePicker/FilePickerWindow.qml" line="550" />
+        <location filename="../Modules/FilePicker/FilePickerWindow.qml" line="550"/>
         <source>Music</source>
-        <translation type="finished">Музыка</translation>
+        <translation>Музыка</translation>
     </message>
     <message>
-        <location filename="../Modules/FilePicker/FilePickerWindow.qml" line="556" />
+        <location filename="../Modules/FilePicker/FilePickerWindow.qml" line="556"/>
         <source>Pictures</source>
-        <translation type="finished">Изображения</translation>
+        <translation>Изображения</translation>
     </message>
     <message>
-        <location filename="../Modules/FilePicker/FilePickerWindow.qml" line="562" />
+        <location filename="../Modules/FilePicker/FilePickerWindow.qml" line="562"/>
         <source>Videos</source>
-        <translation type="finished">Видео</translation>
+        <translation>Видео</translation>
     </message>
     <message>
-        <location filename="../Modules/FilePicker/FilePickerWindow.qml" line="568" />
+        <location filename="../Modules/FilePicker/FilePickerWindow.qml" line="568"/>
         <source>Downloads</source>
-        <translation type="finished">Загрузки</translation>
+        <translation>Загрузки</translation>
     </message>
     <message>
-        <location filename="../Modules/FilePicker/FilePickerWindow.qml" line="621" />
+        <location filename="../Modules/FilePicker/FilePickerWindow.qml" line="621"/>
         <source>Up one level</source>
-        <translation type="finished">На уровень выше</translation>
+        <translation>На уровень выше</translation>
     </message>
     <message>
-        <location filename="../Modules/FilePicker/FilePickerWindow.qml" line="754" />
+        <location filename="../Modules/FilePicker/FilePickerWindow.qml" line="754"/>
         <source>Hide hidden files</source>
-        <translation type="finished">Скрыть скрытые файлы</translation>
+        <translation>Скрыть скрытые файлы</translation>
     </message>
     <message>
-        <location filename="../Modules/FilePicker/FilePickerWindow.qml" line="754" />
+        <location filename="../Modules/FilePicker/FilePickerWindow.qml" line="754"/>
         <source>Show hidden files</source>
-        <translation type="finished">Показать скрытые файлы</translation>
+        <translation>Показать скрытые файлы</translation>
     </message>
     <message>
-        <location filename="../Modules/FilePicker/FilePickerWindow.qml" line="1012" />
+        <location filename="../Modules/FilePicker/FilePickerWindow.qml" line="1012"/>
         <source>Current folder: %1</source>
-        <translation type="finished">Текущая папка: %1</translation>
+        <translation>Текущая папка: %1</translation>
     </message>
     <message>
-        <location filename="../Modules/FilePicker/FilePickerWindow.qml" line="1017" />
+        <location filename="../Modules/FilePicker/FilePickerWindow.qml" line="1017"/>
         <source>Double-click to open </source>
-        <translation type="finished">Двойной клик, чтобы открыть </translation>
+        <translation>Двойной клик, чтобы открыть </translation>
     </message>
     <message>
-        <location filename="../Modules/FilePicker/FilePickerWindow.qml" line="1029" />
+        <location filename="../Modules/FilePicker/FilePickerWindow.qml" line="1029"/>
         <source>Cancel</source>
-        <translation type="finished">Отмена</translation>
+        <translation>Отмена</translation>
     </message>
 </context>
 <context>
     <name>FileSearchService</name>
     <message>
-        <location filename="../Services/FileSearchService.qml" line="42" />
+        <location filename="../Services/FileSearchService.qml" line="42"/>
         <source>Install fd to search files</source>
-        <translation type="finished">Установите fd для поиска файлов</translation>
+        <translation>Установите fd для поиска файлов</translation>
     </message>
     <message>
-        <location filename="../Services/FileSearchService.qml" line="43" />
+        <location filename="../Services/FileSearchService.qml" line="43"/>
         <source>Update key-cli to enable file search</source>
-        <translation type="finished">Обновите key-cli, чтобы включить поиск файлов</translation>
+        <translation>Обновите key-cli, чтобы включить поиск файлов</translation>
     </message>
     <message>
-        <location filename="../Services/FileSearchService.qml" line="44" />
+        <location filename="../Services/FileSearchService.qml" line="44"/>
         <source>The file service returned invalid data</source>
-        <translation type="finished">Служба файлов вернула недействительные данные</translation>
+        <translation>Служба файлов вернула недействительные данные</translation>
     </message>
     <message>
-        <location filename="../Services/FileSearchService.qml" line="45" />
+        <location filename="../Services/FileSearchService.qml" line="45"/>
         <source>The file or link target no longer exists</source>
-        <translation type="finished">Файл или цель ссылки больше не существует</translation>
+        <translation>Файл или цель ссылки больше не существует</translation>
     </message>
     <message>
-        <location filename="../Services/FileSearchService.qml" line="46" />
+        <location filename="../Services/FileSearchService.qml" line="46"/>
         <source>The containing folder no longer exists</source>
-        <translation type="finished">Содержащая папка больше не существует</translation>
+        <translation>Содержащая папка больше не существует</translation>
     </message>
     <message>
-        <location filename="../Services/FileSearchService.qml" line="47" />
+        <location filename="../Services/FileSearchService.qml" line="47"/>
         <source>Use Apps to launch this item, or show it in the file manager</source>
-        <translation type="finished">Используйте «Приложения», чтобы запустить элемент, или покажите его в файловом менеджере</translation>
+        <translation>Используйте «Приложения», чтобы запустить элемент, или покажите его в файловом менеджере</translation>
     </message>
     <message>
-        <location filename="../Services/FileSearchService.qml" line="48" />
+        <location filename="../Services/FileSearchService.qml" line="48"/>
         <source>The system file opener is unavailable</source>
-        <translation type="finished">Системный открыватель файлов недоступен</translation>
+        <translation>Системный открыватель файлов недоступен</translation>
     </message>
     <message>
-        <location filename="../Services/FileSearchService.qml" line="49" />
+        <location filename="../Services/FileSearchService.qml" line="49"/>
         <source>The system did not confirm the request in time</source>
-        <translation type="finished">Система не подтвердила запрос вовремя</translation>
+        <translation>Система не подтвердила запрос вовремя</translation>
     </message>
     <message>
-        <location filename="../Services/FileSearchService.qml" line="50" />
+        <location filename="../Services/FileSearchService.qml" line="50"/>
         <source>File search failed</source>
-        <translation type="finished">Поиск файлов не удался</translation>
+        <translation>Поиск файлов не удался</translation>
     </message>
     <message>
-        <location filename="../Services/FileSearchService.qml" line="51" />
+        <location filename="../Services/FileSearchService.qml" line="51"/>
         <source>Unable to open or show this item</source>
-        <translation type="finished">Не удалось открыть или показать этот элемент</translation>
+        <translation>Не удалось открыть или показать этот элемент</translation>
     </message>
     <message>
-        <location filename="../Services/FileSearchService.qml" line="55" />
+        <location filename="../Services/FileSearchService.qml" line="55"/>
         <source>File operation failed</source>
-        <translation type="finished">Операция с файлом не удалась</translation>
+        <translation>Операция с файлом не удалась</translation>
     </message>
 </context>
 <context>
     <name>GammaControlPage</name>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2015" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2114"/>
         <source>Color</source>
-        <translation type="finished">Цвет</translation>
+        <translation>Цвет</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2016" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2115"/>
         <source>Schedule</source>
-        <translation type="finished">Расписание</translation>
+        <translation>Расписание</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2017" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2116"/>
         <source>Current status</source>
-        <translation type="finished">Текущий статус</translation>
+        <translation>Текущий статус</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="31" />
+        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="31"/>
         <source>The compositor does not provide Gamma control</source>
-        <translation type="finished">Композитор не предоставляет управление гаммой</translation>
+        <translation>Композитор не предоставляет управление гаммой</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="53" />
+        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="53"/>
         <source>Gamma</source>
-        <translation type="finished">Гамма</translation>
+        <translation>Гамма</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="62" />
+        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="62"/>
         <source>Contrast</source>
-        <translation type="finished">Контраст</translation>
+        <translation>Контраст</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="71" />
+        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="71"/>
         <source>Software dimming</source>
-        <translation type="finished">Программное затемнение</translation>
+        <translation>Программное затемнение</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="85" />
-        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="89" />
+        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="85"/>
+        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="89"/>
         <source>Night Mode</source>
-        <translation type="finished">Ночной режим</translation>
+        <translation>Ночной режим</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="95" />
+        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="95"/>
         <source>Night temperature</source>
-        <translation type="finished">Ночная температура</translation>
+        <translation>Ночная температура</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="119" />
+        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="119"/>
         <source>Automatic control</source>
-        <translation type="finished">Автоматическое управление</translation>
+        <translation>Автоматическое управление</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="123" />
+        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="123"/>
         <source>Fixed temperature</source>
-        <translation type="finished">Фиксированная температура</translation>
+        <translation>Фиксированная температура</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="127" />
+        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="127"/>
         <source>Time</source>
-        <translation type="finished">Время</translation>
+        <translation>Время</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="131" />
+        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="131"/>
         <source>Sunrise and sunset</source>
-        <translation type="finished">Восход и закат</translation>
+        <translation>Восход и закат</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="140" />
-        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="147" />
+        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="140"/>
+        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="147"/>
         <source>Night starts</source>
-        <translation type="finished">Начало ночи</translation>
+        <translation>Начало ночи</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="158" />
-        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="165" />
+        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="158"/>
+        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="165"/>
         <source>Day starts</source>
-        <translation type="finished">Начало дня</translation>
+        <translation>Начало дня</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="181" />
+        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="181"/>
         <source>Latitude</source>
-        <translation type="finished">Широта</translation>
+        <translation>Широта</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="186" />
+        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="186"/>
         <source>Longitude</source>
-        <translation type="finished">Долгота</translation>
+        <translation>Долгота</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="209" />
-        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="213" />
+        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="209"/>
+        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="213"/>
         <source>Automatic IP location</source>
-        <translation type="finished">Автоматическое определение IP</translation>
+        <translation>Автоматическое определение IP</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="228" />
+        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="228"/>
         <source>Refresh location</source>
-        <translation type="finished">Обновить местоположение</translation>
+        <translation>Обновить местоположение</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="236" />
+        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="236"/>
         <source>Use weather location</source>
-        <translation type="finished">Использовать местоположение погоды</translation>
+        <translation>Использовать местоположение погоды</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="241" />
+        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="241"/>
         <source>Day temperature</source>
-        <translation type="finished">Дневная температура</translation>
+        <translation>Дневная температура</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="251" />
+        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="251"/>
         <source>Transition duration</source>
-        <translation type="finished">Длительность перехода</translation>
+        <translation>Длительность перехода</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="255" />
+        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="255"/>
         <source> min</source>
-        <translation type="finished"> мин</translation>
+        <translation> мин</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="282" />
+        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="282"/>
         <source>Scheduled temperature</source>
-        <translation type="finished">Температура по расписанию</translation>
+        <translation>Температура по расписанию</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="286" />
+        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="286"/>
         <source>%1 K</source>
-        <translation type="finished">%1 К</translation>
+        <translation>%1 К</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="295" />
+        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="295"/>
         <source>Period</source>
-        <translation type="finished">Период</translation>
+        <translation>Период</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="297" />
+        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="297"/>
         <source>Transitioning</source>
-        <translation type="finished">Переход</translation>
+        <translation>Переход</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="299" />
+        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="299"/>
         <source>Daytime</source>
-        <translation type="finished">Дневное время</translation>
+        <translation>Дневное время</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="299" />
+        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="299"/>
         <source>Nighttime</source>
-        <translation type="finished">Ночное время</translation>
+        <translation>Ночное время</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="308" />
+        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="308"/>
         <source>Transition ends</source>
-        <translation type="finished">Переход заканчивается</translation>
+        <translation>Переход заканчивается</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="308" />
+        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="308"/>
         <source>Next transition</source>
-        <translation type="finished">Следующий переход</translation>
+        <translation>Следующий переход</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="327" />
+        <location filename="../Modules/ControlCenter/GammaControlPage.qml" line="327"/>
         <source>Gamma control unavailable: %1</source>
-        <translation type="finished">Управление гаммой недоступно: %1</translation>
+        <translation>Управление гаммой недоступно: %1</translation>
     </message>
 </context>
 <context>
     <name>GeneralBarPage</name>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2018" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2117"/>
         <source>Position</source>
-        <translation type="finished">Положение</translation>
+        <translation>Положение</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2019" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2118"/>
         <source>Components</source>
-        <translation type="finished">Компоненты</translation>
+        <translation>Компоненты</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralBarPage.qml" line="40" />
+        <location filename="../Modules/ControlCenter/GeneralBarPage.qml" line="40"/>
         <source>Screen edge</source>
-        <translation type="finished">Край экрана</translation>
+        <translation>Край экрана</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralBarPage.qml" line="63" />
+        <location filename="../Modules/ControlCenter/GeneralBarPage.qml" line="63"/>
         <source>Drag components to reorder them or move them to the other side.</source>
-        <translation type="finished">Перетащите компоненты, чтобы изменить порядок или перенести их на другую сторону.</translation>
+        <translation>Перетащите компоненты, чтобы изменить порядок или перенести их на другую сторону.</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralBarPage.qml" line="67" />
+        <location filename="../Modules/ControlCenter/GeneralBarPage.qml" line="67"/>
         <source>Left</source>
-        <translation type="finished">Слева</translation>
+        <translation>Слева</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralBarPage.qml" line="67" />
+        <location filename="../Modules/ControlCenter/GeneralBarPage.qml" line="67"/>
         <source>Top</source>
-        <translation type="finished">Сверху</translation>
+        <translation>Сверху</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralBarPage.qml" line="88" />
+        <location filename="../Modules/ControlCenter/GeneralBarPage.qml" line="88"/>
         <source>Right</source>
-        <translation type="finished">Справа</translation>
+        <translation>Справа</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralBarPage.qml" line="88" />
+        <location filename="../Modules/ControlCenter/GeneralBarPage.qml" line="88"/>
         <source>Bottom</source>
-        <translation type="finished">Снизу</translation>
+        <translation>Снизу</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralBarPage.qml" line="115" />
+        <location filename="../Modules/ControlCenter/GeneralBarPage.qml" line="115"/>
         <source>Quick settings widgets</source>
-        <translation type="finished">Виджеты быстрых настроек</translation>
+        <translation>Виджеты быстрых настроек</translation>
     </message>
 </context>
 <context>
     <name>GeneralEffectsPage</name>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2020" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2119"/>
         <source>Background</source>
-        <translation type="finished">Фон</translation>
+        <translation>Фон</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralEffectsPage.qml" line="25" />
+        <location filename="../Modules/ControlCenter/GeneralEffectsPage.qml" line="25"/>
         <source>Background effects</source>
-        <translation type="finished">Эффекты фона</translation>
+        <translation>Эффекты фона</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralEffectsPage.qml" line="26" />
+        <location filename="../Modules/ControlCenter/GeneralEffectsPage.qml" line="26"/>
         <source>Create or connect the Clavis X-Ray rules.</source>
-        <translation type="finished">Создайте или подключите правила Clavis X-Ray.</translation>
+        <translation>Создайте или подключите правила Clavis X-Ray.</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralEffectsPage.qml" line="48" />
+        <location filename="../Modules/ControlCenter/GeneralEffectsPage.qml" line="48"/>
         <source>Background opacity</source>
-        <translation type="finished">Непрозрачность фона</translation>
+        <translation>Непрозрачность фона</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralEffectsPage.qml" line="60" />
-        <location filename="../Modules/ControlCenter/GeneralEffectsPage.qml" line="65" />
+        <location filename="../Modules/ControlCenter/GeneralEffectsPage.qml" line="60"/>
+        <location filename="../Modules/ControlCenter/GeneralEffectsPage.qml" line="65"/>
         <source>Background blur</source>
-        <translation type="finished">Размытие фона</translation>
+        <translation>Размытие фона</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralEffectsPage.qml" line="73" />
-        <location filename="../Modules/ControlCenter/GeneralEffectsPage.qml" line="81" />
+        <location filename="../Modules/ControlCenter/GeneralEffectsPage.qml" line="73"/>
+        <location filename="../Modules/ControlCenter/GeneralEffectsPage.qml" line="81"/>
         <source>Blur wallpaper only</source>
-        <translation type="finished">Размывать только обои</translation>
+        <translation>Размывать только обои</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralEffectsPage.qml" line="74" />
+        <location filename="../Modules/ControlCenter/GeneralEffectsPage.qml" line="74"/>
         <source>Turning this off also blurs windows and uses more resources</source>
-        <translation type="finished">При выключении этого также размываются окна и расходуется больше ресурсов</translation>
+        <translation>При выключении этого также размываются окна и расходуется больше ресурсов</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralEffectsPage.qml" line="76" />
+        <location filename="../Modules/ControlCenter/GeneralEffectsPage.qml" line="76"/>
         <source>Configure Niri blur integration first</source>
-        <translation type="finished">Сначала настройте интеграцию размытия Niri</translation>
+        <translation>Сначала настройте интеграцию размытия Niri</translation>
     </message>
 </context>
 <context>
     <name>GeneralOverviewPage</name>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2021" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2120"/>
         <source>Interface</source>
-        <translation type="finished">Интерфейс</translation>
+        <translation>Интерфейс</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2022" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2121"/>
         <source>System</source>
-        <translation type="finished">Система</translation>
+        <translation>Система</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2023" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2122"/>
         <source>Applications</source>
-        <translation type="finished">Приложения</translation>
+        <translation>Приложения</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralOverviewPage.qml" line="101" />
+        <location filename="../Modules/ControlCenter/GeneralOverviewPage.qml" line="101"/>
         <source>Screen off, lock &amp; sleep</source>
-        <translation type="finished">Выключение экрана, блокировка и сон</translation>
+        <translation>Выключение экрана, блокировка и сон</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralOverviewPage.qml" line="126" />
+        <location filename="../Modules/ControlCenter/GeneralOverviewPage.qml" line="126"/>
         <source>Network unavailable</source>
-        <translation type="finished">Сеть недоступна</translation>
+        <translation>Сеть недоступна</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralOverviewPage.qml" line="138" />
+        <location filename="../Modules/ControlCenter/GeneralOverviewPage.qml" line="138"/>
         <source>Bluetooth unavailable</source>
-        <translation type="finished">Bluetooth недоступен</translation>
+        <translation>Bluetooth недоступен</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralOverviewPage.qml" line="141" />
+        <location filename="../Modules/ControlCenter/GeneralOverviewPage.qml" line="141"/>
         <source>Bluetooth is off</source>
-        <translation type="finished">Bluetooth выключен</translation>
+        <translation>Bluetooth выключен</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralOverviewPage.qml" line="147" />
+        <location filename="../Modules/ControlCenter/GeneralOverviewPage.qml" line="147"/>
         <source>%1 devices connected</source>
-        <translation type="finished">подключено устройств: %1</translation>
+        <translation>подключено устройств: %1</translation>
     </message>
 </context>
 <context>
     <name>GeneralPage</name>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="1979" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2077"/>
         <source>Displays</source>
-        <translation type="finished">Дисплеи</translation>
+        <translation>Дисплеи</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="1980" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2078"/>
         <source>Bar</source>
-        <translation type="finished">Полоса</translation>
+        <translation>Полоса</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="1981" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2079"/>
         <source>Sidebars</source>
-        <translation type="finished">Боковые панели</translation>
+        <translation>Боковые панели</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="1982" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2080"/>
         <source>Spotlight</source>
-        <translation type="finished">Spotlight</translation>
+        <translation>Spotlight</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="1983" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2081"/>
         <source>Transparency and blur</source>
-        <translation type="finished">Прозрачность и размытие</translation>
+        <translation>Прозрачность и размытие</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="1984" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2082"/>
         <source>Mouse &amp; touchpad</source>
-        <translation type="finished">Мышь и тачпад</translation>
+        <translation>Мышь и тачпад</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="1985" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2083"/>
         <source>Screen &amp; Sleep</source>
-        <translation type="finished">Экран и сон</translation>
+        <translation>Экран и сон</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="1986" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2084"/>
         <source>Keyboard shortcuts</source>
-        <translation type="finished">Сочетания клавиш</translation>
+        <translation>Сочетания клавиш</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="1987" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2085"/>
         <source>Language &amp; region</source>
-        <translation type="finished">Язык и регион</translation>
+        <translation>Язык и регион</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="1988" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2086"/>
         <source>Autostart</source>
-        <translation type="finished">Автозапуск</translation>
+        <translation>Автозапуск</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="1989" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2087"/>
         <source>Default applications</source>
-        <translation type="finished">Приложения по умолчанию</translation>
+        <translation>Приложения по умолчанию</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="1990" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2088"/>
         <source>Network</source>
-        <translation type="finished">Сеть</translation>
+        <translation>Сеть</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="1991" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2089"/>
         <source>Connected devices</source>
-        <translation type="finished">Подключённые устройства</translation>
+        <translation>Подключённые устройства</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="1992" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2090"/>
         <source>Pair new device</source>
-        <translation type="finished">Сопрячь новое устройство</translation>
+        <translation>Сопрячь новое устройство</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralPage.qml" line="98" />
+        <location filename="../Modules/ControlCenter/GeneralPage.qml" line="98"/>
         <source>Bluetooth device</source>
-        <translation type="finished">Устройство Bluetooth</translation>
+        <translation>Устройство Bluetooth</translation>
     </message>
 </context>
 <context>
     <name>GeneralSidebarPage</name>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2024" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2123"/>
         <source>Sidebars</source>
-        <translation type="finished">Боковые панели</translation>
+        <translation>Боковые панели</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2025" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2124"/>
         <source>Desktop card layout</source>
-        <translation type="finished">Раскладка карточек рабочего стола</translation>
+        <translation>Раскладка карточек рабочего стола</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2026" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2125"/>
         <source>Clock style</source>
-        <translation type="finished">Стиль часов</translation>
+        <translation>Стиль часов</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2027" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2126"/>
         <source>System cards</source>
-        <translation type="finished">Системные карточки</translation>
+        <translation>Системные карточки</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="29" />
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="667" />
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="29"/>
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="667"/>
         <source>Auto</source>
-        <translation type="finished">Авто</translation>
+        <translation>Авто</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="34" />
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="43" />
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="34"/>
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="43"/>
         <source>Graphics device</source>
-        <translation type="finished">Графическое устройство</translation>
+        <translation>Графическое устройство</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="61" />
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="95" />
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="61"/>
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="95"/>
         <source>Currently unavailable</source>
-        <translation type="finished">Сейчас недоступно</translation>
+        <translation>Сейчас недоступно</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="72" />
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="723" />
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="72"/>
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="723"/>
         <source>Follow Disk I/O card</source>
-        <translation type="finished">Следить за карточкой «Диск I/O»</translation>
+        <translation>Следить за карточкой «Диск I/O»</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="143" />
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="143"/>
         <source>Dashboard sidebar position</source>
-        <translation type="finished">Положение боковой панели дашборда</translation>
+        <translation>Положение боковой панели дашборда</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="149" />
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="169" />
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="149"/>
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="169"/>
         <source>Left</source>
-        <translation type="finished">Слева</translation>
+        <translation>Слева</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="153" />
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="173" />
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="153"/>
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="173"/>
         <source>Right</source>
-        <translation type="finished">Справа</translation>
+        <translation>Справа</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="163" />
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="163"/>
         <source>Quick settings sidebar position</source>
-        <translation type="finished">Положение боковой панели быстрых настроек</translation>
+        <translation>Положение боковой панели быстрых настроек</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="184" />
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="189" />
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="184"/>
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="189"/>
         <source>Keep sidebar loaded</source>
-        <translation type="finished">Держать боковую панель загруженной</translation>
+        <translation>Держать боковую панель загруженной</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="185" />
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="185"/>
         <source>Opens faster next time, but uses more memory</source>
-        <translation type="finished">В следующий раз открывается быстрее, но потребляет больше памяти</translation>
+        <translation>В следующий раз открывается быстрее, но потребляет больше памяти</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="213" />
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="213"/>
         <source>Free drag</source>
-        <translation type="finished">Свободное перетаскивание</translation>
+        <translation>Свободное перетаскивание</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="217" />
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="217"/>
         <source>Least busy</source>
-        <translation type="finished">Менее загруженное</translation>
+        <translation>Менее загруженное</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="221" />
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="221"/>
         <source>Most busy</source>
-        <translation type="finished">Наиболее загруженное</translation>
+        <translation>Наиболее загруженное</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="235" />
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="235"/>
         <source>Top left</source>
-        <translation type="finished">Слева сверху</translation>
+        <translation>Слева сверху</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="239" />
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="239"/>
         <source>Top right</source>
-        <translation type="finished">Справа сверху</translation>
+        <translation>Справа сверху</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="243" />
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="243"/>
         <source>Bottom left</source>
-        <translation type="finished">Слева внизу</translation>
+        <translation>Слева внизу</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="247" />
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="247"/>
         <source>Bottom right</source>
-        <translation type="finished">Справа внизу</translation>
+        <translation>Справа внизу</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="251" />
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="251"/>
         <source>Center</source>
-        <translation type="finished">По центру</translation>
+        <translation>По центру</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="264" />
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="268" />
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="264"/>
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="268"/>
         <source>Snap desktop cards to grid</source>
-        <translation type="finished">Привязывать карточки рабочего стола к сетке</translation>
+        <translation>Привязывать карточки рабочего стола к сетке</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="276" />
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="280" />
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="276"/>
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="280"/>
         <source>Show desktop grid while dragging</source>
-        <translation type="finished">Показывать сетку рабочего стола при перетаскивании</translation>
+        <translation>Показывать сетку рабочего стола при перетаскивании</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="304" />
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="422" />
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="304"/>
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="422"/>
         <source>Digital</source>
-        <translation type="finished">Цифровые</translation>
+        <translation>Цифровые</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="309" />
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="309"/>
         <source>Cookie</source>
-        <translation type="finished">Печенье</translation>
+        <translation>Печенье</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="333" />
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="333"/>
         <source>Sides</source>
-        <translation type="finished">Стороны</translation>
+        <translation>Стороны</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="334" />
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="334"/>
         <source>0 or 1 produces a circle; up to 40 sides</source>
-        <translation type="finished">0 или 1 — круг; до 40 сторон</translation>
+        <translation>0 или 1 — круг; до 40 сторон</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="352" />
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="357" />
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="352"/>
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="357"/>
         <source>Constantly rotate</source>
-        <translation type="finished">Постоянно вращать</translation>
+        <translation>Постоянно вращать</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="367" />
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="372" />
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="367"/>
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="372"/>
         <source>Hour marks</source>
-        <translation type="finished">Часовые метки</translation>
+        <translation>Часовые метки</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="368" />
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="368"/>
         <source>Available with Dots or Full dials</source>
-        <translation type="finished">Доступно с циферблатами «Точки» или «Полный»</translation>
+        <translation>Доступно с циферблатами «Точки» или «Полный»</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="381" />
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="386" />
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="381"/>
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="386"/>
         <source>Digits in the middle</source>
-        <translation type="finished">Цифры по центру</translation>
+        <translation>Цифры по центру</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="382" />
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="382"/>
         <source>Unavailable with the Numbers dial</source>
-        <translation type="finished">Недоступно с циферблатом «Цифры»</translation>
+        <translation>Недоступно с циферблатом «Цифры»</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="394" />
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="394"/>
         <source>Dial style</source>
-        <translation type="finished">Стиль циферблата</translation>
+        <translation>Стиль циферблата</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="407" />
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="449" />
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="491" />
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="539" />
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="581" />
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="407"/>
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="449"/>
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="491"/>
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="539"/>
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="581"/>
         <source>None</source>
-        <translation type="finished">Нет</translation>
+        <translation>Нет</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="412" />
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="554" />
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="412"/>
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="554"/>
         <source>Dots</source>
-        <translation type="finished">Точки</translation>
+        <translation>Точки</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="417" />
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="417"/>
         <source>Full</source>
-        <translation type="finished">Полный</translation>
+        <translation>Полный</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="436" />
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="436"/>
         <source>Hour hand</source>
-        <translation type="finished">Часовая стрелка</translation>
+        <translation>Часовая стрелка</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="454" />
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="496" />
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="544" />
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="454"/>
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="496"/>
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="544"/>
         <source>Classic</source>
-        <translation type="finished">Классический</translation>
+        <translation>Классический</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="459" />
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="459"/>
         <source>Hollow</source>
-        <translation type="finished">Полый</translation>
+        <translation>Полый</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="464" />
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="464"/>
         <source>Fill</source>
-        <translation type="finished">Заливка</translation>
+        <translation>Заливка</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="478" />
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="478"/>
         <source>Minute hand</source>
-        <translation type="finished">Минутная стрелка</translation>
+        <translation>Минутная стрелка</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="501" />
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="501"/>
         <source>Thin</source>
-        <translation type="finished">Тонкий</translation>
+        <translation>Тонкий</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="506" />
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="506"/>
         <source>Medium</source>
-        <translation type="finished">Средний</translation>
+        <translation>Средний</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="511" />
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="511"/>
         <source>Bold</source>
-        <translation type="finished">Полужирный</translation>
+        <translation>Полужирный</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="526" />
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="526"/>
         <source>Second hand</source>
-        <translation type="finished">Секундная стрелка</translation>
+        <translation>Секундная стрелка</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="549" />
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="549"/>
         <source>Line</source>
-        <translation type="finished">Линия</translation>
+        <translation>Линия</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="568" />
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="568"/>
         <source>Date style</source>
-        <translation type="finished">Стиль даты</translation>
+        <translation>Стиль даты</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="586" />
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="586"/>
         <source>Bubble</source>
-        <translation type="finished">Пузырь</translation>
+        <translation>Пузырь</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="591" />
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="591"/>
         <source>Border</source>
-        <translation type="finished">Граница</translation>
+        <translation>Граница</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="596" />
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="596"/>
         <source>Rect</source>
-        <translation type="finished">Прямоугольник</translation>
+        <translation>Прямоугольник</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="641" />
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="641"/>
         <source>Desktop</source>
-        <translation type="finished">Рабочий стол</translation>
+        <translation>Рабочий стол</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="641" />
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="641"/>
         <source>Sidebar</source>
-        <translation type="finished">Боковая панель</translation>
+        <translation>Боковая панель</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="660" />
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="660"/>
         <source>GPU</source>
-        <translation type="finished">ГП</translation>
+        <translation>ГП</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="661" />
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="661"/>
         <source>Select the graphics device shown by the GPU card</source>
-        <translation type="finished">Выберите графическое устройство, показываемое карточкой «ГП»</translation>
+        <translation>Выберите графическое устройство, показываемое карточкой «ГП»</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="678" />
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="678"/>
         <source>System monitor snapshot interval</source>
-        <translation type="finished">Интервал снимков системного монитора</translation>
+        <translation>Интервал снимков системного монитора</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="684" />
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="684"/>
         <source>Interval</source>
-        <translation type="finished">Интервал</translation>
+        <translation>Интервал</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="702" />
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="702"/>
         <source>ms</source>
-        <translation type="finished">мс</translation>
+        <translation>мс</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="716" />
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="716"/>
         <source>Disk capacity</source>
-        <translation type="finished">Ёмкость диска</translation>
+        <translation>Ёмкость диска</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="717" />
+        <location filename="../Modules/ControlCenter/GeneralSidebarPage.qml" line="717"/>
         <source>Select the physical disk shown by the capacity card</source>
-        <translation type="finished">Выберите физический диск, показываемый карточкой ёмкости</translation>
+        <translation>Выберите физический диск, показываемый карточкой ёмкости</translation>
     </message>
 </context>
 <context>
     <name>GeneralSubpageHeader</name>
     <message>
-        <location filename="../Modules/ControlCenter/GeneralSubpageHeader.qml" line="12" />
+        <location filename="../Modules/ControlCenter/GeneralSubpageHeader.qml" line="12"/>
         <source>Back to General settings</source>
-        <translation type="finished">Назад к общим настройкам</translation>
+        <translation>Назад к общим настройкам</translation>
     </message>
 </context>
 <context>
     <name>HorizontalClockPage</name>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2028" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2127"/>
         <source>Horizontal clock style</source>
-        <translation type="finished">Стиль горизонтальных часов</translation>
+        <translation>Стиль горизонтальных часов</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/HorizontalClockPage.qml" line="88" />
-        <location filename="../Modules/ControlCenter/HorizontalClockPage.qml" line="92" />
+        <location filename="../Modules/ControlCenter/HorizontalClockPage.qml" line="88"/>
+        <location filename="../Modules/ControlCenter/HorizontalClockPage.qml" line="92"/>
         <source>Hide date</source>
-        <translation type="finished">Скрыть дату</translation>
+        <translation>Скрыть дату</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/HorizontalClockPage.qml" line="98" />
+        <location filename="../Modules/ControlCenter/HorizontalClockPage.qml" line="98"/>
         <source>Font size</source>
-        <translation type="finished">Размер шрифта</translation>
+        <translation>Размер шрифта</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/HorizontalClockPage.qml" line="113" />
+        <location filename="../Modules/ControlCenter/HorizontalClockPage.qml" line="113"/>
         <source>Weight</source>
-        <translation type="finished">Насыщенность</translation>
+        <translation>Насыщенность</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/HorizontalClockPage.qml" line="128" />
+        <location filename="../Modules/ControlCenter/HorizontalClockPage.qml" line="128"/>
         <source>Width</source>
-        <translation type="finished">Ширина</translation>
+        <translation>Ширина</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/HorizontalClockPage.qml" line="143" />
+        <location filename="../Modules/ControlCenter/HorizontalClockPage.qml" line="143"/>
         <source>Optical size</source>
-        <translation type="finished">Оптический размер</translation>
+        <translation>Оптический размер</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/HorizontalClockPage.qml" line="158" />
+        <location filename="../Modules/ControlCenter/HorizontalClockPage.qml" line="158"/>
         <source>Grade</source>
-        <translation type="finished">Оценка</translation>
+        <translation>Оценка</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/HorizontalClockPage.qml" line="173" />
+        <location filename="../Modules/ControlCenter/HorizontalClockPage.qml" line="173"/>
         <source>Roundness</source>
-        <translation type="finished">Скругление</translation>
+        <translation>Скругление</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/HorizontalClockPage.qml" line="188" />
+        <location filename="../Modules/ControlCenter/HorizontalClockPage.qml" line="188"/>
         <source>Slant</source>
-        <translation type="finished">Наклон</translation>
+        <translation>Наклон</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/HorizontalClockPage.qml" line="205" />
+        <location filename="../Modules/ControlCenter/HorizontalClockPage.qml" line="205"/>
         <source>Current digit</source>
-        <translation type="finished">Текущая цифра</translation>
+        <translation>Текущая цифра</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/HorizontalClockPage.qml" line="250" />
+        <location filename="../Modules/ControlCenter/HorizontalClockPage.qml" line="250"/>
         <source>Color</source>
-        <translation type="finished">Цвет</translation>
+        <translation>Цвет</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/HorizontalClockPage.qml" line="251" />
+        <location filename="../Modules/ControlCenter/HorizontalClockPage.qml" line="251"/>
         <source>Default theme colors follow the Matugen theme</source>
-        <translation type="finished">Цвета темы по умолчанию следуют теме Matugen</translation>
+        <translation>Цвета темы по умолчанию следуют теме Matugen</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/HorizontalClockPage.qml" line="256" />
+        <location filename="../Modules/ControlCenter/HorizontalClockPage.qml" line="256"/>
         <source>Primary</source>
-        <translation type="finished">Основной</translation>
+        <translation>Основной</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/HorizontalClockPage.qml" line="259" />
+        <location filename="../Modules/ControlCenter/HorizontalClockPage.qml" line="259"/>
         <source>Inverse</source>
-        <translation type="finished">Инверсия</translation>
+        <translation>Инверсия</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/HorizontalClockPage.qml" line="262" />
+        <location filename="../Modules/ControlCenter/HorizontalClockPage.qml" line="262"/>
         <source>Custom</source>
-        <translation type="finished">Свой</translation>
+        <translation>Свой</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/HorizontalClockPage.qml" line="283" />
+        <location filename="../Modules/ControlCenter/HorizontalClockPage.qml" line="283"/>
         <source>#RRGGBB or #RRGGBBAA</source>
-        <translation type="finished">#RRGGBB или #RRGGBBAA</translation>
+        <translation>#RRGGBB или #RRGGBBAA</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/HorizontalClockPage.qml" line="284" />
+        <location filename="../Modules/ControlCenter/HorizontalClockPage.qml" line="284"/>
         <source>Custom color</source>
-        <translation type="finished">Свой цвет</translation>
+        <translation>Свой цвет</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/HorizontalClockPage.qml" line="295" />
+        <location filename="../Modules/ControlCenter/HorizontalClockPage.qml" line="295"/>
         <source>Position: %1</source>
-        <translation type="finished">Положение: %1</translation>
+        <translation>Положение: %1</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/HorizontalClockPage.qml" line="303" />
+        <location filename="../Modules/ControlCenter/HorizontalClockPage.qml" line="303"/>
         <source>X offset</source>
-        <translation type="finished">Смещение X</translation>
+        <translation>Смещение X</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/HorizontalClockPage.qml" line="321" />
+        <location filename="../Modules/ControlCenter/HorizontalClockPage.qml" line="321"/>
         <source>Y offset</source>
-        <translation type="finished">Смещение Y</translation>
+        <translation>Смещение Y</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/HorizontalClockPage.qml" line="339" />
+        <location filename="../Modules/ControlCenter/HorizontalClockPage.qml" line="339"/>
         <source>Rotation</source>
-        <translation type="finished">Поворот</translation>
+        <translation>Поворот</translation>
     </message>
 </context>
 <context>
     <name>HorizontalLyricsLayout</name>
     <message>
-        <location filename="../Modules/Keystone/LyricsContent/HorizontalLyricsLayout.qml" line="94" />
+        <location filename="../Modules/Keystone/LyricsContent/HorizontalLyricsLayout.qml" line="94"/>
         <source>Loading lyrics…</source>
-        <translation type="finished">Загрузка текста песни…</translation>
+        <translation>Загрузка текста песни…</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/LyricsContent/HorizontalLyricsLayout.qml" line="95" />
+        <location filename="../Modules/Keystone/LyricsContent/HorizontalLyricsLayout.qml" line="95"/>
         <source>Failed to load lyrics</source>
-        <translation type="finished">Не удалось загрузить тексты песен</translation>
+        <translation>Не удалось загрузить тексты песен</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/LyricsContent/HorizontalLyricsLayout.qml" line="96" />
+        <location filename="../Modules/Keystone/LyricsContent/HorizontalLyricsLayout.qml" line="96"/>
         <source>No lyrics available</source>
-        <translation type="finished">Текст песни недоступен</translation>
+        <translation>Текст песни недоступен</translation>
     </message>
 </context>
 <context>
     <name>HorizontalPillRecordingVisual</name>
     <message>
-        <location filename="../Modules/Keystone/Styles/Recording/HorizontalPillRecordingVisual.qml" line="187" />
+        <location filename="../Modules/Keystone/Styles/Recording/HorizontalPillRecordingVisual.qml" line="187"/>
         <source>Processing</source>
-        <translation type="finished">Обработка</translation>
+        <translation>Обработка</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/Styles/Recording/HorizontalPillRecordingVisual.qml" line="242" />
+        <location filename="../Modules/Keystone/Styles/Recording/HorizontalPillRecordingVisual.qml" line="242"/>
         <source>Stop recording</source>
-        <translation type="finished">Остановить запись</translation>
+        <translation>Остановить запись</translation>
     </message>
 </context>
 <context>
     <name>HourlyAirQualityTrendPane</name>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/HourlyAirQualityTrendPane.qml" line="41" />
+        <location filename="../Modules/Sidebars/Dashboard/HourlyAirQualityTrendPane.qml" line="41"/>
         <source>Excellent</source>
-        <translation type="finished">Отличный</translation>
+        <translation>Отличный</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/HourlyAirQualityTrendPane.qml" line="41" />
+        <location filename="../Modules/Sidebars/Dashboard/HourlyAirQualityTrendPane.qml" line="41"/>
         <source>Good</source>
-        <translation type="finished">Хороший</translation>
+        <translation>Хороший</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/HourlyAirQualityTrendPane.qml" line="41" />
+        <location filename="../Modules/Sidebars/Dashboard/HourlyAirQualityTrendPane.qml" line="41"/>
         <source>Poor</source>
-        <translation type="finished">Слабый</translation>
+        <translation>Слабый</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/HourlyAirQualityTrendPane.qml" line="41" />
+        <location filename="../Modules/Sidebars/Dashboard/HourlyAirQualityTrendPane.qml" line="41"/>
         <source>Unhealthy</source>
-        <translation type="finished">Неблагоприятное</translation>
+        <translation>Неблагоприятное</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/HourlyAirQualityTrendPane.qml" line="41" />
+        <location filename="../Modules/Sidebars/Dashboard/HourlyAirQualityTrendPane.qml" line="41"/>
         <source>Very unhealthy</source>
-        <translation type="finished">Очень неблагоприятное</translation>
+        <translation>Очень неблагоприятное</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/HourlyAirQualityTrendPane.qml" line="42" />
+        <location filename="../Modules/Sidebars/Dashboard/HourlyAirQualityTrendPane.qml" line="42"/>
         <source>Hazardous</source>
-        <translation type="finished">Опасный</translation>
+        <translation>Опасный</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/HourlyAirQualityTrendPane.qml" line="358" />
+        <location filename="../Modules/Sidebars/Dashboard/HourlyAirQualityTrendPane.qml" line="358"/>
         <source>Air quality data is unavailable</source>
-        <translation type="finished">Данные о качестве воздуха недоступны</translation>
+        <translation>Данные о качестве воздуха недоступны</translation>
     </message>
 </context>
 <context>
     <name>HourlyWindTrendPane</name>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/HourlyWindTrendPane.qml" line="313" />
+        <location filename="../Modules/Sidebars/Dashboard/HourlyWindTrendPane.qml" line="313"/>
         <source>Wind data is unavailable</source>
-        <translation type="finished">Данные о ветре недоступны</translation>
+        <translation>Данные о ветре недоступны</translation>
     </message>
 </context>
 <context>
     <name>HubContent</name>
     <message>
-        <location filename="../Modules/Keystone/Hub/HubContent.qml" line="80" />
+        <location filename="../Common/KeystoneHubRegistry.qml" line="36"/>
         <source>Dashboard</source>
-        <translation type="finished">Dashboard</translation>
+        <translation>Dashboard</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/Hub/HubContent.qml" line="86" />
+        <location filename="../Common/KeystoneHubRegistry.qml" line="48"/>
         <source>Media</source>
-        <translation type="finished">Media</translation>
+        <translation>Media</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/Hub/HubContent.qml" line="92" />
+        <location filename="../Common/KeystoneHubRegistry.qml" line="59"/>
         <source>Upload</source>
-        <translation type="finished">Upload</translation>
+        <translation>Upload</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/Hub/HubContent.qml" line="98" />
+        <location filename="../Common/KeystoneHubRegistry.qml" line="71"/>
         <source>Developer</source>
-        <translation type="finished">Developer</translation>
+        <translation>Developer</translation>
     </message>
 </context>
 <context>
     <name>IdleContent</name>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/IdleContent.qml" line="13" />
+        <location filename="../Modules/Sidebars/QuickSettings/IdleContent.qml" line="13"/>
         <source>Idle management</source>
-        <translation type="finished">Управление простоем</translation>
+        <translation>Управление простоем</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/IdleContent.qml" line="27" />
+        <location filename="../Modules/Sidebars/QuickSettings/IdleContent.qml" line="27"/>
         <source> seconds</source>
-        <translation type="finished"> секунд</translation>
+        <translation> секунд</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/IdleContent.qml" line="29" />
+        <location filename="../Modules/Sidebars/QuickSettings/IdleContent.qml" line="29"/>
         <source> minutes</source>
-        <translation type="finished"> минут</translation>
+        <translation> минут</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/IdleContent.qml" line="52" />
+        <location filename="../Modules/Sidebars/QuickSettings/IdleContent.qml" line="52"/>
         <source>Paused</source>
-        <translation type="finished">На паузе</translation>
+        <translation>На паузе</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/IdleContent.qml" line="54" />
+        <location filename="../Modules/Sidebars/QuickSettings/IdleContent.qml" line="54"/>
         <source> enabled</source>
-        <translation type="finished"> включено</translation>
+        <translation> включено</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/IdleContent.qml" line="114" />
-        <location filename="../Modules/Sidebars/QuickSettings/IdleContent.qml" line="121" />
+        <location filename="../Modules/Sidebars/QuickSettings/IdleContent.qml" line="114"/>
+        <location filename="../Modules/Sidebars/QuickSettings/IdleContent.qml" line="121"/>
         <source>Keep awake</source>
-        <translation type="finished">Не спать</translation>
+        <translation>Не спать</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/IdleContent.qml" line="129" />
-        <location filename="../Modules/Sidebars/QuickSettings/IdleContent.qml" line="137" />
+        <location filename="../Modules/Sidebars/QuickSettings/IdleContent.qml" line="129"/>
+        <location filename="../Modules/Sidebars/QuickSettings/IdleContent.qml" line="137"/>
         <source>Automatic idle</source>
-        <translation type="finished">Автоматический простой</translation>
+        <translation>Автоматический простой</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/IdleContent.qml" line="145" />
+        <location filename="../Modules/Sidebars/QuickSettings/IdleContent.qml" line="145"/>
         <source>Idle actions</source>
-        <translation type="finished">Действия при простое</translation>
+        <translation>Действия при простое</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/IdleContent.qml" line="150" />
+        <location filename="../Modules/Sidebars/QuickSettings/IdleContent.qml" line="150"/>
         <source>Dim screen</source>
-        <translation type="finished">Затемнить экран</translation>
+        <translation>Затемнить экран</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/IdleContent.qml" line="158" />
+        <location filename="../Modules/Sidebars/QuickSettings/IdleContent.qml" line="158"/>
         <source>Lock session</source>
-        <translation type="finished">Заблокировать сеанс</translation>
+        <translation>Заблокировать сеанс</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/IdleContent.qml" line="165" />
+        <location filename="../Modules/Sidebars/QuickSettings/IdleContent.qml" line="165"/>
         <source>Turn off displays</source>
-        <translation type="finished">Выключить дисплеи</translation>
+        <translation>Выключить дисплеи</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/IdleContent.qml" line="172" />
+        <location filename="../Modules/Sidebars/QuickSettings/IdleContent.qml" line="172"/>
         <source>Suspend system</source>
-        <translation type="finished">Приостановить систему</translation>
+        <translation>Приостановить систему</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/IdleContent.qml" line="209" />
+        <location filename="../Modules/Sidebars/QuickSettings/IdleContent.qml" line="209"/>
         <source>Off</source>
-        <translation type="finished">Выкл.</translation>
+        <translation>Выкл.</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/IdleContent.qml" line="210" />
+        <location filename="../Modules/Sidebars/QuickSettings/IdleContent.qml" line="210"/>
         <source> · Triggered</source>
-        <translation type="finished"> · Сработало</translation>
+        <translation> · Сработало</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/IdleContent.qml" line="274" />
+        <location filename="../Modules/Sidebars/QuickSettings/IdleContent.qml" line="274"/>
         <source>Wait time</source>
-        <translation type="finished">Время ожидания</translation>
+        <translation>Время ожидания</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/IdleContent.qml" line="290" />
+        <location filename="../Modules/Sidebars/QuickSettings/IdleContent.qml" line="290"/>
         <source>%1 wait time</source>
-        <translation type="finished">%1 время ожидания</translation>
+        <translation>%1 время ожидания</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/IdleContent.qml" line="302" />
+        <location filename="../Modules/Sidebars/QuickSettings/IdleContent.qml" line="302"/>
         <source>Dim percentage</source>
-        <translation type="finished">Процент затемнения</translation>
+        <translation>Процент затемнения</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/IdleContent.qml" line="321" />
+        <location filename="../Modules/Sidebars/QuickSettings/IdleContent.qml" line="321"/>
         <source>Skip while keeping awake</source>
-        <translation type="finished">Пропустить, сохраняя «не спать»</translation>
+        <translation>Пропустить, сохраняя «не спать»</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/IdleContent.qml" line="327" />
+        <location filename="../Modules/Sidebars/QuickSettings/IdleContent.qml" line="327"/>
         <source>%1: respect keep-awake</source>
-        <translation type="finished">%1: учитывать keep-awake</translation>
+        <translation>%1: учитывать keep-awake</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/IdleContent.qml" line="351" />
+        <location filename="../Modules/Sidebars/QuickSettings/IdleContent.qml" line="351"/>
         <source>Screen dim percentage</source>
-        <translation type="finished">Процент затемнения экрана</translation>
+        <translation>Процент затемнения экрана</translation>
     </message>
 </context>
 <context>
     <name>IdleService</name>
     <message>
-        <location filename="../Services/IdleService.qml" line="130" />
+        <location filename="../Services/IdleService.qml" line="130"/>
         <source>Unknown idle stage: </source>
-        <translation type="finished">Неизвестная стадия простоя: </translation>
+        <translation>Неизвестная стадия простоя: </translation>
     </message>
     <message>
-        <location filename="../Services/IdleService.qml" line="285" />
+        <location filename="../Services/IdleService.qml" line="285"/>
         <source>Lock-screen request failed: </source>
-        <translation type="finished">Не удалось заблокировать экран: </translation>
+        <translation>Не удалось заблокировать экран: </translation>
     </message>
     <message>
-        <location filename="../Services/IdleService.qml" line="417" />
+        <location filename="../Services/IdleService.qml" line="417"/>
         <source>niri display power action failed, exit code </source>
-        <translation type="finished">не удалось выполнить действие niri по питанию дисплея, код выхода </translation>
+        <translation>не удалось выполнить действие niri по питанию дисплея, код выхода </translation>
     </message>
     <message>
-        <location filename="../Services/IdleService.qml" line="434" />
+        <location filename="../Services/IdleService.qml" line="434"/>
         <source>systemd-logind suspend action failed, exit code </source>
-        <translation type="finished">не удалось выполнить приостановку systemd-logind, код выхода </translation>
+        <translation>не удалось выполнить приостановку systemd-logind, код выхода </translation>
     </message>
 </context>
 <context>
     <name>InfoToolDrawer</name>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/InfoToolDrawer.qml" line="24" />
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/InfoToolDrawer.qml" line="24"/>
         <source>Calendar</source>
-        <translation type="finished">Календарь</translation>
+        <translation>Календарь</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/InfoToolDrawer.qml" line="28" />
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/InfoToolDrawer.qml" line="28"/>
         <source>To-do</source>
-        <translation type="finished">Задачи</translation>
+        <translation>Задачи</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/InfoToolDrawer.qml" line="32" />
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/InfoToolDrawer.qml" line="32"/>
         <source>Timer</source>
-        <translation type="finished">Таймер</translation>
+        <translation>Таймер</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/InfoToolDrawer.qml" line="166" />
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/InfoToolDrawer.qml" line="176" />
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/InfoToolDrawer.qml" line="166"/>
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/InfoToolDrawer.qml" line="176"/>
         <source>Expand tools</source>
-        <translation type="finished">Развернуть инструменты</translation>
+        <translation>Развернуть инструменты</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/InfoToolDrawer.qml" line="189" />
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/InfoToolDrawer.qml" line="189"/>
         <source>   •   %1 tasks</source>
-        <translation type="finished">   •   %1 задач</translation>
+        <translation>   •   %1 задач</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/InfoToolDrawer.qml" line="222" />
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/InfoToolDrawer.qml" line="232" />
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/InfoToolDrawer.qml" line="222"/>
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/InfoToolDrawer.qml" line="232"/>
         <source>Collapse tools</source>
-        <translation type="finished">Свернуть инструменты</translation>
+        <translation>Свернуть инструменты</translation>
     </message>
 </context>
 <context>
     <name>KeyboardLockIndicator</name>
     <message>
-        <location filename="../Modules/Keystone/Styles/Shared/KeyboardLockIndicator.qml" line="12" />
+        <location filename="../Modules/Keystone/Styles/Shared/KeyboardLockIndicator.qml" line="12"/>
         <source>Caps Lock</source>
-        <translation type="finished">Caps Lock</translation>
+        <translation>Caps Lock</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/Styles/Shared/KeyboardLockIndicator.qml" line="12" />
+        <location filename="../Modules/Keystone/Styles/Shared/KeyboardLockIndicator.qml" line="12"/>
         <source>Num Lock</source>
-        <translation type="finished">Num Lock</translation>
+        <translation>Num Lock</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/Styles/Shared/KeyboardLockIndicator.qml" line="13" />
+        <location filename="../Modules/Keystone/Styles/Shared/KeyboardLockIndicator.qml" line="13"/>
         <source>On</source>
-        <translation type="finished">Вкл.</translation>
+        <translation>Вкл.</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/Styles/Shared/KeyboardLockIndicator.qml" line="13" />
+        <location filename="../Modules/Keystone/Styles/Shared/KeyboardLockIndicator.qml" line="13"/>
         <source>Off</source>
-        <translation type="finished">Выкл.</translation>
+        <translation>Выкл.</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/Styles/Shared/KeyboardLockIndicator.qml" line="16" />
+        <location filename="../Modules/Keystone/Styles/Shared/KeyboardLockIndicator.qml" line="16"/>
         <source>%1: %2</source>
-        <translation type="finished">%1: %2</translation>
+        <translation>%1: %2</translation>
     </message>
 </context>
 <context>
     <name>Keystone</name>
     <message>
-        <location filename="../Modules/Keystone/Keystone.qml" line="49" />
+        <location filename="../Modules/Keystone/Keystone.qml" line="49"/>
         <source>Choose user avatar</source>
-        <translation type="finished">Выберите аватар пользователя</translation>
+        <translation>Выберите аватар пользователя</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/Keystone.qml" line="50" />
+        <location filename="../Modules/Keystone/Keystone.qml" line="50"/>
         <source>The image will be copied to ~/.face and used by the Dashboard and lock screen</source>
-        <translation type="finished">Изображение будет скопировано в ~/.face и использоваться в дашборде и на экране блокировки</translation>
+        <translation>Изображение будет скопировано в ~/.face и использоваться в дашборде и на экране блокировки</translation>
+    </message>
+</context>
+<context>
+    <name>KeystoneHubPage</name>
+    <message>
+        <location filename="../Common/generated/SearchCatalog.js" line="2128"/>
+        <source>Tabs</source>
+        <translation>Вкладки</translation>
+    </message>
+    <message>
+        <location filename="../Common/generated/SearchCatalog.js" line="2129"/>
+        <source>Dashboard widgets</source>
+        <translation>Виджеты Dashboard</translation>
+    </message>
+    <message>
+        <location filename="../Common/generated/SearchCatalog.js" line="2130"/>
+        <source>Keyhole</source>
+        <translation>Замочная скважина</translation>
+    </message>
+    <message>
+        <location filename="../Modules/ControlCenter/KeystoneHubPage.qml" line="50"/>
+        <source>Drag to reorder. A turned-off tab is not created and uses no memory. At least one tab stays on.</source>
+        <translation>Перетаскивайте, чтобы изменить порядок. Выключенная вкладка не создаётся и не занимает память. Хотя бы одна вкладка остаётся включённой.</translation>
+    </message>
+    <message>
+        <location filename="../Modules/ControlCenter/KeystoneHubPage.qml" line="92"/>
+        <source>Widgets of the Dashboard column, top to bottom. Turning off Resource usage also stops collecting its statistics.</source>
+        <translation>Виджеты колонки Dashboard сверху вниз. Если выключить «Использование ресурсов», перестанет собираться и его статистика.</translation>
+    </message>
+    <message>
+        <location filename="../Modules/ControlCenter/KeystoneHubPage.qml" line="93"/>
+        <source>The Dashboard tab is turned off.</source>
+        <translation>Вкладка Dashboard выключена.</translation>
+    </message>
+    <message>
+        <location filename="../Modules/ControlCenter/KeystoneHubPage.qml" line="134"/>
+        <location filename="../Modules/ControlCenter/KeystoneHubPage.qml" line="140"/>
+        <source>Show keyhole</source>
+        <translation>Показывать замочную скважину</translation>
+    </message>
+    <message>
+        <location filename="../Modules/ControlCenter/KeystoneHubPage.qml" line="135"/>
+        <source>The card carousel next to the Dashboard column</source>
+        <translation>Карусель карточек рядом с колонкой Dashboard</translation>
+    </message>
+    <message>
+        <location filename="../Modules/ControlCenter/KeystoneHubPage.qml" line="147"/>
+        <source>Keyhole side</source>
+        <translation>Сторона замочной скважины</translation>
+    </message>
+    <message>
+        <location filename="../Modules/ControlCenter/KeystoneHubPage.qml" line="153"/>
+        <source>Left</source>
+        <translation>Слева</translation>
+    </message>
+    <message>
+        <location filename="../Modules/ControlCenter/KeystoneHubPage.qml" line="156"/>
+        <source>Right</source>
+        <translation>Справа</translation>
+    </message>
+    <message>
+        <location filename="../Modules/ControlCenter/KeystoneHubPage.qml" line="167"/>
+        <source>Cards in the keyhole. Without cards the keyhole is hidden.</source>
+        <translation>Карточки в замочной скважине. Без карточек она скрыта.</translation>
+    </message>
+</context>
+<context>
+    <name>KeystoneHubRegistry</name>
+    <message>
+        <location filename="../Common/KeystoneHubRegistry.qml" line="102"/>
+        <source>Calendar</source>
+        <translation>Календарь</translation>
     </message>
 </context>
 <context>
     <name>KeystonePage</name>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="1995" />
-        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="274" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2093"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2134"/>
+        <source>Main menu</source>
+        <translation>Главное меню</translation>
+    </message>
+    <message>
+        <location filename="../Common/generated/SearchCatalog.js" line="2094"/>
+        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="288"/>
         <source>Horizontal clock style</source>
-        <translation type="finished">Стиль горизонтальных часов</translation>
+        <translation>Стиль горизонтальных часов</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2029" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2131"/>
         <source>Keystone style</source>
-        <translation type="finished">Стиль Keystone</translation>
+        <translation>Стиль Keystone</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2030" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2132"/>
         <source>Mouse actions</source>
-        <translation type="finished">Действия мыши</translation>
+        <translation>Действия мыши</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2031" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2133"/>
         <source>Keyboard indicators</source>
-        <translation type="finished">Индикаторы клавиатуры</translation>
+        <translation>Индикаторы клавиатуры</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2032" />
-        <source>Keyhole</source>
-        <translation type="finished">Замочная скважина</translation>
-    </message>
-    <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2033" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2135"/>
         <source>Horizontal clock</source>
-        <translation type="finished">Горизонтальные часы</translation>
+        <translation>Горизонтальные часы</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2034" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2136"/>
         <source>Recording</source>
-        <translation type="finished">Запись</translation>
+        <translation>Запись</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="82" />
+        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="77"/>
+        <source>%1 (tab is off)</source>
+        <translation>%1 (вкладка выключена)</translation>
+    </message>
+    <message>
+        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="103"/>
         <source>Back to Keystone settings</source>
-        <translation type="finished">Назад к настройкам Keystone</translation>
+        <translation>Назад к настройкам Keystone</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="115" />
+        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="136"/>
         <source>Style</source>
-        <translation type="finished">Стиль</translation>
+        <translation>Стиль</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="118" />
+        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="139"/>
         <source>Choose Keystone style</source>
-        <translation type="finished">Выберите стиль Keystone</translation>
+        <translation>Выберите стиль Keystone</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="126" />
+        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="147"/>
         <source>Screen edge</source>
-        <translation type="finished">Край экрана</translation>
+        <translation>Край экрана</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="149" />
+        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="170"/>
         <source>Hover</source>
-        <translation type="finished">Наведение</translation>
+        <translation>Наведение</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="156" />
+        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="177"/>
         <source>Left click</source>
-        <translation type="finished">Левый клик</translation>
+        <translation>Левый клик</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="163" />
+        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="184"/>
         <source>Middle click</source>
-        <translation type="finished">Средний клик</translation>
+        <translation>Средний клик</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="184" />
-        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="187" />
+        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="205"/>
+        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="208"/>
         <source>Caps Lock changes</source>
-        <translation type="finished">Caps Lock изменяет</translation>
+        <translation>Caps Lock изменяет</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="194" />
-        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="197" />
+        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="215"/>
+        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="218"/>
         <source>Num Lock changes</source>
-        <translation type="finished">Num Lock изменяет</translation>
+        <translation>Num Lock изменяет</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="262" />
-        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="266" />
+        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="241"/>
+        <source>Tabs, Dashboard widgets and the keyhole</source>
+        <translation>Вкладки, виджеты Dashboard и замочная скважина</translation>
+    </message>
+    <message>
+        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="276"/>
+        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="280"/>
         <source>Hide date</source>
-        <translation type="finished">Скрыть дату</translation>
+        <translation>Скрыть дату</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="275" />
+        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="289"/>
         <source>Font, digit positions, and colors</source>
-        <translation type="finished">Шрифт, позиции цифр и цвета</translation>
+        <translation>Шрифт, позиции цифр и цвета</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="293" />
+        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="307"/>
         <source>Video recording</source>
-        <translation type="finished">Видеозапись</translation>
+        <translation>Видеозапись</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="299" />
+        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="313"/>
         <source>GIF recording</source>
-        <translation type="finished">Запись GIF</translation>
+        <translation>Запись GIF</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="305" />
+        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="319"/>
         <source>Microphone recording</source>
-        <translation type="finished">Запись микрофона</translation>
+        <translation>Запись микрофона</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="311" />
+        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="325"/>
         <source>System audio recording</source>
-        <translation type="finished">Запись системного звука</translation>
+        <translation>Запись системного звука</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="358" />
-        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="405" />
+        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="360"/>
+        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="407"/>
         <source>Save location</source>
-        <translation type="finished">Место сохранения</translation>
+        <translation>Место сохранения</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="362" />
+        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="364"/>
         <source>This folder is empty</source>
-        <translation type="finished">Эта папка пуста</translation>
+        <translation>Эта папка пуста</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="363" />
-        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="415" />
-        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="416" />
+        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="365"/>
+        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="417"/>
+        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="418"/>
         <source>Choose folder</source>
-        <translation type="finished">Выберите папку</translation>
+        <translation>Выберите папку</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="364" />
+        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="366"/>
         <source>Choose</source>
-        <translation type="finished">Выбрать</translation>
+        <translation>Выбрать</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="365" />
+        <location filename="../Modules/ControlCenter/KeystonePage.qml" line="367"/>
         <source>Choose the current folder or a selected subfolder</source>
-        <translation type="finished">Выберите текущую папку или выбранную подпапку</translation>
+        <translation>Выберите текущую папку или выбранную подпапку</translation>
     </message>
 </context>
 <context>
     <name>LanguageAndRegionPage</name>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2035" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2137"/>
         <source>Language</source>
-        <translation type="finished">Язык</translation>
+        <translation>Язык</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2036" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2138"/>
         <source>Units</source>
-        <translation type="finished">Единицы</translation>
+        <translation>Единицы</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2037" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2139"/>
         <source>Time &amp; date</source>
-        <translation type="finished">Время и дата</translation>
+        <translation>Время и дата</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/LanguageAndRegionPage.qml" line="48" />
+        <location filename="../Modules/ControlCenter/LanguageAndRegionPage.qml" line="48"/>
         <source>Interface language</source>
-        <translation type="finished">Язык интерфейса</translation>
+        <translation>Язык интерфейса</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/LanguageAndRegionPage.qml" line="54" />
+        <location filename="../Modules/ControlCenter/LanguageAndRegionPage.qml" line="54"/>
         <source>Select language</source>
-        <translation type="finished">Выберите язык</translation>
+        <translation>Выберите язык</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/LanguageAndRegionPage.qml" line="83" />
+        <location filename="../Modules/ControlCenter/LanguageAndRegionPage.qml" line="83"/>
         <source>Weather temperature</source>
-        <translation type="finished">Температура погоды</translation>
+        <translation>Температура погоды</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/LanguageAndRegionPage.qml" line="103" />
+        <location filename="../Modules/ControlCenter/LanguageAndRegionPage.qml" line="103"/>
         <source>Hardware temperature</source>
-        <translation type="finished">Температура оборудования</translation>
+        <translation>Температура оборудования</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/LanguageAndRegionPage.qml" line="137" />
+        <location filename="../Modules/ControlCenter/LanguageAndRegionPage.qml" line="137"/>
         <source>Clock format</source>
-        <translation type="finished">Формат часов</translation>
+        <translation>Формат часов</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/LanguageAndRegionPage.qml" line="142" />
+        <location filename="../Modules/ControlCenter/LanguageAndRegionPage.qml" line="142"/>
         <source>24-hour</source>
-        <translation type="finished">24-часовой</translation>
+        <translation>24-часовой</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/LanguageAndRegionPage.qml" line="145" />
+        <location filename="../Modules/ControlCenter/LanguageAndRegionPage.qml" line="145"/>
         <source>12-hour</source>
-        <translation type="finished">12-часовой</translation>
+        <translation>12-часовой</translation>
     </message>
 </context>
 <context>
     <name>LauncherWindow</name>
     <message>
-        <location filename="../Modules/Launcher/LauncherWindow.qml" line="627" />
+        <location filename="../Modules/Launcher/LauncherWindow.qml" line="646"/>
         <source>A clipboard operation is already running</source>
-        <translation type="finished">Операция с буфером обмена уже выполняется</translation>
+        <translation>Операция с буфером обмена уже выполняется</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/LauncherWindow.qml" line="638" />
-        <location filename="../Modules/Launcher/LauncherWindow.qml" line="668" />
+        <location filename="../Modules/Launcher/LauncherWindow.qml" line="657"/>
+        <location filename="../Modules/Launcher/LauncherWindow.qml" line="687"/>
         <source>Copy failed</source>
-        <translation type="finished">Не удалось скопировать</translation>
+        <translation>Не удалось скопировать</translation>
     </message>
 </context>
 <context>
     <name>LocationPicker</name>
     <message>
-        <location filename="../Modules/ControlCenter/LocationPicker.qml" line="41" />
+        <location filename="../Modules/ControlCenter/LocationPicker.qml" line="41"/>
         <source>Enter latitude and longitude</source>
-        <translation type="finished">Введите широту и долготу</translation>
+        <translation>Введите широту и долготу</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/LocationPicker.qml" line="47" />
+        <location filename="../Modules/ControlCenter/LocationPicker.qml" line="47"/>
         <source>Latitude must be between -90 and 90</source>
-        <translation type="finished">Широта должна быть от -90 до 90</translation>
+        <translation>Широта должна быть от -90 до 90</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/LocationPicker.qml" line="51" />
+        <location filename="../Modules/ControlCenter/LocationPicker.qml" line="51"/>
         <source>Longitude must be between -180 and 180</source>
-        <translation type="finished">Долгота должна быть от -180 до 180</translation>
+        <translation>Долгота должна быть от -180 до 180</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/LocationPicker.qml" line="147" />
+        <location filename="../Modules/ControlCenter/LocationPicker.qml" line="147"/>
         <source>Center current marker</source>
-        <translation type="finished">Центрировать текущий маркер</translation>
+        <translation>Центрировать текущий маркер</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/LocationPicker.qml" line="156" />
+        <location filename="../Modules/ControlCenter/LocationPicker.qml" line="156"/>
         <source>Return to saved location and initial view</source>
-        <translation type="finished">Вернуться к сохранённому местоположению и исходному виду</translation>
+        <translation>Вернуться к сохранённому местоположению и исходному виду</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/LocationPicker.qml" line="165" />
+        <location filename="../Modules/ControlCenter/LocationPicker.qml" line="165"/>
         <source>Expand map</source>
-        <translation type="finished">Развернуть карту</translation>
+        <translation>Развернуть карту</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/LocationPicker.qml" line="194" />
+        <location filename="../Modules/ControlCenter/LocationPicker.qml" line="194"/>
         <source>Coordinates</source>
-        <translation type="finished">Координаты</translation>
+        <translation>Координаты</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/LocationPicker.qml" line="216" />
+        <location filename="../Modules/ControlCenter/LocationPicker.qml" line="216"/>
         <source>Save location</source>
-        <translation type="finished">Место сохранения</translation>
+        <translation>Место сохранения</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/LocationPicker.qml" line="222" />
-        <location filename="../Modules/ControlCenter/LocationPickerWindow.qml" line="131" />
+        <location filename="../Modules/ControlCenter/LocationPicker.qml" line="222"/>
+        <location filename="../Modules/ControlCenter/LocationPickerWindow.qml" line="131"/>
         <source>Use automatic location</source>
-        <translation type="finished">Использовать автоматическое местоположение</translation>
+        <translation>Использовать автоматическое местоположение</translation>
     </message>
 </context>
 <context>
     <name>LocationPickerWindow</name>
     <message>
-        <location filename="../Modules/ControlCenter/LocationPickerWindow.qml" line="96" />
+        <location filename="../Modules/ControlCenter/LocationPickerWindow.qml" line="96"/>
         <source>Center current marker</source>
-        <translation type="finished">Центрировать текущий маркер</translation>
+        <translation>Центрировать текущий маркер</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/LocationPickerWindow.qml" line="105" />
+        <location filename="../Modules/ControlCenter/LocationPickerWindow.qml" line="105"/>
         <source>Return to saved location and initial view</source>
-        <translation type="finished">Вернуться к сохранённому местоположению и исходному виду</translation>
+        <translation>Вернуться к сохранённому местоположению и исходному виду</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/LocationPickerWindow.qml" line="114" />
+        <location filename="../Modules/ControlCenter/LocationPickerWindow.qml" line="114"/>
         <source>Close</source>
-        <translation type="finished">Закрыть</translation>
+        <translation>Закрыть</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/LocationPickerWindow.qml" line="142" />
+        <location filename="../Modules/ControlCenter/LocationPickerWindow.qml" line="142"/>
         <source>Save location</source>
-        <translation type="finished">Место сохранения</translation>
+        <translation>Место сохранения</translation>
     </message>
 </context>
 <context>
     <name>LockContent</name>
     <message>
-        <location filename="../Modules/Lock/LockContent.qml" line="193" />
+        <location filename="../Modules/Lock/LockContent.qml" line="193"/>
         <source>Incorrect password. Try again.</source>
-        <translation type="finished">Неверный пароль. Попробуйте снова.</translation>
+        <translation>Неверный пароль. Попробуйте снова.</translation>
     </message>
     <message>
-        <location filename="../Modules/Lock/LockContent.qml" line="379" />
+        <location filename="../Modules/Lock/LockContent.qml" line="379"/>
         <source>Caps Lock and Num Lock are on.</source>
-        <translation type="finished">Caps Lock и Num Lock включены.</translation>
+        <translation>Caps Lock и Num Lock включены.</translation>
     </message>
     <message>
-        <location filename="../Modules/Lock/LockContent.qml" line="382" />
+        <location filename="../Modules/Lock/LockContent.qml" line="382"/>
         <source>Caps Lock is on.</source>
-        <translation type="finished">Caps Lock включён.</translation>
+        <translation>Caps Lock включён.</translation>
     </message>
     <message>
-        <location filename="../Modules/Lock/LockContent.qml" line="385" />
+        <location filename="../Modules/Lock/LockContent.qml" line="385"/>
         <source>Num Lock is on.</source>
-        <translation type="finished">Num Lock включён.</translation>
+        <translation>Num Lock включён.</translation>
     </message>
 </context>
 <context>
     <name>MapCoordinateMarker</name>
     <message>
-        <location filename="../Modules/Map/MapCoordinateMarker.qml" line="18" />
+        <location filename="../Modules/Map/MapCoordinateMarker.qml" line="18"/>
         <source>Selected coordinate</source>
-        <translation type="finished">Выбранная координата</translation>
+        <translation>Выбранная координата</translation>
     </message>
     <message>
-        <location filename="../Modules/Map/MapCoordinateMarker.qml" line="19" />
+        <location filename="../Modules/Map/MapCoordinateMarker.qml" line="19"/>
         <source>Drag or use the arrow keys to adjust the coordinate</source>
-        <translation type="finished">Перетащите или используйте стрелки, чтобы изменить координату</translation>
+        <translation>Перетащите или используйте стрелки, чтобы изменить координату</translation>
     </message>
 </context>
 <context>
     <name>MapFallback</name>
     <message>
-        <location filename="../Modules/Map/MapFallback.qml" line="10" />
+        <location filename="../Modules/Map/MapFallback.qml" line="10"/>
         <source>Map temporarily unavailable</source>
-        <translation type="finished">Карта временно недоступна</translation>
+        <translation>Карта временно недоступна</translation>
     </message>
     <message>
-        <location filename="../Modules/Map/MapFallback.qml" line="53" />
+        <location filename="../Modules/Map/MapFallback.qml" line="53"/>
         <source>Retry</source>
-        <translation type="finished">Повторить</translation>
+        <translation>Повторить</translation>
     </message>
 </context>
 <context>
     <name>MapLibreView</name>
     <message>
-        <location filename="../Modules/Map/MapLibreView.qml" line="45" />
+        <location filename="../Modules/Map/MapLibreView.qml" line="45"/>
         <source>Map style temporarily unavailable</source>
-        <translation type="finished">Стиль карты временно недоступен</translation>
+        <translation>Стиль карты временно недоступен</translation>
     </message>
     <message>
-        <location filename="../Modules/Map/MapLibreView.qml" line="51" />
+        <location filename="../Modules/Map/MapLibreView.qml" line="51"/>
         <source>Invalid map style</source>
-        <translation type="finished">Некорректный стиль карты</translation>
+        <translation>Некорректный стиль карты</translation>
     </message>
     <message>
-        <location filename="../Modules/Map/MapLibreView.qml" line="94" />
-        <location filename="../Modules/Map/MapLibreView.qml" line="218" />
+        <location filename="../Modules/Map/MapLibreView.qml" line="94"/>
+        <location filename="../Modules/Map/MapLibreView.qml" line="218"/>
         <source>Map temporarily unavailable</source>
-        <translation type="finished">Карта временно недоступна</translation>
+        <translation>Карта временно недоступна</translation>
     </message>
     <message>
-        <location filename="../Modules/Map/MapLibreView.qml" line="134" />
+        <location filename="../Modules/Map/MapLibreView.qml" line="134"/>
         <source>Unable to create map</source>
-        <translation type="finished">Не удалось создать карту</translation>
+        <translation>Не удалось создать карту</translation>
     </message>
 </context>
 <context>
     <name>MaterialLoadingIndicator</name>
     <message>
-        <location filename="../Widgets/common/MaterialLoadingIndicator.qml" line="11" />
+        <location filename="../Widgets/common/MaterialLoadingIndicator.qml" line="11"/>
         <source>Loading</source>
-        <translation type="finished">Загрузка</translation>
+        <translation>Загрузка</translation>
     </message>
 </context>
 <context>
     <name>MaterialSlider</name>
     <message>
-        <location filename="../Widgets/common/MaterialSlider.qml" line="14" />
+        <location filename="../Widgets/common/MaterialSlider.qml" line="14"/>
         <source>Slider</source>
-        <translation type="finished">Слайдер</translation>
+        <translation>Слайдер</translation>
     </message>
 </context>
 <context>
     <name>MaterialStepper</name>
     <message>
-        <location filename="../Widgets/common/MaterialStepper.qml" line="69" />
+        <location filename="../Widgets/common/MaterialStepper.qml" line="69"/>
         <source>Increase</source>
-        <translation type="finished">Увеличить</translation>
+        <translation>Увеличить</translation>
     </message>
     <message>
-        <location filename="../Widgets/common/MaterialStepper.qml" line="69" />
+        <location filename="../Widgets/common/MaterialStepper.qml" line="69"/>
         <source>Decrease</source>
-        <translation type="finished">Уменьшить</translation>
+        <translation>Уменьшить</translation>
     </message>
 </context>
 <context>
     <name>MatugenTemplateAddWindow</name>
     <message>
-        <location filename="../Modules/ControlCenter/MatugenTemplateAddWindow.qml" line="74" />
+        <location filename="../Modules/ControlCenter/MatugenTemplateAddWindow.qml" line="74"/>
         <source>Add Matugen template</source>
-        <translation type="finished">Добавить шаблон Matugen</translation>
+        <translation>Добавить шаблон Matugen</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/MatugenTemplateAddWindow.qml" line="92" />
+        <location filename="../Modules/ControlCenter/MatugenTemplateAddWindow.qml" line="92"/>
         <source>Template file</source>
-        <translation type="finished">Файл шаблона</translation>
+        <translation>Файл шаблона</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/MatugenTemplateAddWindow.qml" line="101" />
+        <location filename="../Modules/ControlCenter/MatugenTemplateAddWindow.qml" line="101"/>
         <source>Template ID</source>
-        <translation type="finished">ID шаблона</translation>
+        <translation>ID шаблона</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/MatugenTemplateAddWindow.qml" line="107" />
+        <location filename="../Modules/ControlCenter/MatugenTemplateAddWindow.qml" line="107"/>
         <source>Output path</source>
-        <translation type="finished">Путь вывода</translation>
+        <translation>Путь вывода</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/MatugenTemplateAddWindow.qml" line="111" />
+        <location filename="../Modules/ControlCenter/MatugenTemplateAddWindow.qml" line="111"/>
         <source>Advanced options</source>
-        <translation type="finished">Дополнительные параметры</translation>
+        <translation>Дополнительные параметры</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/MatugenTemplateAddWindow.qml" line="119" />
+        <location filename="../Modules/ControlCenter/MatugenTemplateAddWindow.qml" line="119"/>
         <source>Run command after generation</source>
-        <translation type="finished">Выполнить команду после генерации</translation>
+        <translation>Выполнить команду после генерации</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/MatugenTemplateAddWindow.qml" line="124" />
+        <location filename="../Modules/ControlCenter/MatugenTemplateAddWindow.qml" line="124"/>
         <source>This command runs every time Matugen regenerates the theme. Only enable trusted templates.</source>
-        <translation type="finished">Эта команда выполняется при каждой регенерации темы Matugen. Включайте только надёжные шаблоны.</translation>
+        <translation>Эта команда выполняется при каждой регенерации темы Matugen. Включайте только надёжные шаблоны.</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/MatugenTemplateAddWindow.qml" line="159" />
+        <location filename="../Modules/ControlCenter/MatugenTemplateAddWindow.qml" line="159"/>
         <source>Cancel</source>
-        <translation type="finished">Отмена</translation>
+        <translation>Отмена</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/MatugenTemplateAddWindow.qml" line="164" />
+        <location filename="../Modules/ControlCenter/MatugenTemplateAddWindow.qml" line="164"/>
         <source>Add</source>
-        <translation type="finished">Добавить</translation>
+        <translation>Добавить</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/MatugenTemplateAddWindow.qml" line="181" />
-        <location filename="../Modules/ControlCenter/MatugenTemplateAddWindow.qml" line="185" />
+        <location filename="../Modules/ControlCenter/MatugenTemplateAddWindow.qml" line="181"/>
+        <location filename="../Modules/ControlCenter/MatugenTemplateAddWindow.qml" line="185"/>
         <source>Choose template file</source>
-        <translation type="finished">Выберите файл шаблона</translation>
+        <translation>Выберите файл шаблона</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/MatugenTemplateAddWindow.qml" line="184" />
+        <location filename="../Modules/ControlCenter/MatugenTemplateAddWindow.qml" line="184"/>
         <source>No files available</source>
-        <translation type="finished">Нет доступных файлов</translation>
+        <translation>Нет доступных файлов</translation>
     </message>
 </context>
 <context>
     <name>MatugenTemplateService</name>
     <message>
-        <location filename="../Services/MatugenTemplateService.qml" line="121" />
+        <location filename="../Services/MatugenTemplateService.qml" line="121"/>
         <source>Unable to read template</source>
-        <translation type="finished">Не удалось прочитать шаблон</translation>
+        <translation>Не удалось прочитать шаблон</translation>
     </message>
     <message>
-        <location filename="../Services/MatugenTemplateService.qml" line="124" />
-        <location filename="../Services/MatugenTemplateService.qml" line="156" />
+        <location filename="../Services/MatugenTemplateService.qml" line="124"/>
+        <location filename="../Services/MatugenTemplateService.qml" line="156"/>
         <source>Invalid template data</source>
-        <translation type="finished">Некорректные данные шаблона</translation>
+        <translation>Некорректные данные шаблона</translation>
     </message>
     <message>
-        <location filename="../Services/MatugenTemplateService.qml" line="158" />
+        <location filename="../Services/MatugenTemplateService.qml" line="158"/>
         <source>Template operation failed</source>
-        <translation type="finished">Операция с шаблоном не удалась</translation>
+        <translation>Операция с шаблоном не удалась</translation>
     </message>
 </context>
 <context>
     <name>Media</name>
     <message>
-        <location filename="../Modules/Keystone/Media/Media.qml" line="22" />
+        <location filename="../Modules/Keystone/Media/Media.qml" line="22"/>
         <source>Not playing</source>
-        <translation type="finished">Ничего не играет</translation>
+        <translation>Ничего не играет</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/Media/Media.qml" line="23" />
+        <location filename="../Modules/Keystone/Media/Media.qml" line="23"/>
         <source>Unknown artist</source>
-        <translation type="finished">Неизвестный исполнитель</translation>
+        <translation>Неизвестный исполнитель</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/Media/Media.qml" line="166" />
+        <location filename="../Modules/Keystone/Media/Media.qml" line="166"/>
         <source>Hide lyrics</source>
-        <translation type="finished">Скрыть текст песни</translation>
+        <translation>Скрыть текст песни</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/Media/Media.qml" line="166" />
+        <location filename="../Modules/Keystone/Media/Media.qml" line="166"/>
         <source>Show lyrics</source>
-        <translation type="finished">Показать текст песни</translation>
+        <translation>Показать текст песни</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/Media/Media.qml" line="519" />
+        <location filename="../Modules/Keystone/Media/Media.qml" line="519"/>
         <source>Loading lyrics…</source>
-        <translation type="finished">Загрузка текста песни…</translation>
+        <translation>Загрузка текста песни…</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/Media/Media.qml" line="522" />
+        <location filename="../Modules/Keystone/Media/Media.qml" line="522"/>
         <source>Failed to load lyrics</source>
-        <translation type="finished">Не удалось загрузить тексты песен</translation>
+        <translation>Не удалось загрузить тексты песен</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/Media/Media.qml" line="523" />
+        <location filename="../Modules/Keystone/Media/Media.qml" line="523"/>
         <source>No lyrics available</source>
-        <translation type="finished">Текст песни недоступен</translation>
+        <translation>Текст песни недоступен</translation>
     </message>
 </context>
 <context>
     <name>MediaBar</name>
     <message>
-        <location filename="../Modules/Bar/Media/MediaBar.qml" line="14" />
+        <location filename="../Modules/Bar/Media/MediaBar.qml" line="14"/>
         <source>No media</source>
-        <translation type="finished">Нет медиа</translation>
+        <translation>Нет медиа</translation>
     </message>
     <message>
-        <location filename="../Modules/Bar/Media/MediaBar.qml" line="94" />
+        <location filename="../Modules/Bar/Media/MediaBar.qml" line="94"/>
         <source>Open player</source>
-        <translation type="finished">Открыть плеер</translation>
+        <translation>Открыть плеер</translation>
     </message>
 </context>
 <context>
     <name>MediaCard</name>
     <message>
-        <location filename="../Modules/Lock/Cards/MediaCard.qml" line="16" />
+        <location filename="../Modules/Lock/Cards/MediaCard.qml" line="16"/>
         <source>No media</source>
-        <translation type="finished">Нет медиа</translation>
+        <translation>Нет медиа</translation>
     </message>
     <message>
-        <location filename="../Modules/Lock/Cards/MediaCard.qml" line="17" />
+        <location filename="../Modules/Lock/Cards/MediaCard.qml" line="17"/>
         <source>Not playing</source>
-        <translation type="finished">Ничего не играет</translation>
+        <translation>Ничего не играет</translation>
     </message>
     <message>
-        <location filename="../Modules/Lock/Cards/MediaCard.qml" line="109" />
+        <location filename="../Modules/Lock/Cards/MediaCard.qml" line="109"/>
         <source>Now playing</source>
-        <translation type="finished">Сейчас играет</translation>
+        <translation>Сейчас играет</translation>
     </message>
 </context>
 <context>
     <name>MediaManager</name>
     <message>
-        <location filename="../Services/MediaManager.qml" line="85" />
+        <location filename="../Services/MediaManager.qml" line="85"/>
         <source>No media</source>
-        <translation type="finished">Нет медиа</translation>
+        <translation>Нет медиа</translation>
     </message>
     <message>
-        <location filename="../Services/MediaManager.qml" line="89" />
+        <location filename="../Services/MediaManager.qml" line="89"/>
         <source>Browser</source>
-        <translation type="finished">Браузер</translation>
+        <translation>Браузер</translation>
     </message>
 </context>
 <context>
     <name>Microphone</name>
     <message>
-        <location filename="../Modules/Bar/QuickSettings/Microphone.qml" line="58" />
+        <location filename="../Modules/Bar/QuickSettings/Microphone.qml" line="58"/>
         <source>Microphone: muted</source>
-        <translation type="finished">Микрофон: выключен</translation>
+        <translation>Микрофон: выключен</translation>
     </message>
     <message>
-        <location filename="../Modules/Bar/QuickSettings/Microphone.qml" line="58" />
+        <location filename="../Modules/Bar/QuickSettings/Microphone.qml" line="58"/>
         <source>Microphone: </source>
-        <translation type="finished">Микрофон: </translation>
+        <translation>Микрофон: </translation>
     </message>
     <message>
-        <location filename="../Modules/Bar/QuickSettings/Microphone.qml" line="59" />
+        <location filename="../Modules/Bar/QuickSettings/Microphone.qml" line="59"/>
         <source>
 Scroll to adjust; click to open microphone controls</source>
-        <translation type="finished">
+        <translation>
 Колесо — регулировка; клик — управление микрофоном</translation>
     </message>
 </context>
 <context>
     <name>MicrophoneContent</name>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/MicrophoneContent.qml" line="14" />
+        <location filename="../Modules/Sidebars/QuickSettings/MicrophoneContent.qml" line="14"/>
         <source>Microphone</source>
-        <translation type="finished">Микрофон</translation>
+        <translation>Микрофон</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/MicrophoneContent.qml" line="27" />
+        <location filename="../Modules/Sidebars/QuickSettings/MicrophoneContent.qml" line="27"/>
         <source>Connecting to the PipeWire audio service</source>
-        <translation type="finished">Подключение к звуковой службе PipeWire</translation>
+        <translation>Подключение к звуковой службе PipeWire</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/MicrophoneContent.qml" line="29" />
+        <location filename="../Modules/Sidebars/QuickSettings/MicrophoneContent.qml" line="29"/>
         <source>No microphone devices detected</source>
-        <translation type="finished">Устройства микрофона не обнаружены</translation>
+        <translation>Устройства микрофона не обнаружены</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/MicrophoneContent.qml" line="43" />
+        <location filename="../Modules/Sidebars/QuickSettings/MicrophoneContent.qml" line="43"/>
         <source>Open advanced sound settings</source>
-        <translation type="finished">Открыть дополнительные настройки звука</translation>
+        <translation>Открыть дополнительные настройки звука</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/MicrophoneContent.qml" line="92" />
+        <location filename="../Modules/Sidebars/QuickSettings/MicrophoneContent.qml" line="92"/>
         <source>Input</source>
-        <translation type="finished">Ввод</translation>
+        <translation>Ввод</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/MicrophoneContent.qml" line="97" />
+        <location filename="../Modules/Sidebars/QuickSettings/MicrophoneContent.qml" line="97"/>
         <source>Default input</source>
-        <translation type="finished">Вход по умолчанию</translation>
+        <translation>Вход по умолчанию</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/MicrophoneContent.qml" line="113" />
+        <location filename="../Modules/Sidebars/QuickSettings/MicrophoneContent.qml" line="113"/>
         <source>Input devices</source>
-        <translation type="finished">Устройства ввода</translation>
+        <translation>Устройства ввода</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/MicrophoneContent.qml" line="130" />
+        <location filename="../Modules/Sidebars/QuickSettings/MicrophoneContent.qml" line="130"/>
         <source>Collapse input devices</source>
-        <translation type="finished">Свернуть устройства ввода</translation>
+        <translation>Свернуть устройства ввода</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/MicrophoneContent.qml" line="130" />
+        <location filename="../Modules/Sidebars/QuickSettings/MicrophoneContent.qml" line="130"/>
         <source>Expand input devices</source>
-        <translation type="finished">Развернуть устройства ввода</translation>
+        <translation>Развернуть устройства ввода</translation>
     </message>
 </context>
 <context>
     <name>MottoCard</name>
     <message>
-        <location filename="../Modules/Lock/Cards/MottoCard.qml" line="32" />
+        <location filename="../Modules/Lock/Cards/MottoCard.qml" line="32"/>
         <source>Take a break,
 we’ll be right back.</source>
-        <translation type="finished">Сделайте перерыв,
+        <translation>Сделайте перерыв,
 мы скоро вернёмся.</translation>
     </message>
 </context>
 <context>
     <name>MouseTouchpadPage</name>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2038" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2140"/>
         <source>Mouse</source>
-        <translation type="finished">Мышь</translation>
+        <translation>Мышь</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2039" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2141"/>
         <source>Touchpad</source>
-        <translation type="finished">Тачпад</translation>
+        <translation>Тачпад</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2040" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2142"/>
         <source>Trackpoint</source>
-        <translation type="finished">Трекпоинт</translation>
+        <translation>Трекпоинт</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2041" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2143"/>
         <source>Pointer behavior</source>
-        <translation type="finished">Поведение указателя</translation>
+        <translation>Поведение указателя</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/MouseTouchpadPage.qml" line="28" />
+        <location filename="../Modules/ControlCenter/MouseTouchpadPage.qml" line="28"/>
         <source>Available in a niri session</source>
-        <translation type="finished">Доступно в сеансе niri</translation>
+        <translation>Доступно в сеансе niri</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/MouseTouchpadPage.qml" line="35" />
+        <location filename="../Modules/ControlCenter/MouseTouchpadPage.qml" line="35"/>
         <source>The niri configuration has no input section</source>
-        <translation type="finished">В конфигурации niri нет раздела ввода</translation>
+        <translation>В конфигурации niri нет раздела ввода</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/MouseTouchpadPage.qml" line="43" />
+        <location filename="../Modules/ControlCenter/MouseTouchpadPage.qml" line="43"/>
         <source>Configuration is not writable</source>
-        <translation type="finished">Конфигурация недоступна для записи</translation>
+        <translation>Конфигурация недоступна для записи</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/MouseTouchpadPage.qml" line="142" />
-        <location filename="../Modules/ControlCenter/MouseTouchpadPage.qml" line="146" />
+        <location filename="../Modules/ControlCenter/MouseTouchpadPage.qml" line="142"/>
+        <location filename="../Modules/ControlCenter/MouseTouchpadPage.qml" line="146"/>
         <source>Warp the pointer to the focused window</source>
-        <translation type="finished">Перемещать указатель в сфокусированное окно</translation>
+        <translation>Перемещать указатель в сфокусированное окно</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/MouseTouchpadPage.qml" line="154" />
-        <location filename="../Modules/ControlCenter/MouseTouchpadPage.qml" line="163" />
+        <location filename="../Modules/ControlCenter/MouseTouchpadPage.qml" line="154"/>
+        <location filename="../Modules/ControlCenter/MouseTouchpadPage.qml" line="163"/>
         <source>Focus follows the pointer</source>
-        <translation type="finished">Фокус следует за указателем</translation>
+        <translation>Фокус следует за указателем</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/MouseTouchpadPage.qml" line="155" />
+        <location filename="../Modules/ControlCenter/MouseTouchpadPage.qml" line="155"/>
         <source>Tuned in the configuration file</source>
-        <translation type="finished">Настроено в файле конфигурации</translation>
+        <translation>Настроено в файле конфигурации</translation>
     </message>
 </context>
 <context>
     <name>Network</name>
     <message>
-        <location filename="../Modules/Bar/QuickSettings/Network.qml" line="20" />
+        <location filename="../Modules/Bar/QuickSettings/Network.qml" line="20"/>
         <source>Network connected</source>
-        <translation type="finished">Сеть подключена</translation>
+        <translation>Сеть подключена</translation>
     </message>
     <message>
-        <location filename="../Modules/Bar/QuickSettings/Network.qml" line="21" />
+        <location filename="../Modules/Bar/QuickSettings/Network.qml" line="21"/>
         <source>
 Click to open network settings</source>
-        <translation type="finished">
+        <translation>
 Нажмите, чтобы открыть настройки сети</translation>
     </message>
     <message>
-        <location filename="../Modules/Bar/QuickSettings/Network.qml" line="23" />
+        <location filename="../Modules/Bar/QuickSettings/Network.qml" line="23"/>
         <source>Network disconnected
 Click to open network settings</source>
-        <translation type="finished">Сеть отключена
+        <translation>Сеть отключена
 Нажмите, чтобы открыть настройки сети</translation>
     </message>
 </context>
 <context>
     <name>NetworkConfigWindow</name>
     <message>
-        <location filename="../Modules/ControlCenter/NetworkConfigWindow.qml" line="119" />
+        <location filename="../Modules/ControlCenter/NetworkConfigWindow.qml" line="119"/>
         <source>Saved networks</source>
-        <translation type="finished">Сохранённые сети</translation>
+        <translation>Сохранённые сети</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/NetworkConfigWindow.qml" line="145" />
+        <location filename="../Modules/ControlCenter/NetworkConfigWindow.qml" line="145"/>
         <source>Connection profile</source>
-        <translation type="finished">Профиль подключения</translation>
+        <translation>Профиль подключения</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/NetworkConfigWindow.qml" line="176" />
+        <location filename="../Modules/ControlCenter/NetworkConfigWindow.qml" line="176"/>
         <source>Add network</source>
-        <translation type="finished">Добавить сеть</translation>
+        <translation>Добавить сеть</translation>
     </message>
 </context>
 <context>
     <name>NetworkContent</name>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="30" />
+        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="30"/>
         <source>NetworkManager is currently unavailable</source>
-        <translation type="finished">NetworkManager сейчас недоступен</translation>
+        <translation>NetworkManager сейчас недоступен</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="33" />
+        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="33"/>
         <source>No Wi-Fi device detected</source>
-        <translation type="finished">Устройство Wi-Fi не обнаружено</translation>
+        <translation>Устройство Wi-Fi не обнаружено</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="36" />
+        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="36"/>
         <source>Wi-Fi is blocked by a hardware switch or rfkill</source>
-        <translation type="finished">Wi-Fi заблокирован аппаратным переключателем или rfkill</translation>
+        <translation>Wi-Fi заблокирован аппаратным переключателем или rfkill</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="39" />
+        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="39"/>
         <source>Wi-Fi is off</source>
-        <translation type="finished">Wi-Fi выключен</translation>
+        <translation>Wi-Fi выключен</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="88" />
+        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="88"/>
         <source>Network sign-in required</source>
-        <translation type="finished">Требуется вход в сеть</translation>
+        <translation>Требуется вход в сеть</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="91" />
+        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="91"/>
         <source>Network connectivity is limited</source>
-        <translation type="finished">Сетевое подключение ограничено</translation>
+        <translation>Сетевое подключение ограничено</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="94" />
+        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="94"/>
         <source>Internet is available</source>
-        <translation type="finished">Интернет доступен</translation>
+        <translation>Интернет доступен</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="97" />
+        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="97"/>
         <source>Connected; internet access could not be confirmed</source>
-        <translation type="finished">Подключено; доступ в интернет не подтверждён</translation>
+        <translation>Подключено; доступ в интернет не подтверждён</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="99" />
+        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="99"/>
         <source>No active connection</source>
-        <translation type="finished">Нет активного подключения</translation>
+        <translation>Нет активного подключения</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="110" />
+        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="110"/>
         <source>Manual IPv4</source>
-        <translation type="finished">Настройка IPv4 вручную</translation>
+        <translation>Настройка IPv4 вручную</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="112" />
+        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="112"/>
         <source>DHCP + custom DNS</source>
-        <translation type="finished">DHCP + свои DNS</translation>
+        <translation>DHCP + свои DNS</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="114" />
+        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="114"/>
         <source>Automatic (DHCP)</source>
-        <translation type="finished">Автоматически (DHCP)</translation>
+        <translation>Автоматически (DHCP)</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="116" />
+        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="116"/>
         <source>Connect automatically</source>
-        <translation type="finished">Подключаться автоматически</translation>
+        <translation>Подключаться автоматически</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="133" />
+        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="133"/>
         <source>Network</source>
-        <translation type="finished">Сеть</translation>
+        <translation>Сеть</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="215" />
+        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="215"/>
         <source>Not connected</source>
-        <translation type="finished">Не подключено</translation>
+        <translation>Не подключено</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="243" />
+        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="243"/>
         <source>Open network portal</source>
-        <translation type="finished">Открыть сетевой портал</translation>
+        <translation>Открыть сетевой портал</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="272" />
+        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="272"/>
         <source>Saved networks</source>
-        <translation type="finished">Сохранённые сети</translation>
+        <translation>Сохранённые сети</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="288" />
+        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="288"/>
         <source>Available networks</source>
-        <translation type="finished">Доступные сети</translation>
+        <translation>Доступные сети</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="289" />
+        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="289"/>
         <source>Getting scan results</source>
-        <translation type="finished">Получение результатов сканирования</translation>
+        <translation>Получение результатов сканирования</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="290" />
+        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="290"/>
         <source> networks</source>
-        <translation type="finished"> сетей</translation>
+        <translation> сетей</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="307" />
-        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="312" />
+        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="307"/>
+        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="312"/>
         <source>Searching for available networks</source>
-        <translation type="finished">Поиск доступных сетей</translation>
+        <translation>Поиск доступных сетей</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="361" />
+        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="361"/>
         <source>No available networks found</source>
-        <translation type="finished">Доступные сети не найдены</translation>
+        <translation>Доступные сети не найдены</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="379" />
-        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="505" />
-        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="627" />
+        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="379"/>
+        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="505"/>
+        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="627"/>
         <source>Forget network</source>
-        <translation type="finished">Забыть сеть</translation>
+        <translation>Забыть сеть</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="380" />
+        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="380"/>
         <source>This will delete the saved connection for “%1”.</source>
-        <translation type="finished">Это удалит сохранённое подключение для «%1».</translation>
+        <translation>Это удалит сохранённое подключение для «%1».</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="392" />
-        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="699" />
+        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="392"/>
+        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="699"/>
         <source>Cancel</source>
-        <translation type="finished">Отмена</translation>
+        <translation>Отмена</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="400" />
+        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="400"/>
         <source>Forget</source>
-        <translation type="finished">Забыть</translation>
+        <translation>Забыть</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="425" />
+        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="425"/>
         <source>Refresh network list</source>
-        <translation type="finished">Обновить список сетей</translation>
+        <translation>Обновить список сетей</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="444" />
+        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="444"/>
         <source>Wi-Fi switch</source>
-        <translation type="finished">Переключатель Wi-Fi</translation>
+        <translation>Переключатель Wi-Fi</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="494" />
-        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="609" />
+        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="494"/>
+        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="609"/>
         <source>Network action</source>
-        <translation type="finished">Сетевое действие</translation>
+        <translation>Сетевое действие</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="561" />
+        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="561"/>
         <source>Connected · </source>
-        <translation type="finished">Подключено · </translation>
+        <translation>Подключено · </translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="562" />
+        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="562"/>
         <source>Saved · </source>
-        <translation type="finished">Сохранено · </translation>
+        <translation>Сохранено · </translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="565" />
+        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="565"/>
         <source>Open network</source>
-        <translation type="finished">Открыть сеть</translation>
+        <translation>Открыть сеть</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="620" />
+        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="620"/>
         <source>Disconnect</source>
-        <translation type="finished">Отключить</translation>
+        <translation>Отключить</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="668" />
+        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="668"/>
         <source>Network password</source>
-        <translation type="finished">Пароль сети</translation>
+        <translation>Пароль сети</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="681" />
+        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="681"/>
         <source>Hide password</source>
-        <translation type="finished">Скрыть пароль</translation>
+        <translation>Скрыть пароль</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="681" />
+        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="681"/>
         <source>Show password</source>
-        <translation type="finished">Показать пароль</translation>
+        <translation>Показать пароль</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="704" />
+        <location filename="../Modules/Sidebars/QuickSettings/NetworkContent.qml" line="704"/>
         <source>Connect</source>
-        <translation type="finished">Подключить</translation>
+        <translation>Подключить</translation>
     </message>
 </context>
 <context>
     <name>NetworkManagerExtras</name>
     <message>
-        <location filename="../Services/NetworkManagerExtras.qml" line="40" />
+        <location filename="../Services/NetworkManagerExtras.qml" line="40"/>
         <source>Network details are currently unavailable</source>
-        <translation type="finished">Сведения о сети сейчас недоступны</translation>
+        <translation>Сведения о сети сейчас недоступны</translation>
     </message>
     <message>
-        <location filename="../Services/NetworkManagerExtras.qml" line="71" />
+        <location filename="../Services/NetworkManagerExtras.qml" line="71"/>
         <source>Another supplementary network operation is already in progress</source>
-        <translation type="finished">Другая дополнительная сетевая операция уже выполняется</translation>
+        <translation>Другая дополнительная сетевая операция уже выполняется</translation>
     </message>
     <message>
-        <location filename="../Services/NetworkManagerExtras.qml" line="99" />
-        <location filename="../Services/NetworkManagerExtras.qml" line="237" />
+        <location filename="../Services/NetworkManagerExtras.qml" line="99"/>
+        <location filename="../Services/NetworkManagerExtras.qml" line="237"/>
         <source>Unable to create Wi-Fi profile</source>
-        <translation type="finished">Не удалось создать профиль Wi-Fi</translation>
+        <translation>Не удалось создать профиль Wi-Fi</translation>
     </message>
     <message>
-        <location filename="../Services/NetworkManagerExtras.qml" line="124" />
+        <location filename="../Services/NetworkManagerExtras.qml" line="124"/>
         <source>nmcli is unavailable; active IPv4 information cannot be read</source>
-        <translation type="finished">nmcli недоступен; активные данные IPv4 прочитать нельзя</translation>
+        <translation>nmcli недоступен; активные данные IPv4 прочитать нельзя</translation>
     </message>
     <message>
-        <location filename="../Services/NetworkManagerExtras.qml" line="135" />
+        <location filename="../Services/NetworkManagerExtras.qml" line="135"/>
         <source>Unable to read active IPv4 information</source>
-        <translation type="finished">Не удалось прочитать активные данные IPv4</translation>
+        <translation>Не удалось прочитать активные данные IPv4</translation>
     </message>
     <message>
-        <location filename="../Services/NetworkManagerExtras.qml" line="232" />
+        <location filename="../Services/NetworkManagerExtras.qml" line="232"/>
         <source>nmcli is unavailable; a hidden network profile cannot be created</source>
-        <translation type="finished">nmcli недоступен; скрытый профиль сети создать нельзя</translation>
+        <translation>nmcli недоступен; скрытый профиль сети создать нельзя</translation>
     </message>
     <message>
-        <location filename="../Services/NetworkManagerExtras.qml" line="267" />
+        <location filename="../Services/NetworkManagerExtras.qml" line="267"/>
         <source>nmcli is unavailable; the hidden network profile cannot be activated</source>
-        <translation type="finished">nmcli недоступен; скрытый сетевой профиль активировать нельзя</translation>
+        <translation>nmcli недоступен; скрытый сетевой профиль активировать нельзя</translation>
     </message>
     <message>
-        <location filename="../Services/NetworkManagerExtras.qml" line="275" />
+        <location filename="../Services/NetworkManagerExtras.qml" line="275"/>
         <source>The Wi-Fi profile was created but could not be activated</source>
-        <translation type="finished">Профиль Wi-Fi создан, но не удалось его активировать</translation>
+        <translation>Профиль Wi-Fi создан, но не удалось его активировать</translation>
     </message>
 </context>
 <context>
     <name>NetworkPage</name>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2042" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2144"/>
         <source>Wired connections</source>
-        <translation type="finished">Проводные подключения</translation>
+        <translation>Проводные подключения</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2043" />
-        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="303" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2145"/>
+        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="303"/>
         <source>Wi-Fi</source>
-        <translation type="finished">Wi-Fi</translation>
+        <translation>Wi-Fi</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2044" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2146"/>
         <source>Other settings</source>
-        <translation type="finished">Другие настройки</translation>
+        <translation>Другие настройки</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2045" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2147"/>
         <source>Connection information</source>
-        <translation type="finished">Сведения о подключении</translation>
+        <translation>Сведения о подключении</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="45" />
+        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="45"/>
         <source>Sign-in required</source>
-        <translation type="finished">Требуется вход</translation>
+        <translation>Требуется вход</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="48" />
+        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="48"/>
         <source>Limited connection</source>
-        <translation type="finished">Ограниченное подключение</translation>
+        <translation>Ограниченное подключение</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="51" />
+        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="51"/>
         <source>No internet connection</source>
-        <translation type="finished">Нет подключения к интернету</translation>
+        <translation>Нет подключения к интернету</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="57" />
-        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="67" />
+        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="57"/>
+        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="67"/>
         <source>Signal %1%</source>
-        <translation type="finished">Сигнал %1%</translation>
+        <translation>Сигнал %1%</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="200" />
+        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="200"/>
         <source>Network service unavailable</source>
-        <translation type="finished">Сетевая служба недоступна</translation>
+        <translation>Сетевая служба недоступна</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="235" />
-        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="282" />
+        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="235"/>
+        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="282"/>
         <source>Network cable unplugged</source>
-        <translation type="finished">Сетевой кабель отключён</translation>
+        <translation>Сетевой кабель отключён</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="239" />
-        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="628" />
+        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="239"/>
+        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="628"/>
         <source>%1 Mbps</source>
-        <translation type="finished">%1 Мбит/с</translation>
+        <translation>%1 Мбит/с</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="252" />
-        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="280" />
+        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="252"/>
+        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="280"/>
         <source>Wired network</source>
-        <translation type="finished">Проводная сеть</translation>
+        <translation>Проводная сеть</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="281" />
+        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="281"/>
         <source>No editable connection</source>
-        <translation type="finished">Нет редактируемого подключения</translation>
+        <translation>Нет редактируемого подключения</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="304" />
+        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="304"/>
         <source>No wireless adapter detected</source>
-        <translation type="finished">Беспроводной адаптер не обнаружен</translation>
+        <translation>Беспроводной адаптер не обнаружен</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="307" />
+        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="307"/>
         <source>Disabled by a hardware switch or rfkill</source>
-        <translation type="finished">Отключено аппаратным переключателем или rfkill</translation>
+        <translation>Отключено аппаратным переключателем или rfkill</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="352" />
+        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="352"/>
         <source>Nearby networks</source>
-        <translation type="finished">Сети поблизости</translation>
+        <translation>Сети поблизости</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="437" />
-        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="442" />
+        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="437"/>
+        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="442"/>
         <source>Searching for nearby networks</source>
-        <translation type="finished">Поиск сетей поблизости</translation>
+        <translation>Поиск сетей поблизости</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="467" />
+        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="467"/>
         <source>No nearby networks found</source>
-        <translation type="finished">Сети поблизости не найдены</translation>
+        <translation>Сети поблизости не найдены</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="484" />
+        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="484"/>
         <source>Password for %1</source>
-        <translation type="finished">Пароль для %1</translation>
+        <translation>Пароль для %1</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="485" />
+        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="485"/>
         <source>Password</source>
-        <translation type="finished">Пароль</translation>
+        <translation>Пароль</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="487" />
+        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="487"/>
         <source>Password must be at least 8 characters</source>
-        <translation type="finished">Пароль должен содержать не менее 8 символов</translation>
+        <translation>Пароль должен содержать не менее 8 символов</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="500" />
+        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="500"/>
         <source>Cancel</source>
-        <translation type="finished">Отмена</translation>
+        <translation>Отмена</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="508" />
+        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="508"/>
         <source>Connect</source>
-        <translation type="finished">Подключить</translation>
+        <translation>Подключить</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="542" />
+        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="542"/>
         <source>Saved networks</source>
-        <translation type="finished">Сохранённые сети</translation>
+        <translation>Сохранённые сети</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="550" />
+        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="550"/>
         <source>Add network</source>
-        <translation type="finished">Добавить сеть</translation>
+        <translation>Добавить сеть</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="579" />
+        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="579"/>
         <source>Interface</source>
-        <translation type="finished">Интерфейс</translation>
+        <translation>Интерфейс</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="585" />
+        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="585"/>
         <source>IP address</source>
-        <translation type="finished">IP-адрес</translation>
+        <translation>IP-адрес</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="592" />
+        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="592"/>
         <source>Gateway</source>
-        <translation type="finished">Шлюз</translation>
+        <translation>Шлюз</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="598" />
+        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="598"/>
         <source>DNS</source>
-        <translation type="finished">DNS</translation>
+        <translation>DNS</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="605" />
+        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="605"/>
         <source>MAC</source>
-        <translation type="finished">MAC</translation>
+        <translation>MAC</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="612" />
+        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="612"/>
         <source>Security type</source>
-        <translation type="finished">Тип безопасности</translation>
+        <translation>Тип безопасности</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="613" />
+        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="613"/>
         <source>Unknown</source>
-        <translation type="finished">Неизвестно</translation>
+        <translation>Неизвестно</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="619" />
+        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="619"/>
         <source>Frequency</source>
-        <translation type="finished">Частота</translation>
+        <translation>Частота</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="627" />
+        <location filename="../Modules/ControlCenter/NetworkPage.qml" line="627"/>
         <source>Link speed</source>
-        <translation type="finished">Скорость соединения</translation>
+        <translation>Скорость соединения</translation>
     </message>
 </context>
 <context>
     <name>NetworkProfileEditor</name>
     <message>
-        <location filename="../Modules/ControlCenter/NetworkProfileEditor.qml" line="145" />
+        <location filename="../Modules/ControlCenter/NetworkProfileEditor.qml" line="145"/>
         <source>The active network profile changed; unapplied changes were discarded</source>
-        <translation type="finished">Активный сетевой профиль изменился; неприменённые изменения отброшены</translation>
+        <translation>Активный сетевой профиль изменился; неприменённые изменения отброшены</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/NetworkProfileEditor.qml" line="155" />
+        <location filename="../Modules/ControlCenter/NetworkProfileEditor.qml" line="155"/>
         <source>Profile saved; reconnect to fully apply the new IPv4 settings</source>
-        <translation type="finished">Профиль сохранён; переподключитесь, чтобы полностью применить новые настройки IPv4</translation>
+        <translation>Профиль сохранён; переподключитесь, чтобы полностью применить новые настройки IPv4</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/NetworkProfileEditor.qml" line="157" />
+        <location filename="../Modules/ControlCenter/NetworkProfileEditor.qml" line="157"/>
         <source>Profile saved</source>
-        <translation type="finished">Профиль сохранён</translation>
+        <translation>Профиль сохранён</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/NetworkProfileEditor.qml" line="202" />
+        <location filename="../Modules/ControlCenter/NetworkProfileEditor.qml" line="202"/>
         <source>Disconnect</source>
-        <translation type="finished">Отключить</translation>
+        <translation>Отключить</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/NetworkProfileEditor.qml" line="210" />
+        <location filename="../Modules/ControlCenter/NetworkProfileEditor.qml" line="210"/>
         <source>Connect</source>
-        <translation type="finished">Подключить</translation>
+        <translation>Подключить</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/NetworkProfileEditor.qml" line="224" />
+        <location filename="../Modules/ControlCenter/NetworkProfileEditor.qml" line="224"/>
         <source>Forget</source>
-        <translation type="finished">Забыть</translation>
+        <translation>Забыть</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/NetworkProfileEditor.qml" line="257" />
+        <location filename="../Modules/ControlCenter/NetworkProfileEditor.qml" line="257"/>
         <source>Basic information</source>
-        <translation type="finished">Основные сведения</translation>
+        <translation>Основные сведения</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/NetworkProfileEditor.qml" line="262" />
+        <location filename="../Modules/ControlCenter/NetworkProfileEditor.qml" line="262"/>
         <source>Profile name</source>
-        <translation type="finished">Имя профиля</translation>
+        <translation>Имя профиля</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/NetworkProfileEditor.qml" line="263" />
+        <location filename="../Modules/ControlCenter/NetworkProfileEditor.qml" line="263"/>
         <source>No editable profile</source>
-        <translation type="finished">Нет редактируемого профиля</translation>
+        <translation>Нет редактируемого профиля</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/NetworkProfileEditor.qml" line="269" />
+        <location filename="../Modules/ControlCenter/NetworkProfileEditor.qml" line="269"/>
         <source>SSID</source>
-        <translation type="finished">SSID</translation>
+        <translation>SSID</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/NetworkProfileEditor.qml" line="275" />
+        <location filename="../Modules/ControlCenter/NetworkProfileEditor.qml" line="275"/>
         <source>Interface</source>
-        <translation type="finished">Интерфейс</translation>
+        <translation>Интерфейс</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/NetworkProfileEditor.qml" line="285" />
+        <location filename="../Modules/ControlCenter/NetworkProfileEditor.qml" line="285"/>
         <source>IPv4</source>
-        <translation type="finished">IPv4</translation>
+        <translation>IPv4</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/NetworkProfileEditor.qml" line="291" />
+        <location filename="../Modules/ControlCenter/NetworkProfileEditor.qml" line="291"/>
         <source>Connect automatically</source>
-        <translation type="finished">Подключаться автоматически</translation>
+        <translation>Подключаться автоматически</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/NetworkProfileEditor.qml" line="304" />
+        <location filename="../Modules/ControlCenter/NetworkProfileEditor.qml" line="304"/>
         <source>IP assignment</source>
-        <translation type="finished">Назначение IP</translation>
+        <translation>Назначение IP</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/NetworkProfileEditor.qml" line="316" />
+        <location filename="../Modules/ControlCenter/NetworkProfileEditor.qml" line="316"/>
         <source>Automatic (DHCP)</source>
-        <translation type="finished">Автоматически (DHCP)</translation>
+        <translation>Автоматически (DHCP)</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/NetworkProfileEditor.qml" line="320" />
+        <location filename="../Modules/ControlCenter/NetworkProfileEditor.qml" line="320"/>
         <source>DHCP + custom DNS</source>
-        <translation type="finished">DHCP + свои DNS</translation>
+        <translation>DHCP + свои DNS</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/NetworkProfileEditor.qml" line="324" />
+        <location filename="../Modules/ControlCenter/NetworkProfileEditor.qml" line="324"/>
         <source>Manual</source>
-        <translation type="finished">Вручную</translation>
+        <translation>Вручную</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/NetworkProfileEditor.qml" line="341" />
+        <location filename="../Modules/ControlCenter/NetworkProfileEditor.qml" line="341"/>
         <source>IPv4 address / CIDR</source>
-        <translation type="finished">IPv4-адрес / CIDR</translation>
+        <translation>IPv4-адрес / CIDR</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/NetworkProfileEditor.qml" line="343" />
+        <location filename="../Modules/ControlCenter/NetworkProfileEditor.qml" line="343"/>
         <source>Enter a valid IPv4 CIDR, such as 192.168.1.50/24</source>
-        <translation type="finished">Введите корректный IPv4 CIDR, например 192.168.1.50/24</translation>
+        <translation>Введите корректный IPv4 CIDR, например 192.168.1.50/24</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/NetworkProfileEditor.qml" line="352" />
+        <location filename="../Modules/ControlCenter/NetworkProfileEditor.qml" line="352"/>
         <source>Gateway</source>
-        <translation type="finished">Шлюз</translation>
+        <translation>Шлюз</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/NetworkProfileEditor.qml" line="354" />
+        <location filename="../Modules/ControlCenter/NetworkProfileEditor.qml" line="354"/>
         <source>Enter a valid IPv4 gateway</source>
-        <translation type="finished">Введите корректный IPv4-шлюз</translation>
+        <translation>Введите корректный IPv4-шлюз</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/NetworkProfileEditor.qml" line="368" />
+        <location filename="../Modules/ControlCenter/NetworkProfileEditor.qml" line="368"/>
         <source>DNS</source>
-        <translation type="finished">DNS</translation>
+        <translation>DNS</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/NetworkProfileEditor.qml" line="370" />
+        <location filename="../Modules/ControlCenter/NetworkProfileEditor.qml" line="370"/>
         <source>Enter at least one valid IPv4 DNS address</source>
-        <translation type="finished">Введите хотя бы один корректный IPv4-DNS-адрес</translation>
+        <translation>Введите хотя бы один корректный IPv4-DNS-адрес</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/NetworkProfileEditor.qml" line="395" />
+        <location filename="../Modules/ControlCenter/NetworkProfileEditor.qml" line="395"/>
         <source>Apply</source>
-        <translation type="finished">Применить</translation>
+        <translation>Применить</translation>
     </message>
 </context>
 <context>
     <name>NetworkService</name>
     <message>
-        <location filename="../Services/NetworkService.qml" line="192" />
+        <location filename="../Services/NetworkService.qml" line="192"/>
         <source>Disconnected</source>
-        <translation type="finished">Отключено</translation>
+        <translation>Отключено</translation>
     </message>
     <message>
-        <location filename="../Services/NetworkService.qml" line="193" />
+        <location filename="../Services/NetworkService.qml" line="193"/>
         <source>Wired</source>
-        <translation type="finished">Проводное</translation>
+        <translation>Проводное</translation>
     </message>
     <message>
-        <location filename="../Services/NetworkService.qml" line="300" />
+        <location filename="../Services/NetworkService.qml" line="300"/>
         <source>Wired network</source>
-        <translation type="finished">Проводная сеть</translation>
+        <translation>Проводная сеть</translation>
     </message>
     <message>
-        <location filename="../Services/NetworkService.qml" line="342" />
+        <location filename="../Services/NetworkService.qml" line="342"/>
         <source>Another network operation is already in progress</source>
-        <translation type="finished">Другая сетевая операция уже выполняется</translation>
+        <translation>Другая сетевая операция уже выполняется</translation>
     </message>
     <message>
-        <location filename="../Services/NetworkService.qml" line="371" />
+        <location filename="../Services/NetworkService.qml" line="371"/>
         <source>Network operation failed</source>
-        <translation type="finished">Сетевая операция не удалась</translation>
+        <translation>Сетевая операция не удалась</translation>
     </message>
     <message>
-        <location filename="../Services/NetworkService.qml" line="398" />
-        <location filename="../Services/NetworkService.qml" line="453" />
+        <location filename="../Services/NetworkService.qml" line="398"/>
+        <location filename="../Services/NetworkService.qml" line="453"/>
         <source>NetworkManager is unavailable</source>
-        <translation type="finished">NetworkManager недоступен</translation>
+        <translation>NetworkManager недоступен</translation>
     </message>
     <message>
-        <location filename="../Services/NetworkService.qml" line="403" />
+        <location filename="../Services/NetworkService.qml" line="403"/>
         <source>Wi-Fi is blocked by hardware or rfkill</source>
-        <translation type="finished">Wi-Fi заблокирован оборудованием или rfkill</translation>
+        <translation>Wi-Fi заблокирован оборудованием или rfkill</translation>
     </message>
     <message>
-        <location filename="../Services/NetworkService.qml" line="458" />
+        <location filename="../Services/NetworkService.qml" line="458"/>
         <source>No Wi-Fi device detected</source>
-        <translation type="finished">Устройство Wi-Fi не обнаружено</translation>
+        <translation>Устройство Wi-Fi не обнаружено</translation>
     </message>
     <message>
-        <location filename="../Services/NetworkService.qml" line="463" />
+        <location filename="../Services/NetworkService.qml" line="463"/>
         <source>Wi-Fi is off</source>
-        <translation type="finished">Wi-Fi выключен</translation>
+        <translation>Wi-Fi выключен</translation>
     </message>
     <message>
-        <location filename="../Services/NetworkService.qml" line="487" />
+        <location filename="../Services/NetworkService.qml" line="487"/>
         <source>The target network is no longer available</source>
-        <translation type="finished">Целевая сеть больше не доступна</translation>
+        <translation>Целевая сеть больше не доступна</translation>
     </message>
     <message>
-        <location filename="../Services/NetworkService.qml" line="502" />
+        <location filename="../Services/NetworkService.qml" line="502"/>
         <source>This authentication type requires the second-phase Secret Agent/Extras backend</source>
-        <translation type="finished">Этот тип аутентификации требует второй фазы бэкенда Secret Agent/Extras</translation>
+        <translation>Этот тип аутентификации требует второй фазы бэкенда Secret Agent/Extras</translation>
     </message>
     <message>
-        <location filename="../Services/NetworkService.qml" line="519" />
+        <location filename="../Services/NetworkService.qml" line="519"/>
         <source>The current Quickshell API only supports WPA/WPA2-PSK and SAE password connections</source>
-        <translation type="finished">Текущий API Quickshell поддерживает только парольные подключения WPA/WPA2-PSK и SAE</translation>
+        <translation>Текущий API Quickshell поддерживает только парольные подключения WPA/WPA2-PSK и SAE</translation>
     </message>
     <message>
-        <location filename="../Services/NetworkService.qml" line="577" />
+        <location filename="../Services/NetworkService.qml" line="577"/>
         <source>No active network to disconnect</source>
-        <translation type="finished">Нет активной сети для отключения</translation>
+        <translation>Нет активной сети для отключения</translation>
     </message>
     <message>
-        <location filename="../Services/NetworkService.qml" line="594" />
+        <location filename="../Services/NetworkService.qml" line="594"/>
         <source>No saved network configuration found</source>
-        <translation type="finished">Сохранённая сетевая конфигурация не найдена</translation>
+        <translation>Сохранённая сетевая конфигурация не найдена</translation>
     </message>
     <message>
-        <location filename="../Services/NetworkService.qml" line="692" />
+        <location filename="../Services/NetworkService.qml" line="692"/>
         <source>The network profile cannot currently be written</source>
-        <translation type="finished">Сетевой профиль сейчас нельзя записать</translation>
+        <translation>Сетевой профиль сейчас нельзя записать</translation>
     </message>
     <message>
-        <location filename="../Services/NetworkService.qml" line="711" />
+        <location filename="../Services/NetworkService.qml" line="711"/>
         <source>Invalid IPv4 configuration format</source>
-        <translation type="finished">Некорректный формат IPv4-конфигурации</translation>
+        <translation>Некорректный формат IPv4-конфигурации</translation>
     </message>
     <message>
-        <location filename="../Services/NetworkService.qml" line="725" />
+        <location filename="../Services/NetworkService.qml" line="725"/>
         <source>The current IPv4 mode cannot be edited on this page</source>
-        <translation type="finished">Текущий режим IPv4 нельзя редактировать на этой странице</translation>
+        <translation>Текущий режим IPv4 нельзя редактировать на этой странице</translation>
     </message>
     <message>
-        <location filename="../Services/NetworkService.qml" line="779" />
+        <location filename="../Services/NetworkService.qml" line="779"/>
         <source>The network profile cannot currently be deleted</source>
-        <translation type="finished">Сетевой профиль сейчас нельзя удалить</translation>
+        <translation>Сетевой профиль сейчас нельзя удалить</translation>
     </message>
     <message>
-        <location filename="../Services/NetworkService.qml" line="854" />
+        <location filename="../Services/NetworkService.qml" line="854"/>
         <source>Another add operation is already in progress</source>
-        <translation type="finished">Другая операция добавления уже выполняется</translation>
+        <translation>Другая операция добавления уже выполняется</translation>
     </message>
     <message>
-        <location filename="../Services/NetworkService.qml" line="859" />
+        <location filename="../Services/NetworkService.qml" line="859"/>
         <source>SSID must be 1–32 UTF-8 bytes</source>
-        <translation type="finished">SSID должен быть длиной 1–32 байт UTF-8</translation>
+        <translation>SSID должен быть длиной 1–32 байт UTF-8</translation>
     </message>
     <message>
-        <location filename="../Services/NetworkService.qml" line="863" />
+        <location filename="../Services/NetworkService.qml" line="863"/>
         <source>Invalid Wi-Fi password format</source>
-        <translation type="finished">Некорректный формат пароля Wi-Fi</translation>
+        <translation>Некорректный формат пароля Wi-Fi</translation>
     </message>
     <message>
-        <location filename="../Services/NetworkService.qml" line="870" />
+        <location filename="../Services/NetworkService.qml" line="870"/>
         <source>Multiple Wi-Fi devices found networks with the same name; select a specific device from the nearby networks list</source>
-        <translation type="finished">Несколько устройств Wi-Fi нашли сети с одинаковым именем; выберите конкретное устройство в списке сетей поблизости</translation>
+        <translation>Несколько устройств Wi-Fi нашли сети с одинаковым именем; выберите конкретное устройство в списке сетей поблизости</translation>
     </message>
     <message>
-        <location filename="../Services/NetworkService.qml" line="880" />
+        <location filename="../Services/NetworkService.qml" line="880"/>
         <source>This network requires a valid Wi-Fi password</source>
-        <translation type="finished">Для этой сети требуется корректный пароль Wi-Fi</translation>
+        <translation>Для этой сети требуется корректный пароль Wi-Fi</translation>
     </message>
     <message>
-        <location filename="../Services/NetworkService.qml" line="898" />
+        <location filename="../Services/NetworkService.qml" line="898"/>
         <source>Unable to create Wi-Fi profile</source>
-        <translation type="finished">Не удалось создать профиль Wi-Fi</translation>
+        <translation>Не удалось создать профиль Wi-Fi</translation>
     </message>
     <message>
-        <location filename="../Services/NetworkService.qml" line="906" />
+        <location filename="../Services/NetworkService.qml" line="906"/>
         <source>This NetworkManager profile cannot currently be connected</source>
-        <translation type="finished">Этот профиль NetworkManager сейчас нельзя подключить</translation>
+        <translation>Этот профиль NetworkManager сейчас нельзя подключить</translation>
     </message>
     <message>
-        <location filename="../Services/NetworkService.qml" line="940" />
+        <location filename="../Services/NetworkService.qml" line="940"/>
         <source>NetworkManager connectivity checking is unavailable or disabled</source>
-        <translation type="finished">Проверка подключения NetworkManager недоступна или отключена</translation>
+        <translation>Проверка подключения NetworkManager недоступна или отключена</translation>
     </message>
     <message>
-        <location filename="../Services/NetworkService.qml" line="1026" />
+        <location filename="../Services/NetworkService.qml" line="1026"/>
         <source>Incorrect password or authentication timed out</source>
-        <translation type="finished">Неверный пароль или истекло время авторизации</translation>
+        <translation>Неверный пароль или истекло время авторизации</translation>
     </message>
     <message>
-        <location filename="../Services/NetworkService.qml" line="1026" />
+        <location filename="../Services/NetworkService.qml" line="1026"/>
         <source>Network password required</source>
-        <translation type="finished">Требуется пароль сети</translation>
+        <translation>Требуется пароль сети</translation>
     </message>
     <message>
-        <location filename="../Services/NetworkService.qml" line="1080" />
+        <location filename="../Services/NetworkService.qml" line="1080"/>
         <source>Connection did not complete</source>
-        <translation type="finished">Подключение не завершилось</translation>
+        <translation>Подключение не завершилось</translation>
     </message>
     <message>
-        <location filename="../Services/NetworkService.qml" line="1114" />
+        <location filename="../Services/NetworkService.qml" line="1114"/>
         <source>NetworkManager did not confirm the profile update</source>
-        <translation type="finished">NetworkManager не подтвердил обновление профиля</translation>
+        <translation>NetworkManager не подтвердил обновление профиля</translation>
     </message>
     <message>
-        <location filename="../Services/NetworkService.qml" line="1127" />
+        <location filename="../Services/NetworkService.qml" line="1127"/>
         <source>NetworkManager did not confirm profile deletion</source>
-        <translation type="finished">NetworkManager не подтвердил удаление профиля</translation>
+        <translation>NetworkManager не подтвердил удаление профиля</translation>
     </message>
     <message>
-        <location filename="../Services/NetworkService.qml" line="1147" />
+        <location filename="../Services/NetworkService.qml" line="1147"/>
         <source>Network operation timed out</source>
-        <translation type="finished">Сетевая операция истекла по времени</translation>
+        <translation>Сетевая операция истекла по времени</translation>
     </message>
 </context>
 <context>
     <name>NightModeContent</name>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/NightModeContent.qml" line="11" />
-        <location filename="../Modules/Sidebars/QuickSettings/NightModeContent.qml" line="47" />
-        <location filename="../Modules/Sidebars/QuickSettings/NightModeContent.qml" line="51" />
+        <location filename="../Modules/Sidebars/QuickSettings/NightModeContent.qml" line="11"/>
+        <location filename="../Modules/Sidebars/QuickSettings/NightModeContent.qml" line="47"/>
+        <location filename="../Modules/Sidebars/QuickSettings/NightModeContent.qml" line="51"/>
         <source>Night Mode</source>
-        <translation type="finished">Ночной режим</translation>
+        <translation>Ночной режим</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/NightModeContent.qml" line="32" />
+        <location filename="../Modules/Sidebars/QuickSettings/NightModeContent.qml" line="32"/>
         <source>The compositor does not provide Gamma control</source>
-        <translation type="finished">Композитор не предоставляет управление гаммой</translation>
+        <translation>Композитор не предоставляет управление гаммой</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/NightModeContent.qml" line="56" />
+        <location filename="../Modules/Sidebars/QuickSettings/NightModeContent.qml" line="56"/>
         <source>Night temperature</source>
-        <translation type="finished">Ночная температура</translation>
+        <translation>Ночная температура</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/NightModeContent.qml" line="68" />
+        <location filename="../Modules/Sidebars/QuickSettings/NightModeContent.qml" line="68"/>
         <source>Scheduled temperature</source>
-        <translation type="finished">Температура по расписанию</translation>
+        <translation>Температура по расписанию</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/NightModeContent.qml" line="71" />
+        <location filename="../Modules/Sidebars/QuickSettings/NightModeContent.qml" line="71"/>
         <source>%1 K</source>
-        <translation type="finished">%1 К</translation>
+        <translation>%1 К</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/NightModeContent.qml" line="84" />
+        <location filename="../Modules/Sidebars/QuickSettings/NightModeContent.qml" line="84"/>
         <source>Gamma</source>
-        <translation type="finished">Гамма</translation>
+        <translation>Гамма</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/NightModeContent.qml" line="93" />
+        <location filename="../Modules/Sidebars/QuickSettings/NightModeContent.qml" line="93"/>
         <source>Contrast</source>
-        <translation type="finished">Контраст</translation>
+        <translation>Контраст</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/NightModeContent.qml" line="115" />
+        <location filename="../Modules/Sidebars/QuickSettings/NightModeContent.qml" line="115"/>
         <source>Gamma control unavailable: %1</source>
-        <translation type="finished">Управление гаммой недоступно: %1</translation>
+        <translation>Управление гаммой недоступно: %1</translation>
     </message>
 </context>
 <context>
     <name>NiriActions</name>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="4" />
+        <location filename="../Common/NiriActionNames.js" line="4"/>
         <source>Weather sidebar: toggle</source>
-        <translation type="finished">Панель погоды: переключить</translation>
+        <translation>Панель погоды: переключить</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="5" />
+        <location filename="../Common/NiriActionNames.js" line="5"/>
         <source>Sidebar drawer: toggle</source>
-        <translation type="finished">Выдвижная боковая панель: переключить</translation>
+        <translation>Выдвижная боковая панель: переключить</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="6" />
+        <location filename="../Common/NiriActionNames.js" line="6"/>
         <source>Spotlight: Commands</source>
-        <translation type="finished">Spotlight: Команды</translation>
+        <translation>Spotlight: Команды</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="7" />
+        <location filename="../Common/NiriActionNames.js" line="7"/>
         <source>Spotlight: Calculator</source>
-        <translation type="finished">Spotlight: Калькулятор</translation>
+        <translation>Spotlight: Калькулятор</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="8" />
+        <location filename="../Common/NiriActionNames.js" line="8"/>
         <source>Spotlight: Currency</source>
-        <translation type="finished">Spotlight: Валюта</translation>
+        <translation>Spotlight: Валюта</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="9" />
+        <location filename="../Common/NiriActionNames.js" line="9"/>
         <source>Spotlight: Time zone</source>
-        <translation type="finished">Spotlight: Часовой пояс</translation>
+        <translation>Spotlight: Часовой пояс</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="10" />
+        <location filename="../Common/NiriActionNames.js" line="10"/>
         <source>Spotlight: Light theme</source>
-        <translation type="finished">Spotlight: Светлая тема</translation>
+        <translation>Spotlight: Светлая тема</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="11" />
+        <location filename="../Common/NiriActionNames.js" line="11"/>
         <source>Spotlight: Dark theme</source>
-        <translation type="finished">Spotlight: Тёмная тема</translation>
+        <translation>Spotlight: Тёмная тема</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="12" />
+        <location filename="../Common/NiriActionNames.js" line="12"/>
         <source>Spotlight: Search settings</source>
-        <translation type="finished">Spotlight: Поиск настроек</translation>
+        <translation>Spotlight: Поиск настроек</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="13" />
+        <location filename="../Common/NiriActionNames.js" line="13"/>
         <source>Spotlight: Search IPC actions</source>
-        <translation type="finished">Spotlight: Поиск IPC-действий</translation>
+        <translation>Spotlight: Поиск IPC-действий</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="14" />
+        <location filename="../Common/NiriActionNames.js" line="14"/>
         <source>Spotlight: Location picker</source>
-        <translation type="finished">Spotlight: Выбор местоположения</translation>
+        <translation>Spotlight: Выбор местоположения</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="16" />
+        <location filename="../Common/NiriActionNames.js" line="16"/>
         <source>Spotlight: Search</source>
-        <translation type="finished">Spotlight: Поиск</translation>
+        <translation>Spotlight: Поиск</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="17" />
+        <location filename="../Common/NiriActionNames.js" line="17"/>
         <source>Spotlight: Find files</source>
-        <translation type="finished">Spotlight: Поиск файлов</translation>
+        <translation>Spotlight: Поиск файлов</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="18" />
+        <location filename="../Common/NiriActionNames.js" line="18"/>
         <source>Quit</source>
-        <translation type="finished">Выйти</translation>
+        <translation>Выйти</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="19" />
+        <location filename="../Common/NiriActionNames.js" line="19"/>
         <source>Suspend</source>
-        <translation type="finished">Приостановить</translation>
+        <translation>Приостановить</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="20" />
+        <location filename="../Common/NiriActionNames.js" line="20"/>
         <source>Power off monitors</source>
-        <translation type="finished">Выключить мониторы</translation>
+        <translation>Выключить мониторы</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="21" />
+        <location filename="../Common/NiriActionNames.js" line="21"/>
         <source>Power on monitors</source>
-        <translation type="finished">Включить мониторы</translation>
+        <translation>Включить мониторы</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="22" />
+        <location filename="../Common/NiriActionNames.js" line="22"/>
         <source>Toggle debug tint</source>
-        <translation type="finished">Отладка: переключить тонирование</translation>
+        <translation>Отладка: переключить тонирование</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="23" />
+        <location filename="../Common/NiriActionNames.js" line="23"/>
         <source>Debug toggle opaque regions</source>
-        <translation type="finished">Отладка: переключить непрозрачные области</translation>
+        <translation>Отладка: переключить непрозрачные области</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="24" />
+        <location filename="../Common/NiriActionNames.js" line="24"/>
         <source>Debug toggle damage</source>
-        <translation type="finished">Отладка: переключить вывод повреждённых областей</translation>
+        <translation>Отладка: переключить вывод повреждённых областей</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="25" />
+        <location filename="../Common/NiriActionNames.js" line="25"/>
         <source>Do screen transition</source>
-        <translation type="finished">Сделать переход экрана</translation>
+        <translation>Сделать переход экрана</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="26" />
+        <location filename="../Common/NiriActionNames.js" line="26"/>
         <source>Screenshot</source>
-        <translation type="finished">Снимок экрана</translation>
+        <translation>Снимок экрана</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="27" />
+        <location filename="../Common/NiriActionNames.js" line="27"/>
         <source>Screenshot screen</source>
-        <translation type="finished">Снимок всего экрана</translation>
+        <translation>Снимок всего экрана</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="28" />
+        <location filename="../Common/NiriActionNames.js" line="28"/>
         <source>Screenshot window</source>
-        <translation type="finished">Снимок окна</translation>
+        <translation>Снимок окна</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="29" />
+        <location filename="../Common/NiriActionNames.js" line="29"/>
         <source>Toggle keyboard shortcuts inhibit</source>
-        <translation type="finished">Переключить запрет сочетаний клавиш</translation>
+        <translation>Переключить запрет сочетаний клавиш</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="30" />
+        <location filename="../Common/NiriActionNames.js" line="30"/>
         <source>Close window</source>
-        <translation type="finished">Закрыть окно</translation>
+        <translation>Закрыть окно</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="31" />
+        <location filename="../Common/NiriActionNames.js" line="31"/>
         <source>Fullscreen window</source>
-        <translation type="finished">Полноэкранное окно</translation>
+        <translation>Полноэкранное окно</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="32" />
+        <location filename="../Common/NiriActionNames.js" line="32"/>
         <source>Toggle windowed fullscreen</source>
-        <translation type="finished">Переключить полноэкранный режим окна</translation>
+        <translation>Переключить полноэкранный режим окна</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="33" />
+        <location filename="../Common/NiriActionNames.js" line="33"/>
         <source>Focus window in column</source>
-        <translation type="finished">Сфокусировать окно в колонке</translation>
+        <translation>Сфокусировать окно в колонке</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="34" />
+        <location filename="../Common/NiriActionNames.js" line="34"/>
         <source>Focus window previous</source>
-        <translation type="finished">Сфокусировать предыдущее окно</translation>
+        <translation>Сфокусировать предыдущее окно</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="35" />
+        <location filename="../Common/NiriActionNames.js" line="35"/>
         <source>Focus column left</source>
-        <translation type="finished">Сфокусировать колонку слева</translation>
+        <translation>Сфокусировать колонку слева</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="36" />
+        <location filename="../Common/NiriActionNames.js" line="36"/>
         <source>Focus column right</source>
-        <translation type="finished">Сфокусировать колонку справа</translation>
+        <translation>Сфокусировать колонку справа</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="37" />
+        <location filename="../Common/NiriActionNames.js" line="37"/>
         <source>Focus column first</source>
-        <translation type="finished">Сфокусировать первую колонку</translation>
+        <translation>Сфокусировать первую колонку</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="38" />
+        <location filename="../Common/NiriActionNames.js" line="38"/>
         <source>Focus column last</source>
-        <translation type="finished">Сфокусировать последнюю колонку</translation>
+        <translation>Сфокусировать последнюю колонку</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="39" />
+        <location filename="../Common/NiriActionNames.js" line="39"/>
         <source>Focus column right or first</source>
-        <translation type="finished">Сфокусировать колонку справа или первую</translation>
+        <translation>Сфокусировать колонку справа или первую</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="40" />
+        <location filename="../Common/NiriActionNames.js" line="40"/>
         <source>Focus column left or last</source>
-        <translation type="finished">Сфокусировать колонку слева или последнюю</translation>
+        <translation>Сфокусировать колонку слева или последнюю</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="41" />
+        <location filename="../Common/NiriActionNames.js" line="41"/>
         <source>Focus column</source>
-        <translation type="finished">Сфокусировать колонку</translation>
+        <translation>Сфокусировать колонку</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="42" />
+        <location filename="../Common/NiriActionNames.js" line="42"/>
         <source>Focus window or monitor up</source>
-        <translation type="finished">Сфокусировать окно или монитор выше</translation>
+        <translation>Сфокусировать окно или монитор выше</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="43" />
+        <location filename="../Common/NiriActionNames.js" line="43"/>
         <source>Focus window or monitor down</source>
-        <translation type="finished">Сфокусировать окно или монитор ниже</translation>
+        <translation>Сфокусировать окно или монитор ниже</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="44" />
+        <location filename="../Common/NiriActionNames.js" line="44"/>
         <source>Focus column or monitor left</source>
-        <translation type="finished">Сфокусировать колонку или монитор слева</translation>
+        <translation>Сфокусировать колонку или монитор слева</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="45" />
+        <location filename="../Common/NiriActionNames.js" line="45"/>
         <source>Focus column or monitor right</source>
-        <translation type="finished">Сфокусировать колонку или монитор справа</translation>
+        <translation>Сфокусировать колонку или монитор справа</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="46" />
+        <location filename="../Common/NiriActionNames.js" line="46"/>
         <source>Focus window down</source>
-        <translation type="finished">Сфокусировать окно ниже</translation>
+        <translation>Сфокусировать окно ниже</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="47" />
+        <location filename="../Common/NiriActionNames.js" line="47"/>
         <source>Focus window up</source>
-        <translation type="finished">Сфокусировать окно выше</translation>
+        <translation>Сфокусировать окно выше</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="48" />
+        <location filename="../Common/NiriActionNames.js" line="48"/>
         <source>Focus window down or column left</source>
-        <translation type="finished">Сфокусировать окно ниже или колонку слева</translation>
+        <translation>Сфокусировать окно ниже или колонку слева</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="49" />
+        <location filename="../Common/NiriActionNames.js" line="49"/>
         <source>Focus window down or column right</source>
-        <translation type="finished">Сфокусировать окно ниже или колонку справа</translation>
+        <translation>Сфокусировать окно ниже или колонку справа</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="50" />
+        <location filename="../Common/NiriActionNames.js" line="50"/>
         <source>Focus window up or column left</source>
-        <translation type="finished">Сфокусировать окно выше или колонку слева</translation>
+        <translation>Сфокусировать окно выше или колонку слева</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="51" />
+        <location filename="../Common/NiriActionNames.js" line="51"/>
         <source>Focus window up or column right</source>
-        <translation type="finished">Сфокусировать окно выше или колонку справа</translation>
+        <translation>Сфокусировать окно выше или колонку справа</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="52" />
+        <location filename="../Common/NiriActionNames.js" line="52"/>
         <source>Focus window or workspace down</source>
-        <translation type="finished">Сфокусировать окно или рабочее место ниже</translation>
+        <translation>Сфокусировать окно или рабочее место ниже</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="53" />
+        <location filename="../Common/NiriActionNames.js" line="53"/>
         <source>Focus window or workspace up</source>
-        <translation type="finished">Сфокусировать окно или рабочее место выше</translation>
+        <translation>Сфокусировать окно или рабочее место выше</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="54" />
+        <location filename="../Common/NiriActionNames.js" line="54"/>
         <source>Focus window top</source>
-        <translation type="finished">Сфокусировать окно вверху</translation>
+        <translation>Сфокусировать окно вверху</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="55" />
+        <location filename="../Common/NiriActionNames.js" line="55"/>
         <source>Focus window bottom</source>
-        <translation type="finished">Сфокусировать окно внизу</translation>
+        <translation>Сфокусировать окно внизу</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="56" />
+        <location filename="../Common/NiriActionNames.js" line="56"/>
         <source>Focus window down or top</source>
-        <translation type="finished">Сфокусировать окно ниже или вверху</translation>
+        <translation>Сфокусировать окно ниже или вверху</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="57" />
+        <location filename="../Common/NiriActionNames.js" line="57"/>
         <source>Focus window up or bottom</source>
-        <translation type="finished">Сфокусировать окно выше или внизу</translation>
+        <translation>Сфокусировать окно выше или внизу</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="58" />
+        <location filename="../Common/NiriActionNames.js" line="58"/>
         <source>Move column left</source>
-        <translation type="finished">Переместить колонку влево</translation>
+        <translation>Переместить колонку влево</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="59" />
+        <location filename="../Common/NiriActionNames.js" line="59"/>
         <source>Move column right</source>
-        <translation type="finished">Переместить колонку вправо</translation>
+        <translation>Переместить колонку вправо</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="60" />
+        <location filename="../Common/NiriActionNames.js" line="60"/>
         <source>Move column to first</source>
-        <translation type="finished">Переместить колонку в начало</translation>
+        <translation>Переместить колонку в начало</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="61" />
+        <location filename="../Common/NiriActionNames.js" line="61"/>
         <source>Move column to last</source>
-        <translation type="finished">Переместить колонку в конец</translation>
+        <translation>Переместить колонку в конец</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="62" />
+        <location filename="../Common/NiriActionNames.js" line="62"/>
         <source>Move column left or to monitor left</source>
-        <translation type="finished">Переместить колонку влево или на левый монитор</translation>
+        <translation>Переместить колонку влево или на левый монитор</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="63" />
+        <location filename="../Common/NiriActionNames.js" line="63"/>
         <source>Move column right or to monitor right</source>
-        <translation type="finished">Переместить колонку вправо или на правый монитор</translation>
+        <translation>Переместить колонку вправо или на правый монитор</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="64" />
+        <location filename="../Common/NiriActionNames.js" line="64"/>
         <source>Move column to index</source>
-        <translation type="finished">Переместить колонку на позицию</translation>
+        <translation>Переместить колонку на позицию</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="65" />
+        <location filename="../Common/NiriActionNames.js" line="65"/>
         <source>Move window down</source>
-        <translation type="finished">Переместить окно вниз</translation>
+        <translation>Переместить окно вниз</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="66" />
+        <location filename="../Common/NiriActionNames.js" line="66"/>
         <source>Move window up</source>
-        <translation type="finished">Переместить окно вверх</translation>
+        <translation>Переместить окно вверх</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="67" />
+        <location filename="../Common/NiriActionNames.js" line="67"/>
         <source>Move window down or to workspace down</source>
-        <translation type="finished">Переместить окно вниз или на рабочее место ниже</translation>
+        <translation>Переместить окно вниз или на рабочее место ниже</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="68" />
+        <location filename="../Common/NiriActionNames.js" line="68"/>
         <source>Move window up or to workspace up</source>
-        <translation type="finished">Переместить окно вверх или на рабочее место выше</translation>
+        <translation>Переместить окно вверх или на рабочее место выше</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="69" />
+        <location filename="../Common/NiriActionNames.js" line="69"/>
         <source>Consume or expel window left</source>
-        <translation type="finished">Поглотить или вытолкнуть окно влево</translation>
+        <translation>Поглотить или вытолкнуть окно влево</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="70" />
+        <location filename="../Common/NiriActionNames.js" line="70"/>
         <source>Consume or expel window right</source>
-        <translation type="finished">Поглотить или вытолкнуть окно вправо</translation>
+        <translation>Поглотить или вытолкнуть окно вправо</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="71" />
+        <location filename="../Common/NiriActionNames.js" line="71"/>
         <source>Consume window into column</source>
-        <translation type="finished">Поглотить окно в колонку</translation>
+        <translation>Поглотить окно в колонку</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="72" />
+        <location filename="../Common/NiriActionNames.js" line="72"/>
         <source>Expel window from column</source>
-        <translation type="finished">Вытолкнуть окно из колонки</translation>
+        <translation>Вытолкнуть окно из колонки</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="73" />
+        <location filename="../Common/NiriActionNames.js" line="73"/>
         <source>Swap window left</source>
-        <translation type="finished">Поменять окно местами влево</translation>
+        <translation>Поменять окно местами влево</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="74" />
+        <location filename="../Common/NiriActionNames.js" line="74"/>
         <source>Swap window right</source>
-        <translation type="finished">Поменять окно местами вправо</translation>
+        <translation>Поменять окно местами вправо</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="75" />
+        <location filename="../Common/NiriActionNames.js" line="75"/>
         <source>Toggle column tabbed display</source>
-        <translation type="finished">Переключить вкладки колонки</translation>
+        <translation>Переключить вкладки колонки</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="76" />
+        <location filename="../Common/NiriActionNames.js" line="76"/>
         <source>Set column display</source>
-        <translation type="finished">Задать отображение колонки</translation>
+        <translation>Задать отображение колонки</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="77" />
+        <location filename="../Common/NiriActionNames.js" line="77"/>
         <source>Center column</source>
-        <translation type="finished">Центральная колонка</translation>
+        <translation>Центральная колонка</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="78" />
+        <location filename="../Common/NiriActionNames.js" line="78"/>
         <source>Center window</source>
-        <translation type="finished">Центрировать окно</translation>
+        <translation>Центрировать окно</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="79" />
+        <location filename="../Common/NiriActionNames.js" line="79"/>
         <source>Center visible columns</source>
-        <translation type="finished">Центрировать видимые колонки</translation>
+        <translation>Центрировать видимые колонки</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="80" />
+        <location filename="../Common/NiriActionNames.js" line="80"/>
         <source>Focus workspace down</source>
-        <translation type="finished">Сфокусировать рабочее место ниже</translation>
+        <translation>Сфокусировать рабочее место ниже</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="81" />
+        <location filename="../Common/NiriActionNames.js" line="81"/>
         <source>Focus workspace up</source>
-        <translation type="finished">Сфокусировать рабочее место выше</translation>
+        <translation>Сфокусировать рабочее место выше</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="82" />
+        <location filename="../Common/NiriActionNames.js" line="82"/>
         <source>Focus workspace</source>
-        <translation type="finished">Сфокусировать рабочее место</translation>
+        <translation>Сфокусировать рабочее место</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="83" />
+        <location filename="../Common/NiriActionNames.js" line="83"/>
         <source>Focus workspace previous</source>
-        <translation type="finished">Сфокусировать предыдущее рабочее место</translation>
+        <translation>Сфокусировать предыдущее рабочее место</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="84" />
+        <location filename="../Common/NiriActionNames.js" line="84"/>
         <source>Move window to workspace down</source>
-        <translation type="finished">Переместить окно на рабочее место ниже</translation>
+        <translation>Переместить окно на рабочее место ниже</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="85" />
+        <location filename="../Common/NiriActionNames.js" line="85"/>
         <source>Move window to workspace up</source>
-        <translation type="finished">Переместить окно на рабочее место выше</translation>
+        <translation>Переместить окно на рабочее место выше</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="86" />
+        <location filename="../Common/NiriActionNames.js" line="86"/>
         <source>Move window to workspace</source>
-        <translation type="finished">Переместить окно на рабочее место</translation>
+        <translation>Переместить окно на рабочее место</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="87" />
+        <location filename="../Common/NiriActionNames.js" line="87"/>
         <source>Move column to workspace down</source>
-        <translation type="finished">Переместить колонку на рабочее место ниже</translation>
+        <translation>Переместить колонку на рабочее место ниже</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="88" />
+        <location filename="../Common/NiriActionNames.js" line="88"/>
         <source>Move column to workspace up</source>
-        <translation type="finished">Переместить колонку на рабочее место выше</translation>
+        <translation>Переместить колонку на рабочее место выше</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="89" />
+        <location filename="../Common/NiriActionNames.js" line="89"/>
         <source>Move column to workspace</source>
-        <translation type="finished">Переместить колонку на рабочее место</translation>
+        <translation>Переместить колонку на рабочее место</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="90" />
+        <location filename="../Common/NiriActionNames.js" line="90"/>
         <source>Move workspace down</source>
-        <translation type="finished">Переместить рабочее место вниз</translation>
+        <translation>Переместить рабочее место вниз</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="91" />
+        <location filename="../Common/NiriActionNames.js" line="91"/>
         <source>Move workspace up</source>
-        <translation type="finished">Переместить рабочее место вверх</translation>
+        <translation>Переместить рабочее место вверх</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="92" />
+        <location filename="../Common/NiriActionNames.js" line="92"/>
         <source>Move workspace to index</source>
-        <translation type="finished">Переместить рабочее место на позицию</translation>
+        <translation>Переместить рабочее место на позицию</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="93" />
+        <location filename="../Common/NiriActionNames.js" line="93"/>
         <source>Move workspace to monitor</source>
-        <translation type="finished">Переместить рабочее место на монитор</translation>
+        <translation>Переместить рабочее место на монитор</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="94" />
+        <location filename="../Common/NiriActionNames.js" line="94"/>
         <source>Set workspace name</source>
-        <translation type="finished">Задать имя рабочего места</translation>
+        <translation>Задать имя рабочего места</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="95" />
+        <location filename="../Common/NiriActionNames.js" line="95"/>
         <source>Unset workspace name</source>
-        <translation type="finished">Сбросить имя рабочего места</translation>
+        <translation>Сбросить имя рабочего места</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="96" />
+        <location filename="../Common/NiriActionNames.js" line="96"/>
         <source>Focus monitor left</source>
-        <translation type="finished">Сфокусировать монитор слева</translation>
+        <translation>Сфокусировать монитор слева</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="97" />
+        <location filename="../Common/NiriActionNames.js" line="97"/>
         <source>Focus monitor right</source>
-        <translation type="finished">Сфокусировать монитор справа</translation>
+        <translation>Сфокусировать монитор справа</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="98" />
+        <location filename="../Common/NiriActionNames.js" line="98"/>
         <source>Focus monitor down</source>
-        <translation type="finished">Сфокусировать монитор ниже</translation>
+        <translation>Сфокусировать монитор ниже</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="99" />
+        <location filename="../Common/NiriActionNames.js" line="99"/>
         <source>Focus monitor up</source>
-        <translation type="finished">Сфокусировать монитор выше</translation>
+        <translation>Сфокусировать монитор выше</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="100" />
+        <location filename="../Common/NiriActionNames.js" line="100"/>
         <source>Focus monitor previous</source>
-        <translation type="finished">Сфокусировать предыдущий монитор</translation>
+        <translation>Сфокусировать предыдущий монитор</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="101" />
+        <location filename="../Common/NiriActionNames.js" line="101"/>
         <source>Focus monitor next</source>
-        <translation type="finished">Сфокусировать следующий монитор</translation>
+        <translation>Сфокусировать следующий монитор</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="102" />
+        <location filename="../Common/NiriActionNames.js" line="102"/>
         <source>Focus monitor</source>
-        <translation type="finished">Сфокусировать монитор</translation>
+        <translation>Сфокусировать монитор</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="103" />
+        <location filename="../Common/NiriActionNames.js" line="103"/>
         <source>Move window to monitor left</source>
-        <translation type="finished">Переместить окно на левый монитор</translation>
+        <translation>Переместить окно на левый монитор</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="104" />
+        <location filename="../Common/NiriActionNames.js" line="104"/>
         <source>Move window to monitor right</source>
-        <translation type="finished">Переместить окно на правый монитор</translation>
+        <translation>Переместить окно на правый монитор</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="105" />
+        <location filename="../Common/NiriActionNames.js" line="105"/>
         <source>Move window to monitor down</source>
-        <translation type="finished">Переместить окно на монитор ниже</translation>
+        <translation>Переместить окно на монитор ниже</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="106" />
+        <location filename="../Common/NiriActionNames.js" line="106"/>
         <source>Move window to monitor up</source>
-        <translation type="finished">Переместить окно на монитор выше</translation>
+        <translation>Переместить окно на монитор выше</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="107" />
+        <location filename="../Common/NiriActionNames.js" line="107"/>
         <source>Move window to monitor previous</source>
-        <translation type="finished">Переместить окно на предыдущий монитор</translation>
+        <translation>Переместить окно на предыдущий монитор</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="108" />
+        <location filename="../Common/NiriActionNames.js" line="108"/>
         <source>Move window to monitor next</source>
-        <translation type="finished">Переместить окно на следующий монитор</translation>
+        <translation>Переместить окно на следующий монитор</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="109" />
+        <location filename="../Common/NiriActionNames.js" line="109"/>
         <source>Move window to monitor</source>
-        <translation type="finished">Переместить окно на монитор</translation>
+        <translation>Переместить окно на монитор</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="110" />
+        <location filename="../Common/NiriActionNames.js" line="110"/>
         <source>Move column to monitor left</source>
-        <translation type="finished">Переместить колонку на левый монитор</translation>
+        <translation>Переместить колонку на левый монитор</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="111" />
+        <location filename="../Common/NiriActionNames.js" line="111"/>
         <source>Move column to monitor right</source>
-        <translation type="finished">Переместить колонку на правый монитор</translation>
+        <translation>Переместить колонку на правый монитор</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="112" />
+        <location filename="../Common/NiriActionNames.js" line="112"/>
         <source>Move column to monitor down</source>
-        <translation type="finished">Переместить колонку на монитор ниже</translation>
+        <translation>Переместить колонку на монитор ниже</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="113" />
+        <location filename="../Common/NiriActionNames.js" line="113"/>
         <source>Move column to monitor up</source>
-        <translation type="finished">Переместить колонку на монитор выше</translation>
+        <translation>Переместить колонку на монитор выше</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="114" />
+        <location filename="../Common/NiriActionNames.js" line="114"/>
         <source>Move column to monitor previous</source>
-        <translation type="finished">Переместить колонку на предыдущий монитор</translation>
+        <translation>Переместить колонку на предыдущий монитор</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="115" />
+        <location filename="../Common/NiriActionNames.js" line="115"/>
         <source>Move column to monitor next</source>
-        <translation type="finished">Переместить колонку на следующий монитор</translation>
+        <translation>Переместить колонку на следующий монитор</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="116" />
+        <location filename="../Common/NiriActionNames.js" line="116"/>
         <source>Move column to monitor</source>
-        <translation type="finished">Переместить колонку на монитор</translation>
+        <translation>Переместить колонку на монитор</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="117" />
+        <location filename="../Common/NiriActionNames.js" line="117"/>
         <source>Set window width</source>
-        <translation type="finished">Задать ширину окна</translation>
+        <translation>Задать ширину окна</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="118" />
+        <location filename="../Common/NiriActionNames.js" line="118"/>
         <source>Set window height</source>
-        <translation type="finished">Задать высоту окна</translation>
+        <translation>Задать высоту окна</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="119" />
+        <location filename="../Common/NiriActionNames.js" line="119"/>
         <source>Reset window height</source>
-        <translation type="finished">Сбросить высоту окна</translation>
+        <translation>Сбросить высоту окна</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="120" />
+        <location filename="../Common/NiriActionNames.js" line="120"/>
         <source>Switch preset column width</source>
-        <translation type="finished">Переключить пресетную ширину колонки</translation>
+        <translation>Переключить пресетную ширину колонки</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="121" />
+        <location filename="../Common/NiriActionNames.js" line="121"/>
         <source>Switch preset column width back</source>
-        <translation type="finished">Переключить пресетную ширину колонки обратно</translation>
+        <translation>Переключить пресетную ширину колонки обратно</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="122" />
+        <location filename="../Common/NiriActionNames.js" line="122"/>
         <source>Switch preset window width</source>
-        <translation type="finished">Переключить пресетную ширину окна</translation>
+        <translation>Переключить пресетную ширину окна</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="123" />
+        <location filename="../Common/NiriActionNames.js" line="123"/>
         <source>Switch preset window width back</source>
-        <translation type="finished">Переключить пресетную ширину окна обратно</translation>
+        <translation>Переключить пресетную ширину окна обратно</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="124" />
+        <location filename="../Common/NiriActionNames.js" line="124"/>
         <source>Switch preset window height</source>
-        <translation type="finished">Переключить пресетную высоту окна</translation>
+        <translation>Переключить пресетную высоту окна</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="125" />
+        <location filename="../Common/NiriActionNames.js" line="125"/>
         <source>Switch preset window height back</source>
-        <translation type="finished">Переключить пресетную высоту окна обратно</translation>
+        <translation>Переключить пресетную высоту окна обратно</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="126" />
+        <location filename="../Common/NiriActionNames.js" line="126"/>
         <source>Maximize column</source>
-        <translation type="finished">Развернуть колонку</translation>
+        <translation>Развернуть колонку</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="127" />
+        <location filename="../Common/NiriActionNames.js" line="127"/>
         <source>Maximize window to edges</source>
-        <translation type="finished">Развернуть окно по краям</translation>
+        <translation>Развернуть окно по краям</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="128" />
+        <location filename="../Common/NiriActionNames.js" line="128"/>
         <source>Set column width</source>
-        <translation type="finished">Задать ширину колонки</translation>
+        <translation>Задать ширину колонки</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="129" />
+        <location filename="../Common/NiriActionNames.js" line="129"/>
         <source>Expand column to available width</source>
-        <translation type="finished">Расширить колонку до доступной ширины</translation>
+        <translation>Расширить колонку до доступной ширины</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="130" />
+        <location filename="../Common/NiriActionNames.js" line="130"/>
         <source>Switch layout</source>
-        <translation type="finished">Переключить раскладку</translation>
+        <translation>Переключить раскладку</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="131" />
+        <location filename="../Common/NiriActionNames.js" line="131"/>
         <source>Show hotkey overlay</source>
-        <translation type="finished">Показать оверлей горячих клавиш</translation>
+        <translation>Показать оверлей горячих клавиш</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="132" />
+        <location filename="../Common/NiriActionNames.js" line="132"/>
         <source>Move workspace to monitor left</source>
-        <translation type="finished">Переместить рабочее место на левый монитор</translation>
+        <translation>Переместить рабочее место на левый монитор</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="133" />
+        <location filename="../Common/NiriActionNames.js" line="133"/>
         <source>Move workspace to monitor right</source>
-        <translation type="finished">Переместить рабочее место на правый монитор</translation>
+        <translation>Переместить рабочее место на правый монитор</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="134" />
+        <location filename="../Common/NiriActionNames.js" line="134"/>
         <source>Move workspace to monitor down</source>
-        <translation type="finished">Переместить рабочее место на монитор ниже</translation>
+        <translation>Переместить рабочее место на монитор ниже</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="135" />
+        <location filename="../Common/NiriActionNames.js" line="135"/>
         <source>Move workspace to monitor up</source>
-        <translation type="finished">Переместить рабочее место на монитор выше</translation>
+        <translation>Переместить рабочее место на монитор выше</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="136" />
+        <location filename="../Common/NiriActionNames.js" line="136"/>
         <source>Move workspace to monitor previous</source>
-        <translation type="finished">Переместить рабочее место на предыдущий монитор</translation>
+        <translation>Переместить рабочее место на предыдущий монитор</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="137" />
+        <location filename="../Common/NiriActionNames.js" line="137"/>
         <source>Move workspace to monitor next</source>
-        <translation type="finished">Переместить рабочее место на следующий монитор</translation>
+        <translation>Переместить рабочее место на следующий монитор</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="138" />
+        <location filename="../Common/NiriActionNames.js" line="138"/>
         <source>Toggle window floating</source>
-        <translation type="finished">Переключить плавающий режим окна</translation>
+        <translation>Переключить плавающий режим окна</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="139" />
+        <location filename="../Common/NiriActionNames.js" line="139"/>
         <source>Move window to floating</source>
-        <translation type="finished">Перевести окно в плавающий режим</translation>
+        <translation>Перевести окно в плавающий режим</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="140" />
+        <location filename="../Common/NiriActionNames.js" line="140"/>
         <source>Move window to tiling</source>
-        <translation type="finished">Вернуть окно в мозаичный режим</translation>
+        <translation>Вернуть окно в мозаичный режим</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="141" />
+        <location filename="../Common/NiriActionNames.js" line="141"/>
         <source>Focus floating</source>
-        <translation type="finished">Сфокусировать плавающее окно</translation>
+        <translation>Сфокусировать плавающее окно</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="142" />
+        <location filename="../Common/NiriActionNames.js" line="142"/>
         <source>Focus tiling</source>
-        <translation type="finished">Сфокусировать мозаичное окно</translation>
+        <translation>Сфокусировать мозаичное окно</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="143" />
+        <location filename="../Common/NiriActionNames.js" line="143"/>
         <source>Switch focus between floating and tiling</source>
-        <translation type="finished">Переключать фокус между плавающим и мозаичным</translation>
+        <translation>Переключать фокус между плавающим и мозаичным</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="144" />
+        <location filename="../Common/NiriActionNames.js" line="144"/>
         <source>Toggle window rule opacity</source>
-        <translation type="finished">Переключить прозрачность по правилу окна</translation>
+        <translation>Переключить прозрачность по правилу окна</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="145" />
+        <location filename="../Common/NiriActionNames.js" line="145"/>
         <source>Set dynamic cast window</source>
-        <translation type="finished">Задать окно динамической трансляции</translation>
+        <translation>Задать окно динамической трансляции</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="146" />
+        <location filename="../Common/NiriActionNames.js" line="146"/>
         <source>Set dynamic cast monitor</source>
-        <translation type="finished">Задать монитор динамической трансляции</translation>
+        <translation>Задать монитор динамической трансляции</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="147" />
+        <location filename="../Common/NiriActionNames.js" line="147"/>
         <source>Clear dynamic cast target</source>
-        <translation type="finished">Сбросить цель динамической трансляции</translation>
+        <translation>Сбросить цель динамической трансляции</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="148" />
+        <location filename="../Common/NiriActionNames.js" line="148"/>
         <source>Toggle overview</source>
-        <translation type="finished">Переключить обзор</translation>
+        <translation>Переключить обзор</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="149" />
+        <location filename="../Common/NiriActionNames.js" line="149"/>
         <source>Open overview</source>
-        <translation type="finished">Открыть обзор</translation>
+        <translation>Открыть обзор</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="150" />
+        <location filename="../Common/NiriActionNames.js" line="150"/>
         <source>Close overview</source>
-        <translation type="finished">Закрыть обзор</translation>
+        <translation>Закрыть обзор</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="151" />
+        <location filename="../Common/NiriActionNames.js" line="151"/>
         <source>Lock: open</source>
-        <translation type="finished">Блокировка: открыть</translation>
+        <translation>Блокировка: открыть</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="152" />
+        <location filename="../Common/NiriActionNames.js" line="152"/>
         <source>Lock: is locked</source>
-        <translation type="finished">Блокировка: заблокировано</translation>
+        <translation>Блокировка: заблокировано</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="153" />
+        <location filename="../Common/NiriActionNames.js" line="153"/>
         <source>Spotlight: toggle</source>
-        <translation type="finished">Spotlight: переключить</translation>
+        <translation>Spotlight: переключить</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="154" />
+        <location filename="../Common/NiriActionNames.js" line="154"/>
         <source>Spotlight: open</source>
-        <translation type="finished">Spotlight: открыть</translation>
+        <translation>Spotlight: открыть</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="155" />
+        <location filename="../Common/NiriActionNames.js" line="155"/>
         <source>Spotlight: close</source>
-        <translation type="finished">Spotlight: закрыть</translation>
+        <translation>Spotlight: закрыть</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="156" />
+        <location filename="../Common/NiriActionNames.js" line="156"/>
         <source>Spotlight: web</source>
-        <translation type="finished">Spotlight: интернет</translation>
+        <translation>Spotlight: интернет</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="157" />
+        <location filename="../Common/NiriActionNames.js" line="157"/>
         <source>Spotlight: open mode</source>
-        <translation type="finished">Spotlight: открыть режим</translation>
+        <translation>Spotlight: открыть режим</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="158" />
+        <location filename="../Common/NiriActionNames.js" line="158"/>
         <source>Wallpaper: set</source>
-        <translation type="finished">Обои: установить</translation>
+        <translation>Обои: установить</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="159" />
+        <location filename="../Common/NiriActionNames.js" line="159"/>
         <source>Wallpaper: set for screen</source>
-        <translation type="finished">Обои: установить для экрана</translation>
+        <translation>Обои: установить для экрана</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="160" />
+        <location filename="../Common/NiriActionNames.js" line="160"/>
         <source>Wallpaper: clear</source>
-        <translation type="finished">Обои: очистить</translation>
+        <translation>Обои: очистить</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="161" />
+        <location filename="../Common/NiriActionNames.js" line="161"/>
         <source>Wallpaper: clear for screen</source>
-        <translation type="finished">Обои: очистить для экрана</translation>
+        <translation>Обои: очистить для экрана</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="162" />
+        <location filename="../Common/NiriActionNames.js" line="162"/>
         <source>Wallpaper: previous</source>
-        <translation type="finished">Обои: предыдущие</translation>
+        <translation>Обои: предыдущие</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="163" />
+        <location filename="../Common/NiriActionNames.js" line="163"/>
         <source>Wallpaper: next</source>
-        <translation type="finished">Обои: следующие</translation>
+        <translation>Обои: следующие</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="164" />
+        <location filename="../Common/NiriActionNames.js" line="164"/>
         <source>Wallpaper: random</source>
-        <translation type="finished">Обои: случайные</translation>
+        <translation>Обои: случайные</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="165" />
+        <location filename="../Common/NiriActionNames.js" line="165"/>
         <source>Wallpaper: set folder</source>
-        <translation type="finished">Обои: установить папку</translation>
+        <translation>Обои: установить папку</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="166" />
+        <location filename="../Common/NiriActionNames.js" line="166"/>
         <source>Control center: open</source>
-        <translation type="finished">Центр управления: открыть</translation>
+        <translation>Центр управления: открыть</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="167" />
+        <location filename="../Common/NiriActionNames.js" line="167"/>
         <source>Control center: close</source>
-        <translation type="finished">Центр управления: закрыть</translation>
+        <translation>Центр управления: закрыть</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="168" />
+        <location filename="../Common/NiriActionNames.js" line="168"/>
         <source>Control center: toggle</source>
-        <translation type="finished">Центр управления: переключить</translation>
+        <translation>Центр управления: переключить</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="169" />
+        <location filename="../Common/NiriActionNames.js" line="169"/>
         <source>Keystone: cancel record</source>
-        <translation type="finished">Keystone: отменить запись</translation>
+        <translation>Keystone: отменить запись</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="170" />
+        <location filename="../Common/NiriActionNames.js" line="170"/>
         <source>Keystone: close all others</source>
-        <translation type="finished">Keystone: закрыть все остальные</translation>
+        <translation>Keystone: закрыть все остальные</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="171" />
+        <location filename="../Common/NiriActionNames.js" line="171"/>
         <source>Keystone: current style</source>
-        <translation type="finished">Keystone: текущий стиль</translation>
+        <translation>Keystone: текущий стиль</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="172" />
+        <location filename="../Common/NiriActionNames.js" line="172"/>
         <source>Keystone: dashboard</source>
-        <translation type="finished">Keystone: дашборд</translation>
+        <translation>Keystone: дашборд</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="173" />
+        <location filename="../Common/NiriActionNames.js" line="173"/>
         <source>Keystone: hub</source>
-        <translation type="finished">Keystone: хаб</translation>
+        <translation>Keystone: хаб</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="174" />
+        <location filename="../Common/NiriActionNames.js" line="174"/>
         <source>Keystone: lyrics</source>
-        <translation type="finished">Keystone: текст песни</translation>
+        <translation>Keystone: текст песни</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="175" />
+        <location filename="../Common/NiriActionNames.js" line="175"/>
         <source>Keystone: tools</source>
-        <translation type="finished">Keystone: инструменты</translation>
+        <translation>Keystone: инструменты</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="176" />
+        <location filename="../Common/NiriActionNames.js" line="176"/>
         <source>Sidebar: open</source>
-        <translation type="finished">Боковая панель: открыть</translation>
+        <translation>Боковая панель: открыть</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="177" />
+        <location filename="../Common/NiriActionNames.js" line="177"/>
         <source>Sidebar: close</source>
-        <translation type="finished">Боковая панель: закрыть</translation>
+        <translation>Боковая панель: закрыть</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="178" />
+        <location filename="../Common/NiriActionNames.js" line="178"/>
         <source>Sidebar: toggle</source>
-        <translation type="finished">Боковая панель: переключить</translation>
+        <translation>Боковая панель: переключить</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="179" />
+        <location filename="../Common/NiriActionNames.js" line="179"/>
         <source>Run program</source>
-        <translation type="finished">Запустить программу</translation>
+        <translation>Запустить программу</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="180" />
+        <location filename="../Common/NiriActionNames.js" line="180"/>
         <source>Run shell command</source>
-        <translation type="finished">Выполнить команду оболочки</translation>
+        <translation>Выполнить команду оболочки</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="181" />
+        <location filename="../Common/NiriActionNames.js" line="181"/>
         <source>Spotlight: open applications</source>
-        <translation type="finished">Spotlight: открыть приложения</translation>
+        <translation>Spotlight: открыть приложения</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="182" />
+        <location filename="../Common/NiriActionNames.js" line="182"/>
         <source>Spotlight: open clipboard</source>
-        <translation type="finished">Spotlight: открыть буфер обмена</translation>
+        <translation>Spotlight: открыть буфер обмена</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="183" />
+        <location filename="../Common/NiriActionNames.js" line="183"/>
         <source>Spotlight: open wallpaper picker</source>
-        <translation type="finished">Spotlight: открыть выбор обоев</translation>
+        <translation>Spotlight: открыть выбор обоев</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="184" />
+        <location filename="../Common/NiriActionNames.js" line="184"/>
         <source>Control center: open Account</source>
-        <translation type="finished">Центр управления: открыть «Аккаунт»</translation>
+        <translation>Центр управления: открыть «Аккаунт»</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="185" />
+        <location filename="../Common/NiriActionNames.js" line="185"/>
         <source>Control center: open General</source>
-        <translation type="finished">Центр управления: открыть «Общие»</translation>
+        <translation>Центр управления: открыть «Общие»</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="186" />
+        <location filename="../Common/NiriActionNames.js" line="186"/>
         <source>Control center: open Wallpaper</source>
-        <translation type="finished">Центр управления: открыть «Обои»</translation>
+        <translation>Центр управления: открыть «Обои»</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="187" />
+        <location filename="../Common/NiriActionNames.js" line="187"/>
         <source>Control center: open Theme</source>
-        <translation type="finished">Центр управления: открыть «Тема»</translation>
+        <translation>Центр управления: открыть «Тема»</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="188" />
+        <location filename="../Common/NiriActionNames.js" line="188"/>
         <source>Control center: open Keystone</source>
-        <translation type="finished">Центр управления: открыть «Keystone»</translation>
+        <translation>Центр управления: открыть «Keystone»</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="189" />
+        <location filename="../Common/NiriActionNames.js" line="189"/>
         <source>Control center: open Advanced</source>
-        <translation type="finished">Центр управления: открыть «Дополнительно»</translation>
+        <translation>Центр управления: открыть «Дополнительно»</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="190" />
+        <location filename="../Common/NiriActionNames.js" line="190"/>
         <source>Control center: open Language &amp; region</source>
-        <translation type="finished">Центр управления: открыть «Язык и регион»</translation>
+        <translation>Центр управления: открыть «Язык и регион»</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="191" />
+        <location filename="../Common/NiriActionNames.js" line="191"/>
         <source>Control center: open current page</source>
-        <translation type="finished">Центр управления: открыть текущую страницу</translation>
+        <translation>Центр управления: открыть текущую страницу</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="192" />
+        <location filename="../Common/NiriActionNames.js" line="192"/>
         <source>Control center: toggle Account</source>
-        <translation type="finished">Центр управления: переключить «Аккаунт»</translation>
+        <translation>Центр управления: переключить «Аккаунт»</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="193" />
+        <location filename="../Common/NiriActionNames.js" line="193"/>
         <source>Control center: toggle General</source>
-        <translation type="finished">Центр управления: переключить «Общие»</translation>
+        <translation>Центр управления: переключить «Общие»</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="194" />
+        <location filename="../Common/NiriActionNames.js" line="194"/>
         <source>Control center: toggle Wallpaper</source>
-        <translation type="finished">Центр управления: переключить «Обои»</translation>
+        <translation>Центр управления: переключить «Обои»</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="195" />
+        <location filename="../Common/NiriActionNames.js" line="195"/>
         <source>Control center: toggle Theme</source>
-        <translation type="finished">Центр управления: переключить «Тема»</translation>
+        <translation>Центр управления: переключить «Тема»</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="196" />
+        <location filename="../Common/NiriActionNames.js" line="196"/>
         <source>Control center: toggle Keystone</source>
-        <translation type="finished">Центр управления: переключить «Keystone»</translation>
+        <translation>Центр управления: переключить «Keystone»</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="197" />
+        <location filename="../Common/NiriActionNames.js" line="197"/>
         <source>Control center: toggle Advanced</source>
-        <translation type="finished">Центр управления: переключить «Дополнительно»</translation>
+        <translation>Центр управления: переключить «Дополнительно»</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="198" />
+        <location filename="../Common/NiriActionNames.js" line="198"/>
         <source>Control center: toggle Language &amp; region</source>
-        <translation type="finished">Центр управления: переключить «Язык и регион»</translation>
+        <translation>Центр управления: переключить «Язык и регион»</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="199" />
+        <location filename="../Common/NiriActionNames.js" line="199"/>
         <source>Control center: toggle current page</source>
-        <translation type="finished">Центр управления: переключить текущую страницу</translation>
+        <translation>Центр управления: переключить текущую страницу</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="200" />
+        <location filename="../Common/NiriActionNames.js" line="200"/>
         <source>Notifications: open</source>
-        <translation type="finished">Уведомления: открыть</translation>
+        <translation>Уведомления: открыть</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="201" />
+        <location filename="../Common/NiriActionNames.js" line="201"/>
         <source>Quick settings: open</source>
-        <translation type="finished">Быстрые настройки: открыть</translation>
+        <translation>Быстрые настройки: открыть</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="202" />
+        <location filename="../Common/NiriActionNames.js" line="202"/>
         <source>Notifications: close</source>
-        <translation type="finished">Уведомления: закрыть</translation>
+        <translation>Уведомления: закрыть</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="203" />
+        <location filename="../Common/NiriActionNames.js" line="203"/>
         <source>Quick settings: close</source>
-        <translation type="finished">Быстрые настройки: закрыть</translation>
+        <translation>Быстрые настройки: закрыть</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="204" />
+        <location filename="../Common/NiriActionNames.js" line="204"/>
         <source>Notifications: toggle</source>
-        <translation type="finished">Уведомления: переключить</translation>
+        <translation>Уведомления: переключить</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="205" />
+        <location filename="../Common/NiriActionNames.js" line="205"/>
         <source>Quick settings: toggle</source>
-        <translation type="finished">Быстрые настройки: переключить</translation>
+        <translation>Быстрые настройки: переключить</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="206" />
+        <location filename="../Common/NiriActionNames.js" line="206"/>
         <source>Power menu: open</source>
-        <translation type="finished">Power menu: open</translation>
+        <translation>Power menu: open</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="207" />
+        <location filename="../Common/NiriActionNames.js" line="207"/>
         <source>Power menu: close</source>
-        <translation type="finished">Power menu: close</translation>
+        <translation>Power menu: close</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="208" />
+        <location filename="../Common/NiriActionNames.js" line="208"/>
         <source>Power menu: toggle</source>
-        <translation type="finished">Power menu: toggle</translation>
+        <translation>Power menu: toggle</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="209" />
+        <location filename="../Common/NiriActionNames.js" line="209"/>
         <source>Shortcut map: open</source>
-        <translation type="finished">Карта сочетаний клавиш: открыть</translation>
+        <translation>Карта сочетаний клавиш: открыть</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="210" />
+        <location filename="../Common/NiriActionNames.js" line="210"/>
         <source>Shortcut map: close</source>
-        <translation type="finished">Карта сочетаний клавиш: закрыть</translation>
+        <translation>Карта сочетаний клавиш: закрыть</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="211" />
+        <location filename="../Common/NiriActionNames.js" line="211"/>
         <source>Shortcut map: toggle</source>
-        <translation type="finished">Карта сочетаний клавиш: переключить</translation>
+        <translation>Карта сочетаний клавиш: переключить</translation>
     </message>
 </context>
 <context>
     <name>NiriCommands</name>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="229" />
+        <location filename="../Common/NiriActionNames.js" line="229"/>
         <source>Toggle screen reader</source>
-        <translation type="finished">Переключить экранный диктор</translation>
+        <translation>Переключить экранный диктор</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="230" />
+        <location filename="../Common/NiriActionNames.js" line="230"/>
         <source>Increase volume</source>
-        <translation type="finished">Увеличить громкость</translation>
+        <translation>Увеличить громкость</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="231" />
+        <location filename="../Common/NiriActionNames.js" line="231"/>
         <source>Decrease volume</source>
-        <translation type="finished">Уменьшить громкость</translation>
+        <translation>Уменьшить громкость</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="232" />
+        <location filename="../Common/NiriActionNames.js" line="232"/>
         <source>Toggle audio mute</source>
-        <translation type="finished">Выключить/включить звук</translation>
+        <translation>Выключить/включить звук</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="233" />
+        <location filename="../Common/NiriActionNames.js" line="233"/>
         <source>Toggle microphone mute</source>
-        <translation type="finished">Выключить/включить микрофон</translation>
+        <translation>Выключить/включить микрофон</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="234" />
+        <location filename="../Common/NiriActionNames.js" line="234"/>
         <source>Play/pause media</source>
-        <translation type="finished">Воспроизведение/пауза медиа</translation>
+        <translation>Воспроизведение/пауза медиа</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="235" />
+        <location filename="../Common/NiriActionNames.js" line="235"/>
         <source>Stop media</source>
-        <translation type="finished">Остановить медиа</translation>
+        <translation>Остановить медиа</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="236" />
+        <location filename="../Common/NiriActionNames.js" line="236"/>
         <source>Previous track</source>
-        <translation type="finished">Предыдущий трек</translation>
+        <translation>Предыдущий трек</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="237" />
+        <location filename="../Common/NiriActionNames.js" line="237"/>
         <source>Next track</source>
-        <translation type="finished">Следующий трек</translation>
+        <translation>Следующий трек</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="238" />
+        <location filename="../Common/NiriActionNames.js" line="238"/>
         <source>Increase screen brightness</source>
-        <translation type="finished">Увеличить яркость экрана</translation>
+        <translation>Увеличить яркость экрана</translation>
     </message>
     <message>
-        <location filename="../Common/NiriActionNames.js" line="239" />
+        <location filename="../Common/NiriActionNames.js" line="239"/>
         <source>Decrease screen brightness</source>
-        <translation type="finished">Уменьшить яркость экрана</translation>
+        <translation>Уменьшить яркость экрана</translation>
     </message>
 </context>
 <context>
     <name>NiriConfigService</name>
     <message>
-        <location filename="../Services/NiriConfigService.qml" line="28" />
-        <location filename="../Services/NiriConfigService.qml" line="156" />
+        <location filename="../Services/NiriConfigService.qml" line="28"/>
+        <location filename="../Services/NiriConfigService.qml" line="156"/>
         <source>Unable to save changes</source>
-        <translation type="finished">Не удалось сохранить изменения</translation>
+        <translation>Не удалось сохранить изменения</translation>
     </message>
     <message>
-        <location filename="../Services/NiriConfigService.qml" line="30" />
+        <location filename="../Services/NiriConfigService.qml" line="30"/>
         <source>Unable to check configuration</source>
-        <translation type="finished">Не удалось проверить конфигурацию</translation>
+        <translation>Не удалось проверить конфигурацию</translation>
     </message>
     <message>
-        <location filename="../Services/NiriConfigService.qml" line="31" />
+        <location filename="../Services/NiriConfigService.qml" line="31"/>
         <source>Configuration is invalid</source>
-        <translation type="finished">Конфигурация недействительна</translation>
+        <translation>Конфигурация недействительна</translation>
     </message>
     <message>
-        <location filename="../Services/NiriConfigService.qml" line="34" />
+        <location filename="../Services/NiriConfigService.qml" line="34"/>
         <source>Configuration is not writable</source>
-        <translation type="finished">Конфигурация недоступна для записи</translation>
+        <translation>Конфигурация недоступна для записи</translation>
     </message>
 </context>
 <context>
     <name>NiriSetupPrompt</name>
     <message>
-        <location filename="../Widgets/common/NiriSetupPrompt.qml" line="20" />
+        <location filename="../Widgets/common/NiriSetupPrompt.qml" line="20"/>
         <source>Available in a niri session</source>
-        <translation type="finished">Доступно в сеансе niri</translation>
+        <translation>Доступно в сеансе niri</translation>
     </message>
     <message>
-        <location filename="../Widgets/common/NiriSetupPrompt.qml" line="23" />
+        <location filename="../Widgets/common/NiriSetupPrompt.qml" line="23"/>
         <source>Set up</source>
-        <translation type="finished">Настроить</translation>
+        <translation>Настроить</translation>
     </message>
 </context>
 <context>
     <name>NotificationCard</name>
     <message>
-        <location filename="../Modules/Lock/Cards/NotificationCard.qml" line="48" />
-        <location filename="../Modules/Lock/Cards/NotificationCard.qml" line="272" />
+        <location filename="../Modules/Lock/Cards/NotificationCard.qml" line="48"/>
+        <location filename="../Modules/Lock/Cards/NotificationCard.qml" line="272"/>
         <source>%1 notifications</source>
-        <translation type="finished">%1 уведомлений</translation>
+        <translation>%1 уведомлений</translation>
     </message>
     <message>
-        <location filename="../Modules/Lock/Cards/NotificationCard.qml" line="48" />
+        <location filename="../Modules/Lock/Cards/NotificationCard.qml" line="48"/>
         <source>Notifications</source>
-        <translation type="finished">Уведомления</translation>
+        <translation>Уведомления</translation>
     </message>
     <message>
-        <location filename="../Modules/Lock/Cards/NotificationCard.qml" line="97" />
-        <location filename="../Modules/Lock/Cards/NotificationCard.qml" line="272" />
+        <location filename="../Modules/Lock/Cards/NotificationCard.qml" line="97"/>
+        <location filename="../Modules/Lock/Cards/NotificationCard.qml" line="272"/>
         <source>No notifications</source>
-        <translation type="finished">Нет уведомлений</translation>
+        <translation>Нет уведомлений</translation>
     </message>
 </context>
 <context>
     <name>NotificationContent</name>
     <message>
-        <location filename="../Modules/Keystone/NotificationContent/NotificationContent.qml" line="186" />
+        <location filename="../Modules/Keystone/NotificationContent/NotificationContent.qml" line="186"/>
         <source>Close</source>
-        <translation type="finished">Закрыть</translation>
+        <translation>Закрыть</translation>
     </message>
 </context>
 <context>
     <name>NotificationList</name>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/notifications/NotificationList.qml" line="78" />
+        <location filename="../Modules/Sidebars/Dashboard/notifications/NotificationList.qml" line="78"/>
         <source>No notifications</source>
-        <translation type="finished">Нет уведомлений</translation>
+        <translation>Нет уведомлений</translation>
     </message>
 </context>
 <context>
     <name>NotificationManager</name>
     <message>
-        <location filename="../Services/NotificationManager.qml" line="118" />
+        <location filename="../Services/NotificationManager.qml" line="118"/>
         <source>File action failed</source>
-        <translation type="finished">Действие с файлом не удалось</translation>
+        <translation>Действие с файлом не удалось</translation>
     </message>
     <message>
-        <location filename="../Services/NotificationManager.qml" line="118" />
+        <location filename="../Services/NotificationManager.qml" line="118"/>
         <source>Could not open the saved file or its location: %1</source>
-        <translation type="finished">Не удалось открыть сохранённый файл или его расположение: %1</translation>
+        <translation>Не удалось открыть сохранённый файл или его расположение: %1</translation>
     </message>
     <message>
-        <location filename="../Services/NotificationManager.qml" line="121" />
+        <location filename="../Services/NotificationManager.qml" line="121"/>
         <source>File no longer exists</source>
-        <translation type="finished">Файл больше не существует</translation>
+        <translation>Файл больше не существует</translation>
     </message>
     <message>
-        <location filename="../Services/NotificationManager.qml" line="121" />
+        <location filename="../Services/NotificationManager.qml" line="121"/>
         <source>Opened the containing folder: %1</source>
-        <translation type="finished">Открыта содержащая папка: %1</translation>
+        <translation>Открыта содержащая папка: %1</translation>
     </message>
     <message>
-        <location filename="../Services/NotificationManager.qml" line="217" />
-        <location filename="../Services/NotificationManager.qml" line="282" />
-        <location filename="../Services/NotificationManager.qml" line="404" />
+        <location filename="../Services/NotificationManager.qml" line="217"/>
+        <location filename="../Services/NotificationManager.qml" line="282"/>
+        <location filename="../Services/NotificationManager.qml" line="404"/>
         <source>System</source>
-        <translation type="finished">Система</translation>
+        <translation>Система</translation>
     </message>
     <message>
-        <location filename="../Services/NotificationManager.qml" line="224" />
-        <location filename="../Services/NotificationManager.qml" line="286" />
+        <location filename="../Services/NotificationManager.qml" line="224"/>
+        <location filename="../Services/NotificationManager.qml" line="286"/>
         <source>Notification</source>
-        <translation type="finished">Уведомление</translation>
+        <translation>Уведомление</translation>
     </message>
     <message>
-        <location filename="../Services/NotificationManager.qml" line="335" />
-        <location filename="../Services/NotificationManager.qml" line="340" />
+        <location filename="../Services/NotificationManager.qml" line="335"/>
+        <location filename="../Services/NotificationManager.qml" line="340"/>
         <source>Show in folder</source>
-        <translation type="finished">Показать в папке</translation>
+        <translation>Показать в папке</translation>
     </message>
     <message>
-        <location filename="../Services/NotificationManager.qml" line="345" />
+        <location filename="../Services/NotificationManager.qml" line="345"/>
         <source>Open</source>
-        <translation type="finished">Открыть</translation>
+        <translation>Открыть</translation>
     </message>
 </context>
 <context>
     <name>NotificationUtils</name>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/notifications/NotificationUtils.qml" line="12" />
+        <location filename="../Modules/Sidebars/Dashboard/notifications/NotificationUtils.qml" line="12"/>
         <source>Just now</source>
-        <translation type="finished">Только что</translation>
+        <translation>Только что</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/notifications/NotificationUtils.qml" line="20" />
+        <location filename="../Modules/Sidebars/Dashboard/notifications/NotificationUtils.qml" line="20"/>
         <source>Yesterday</source>
-        <translation type="finished">Вчера</translation>
+        <translation>Вчера</translation>
     </message>
 </context>
 <context>
     <name>OutlinedTextField</name>
     <message>
-        <location filename="../Widgets/common/OutlinedTextField.qml" line="60" />
+        <location filename="../Widgets/common/OutlinedTextField.qml" line="60"/>
         <source>Hide password</source>
-        <translation type="finished">Скрыть пароль</translation>
+        <translation>Скрыть пароль</translation>
     </message>
     <message>
-        <location filename="../Widgets/common/OutlinedTextField.qml" line="60" />
+        <location filename="../Widgets/common/OutlinedTextField.qml" line="60"/>
         <source>Show password</source>
-        <translation type="finished">Показать пароль</translation>
+        <translation>Показать пароль</translation>
     </message>
 </context>
 <context>
     <name>PersonalizationConfig</name>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="23" />
+        <location filename="../Services/PersonalizationConfig.qml" line="23"/>
         <source>Stretch</source>
-        <translation type="finished">Растянуть</translation>
+        <translation>Растянуть</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="26" />
+        <location filename="../Services/PersonalizationConfig.qml" line="26"/>
         <source>Fit</source>
-        <translation type="finished">По размеру</translation>
+        <translation>По размеру</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="29" />
+        <location filename="../Services/PersonalizationConfig.qml" line="29"/>
         <source>Fill</source>
-        <translation type="finished">Заливка</translation>
+        <translation>Заливка</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="32" />
+        <location filename="../Services/PersonalizationConfig.qml" line="32"/>
         <source>Tile</source>
-        <translation type="finished">Плитка</translation>
+        <translation>Плитка</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="35" />
+        <location filename="../Services/PersonalizationConfig.qml" line="35"/>
         <source>Tile vertically</source>
-        <translation type="finished">Разложить по вертикали</translation>
+        <translation>Разложить по вертикали</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="38" />
+        <location filename="../Services/PersonalizationConfig.qml" line="38"/>
         <source>Tile horizontally</source>
-        <translation type="finished">Разложить по горизонтали</translation>
+        <translation>Разложить по горизонтали</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="41" />
+        <location filename="../Services/PersonalizationConfig.qml" line="41"/>
         <source>Cover</source>
-        <translation type="finished">Обложка</translation>
+        <translation>Обложка</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="45" />
+        <location filename="../Services/PersonalizationConfig.qml" line="45"/>
         <source>Panorama</source>
-        <translation type="finished">Панорама</translation>
+        <translation>Панорама</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="49" />
-        <location filename="../Services/PersonalizationConfig.qml" line="123" />
+        <location filename="../Services/PersonalizationConfig.qml" line="49"/>
+        <location filename="../Services/PersonalizationConfig.qml" line="123"/>
         <source>Random</source>
-        <translation type="finished">Случайные</translation>
+        <translation>Случайные</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="52" />
-        <location filename="../Services/PersonalizationConfig.qml" line="78" />
+        <location filename="../Services/PersonalizationConfig.qml" line="52"/>
+        <location filename="../Services/PersonalizationConfig.qml" line="78"/>
         <source>None</source>
-        <translation type="finished">Нет</translation>
+        <translation>Нет</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="55" />
-        <location filename="../Services/PersonalizationConfig.qml" line="84" />
+        <location filename="../Services/PersonalizationConfig.qml" line="55"/>
+        <location filename="../Services/PersonalizationConfig.qml" line="84"/>
         <source>Crossfade</source>
-        <translation type="finished">Перекрёстное затухание</translation>
+        <translation>Перекрёстное затухание</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="58" />
-        <location filename="../Services/PersonalizationConfig.qml" line="100" />
+        <location filename="../Services/PersonalizationConfig.qml" line="58"/>
+        <location filename="../Services/PersonalizationConfig.qml" line="100"/>
         <source>Wipe</source>
-        <translation type="finished">Стереть</translation>
+        <translation>Стереть</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="61" />
+        <location filename="../Services/PersonalizationConfig.qml" line="61"/>
         <source>Disc</source>
-        <translation type="finished">Диск</translation>
+        <translation>Диск</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="64" />
+        <location filename="../Services/PersonalizationConfig.qml" line="64"/>
         <source>Stripes</source>
-        <translation type="finished">Полосы</translation>
+        <translation>Полосы</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="67" />
+        <location filename="../Services/PersonalizationConfig.qml" line="67"/>
         <source>Iris bloom</source>
-        <translation type="finished">Ирисовое свечение</translation>
+        <translation>Ирисовое свечение</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="70" />
+        <location filename="../Services/PersonalizationConfig.qml" line="70"/>
         <source>Pixelate</source>
-        <translation type="finished">Пикселизация</translation>
+        <translation>Пикселизация</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="73" />
+        <location filename="../Services/PersonalizationConfig.qml" line="73"/>
         <source>Portal</source>
-        <translation type="finished">Портал</translation>
+        <translation>Портал</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="81" />
+        <location filename="../Services/PersonalizationConfig.qml" line="81"/>
         <source>Simple</source>
-        <translation type="finished">Простой</translation>
+        <translation>Простой</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="87" />
+        <location filename="../Services/PersonalizationConfig.qml" line="87"/>
         <source>From left</source>
-        <translation type="finished">Слева</translation>
+        <translation>Слева</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="90" />
+        <location filename="../Services/PersonalizationConfig.qml" line="90"/>
         <source>From right</source>
-        <translation type="finished">Справа</translation>
+        <translation>Справа</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="93" />
+        <location filename="../Services/PersonalizationConfig.qml" line="93"/>
         <source>From top</source>
-        <translation type="finished">Сверху</translation>
+        <translation>Сверху</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="96" />
+        <location filename="../Services/PersonalizationConfig.qml" line="96"/>
         <source>From bottom</source>
-        <translation type="finished">Снизу</translation>
+        <translation>Снизу</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="103" />
+        <location filename="../Services/PersonalizationConfig.qml" line="103"/>
         <source>Wave</source>
-        <translation type="finished">Волна</translation>
+        <translation>Волна</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="107" />
+        <location filename="../Services/PersonalizationConfig.qml" line="107"/>
         <source>Grow</source>
-        <translation type="finished">Вырасти</translation>
+        <translation>Вырасти</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="111" />
+        <location filename="../Services/PersonalizationConfig.qml" line="111"/>
         <source>Grow from center</source>
-        <translation type="finished">Вырасти из центра</translation>
+        <translation>Вырасти из центра</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="115" />
+        <location filename="../Services/PersonalizationConfig.qml" line="115"/>
         <source>Grow from random position</source>
-        <translation type="finished">Вырасти из случайной позиции</translation>
+        <translation>Вырасти из случайной позиции</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="119" />
+        <location filename="../Services/PersonalizationConfig.qml" line="119"/>
         <source>Shrink inward</source>
-        <translation type="finished">Сжать внутрь</translation>
+        <translation>Сжать внутрь</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="128" />
+        <location filename="../Services/PersonalizationConfig.qml" line="128"/>
         <source>Linear</source>
-        <translation type="finished">Линейная</translation>
+        <translation>Линейная</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="131" />
+        <location filename="../Services/PersonalizationConfig.qml" line="131"/>
         <source>Quadratic</source>
-        <translation type="finished">Квадратичная</translation>
+        <translation>Квадратичная</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="134" />
+        <location filename="../Services/PersonalizationConfig.qml" line="134"/>
         <source>Cubic</source>
-        <translation type="finished">Кубическая</translation>
+        <translation>Кубическая</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="137" />
+        <location filename="../Services/PersonalizationConfig.qml" line="137"/>
         <source>Quartic</source>
-        <translation type="finished">Квартичная</translation>
+        <translation>Квартичная</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="140" />
+        <location filename="../Services/PersonalizationConfig.qml" line="140"/>
         <source>Quintic</source>
-        <translation type="finished">Квинтичная</translation>
+        <translation>Квинтичная</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="143" />
+        <location filename="../Services/PersonalizationConfig.qml" line="143"/>
         <source>Sine</source>
-        <translation type="finished">Синусоидальная</translation>
+        <translation>Синусоидальная</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="146" />
+        <location filename="../Services/PersonalizationConfig.qml" line="146"/>
         <source>Exponential</source>
-        <translation type="finished">Экспоненциальная</translation>
+        <translation>Экспоненциальная</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="150" />
+        <location filename="../Services/PersonalizationConfig.qml" line="150"/>
         <source>Circular</source>
-        <translation type="finished">Круговой</translation>
+        <translation>Круговой</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="154" />
+        <location filename="../Services/PersonalizationConfig.qml" line="154"/>
         <source>Custom Bézier</source>
-        <translation type="finished">Свой Bézier</translation>
+        <translation>Свой Bézier</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="161" />
+        <location filename="../Services/PersonalizationConfig.qml" line="161"/>
         <source>Tonal spot</source>
-        <translation type="finished">Тональное пятно</translation>
+        <translation>Тональное пятно</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="164" />
+        <location filename="../Services/PersonalizationConfig.qml" line="164"/>
         <source>Vibrant</source>
-        <translation type="finished">Яркий</translation>
+        <translation>Яркий</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="167" />
+        <location filename="../Services/PersonalizationConfig.qml" line="167"/>
         <source>Content</source>
-        <translation type="finished">Содержимое</translation>
+        <translation>Содержимое</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="170" />
+        <location filename="../Services/PersonalizationConfig.qml" line="170"/>
         <source>Expressive</source>
-        <translation type="finished">Выразительный</translation>
+        <translation>Выразительный</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="173" />
+        <location filename="../Services/PersonalizationConfig.qml" line="173"/>
         <source>Fidelity</source>
-        <translation type="finished">Точность</translation>
+        <translation>Точность</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="176" />
+        <location filename="../Services/PersonalizationConfig.qml" line="176"/>
         <source>Fruit salad</source>
-        <translation type="finished">Фруктовый салат</translation>
+        <translation>Фруктовый салат</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="179" />
+        <location filename="../Services/PersonalizationConfig.qml" line="179"/>
         <source>Monochrome</source>
-        <translation type="finished">Монохромный</translation>
+        <translation>Монохромный</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="182" />
+        <location filename="../Services/PersonalizationConfig.qml" line="182"/>
         <source>Neutral</source>
-        <translation type="finished">Нейтральный</translation>
+        <translation>Нейтральный</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="185" />
+        <location filename="../Services/PersonalizationConfig.qml" line="185"/>
         <source>Rainbow</source>
-        <translation type="finished">Радуга</translation>
+        <translation>Радуга</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="190" />
+        <location filename="../Services/PersonalizationConfig.qml" line="190"/>
         <source>Bangs</source>
-        <translation type="finished">Чёлка</translation>
+        <translation>Чёлка</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="193" />
+        <location filename="../Services/PersonalizationConfig.qml" line="193"/>
         <source>Pill</source>
-        <translation type="finished">Пилюля</translation>
+        <translation>Пилюля</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="197" />
+        <location filename="../Services/PersonalizationConfig.qml" line="197"/>
         <source>Top</source>
-        <translation type="finished">Сверху</translation>
+        <translation>Сверху</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="201" />
+        <location filename="../Services/PersonalizationConfig.qml" line="201"/>
         <source>Left</source>
-        <translation type="finished">Слева</translation>
+        <translation>Слева</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="205" />
+        <location filename="../Services/PersonalizationConfig.qml" line="205"/>
         <source>Bottom</source>
-        <translation type="finished">Снизу</translation>
+        <translation>Снизу</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="209" />
+        <location filename="../Services/PersonalizationConfig.qml" line="209"/>
         <source>Right</source>
-        <translation type="finished">Справа</translation>
+        <translation>Справа</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="345" />
-        <location filename="../Services/PersonalizationConfig.qml" line="388" />
+        <location filename="../Services/PersonalizationConfig.qml" line="345"/>
+        <location filename="../Services/PersonalizationConfig.qml" line="405"/>
         <source>Quick Settings</source>
-        <translation type="finished">Быстрые настройки</translation>
+        <translation>Быстрые настройки</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="349" />
+        <location filename="../Services/PersonalizationConfig.qml" line="349"/>
         <source>Pomodoro</source>
-        <translation type="finished">Помидор</translation>
+        <translation>Помидор</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="353" />
+        <location filename="../Services/PersonalizationConfig.qml" line="353"/>
         <source>To-do</source>
-        <translation type="finished">Задачи</translation>
+        <translation>Задачи</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="364" />
+        <location filename="../Services/PersonalizationConfig.qml" line="381"/>
         <source>Media</source>
-        <translation type="finished">Media</translation>
+        <translation>Media</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="368" />
+        <location filename="../Services/PersonalizationConfig.qml" line="385"/>
         <source>Workspaces</source>
-        <translation type="finished">Рабочие места</translation>
+        <translation>Рабочие места</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="372" />
+        <location filename="../Services/PersonalizationConfig.qml" line="389"/>
         <source>Information</source>
-        <translation type="finished">Сведения</translation>
+        <translation>Сведения</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="376" />
+        <location filename="../Services/PersonalizationConfig.qml" line="393"/>
         <source>Active Window</source>
-        <translation type="finished">Активное окно</translation>
+        <translation>Активное окно</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="380" />
+        <location filename="../Services/PersonalizationConfig.qml" line="397"/>
         <source>Tray</source>
-        <translation type="finished">Трей</translation>
+        <translation>Трей</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="384" />
+        <location filename="../Services/PersonalizationConfig.qml" line="401"/>
         <source>System Monitor</source>
-        <translation type="finished">Системный монитор</translation>
+        <translation>Системный монитор</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="397" />
+        <location filename="../Services/PersonalizationConfig.qml" line="414"/>
         <source>Network</source>
-        <translation type="finished">Сеть</translation>
+        <translation>Сеть</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="401" />
+        <location filename="../Services/PersonalizationConfig.qml" line="418"/>
         <source>Bluetooth</source>
-        <translation type="finished">Bluetooth</translation>
+        <translation>Bluetooth</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="405" />
+        <location filename="../Services/PersonalizationConfig.qml" line="422"/>
         <source>Brightness</source>
-        <translation type="finished">Яркость</translation>
+        <translation>Яркость</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="409" />
+        <location filename="../Services/PersonalizationConfig.qml" line="426"/>
         <source>Volume</source>
-        <translation type="finished">Громкость</translation>
+        <translation>Громкость</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="413" />
+        <location filename="../Services/PersonalizationConfig.qml" line="430"/>
         <source>Microphone</source>
-        <translation type="finished">Микрофон</translation>
+        <translation>Микрофон</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="417" />
+        <location filename="../Services/PersonalizationConfig.qml" line="434"/>
         <source>Battery</source>
-        <translation type="finished">Батарея</translation>
+        <translation>Батарея</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="422" />
+        <location filename="../Services/PersonalizationConfig.qml" line="439"/>
         <source>Settings</source>
-        <translation type="finished">Настройки</translation>
+        <translation>Настройки</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="427" />
+        <location filename="../Services/PersonalizationConfig.qml" line="444"/>
         <source>Power</source>
-        <translation type="finished">Питание</translation>
+        <translation>Питание</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="445" />
+        <location filename="../Services/PersonalizationConfig.qml" line="462"/>
         <source>Do not open</source>
-        <translation type="finished">Не открывать</translation>
+        <translation>Не открывать</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="449" />
+        <location filename="../Services/PersonalizationConfig.qml" line="466"/>
         <source>Lyrics</source>
-        <translation type="finished">Текст песни</translation>
+        <translation>Текст песни</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="453" />
+        <location filename="../Services/PersonalizationConfig.qml" line="470"/>
         <source>Dashboard</source>
-        <translation type="finished">Dashboard</translation>
+        <translation>Dashboard</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="457" />
+        <location filename="../Services/PersonalizationConfig.qml" line="474"/>
         <source>Media library</source>
-        <translation type="finished">Media library</translation>
+        <translation>Media library</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="461" />
+        <location filename="../Services/PersonalizationConfig.qml" line="478"/>
         <source>Upload</source>
-        <translation type="finished">Upload</translation>
+        <translation>Upload</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="465" />
+        <location filename="../Services/PersonalizationConfig.qml" line="482"/>
         <source>Tools</source>
-        <translation type="finished">Инструменты</translation>
+        <translation>Инструменты</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="472" />
+        <location filename="../Services/PersonalizationConfig.qml" line="489"/>
         <source>Peak</source>
-        <translation type="finished">Пик</translation>
+        <translation>Пик</translation>
     </message>
 </context>
 <context>
     <name>PointerDeviceSettings</name>
     <message>
-        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="21" />
+        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="21"/>
         <source>Pointer speed</source>
-        <translation type="finished">Скорость указателя</translation>
+        <translation>Скорость указателя</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="22" />
+        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="22"/>
         <source>libinput acceleration, from slowest to fastest</source>
-        <translation type="finished">ускорение libinput, от самого медленного к самому быстрому</translation>
+        <translation>ускорение libinput, от самого медленного к самому быстрому</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="34" />
+        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="34"/>
         <source>Acceleration profile</source>
-        <translation type="finished">Профиль ускорения</translation>
+        <translation>Профиль ускорения</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="35" />
+        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="35"/>
         <source>Flat keeps the raw sensor resolution</source>
-        <translation type="finished">«Плоский» сохраняет сырое разрешение сенсора</translation>
+        <translation>«Плоский» сохраняет сырое разрешение сенсора</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="41" />
+        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="41"/>
         <source>Adaptive</source>
-        <translation type="finished">Адаптивный</translation>
+        <translation>Адаптивный</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="45" />
+        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="45"/>
         <source>Flat</source>
-        <translation type="finished">Плоский</translation>
+        <translation>Плоский</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="54" />
+        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="54"/>
         <source>Scroll speed</source>
-        <translation type="finished">Скорость прокрутки</translation>
+        <translation>Скорость прокрутки</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="55" />
+        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="55"/>
         <source>Multiplies the distance of every scroll event</source>
-        <translation type="finished">Умножает расстояние каждого события прокрутки</translation>
+        <translation>Умножает расстояние каждого события прокрутки</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="67" />
-        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="72" />
+        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="67"/>
+        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="72"/>
         <source>Natural scrolling</source>
-        <translation type="finished">Естественная прокрутка</translation>
+        <translation>Естественная прокрутка</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="68" />
+        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="68"/>
         <source>Content follows the direction of your fingers</source>
-        <translation type="finished">Содержимое следует за движением пальцев</translation>
+        <translation>Содержимое следует за движением пальцев</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="81" />
+        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="81"/>
         <source>Scroll method</source>
-        <translation type="finished">Метод прокрутки</translation>
+        <translation>Метод прокрутки</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="87" />
+        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="87"/>
         <source>Two fingers</source>
-        <translation type="finished">Два пальца</translation>
+        <translation>Два пальца</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="91" />
+        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="91"/>
         <source>Edge</source>
-        <translation type="finished">Край</translation>
+        <translation>Край</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="95" />
+        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="95"/>
         <source>Off</source>
-        <translation type="finished">Выкл.</translation>
+        <translation>Выкл.</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="107" />
-        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="111" />
+        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="107"/>
+        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="111"/>
         <source>Tap to click</source>
-        <translation type="finished">Касание для клика</translation>
+        <translation>Касание для клика</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="120" />
+        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="120"/>
         <source>Tap button map</source>
-        <translation type="finished">Карта кнопок касаний</translation>
+        <translation>Карта кнопок касаний</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="121" />
+        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="121"/>
         <source>Buttons reported by two and three finger taps</source>
-        <translation type="finished">Кнопки, срабатывающие от касаний двумя и тремя пальцами</translation>
+        <translation>Кнопки, срабатывающие от касаний двумя и тремя пальцами</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="128" />
+        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="128"/>
         <source>2 → right</source>
-        <translation type="finished">2 → справа</translation>
+        <translation>2 → справа</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="132" />
+        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="132"/>
         <source>2 → middle</source>
-        <translation type="finished">2 → по центру</translation>
+        <translation>2 → по центру</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="144" />
+        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="144"/>
         <source>Click method</source>
-        <translation type="finished">Метод клика</translation>
+        <translation>Метод клика</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="145" />
+        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="145"/>
         <source>Click areas at the bottom edge, or by finger count</source>
-        <translation type="finished">Области клика по нижнему краю или по числу пальцев</translation>
+        <translation>Области клика по нижнему краю или по числу пальцев</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="151" />
+        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="151"/>
         <source>Areas</source>
-        <translation type="finished">Области</translation>
+        <translation>Области</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="155" />
+        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="155"/>
         <source>Fingers</source>
-        <translation type="finished">Пальцы</translation>
+        <translation>Пальцы</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="167" />
-        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="172" />
+        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="167"/>
+        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="172"/>
         <source>Disable while typing</source>
-        <translation type="finished">Отключить при наборе текста</translation>
+        <translation>Отключить при наборе текста</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="168" />
+        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="168"/>
         <source>Ignores the touchpad and the palm resting on it</source>
-        <translation type="finished">Игнорирует тачпад и лежащую на нём ладонь</translation>
+        <translation>Игнорирует тачпад и лежащую на нём ладонь</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="181" />
-        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="185" />
+        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="181"/>
+        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="185"/>
         <source>Disable while trackpointing</source>
-        <translation type="finished">Отключить при работе с трекпоинтом</translation>
+        <translation>Отключить при работе с трекпоинтом</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="194" />
-        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="199" />
+        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="194"/>
+        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="199"/>
         <source>Drag lock</source>
-        <translation type="finished">Блокировка перетаскивания</translation>
+        <translation>Блокировка перетаскивания</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="195" />
+        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="195"/>
         <source>Keeps dragging when your finger lifts briefly</source>
-        <translation type="finished">Продолжает перетаскивание при коротком поднятии пальца</translation>
+        <translation>Продолжает перетаскивание при коротком поднятии пальца</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="208" />
-        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="212" />
+        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="208"/>
+        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="212"/>
         <source>Disable with an external mouse</source>
-        <translation type="finished">Отключить при внешней мыши</translation>
+        <translation>Отключить при внешней мыши</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="221" />
-        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="226" />
+        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="221"/>
+        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="226"/>
         <source>Left-handed buttons</source>
-        <translation type="finished">Кнопки для левой руки</translation>
+        <translation>Кнопки для левой руки</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="222" />
+        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="222"/>
         <source>Swaps the left and right buttons</source>
-        <translation type="finished">Меняет местами левую и правую кнопки</translation>
+        <translation>Меняет местами левую и правую кнопки</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="234" />
-        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="239" />
+        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="234"/>
+        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="239"/>
         <source>Middle button emulation</source>
-        <translation type="finished">Эмуляция средней кнопки</translation>
+        <translation>Эмуляция средней кнопки</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="235" />
+        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="235"/>
         <source>Pressing both buttons acts as the middle button</source>
-        <translation type="finished">Нажатие обеих кнопок действует как средняя кнопка</translation>
+        <translation>Нажатие обеих кнопок действует как средняя кнопка</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="247" />
-        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="251" />
+        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="247"/>
+        <location filename="../Modules/ControlCenter/PointerDeviceSettings.qml" line="251"/>
         <source>Disable this device</source>
-        <translation type="finished">Отключить это устройство</translation>
+        <translation>Отключить это устройство</translation>
     </message>
 </context>
 <context>
     <name>PomodoroTimer</name>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/PomodoroTimer.qml" line="58" />
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/PomodoroTimer.qml" line="58"/>
         <source>%1h %2m</source>
-        <translation type="finished">%1ч %2м</translation>
+        <translation>%1ч %2м</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/PomodoroTimer.qml" line="60" />
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/PomodoroTimer.qml" line="60"/>
         <source>%1h</source>
-        <translation type="finished">%1ч</translation>
+        <translation>%1ч</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/PomodoroTimer.qml" line="61" />
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/PomodoroTimer.qml" line="61"/>
         <source>%1m</source>
-        <translation type="finished">%1м</translation>
+        <translation>%1м</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/PomodoroTimer.qml" line="96" />
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/PomodoroTimer.qml" line="96"/>
         <source>Long break</source>
-        <translation type="finished">Длинный перерыв</translation>
+        <translation>Длинный перерыв</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/PomodoroTimer.qml" line="97" />
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/PomodoroTimer.qml" line="408" />
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/PomodoroTimer.qml" line="97"/>
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/PomodoroTimer.qml" line="426"/>
         <source>Break</source>
-        <translation type="finished">Перерыв</translation>
+        <translation>Перерыв</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/PomodoroTimer.qml" line="97" />
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/PomodoroTimer.qml" line="400" />
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/PomodoroTimer.qml" line="97"/>
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/PomodoroTimer.qml" line="418"/>
         <source>Focus</source>
-        <translation type="finished">Сфокусировать</translation>
+        <translation>Сфокусировать</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/PomodoroTimer.qml" line="141" />
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/PomodoroTimer.qml" line="141"/>
         <source>Task</source>
-        <translation type="finished">Задача</translation>
+        <translation>Задача</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/PomodoroTimer.qml" line="142" />
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/PomodoroTimer.qml" line="142"/>
         <source>Work</source>
-        <translation type="finished">Работа</translation>
+        <translation>Работа</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/PomodoroTimer.qml" line="151" />
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/PomodoroTimer.qml" line="151"/>
         <source>Time</source>
-        <translation type="finished">Время</translation>
+        <translation>Время</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/PomodoroTimer.qml" line="165" />
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/PomodoroTimer.qml" line="165"/>
         <source>pomodoro %1 of %2</source>
-        <translation type="finished">помидор %1 из %2</translation>
+        <translation>помидор %1 из %2</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/PomodoroTimer.qml" line="198" />
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/PomodoroTimer.qml" line="203"/>
         <source>Stop task</source>
-        <translation type="finished">Остановить задачу</translation>
+        <translation>Остановить задачу</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/PomodoroTimer.qml" line="198" />
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/PomodoroTimer.qml" line="203"/>
         <source>Start task</source>
-        <translation type="finished">Запустить задачу</translation>
+        <translation>Запустить задачу</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/PomodoroTimer.qml" line="220" />
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/PomodoroTimer.qml" line="227"/>
         <source>Save task</source>
-        <translation type="finished">Сохранить задачу</translation>
+        <translation>Сохранить задачу</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/PomodoroTimer.qml" line="265" />
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/PomodoroTimer.qml" line="272"/>
         <source>Start saved task %1</source>
-        <translation type="finished">Запустить сохранённую задачу %1</translation>
+        <translation>Запустить сохранённую задачу %1</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/PomodoroTimer.qml" line="286" />
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/PomodoroTimer.qml" line="293"/>
         <source>Edit saved task %1</source>
-        <translation type="finished">Изменить сохранённую задачу %1</translation>
+        <translation>Изменить сохранённую задачу %1</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/PomodoroTimer.qml" line="304" />
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/PomodoroTimer.qml" line="311"/>
         <source>Delete saved task %1</source>
-        <translation type="finished">Удалить сохранённую задачу %1</translation>
+        <translation>Удалить сохранённую задачу %1</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/PomodoroTimer.qml" line="357" />
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/PomodoroTimer.qml" line="374"/>
         <source>Decrease</source>
-        <translation type="finished">Уменьшить</translation>
+        <translation>Уменьшить</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/PomodoroTimer.qml" line="385" />
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/PomodoroTimer.qml" line="402"/>
         <source>Increase</source>
-        <translation type="finished">Увеличить</translation>
+        <translation>Увеличить</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/PomodoroTimer.qml" line="416" />
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/PomodoroTimer.qml" line="434"/>
         <source>Long</source>
-        <translation type="finished">Длинный</translation>
+        <translation>Длинный</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/PomodoroTimer.qml" line="441" />
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/PomodoroTimer.qml" line="459"/>
         <source>Pause Pomodoro</source>
-        <translation type="finished">Пауза помидора</translation>
+        <translation>Пауза помидора</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/PomodoroTimer.qml" line="441" />
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/PomodoroTimer.qml" line="459"/>
         <source>Start Pomodoro</source>
-        <translation type="finished">Запустить помидор</translation>
+        <translation>Запустить помидор</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/PomodoroTimer.qml" line="446" />
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/PomodoroTimer.qml" line="464"/>
         <source>Pause</source>
-        <translation type="finished">Пауза</translation>
+        <translation>Пауза</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/PomodoroTimer.qml" line="447" />
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/PomodoroTimer.qml" line="465"/>
         <source>Start</source>
-        <translation type="finished">Запуск</translation>
+        <translation>Запуск</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/PomodoroTimer.qml" line="448" />
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/PomodoroTimer.qml" line="466"/>
         <source>Resume</source>
-        <translation type="finished">Продолжить</translation>
+        <translation>Продолжить</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/PomodoroTimer.qml" line="469" />
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/PomodoroTimer.qml" line="487"/>
         <source>Reset Pomodoro</source>
-        <translation type="finished">Сбросить помидор</translation>
+        <translation>Сбросить помидор</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/PomodoroTimer.qml" line="473" />
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/PomodoroTimer.qml" line="491"/>
         <source>Reset</source>
-        <translation type="finished">Сбросить</translation>
+        <translation>Сбросить</translation>
     </message>
 </context>
 <context>
     <name>PowerAndSleepPage</name>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2046" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2148"/>
         <source>Screen &amp; Display</source>
-        <translation type="finished">Экран и дисплей</translation>
+        <translation>Экран и дисплей</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2047" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2149"/>
         <source>Screen Lock</source>
-        <translation type="finished">Блокировка экрана</translation>
+        <translation>Блокировка экрана</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2048" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2150"/>
         <source>Sleep &amp; Suspend</source>
-        <translation type="finished">Сон и приостановка</translation>
+        <translation>Сон и приостановка</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2049" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2151"/>
         <source>Idle Policy</source>
-        <translation type="finished">Политика простоя</translation>
+        <translation>Политика простоя</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="13" />
+        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="13"/>
         <source>1 minute</source>
-        <translation type="finished">1 минута</translation>
+        <translation>1 минута</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="14" />
+        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="14"/>
         <source>2 minutes</source>
-        <translation type="finished">2 минуты</translation>
+        <translation>2 минуты</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="15" />
+        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="15"/>
         <source>3 minutes</source>
-        <translation type="finished">3 минуты</translation>
+        <translation>3 минуты</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="16" />
-        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="26" />
+        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="16"/>
+        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="26"/>
         <source>5 minutes</source>
-        <translation type="finished">5 минут</translation>
+        <translation>5 минут</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="17" />
-        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="27" />
+        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="17"/>
+        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="27"/>
         <source>10 minutes</source>
-        <translation type="finished">10 минут</translation>
+        <translation>10 минут</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="18" />
-        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="28" />
+        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="18"/>
+        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="28"/>
         <source>15 minutes</source>
-        <translation type="finished">15 минут</translation>
+        <translation>15 минут</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="19" />
-        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="29" />
+        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="19"/>
+        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="29"/>
         <source>30 minutes</source>
-        <translation type="finished">30 минут</translation>
+        <translation>30 минут</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="20" />
-        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="30" />
+        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="20"/>
+        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="30"/>
         <source>45 minutes</source>
-        <translation type="finished">45 минут</translation>
+        <translation>45 минут</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="21" />
-        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="31" />
+        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="21"/>
+        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="31"/>
         <source>1 hour</source>
-        <translation type="finished">1 час</translation>
+        <translation>1 час</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="22" />
-        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="32" />
+        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="22"/>
+        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="32"/>
         <source>2 hours</source>
-        <translation type="finished">2 часа</translation>
+        <translation>2 часа</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="33" />
+        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="33"/>
         <source>3 hours</source>
-        <translation type="finished">3 часа</translation>
+        <translation>3 часа</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="34" />
+        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="34"/>
         <source>4 hours</source>
-        <translation type="finished">4 часа</translation>
+        <translation>4 часа</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="60" />
+        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="60"/>
         <source>Keep Awake is active: idle timers and sleep are temporarily paused.</source>
-        <translation type="finished">«Не спать» активно: таймеры простоя и сон временно приостановлены.</translation>
+        <translation>«Не спать» активно: таймеры простоя и сон временно приостановлены.</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="67" />
+        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="67"/>
         <source>Idle management is turned off.</source>
-        <translation type="finished">Управление простоем выключено.</translation>
+        <translation>Управление простоем выключено.</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="76" />
+        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="76"/>
         <source>All</source>
-        <translation type="finished">Все</translation>
+        <translation>Все</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="81" />
+        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="81"/>
         <source>Screen</source>
-        <translation type="finished">Экран</translation>
+        <translation>Экран</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="86" />
+        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="86"/>
         <source>Lock screen</source>
-        <translation type="finished">Экран блокировки</translation>
+        <translation>Экран блокировки</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="91" />
+        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="91"/>
         <source>Sleep</source>
-        <translation type="finished">Сон</translation>
+        <translation>Сон</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="118" />
-        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="123" />
+        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="118"/>
+        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="123"/>
         <source>Turn off screen when inactive</source>
-        <translation type="finished">Выключать экран при бездействии</translation>
+        <translation>Выключать экран при бездействии</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="119" />
+        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="119"/>
         <source>Turn off display power after inactivity</source>
-        <translation type="finished">Выключать питание дисплеев после бездействия</translation>
+        <translation>Выключать питание дисплеев после бездействия</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="134" />
+        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="134"/>
         <source>Screen off timeout</source>
-        <translation type="finished">Таймаут выключения экрана</translation>
+        <translation>Таймаут выключения экрана</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="141" />
-        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="177" />
-        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="243" />
-        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="312" />
+        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="141"/>
+        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="177"/>
+        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="243"/>
+        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="312"/>
         <source>Select timeout</source>
-        <translation type="finished">Выберите таймаут</translation>
+        <translation>Выберите таймаут</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="153" />
-        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="158" />
+        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="153"/>
+        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="158"/>
         <source>Dim screen before turning off</source>
-        <translation type="finished">Затемнять экран перед выключением</translation>
+        <translation>Затемнять экран перед выключением</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="154" />
+        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="154"/>
         <source>Gradually reduce display brightness before turn-off</source>
-        <translation type="finished">Постепенно снижать яркость дисплея перед выключением</translation>
+        <translation>Постепенно снижать яркость дисплея перед выключением</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="170" />
+        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="170"/>
         <source>Dim timeout</source>
-        <translation type="finished">Таймаут затемнения</translation>
+        <translation>Таймаут затемнения</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="189" />
+        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="189"/>
         <source>Dimmed brightness level</source>
-        <translation type="finished">Яркость при затемнении</translation>
+        <translation>Яркость при затемнении</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="190" />
+        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="190"/>
         <source>Brightness level applied when screen is dimmed</source>
-        <translation type="finished">Уровень яркости при затемнении экрана</translation>
+        <translation>Уровень яркости при затемнении экрана</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="220" />
-        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="225" />
+        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="220"/>
+        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="225"/>
         <source>Automatically lock screen</source>
-        <translation type="finished">Автоматически блокировать экран</translation>
+        <translation>Автоматически блокировать экран</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="221" />
+        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="221"/>
         <source>Lock the session after a period of user inactivity</source>
-        <translation type="finished">Блокировать сеанс после периода бездействия</translation>
+        <translation>Блокировать сеанс после периода бездействия</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="236" />
+        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="236"/>
         <source>Lock timeout</source>
-        <translation type="finished">Таймаут блокировки</translation>
+        <translation>Таймаут блокировки</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="255" />
+        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="255"/>
         <source>Respect idle inhibitors</source>
-        <translation type="finished">Уважать запреты на простой</translation>
+        <translation>Уважать запреты на простой</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="256" />
+        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="256"/>
         <source>Do not lock while media is playing or presentations are active</source>
-        <translation type="finished">Не блокировать, пока играет медиа или активны презентации</translation>
+        <translation>Не блокировать, пока играет медиа или активны презентации</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="260" />
+        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="260"/>
         <source>Respect idle inhibitors for lock</source>
-        <translation type="finished">Уважать запреты на простой для блокировки</translation>
+        <translation>Уважать запреты на простой для блокировки</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="289" />
-        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="294" />
+        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="289"/>
+        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="294"/>
         <source>Automatic sleep / suspend</source>
-        <translation type="finished">Автоматический сон / приостановка</translation>
+        <translation>Автоматический сон / приостановка</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="290" />
+        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="290"/>
         <source>Put computer into sleep mode after inactivity</source>
-        <translation type="finished">Переводить компьютер в сон после бездействия</translation>
+        <translation>Переводить компьютер в сон после бездействия</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="305" />
+        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="305"/>
         <source>Sleep timeout</source>
-        <translation type="finished">Таймаут сна</translation>
+        <translation>Таймаут сна</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="324" />
-        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="329" />
+        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="324"/>
+        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="329"/>
         <source>Respect sleep inhibitors</source>
-        <translation type="finished">Уважать запреты на сон</translation>
+        <translation>Уважать запреты на сон</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="325" />
+        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="325"/>
         <source>Prevent sleeping when applications request it</source>
-        <translation type="finished">Предотвращать сон, когда это запрашивают приложения</translation>
+        <translation>Предотвращать сон, когда это запрашивают приложения</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="358" />
-        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="363" />
+        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="358"/>
+        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="363"/>
         <source>Idle management</source>
-        <translation type="finished">Управление простоем</translation>
+        <translation>Управление простоем</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="359" />
+        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="359"/>
         <source>Master switch for all screen turn-off, lock and sleep timers</source>
-        <translation type="finished">Главный переключатель всех таймеров выключения экрана, блокировки и сна</translation>
+        <translation>Главный переключатель всех таймеров выключения экрана, блокировки и сна</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="371" />
-        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="376" />
+        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="371"/>
+        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="376"/>
         <source>Keep awake</source>
-        <translation type="finished">Не спать</translation>
+        <translation>Не спать</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="372" />
+        <location filename="../Modules/ControlCenter/PowerAndSleepPage.qml" line="372"/>
         <source>Temporarily prevent dimming, screen turn-off, locking and sleeping</source>
-        <translation type="finished">Временно предотвращать затемнение, выключение экрана, блокировку и сон</translation>
+        <translation>Временно предотвращать затемнение, выключение экрана, блокировку и сон</translation>
     </message>
 </context>
 <context>
     <name>PowerButton</name>
     <message>
-        <location filename="../Modules/Bar/QuickSettings/PowerButton.qml" line="15" />
+        <location filename="../Modules/Bar/QuickSettings/PowerButton.qml" line="15"/>
         <source>Power menu</source>
-        <translation type="finished">Power menu</translation>
+        <translation>Power menu</translation>
     </message>
 </context>
 <context>
     <name>PowerMenuWindow</name>
     <message>
-        <location filename="../Modules/PowerMenu/PowerMenuWindow.qml" line="119" />
+        <location filename="../Modules/PowerMenu/PowerMenuWindow.qml" line="119"/>
         <source>Lock screen</source>
-        <translation type="finished">Lock screen</translation>
+        <translation>Lock screen</translation>
     </message>
     <message>
-        <location filename="../Modules/PowerMenu/PowerMenuWindow.qml" line="124" />
+        <location filename="../Modules/PowerMenu/PowerMenuWindow.qml" line="124"/>
         <source>Log out</source>
-        <translation type="finished">Log out</translation>
+        <translation>Log out</translation>
     </message>
     <message>
-        <location filename="../Modules/PowerMenu/PowerMenuWindow.qml" line="129" />
+        <location filename="../Modules/PowerMenu/PowerMenuWindow.qml" line="129"/>
         <source>Suspend</source>
-        <translation type="finished">Suspend</translation>
+        <translation>Suspend</translation>
     </message>
     <message>
-        <location filename="../Modules/PowerMenu/PowerMenuWindow.qml" line="134" />
+        <location filename="../Modules/PowerMenu/PowerMenuWindow.qml" line="134"/>
         <source>Shut down</source>
-        <translation type="finished">Shut down</translation>
+        <translation>Shut down</translation>
     </message>
     <message>
-        <location filename="../Modules/PowerMenu/PowerMenuWindow.qml" line="139" />
+        <location filename="../Modules/PowerMenu/PowerMenuWindow.qml" line="139"/>
         <source>Hibernate</source>
-        <translation type="finished">Hibernate</translation>
+        <translation>Hibernate</translation>
     </message>
     <message>
-        <location filename="../Modules/PowerMenu/PowerMenuWindow.qml" line="144" />
+        <location filename="../Modules/PowerMenu/PowerMenuWindow.qml" line="144"/>
         <source>Restart</source>
-        <translation type="finished">Restart</translation>
+        <translation>Restart</translation>
     </message>
 </context>
 <context>
     <name>PowerProfileContent</name>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/PowerProfileContent.qml" line="16" />
+        <location filename="../Modules/Sidebars/QuickSettings/PowerProfileContent.qml" line="16"/>
         <source>Power mode</source>
-        <translation type="finished">Режим питания</translation>
+        <translation>Режим питания</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/PowerProfileContent.qml" line="29" />
+        <location filename="../Modules/Sidebars/QuickSettings/PowerProfileContent.qml" line="29"/>
         <source>power-profiles-daemon is not running</source>
-        <translation type="finished">power-profiles-daemon не запущен</translation>
+        <translation>power-profiles-daemon не запущен</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/QuickSettings/PowerProfileContent.qml" line="53" />
+        <location filename="../Modules/Sidebars/QuickSettings/PowerProfileContent.qml" line="53"/>
         <source>Performance is limited: %1</source>
-        <translation type="finished">Производительность ограничена: %1</translation>
+        <translation>Производительность ограничена: %1</translation>
     </message>
 </context>
 <context>
     <name>PowerProfileService</name>
     <message>
-        <location filename="../Services/PowerProfileService.qml" line="44" />
+        <location filename="../Services/PowerProfileService.qml" line="44"/>
         <source>Performance</source>
-        <translation type="finished">Производительность</translation>
+        <translation>Производительность</translation>
     </message>
     <message>
-        <location filename="../Services/PowerProfileService.qml" line="46" />
+        <location filename="../Services/PowerProfileService.qml" line="46"/>
         <source>Balanced</source>
-        <translation type="finished">Сбалансированный</translation>
+        <translation>Сбалансированный</translation>
     </message>
     <message>
-        <location filename="../Services/PowerProfileService.qml" line="48" />
+        <location filename="../Services/PowerProfileService.qml" line="48"/>
         <source>Power saver</source>
-        <translation type="finished">Энергосбережение</translation>
+        <translation>Энергосбережение</translation>
     </message>
     <message>
-        <location filename="../Services/PowerProfileService.qml" line="57" />
+        <location filename="../Services/PowerProfileService.qml" line="57"/>
         <source>Full clocks, louder fans, shorter battery life</source>
-        <translation type="finished">Полные показания, громче вентиляторы, меньше автономность</translation>
+        <translation>Полные показания, громче вентиляторы, меньше автономность</translation>
     </message>
     <message>
-        <location filename="../Services/PowerProfileService.qml" line="59" />
+        <location filename="../Services/PowerProfileService.qml" line="59"/>
         <source>Default: clocks rise only under load</source>
-        <translation type="finished">По умолчанию: показания растут только под нагрузкой</translation>
+        <translation>По умолчанию: показания растут только под нагрузкой</translation>
     </message>
     <message>
-        <location filename="../Services/PowerProfileService.qml" line="61" />
+        <location filename="../Services/PowerProfileService.qml" line="61"/>
         <source>Clocks limited, quiet, longest battery life</source>
-        <translation type="finished">Ограниченная частота, тихо, максимальная автономность</translation>
+        <translation>Ограниченная частота, тихо, максимальная автономность</translation>
     </message>
 </context>
 <context>
     <name>QuickSettingsSurface</name>
     <message>
-        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="72" />
+        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="72"/>
         <source>Night Mode</source>
-        <translation type="finished">Ночной режим</translation>
+        <translation>Ночной режим</translation>
     </message>
     <message>
-        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="74" />
+        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="74"/>
         <source>Network</source>
-        <translation type="finished">Сеть</translation>
+        <translation>Сеть</translation>
     </message>
     <message>
-        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="76" />
+        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="76"/>
         <source>Bluetooth</source>
-        <translation type="finished">Bluetooth</translation>
+        <translation>Bluetooth</translation>
     </message>
     <message>
-        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="78" />
+        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="78"/>
         <source>Caffeine</source>
-        <translation type="finished">Кофеин</translation>
+        <translation>Кофеин</translation>
     </message>
     <message>
-        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="80" />
+        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="80"/>
         <source>Microphone</source>
-        <translation type="finished">Микрофон</translation>
+        <translation>Микрофон</translation>
     </message>
     <message>
-        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="82" />
+        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="82"/>
         <source>Sound</source>
-        <translation type="finished">Звук</translation>
+        <translation>Звук</translation>
     </message>
     <message>
-        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="84" />
+        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="84"/>
         <source>Appearance</source>
-        <translation type="finished">Внешний вид</translation>
+        <translation>Внешний вид</translation>
     </message>
     <message>
-        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="86" />
+        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="86"/>
         <source>Do not disturb</source>
-        <translation type="finished">Не беспокоить</translation>
+        <translation>Не беспокоить</translation>
     </message>
     <message>
-        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="88" />
+        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="88"/>
         <source>Power mode</source>
-        <translation type="finished">Режим питания</translation>
+        <translation>Режим питания</translation>
     </message>
     <message>
-        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="97" />
-        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="101" />
-        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="107" />
+        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="97"/>
+        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="101"/>
+        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="107"/>
         <source>Unavailable</source>
-        <translation type="finished">Недоступно</translation>
+        <translation>Недоступно</translation>
     </message>
     <message>
-        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="98" />
+        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="98"/>
         <source>%1 K</source>
-        <translation type="finished">%1 К</translation>
+        <translation>%1 К</translation>
     </message>
     <message>
-        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="103" />
+        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="103"/>
         <source>No Wi-Fi device</source>
-        <translation type="finished">Нет устройства Wi-Fi</translation>
+        <translation>Нет устройства Wi-Fi</translation>
     </message>
     <message>
-        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="104" />
-        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="109" />
-        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="121" />
+        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="104"/>
+        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="109"/>
+        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="121"/>
         <source>Off</source>
-        <translation type="finished">Выкл.</translation>
+        <translation>Выкл.</translation>
     </message>
     <message>
-        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="110" />
+        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="110"/>
         <source>Connected</source>
-        <translation type="finished">Подключено</translation>
+        <translation>Подключено</translation>
     </message>
     <message>
-        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="110" />
-        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="115" />
-        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="121" />
+        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="110"/>
+        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="115"/>
+        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="121"/>
         <source>On</source>
-        <translation type="finished">Вкл.</translation>
+        <translation>Вкл.</translation>
     </message>
     <message>
-        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="113" />
+        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="113"/>
         <source>Keep awake</source>
-        <translation type="finished">Не спать</translation>
+        <translation>Не спать</translation>
     </message>
     <message>
-        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="113" />
+        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="113"/>
         <source>Normal sleep</source>
-        <translation type="finished">Обычный сон</translation>
+        <translation>Обычный сон</translation>
     </message>
     <message>
-        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="115" />
-        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="117" />
+        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="115"/>
+        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="117"/>
         <source>Muted</source>
-        <translation type="finished">Звук выключен</translation>
+        <translation>Звук выключен</translation>
     </message>
     <message>
-        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="119" />
+        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="119"/>
         <source>Dark</source>
-        <translation type="finished">Тёмный</translation>
+        <translation>Тёмный</translation>
     </message>
     <message>
-        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="119" />
+        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="119"/>
         <source>Light</source>
-        <translation type="finished">Светлый</translation>
+        <translation>Светлый</translation>
     </message>
     <message>
-        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="126" />
+        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="126"/>
         <source> · limited</source>
-        <translation type="finished"> · ограничено</translation>
+        <translation> · ограничено</translation>
     </message>
     <message>
-        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="259" />
+        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="259"/>
         <source>
 Right-click to change shape; scroll to reorder</source>
-        <translation type="finished">
+        <translation>
 Правый клик — изменить форму; колесо — изменить порядок</translation>
     </message>
     <message>
-        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="261" />
+        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="261"/>
         <source>
 Right-click to open the details panel</source>
-        <translation type="finished">
+        <translation>
 Правый клик — открыть панель сведений</translation>
     </message>
     <message>
-        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="282" />
+        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="282"/>
         <source>Edit quick actions
 Right-click to change shape; scroll to reorder</source>
-        <translation type="finished">Правка быстрых действий
+        <translation>Правка быстрых действий
 Правый клик — изменить форму; колесо — изменить порядок</translation>
     </message>
     <message>
-        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="284" />
+        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="284"/>
         <source>Edit quick actions</source>
-        <translation type="finished">Правка быстрых действий</translation>
+        <translation>Правка быстрых действий</translation>
     </message>
     <message>
-        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="293" />
+        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="293"/>
         <source>Restart Quickshell</source>
-        <translation type="finished">Перезапустить Quickshell</translation>
+        <translation>Перезапустить Quickshell</translation>
     </message>
     <message>
-        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="302" />
+        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="302"/>
         <source>Settings</source>
-        <translation type="finished">Настройки</translation>
+        <translation>Настройки</translation>
     </message>
     <message>
-        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="311" />
+        <location filename="../Modules/QuickSettings/QuickSettingsSurface.qml" line="311"/>
         <source>Power menu</source>
-        <translation type="finished">Power menu</translation>
+        <translation>Power menu</translation>
     </message>
 </context>
 <context>
     <name>QuickSliders</name>
     <message>
-        <location filename="../Modules/QuickSettings/QuickSliders.qml" line="53" />
+        <location filename="../Modules/QuickSettings/QuickSliders.qml" line="53"/>
         <source>Software dimming: %1%</source>
-        <translation type="finished">Программное затемнение: %1%</translation>
+        <translation>Программное затемнение: %1%</translation>
     </message>
 </context>
 <context>
     <name>RcloneService</name>
     <message>
-        <location filename="../Services/RcloneService.qml" line="148" />
+        <location filename="../Services/RcloneService.qml" line="158"/>
         <source>Other cloud storage</source>
-        <translation type="finished">Другое облачное хранилище</translation>
+        <translation>Другое облачное хранилище</translation>
     </message>
     <message>
-        <location filename="../Services/RcloneService.qml" line="164" />
+        <location filename="../Services/RcloneService.qml" line="174"/>
         <source>Backup</source>
-        <translation type="finished">Резервное копирование</translation>
+        <translation>Резервное копирование</translation>
     </message>
     <message>
-        <location filename="../Services/RcloneService.qml" line="210" />
+        <location filename="../Services/RcloneService.qml" line="220"/>
         <source>No writable cloud storage configured</source>
-        <translation type="finished">Облачное хранилище, доступное для записи, не настроено</translation>
+        <translation>Облачное хранилище, доступное для записи, не настроено</translation>
     </message>
     <message>
-        <location filename="../Services/RcloneService.qml" line="373" />
+        <location filename="../Services/RcloneService.qml" line="254"/>
+        <source>rclone is not installed</source>
+        <translation>rclone не установлен</translation>
+    </message>
+    <message>
+        <location filename="../Services/RcloneService.qml" line="421"/>
         <source>rclone setup failed</source>
-        <translation type="finished">настройка rclone не удалась</translation>
+        <translation>настройка rclone не удалась</translation>
     </message>
     <message>
-        <location filename="../Services/RcloneService.qml" line="389" />
+        <location filename="../Services/RcloneService.qml" line="437"/>
         <source>rclone returned an invalid configuration question</source>
-        <translation type="finished">rclone вернул некорректный вопрос настройки</translation>
+        <translation>rclone вернул некорректный вопрос настройки</translation>
     </message>
     <message>
-        <location filename="../Services/RcloneService.qml" line="416" />
+        <location filename="../Services/RcloneService.qml" line="464"/>
         <source>The rclone configuration question is missing option details</source>
-        <translation type="finished">В вопросе настройки rclone отсутствуют сведения об опциях</translation>
+        <translation>В вопросе настройки rclone отсутствуют сведения об опциях</translation>
     </message>
     <message>
-        <location filename="../Services/RcloneService.qml" line="488" />
+        <location filename="../Services/RcloneService.qml" line="536"/>
         <source>The selected cloud storage is read-only</source>
-        <translation type="finished">Выбранное облачное хранилище только для чтения</translation>
+        <translation>Выбранное облачное хранилище только для чтения</translation>
     </message>
     <message>
-        <location filename="../Services/RcloneService.qml" line="508" />
+        <location filename="../Services/RcloneService.qml" line="556"/>
         <source>Preparing backup</source>
-        <translation type="finished">Подготовка резервной копии</translation>
+        <translation>Подготовка резервной копии</translation>
     </message>
     <message>
-        <location filename="../Services/RcloneService.qml" line="517" />
+        <location filename="../Services/RcloneService.qml" line="565"/>
         <source>Computer backup supports folders only</source>
-        <translation type="finished">Резервная копия компьютера поддерживает только папки</translation>
+        <translation>Резервная копия компьютера поддерживает только папки</translation>
     </message>
     <message>
-        <location filename="../Services/RcloneService.qml" line="536" />
+        <location filename="../Services/RcloneService.qml" line="584"/>
         <source>Stopping backup…</source>
-        <translation type="finished">Остановка резервного копирования…</translation>
+        <translation>Остановка резервного копирования…</translation>
     </message>
     <message>
-        <location filename="../Services/RcloneService.qml" line="566" />
+        <location filename="../Services/RcloneService.qml" line="614"/>
         <source>Backup stopped</source>
-        <translation type="finished">Резервное копирование остановлено</translation>
+        <translation>Резервное копирование остановлено</translation>
     </message>
     <message>
-        <location filename="../Services/RcloneService.qml" line="573" />
+        <location filename="../Services/RcloneService.qml" line="621"/>
         <source>Check the network and remote permissions</source>
-        <translation type="finished">Проверьте сеть и права удалённого доступа</translation>
+        <translation>Проверьте сеть и права удалённого доступа</translation>
     </message>
     <message>
-        <location filename="../Services/RcloneService.qml" line="575" />
+        <location filename="../Services/RcloneService.qml" line="623"/>
         <source>Failed to back up %1: %2</source>
-        <translation type="finished">Не удалось создать резервную копию %1: %2</translation>
+        <translation>Не удалось создать резервную копию %1: %2</translation>
     </message>
     <message>
-        <location filename="../Services/RcloneService.qml" line="582" />
+        <location filename="../Services/RcloneService.qml" line="630"/>
         <source>Backup complete. %1 folders backed up</source>
-        <translation type="finished">Резервное копирование завершено. Скопировано папок: %1</translation>
+        <translation>Резервное копирование завершено. Скопировано папок: %1</translation>
     </message>
     <message>
-        <location filename="../Services/RcloneService.qml" line="610" />
+        <location filename="../Services/RcloneService.qml" line="658"/>
         <source>Preparing %1 (%2/%3)</source>
-        <translation type="finished">Подготовка %1 (%2/%3)</translation>
+        <translation>Подготовка %1 (%2/%3)</translation>
     </message>
     <message>
-        <location filename="../Services/RcloneService.qml" line="656" />
+        <location filename="../Services/RcloneService.qml" line="704"/>
         <source>Backing up %1 (%2/%3)</source>
-        <translation type="finished">Резервное копирование %1 (%2/%3)</translation>
+        <translation>Резервное копирование %1 (%2/%3)</translation>
     </message>
     <message>
-        <location filename="../Services/RcloneService.qml" line="657" />
+        <location filename="../Services/RcloneService.qml" line="705"/>
         <source>Checking %1 (%2/%3)</source>
-        <translation type="finished">Проверка %1 (%2/%3)</translation>
+        <translation>Проверка %1 (%2/%3)</translation>
     </message>
     <message>
-        <location filename="../Services/RcloneService.qml" line="711" />
+        <location filename="../Services/RcloneService.qml" line="783"/>
         <source>Could not read the rclone configuration</source>
-        <translation type="finished">Не удалось прочитать конфигурацию rclone</translation>
+        <translation>Не удалось прочитать конфигурацию rclone</translation>
     </message>
     <message>
-        <location filename="../Services/RcloneService.qml" line="731" />
+        <location filename="../Services/RcloneService.qml" line="813"/>
         <source>rclone returned an invalid remote list</source>
-        <translation type="finished">rclone вернул некорректный список удалённых</translation>
+        <translation>rclone вернул некорректный список удалённых</translation>
     </message>
     <message>
-        <location filename="../Services/RcloneService.qml" line="745" />
+        <location filename="../Services/RcloneService.qml" line="827"/>
         <source>No cloud storage configured</source>
-        <translation type="finished">Облачное хранилище не настроено</translation>
+        <translation>Облачное хранилище не настроено</translation>
     </message>
     <message>
-        <location filename="../Services/RcloneService.qml" line="766" />
+        <location filename="../Services/RcloneService.qml" line="848"/>
         <source>Could not load the rclone service list</source>
-        <translation type="finished">Не удалось загрузить список служб rclone</translation>
+        <translation>Не удалось загрузить список служб rclone</translation>
     </message>
     <message>
-        <location filename="../Services/RcloneService.qml" line="779" />
+        <location filename="../Services/RcloneService.qml" line="861"/>
         <source>rclone returned an invalid service list</source>
-        <translation type="finished">rclone вернул некорректный список служб</translation>
+        <translation>rclone вернул некорректный список служб</translation>
     </message>
     <message>
-        <location filename="../Services/RcloneService.qml" line="814" />
+        <location filename="../Services/RcloneService.qml" line="896"/>
         <source>Could not remove the cloud storage configuration</source>
-        <translation type="finished">Не удалось удалить конфигурацию облачного хранилища</translation>
+        <translation>Не удалось удалить конфигурацию облачного хранилища</translation>
     </message>
     <message>
-        <location filename="../Services/RcloneService.qml" line="825" />
+        <location filename="../Services/RcloneService.qml" line="907"/>
         <source>The rclone configuration command failed</source>
-        <translation type="finished">Команда настройки rclone не удалась</translation>
+        <translation>Команда настройки rclone не удалась</translation>
     </message>
     <message>
-        <location filename="../Services/RcloneService.qml" line="859" />
+        <location filename="../Services/RcloneService.qml" line="941"/>
         <source>This cloud storage does not currently provide capacity information</source>
-        <translation type="finished">Это облачное хранилище сейчас не предоставляет сведения о ёмкости</translation>
+        <translation>Это облачное хранилище сейчас не предоставляет сведения о ёмкости</translation>
     </message>
     <message>
-        <location filename="../Services/RcloneService.qml" line="876" />
+        <location filename="../Services/RcloneService.qml" line="958"/>
         <source>This cloud storage did not report a total capacity</source>
-        <translation type="finished">Это облачное хранилище не сообщило общую ёмкость</translation>
+        <translation>Это облачное хранилище не сообщило общую ёмкость</translation>
     </message>
     <message>
-        <location filename="../Services/RcloneService.qml" line="880" />
+        <location filename="../Services/RcloneService.qml" line="962"/>
         <source>Could not parse cloud storage capacity</source>
-        <translation type="finished">Не удалось разобрать объём облачного хранилища</translation>
+        <translation>Не удалось разобрать объём облачного хранилища</translation>
     </message>
 </context>
 <context>
     <name>RecordingCoordinator</name>
     <message>
-        <location filename="../Services/RecordingCoordinator.qml" line="23" />
+        <location filename="../Services/RecordingCoordinator.qml" line="23"/>
         <source>Selecting recording region</source>
-        <translation type="finished">Выбор области записи</translation>
+        <translation>Выбор области записи</translation>
     </message>
     <message>
-        <location filename="../Services/RecordingCoordinator.qml" line="24" />
+        <location filename="../Services/RecordingCoordinator.qml" line="24"/>
         <source>Starting recording</source>
-        <translation type="finished">Начало записи</translation>
+        <translation>Начало записи</translation>
     </message>
     <message>
-        <location filename="../Services/RecordingCoordinator.qml" line="25" />
-        <location filename="../Services/RecordingCoordinator.qml" line="26" />
+        <location filename="../Services/RecordingCoordinator.qml" line="25"/>
+        <location filename="../Services/RecordingCoordinator.qml" line="26"/>
         <source>Recording</source>
-        <translation type="finished">Запись</translation>
+        <translation>Запись</translation>
     </message>
     <message>
-        <location filename="../Services/RecordingCoordinator.qml" line="27" />
-        <location filename="../Services/RecordingCoordinator.qml" line="28" />
+        <location filename="../Services/RecordingCoordinator.qml" line="27"/>
+        <location filename="../Services/RecordingCoordinator.qml" line="28"/>
         <source>Processing recording</source>
-        <translation type="finished">Обработка записи</translation>
+        <translation>Обработка записи</translation>
     </message>
     <message>
-        <location filename="../Services/RecordingCoordinator.qml" line="31" />
+        <location filename="../Services/RecordingCoordinator.qml" line="31"/>
         <source>Starting audio recording</source>
-        <translation type="finished">Начало записи звука</translation>
+        <translation>Начало записи звука</translation>
     </message>
     <message>
-        <location filename="../Services/RecordingCoordinator.qml" line="32" />
+        <location filename="../Services/RecordingCoordinator.qml" line="32"/>
         <source>Recording audio</source>
-        <translation type="finished">Запись звука</translation>
+        <translation>Запись звука</translation>
     </message>
     <message>
-        <location filename="../Services/RecordingCoordinator.qml" line="33" />
+        <location filename="../Services/RecordingCoordinator.qml" line="33"/>
         <source>Stopping audio recording</source>
-        <translation type="finished">Остановка записи звука</translation>
+        <translation>Остановка записи звука</translation>
     </message>
     <message>
-        <location filename="../Services/RecordingCoordinator.qml" line="34" />
+        <location filename="../Services/RecordingCoordinator.qml" line="34"/>
         <source>Finishing audio recording</source>
-        <translation type="finished">Завершение записи звука</translation>
+        <translation>Завершение записи звука</translation>
     </message>
 </context>
 <context>
     <name>RecordingService</name>
     <message>
-        <location filename="../Services/RecordingService.qml" line="73" />
-        <location filename="../Services/RecordingService.qml" line="97" />
-        <location filename="../Services/RecordingService.qml" line="228" />
-        <location filename="../Services/RecordingService.qml" line="247" />
+        <location filename="../Services/RecordingService.qml" line="73"/>
+        <location filename="../Services/RecordingService.qml" line="97"/>
+        <location filename="../Services/RecordingService.qml" line="228"/>
+        <location filename="../Services/RecordingService.qml" line="247"/>
         <source>key command failed</source>
-        <translation type="finished">команда key не удалась</translation>
+        <translation>команда key не удалась</translation>
     </message>
     <message>
-        <location filename="../Services/RecordingService.qml" line="128" />
+        <location filename="../Services/RecordingService.qml" line="128"/>
         <source>GIF saved</source>
-        <translation type="finished">GIF сохранён</translation>
+        <translation>GIF сохранён</translation>
     </message>
     <message>
-        <location filename="../Services/RecordingService.qml" line="128" />
+        <location filename="../Services/RecordingService.qml" line="128"/>
         <source>Screen recording saved</source>
-        <translation type="finished">Запись экрана сохранена</translation>
+        <translation>Запись экрана сохранена</translation>
     </message>
     <message>
-        <location filename="../Services/RecordingService.qml" line="202" />
+        <location filename="../Services/RecordingService.qml" line="202"/>
         <source>Could not start the recording command</source>
-        <translation type="finished">Не удалось запустить команду записи</translation>
+        <translation>Не удалось запустить команду записи</translation>
     </message>
     <message>
-        <location filename="../Services/RecordingService.qml" line="266" />
+        <location filename="../Services/RecordingService.qml" line="266"/>
         <source>Could not query recording status through key</source>
-        <translation type="finished">Не удалось получить статус записи через key</translation>
+        <translation>Не удалось получить статус записи через key</translation>
     </message>
 </context>
 <context>
     <name>RegionSelectionWindow</name>
     <message>
-        <location filename="../Modules/RegionSelector/RegionSelectionWindow.qml" line="218" />
+        <location filename="../Modules/RegionSelector/RegionSelectionWindow.qml" line="218"/>
         <source>Drag to select a region  ·  Esc to cancel</source>
-        <translation type="finished">Перетащите, чтобы выбрать область · Esc — отмена</translation>
+        <translation>Перетащите, чтобы выбрать область · Esc — отмена</translation>
     </message>
 </context>
 <context>
     <name>ResourceStats</name>
     <message>
-        <location filename="../Modules/Keystone/DashboardContent/ResourceStats.qml" line="33" />
+        <location filename="../Modules/Keystone/DashboardContent/Widgets/ResourceStats/ResourceStats.qml" line="33"/>
         <source>Hour</source>
-        <translation type="finished">Час</translation>
+        <translation>Час</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/DashboardContent/ResourceStats.qml" line="37" />
+        <location filename="../Modules/Keystone/DashboardContent/Widgets/ResourceStats/ResourceStats.qml" line="37"/>
         <source>Day</source>
-        <translation type="finished">День</translation>
+        <translation>День</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/DashboardContent/ResourceStats.qml" line="41" />
+        <location filename="../Modules/Keystone/DashboardContent/Widgets/ResourceStats/ResourceStats.qml" line="41"/>
         <source>Week</source>
-        <translation type="finished">Неделя</translation>
+        <translation>Неделя</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/DashboardContent/ResourceStats.qml" line="59" />
+        <location filename="../Modules/Keystone/DashboardContent/Widgets/ResourceStats/ResourceStats.qml" line="59"/>
         <source>s</source>
-        <translation type="finished">с</translation>
+        <translation>с</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/DashboardContent/ResourceStats.qml" line="62" />
-        <location filename="../Modules/Keystone/DashboardContent/ResourceStats.qml" line="63" />
+        <location filename="../Modules/Keystone/DashboardContent/Widgets/ResourceStats/ResourceStats.qml" line="62"/>
+        <location filename="../Modules/Keystone/DashboardContent/Widgets/ResourceStats/ResourceStats.qml" line="63"/>
         <source>m</source>
-        <translation type="finished">м</translation>
+        <translation>м</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/DashboardContent/ResourceStats.qml" line="63" />
+        <location filename="../Modules/Keystone/DashboardContent/Widgets/ResourceStats/ResourceStats.qml" line="63"/>
         <source>h</source>
-        <translation type="finished">ч</translation>
+        <translation>ч</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/DashboardContent/ResourceStats.qml" line="69" />
+        <location filename="../Modules/Keystone/DashboardContent/Widgets/ResourceStats/ResourceStats.qml" line="69"/>
         <source> GB</source>
-        <translation type="finished"> ГБ</translation>
+        <translation> ГБ</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/DashboardContent/ResourceStats.qml" line="70" />
+        <location filename="../Modules/Keystone/DashboardContent/Widgets/ResourceStats/ResourceStats.qml" line="70"/>
         <source> MB</source>
-        <translation type="finished"> МБ</translation>
+        <translation> МБ</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/DashboardContent/ResourceStats.qml" line="89" />
+        <location filename="../Common/KeystoneHubRegistry.qml" line="92"/>
+        <location filename="../Modules/Keystone/DashboardContent/Widgets/ResourceStats/ResourceStats.qml" line="89"/>
         <source>Resource usage</source>
-        <translation type="finished">Использование ресурсов</translation>
+        <translation>Использование ресурсов</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/DashboardContent/ResourceStats.qml" line="148" />
+        <location filename="../Modules/Keystone/DashboardContent/Widgets/ResourceStats/ResourceStats.qml" line="148"/>
         <source>Collecting data…</source>
-        <translation type="finished">Сбор данных…</translation>
+        <translation>Сбор данных…</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/DashboardContent/ResourceStats.qml" line="148" />
+        <location filename="../Modules/Keystone/DashboardContent/Widgets/ResourceStats/ResourceStats.qml" line="148"/>
         <source>Waiting for the first sample…</source>
-        <translation type="finished">Ожидание первого снимка…</translation>
+        <translation>Ожидание первого снимка…</translation>
     </message>
 </context>
 <context>
     <name>SavedNetworksPage</name>
     <message>
-        <location filename="../Modules/ControlCenter/SavedNetworksPage.qml" line="25" />
+        <location filename="../Modules/ControlCenter/SavedNetworksPage.qml" line="25"/>
         <source>No saved networks</source>
-        <translation type="finished">Нет сохранённых сетей</translation>
+        <translation>Нет сохранённых сетей</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/SavedNetworksPage.qml" line="53" />
+        <location filename="../Modules/ControlCenter/SavedNetworksPage.qml" line="53"/>
         <source>Connect automatically</source>
-        <translation type="finished">Подключаться автоматически</translation>
+        <translation>Подключаться автоматически</translation>
     </message>
 </context>
 <context>
     <name>SearchSelectMenuField</name>
     <message>
-        <location filename="../Widgets/common/SearchSelectMenuField.qml" line="735" />
+        <location filename="../Widgets/common/SearchSelectMenuField.qml" line="735"/>
         <source>No options available</source>
-        <translation type="finished">Нет доступных вариантов</translation>
+        <translation>Нет доступных вариантов</translation>
     </message>
 </context>
 <context>
     <name>SettingsButton</name>
     <message>
-        <location filename="../Modules/Bar/QuickSettings/SettingsButton.qml" line="18" />
+        <location filename="../Modules/Bar/QuickSettings/SettingsButton.qml" line="18"/>
         <source>Left click: Quick Settings
 Right click: Control Center</source>
-        <translation type="finished">Левый клик: быстрые настройки
+        <translation>Левый клик: быстрые настройки
 Правый клик: центр управления</translation>
     </message>
 </context>
 <context>
     <name>ShortcutMap</name>
     <message>
-        <location filename="../Modules/ControlCenter/ShortcutMap.qml" line="46" />
+        <location filename="../Modules/ControlCenter/ShortcutMap.qml" line="46"/>
         <source>Shell</source>
-        <translation type="finished">Оболочка</translation>
+        <translation>Оболочка</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ShortcutMap.qml" line="46" />
-        <location filename="../Modules/ControlCenter/ShortcutMap.qml" line="74" />
+        <location filename="../Modules/ControlCenter/ShortcutMap.qml" line="46"/>
+        <location filename="../Modules/ControlCenter/ShortcutMap.qml" line="74"/>
         <source>Applications and custom actions</source>
-        <translation type="finished">Приложения и настраиваемые действия</translation>
+        <translation>Приложения и настраиваемые действия</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ShortcutMap.qml" line="49" />
+        <location filename="../Modules/ControlCenter/ShortcutMap.qml" line="49"/>
         <source>Workspaces</source>
-        <translation type="finished">Рабочие места</translation>
+        <translation>Рабочие места</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ShortcutMap.qml" line="51" />
+        <location filename="../Modules/ControlCenter/ShortcutMap.qml" line="51"/>
         <source>Screenshots and recording</source>
-        <translation type="finished">Снимки экрана и запись</translation>
+        <translation>Снимки экрана и запись</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ShortcutMap.qml" line="53" />
+        <location filename="../Modules/ControlCenter/ShortcutMap.qml" line="53"/>
         <source>Session</source>
-        <translation type="finished">Сеанс</translation>
+        <translation>Сеанс</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ShortcutMap.qml" line="55" />
+        <location filename="../Modules/ControlCenter/ShortcutMap.qml" line="55"/>
         <source>Displays</source>
-        <translation type="finished">Дисплеи</translation>
+        <translation>Дисплеи</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ShortcutMap.qml" line="57" />
+        <location filename="../Modules/ControlCenter/ShortcutMap.qml" line="57"/>
         <source>System</source>
-        <translation type="finished">Система</translation>
+        <translation>Система</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ShortcutMap.qml" line="58" />
+        <location filename="../Modules/ControlCenter/ShortcutMap.qml" line="58"/>
         <source>Windows</source>
-        <translation type="finished">Окна</translation>
+        <translation>Окна</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ShortcutMap.qml" line="87" />
+        <location filename="../Modules/ControlCenter/ShortcutMap.qml" line="87"/>
         <source>%1: %2</source>
-        <translation type="finished">%1: %2</translation>
+        <translation>%1: %2</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ShortcutMap.qml" line="91" />
+        <location filename="../Modules/ControlCenter/ShortcutMap.qml" line="91"/>
         <source>Run %1</source>
-        <translation type="finished">Запустить %1</translation>
+        <translation>Запустить %1</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ShortcutMap.qml" line="148" />
+        <location filename="../Modules/ControlCenter/ShortcutMap.qml" line="148"/>
         <source>Shortcut map</source>
-        <translation type="finished">Карта сочетаний клавиш</translation>
+        <translation>Карта сочетаний клавиш</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ShortcutMap.qml" line="159" />
+        <location filename="../Modules/ControlCenter/ShortcutMap.qml" line="159"/>
         <source>Close</source>
-        <translation type="finished">Закрыть</translation>
+        <translation>Закрыть</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ShortcutMap.qml" line="171" />
+        <location filename="../Modules/ControlCenter/ShortcutMap.qml" line="171"/>
         <source>No shortcuts assigned</source>
-        <translation type="finished">Сочетания клавиш не назначены</translation>
+        <translation>Сочетания клавиш не назначены</translation>
     </message>
 </context>
 <context>
     <name>ShortcutRecorder</name>
     <message>
-        <location filename="../core/plugin/keyboard/src/shortcut_recorder.cpp" line="121" />
+        <location filename="../core/plugin/keyboard/src/shortcut_recorder.cpp" line="121"/>
         <source>The live keymap could not be matched. Enter the XKB key name manually.</source>
-        <translation type="finished">Не удалось сопоставить активную раскладку. Введите имя клавиши XKB вручную.</translation>
+        <translation>Не удалось сопоставить активную раскладку. Введите имя клавиши XKB вручную.</translation>
     </message>
 </context>
 <context>
     <name>ShortcutsPage</name>
     <message>
-        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="55" />
-        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="565" />
-        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="832" />
+        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="55"/>
+        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="565"/>
+        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="832"/>
         <source>Delete</source>
-        <translation type="finished">Удалить</translation>
+        <translation>Удалить</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="210" />
+        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="210"/>
         <source>New action</source>
-        <translation type="finished">Новое действие</translation>
+        <translation>Новое действие</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="216" />
-        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="586" />
+        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="216"/>
+        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="586"/>
         <source>Not configured</source>
-        <translation type="finished">Не настроено</translation>
+        <translation>Не настроено</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="343" />
-        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="405" />
+        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="343"/>
+        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="405"/>
         <source>Shortcut conflicts</source>
-        <translation type="finished">Конфликты сочетаний клавиш</translation>
+        <translation>Конфликты сочетаний клавиш</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="345" />
+        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="345"/>
         <source>Configuration validation failed</source>
-        <translation type="finished">Проверка конфигурации не удалась</translation>
+        <translation>Проверка конфигурации не удалась</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="347" />
+        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="347"/>
         <source>This binding is read-only</source>
-        <translation type="finished">Эта привязка только для чтения</translation>
+        <translation>Эта привязка только для чтения</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="392" />
+        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="392"/>
         <source>Keyboard shortcuts</source>
-        <translation type="finished">Сочетания клавиш</translation>
+        <translation>Сочетания клавиш</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="393" />
+        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="393"/>
         <source>Create or connect the shortcuts file. Your existing bindings stay in their original files.</source>
-        <translation type="finished">Создайте или подключите файл сочетаний клавиш. Ваши существующие привязки останутся в своих файлах.</translation>
+        <translation>Создайте или подключите файл сочетаний клавиш. Ваши существующие привязки останутся в своих файлах.</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="424" />
+        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="424"/>
         <source>Search actions</source>
-        <translation type="finished">Поиск действий</translation>
+        <translation>Поиск действий</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="428" />
+        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="428"/>
         <source>Add action</source>
-        <translation type="finished">Добавить действие</translation>
+        <translation>Добавить действие</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="442" />
+        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="442"/>
         <source>All</source>
-        <translation type="finished">Все</translation>
+        <translation>Все</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="446" />
+        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="446"/>
         <source>Assigned</source>
-        <translation type="finished">Назначено</translation>
+        <translation>Назначено</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="450" />
+        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="450"/>
         <source>Assigned by me</source>
-        <translation type="finished">Назначено мной</translation>
+        <translation>Назначено мной</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="454" />
+        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="454"/>
         <source>Unassigned</source>
-        <translation type="finished">Не назначено</translation>
+        <translation>Не назначено</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="533" />
-        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="688" />
+        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="533"/>
+        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="688"/>
         <source>Press shortcut...</source>
-        <translation type="finished">Нажмите сочетание клавиш…</translation>
+        <translation>Нажмите сочетание клавиш…</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="565" />
-        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="832" />
+        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="565"/>
+        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="832"/>
         <source>Remove override</source>
-        <translation type="finished">Удалить переопределение</translation>
+        <translation>Удалить переопределение</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="586" />
+        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="586"/>
         <source>Unavailable in this niri version</source>
-        <translation type="finished">Недоступно в этой версии niri</translation>
+        <translation>Недоступно в этой версии niri</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="603" />
+        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="603"/>
         <source>Delete action</source>
-        <translation type="finished">Удалить действие</translation>
+        <translation>Удалить действие</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="616" />
+        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="616"/>
         <source>Add shortcut</source>
-        <translation type="finished">Добавить сочетание клавиш</translation>
+        <translation>Добавить сочетание клавиш</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="680" />
+        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="680"/>
         <source>Configuration changed. Cancel and reload before saving; your draft has been kept.</source>
-        <translation type="finished">Конфигурация изменена. Отмените и перезагрузите её перед сохранением; черновик сохранён.</translation>
+        <translation>Конфигурация изменена. Отмените и перезагрузите её перед сохранением; черновик сохранён.</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="688" />
+        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="688"/>
         <source>Key</source>
-        <translation type="finished">Клавиша</translation>
+        <translation>Клавиша</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="708" />
+        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="708"/>
         <source>Cancel recording</source>
-        <translation type="finished">Отменить запись</translation>
+        <translation>Отменить запись</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="708" />
+        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="708"/>
         <source>Record key</source>
-        <translation type="finished">Записать клавишу</translation>
+        <translation>Записать клавишу</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="723" />
+        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="723"/>
         <source>Fill in the action parameters before saving</source>
-        <translation type="finished">Заполните параметры действия перед сохранением</translation>
+        <translation>Заполните параметры действия перед сохранением</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="728" />
+        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="728"/>
         <source>Action expression</source>
-        <translation type="finished">Выражение действия</translation>
+        <translation>Выражение действия</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="733" />
+        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="733"/>
         <source>Title</source>
-        <translation type="finished">Заголовок</translation>
+        <translation>Заголовок</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="740" />
+        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="740"/>
         <source>Advanced options</source>
-        <translation type="finished">Дополнительные параметры</translation>
+        <translation>Дополнительные параметры</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="761" />
+        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="761"/>
         <source>Repeat while held</source>
-        <translation type="finished">Повторять при удержании</translation>
+        <translation>Повторять при удержании</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="769" />
+        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="769"/>
         <source>Allow while locked</source>
-        <translation type="finished">Разрешить при заблокированном экране</translation>
+        <translation>Разрешить при заблокированном экране</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="778" />
+        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="778"/>
         <source>Remove lock option</source>
-        <translation type="finished">Удалить вариант блокировки</translation>
+        <translation>Удалить вариант блокировки</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="783" />
+        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="783"/>
         <source>Minimum interval (ms)</source>
-        <translation type="finished">Минимальный интервал (мс)</translation>
+        <translation>Минимальный интервал (мс)</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="794" />
+        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="794"/>
         <source>Keep working when apps inhibit shortcuts</source>
-        <translation type="finished">Продолжать работу, когда приложения запрещают сочетания клавиш</translation>
+        <translation>Продолжать работу, когда приложения запрещают сочетания клавиш</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="807" />
+        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="807"/>
         <source>Save</source>
-        <translation type="finished">Сохранить</translation>
+        <translation>Сохранить</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="828" />
+        <location filename="../Modules/ControlCenter/ShortcutsPage.qml" line="828"/>
         <source>Cancel</source>
-        <translation type="finished">Отмена</translation>
+        <translation>Отмена</translation>
     </message>
 </context>
 <context>
     <name>SidebarCookieClock</name>
     <message>
-        <location filename="../Modules/SystemCards/SidebarCookieClock.qml" line="29" />
+        <location filename="../Modules/SystemCards/SidebarCookieClock.qml" line="29"/>
         <source>Cookie clock </source>
-        <translation type="finished">Часы-печенье </translation>
+        <translation>Часы-печенье </translation>
     </message>
 </context>
 <context>
     <name>SidebarPillButton</name>
     <message>
-        <location filename="../Modules/Bar/ActiveWindow/SidebarPillButton.qml" line="29" />
+        <location filename="../Modules/Bar/ActiveWindow/SidebarPillButton.qml" line="29"/>
         <source>Drawer</source>
-        <translation type="finished">Выдвижная панель</translation>
+        <translation>Выдвижная панель</translation>
     </message>
     <message>
-        <location filename="../Modules/Bar/ActiveWindow/SidebarPillButton.qml" line="29" />
+        <location filename="../Modules/Bar/ActiveWindow/SidebarPillButton.qml" line="29"/>
         <source>Notification center</source>
-        <translation type="finished">Центр уведомлений</translation>
+        <translation>Центр уведомлений</translation>
     </message>
 </context>
 <context>
     <name>SortableMultiSelectField</name>
     <message>
-        <location filename="../Widgets/common/SortableMultiSelectField.qml" line="538" />
+        <location filename="../Widgets/common/SortableMultiSelectField.qml" line="538"/>
         <source>No components selected</source>
-        <translation type="finished">Компоненты не выбраны</translation>
+        <translation>Компоненты не выбраны</translation>
     </message>
     <message>
-        <location filename="../Widgets/common/SortableMultiSelectField.qml" line="714" />
+        <location filename="../Widgets/common/SortableMultiSelectField.qml" line="714"/>
         <source>All widgets are in use</source>
-        <translation type="finished">Все виджеты уже используются</translation>
+        <translation>Все виджеты уже используются</translation>
     </message>
 </context>
 <context>
     <name>SpotlightActions</name>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2064" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2166"/>
         <source>Lock screen</source>
-        <translation type="finished">Экран блокировки</translation>
+        <translation>Экран блокировки</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2065" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2167"/>
         <source>Search</source>
-        <translation type="finished">Поиск</translation>
+        <translation>Поиск</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2066" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2168"/>
         <source>Web search</source>
-        <translation type="finished">Веб-поиск</translation>
+        <translation>Веб-поиск</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2067" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2169"/>
         <source>Find files</source>
-        <translation type="finished">Найти файлы</translation>
+        <translation>Найти файлы</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2068" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2170"/>
         <source>Applications</source>
-        <translation type="finished">Приложения</translation>
+        <translation>Приложения</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2069" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2171"/>
         <source>Clipboard history</source>
-        <translation type="finished">История буфера обмена</translation>
+        <translation>История буфера обмена</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2070" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2172"/>
         <source>Wallpaper picker</source>
-        <translation type="finished">Выбор обоев</translation>
+        <translation>Выбор обоев</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2071" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2173"/>
         <source>Reset wallpaper</source>
-        <translation type="finished">Сбросить обои</translation>
+        <translation>Сбросить обои</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2072" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2174"/>
         <source>Previous wallpaper</source>
-        <translation type="finished">Предыдущие обои</translation>
+        <translation>Предыдущие обои</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2073" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2175"/>
         <source>Next wallpaper</source>
-        <translation type="finished">Следующие обои</translation>
+        <translation>Следующие обои</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2074" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2176"/>
         <source>Random wallpaper</source>
-        <translation type="finished">Случайные обои</translation>
+        <translation>Случайные обои</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2075" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2177"/>
         <source>Close Keystone panels</source>
-        <translation type="finished">Закрыть панели Keystone</translation>
+        <translation>Закрыть панели Keystone</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2076" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2178"/>
         <source>Keystone dashboard</source>
-        <translation type="finished">Дашборд Keystone</translation>
+        <translation>Дашборд Keystone</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2077" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2179"/>
         <source>Keystone hub</source>
-        <translation type="finished">Хаб Keystone</translation>
+        <translation>Хаб Keystone</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2078" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2180"/>
         <source>Lyrics</source>
-        <translation type="finished">Текст песни</translation>
+        <translation>Текст песни</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2079" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2181"/>
         <source>Keystone tools</source>
-        <translation type="finished">Инструменты Keystone</translation>
+        <translation>Инструменты Keystone</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2080" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2182"/>
         <source>Notifications</source>
-        <translation type="finished">Уведомления</translation>
+        <translation>Уведомления</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2081" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2183"/>
         <source>Quick settings</source>
-        <translation type="finished">Быстрые настройки</translation>
+        <translation>Быстрые настройки</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2082" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2184"/>
         <source>Weather sidebar</source>
-        <translation type="finished">Панель погоды</translation>
+        <translation>Панель погоды</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2083" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2185"/>
         <source>Sidebar drawer</source>
-        <translation type="finished">Выдвижная боковая панель</translation>
+        <translation>Выдвижная боковая панель</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2084" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2186"/>
         <source>Shortcut map</source>
-        <translation type="finished">Карта сочетаний клавиш</translation>
+        <translation>Карта сочетаний клавиш</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2085" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2187"/>
         <source>Power menu</source>
-        <translation type="finished">Power menu</translation>
+        <translation>Power menu</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2092" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2194"/>
         <source>Lock the current session</source>
-        <translation type="finished">Заблокировать текущий сеанс</translation>
+        <translation>Заблокировать текущий сеанс</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2093" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2195"/>
         <source>Open Spotlight Search</source>
-        <translation type="finished">Открыть поиск Spotlight</translation>
+        <translation>Открыть поиск Spotlight</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2094" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2196"/>
         <source>Enter Spotlight Web search</source>
-        <translation type="finished">Введите запрос веб-поиска Spotlight</translation>
+        <translation>Введите запрос веб-поиска Spotlight</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2095" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2197"/>
         <source>Open Spotlight Files</source>
-        <translation type="finished">Открыть «Файлы» Spotlight</translation>
+        <translation>Открыть «Файлы» Spotlight</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2096" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2198"/>
         <source>Open the application launcher</source>
-        <translation type="finished">Открыть лаунчер приложений</translation>
+        <translation>Открыть лаунчер приложений</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2097" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2199"/>
         <source>Open clipboard history</source>
-        <translation type="finished">Открыть историю буфера обмена</translation>
+        <translation>Открыть историю буфера обмена</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2098" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2200"/>
         <source>Browse and apply wallpapers</source>
-        <translation type="finished">Обзор и применение обоев</translation>
+        <translation>Обзор и применение обоев</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2099" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2201"/>
         <source>Clear the global wallpaper selection</source>
-        <translation type="finished">Очистить глобальный выбор обоев</translation>
+        <translation>Очистить глобальный выбор обоев</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2100" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2202"/>
         <source>Apply the previous wallpaper</source>
-        <translation type="finished">Применить предыдущие обои</translation>
+        <translation>Применить предыдущие обои</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2101" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2203"/>
         <source>Apply the next wallpaper</source>
-        <translation type="finished">Применить следующие обои</translation>
+        <translation>Применить следующие обои</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2102" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2204"/>
         <source>Apply a random wallpaper</source>
-        <translation type="finished">Применить случайные обои</translation>
+        <translation>Применить случайные обои</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2103" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2205"/>
         <source>Dismiss open Keystone panels</source>
-        <translation type="finished">Закрыть открытые панели Keystone</translation>
+        <translation>Закрыть открытые панели Keystone</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2104" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2206"/>
         <source>Toggle the Keystone dashboard</source>
-        <translation type="finished">Переключить дашборд Keystone</translation>
+        <translation>Переключить дашборд Keystone</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2105" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2207"/>
         <source>Toggle the Keystone hub</source>
-        <translation type="finished">Переключить хаб Keystone</translation>
+        <translation>Переключить хаб Keystone</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2106" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2208"/>
         <source>Toggle Keystone lyrics</source>
-        <translation type="finished">Переключить текст песни Keystone</translation>
+        <translation>Переключить текст песни Keystone</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2107" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2209"/>
         <source>Toggle the Keystone tools panel</source>
-        <translation type="finished">Переключить панель инструментов Keystone</translation>
+        <translation>Переключить панель инструментов Keystone</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2108" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2210"/>
         <source>Open the notifications sidebar</source>
-        <translation type="finished">Открыть боковую панель уведомлений</translation>
+        <translation>Открыть боковую панель уведомлений</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2109" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2211"/>
         <source>Open the Quick settings sidebar</source>
-        <translation type="finished">Открыть боковую панель быстрых настроек</translation>
+        <translation>Открыть боковую панель быстрых настроек</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2110" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2212"/>
         <source>Toggle the weather sidebar</source>
-        <translation type="finished">Переключить панель погоды</translation>
+        <translation>Переключить панель погоды</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2111" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2213"/>
         <source>Toggle the sidebar drawer</source>
-        <translation type="finished">Переключить выдвижную боковую панель</translation>
+        <translation>Переключить выдвижную боковую панель</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2112" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2214"/>
         <source>Show keyboard shortcuts</source>
-        <translation type="finished">Показать сочетания клавиш</translation>
+        <translation>Показать сочетания клавиш</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2113" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2215"/>
         <source>Choose a session or power action</source>
-        <translation type="finished">Выберите сеанс или действие питания</translation>
+        <translation>Выберите сеанс или действие питания</translation>
     </message>
 </context>
 <context>
     <name>SpotlightCatalog</name>
     <message>
-        <location filename="../Services/SpotlightCatalog.qml" line="89" />
+        <location filename="../Services/SpotlightCatalog.qml" line="89"/>
         <source>Action unavailable</source>
-        <translation type="finished">Действие недоступно</translation>
+        <translation>Действие недоступно</translation>
     </message>
 </context>
 <context>
     <name>SpotlightClipboardDetails</name>
     <message>
-        <location filename="../Modules/Launcher/SpotlightClipboardDetails.qml" line="89" />
+        <location filename="../Modules/Launcher/SpotlightClipboardDetails.qml" line="89"/>
         <source>Remote location not read</source>
-        <translation type="finished">Удалённое расположение не прочитано</translation>
+        <translation>Удалённое расположение не прочитано</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightClipboardDetails.qml" line="91" />
+        <location filename="../Modules/Launcher/SpotlightClipboardDetails.qml" line="91"/>
         <source>File no longer exists</source>
-        <translation type="finished">Файл больше не существует</translation>
+        <translation>Файл больше не существует</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightClipboardDetails.qml" line="93" />
+        <location filename="../Modules/Launcher/SpotlightClipboardDetails.qml" line="93"/>
         <source>Unable to read file</source>
-        <translation type="finished">Не удалось прочитать файл</translation>
+        <translation>Не удалось прочитать файл</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightClipboardDetails.qml" line="95" />
+        <location filename="../Modules/Launcher/SpotlightClipboardDetails.qml" line="95"/>
         <source>Metadata unavailable</source>
-        <translation type="finished">Метаданные недоступны</translation>
+        <translation>Метаданные недоступны</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightClipboardDetails.qml" line="99" />
+        <location filename="../Modules/Launcher/SpotlightClipboardDetails.qml" line="99"/>
         <source>Folder</source>
-        <translation type="finished">Папка</translation>
+        <translation>Папка</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightClipboardDetails.qml" line="99" />
+        <location filename="../Modules/Launcher/SpotlightClipboardDetails.qml" line="99"/>
         <source>File</source>
-        <translation type="finished">Файл</translation>
+        <translation>Файл</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightClipboardDetails.qml" line="113" />
+        <location filename="../Modules/Launcher/SpotlightClipboardDetails.qml" line="113"/>
         <source>Characters: %1</source>
-        <translation type="finished">Символов: %1</translation>
+        <translation>Символов: %1</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightClipboardDetails.qml" line="115" />
+        <location filename="../Modules/Launcher/SpotlightClipboardDetails.qml" line="115"/>
         <source>Lines: %1</source>
-        <translation type="finished">Строк: %1</translation>
+        <translation>Строк: %1</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightClipboardDetails.qml" line="117" />
+        <location filename="../Modules/Launcher/SpotlightClipboardDetails.qml" line="117"/>
         <source>Size: %1</source>
-        <translation type="finished">Размер: %1</translation>
+        <translation>Размер: %1</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightClipboardDetails.qml" line="123" />
+        <location filename="../Modules/Launcher/SpotlightClipboardDetails.qml" line="123"/>
         <source>Modified: %1 %2</source>
-        <translation type="finished">Изменено: %1 %2</translation>
+        <translation>Изменено: %1 %2</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightClipboardDetails.qml" line="128" />
+        <location filename="../Modules/Launcher/SpotlightClipboardDetails.qml" line="128"/>
         <source>Binary clipboard content</source>
-        <translation type="finished">Двоичное содержимое буфера обмена</translation>
+        <translation>Двоичное содержимое буфера обмена</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightClipboardDetails.qml" line="130" />
+        <location filename="../Modules/Launcher/SpotlightClipboardDetails.qml" line="130"/>
         <source>%1 × %2</source>
-        <translation type="finished">%1 × %2</translation>
+        <translation>%1 × %2</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightClipboardDetails.qml" line="150" />
+        <location filename="../Modules/Launcher/SpotlightClipboardDetails.qml" line="150"/>
         <source>Select an entry</source>
-        <translation type="finished">Выберите запись</translation>
+        <translation>Выберите запись</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightClipboardDetails.qml" line="150" />
+        <location filename="../Modules/Launcher/SpotlightClipboardDetails.qml" line="150"/>
         <source>Reading…</source>
-        <translation type="finished">Чтение…</translation>
+        <translation>Чтение…</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightClipboardDetails.qml" line="152" />
-        <location filename="../Modules/Launcher/SpotlightClipboardDetails.qml" line="255" />
-        <location filename="../Modules/Launcher/SpotlightClipboardDetails.qml" line="305" />
+        <location filename="../Modules/Launcher/SpotlightClipboardDetails.qml" line="152"/>
+        <location filename="../Modules/Launcher/SpotlightClipboardDetails.qml" line="255"/>
+        <location filename="../Modules/Launcher/SpotlightClipboardDetails.qml" line="305"/>
         <source>Preview unavailable</source>
-        <translation type="finished">Предпросмотр недоступен</translation>
+        <translation>Предпросмотр недоступен</translation>
     </message>
     <message numerus="yes">
-        <location filename="../Modules/Launcher/SpotlightClipboardDetails.qml" line="323" />
+        <location filename="../Modules/Launcher/SpotlightClipboardDetails.qml" line="323"/>
         <source>%n file(s)</source>
-        <translation type="finished">
+        <translation>
             <numerusform>%n файл</numerusform>
             <numerusform>%n файла</numerusform>
             <numerusform>%n файлов</numerusform>
         </translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightClipboardDetails.qml" line="359" />
+        <location filename="../Modules/Launcher/SpotlightClipboardDetails.qml" line="359"/>
         <source>Showing the first %1 of %2 characters. Restoring copies the full content.</source>
-        <translation type="finished">Показываются первые %1 из %2 символов. Восстановление копирует полное содержимое.</translation>
+        <translation>Показываются первые %1 из %2 символов. Восстановление копирует полное содержимое.</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightClipboardDetails.qml" line="362" />
+        <location filename="../Modules/Launcher/SpotlightClipboardDetails.qml" line="362"/>
         <source>Preview</source>
-        <translation type="finished">Предпросмотр</translation>
+        <translation>Предпросмотр</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightClipboardDetails.qml" line="402" />
+        <location filename="../Modules/Launcher/SpotlightClipboardDetails.qml" line="402"/>
         <source>Restore to clipboard</source>
-        <translation type="finished">Восстановить в буфер обмена</translation>
+        <translation>Восстановить в буфер обмена</translation>
     </message>
 </context>
 <context>
     <name>SpotlightClipboardProvider</name>
     <message>
-        <location filename="../Modules/Launcher/SpotlightClipboardProvider.qml" line="67" />
+        <location filename="../Modules/Launcher/SpotlightClipboardProvider.qml" line="67"/>
         <source>Folder</source>
-        <translation type="finished">Папка</translation>
+        <translation>Папка</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightClipboardProvider.qml" line="97" />
+        <location filename="../Modules/Launcher/SpotlightClipboardProvider.qml" line="97"/>
         <source>Code</source>
-        <translation type="finished">Код</translation>
+        <translation>Код</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightClipboardProvider.qml" line="112" />
-        <location filename="../Modules/Launcher/SpotlightClipboardProvider.qml" line="138" />
-        <location filename="../Modules/Launcher/SpotlightClipboardProvider.qml" line="162" />
+        <location filename="../Modules/Launcher/SpotlightClipboardProvider.qml" line="112"/>
+        <location filename="../Modules/Launcher/SpotlightClipboardProvider.qml" line="138"/>
+        <location filename="../Modules/Launcher/SpotlightClipboardProvider.qml" line="162"/>
         <source>File</source>
-        <translation type="finished">Файл</translation>
+        <translation>Файл</translation>
     </message>
     <message numerus="yes">
-        <location filename="../Modules/Launcher/SpotlightClipboardProvider.qml" line="135" />
+        <location filename="../Modules/Launcher/SpotlightClipboardProvider.qml" line="135"/>
         <source>%n file(s)</source>
         <comment>clipboard file count</comment>
-        <translation type="finished">
+        <translation>
             <numerusform>%n файл</numerusform>
             <numerusform>%n файла</numerusform>
             <numerusform>%n файлов</numerusform>
         </translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightClipboardProvider.qml" line="141" />
+        <location filename="../Modules/Launcher/SpotlightClipboardProvider.qml" line="141"/>
         <source>Clipboard image</source>
-        <translation type="finished">Изображение в буфере обмена</translation>
+        <translation>Изображение в буфере обмена</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightClipboardProvider.qml" line="143" />
+        <location filename="../Modules/Launcher/SpotlightClipboardProvider.qml" line="143"/>
         <source>Binary clipboard content</source>
-        <translation type="finished">Двоичное содержимое буфера обмена</translation>
+        <translation>Двоичное содержимое буфера обмена</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightClipboardProvider.qml" line="149" />
-        <location filename="../Modules/Launcher/SpotlightClipboardProvider.qml" line="186" />
+        <location filename="../Modules/Launcher/SpotlightClipboardProvider.qml" line="149"/>
+        <location filename="../Modules/Launcher/SpotlightClipboardProvider.qml" line="186"/>
         <source>HTML content</source>
-        <translation type="finished">HTML-содержимое</translation>
+        <translation>HTML-содержимое</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightClipboardProvider.qml" line="150" />
+        <location filename="../Modules/Launcher/SpotlightClipboardProvider.qml" line="150"/>
         <source>Empty text</source>
-        <translation type="finished">Пустой текст</translation>
+        <translation>Пустой текст</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightClipboardProvider.qml" line="179" />
+        <location filename="../Modules/Launcher/SpotlightClipboardProvider.qml" line="179"/>
         <source>Unknown binary content</source>
-        <translation type="finished">Неизвестное двоичное содержимое</translation>
+        <translation>Неизвестное двоичное содержимое</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightClipboardProvider.qml" line="186" />
+        <location filename="../Modules/Launcher/SpotlightClipboardProvider.qml" line="186"/>
         <source>No safe text to display</source>
-        <translation type="finished">Нет безопасного текста для отображения</translation>
+        <translation>Нет безопасного текста для отображения</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightClipboardProvider.qml" line="187" />
+        <location filename="../Modules/Launcher/SpotlightClipboardProvider.qml" line="187"/>
         <source>Text</source>
-        <translation type="finished">Текст</translation>
+        <translation>Текст</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightClipboardProvider.qml" line="330" />
+        <location filename="../Modules/Launcher/SpotlightClipboardProvider.qml" line="330"/>
         <source>Clipboard restore is unavailable</source>
-        <translation type="finished">Восстановление буфера обмена недоступно</translation>
+        <translation>Восстановление буфера обмена недоступно</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightClipboardProvider.qml" line="335" />
+        <location filename="../Modules/Launcher/SpotlightClipboardProvider.qml" line="335"/>
         <source>This format cannot be restored reliably</source>
-        <translation type="finished">Этот формат нельзя надёжно восстановить</translation>
+        <translation>Этот формат нельзя надёжно восстановить</translation>
     </message>
 </context>
 <context>
     <name>SpotlightCommandProvider</name>
     <message>
-        <location filename="../Modules/Launcher/SpotlightCommandProvider.qml" line="23" />
+        <location filename="../Modules/Launcher/SpotlightCommandProvider.qml" line="37"/>
         <source>Available in %1 only</source>
-        <translation type="finished">Доступно только в %1</translation>
+        <translation>Доступно только в %1</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightCommandProvider.qml" line="26" />
+        <location filename="../Modules/Launcher/SpotlightCommandProvider.qml" line="40"/>
         <source>Apps</source>
-        <translation type="finished">Приложения</translation>
+        <translation>Приложения</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightCommandProvider.qml" line="27" />
+        <location filename="../Modules/Launcher/SpotlightCommandProvider.qml" line="41"/>
         <source>Clipboard</source>
-        <translation type="finished">Буфер обмена</translation>
+        <translation>Буфер обмена</translation>
     </message>
 </context>
 <context>
     <name>SpotlightCommands</name>
     <message>
-        <location filename="../Common/functions/SpotlightCommands.js" line="59" />
+        <location filename="../Common/functions/SpotlightCommands.js" line="59"/>
         <source>Default search</source>
-        <translation type="finished">Поиск по умолчанию</translation>
+        <translation>Поиск по умолчанию</translation>
     </message>
     <message>
-        <location filename="../Common/functions/SpotlightCommands.js" line="60" />
+        <location filename="../Common/functions/SpotlightCommands.js" line="60"/>
         <source>Apps</source>
-        <translation type="finished">Приложения</translation>
+        <translation>Приложения</translation>
     </message>
     <message>
-        <location filename="../Common/functions/SpotlightCommands.js" line="61" />
+        <location filename="../Common/functions/SpotlightCommands.js" line="61"/>
         <source>Wallpapers</source>
-        <translation type="finished">Обои</translation>
+        <translation>Обои</translation>
     </message>
     <message>
-        <location filename="../Common/functions/SpotlightCommands.js" line="62" />
+        <location filename="../Common/functions/SpotlightCommands.js" line="62"/>
         <source>Clipboard</source>
-        <translation type="finished">Буфер обмена</translation>
+        <translation>Буфер обмена</translation>
     </message>
     <message>
-        <location filename="../Common/functions/SpotlightCommands.js" line="63" />
+        <location filename="../Common/functions/SpotlightCommands.js" line="63"/>
         <source>Files</source>
-        <translation type="finished">Файлы</translation>
+        <translation>Файлы</translation>
     </message>
     <message>
-        <location filename="../Common/functions/SpotlightCommands.js" line="64" />
+        <location filename="../Common/functions/SpotlightCommands.js" line="64"/>
         <source>Commands</source>
-        <translation type="finished">Команды</translation>
+        <translation>Команды</translation>
     </message>
     <message>
-        <location filename="../Common/functions/SpotlightCommands.js" line="65" />
+        <location filename="../Common/functions/SpotlightCommands.js" line="65"/>
         <source>Web search</source>
-        <translation type="finished">Веб-поиск</translation>
+        <translation>Веб-поиск</translation>
     </message>
     <message>
-        <location filename="../Common/functions/SpotlightCommands.js" line="66" />
+        <location filename="../Common/functions/SpotlightCommands.js" line="66"/>
         <source>Calculator</source>
-        <translation type="finished">Калькулятор</translation>
+        <translation>Калькулятор</translation>
     </message>
     <message>
-        <location filename="../Common/functions/SpotlightCommands.js" line="67" />
+        <location filename="../Common/functions/SpotlightCommands.js" line="67"/>
         <source>Currency</source>
-        <translation type="finished">Валюта</translation>
+        <translation>Валюта</translation>
     </message>
     <message>
-        <location filename="../Common/functions/SpotlightCommands.js" line="68" />
+        <location filename="../Common/functions/SpotlightCommands.js" line="68"/>
         <source>Time zone</source>
-        <translation type="finished">Часовой пояс</translation>
+        <translation>Часовой пояс</translation>
     </message>
     <message>
-        <location filename="../Common/functions/SpotlightCommands.js" line="69" />
+        <location filename="../Common/functions/SpotlightCommands.js" line="69"/>
         <source>Light theme</source>
-        <translation type="finished">Светлая тема</translation>
+        <translation>Светлая тема</translation>
     </message>
     <message>
-        <location filename="../Common/functions/SpotlightCommands.js" line="70" />
+        <location filename="../Common/functions/SpotlightCommands.js" line="70"/>
         <source>Dark theme</source>
-        <translation type="finished">Тёмная тема</translation>
+        <translation>Тёмная тема</translation>
     </message>
     <message>
-        <location filename="../Common/functions/SpotlightCommands.js" line="71" />
+        <location filename="../Common/functions/SpotlightCommands.js" line="71"/>
         <source>Open settings</source>
-        <translation type="finished">Открыть настройки</translation>
+        <translation>Открыть настройки</translation>
     </message>
     <message>
-        <location filename="../Common/functions/SpotlightCommands.js" line="72" />
+        <location filename="../Common/functions/SpotlightCommands.js" line="72"/>
         <source>Search settings</source>
-        <translation type="finished">Поиск настроек</translation>
+        <translation>Поиск настроек</translation>
     </message>
     <message>
-        <location filename="../Common/functions/SpotlightCommands.js" line="73" />
+        <location filename="../Common/functions/SpotlightCommands.js" line="73"/>
         <source>Search IPC actions</source>
-        <translation type="finished">Поиск IPC-действий</translation>
+        <translation>Поиск IPC-действий</translation>
     </message>
     <message>
-        <location filename="../Common/functions/SpotlightCommands.js" line="74" />
+        <location filename="../Common/functions/SpotlightCommands.js" line="74"/>
         <source>Location picker</source>
-        <translation type="finished">Выбор местоположения</translation>
+        <translation>Выбор местоположения</translation>
     </message>
     <message>
-        <location filename="../Common/functions/SpotlightCommands.js" line="75" />
+        <location filename="../Common/functions/SpotlightCommands.js" line="75"/>
         <source>List</source>
-        <translation type="finished">Список</translation>
+        <translation>Список</translation>
     </message>
     <message>
-        <location filename="../Common/functions/SpotlightCommands.js" line="76" />
+        <location filename="../Common/functions/SpotlightCommands.js" line="76"/>
         <source>Grid</source>
-        <translation type="finished">Сетка</translation>
+        <translation>Сетка</translation>
     </message>
     <message>
-        <location filename="../Common/functions/SpotlightCommands.js" line="77" />
+        <location filename="../Common/functions/SpotlightCommands.js" line="77"/>
         <source>Smart</source>
-        <translation type="finished">Умный</translation>
+        <translation>Умный</translation>
     </message>
     <message>
-        <location filename="../Common/functions/SpotlightCommands.js" line="78" />
+        <location filename="../Common/functions/SpotlightCommands.js" line="78"/>
         <source>Most used</source>
-        <translation type="finished">Чаще используемые</translation>
+        <translation>Чаще используемые</translation>
     </message>
     <message>
-        <location filename="../Common/functions/SpotlightCommands.js" line="79" />
+        <location filename="../Common/functions/SpotlightCommands.js" line="79"/>
         <source>Recently used</source>
-        <translation type="finished">Недавно использованные</translation>
+        <translation>Недавно использованные</translation>
     </message>
     <message>
-        <location filename="../Common/functions/SpotlightCommands.js" line="80" />
+        <location filename="../Common/functions/SpotlightCommands.js" line="80"/>
         <source>Name</source>
-        <translation type="finished">Имя</translation>
+        <translation>Имя</translation>
     </message>
     <message>
-        <location filename="../Common/functions/SpotlightCommands.js" line="81" />
+        <location filename="../Common/functions/SpotlightCommands.js" line="81"/>
         <source>Compact</source>
-        <translation type="finished">Компактный</translation>
+        <translation>Компактный</translation>
     </message>
     <message>
-        <location filename="../Common/functions/SpotlightCommands.js" line="82" />
+        <location filename="../Common/functions/SpotlightCommands.js" line="82"/>
         <source>Details</source>
-        <translation type="finished">Сведения</translation>
+        <translation>Сведения</translation>
     </message>
 </context>
 <context>
     <name>SpotlightConversionEditor</name>
     <message>
-        <location filename="../Modules/Launcher/SpotlightConversionEditor.qml" line="128" />
+        <location filename="../Modules/Launcher/SpotlightConversionEditor.qml" line="128"/>
         <source>Source time</source>
-        <translation type="finished">Исходное время</translation>
+        <translation>Исходное время</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightConversionEditor.qml" line="129" />
+        <location filename="../Modules/Launcher/SpotlightConversionEditor.qml" line="129"/>
         <source>Source time zone</source>
-        <translation type="finished">Исходный часовой пояс</translation>
+        <translation>Исходный часовой пояс</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightConversionEditor.qml" line="130" />
+        <location filename="../Modules/Launcher/SpotlightConversionEditor.qml" line="130"/>
         <source>Target time</source>
-        <translation type="finished">Целевое время</translation>
+        <translation>Целевое время</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightConversionEditor.qml" line="132" />
+        <location filename="../Modules/Launcher/SpotlightConversionEditor.qml" line="132"/>
         <source>Target time zone</source>
-        <translation type="finished">Целевой часовой пояс</translation>
+        <translation>Целевой часовой пояс</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightConversionEditor.qml" line="133" />
+        <location filename="../Modules/Launcher/SpotlightConversionEditor.qml" line="133"/>
         <source>Source amount</source>
-        <translation type="finished">Исходная сумма</translation>
+        <translation>Исходная сумма</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightConversionEditor.qml" line="134" />
+        <location filename="../Modules/Launcher/SpotlightConversionEditor.qml" line="134"/>
         <source>Source currency</source>
-        <translation type="finished">Исходная валюта</translation>
+        <translation>Исходная валюта</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightConversionEditor.qml" line="137" />
+        <location filename="../Modules/Launcher/SpotlightConversionEditor.qml" line="137"/>
         <source>Target amount</source>
-        <translation type="finished">Целевая сумма</translation>
+        <translation>Целевая сумма</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightConversionEditor.qml" line="139" />
+        <location filename="../Modules/Launcher/SpotlightConversionEditor.qml" line="139"/>
         <source>Target currency</source>
-        <translation type="finished">Целевая валюта</translation>
+        <translation>Целевая валюта</translation>
     </message>
 </context>
 <context>
     <name>SpotlightCurrencyController</name>
     <message>
-        <location filename="../Modules/Launcher/SpotlightCurrencyController.qml" line="30" />
+        <location filename="../Modules/Launcher/SpotlightCurrencyController.qml" line="30"/>
         <source>Enter a valid amount</source>
-        <translation type="finished">Введите корректную сумму</translation>
+        <translation>Введите корректную сумму</translation>
     </message>
 </context>
 <context>
     <name>SpotlightFileProvider</name>
     <message>
-        <location filename="../Modules/Launcher/SpotlightFileProvider.qml" line="40" />
+        <location filename="../Modules/Launcher/SpotlightFileProvider.qml" line="40"/>
         <source>Downloads</source>
-        <translation type="finished">Загрузки</translation>
+        <translation>Загрузки</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightFileProvider.qml" line="44" />
+        <location filename="../Modules/Launcher/SpotlightFileProvider.qml" line="44"/>
         <source>Documents</source>
-        <translation type="finished">Документы</translation>
+        <translation>Документы</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightFileProvider.qml" line="48" />
+        <location filename="../Modules/Launcher/SpotlightFileProvider.qml" line="48"/>
         <source>Pictures</source>
-        <translation type="finished">Изображения</translation>
+        <translation>Изображения</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightFileProvider.qml" line="52" />
+        <location filename="../Modules/Launcher/SpotlightFileProvider.qml" line="52"/>
         <source>Home</source>
-        <translation type="finished">Дом</translation>
+        <translation>Дом</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightFileProvider.qml" line="286" />
+        <location filename="../Modules/Launcher/SpotlightFileProvider.qml" line="286"/>
         <source>Search failed (code %1)</source>
-        <translation type="finished">Поиск не удался (код %1)</translation>
+        <translation>Поиск не удался (код %1)</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightFileProvider.qml" line="297" />
+        <location filename="../Modules/Launcher/SpotlightFileProvider.qml" line="297"/>
         <source>Could not complete the action</source>
-        <translation type="finished">Не удалось выполнить действие</translation>
+        <translation>Не удалось выполнить действие</translation>
     </message>
 </context>
 <context>
     <name>SpotlightPage</name>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2050" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2152"/>
         <source>Applications</source>
-        <translation type="finished">Приложения</translation>
+        <translation>Приложения</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2051" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2153"/>
         <source>Web search</source>
-        <translation type="finished">Веб-поиск</translation>
+        <translation>Веб-поиск</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2052" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2154"/>
         <source>Clipboard</source>
-        <translation type="finished">Буфер обмена</translation>
+        <translation>Буфер обмена</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="45" />
-        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="165" />
+        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="45"/>
+        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="165"/>
         <source>Layout</source>
-        <translation type="finished">Раскладка</translation>
+        <translation>Раскладка</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="55" />
+        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="55"/>
         <source>List</source>
-        <translation type="finished">Список</translation>
+        <translation>Список</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="59" />
+        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="59"/>
         <source>Grid</source>
-        <translation type="finished">Сетка</translation>
+        <translation>Сетка</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="64" />
+        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="64"/>
         <source>Application layout</source>
-        <translation type="finished">Раскладка приложений</translation>
+        <translation>Раскладка приложений</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="70" />
-        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="95" />
+        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="70"/>
+        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="95"/>
         <source>Application order</source>
-        <translation type="finished">Порядок приложений</translation>
+        <translation>Порядок приложений</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="78" />
+        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="78"/>
         <source>Smart</source>
-        <translation type="finished">Умный</translation>
+        <translation>Умный</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="82" />
+        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="82"/>
         <source>Most used</source>
-        <translation type="finished">Чаще используемые</translation>
+        <translation>Чаще используемые</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="86" />
+        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="86"/>
         <source>Recently used</source>
-        <translation type="finished">Недавно использованные</translation>
+        <translation>Недавно использованные</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="90" />
+        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="90"/>
         <source>Name</source>
-        <translation type="finished">Имя</translation>
+        <translation>Имя</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="116" />
-        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="129" />
+        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="116"/>
+        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="129"/>
         <source>Search engine</source>
-        <translation type="finished">Поисковая система</translation>
+        <translation>Поисковая система</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="173" />
+        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="173"/>
         <source>Default</source>
-        <translation type="finished">По умолчанию</translation>
+        <translation>По умолчанию</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="177" />
+        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="177"/>
         <source>Details</source>
-        <translation type="finished">Сведения</translation>
+        <translation>Сведения</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="182" />
+        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="182"/>
         <source>Clipboard layout</source>
-        <translation type="finished">Раскладка буфера обмена</translation>
+        <translation>Раскладка буфера обмена</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="189" />
-        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="200" />
+        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="189"/>
+        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="200"/>
         <source>History limit</source>
-        <translation type="finished">Лимит истории</translation>
+        <translation>Лимит истории</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="190" />
+        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="190"/>
         <source>Oldest items are removed when new content is saved.</source>
-        <translation type="finished">Старые элементы удаляются при сохранении нового содержимого.</translation>
+        <translation>Старые элементы удаляются при сохранении нового содержимого.</translation>
     </message>
 </context>
 <context>
     <name>SpotlightResultsPanel</name>
     <message>
-        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="442" />
+        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="442"/>
         <source>Open</source>
-        <translation type="finished">Открыть</translation>
+        <translation>Открыть</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="446" />
+        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="446"/>
         <source>Show in file manager</source>
-        <translation type="finished">Показать в файловом менеджере</translation>
+        <translation>Показать в файловом менеджере</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="680" />
+        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="680"/>
         <source>wl-copy is missing: restore is unavailable</source>
-        <translation type="finished">wl-copy отсутствует: восстановление недоступно</translation>
+        <translation>wl-copy отсутствует: восстановление недоступно</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="682" />
+        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="682"/>
         <source>Clipboard history</source>
-        <translation type="finished">История буфера обмена</translation>
+        <translation>История буфера обмена</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="697" />
-        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="1168" />
+        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="697"/>
+        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="1168"/>
         <source>Clear</source>
-        <translation type="finished">Очистить</translation>
+        <translation>Очистить</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="926" />
+        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="926"/>
         <source>Delete clipboard entry</source>
-        <translation type="finished">Удалить запись буфера обмена</translation>
+        <translation>Удалить запись буфера обмена</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="959" />
+        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="959"/>
         <source>Copied</source>
-        <translation type="finished">Скопировано</translation>
+        <translation>Скопировано</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="959" />
+        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="959"/>
         <source>Copy failed</source>
-        <translation type="finished">Не удалось скопировать</translation>
+        <translation>Не удалось скопировать</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="1081" />
+        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="1081"/>
         <source>Enter — copy file · Ctrl+Enter — show in folder</source>
-        <translation type="finished">Enter — скопировать файл · Ctrl+Enter — показать в папке</translation>
+        <translation>Enter — скопировать файл · Ctrl+Enter — показать в папке</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="1120" />
+        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="1120"/>
         <source>Searching…</source>
-        <translation type="finished">Поиск…</translation>
+        <translation>Поиск…</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="1124" />
+        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="1124"/>
         <source>Search files and folders</source>
-        <translation type="finished">Поиск файлов и папок</translation>
+        <translation>Поиск файлов и папок</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="1127" />
+        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="1127"/>
         <source>Search stopped before completion — refine your search</source>
-        <translation type="finished">Поиск остановлен до завершения — уточните запрос</translation>
+        <translation>Поиск остановлен до завершения — уточните запрос</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="1128" />
-        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="1133" />
+        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="1128"/>
+        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="1133"/>
         <source>No matching results</source>
-        <translation type="finished">Нет подходящих результатов</translation>
+        <translation>Нет подходящих результатов</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="1129" />
+        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="1129"/>
         <source>Reading…</source>
-        <translation type="finished">Чтение…</translation>
+        <translation>Чтение…</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="1132" />
+        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="1132"/>
         <source>Current provider is unavailable</source>
-        <translation type="finished">Текущий провайдер недоступен</translation>
+        <translation>Текущий провайдер недоступен</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="1148" />
+        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="1148"/>
         <source>Clear clipboard history?</source>
-        <translation type="finished">Очистить историю буфера обмена?</translation>
+        <translation>Очистить историю буфера обмена?</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="1149" />
+        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="1149"/>
         <source>This clears all clipboard history in cliphist and cannot be undone.</source>
-        <translation type="finished">Это очистит всю историю буфера обмена в cliphist; отменить нельзя.</translation>
+        <translation>Это очистит всю историю буфера обмена в cliphist; отменить нельзя.</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="1162" />
+        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="1162"/>
         <source>Cancel</source>
-        <translation type="finished">Отмена</translation>
+        <translation>Отмена</translation>
     </message>
 </context>
 <context>
     <name>SpotlightSearchBar</name>
     <message>
-        <location filename="../Modules/Launcher/SpotlightSearchBar.qml" line="213" />
-        <location filename="../Modules/Launcher/SpotlightSearchBar.qml" line="218" />
+        <location filename="../Modules/Launcher/SpotlightSearchBar.qml" line="213"/>
+        <location filename="../Modules/Launcher/SpotlightSearchBar.qml" line="218"/>
         <source>Search (Ctrl+0)</source>
-        <translation type="finished">Поиск (Ctrl+0)</translation>
+        <translation>Поиск (Ctrl+0)</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightSearchBar.qml" line="266" />
-        <location filename="../Modules/Launcher/SpotlightSearchBar.qml" line="280" />
+        <location filename="../Modules/Launcher/SpotlightSearchBar.qml" line="266"/>
+        <location filename="../Modules/Launcher/SpotlightSearchBar.qml" line="280"/>
         <source>Return to previous context (Backspace)</source>
-        <translation type="finished">Вернуться в предыдущий контекст (Backspace)</translation>
+        <translation>Вернуться в предыдущий контекст (Backspace)</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightSearchBar.qml" line="309" />
+        <location filename="../Modules/Launcher/SpotlightSearchBar.qml" line="309"/>
         <source>Search commands</source>
-        <translation type="finished">Поиск команд</translation>
+        <translation>Поиск команд</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightSearchBar.qml" line="311" />
-        <location filename="../Modules/Launcher/SpotlightSearchBar.qml" line="342" />
+        <location filename="../Modules/Launcher/SpotlightSearchBar.qml" line="311"/>
+        <location filename="../Modules/Launcher/SpotlightSearchBar.qml" line="342"/>
         <source>Search</source>
-        <translation type="finished">Поиск</translation>
+        <translation>Поиск</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightSearchBar.qml" line="313" />
+        <location filename="../Modules/Launcher/SpotlightSearchBar.qml" line="313"/>
         <source>Search files and folders</source>
-        <translation type="finished">Поиск файлов и папок</translation>
+        <translation>Поиск файлов и папок</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightSearchBar.qml" line="315" />
+        <location filename="../Modules/Launcher/SpotlightSearchBar.qml" line="315"/>
         <source>Search clipboard history</source>
-        <translation type="finished">Поиск по истории буфера обмена</translation>
+        <translation>Поиск по истории буфера обмена</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightSearchBar.qml" line="317" />
+        <location filename="../Modules/Launcher/SpotlightSearchBar.qml" line="317"/>
         <source>Search wallpapers</source>
-        <translation type="finished">Поиск обоев</translation>
+        <translation>Поиск обоев</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightSearchBar.qml" line="318" />
+        <location filename="../Modules/Launcher/SpotlightSearchBar.qml" line="318"/>
         <source>Search apps</source>
-        <translation type="finished">Поиск приложений</translation>
+        <translation>Поиск приложений</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightSearchBar.qml" line="330" />
+        <location filename="../Modules/Launcher/SpotlightSearchBar.qml" line="330"/>
         <source>Enter an expression</source>
-        <translation type="finished">Введите выражение</translation>
+        <translation>Введите выражение</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightSearchBar.qml" line="331" />
+        <location filename="../Modules/Launcher/SpotlightSearchBar.qml" line="331"/>
         <source>Amount and currency</source>
-        <translation type="finished">Сумма и валюта</translation>
+        <translation>Сумма и валюта</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightSearchBar.qml" line="331" />
+        <location filename="../Modules/Launcher/SpotlightSearchBar.qml" line="331"/>
         <source>Choose a time conversion template</source>
-        <translation type="finished">Выберите шаблон пересчёта времени</translation>
+        <translation>Выберите шаблон пересчёта времени</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightSearchBar.qml" line="335" />
+        <location filename="../Modules/Launcher/SpotlightSearchBar.qml" line="335"/>
         <source>Search settings</source>
-        <translation type="finished">Поиск настроек</translation>
+        <translation>Поиск настроек</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightSearchBar.qml" line="338" />
+        <location filename="../Modules/Launcher/SpotlightSearchBar.qml" line="338"/>
         <source>Search actions</source>
-        <translation type="finished">Поиск действий</translation>
+        <translation>Поиск действий</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightSearchBar.qml" line="341" />
+        <location filename="../Modules/Launcher/SpotlightSearchBar.qml" line="341"/>
         <source>Search the web</source>
-        <translation type="finished">Искать в интернете</translation>
+        <translation>Искать в интернете</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightSearchBar.qml" line="369" />
+        <location filename="../Modules/Launcher/SpotlightSearchBar.qml" line="369"/>
         <source>Web search</source>
-        <translation type="finished">Веб-поиск</translation>
+        <translation>Веб-поиск</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightSearchBar.qml" line="369" />
+        <location filename="../Modules/Launcher/SpotlightSearchBar.qml" line="369"/>
         <source>Spotlight search</source>
-        <translation type="finished">Поиск Spotlight</translation>
+        <translation>Поиск Spotlight</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightSearchBar.qml" line="371" />
+        <location filename="../Modules/Launcher/SpotlightSearchBar.qml" line="371"/>
         <source>Tab to show and cycle modes</source>
-        <translation type="finished">Tab — показать и переключать режимы</translation>
+        <translation>Tab — показать и переключать режимы</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightSearchBar.qml" line="402" />
+        <location filename="../Modules/Launcher/SpotlightSearchBar.qml" line="402"/>
         <source>Apply</source>
-        <translation type="finished">Применить</translation>
+        <translation>Применить</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightSearchBar.qml" line="406" />
+        <location filename="../Modules/Launcher/SpotlightSearchBar.qml" line="406"/>
         <source>Wallpaper</source>
-        <translation type="finished">Обои</translation>
+        <translation>Обои</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightSearchBar.qml" line="410" />
+        <location filename="../Modules/Launcher/SpotlightSearchBar.qml" line="410"/>
         <source>Clipboard</source>
-        <translation type="finished">Буфер обмена</translation>
+        <translation>Буфер обмена</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightSearchBar.qml" line="414" />
+        <location filename="../Modules/Launcher/SpotlightSearchBar.qml" line="414"/>
         <source>Files</source>
-        <translation type="finished">Файлы</translation>
+        <translation>Файлы</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightSearchBar.qml" line="517" />
+        <location filename="../Modules/Launcher/SpotlightSearchBar.qml" line="517"/>
         <source>%1 (Ctrl+%2)</source>
-        <translation type="finished">%1 (Ctrl+%2)</translation>
+        <translation>%1 (Ctrl+%2)</translation>
     </message>
 </context>
 <context>
     <name>SpotlightSearchProvider</name>
     <message>
-        <location filename="../Modules/Launcher/SpotlightSearchProvider.qml" line="39" />
+        <location filename="../Modules/Launcher/SpotlightSearchProvider.qml" line="39"/>
         <source>Currently unavailable</source>
-        <translation type="finished">Сейчас недоступно</translation>
+        <translation>Сейчас недоступно</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightSearchProvider.qml" line="58" />
+        <location filename="../Modules/Launcher/SpotlightSearchProvider.qml" line="58"/>
         <source>Settings · %1</source>
-        <translation type="finished">Настройки · %1</translation>
+        <translation>Настройки · %1</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightSearchProvider.qml" line="65" />
+        <location filename="../Modules/Launcher/SpotlightSearchProvider.qml" line="65"/>
         <source>Action · %1</source>
-        <translation type="finished">Действие · %1</translation>
+        <translation>Действие · %1</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightSearchProvider.qml" line="65" />
+        <location filename="../Modules/Launcher/SpotlightSearchProvider.qml" line="65"/>
         <source>Action · Currently unavailable</source>
-        <translation type="finished">Действие · Сейчас недоступно</translation>
+        <translation>Действие · Сейчас недоступно</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightSearchProvider.qml" line="86" />
+        <location filename="../Modules/Launcher/SpotlightSearchProvider.qml" line="86"/>
         <source>Apps</source>
-        <translation type="finished">Приложения</translation>
+        <translation>Приложения</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightSearchProvider.qml" line="87" />
+        <location filename="../Modules/Launcher/SpotlightSearchProvider.qml" line="87"/>
         <source>Settings</source>
-        <translation type="finished">Настройки</translation>
+        <translation>Настройки</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightSearchProvider.qml" line="88" />
+        <location filename="../Modules/Launcher/SpotlightSearchProvider.qml" line="88"/>
         <source>Actions</source>
-        <translation type="finished">Действия</translation>
+        <translation>Действия</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightSearchProvider.qml" line="89" />
+        <location filename="../Modules/Launcher/SpotlightSearchProvider.qml" line="89"/>
         <source>Wallpapers</source>
-        <translation type="finished">Обои</translation>
+        <translation>Обои</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightSearchProvider.qml" line="90" />
+        <location filename="../Modules/Launcher/SpotlightSearchProvider.qml" line="90"/>
         <source>Search files for “%1”</source>
-        <translation type="finished">Поиск файлов по «%1»</translation>
+        <translation>Поиск файлов по «%1»</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightSearchProvider.qml" line="91" />
+        <location filename="../Modules/Launcher/SpotlightSearchProvider.qml" line="91"/>
         <source>Search the web for “%1”</source>
-        <translation type="finished">Искать в интернете «%1»</translation>
+        <translation>Искать в интернете «%1»</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightSearchProvider.qml" line="138" />
+        <location filename="../Modules/Launcher/SpotlightSearchProvider.qml" line="138"/>
         <source>This result is currently unavailable</source>
-        <translation type="finished">Этот результат сейчас недоступен</translation>
+        <translation>Этот результат сейчас недоступен</translation>
     </message>
 </context>
 <context>
     <name>SpotlightSessionController</name>
     <message>
-        <location filename="../Modules/Launcher/SpotlightSessionController.qml" line="82" />
+        <location filename="../Modules/Launcher/SpotlightSessionController.qml" line="82"/>
         <source>Available in %1 only</source>
-        <translation type="finished">Доступно только в %1</translation>
+        <translation>Доступно только в %1</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightSessionController.qml" line="83" />
+        <location filename="../Modules/Launcher/SpotlightSessionController.qml" line="83"/>
         <source>Apps</source>
-        <translation type="finished">Приложения</translation>
+        <translation>Приложения</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightSessionController.qml" line="83" />
+        <location filename="../Modules/Launcher/SpotlightSessionController.qml" line="83"/>
         <source>Clipboard</source>
-        <translation type="finished">Буфер обмена</translation>
+        <translation>Буфер обмена</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightSessionController.qml" line="84" />
+        <location filename="../Modules/Launcher/SpotlightSessionController.qml" line="84"/>
         <source>This command does not accept arguments</source>
-        <translation type="finished">Эта команда не принимает аргументы</translation>
+        <translation>Эта команда не принимает аргументы</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightSessionController.qml" line="111" />
+        <location filename="../Modules/Launcher/SpotlightSessionController.qml" line="111"/>
         <source>Unknown command. Open Commands to browse available commands.</source>
-        <translation type="finished">Неизвестная команда. Откройте «Команды», чтобы просмотреть доступные команды.</translation>
+        <translation>Неизвестная команда. Откройте «Команды», чтобы просмотреть доступные команды.</translation>
     </message>
 </context>
 <context>
     <name>SpotlightTemplateController</name>
     <message>
-        <location filename="../Modules/Launcher/SpotlightTemplateController.qml" line="42" />
+        <location filename="../Modules/Launcher/SpotlightTemplateController.qml" line="42"/>
         <source>Now to a time zone</source>
-        <translation type="finished">Сейчас в часовой пояс</translation>
+        <translation>Сейчас в часовой пояс</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightTemplateController.qml" line="47" />
+        <location filename="../Modules/Launcher/SpotlightTemplateController.qml" line="47"/>
         <source>Convert between two time zones</source>
-        <translation type="finished">Конвертация между двумя часовыми поясами</translation>
+        <translation>Конвертация между двумя часовыми поясами</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightTemplateController.qml" line="81" />
+        <location filename="../Modules/Launcher/SpotlightTemplateController.qml" line="81"/>
         <source>Local time</source>
-        <translation type="finished">Местное время</translation>
+        <translation>Местное время</translation>
     </message>
 </context>
 <context>
     <name>SpotlightToolPanel</name>
     <message>
-        <location filename="../Modules/Launcher/SpotlightToolPanel.qml" line="39" />
+        <location filename="../Modules/Launcher/SpotlightToolPanel.qml" line="39"/>
         <source>UTC%1 → UTC%2 · Day difference: %3</source>
-        <translation type="finished">UTC%1 → UTC%2 · Разница по дням: %3</translation>
+        <translation>UTC%1 → UTC%2 · Разница по дням: %3</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightToolPanel.qml" line="43" />
+        <location filename="../Modules/Launcher/SpotlightToolPanel.qml" line="43"/>
         <source>Approximate · ECB · %1 · %2</source>
-        <translation type="finished">Приблизительно · ЕЦБ · %1 · %2</translation>
+        <translation>Приблизительно · ЕЦБ · %1 · %2</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightToolPanel.qml" line="43" />
+        <location filename="../Modules/Launcher/SpotlightToolPanel.qml" line="43"/>
         <source>Older cached rate</source>
-        <translation type="finished">Более старый кэшированный курс</translation>
+        <translation>Более старый кэшированный курс</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightToolPanel.qml" line="45" />
+        <location filename="../Modules/Launcher/SpotlightToolPanel.qml" line="45"/>
         <source>Reference rate</source>
-        <translation type="finished">Базовый курс</translation>
+        <translation>Базовый курс</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightToolPanel.qml" line="117" />
+        <location filename="../Modules/Launcher/SpotlightToolPanel.qml" line="117"/>
         <source>No matching currencies</source>
-        <translation type="finished">Нет подходящих валют</translation>
+        <translation>Нет подходящих валют</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightToolPanel.qml" line="120" />
+        <location filename="../Modules/Launcher/SpotlightToolPanel.qml" line="120"/>
         <source>No matching time zones</source>
-        <translation type="finished">Нет подходящих часовых поясов</translation>
+        <translation>Нет подходящих часовых поясов</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightToolPanel.qml" line="124" />
+        <location filename="../Modules/Launcher/SpotlightToolPanel.qml" line="124"/>
         <source>Calculating…</source>
-        <translation type="finished">Вычисление…</translation>
+        <translation>Вычисление…</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightToolPanel.qml" line="129" />
+        <location filename="../Modules/Launcher/SpotlightToolPanel.qml" line="129"/>
         <source>Enter an expression to begin</source>
-        <translation type="finished">Введите выражение для начала</translation>
+        <translation>Введите выражение для начала</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightToolPanel.qml" line="132" />
+        <location filename="../Modules/Launcher/SpotlightToolPanel.qml" line="132"/>
         <source>This time occurs twice. Choose a UTC offset.</source>
-        <translation type="finished">Это время встречается дважды. Выберите смещение UTC.</translation>
+        <translation>Это время встречается дважды. Выберите смещение UTC.</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightToolPanel.qml" line="173" />
+        <location filename="../Modules/Launcher/SpotlightToolPanel.qml" line="173"/>
         <source>Enter to copy</source>
-        <translation type="finished">Enter — скопировать</translation>
+        <translation>Enter — скопировать</translation>
     </message>
 </context>
 <context>
     <name>SpotlightToolService</name>
     <message>
-        <location filename="../Services/SpotlightToolService.qml" line="39" />
+        <location filename="../Services/SpotlightToolService.qml" line="39"/>
         <source>qalc is unavailable</source>
-        <translation type="finished">qalc недоступен</translation>
+        <translation>qalc недоступен</translation>
     </message>
     <message>
-        <location filename="../Services/SpotlightToolService.qml" line="40" />
+        <location filename="../Services/SpotlightToolService.qml" line="40"/>
         <source>Enter a supported expression</source>
-        <translation type="finished">Введите поддерживаемое выражение</translation>
+        <translation>Введите поддерживаемое выражение</translation>
     </message>
     <message>
-        <location filename="../Services/SpotlightToolService.qml" line="41" />
+        <location filename="../Services/SpotlightToolService.qml" line="41"/>
         <source>The expression could not be calculated</source>
-        <translation type="finished">Выражение не удалось вычислить</translation>
+        <translation>Выражение не удалось вычислить</translation>
     </message>
     <message>
-        <location filename="../Services/SpotlightToolService.qml" line="42" />
+        <location filename="../Services/SpotlightToolService.qml" line="42"/>
         <source>Calculation timed out</source>
-        <translation type="finished">Вычисление истекло по времени</translation>
+        <translation>Вычисление истекло по времени</translation>
     </message>
     <message>
-        <location filename="../Services/SpotlightToolService.qml" line="43" />
+        <location filename="../Services/SpotlightToolService.qml" line="43"/>
         <source>Calculation cancelled</source>
-        <translation type="finished">Вычисление отменено</translation>
+        <translation>Вычисление отменено</translation>
     </message>
     <message>
-        <location filename="../Services/SpotlightToolService.qml" line="44" />
+        <location filename="../Services/SpotlightToolService.qml" line="44"/>
         <source>Choose an ECB reference currency</source>
-        <translation type="finished">Выберите базовую валюту ЕЦБ</translation>
+        <translation>Выберите базовую валюту ЕЦБ</translation>
     </message>
     <message>
-        <location filename="../Services/SpotlightToolService.qml" line="45" />
+        <location filename="../Services/SpotlightToolService.qml" line="45"/>
         <source>Exchange rate unavailable; try again later</source>
-        <translation type="finished">Курс обмена недоступен; попробуйте позже</translation>
+        <translation>Курс обмена недоступен; попробуйте позже</translation>
     </message>
     <message>
-        <location filename="../Services/SpotlightToolService.qml" line="46" />
+        <location filename="../Services/SpotlightToolService.qml" line="46"/>
         <source>This local time does not exist</source>
-        <translation type="finished">Такого местного времени не существует</translation>
+        <translation>Такого местного времени не существует</translation>
     </message>
     <message>
-        <location filename="../Services/SpotlightToolService.qml" line="47" />
+        <location filename="../Services/SpotlightToolService.qml" line="47"/>
         <source>Time zone data is unavailable for this zone</source>
-        <translation type="finished">Данные часового пояса недоступны для этой зоны</translation>
+        <translation>Данные часового пояса недоступны для этой зоны</translation>
     </message>
     <message>
-        <location filename="../Services/SpotlightToolService.qml" line="48" />
+        <location filename="../Services/SpotlightToolService.qml" line="48"/>
         <source>Enter a valid date and an unambiguous IANA time zone</source>
-        <translation type="finished">Введите корректную дату и однозначный часовой пояс IANA</translation>
+        <translation>Введите корректную дату и однозначный часовой пояс IANA</translation>
     </message>
     <message>
-        <location filename="../Services/SpotlightToolService.qml" line="50" />
+        <location filename="../Services/SpotlightToolService.qml" line="50"/>
         <source>Tool request failed</source>
-        <translation type="finished">Запрос инструмента не удался</translation>
+        <translation>Запрос инструмента не удался</translation>
     </message>
     <message>
-        <location filename="../Services/SpotlightToolService.qml" line="84" />
-        <source>This tool's dependency is unavailable</source>
-        <translation type="finished">Зависимость этого инструмента недоступна</translation>
+        <location filename="../Services/SpotlightToolService.qml" line="84"/>
+        <source>This tool&apos;s dependency is unavailable</source>
+        <translation>Зависимость этого инструмента недоступна</translation>
     </message>
     <message>
-        <location filename="../Services/SpotlightToolService.qml" line="84" />
+        <location filename="../Services/SpotlightToolService.qml" line="84"/>
         <source>Update key-cli to enable this tool</source>
-        <translation type="finished">Обновите key-cli, чтобы включить этот инструмент</translation>
+        <translation>Обновите key-cli, чтобы включить этот инструмент</translation>
     </message>
     <message>
-        <location filename="../Services/SpotlightToolService.qml" line="142" />
+        <location filename="../Services/SpotlightToolService.qml" line="142"/>
         <source>Tool request timed out</source>
-        <translation type="finished">Запрос инструмента истёк по времени</translation>
+        <translation>Запрос инструмента истёк по времени</translation>
     </message>
     <message>
-        <location filename="../Services/SpotlightToolService.qml" line="142" />
-        <location filename="../Services/SpotlightToolService.qml" line="158" />
+        <location filename="../Services/SpotlightToolService.qml" line="142"/>
+        <location filename="../Services/SpotlightToolService.qml" line="158"/>
         <source>The tool returned invalid data</source>
-        <translation type="finished">Инструмент вернул недействительные данные</translation>
+        <translation>Инструмент вернул недействительные данные</translation>
     </message>
     <message>
-        <location filename="../Services/SpotlightToolService.qml" line="228" />
+        <location filename="../Services/SpotlightToolService.qml" line="228"/>
         <source>Copied</source>
-        <translation type="finished">Скопировано</translation>
+        <translation>Скопировано</translation>
     </message>
     <message>
-        <location filename="../Services/SpotlightToolService.qml" line="228" />
+        <location filename="../Services/SpotlightToolService.qml" line="228"/>
         <source>Could not copy the result</source>
-        <translation type="finished">Не удалось скопировать результат</translation>
+        <translation>Не удалось скопировать результат</translation>
     </message>
 </context>
 <context>
     <name>Stopwatch</name>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/Stopwatch.qml" line="182" />
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/Stopwatch.qml" line="182"/>
         <source>Pause stopwatch</source>
-        <translation type="finished">Пауза секундомера</translation>
+        <translation>Пауза секундомера</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/Stopwatch.qml" line="182" />
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/Stopwatch.qml" line="182"/>
         <source>Start stopwatch</source>
-        <translation type="finished">Запустить секундомер</translation>
+        <translation>Запустить секундомер</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/Stopwatch.qml" line="187" />
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/Stopwatch.qml" line="187"/>
         <source>Pause</source>
-        <translation type="finished">Пауза</translation>
+        <translation>Пауза</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/Stopwatch.qml" line="187" />
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/Stopwatch.qml" line="187"/>
         <source>Start</source>
-        <translation type="finished">Запуск</translation>
+        <translation>Запуск</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/Stopwatch.qml" line="189" />
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/Stopwatch.qml" line="189"/>
         <source>Resume</source>
-        <translation type="finished">Продолжить</translation>
+        <translation>Продолжить</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/Stopwatch.qml" line="213" />
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/Stopwatch.qml" line="213"/>
         <source>Record lap</source>
-        <translation type="finished">Записать круг</translation>
+        <translation>Записать круг</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/Stopwatch.qml" line="213" />
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/Stopwatch.qml" line="213"/>
         <source>Reset stopwatch</source>
-        <translation type="finished">Сбросить секундомер</translation>
+        <translation>Сбросить секундомер</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/Stopwatch.qml" line="222" />
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/Stopwatch.qml" line="222"/>
         <source>Lap</source>
-        <translation type="finished">Круг</translation>
+        <translation>Круг</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/Stopwatch.qml" line="222" />
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/Stopwatch.qml" line="222"/>
         <source>Reset</source>
-        <translation type="finished">Сбросить</translation>
+        <translation>Сбросить</translation>
     </message>
 </context>
 <context>
     <name>SysMonitor</name>
     <message>
-        <location filename="../Modules/Bar/SysMonitor/SysMonitor.qml" line="45" />
+        <location filename="../Modules/Bar/SysMonitor/SysMonitor.qml" line="45"/>
         <source>Memory</source>
-        <translation type="finished">Память</translation>
+        <translation>Память</translation>
     </message>
     <message>
-        <location filename="../Modules/Bar/SysMonitor/SysMonitor.qml" line="45" />
+        <location filename="../Modules/Bar/SysMonitor/SysMonitor.qml" line="45"/>
         <source>Disk</source>
-        <translation type="finished">Диск</translation>
+        <translation>Диск</translation>
     </message>
     <message>
-        <location filename="../Modules/Bar/SysMonitor/SysMonitor.qml" line="46" />
+        <location filename="../Modules/Bar/SysMonitor/SysMonitor.qml" line="46"/>
         <source>Temperature</source>
-        <translation type="finished">Температура</translation>
+        <translation>Температура</translation>
     </message>
     <message>
-        <location filename="../Modules/Bar/SysMonitor/SysMonitor.qml" line="49" />
+        <location filename="../Modules/Bar/SysMonitor/SysMonitor.qml" line="49"/>
         <source>CPU</source>
-        <translation type="finished">ЦП</translation>
+        <translation>ЦП</translation>
     </message>
 </context>
 <context>
     <name>SystemBatteryTank</name>
     <message>
-        <location filename="../Modules/SystemCards/SystemBatteryTank.qml" line="87" />
+        <location filename="../Modules/SystemCards/SystemBatteryTank.qml" line="87"/>
         <source>Fully charged in </source>
-        <translation type="finished">Полный заряд через </translation>
+        <translation>Полный заряд через </translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemBatteryTank.qml" line="88" />
+        <location filename="../Modules/SystemCards/SystemBatteryTank.qml" line="88"/>
         <source>Time to full is unknown</source>
-        <translation type="finished">Время до полного заряда неизвестно</translation>
+        <translation>Время до полного заряда неизвестно</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemBatteryTank.qml" line="92" />
+        <location filename="../Modules/SystemCards/SystemBatteryTank.qml" line="92"/>
         <source>Time remaining </source>
-        <translation type="finished">Осталось времени </translation>
+        <translation>Осталось времени </translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemBatteryTank.qml" line="93" />
+        <location filename="../Modules/SystemCards/SystemBatteryTank.qml" line="93"/>
         <source>Remaining time is unknown</source>
-        <translation type="finished">Оставшееся время неизвестно</translation>
+        <translation>Оставшееся время неизвестно</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemBatteryTank.qml" line="96" />
+        <location filename="../Modules/SystemCards/SystemBatteryTank.qml" line="96"/>
         <source>Plugged in, not charging</source>
-        <translation type="finished">Подключено к сети, не заряжается</translation>
+        <translation>Подключено к сети, не заряжается</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemBatteryTank.qml" line="101" />
-        <location filename="../Modules/SystemCards/SystemBatteryTank.qml" line="394" />
+        <location filename="../Modules/SystemCards/SystemBatteryTank.qml" line="101"/>
+        <location filename="../Modules/SystemCards/SystemBatteryTank.qml" line="394"/>
         <source>Unavailable</source>
-        <translation type="finished">Недоступно</translation>
+        <translation>Недоступно</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemBatteryTank.qml" line="104" />
+        <location filename="../Modules/SystemCards/SystemBatteryTank.qml" line="104"/>
         <source>Fully charged</source>
-        <translation type="finished">Полностью заряжен</translation>
+        <translation>Полностью заряжен</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemBatteryTank.qml" line="107" />
+        <location filename="../Modules/SystemCards/SystemBatteryTank.qml" line="107"/>
         <source>Charging</source>
-        <translation type="finished">Зарядка</translation>
+        <translation>Зарядка</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemBatteryTank.qml" line="110" />
+        <location filename="../Modules/SystemCards/SystemBatteryTank.qml" line="110"/>
         <source>Discharging</source>
-        <translation type="finished">Разрядка</translation>
+        <translation>Разрядка</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemBatteryTank.qml" line="112" />
-        <location filename="../Modules/SystemCards/SystemBatteryTank.qml" line="117" />
+        <location filename="../Modules/SystemCards/SystemBatteryTank.qml" line="112"/>
+        <location filename="../Modules/SystemCards/SystemBatteryTank.qml" line="117"/>
         <source>Plugged in</source>
-        <translation type="finished">Подключено к сети</translation>
+        <translation>Подключено к сети</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemBatteryTank.qml" line="112" />
+        <location filename="../Modules/SystemCards/SystemBatteryTank.qml" line="112"/>
         <source>Status unknown</source>
-        <translation type="finished">Статус неизвестен</translation>
+        <translation>Статус неизвестен</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemBatteryTank.qml" line="115" />
+        <location filename="../Modules/SystemCards/SystemBatteryTank.qml" line="115"/>
         <source>Battery,</source>
-        <translation type="finished">Батарея,</translation>
+        <translation>Батарея,</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemBatteryTank.qml" line="118" />
+        <location filename="../Modules/SystemCards/SystemBatteryTank.qml" line="118"/>
         <source>On battery</source>
-        <translation type="finished">От батареи</translation>
+        <translation>От батареи</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemBatteryTank.qml" line="119" />
+        <location filename="../Modules/SystemCards/SystemBatteryTank.qml" line="119"/>
         <source>No battery detected</source>
-        <translation type="finished">Батарея не обнаружена</translation>
+        <translation>Батарея не обнаружена</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemBatteryTank.qml" line="277" />
+        <location filename="../Modules/SystemCards/SystemBatteryTank.qml" line="277"/>
         <source>Battery</source>
-        <translation type="finished">Батарея</translation>
+        <translation>Батарея</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemBatteryTank.qml" line="333" />
+        <location filename="../Modules/SystemCards/SystemBatteryTank.qml" line="333"/>
         <source>Charging </source>
-        <translation type="finished">Зарядка </translation>
+        <translation>Зарядка </translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemBatteryTank.qml" line="335" />
+        <location filename="../Modules/SystemCards/SystemBatteryTank.qml" line="335"/>
         <source>Power </source>
-        <translation type="finished">Питание </translation>
+        <translation>Питание </translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemBatteryTank.qml" line="336" />
+        <location filename="../Modules/SystemCards/SystemBatteryTank.qml" line="336"/>
         <source>Discharging </source>
-        <translation type="finished">Разрядка </translation>
+        <translation>Разрядка </translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemBatteryTank.qml" line="339" />
+        <location filename="../Modules/SystemCards/SystemBatteryTank.qml" line="339"/>
         <source>Power unknown</source>
-        <translation type="finished">Питание неизвестно</translation>
+        <translation>Питание неизвестно</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemBatteryTank.qml" line="361" />
+        <location filename="../Modules/SystemCards/SystemBatteryTank.qml" line="361"/>
         <source>Health </source>
-        <translation type="finished">Срок службы </translation>
+        <translation>Срок службы </translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemBatteryTank.qml" line="374" />
+        <location filename="../Modules/SystemCards/SystemBatteryTank.qml" line="374"/>
         <source>No battery
 detected</source>
-        <translation type="finished">Батарея
+        <translation>Батарея
 не обнаружена</translation>
     </message>
 </context>
 <context>
     <name>SystemCalendarCard</name>
     <message>
-        <location filename="../Modules/SystemCards/SystemCalendarCard.qml" line="10" />
+        <location filename="../Modules/SystemCards/SystemCalendarCard.qml" line="10"/>
         <source>January</source>
-        <translation type="finished">Январь</translation>
+        <translation>Январь</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemCalendarCard.qml" line="10" />
+        <location filename="../Modules/SystemCards/SystemCalendarCard.qml" line="10"/>
         <source>February</source>
-        <translation type="finished">Февраль</translation>
+        <translation>Февраль</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemCalendarCard.qml" line="10" />
+        <location filename="../Modules/SystemCards/SystemCalendarCard.qml" line="10"/>
         <source>March</source>
-        <translation type="finished">Март</translation>
+        <translation>Март</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemCalendarCard.qml" line="10" />
+        <location filename="../Modules/SystemCards/SystemCalendarCard.qml" line="10"/>
         <source>April</source>
-        <translation type="finished">Апрель</translation>
+        <translation>Апрель</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemCalendarCard.qml" line="10" />
+        <location filename="../Modules/SystemCards/SystemCalendarCard.qml" line="10"/>
         <source>May</source>
-        <translation type="finished">Май</translation>
+        <translation>Май</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemCalendarCard.qml" line="11" />
+        <location filename="../Modules/SystemCards/SystemCalendarCard.qml" line="11"/>
         <source>June</source>
-        <translation type="finished">Июнь</translation>
+        <translation>Июнь</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemCalendarCard.qml" line="11" />
+        <location filename="../Modules/SystemCards/SystemCalendarCard.qml" line="11"/>
         <source>July</source>
-        <translation type="finished">Июль</translation>
+        <translation>Июль</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemCalendarCard.qml" line="11" />
+        <location filename="../Modules/SystemCards/SystemCalendarCard.qml" line="11"/>
         <source>August</source>
-        <translation type="finished">Август</translation>
+        <translation>Август</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemCalendarCard.qml" line="11" />
+        <location filename="../Modules/SystemCards/SystemCalendarCard.qml" line="11"/>
         <source>September</source>
-        <translation type="finished">Сентябрь</translation>
+        <translation>Сентябрь</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemCalendarCard.qml" line="11" />
+        <location filename="../Modules/SystemCards/SystemCalendarCard.qml" line="11"/>
         <source>October</source>
-        <translation type="finished">Октябрь</translation>
+        <translation>Октябрь</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemCalendarCard.qml" line="11" />
+        <location filename="../Modules/SystemCards/SystemCalendarCard.qml" line="11"/>
         <source>November</source>
-        <translation type="finished">Ноябрь</translation>
+        <translation>Ноябрь</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemCalendarCard.qml" line="12" />
+        <location filename="../Modules/SystemCards/SystemCalendarCard.qml" line="12"/>
         <source>December</source>
-        <translation type="finished">Декабрь</translation>
+        <translation>Декабрь</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemCalendarCard.qml" line="13" />
+        <location filename="../Modules/SystemCards/SystemCalendarCard.qml" line="13"/>
         <source>Sun</source>
-        <translation type="finished">Вс</translation>
+        <translation>Вс</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemCalendarCard.qml" line="13" />
+        <location filename="../Modules/SystemCards/SystemCalendarCard.qml" line="13"/>
         <source>Mon</source>
-        <translation type="finished">Пн</translation>
+        <translation>Пн</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemCalendarCard.qml" line="13" />
+        <location filename="../Modules/SystemCards/SystemCalendarCard.qml" line="13"/>
         <source>Tue</source>
-        <translation type="finished">Вт</translation>
+        <translation>Вт</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemCalendarCard.qml" line="13" />
+        <location filename="../Modules/SystemCards/SystemCalendarCard.qml" line="13"/>
         <source>Wed</source>
-        <translation type="finished">Ср</translation>
+        <translation>Ср</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemCalendarCard.qml" line="13" />
+        <location filename="../Modules/SystemCards/SystemCalendarCard.qml" line="13"/>
         <source>Thu</source>
-        <translation type="finished">Чт</translation>
+        <translation>Чт</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemCalendarCard.qml" line="13" />
+        <location filename="../Modules/SystemCards/SystemCalendarCard.qml" line="13"/>
         <source>Fri</source>
-        <translation type="finished">Пт</translation>
+        <translation>Пт</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemCalendarCard.qml" line="14" />
+        <location filename="../Modules/SystemCards/SystemCalendarCard.qml" line="14"/>
         <source>Sat</source>
-        <translation type="finished">Сб</translation>
+        <translation>Сб</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemCalendarCard.qml" line="15" />
+        <location filename="../Modules/SystemCards/SystemCalendarCard.qml" line="15"/>
         <source>Sunday</source>
-        <translation type="finished">Воскресенье</translation>
+        <translation>Воскресенье</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemCalendarCard.qml" line="15" />
+        <location filename="../Modules/SystemCards/SystemCalendarCard.qml" line="15"/>
         <source>Monday</source>
-        <translation type="finished">Понедельник</translation>
+        <translation>Понедельник</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemCalendarCard.qml" line="15" />
+        <location filename="../Modules/SystemCards/SystemCalendarCard.qml" line="15"/>
         <source>Tuesday</source>
-        <translation type="finished">Вторник</translation>
+        <translation>Вторник</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemCalendarCard.qml" line="15" />
+        <location filename="../Modules/SystemCards/SystemCalendarCard.qml" line="15"/>
         <source>Wednesday</source>
-        <translation type="finished">Среда</translation>
+        <translation>Среда</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemCalendarCard.qml" line="16" />
+        <location filename="../Modules/SystemCards/SystemCalendarCard.qml" line="16"/>
         <source>Thursday</source>
-        <translation type="finished">Четверг</translation>
+        <translation>Четверг</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemCalendarCard.qml" line="16" />
+        <location filename="../Modules/SystemCards/SystemCalendarCard.qml" line="16"/>
         <source>Friday</source>
-        <translation type="finished">Пятница</translation>
+        <translation>Пятница</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemCalendarCard.qml" line="16" />
+        <location filename="../Modules/SystemCards/SystemCalendarCard.qml" line="16"/>
         <source>Saturday</source>
-        <translation type="finished">Суббота</translation>
+        <translation>Суббота</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemCalendarCard.qml" line="27" />
+        <location filename="../Modules/SystemCards/SystemCalendarCard.qml" line="27"/>
         <source> </source>
-        <translation type="finished"> </translation>
+        <translation> </translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemCalendarCard.qml" line="27" />
+        <location filename="../Modules/SystemCards/SystemCalendarCard.qml" line="27"/>
         <source>/</source>
-        <translation type="finished">/</translation>
+        <translation>/</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemCalendarCard.qml" line="28" />
+        <location filename="../Modules/SystemCards/SystemCalendarCard.qml" line="28"/>
         <source>, </source>
-        <translation type="finished">, </translation>
+        <translation>, </translation>
     </message>
 </context>
 <context>
     <name>SystemCardCatalog</name>
     <message>
-        <location filename="../Modules/SystemCards/SystemCardCatalog.js" line="10" />
-        <location filename="../Modules/SystemCards/SystemCardCatalog.js" line="165" />
+        <location filename="../Modules/SystemCards/SystemCardCatalog.js" line="10"/>
+        <location filename="../Modules/SystemCards/SystemCardCatalog.js" line="165"/>
         <source>Clock</source>
-        <translation type="finished">Часы</translation>
+        <translation>Часы</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemCardCatalog.js" line="21" />
-        <location filename="../Modules/SystemCards/SystemCardCatalog.js" line="167" />
+        <location filename="../Modules/SystemCards/SystemCardCatalog.js" line="21"/>
+        <location filename="../Modules/SystemCards/SystemCardCatalog.js" line="167"/>
         <source>Battery</source>
-        <translation type="finished">Батарея</translation>
+        <translation>Батарея</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemCardCatalog.js" line="31" />
-        <location filename="../Modules/SystemCards/SystemCardCatalog.js" line="169" />
+        <location filename="../Modules/SystemCards/SystemCardCatalog.js" line="31"/>
+        <location filename="../Modules/SystemCards/SystemCardCatalog.js" line="169"/>
         <source>CPU</source>
-        <translation type="finished">ЦП</translation>
+        <translation>ЦП</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemCardCatalog.js" line="41" />
-        <location filename="../Modules/SystemCards/SystemCardCatalog.js" line="171" />
+        <location filename="../Modules/SystemCards/SystemCardCatalog.js" line="41"/>
+        <location filename="../Modules/SystemCards/SystemCardCatalog.js" line="171"/>
         <source>GPU</source>
-        <translation type="finished">ГП</translation>
+        <translation>ГП</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemCardCatalog.js" line="51" />
-        <location filename="../Modules/SystemCards/SystemCardCatalog.js" line="173" />
+        <location filename="../Modules/SystemCards/SystemCardCatalog.js" line="51"/>
+        <location filename="../Modules/SystemCards/SystemCardCatalog.js" line="173"/>
         <source>Memory</source>
-        <translation type="finished">Память</translation>
+        <translation>Память</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemCardCatalog.js" line="62" />
-        <location filename="../Modules/SystemCards/SystemCardCatalog.js" line="175" />
+        <location filename="../Modules/SystemCards/SystemCardCatalog.js" line="62"/>
+        <location filename="../Modules/SystemCards/SystemCardCatalog.js" line="175"/>
         <source>Wi-Fi</source>
-        <translation type="finished">Wi-Fi</translation>
+        <translation>Wi-Fi</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemCardCatalog.js" line="73" />
-        <location filename="../Modules/SystemCards/SystemCardCatalog.js" line="177" />
+        <location filename="../Modules/SystemCards/SystemCardCatalog.js" line="73"/>
+        <location filename="../Modules/SystemCards/SystemCardCatalog.js" line="177"/>
         <source>Network</source>
-        <translation type="finished">Сеть</translation>
+        <translation>Сеть</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemCardCatalog.js" line="82" />
-        <location filename="../Modules/SystemCards/SystemCardCatalog.js" line="179" />
+        <location filename="../Modules/SystemCards/SystemCardCatalog.js" line="82"/>
+        <location filename="../Modules/SystemCards/SystemCardCatalog.js" line="179"/>
         <source>Disk I/O</source>
-        <translation type="finished">Диск I/O</translation>
+        <translation>Диск I/O</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemCardCatalog.js" line="91" />
-        <location filename="../Modules/SystemCards/SystemCardCatalog.js" line="181" />
+        <location filename="../Modules/SystemCards/SystemCardCatalog.js" line="91"/>
+        <location filename="../Modules/SystemCards/SystemCardCatalog.js" line="181"/>
         <source>Disk capacity</source>
-        <translation type="finished">Ёмкость диска</translation>
+        <translation>Ёмкость диска</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemCardCatalog.js" line="102" />
-        <location filename="../Modules/SystemCards/SystemCardCatalog.js" line="183" />
+        <location filename="../Modules/SystemCards/SystemCardCatalog.js" line="102"/>
+        <location filename="../Modules/SystemCards/SystemCardCatalog.js" line="183"/>
         <source>Calendar</source>
-        <translation type="finished">Календарь</translation>
+        <translation>Календарь</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemCardCatalog.js" line="111" />
-        <location filename="../Modules/SystemCards/SystemCardCatalog.js" line="185" />
+        <location filename="../Modules/SystemCards/SystemCardCatalog.js" line="111"/>
+        <location filename="../Modules/SystemCards/SystemCardCatalog.js" line="185"/>
         <source>Weather</source>
-        <translation type="finished">Погода</translation>
+        <translation>Погода</translation>
     </message>
 </context>
 <context>
     <name>SystemCardContent</name>
     <message>
-        <location filename="../Modules/SystemCards/SystemCardContent.qml" line="103" />
+        <location filename="../Modules/SystemCards/SystemCardContent.qml" line="103"/>
         <source> cores · </source>
-        <translation type="finished"> ядер · </translation>
+        <translation> ядер · </translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemCardContent.qml" line="103" />
+        <location filename="../Modules/SystemCards/SystemCardContent.qml" line="103"/>
         <source> threads</source>
-        <translation type="finished"> потоков</translation>
+        <translation> потоков</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemCardContent.qml" line="105" />
+        <location filename="../Modules/SystemCards/SystemCardContent.qml" line="105"/>
         <source>Overall utilization</source>
-        <translation type="finished">Общая загрузка</translation>
+        <translation>Общая загрузка</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemCardContent.qml" line="118" />
+        <location filename="../Modules/SystemCards/SystemCardContent.qml" line="118"/>
         <source>No graphics device detected</source>
-        <translation type="finished">Графическое устройство не обнаружено</translation>
+        <translation>Графическое устройство не обнаружено</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemCardContent.qml" line="224" />
+        <location filename="../Modules/SystemCards/SystemCardContent.qml" line="224"/>
         <source>CPU</source>
-        <translation type="finished">ЦП</translation>
+        <translation>ЦП</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemCardContent.qml" line="248" />
+        <location filename="../Modules/SystemCards/SystemCardContent.qml" line="248"/>
         <source>GPU</source>
-        <translation type="finished">ГП</translation>
+        <translation>ГП</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemCardContent.qml" line="250" />
+        <location filename="../Modules/SystemCards/SystemCardContent.qml" line="250"/>
         <source>Graphics device</source>
-        <translation type="finished">Графическое устройство</translation>
+        <translation>Графическое устройство</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemCardContent.qml" line="282" />
+        <location filename="../Modules/SystemCards/SystemCardContent.qml" line="282"/>
         <source>Memory used </source>
-        <translation type="finished">Используется памяти </translation>
+        <translation>Используется памяти </translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemCardContent.qml" line="300" />
+        <location filename="../Modules/SystemCards/SystemCardContent.qml" line="300"/>
         <source>Wi-Fi signal strength</source>
-        <translation type="finished">Уровень сигнала Wi-Fi</translation>
+        <translation>Уровень сигнала Wi-Fi</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemCardContent.qml" line="303" />
+        <location filename="../Modules/SystemCards/SystemCardContent.qml" line="303"/>
         <source>Wi-Fi signal strength </source>
-        <translation type="finished">Уровень сигнала Wi-Fi </translation>
+        <translation>Уровень сигнала Wi-Fi </translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemCardContent.qml" line="304" />
+        <location filename="../Modules/SystemCards/SystemCardContent.qml" line="304"/>
         <source>Wi-Fi is not connected</source>
-        <translation type="finished">Wi-Fi не подключён</translation>
+        <translation>Wi-Fi не подключён</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemCardContent.qml" line="365" />
-        <location filename="../Modules/SystemCards/SystemCardContent.qml" line="372" />
+        <location filename="../Modules/SystemCards/SystemCardContent.qml" line="365"/>
+        <location filename="../Modules/SystemCards/SystemCardContent.qml" line="372"/>
         <source>No disk detected</source>
-        <translation type="finished">Диск не обнаружен</translation>
+        <translation>Диск не обнаружен</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemCardContent.qml" line="368" />
+        <location filename="../Modules/SystemCards/SystemCardContent.qml" line="368"/>
         <source>Disk %1, %2 of %3 used, %4 occupied</source>
-        <translation type="finished">Диск %1, занято %2 из %3, %4 используется</translation>
+        <translation>Диск %1, занято %2 из %3, %4 используется</translation>
     </message>
 </context>
 <context>
     <name>SystemClockCard</name>
     <message>
-        <location filename="../Modules/SystemCards/SystemClockCard.qml" line="23" />
+        <location filename="../Modules/SystemCards/SystemClockCard.qml" line="23"/>
         <source>Sunday</source>
-        <translation type="finished">Воскресенье</translation>
+        <translation>Воскресенье</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemClockCard.qml" line="23" />
+        <location filename="../Modules/SystemCards/SystemClockCard.qml" line="23"/>
         <source>Monday</source>
-        <translation type="finished">Понедельник</translation>
+        <translation>Понедельник</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemClockCard.qml" line="23" />
+        <location filename="../Modules/SystemCards/SystemClockCard.qml" line="23"/>
         <source>Tuesday</source>
-        <translation type="finished">Вторник</translation>
+        <translation>Вторник</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemClockCard.qml" line="23" />
+        <location filename="../Modules/SystemCards/SystemClockCard.qml" line="23"/>
         <source>Wednesday</source>
-        <translation type="finished">Среда</translation>
+        <translation>Среда</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemClockCard.qml" line="23" />
+        <location filename="../Modules/SystemCards/SystemClockCard.qml" line="23"/>
         <source>Thursday</source>
-        <translation type="finished">Четверг</translation>
+        <translation>Четверг</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemClockCard.qml" line="24" />
+        <location filename="../Modules/SystemCards/SystemClockCard.qml" line="24"/>
         <source>Friday</source>
-        <translation type="finished">Пятница</translation>
+        <translation>Пятница</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemClockCard.qml" line="24" />
+        <location filename="../Modules/SystemCards/SystemClockCard.qml" line="24"/>
         <source>Saturday</source>
-        <translation type="finished">Суббота</translation>
+        <translation>Суббота</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemClockCard.qml" line="25" />
+        <location filename="../Modules/SystemCards/SystemClockCard.qml" line="25"/>
         <source>January</source>
-        <translation type="finished">Январь</translation>
+        <translation>Январь</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemClockCard.qml" line="25" />
+        <location filename="../Modules/SystemCards/SystemClockCard.qml" line="25"/>
         <source>February</source>
-        <translation type="finished">Февраль</translation>
+        <translation>Февраль</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemClockCard.qml" line="25" />
+        <location filename="../Modules/SystemCards/SystemClockCard.qml" line="25"/>
         <source>March</source>
-        <translation type="finished">Март</translation>
+        <translation>Март</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemClockCard.qml" line="25" />
+        <location filename="../Modules/SystemCards/SystemClockCard.qml" line="25"/>
         <source>April</source>
-        <translation type="finished">Апрель</translation>
+        <translation>Апрель</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemClockCard.qml" line="25" />
+        <location filename="../Modules/SystemCards/SystemClockCard.qml" line="25"/>
         <source>May</source>
-        <translation type="finished">Май</translation>
+        <translation>Май</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemClockCard.qml" line="26" />
+        <location filename="../Modules/SystemCards/SystemClockCard.qml" line="26"/>
         <source>June</source>
-        <translation type="finished">Июнь</translation>
+        <translation>Июнь</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemClockCard.qml" line="26" />
+        <location filename="../Modules/SystemCards/SystemClockCard.qml" line="26"/>
         <source>July</source>
-        <translation type="finished">Июль</translation>
+        <translation>Июль</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemClockCard.qml" line="26" />
+        <location filename="../Modules/SystemCards/SystemClockCard.qml" line="26"/>
         <source>August</source>
-        <translation type="finished">Август</translation>
+        <translation>Август</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemClockCard.qml" line="26" />
+        <location filename="../Modules/SystemCards/SystemClockCard.qml" line="26"/>
         <source>September</source>
-        <translation type="finished">Сентябрь</translation>
+        <translation>Сентябрь</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemClockCard.qml" line="26" />
+        <location filename="../Modules/SystemCards/SystemClockCard.qml" line="26"/>
         <source>October</source>
-        <translation type="finished">Октябрь</translation>
+        <translation>Октябрь</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemClockCard.qml" line="26" />
+        <location filename="../Modules/SystemCards/SystemClockCard.qml" line="26"/>
         <source>November</source>
-        <translation type="finished">Ноябрь</translation>
+        <translation>Ноябрь</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemClockCard.qml" line="27" />
+        <location filename="../Modules/SystemCards/SystemClockCard.qml" line="27"/>
         <source>December</source>
-        <translation type="finished">Декабрь</translation>
+        <translation>Декабрь</translation>
     </message>
 </context>
 <context>
     <name>SystemFormat</name>
     <message>
-        <location filename="../Common/functions/SystemFormat.js" line="94" />
+        <location filename="../Common/functions/SystemFormat.js" line="94"/>
         <source>%1 d %2 h</source>
-        <translation type="finished">%1 д %2 ч</translation>
+        <translation>%1 д %2 ч</translation>
     </message>
     <message>
-        <location filename="../Common/functions/SystemFormat.js" line="96" />
+        <location filename="../Common/functions/SystemFormat.js" line="96"/>
         <source>%1 h %2 min</source>
-        <translation type="finished">%1 ч %2 мин</translation>
+        <translation>%1 ч %2 мин</translation>
     </message>
     <message numerus="yes">
-        <location filename="../Common/functions/SystemFormat.js" line="98" />
+        <location filename="../Common/functions/SystemFormat.js" line="98"/>
         <source>%n minute(s)</source>
-        <translation type="finished">
+        <translation>
             <numerusform>%n минуту</numerusform>
             <numerusform>%n минуты</numerusform>
             <numerusform>%n минут</numerusform>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../Common/functions/SystemFormat.js" line="99" />
+        <location filename="../Common/functions/SystemFormat.js" line="99"/>
         <source>%n second(s)</source>
-        <translation type="finished">
+        <translation>
             <numerusform>%n секунду</numerusform>
             <numerusform>%n секунды</numerusform>
             <numerusform>%n секунд</numerusform>
         </translation>
     </message>
     <message>
-        <location filename="../Common/functions/SystemFormat.js" line="105" />
+        <location filename="../Common/functions/SystemFormat.js" line="105"/>
         <source>Charging</source>
-        <translation type="finished">Зарядка</translation>
+        <translation>Зарядка</translation>
     </message>
     <message>
-        <location filename="../Common/functions/SystemFormat.js" line="107" />
+        <location filename="../Common/functions/SystemFormat.js" line="107"/>
         <source>On battery</source>
-        <translation type="finished">От батареи</translation>
+        <translation>От батареи</translation>
     </message>
     <message>
-        <location filename="../Common/functions/SystemFormat.js" line="109" />
+        <location filename="../Common/functions/SystemFormat.js" line="109"/>
         <source>Fully charged</source>
-        <translation type="finished">Полностью заряжен</translation>
+        <translation>Полностью заряжен</translation>
     </message>
     <message>
-        <location filename="../Common/functions/SystemFormat.js" line="111" />
+        <location filename="../Common/functions/SystemFormat.js" line="111"/>
         <source>Not charging</source>
-        <translation type="finished">Не заряжается</translation>
+        <translation>Не заряжается</translation>
     </message>
     <message>
-        <location filename="../Common/functions/SystemFormat.js" line="113" />
+        <location filename="../Common/functions/SystemFormat.js" line="113"/>
         <source>Status unknown</source>
-        <translation type="finished">Статус неизвестен</translation>
+        <translation>Статус неизвестен</translation>
     </message>
     <message>
-        <location filename="../Common/functions/SystemFormat.js" line="122" />
+        <location filename="../Common/functions/SystemFormat.js" line="122"/>
         <source>Yes</source>
-        <translation type="finished">Да</translation>
+        <translation>Да</translation>
     </message>
     <message>
-        <location filename="../Common/functions/SystemFormat.js" line="122" />
+        <location filename="../Common/functions/SystemFormat.js" line="122"/>
         <source>No</source>
-        <translation type="finished">Нет</translation>
+        <translation>Нет</translation>
     </message>
 </context>
 <context>
     <name>SystemIdentityService</name>
     <message>
-        <location filename="../Services/SystemIdentityService.qml" line="30" />
+        <location filename="../Services/SystemIdentityService.qml" line="30"/>
         <source>Computer</source>
-        <translation type="finished">Компьютер</translation>
+        <translation>Компьютер</translation>
     </message>
     <message>
-        <location filename="../Services/SystemIdentityService.qml" line="92" />
-        <location filename="../Services/SystemIdentityService.qml" line="160" />
+        <location filename="../Services/SystemIdentityService.qml" line="92"/>
+        <location filename="../Services/SystemIdentityService.qml" line="160"/>
         <source>Unable to read system identity</source>
-        <translation type="finished">Не удалось прочитать системную идентичность</translation>
+        <translation>Не удалось прочитать системную идентичность</translation>
     </message>
     <message>
-        <location filename="../Services/SystemIdentityService.qml" line="112" />
+        <location filename="../Services/SystemIdentityService.qml" line="112"/>
         <source>%1 days %2 hours</source>
-        <translation type="finished">%1 дней %2 часов</translation>
+        <translation>%1 дней %2 часов</translation>
     </message>
     <message>
-        <location filename="../Services/SystemIdentityService.qml" line="115" />
+        <location filename="../Services/SystemIdentityService.qml" line="115"/>
         <source>%1 hours %2 minutes</source>
-        <translation type="finished">%1 часов %2 минут</translation>
+        <translation>%1 часов %2 минут</translation>
     </message>
     <message>
-        <location filename="../Services/SystemIdentityService.qml" line="117" />
+        <location filename="../Services/SystemIdentityService.qml" line="117"/>
         <source>%1 minutes</source>
-        <translation type="finished">%1 минут</translation>
+        <translation>%1 минут</translation>
     </message>
 </context>
 <context>
     <name>SystemMonitorService</name>
     <message>
-        <location filename="../Services/SystemMonitorService.qml" line="101" />
+        <location filename="../Services/SystemMonitorService.qml" line="101"/>
         <source>Connecting</source>
-        <translation type="finished">Подключение</translation>
+        <translation>Подключение</translation>
     </message>
     <message>
-        <location filename="../Services/SystemMonitorService.qml" line="103" />
+        <location filename="../Services/SystemMonitorService.qml" line="103"/>
         <source>Some sensors cannot be read</source>
-        <translation type="finished">Некоторые датчики недоступны для чтения</translation>
+        <translation>Некоторые датчики недоступны для чтения</translation>
     </message>
     <message>
-        <location filename="../Services/SystemMonitorService.qml" line="103" />
+        <location filename="../Services/SystemMonitorService.qml" line="103"/>
         <source>Live</source>
-        <translation type="finished">Живой</translation>
+        <translation>Живой</translation>
     </message>
     <message>
-        <location filename="../Services/SystemMonitorService.qml" line="105" />
+        <location filename="../Services/SystemMonitorService.qml" line="105"/>
         <source>Data is stale</source>
-        <translation type="finished">Данные устарели</translation>
+        <translation>Данные устарели</translation>
     </message>
     <message>
-        <location filename="../Services/SystemMonitorService.qml" line="107" />
+        <location filename="../Services/SystemMonitorService.qml" line="107"/>
         <source>Reconnecting</source>
-        <translation type="finished">Переподключение</translation>
+        <translation>Переподключение</translation>
     </message>
     <message>
-        <location filename="../Services/SystemMonitorService.qml" line="109" />
+        <location filename="../Services/SystemMonitorService.qml" line="109"/>
         <source>Service unavailable</source>
-        <translation type="finished">Служба недоступна</translation>
+        <translation>Служба недоступна</translation>
     </message>
     <message>
-        <location filename="../Services/SystemMonitorService.qml" line="111" />
+        <location filename="../Services/SystemMonitorService.qml" line="111"/>
         <source>Paused</source>
-        <translation type="finished">На паузе</translation>
+        <translation>На паузе</translation>
     </message>
     <message>
-        <location filename="../Services/SystemMonitorService.qml" line="312" />
+        <location filename="../Services/SystemMonitorService.qml" line="312"/>
         <source>System monitor service unavailable</source>
-        <translation type="finished">Служба системного монитора недоступна</translation>
+        <translation>Служба системного монитора недоступна</translation>
     </message>
     <message>
-        <location filename="../Services/SystemMonitorService.qml" line="313" />
+        <location filename="../Services/SystemMonitorService.qml" line="313"/>
         <source>The automatic reconnect limit was reached. Check the keytop backend and try again.</source>
-        <translation type="finished">Достигнут лимит автоматических переподключений. Проверьте бэкенд keytop и попробуйте снова.</translation>
+        <translation>Достигнут лимит автоматических переподключений. Проверьте бэкенд keytop и попробуйте снова.</translation>
     </message>
     <message>
-        <location filename="../Services/SystemMonitorService.qml" line="322" />
+        <location filename="../Services/SystemMonitorService.qml" line="322"/>
         <source>Could not start the keytop system monitoring service</source>
-        <translation type="finished">Не удалось запустить службу мониторинга keytop</translation>
+        <translation>Не удалось запустить службу мониторинга keytop</translation>
     </message>
     <message>
-        <location filename="../Services/SystemMonitorService.qml" line="324" />
+        <location filename="../Services/SystemMonitorService.qml" line="324"/>
         <source>The system monitor data stream was interrupted</source>
-        <translation type="finished">Поток данных системного монитора был прерван</translation>
+        <translation>Поток данных системного монитора был прерван</translation>
     </message>
     <message>
-        <location filename="../Services/SystemMonitorService.qml" line="355" />
+        <location filename="../Services/SystemMonitorService.qml" line="355"/>
         <source>keytop was not found or could not be started</source>
-        <translation type="finished">keytop не найден или не удалось его запустить</translation>
+        <translation>keytop не найден или не удалось его запустить</translation>
     </message>
     <message>
-        <location filename="../Services/SystemMonitorService.qml" line="356" />
+        <location filename="../Services/SystemMonitorService.qml" line="356"/>
         <source>Install the standalone keytop package and try again.</source>
-        <translation type="finished">Установите отдельный пакет keytop и попробуйте снова.</translation>
+        <translation>Установите отдельный пакет keytop и попробуйте снова.</translation>
     </message>
     <message>
-        <location filename="../Services/SystemMonitorService.qml" line="358" />
-        <location filename="../Services/SystemMonitorService.qml" line="828" />
+        <location filename="../Services/SystemMonitorService.qml" line="358"/>
+        <location filename="../Services/SystemMonitorService.qml" line="828"/>
         <source>System monitor data has not updated for a long time</source>
-        <translation type="finished">Данные системного монитора давно не обновлялись</translation>
+        <translation>Данные системного монитора давно не обновлялись</translation>
     </message>
     <message>
-        <location filename="../Services/SystemMonitorService.qml" line="359" />
+        <location filename="../Services/SystemMonitorService.qml" line="359"/>
         <source>The data stream is not producing new snapshots at the expected interval.</source>
-        <translation type="finished">Поток данных не создаёт новые снимки с ожидаемым интервалом.</translation>
+        <translation>Поток данных не создаёт новые снимки с ожидаемым интервалом.</translation>
     </message>
     <message>
-        <location filename="../Services/SystemMonitorService.qml" line="362" />
-        <location filename="../Services/SystemMonitorService.qml" line="814" />
+        <location filename="../Services/SystemMonitorService.qml" line="362"/>
+        <location filename="../Services/SystemMonitorService.qml" line="814"/>
         <source>The system monitor service did not return its first snapshot</source>
-        <translation type="finished">Служба системного монитора не вернула первый снимок</translation>
+        <translation>Служба системного монитора не вернула первый снимок</translation>
     </message>
     <message>
-        <location filename="../Services/SystemMonitorService.qml" line="363" />
+        <location filename="../Services/SystemMonitorService.qml" line="363"/>
         <source>keytop started but did not produce JSONL data in time.</source>
-        <translation type="finished">keytop запустился, но вовремя не выдал данные JSONL.</translation>
+        <translation>keytop запустился, но вовремя не выдал данные JSONL.</translation>
     </message>
     <message>
-        <location filename="../Services/SystemMonitorService.qml" line="365" />
-        <location filename="../Services/SystemMonitorService.qml" line="598" />
+        <location filename="../Services/SystemMonitorService.qml" line="365"/>
+        <location filename="../Services/SystemMonitorService.qml" line="598"/>
         <source>keytop keeps producing invalid JSONL</source>
-        <translation type="finished">keytop продолжает выдавать некорректный JSONL</translation>
+        <translation>keytop продолжает выдавать некорректный JSONL</translation>
     </message>
     <message>
-        <location filename="../Services/SystemMonitorService.qml" line="366" />
+        <location filename="../Services/SystemMonitorService.qml" line="366"/>
         <source>Several consecutive lines failed JSON v1 validation.</source>
-        <translation type="finished">Несколько подряд идущих строк не прошли проверку JSON v1.</translation>
+        <translation>Несколько подряд идущих строк не прошли проверку JSON v1.</translation>
     </message>
     <message>
-        <location filename="../Services/SystemMonitorService.qml" line="368" />
+        <location filename="../Services/SystemMonitorService.qml" line="368"/>
         <source>The system monitor data stream exited unexpectedly</source>
-        <translation type="finished">Поток данных системного монитора неожиданно завершился</translation>
+        <translation>Поток данных системного монитора неожиданно завершился</translation>
     </message>
     <message>
-        <location filename="../Services/SystemMonitorService.qml" line="369" />
+        <location filename="../Services/SystemMonitorService.qml" line="369"/>
         <source>keytop exit code: </source>
-        <translation type="finished">код выхода keytop: </translation>
+        <translation>код выхода keytop: </translation>
     </message>
     <message>
-        <location filename="../Services/SystemMonitorService.qml" line="369" />
+        <location filename="../Services/SystemMonitorService.qml" line="369"/>
         <source>keytop did not report an exit code</source>
-        <translation type="finished">keytop не сообщил код выхода</translation>
+        <translation>keytop не сообщил код выхода</translation>
     </message>
     <message>
-        <location filename="../Services/SystemMonitorService.qml" line="387" />
+        <location filename="../Services/SystemMonitorService.qml" line="387"/>
         <source>The top-level JSON value must be an object</source>
-        <translation type="finished">Верхнеуровневое значение JSON должно быть объектом</translation>
+        <translation>Верхнеуровневое значение JSON должно быть объектом</translation>
     </message>
     <message>
-        <location filename="../Services/SystemMonitorService.qml" line="392" />
+        <location filename="../Services/SystemMonitorService.qml" line="392"/>
         <source>The timestamp, sequence number, or sampling interval is invalid</source>
-        <translation type="finished">Некорректны метка времени, порядковый номер или интервал выборки</translation>
+        <translation>Некорректны метка времени, порядковый номер или интервал выборки</translation>
     </message>
     <message>
-        <location filename="../Services/SystemMonitorService.qml" line="394" />
+        <location filename="../Services/SystemMonitorService.qml" line="394"/>
         <source>Missing or invalid CPU data fields</source>
-        <translation type="finished">Отсутствуют или некорректны поля данных ЦП</translation>
+        <translation>Отсутствуют или некорректны поля данных ЦП</translation>
     </message>
     <message>
-        <location filename="../Services/SystemMonitorService.qml" line="396" />
+        <location filename="../Services/SystemMonitorService.qml" line="396"/>
         <source>Missing or invalid memory data fields</source>
-        <translation type="finished">Отсутствуют или некорректны поля данных памяти</translation>
+        <translation>Отсутствуют или некорректны поля данных памяти</translation>
     </message>
     <message>
-        <location filename="../Services/SystemMonitorService.qml" line="398" />
+        <location filename="../Services/SystemMonitorService.qml" line="398"/>
         <source>Missing or invalid network data fields</source>
-        <translation type="finished">Отсутствуют или некорректны поля данных сети</translation>
+        <translation>Отсутствуют или некорректны поля данных сети</translation>
     </message>
     <message>
-        <location filename="../Services/SystemMonitorService.qml" line="400" />
+        <location filename="../Services/SystemMonitorService.qml" line="400"/>
         <source>Missing or invalid GPU data fields</source>
-        <translation type="finished">Отсутствуют или некорректны поля данных ГП</translation>
+        <translation>Отсутствуют или некорректны поля данных ГП</translation>
     </message>
     <message>
-        <location filename="../Services/SystemMonitorService.qml" line="402" />
+        <location filename="../Services/SystemMonitorService.qml" line="402"/>
         <source>Missing or invalid disk data fields</source>
-        <translation type="finished">Отсутствуют или некорректны поля данных диска</translation>
+        <translation>Отсутствуют или некорректны поля данных диска</translation>
     </message>
     <message>
-        <location filename="../Services/SystemMonitorService.qml" line="404" />
+        <location filename="../Services/SystemMonitorService.qml" line="404"/>
         <source>The devices and errors fields must be arrays</source>
-        <translation type="finished">Поля devices и errors должны быть массивами</translation>
+        <translation>Поля devices и errors должны быть массивами</translation>
     </message>
     <message>
-        <location filename="../Services/SystemMonitorService.qml" line="582" />
-        <location filename="../Services/SystemMonitorService.qml" line="648" />
+        <location filename="../Services/SystemMonitorService.qml" line="582"/>
+        <location filename="../Services/SystemMonitorService.qml" line="648"/>
         <source>keytop does not support the current system monitoring interface</source>
-        <translation type="finished">keytop не поддерживает текущий интерфейс мониторинга системы</translation>
+        <translation>keytop не поддерживает текущий интерфейс мониторинга системы</translation>
     </message>
     <message>
-        <location filename="../Services/SystemMonitorService.qml" line="594" />
+        <location filename="../Services/SystemMonitorService.qml" line="594"/>
         <source>Received a corrupt JSONL line</source>
-        <translation type="finished">Получена повреждённая строка JSONL</translation>
+        <translation>Получена повреждённая строка JSONL</translation>
     </message>
     <message>
-        <location filename="../Services/SystemMonitorService.qml" line="596" />
+        <location filename="../Services/SystemMonitorService.qml" line="596"/>
         <source>Could not parse keytop system monitor data</source>
-        <translation type="finished">Не удалось разобрать данные системного монитора keytop</translation>
+        <translation>Не удалось разобрать данные системного монитора keytop</translation>
     </message>
     <message>
-        <location filename="../Services/SystemMonitorService.qml" line="608" />
+        <location filename="../Services/SystemMonitorService.qml" line="608"/>
         <source>System monitoring data schema is incompatible</source>
-        <translation type="finished">Схема данных мониторинга несовместима</translation>
+        <translation>Схема данных мониторинга несовместима</translation>
     </message>
     <message>
-        <location filename="../Services/SystemMonitorService.qml" line="609" />
+        <location filename="../Services/SystemMonitorService.qml" line="609"/>
         <source>Rebuild keytop (schema v</source>
-        <translation type="finished">Пересобрать keytop (схема v</translation>
+        <translation>Пересобрать keytop (схема v</translation>
     </message>
     <message>
-        <location filename="../Services/SystemMonitorService.qml" line="617" />
+        <location filename="../Services/SystemMonitorService.qml" line="617"/>
         <source>System monitor data returned by keytop is incomplete</source>
-        <translation type="finished">Данные системного монитора от keytop неполны</translation>
+        <translation>Данные системного монитора от keytop неполны</translation>
     </message>
     <message>
-        <location filename="../Services/SystemMonitorService.qml" line="710" />
+        <location filename="../Services/SystemMonitorService.qml" line="710"/>
         <source>keytop is unavailable; install the independent keytop command</source>
-        <translation type="finished">keytop недоступен; установите отдельную команду keytop</translation>
+        <translation>keytop недоступен; установите отдельную команду keytop</translation>
     </message>
     <message>
-        <location filename="../Services/SystemMonitorService.qml" line="723" />
+        <location filename="../Services/SystemMonitorService.qml" line="723"/>
         <source>No usable terminal was found, so keytop could not be opened</source>
-        <translation type="finished">Подходящий терминал не найден, поэтому keytop не удалось открыть</translation>
+        <translation>Подходящий терминал не найден, поэтому keytop не удалось открыть</translation>
     </message>
     <message>
-        <location filename="../Services/SystemMonitorService.qml" line="773" />
+        <location filename="../Services/SystemMonitorService.qml" line="773"/>
         <source>Could not start terminal:</source>
-        <translation type="finished">Не удалось запустить терминал:</translation>
+        <translation>Не удалось запустить терминал:</translation>
     </message>
     <message>
-        <location filename="../Services/SystemMonitorService.qml" line="815" />
+        <location filename="../Services/SystemMonitorService.qml" line="815"/>
         <source>Restarting the keytop data stream.</source>
-        <translation type="finished">Перезапуск потока данных keytop.</translation>
+        <translation>Перезапуск потока данных keytop.</translation>
     </message>
     <message>
-        <location filename="../Services/SystemMonitorService.qml" line="829" />
+        <location filename="../Services/SystemMonitorService.qml" line="829"/>
         <source>Reconnecting to the keytop data stream.</source>
-        <translation type="finished">Переподключение к потоку данных keytop.</translation>
+        <translation>Переподключение к потоку данных keytop.</translation>
     </message>
 </context>
 <context>
     <name>SystemNetworkCard</name>
     <message>
-        <location filename="../Modules/SystemCards/SystemNetworkCard.qml" line="49" />
+        <location filename="../Modules/SystemCards/SystemNetworkCard.qml" line="49"/>
         <source>Default · %1</source>
-        <translation type="finished">По умолчанию · %1</translation>
+        <translation>По умолчанию · %1</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemNetworkCard.qml" line="50" />
+        <location filename="../Modules/SystemCards/SystemNetworkCard.qml" line="50"/>
         <source>Default</source>
-        <translation type="finished">По умолчанию</translation>
+        <translation>По умолчанию</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemNetworkCard.qml" line="54" />
+        <location filename="../Modules/SystemCards/SystemNetworkCard.qml" line="54"/>
         <source>Total</source>
-        <translation type="finished">Итого</translation>
+        <translation>Итого</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemNetworkCard.qml" line="106" />
+        <location filename="../Modules/SystemCards/SystemNetworkCard.qml" line="106"/>
         <source>Network, download </source>
-        <translation type="finished">Сеть, скачивание </translation>
+        <translation>Сеть, скачивание </translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemNetworkCard.qml" line="107" />
-        <location filename="../Modules/SystemCards/SystemNetworkCard.qml" line="171" />
+        <location filename="../Modules/SystemCards/SystemNetworkCard.qml" line="107"/>
+        <location filename="../Modules/SystemCards/SystemNetworkCard.qml" line="171"/>
         <source>, upload </source>
-        <translation type="finished">, загрузка </translation>
+        <translation>, загрузка </translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemNetworkCard.qml" line="117" />
+        <location filename="../Modules/SystemCards/SystemNetworkCard.qml" line="117"/>
         <source>Network</source>
-        <translation type="finished">Сеть</translation>
+        <translation>Сеть</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemNetworkCard.qml" line="169" />
+        <location filename="../Modules/SystemCards/SystemNetworkCard.qml" line="169"/>
         <source>Recent network activity</source>
-        <translation type="finished">Недавняя сетевая активность</translation>
+        <translation>Недавняя сетевая активность</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemNetworkCard.qml" line="170" />
+        <location filename="../Modules/SystemCards/SystemNetworkCard.qml" line="170"/>
         <source>Download </source>
-        <translation type="finished">Скачивание </translation>
+        <translation>Скачивание </translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemNetworkCard.qml" line="231" />
+        <location filename="../Modules/SystemCards/SystemNetworkCard.qml" line="231"/>
         <source>Select network interface</source>
-        <translation type="finished">Выберите сетевой интерфейс</translation>
+        <translation>Выберите сетевой интерфейс</translation>
     </message>
 </context>
 <context>
     <name>SystemSparkline</name>
     <message>
-        <location filename="../Modules/SystemCards/SystemSparkline.qml" line="22" />
+        <location filename="../Modules/SystemCards/SystemSparkline.qml" line="22"/>
         <source>trend over the last minute</source>
-        <translation type="finished">тенденция за последнюю минуту</translation>
+        <translation>тенденция за последнюю минуту</translation>
     </message>
 </context>
 <context>
     <name>SystemStorageCard</name>
     <message>
-        <location filename="../Modules/SystemCards/SystemStorageCard.qml" line="76" />
+        <location filename="../Modules/SystemCards/SystemStorageCard.qml" line="76"/>
         <source>Disk %1, read %2, write %3</source>
-        <translation type="finished">Диск %1, чтение %2, запись %3</translation>
+        <translation>Диск %1, чтение %2, запись %3</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemStorageCard.qml" line="78" />
-        <location filename="../Modules/SystemCards/SystemStorageCard.qml" line="210" />
+        <location filename="../Modules/SystemCards/SystemStorageCard.qml" line="78"/>
+        <location filename="../Modules/SystemCards/SystemStorageCard.qml" line="210"/>
         <source>No disk detected</source>
-        <translation type="finished">Диск не обнаружен</translation>
+        <translation>Диск не обнаружен</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemStorageCard.qml" line="88" />
+        <location filename="../Modules/SystemCards/SystemStorageCard.qml" line="88"/>
         <source>Disk I/O</source>
-        <translation type="finished">Диск I/O</translation>
+        <translation>Диск I/O</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemStorageCard.qml" line="138" />
+        <location filename="../Modules/SystemCards/SystemStorageCard.qml" line="138"/>
         <source>Recent disk throughput trend</source>
-        <translation type="finished">Тренд пропускной способности диска за последнее время</translation>
+        <translation>Тренд пропускной способности диска за последнее время</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemStorageCard.qml" line="139" />
+        <location filename="../Modules/SystemCards/SystemStorageCard.qml" line="139"/>
         <source>Read %1, write %2</source>
-        <translation type="finished">Чтение %1, запись %2</translation>
+        <translation>Чтение %1, запись %2</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemStorageCard.qml" line="200" />
+        <location filename="../Modules/SystemCards/SystemStorageCard.qml" line="200"/>
         <source>Select disk</source>
-        <translation type="finished">Выберите диск</translation>
+        <translation>Выберите диск</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemStorageCard.qml" line="223" />
+        <location filename="../Modules/SystemCards/SystemStorageCard.qml" line="223"/>
         <source>Read</source>
-        <translation type="finished">Чтение</translation>
+        <translation>Чтение</translation>
     </message>
     <message>
-        <location filename="../Modules/SystemCards/SystemStorageCard.qml" line="232" />
+        <location filename="../Modules/SystemCards/SystemStorageCard.qml" line="232"/>
         <source>Write</source>
-        <translation type="finished">Запись</translation>
+        <translation>Запись</translation>
     </message>
 </context>
 <context>
     <name>TaskList</name>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/TaskList.qml" line="16" />
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/TaskList.qml" line="16"/>
         <source>Nothing here yet</source>
-        <translation type="finished">Здесь пока пусто</translation>
+        <translation>Здесь пока пусто</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/TaskList.qml" line="85" />
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/TaskList.qml" line="85"/>
         <source>Mark unfinished</source>
-        <translation type="finished">Отметить невыполненной</translation>
+        <translation>Отметить невыполненной</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/TaskList.qml" line="85" />
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/TaskList.qml" line="85"/>
         <source>Mark complete</source>
-        <translation type="finished">Отметить выполненной</translation>
+        <translation>Отметить выполненной</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/TaskList.qml" line="97" />
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/TaskList.qml" line="97"/>
         <source>Delete task</source>
-        <translation type="finished">Удалить задачу</translation>
+        <translation>Удалить задачу</translation>
     </message>
 </context>
 <context>
     <name>ThemePage</name>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2053" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2155"/>
         <source>matugen color scheme</source>
-        <translation type="finished">цветовая схема matugen</translation>
+        <translation>цветовая схема matugen</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2054" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2156"/>
         <source>Super key appearance</source>
-        <translation type="finished">Вид клавиши Super</translation>
+        <translation>Вид клавиши Super</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2055" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2157"/>
         <source>Lock screen</source>
-        <translation type="finished">Экран блокировки</translation>
+        <translation>Экран блокировки</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2056" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2158"/>
         <source>Cursor theme</source>
-        <translation type="finished">Тема курсора</translation>
+        <translation>Тема курсора</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2057" />
-        <location filename="../Modules/ControlCenter/ThemePage.qml" line="655" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2159"/>
+        <location filename="../Modules/ControlCenter/ThemePage.qml" line="655"/>
         <source>Icon theme</source>
-        <translation type="finished">Тема значков</translation>
+        <translation>Тема значков</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2058" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2160"/>
         <source>Fonts</source>
-        <translation type="finished">Шрифты</translation>
+        <translation>Шрифты</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ThemePage.qml" line="457" />
+        <location filename="../Modules/ControlCenter/ThemePage.qml" line="457"/>
         <source>Cursor integration</source>
-        <translation type="finished">Интеграция курсора</translation>
+        <translation>Интеграция курсора</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ThemePage.qml" line="458" />
+        <location filename="../Modules/ControlCenter/ThemePage.qml" line="458"/>
         <source>Create or connect the Clavis cursor configuration.</source>
-        <translation type="finished">Создайте или подключите конфигурацию курсора Clavis.</translation>
+        <translation>Создайте или подключите конфигурацию курсора Clavis.</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ThemePage.qml" line="471" />
+        <location filename="../Modules/ControlCenter/ThemePage.qml" line="471"/>
         <source>Light</source>
-        <translation type="finished">Светлый</translation>
+        <translation>Светлый</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ThemePage.qml" line="478" />
+        <location filename="../Modules/ControlCenter/ThemePage.qml" line="478"/>
         <source>Dark</source>
-        <translation type="finished">Тёмный</translation>
+        <translation>Тёмный</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ThemePage.qml" line="614" />
+        <location filename="../Modules/ControlCenter/ThemePage.qml" line="614"/>
         <source>Cursor size</source>
-        <translation type="finished">Размер курсора</translation>
+        <translation>Размер курсора</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ThemePage.qml" line="618" />
+        <location filename="../Modules/ControlCenter/ThemePage.qml" line="618"/>
         <source>pixels</source>
-        <translation type="finished">пикселей</translation>
+        <translation>пикселей</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ThemePage.qml" line="625" />
+        <location filename="../Modules/ControlCenter/ThemePage.qml" line="625"/>
         <source>Hide while typing</source>
-        <translation type="finished">Скрывать при вводе</translation>
+        <translation>Скрывать при вводе</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ThemePage.qml" line="632" />
+        <location filename="../Modules/ControlCenter/ThemePage.qml" line="632"/>
         <source>Hide after timeout</source>
-        <translation type="finished">Скрывать по таймауту</translation>
+        <translation>Скрывать по таймауту</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ThemePage.qml" line="633" />
+        <location filename="../Modules/ControlCenter/ThemePage.qml" line="633"/>
         <source>Hide the cursor after inactivity; 0 disables this</source>
-        <translation type="finished">Скрывать курсор после бездействия; 0 отключает</translation>
+        <translation>Скрывать курсор после бездействия; 0 отключает</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ThemePage.qml" line="637" />
+        <location filename="../Modules/ControlCenter/ThemePage.qml" line="637"/>
         <source>milliseconds</source>
-        <translation type="finished">миллисекунды</translation>
+        <translation>миллисекунды</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ThemePage.qml" line="658" />
+        <location filename="../Modules/ControlCenter/ThemePage.qml" line="658"/>
         <source>Choose icon theme</source>
-        <translation type="finished">Выберите тему значков</translation>
+        <translation>Выберите тему значков</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ThemePage.qml" line="675" />
+        <location filename="../Modules/ControlCenter/ThemePage.qml" line="675"/>
         <source>UI font</source>
-        <translation type="finished">Шрифт интерфейса</translation>
+        <translation>Шрифт интерфейса</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ThemePage.qml" line="676" />
+        <location filename="../Modules/ControlCenter/ThemePage.qml" line="676"/>
         <source>Regular headings, body text, and controls</source>
-        <translation type="finished">Обычные заголовки, основной текст и элементы управления</translation>
+        <translation>Обычные заголовки, основной текст и элементы управления</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ThemePage.qml" line="679" />
+        <location filename="../Modules/ControlCenter/ThemePage.qml" line="679"/>
         <source>Select UI font</source>
-        <translation type="finished">Выбрать шрифт интерфейса</translation>
+        <translation>Выбрать шрифт интерфейса</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ThemePage.qml" line="685" />
+        <location filename="../Modules/ControlCenter/ThemePage.qml" line="685"/>
         <source>Monospace font</source>
-        <translation type="finished">Моноширинный шрифт</translation>
+        <translation>Моноширинный шрифт</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ThemePage.qml" line="686" />
+        <location filename="../Modules/ControlCenter/ThemePage.qml" line="686"/>
         <source>Commands, paths, and technical information</source>
-        <translation type="finished">Команды, пути и техническая информация</translation>
+        <translation>Команды, пути и техническая информация</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ThemePage.qml" line="689" />
+        <location filename="../Modules/ControlCenter/ThemePage.qml" line="689"/>
         <source>Select monospace font</source>
-        <translation type="finished">Выбрать моноширинный шрифт</translation>
+        <translation>Выбрать моноширинный шрифт</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ThemePage.qml" line="695" />
+        <location filename="../Modules/ControlCenter/ThemePage.qml" line="695"/>
         <source>Numeric font</source>
-        <translation type="finished">Шрифт цифр</translation>
+        <translation>Шрифт цифр</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ThemePage.qml" line="696" />
+        <location filename="../Modules/ControlCenter/ThemePage.qml" line="696"/>
         <source>Time, percentages, and system values</source>
-        <translation type="finished">Время, проценты и системные значения</translation>
+        <translation>Время, проценты и системные значения</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ThemePage.qml" line="699" />
+        <location filename="../Modules/ControlCenter/ThemePage.qml" line="699"/>
         <source>Select numeric font</source>
-        <translation type="finished">Выбрать шрифт цифр</translation>
+        <translation>Выбрать шрифт цифр</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ThemePage.qml" line="705" />
+        <location filename="../Modules/ControlCenter/ThemePage.qml" line="705"/>
         <source>Expressive font</source>
-        <translation type="finished">Выразительный шрифт</translation>
+        <translation>Выразительный шрифт</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ThemePage.qml" line="706" />
+        <location filename="../Modules/ControlCenter/ThemePage.qml" line="706"/>
         <source>Expressive visual components such as weather</source>
-        <translation type="finished">Выразительные визуальные компоненты, например погода</translation>
+        <translation>Выразительные визуальные компоненты, например погода</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ThemePage.qml" line="709" />
+        <location filename="../Modules/ControlCenter/ThemePage.qml" line="709"/>
         <source>Select expressive font</source>
-        <translation type="finished">Выбрать выразительный шрифт</translation>
+        <translation>Выбрать выразительный шрифт</translation>
     </message>
 </context>
 <context>
     <name>ThemeService</name>
     <message>
-        <location filename="../Services/ThemeService.qml" line="25" />
-        <location filename="../Services/ThemeService.qml" line="29" />
-        <location filename="../Services/ThemeService.qml" line="318" />
-        <location filename="../Services/ThemeService.qml" line="328" />
+        <location filename="../Services/ThemeService.qml" line="25"/>
+        <location filename="../Services/ThemeService.qml" line="29"/>
+        <location filename="../Services/ThemeService.qml" line="318"/>
+        <location filename="../Services/ThemeService.qml" line="328"/>
         <source>System default</source>
-        <translation type="finished">Системный по умолчанию</translation>
+        <translation>Системный по умолчанию</translation>
     </message>
     <message>
-        <location filename="../Services/ThemeService.qml" line="372" />
+        <location filename="../Services/ThemeService.qml" line="372"/>
         <source>Failed to generate Matugen colors</source>
-        <translation type="finished">Не удалось сгенерировать цвета Matugen</translation>
+        <translation>Не удалось сгенерировать цвета Matugen</translation>
     </message>
     <message>
-        <location filename="../Services/ThemeService.qml" line="375" />
+        <location filename="../Services/ThemeService.qml" line="375"/>
         <source>Some Matugen templates failed to generate</source>
-        <translation type="finished">Некоторые шаблоны Matugen не сгенерировались</translation>
+        <translation>Некоторые шаблоны Matugen не сгенерировались</translation>
     </message>
 </context>
 <context>
     <name>TimeUtils</name>
     <message>
-        <location filename="../Common/functions/TimeUtils.js" line="4" />
-        <location filename="../Common/functions/TimeUtils.js" line="10" />
+        <location filename="../Common/functions/TimeUtils.js" line="4"/>
+        <location filename="../Common/functions/TimeUtils.js" line="10"/>
         <source>Just now</source>
-        <translation type="finished">Только что</translation>
+        <translation>Только что</translation>
     </message>
     <message numerus="yes">
-        <location filename="../Common/functions/TimeUtils.js" line="15" />
+        <location filename="../Common/functions/TimeUtils.js" line="15"/>
         <source>%n minute(s) ago</source>
-        <translation type="finished">
+        <translation>
             <numerusform>%n минуту назад</numerusform>
             <numerusform>%n минуты назад</numerusform>
             <numerusform>%n минут назад</numerusform>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="../Common/functions/TimeUtils.js" line="20" />
+        <location filename="../Common/functions/TimeUtils.js" line="20"/>
         <source>%n hour(s) ago</source>
-        <translation type="finished">
+        <translation>
             <numerusform>%n час назад</numerusform>
             <numerusform>%n часа назад</numerusform>
             <numerusform>%n часов назад</numerusform>
         </translation>
     </message>
     <message>
-        <location filename="../Common/functions/TimeUtils.js" line="23" />
+        <location filename="../Common/functions/TimeUtils.js" line="23"/>
         <source>More than a day ago</source>
-        <translation type="finished">Более суток назад</translation>
+        <translation>Более суток назад</translation>
     </message>
 </context>
 <context>
     <name>TimerService</name>
     <message>
-        <location filename="../Services/TimerService.qml" line="150" />
+        <location filename="../Services/TimerService.qml" line="150"/>
         <source>🎉 All cycles completed!</source>
-        <translation type="finished">🎉 Все циклы завершены!</translation>
+        <translation>🎉 Все циклы завершены!</translation>
     </message>
     <message>
-        <location filename="../Services/TimerService.qml" line="151" />
+        <location filename="../Services/TimerService.qml" line="151"/>
         <source>🎉 Task «%1» completed!</source>
-        <translation type="finished">🎉 Задача «%1» выполнена!</translation>
+        <translation>🎉 Задача «%1» выполнена!</translation>
     </message>
     <message>
-        <location filename="../Services/TimerService.qml" line="152" />
-        <location filename="../Services/TimerService.qml" line="164" />
+        <location filename="../Services/TimerService.qml" line="152"/>
+        <location filename="../Services/TimerService.qml" line="164"/>
         <source>Pomodoro</source>
-        <translation type="finished">Помидор</translation>
+        <translation>Помидор</translation>
     </message>
     <message>
-        <location filename="../Services/TimerService.qml" line="158" />
+        <location filename="../Services/TimerService.qml" line="158"/>
         <source>🌿 Long break: %1 minutes</source>
-        <translation type="finished">🌿 Длинный перерыв: %1 мин</translation>
+        <translation>🌿 Длинный перерыв: %1 мин</translation>
     </message>
     <message>
-        <location filename="../Services/TimerService.qml" line="160" />
+        <location filename="../Services/TimerService.qml" line="160"/>
         <source>☕ Break: %1 minutes</source>
-        <translation type="finished">☕ Перерыв: %1 мин</translation>
+        <translation>☕ Перерыв: %1 мин</translation>
     </message>
     <message>
-        <location filename="../Services/TimerService.qml" line="162" />
+        <location filename="../Services/TimerService.qml" line="162"/>
         <source>🔴 Focus: %1 minutes</source>
-        <translation type="finished">🔴 Фокус: %1 мин</translation>
+        <translation>🔴 Фокус: %1 мин</translation>
     </message>
 </context>
 <context>
     <name>TimerWidget</name>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/TimerWidget.qml" line="15" />
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/TimerWidget.qml" line="15"/>
         <source>Pomodoro</source>
-        <translation type="finished">Помидор</translation>
+        <translation>Помидор</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/TimerWidget.qml" line="19" />
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/TimerWidget.qml" line="19"/>
         <source>Stopwatch</source>
-        <translation type="finished">Секундомер</translation>
+        <translation>Секундомер</translation>
     </message>
 </context>
 <context>
     <name>TodoWidget</name>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/TodoWidget.qml" line="22" />
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/TodoWidget.qml" line="22"/>
         <source>Unfinished</source>
-        <translation type="finished">Незавершённое</translation>
+        <translation>Незавершённое</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/TodoWidget.qml" line="26" />
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/TodoWidget.qml" line="26"/>
         <source>Completed</source>
-        <translation type="finished">Завершено</translation>
+        <translation>Завершено</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/TodoWidget.qml" line="111" />
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/TodoWidget.qml" line="111"/>
         <source>Nothing here yet</source>
-        <translation type="finished">Здесь пока пусто</translation>
+        <translation>Здесь пока пусто</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/TodoWidget.qml" line="120" />
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/TodoWidget.qml" line="120"/>
         <source>Completed tasks will appear here</source>
-        <translation type="finished">Завершённые задачи появятся здесь</translation>
+        <translation>Завершённые задачи появятся здесь</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/TodoWidget.qml" line="150" />
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/TodoWidget.qml" line="208" />
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/TodoWidget.qml" line="150"/>
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/TodoWidget.qml" line="208"/>
         <source>Add task</source>
-        <translation type="finished">Добавить задачу</translation>
+        <translation>Добавить задачу</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/TodoWidget.qml" line="223" />
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/TodoWidget.qml" line="223"/>
         <source>Task description</source>
-        <translation type="finished">Описание задачи</translation>
+        <translation>Описание задачи</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/TodoWidget.qml" line="238" />
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/TodoWidget.qml" line="238"/>
         <source>Cancel</source>
-        <translation type="finished">Отмена</translation>
+        <translation>Отмена</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/infoTools/TodoWidget.qml" line="243" />
+        <location filename="../Modules/Sidebars/Dashboard/infoTools/TodoWidget.qml" line="243"/>
         <source>Add</source>
-        <translation type="finished">Добавить</translation>
+        <translation>Добавить</translation>
     </message>
 </context>
 <context>
     <name>ToolsContent</name>
     <message>
-        <location filename="../Modules/Keystone/Tools/ToolsContent.qml" line="21" />
+        <location filename="../Modules/Keystone/Tools/ToolsContent.qml" line="21"/>
         <source>Color picker</source>
-        <translation type="finished">Выбор цвета</translation>
+        <translation>Выбор цвета</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/Tools/ToolsContent.qml" line="26" />
+        <location filename="../Modules/Keystone/Tools/ToolsContent.qml" line="26"/>
         <source>Screen recording</source>
-        <translation type="finished">Запись экрана</translation>
+        <translation>Запись экрана</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/Tools/ToolsContent.qml" line="31" />
+        <location filename="../Modules/Keystone/Tools/ToolsContent.qml" line="31"/>
         <source>Record GIF</source>
-        <translation type="finished">Записать GIF</translation>
+        <translation>Записать GIF</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/Tools/ToolsContent.qml" line="36" />
+        <location filename="../Modules/Keystone/Tools/ToolsContent.qml" line="36"/>
         <source>Record microphone</source>
-        <translation type="finished">Записать микрофон</translation>
+        <translation>Записать микрофон</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/Tools/ToolsContent.qml" line="41" />
+        <location filename="../Modules/Keystone/Tools/ToolsContent.qml" line="41"/>
         <source>Record system audio</source>
-        <translation type="finished">Записать системный звук</translation>
+        <translation>Записать системный звук</translation>
     </message>
 </context>
 <context>
     <name>TrayMenu</name>
     <message>
-        <location filename="../Modules/Bar/Tray/TrayMenu.qml" line="290" />
+        <location filename="../Modules/Bar/Tray/TrayMenu.qml" line="290"/>
         <source>Back</source>
-        <translation type="finished">Назад</translation>
+        <translation>Назад</translation>
     </message>
 </context>
 <context>
     <name>TrayService</name>
     <message>
-        <location filename="../Services/TrayService.qml" line="71" />
+        <location filename="../Services/TrayService.qml" line="71"/>
         <source>Tray</source>
-        <translation type="finished">Трей</translation>
+        <translation>Трей</translation>
     </message>
 </context>
 <context>
     <name>UiPreferences</name>
     <message>
-        <location filename="../Services/UiPreferences.qml" line="785" />
+        <location filename="../Services/UiPreferences.qml" line="785"/>
         <source>Unable to sync the system color scheme</source>
-        <translation type="finished">Не удалось синхронизировать системную цветовую схему</translation>
-    </message>
-</context>
-<context>
-    <name>UserCard</name>
-    <message>
-        <location filename="../Modules/Keystone/DashboardContent/UserCard.qml" line="316" />
-        <source>Up for </source>
-        <translation type="finished">В сети </translation>
+        <translation>Не удалось синхронизировать системную цветовую схему</translation>
     </message>
 </context>
 <context>
     <name>VerticalLyricsLayout</name>
     <message>
-        <location filename="../Modules/Keystone/LyricsContent/VerticalLyricsLayout.qml" line="106" />
+        <location filename="../Modules/Keystone/LyricsContent/VerticalLyricsLayout.qml" line="106"/>
         <source>Loading</source>
-        <translation type="finished">Загрузка</translation>
+        <translation>Загрузка</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/LyricsContent/VerticalLyricsLayout.qml" line="106" />
+        <location filename="../Modules/Keystone/LyricsContent/VerticalLyricsLayout.qml" line="106"/>
         <source>Failed</source>
-        <translation type="finished">Не удалось</translation>
+        <translation>Не удалось</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/LyricsContent/VerticalLyricsLayout.qml" line="107" />
+        <location filename="../Modules/Keystone/LyricsContent/VerticalLyricsLayout.qml" line="107"/>
         <source>Unavailable</source>
-        <translation type="finished">Недоступно</translation>
+        <translation>Недоступно</translation>
     </message>
 </context>
 <context>
     <name>VerticalPillRecordingVisual</name>
     <message>
-        <location filename="../Modules/Keystone/Styles/Recording/VerticalPillRecordingVisual.qml" line="195" />
+        <location filename="../Modules/Keystone/Styles/Recording/VerticalPillRecordingVisual.qml" line="195"/>
         <source>Processing</source>
-        <translation type="finished">Обработка</translation>
+        <translation>Обработка</translation>
     </message>
     <message>
-        <location filename="../Modules/Keystone/Styles/Recording/VerticalPillRecordingVisual.qml" line="247" />
+        <location filename="../Modules/Keystone/Styles/Recording/VerticalPillRecordingVisual.qml" line="247"/>
         <source>Stop recording</source>
-        <translation type="finished">Остановить запись</translation>
+        <translation>Остановить запись</translation>
     </message>
 </context>
 <context>
     <name>Volume</name>
     <message>
-        <location filename="../Modules/Bar/QuickSettings/Volume.qml" line="66" />
+        <location filename="../Modules/Bar/QuickSettings/Volume.qml" line="66"/>
         <source>Volume: muted</source>
-        <translation type="finished">Громкость: выключена</translation>
+        <translation>Громкость: выключена</translation>
     </message>
     <message>
-        <location filename="../Modules/Bar/QuickSettings/Volume.qml" line="66" />
+        <location filename="../Modules/Bar/QuickSettings/Volume.qml" line="66"/>
         <source>Volume: </source>
-        <translation type="finished">Громкость: </translation>
+        <translation>Громкость: </translation>
     </message>
     <message>
-        <location filename="../Modules/Bar/QuickSettings/Volume.qml" line="67" />
+        <location filename="../Modules/Bar/QuickSettings/Volume.qml" line="67"/>
         <source>
 Scroll to adjust; click to open sound</source>
-        <translation type="finished">
+        <translation>
 Колесо — регулировка; клик — открыть звук</translation>
     </message>
     <message>
-        <location filename="../Services/Volume.qml" line="100" />
+        <location filename="../Services/Volume.qml" line="100"/>
         <source>Unknown audio device</source>
-        <translation type="finished">Неизвестное аудиоустройство</translation>
+        <translation>Неизвестное аудиоустройство</translation>
     </message>
     <message>
-        <location filename="../Services/Volume.qml" line="106" />
-        <location filename="../Services/Volume.qml" line="110" />
+        <location filename="../Services/Volume.qml" line="106"/>
+        <location filename="../Services/Volume.qml" line="110"/>
         <source>Unknown application</source>
-        <translation type="finished">Неизвестное приложение</translation>
+        <translation>Неизвестное приложение</translation>
     </message>
     <message>
-        <location filename="../Services/Volume.qml" line="130" />
+        <location filename="../Services/Volume.qml" line="130"/>
         <source>Audio output device</source>
-        <translation type="finished">Устройство вывода звука</translation>
+        <translation>Устройство вывода звука</translation>
     </message>
     <message>
-        <location filename="../Services/Volume.qml" line="130" />
+        <location filename="../Services/Volume.qml" line="130"/>
         <source>Audio input device</source>
-        <translation type="finished">Устройство ввода звука</translation>
+        <translation>Устройство ввода звука</translation>
     </message>
     <message>
-        <location filename="../Services/Volume.qml" line="143" />
+        <location filename="../Services/Volume.qml" line="143"/>
         <source>Headphones</source>
-        <translation type="finished">Наушники</translation>
+        <translation>Наушники</translation>
     </message>
     <message>
-        <location filename="../Services/Volume.qml" line="151" />
+        <location filename="../Services/Volume.qml" line="151"/>
         <source>Speakers</source>
-        <translation type="finished">Колонки</translation>
+        <translation>Колонки</translation>
     </message>
     <message>
-        <location filename="../Services/Volume.qml" line="205" />
+        <location filename="../Services/Volume.qml" line="205"/>
         <source>The selected output device is no longer available</source>
-        <translation type="finished">Выбранное устройство вывода больше не доступно</translation>
+        <translation>Выбранное устройство вывода больше не доступно</translation>
     </message>
     <message>
-        <location filename="../Services/Volume.qml" line="215" />
+        <location filename="../Services/Volume.qml" line="215"/>
         <source>The selected input device is no longer available</source>
-        <translation type="finished">Выбранное устройство ввода больше не доступно</translation>
+        <translation>Выбранное устройство ввода больше не доступно</translation>
     </message>
     <message>
-        <location filename="../Services/Volume.qml" line="224" />
-        <location filename="../Services/Volume.qml" line="239" />
+        <location filename="../Services/Volume.qml" line="224"/>
+        <location filename="../Services/Volume.qml" line="239"/>
         <source>The audio object is no longer available</source>
-        <translation type="finished">Аудиообъект больше не доступен</translation>
+        <translation>Аудиообъект больше не доступен</translation>
     </message>
     <message>
-        <location filename="../Services/Volume.qml" line="228" />
+        <location filename="../Services/Volume.qml" line="228"/>
         <source>Invalid volume value</source>
-        <translation type="finished">Некорректное значение громкости</translation>
+        <translation>Некорректное значение громкости</translation>
     </message>
 </context>
 <context>
     <name>VolumeSlider</name>
     <message>
-        <location filename="../Widgets/audio/VolumeSlider.qml" line="114" />
+        <location filename="../Widgets/audio/VolumeSlider.qml" line="114"/>
         <source>Unmute %1</source>
-        <translation type="finished">Включить звук для %1</translation>
+        <translation>Включить звук для %1</translation>
     </message>
     <message>
-        <location filename="../Widgets/audio/VolumeSlider.qml" line="114" />
+        <location filename="../Widgets/audio/VolumeSlider.qml" line="114"/>
         <source>Mute %1</source>
-        <translation type="finished">Выключить звук для %1</translation>
+        <translation>Выключить звук для %1</translation>
     </message>
     <message>
-        <location filename="../Widgets/audio/VolumeSlider.qml" line="116" />
+        <location filename="../Widgets/audio/VolumeSlider.qml" line="116"/>
         <source>Unmute</source>
-        <translation type="finished">Включить звук</translation>
+        <translation>Включить звук</translation>
     </message>
     <message>
-        <location filename="../Widgets/audio/VolumeSlider.qml" line="116" />
-        <location filename="../Widgets/audio/VolumeSlider.qml" line="129" />
+        <location filename="../Widgets/audio/VolumeSlider.qml" line="116"/>
+        <location filename="../Widgets/audio/VolumeSlider.qml" line="129"/>
         <source>Mute</source>
-        <translation type="finished">Выключить звук</translation>
+        <translation>Выключить звук</translation>
     </message>
     <message>
-        <location filename="../Widgets/audio/VolumeSlider.qml" line="131" />
+        <location filename="../Widgets/audio/VolumeSlider.qml" line="131"/>
         <source>%1 volume</source>
-        <translation type="finished">громкость %1</translation>
+        <translation>громкость %1</translation>
     </message>
 </context>
 <context>
     <name>WallpaperColorPicker</name>
     <message>
-        <location filename="../Modules/ControlCenter/WallpaperColorPicker.qml" line="80" />
+        <location filename="../Modules/ControlCenter/WallpaperColorPicker.qml" line="80"/>
         <source>Wallpaper palette</source>
-        <translation type="finished">Палитра обоев</translation>
+        <translation>Палитра обоев</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/WallpaperColorPicker.qml" line="87" />
+        <location filename="../Modules/ControlCenter/WallpaperColorPicker.qml" line="87"/>
         <source>Close</source>
-        <translation type="finished">Закрыть</translation>
+        <translation>Закрыть</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/WallpaperColorPicker.qml" line="167" />
+        <location filename="../Modules/ControlCenter/WallpaperColorPicker.qml" line="167"/>
         <source>Save</source>
-        <translation type="finished">Сохранить</translation>
+        <translation>Сохранить</translation>
     </message>
 </context>
 <context>
     <name>WallpaperFileBrowser</name>
     <message>
-        <location filename="../Modules/ControlCenter/WallpaperFileBrowser.qml" line="9" />
+        <location filename="../Modules/ControlCenter/WallpaperFileBrowser.qml" line="9"/>
         <source>Select wallpaper or folder</source>
-        <translation type="finished">Выберите обои или папку</translation>
+        <translation>Выберите обои или папку</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/WallpaperFileBrowser.qml" line="10" />
+        <location filename="../Modules/ControlCenter/WallpaperFileBrowser.qml" line="10"/>
         <source>Select an image as wallpaper or a folder as the wallpaper directory</source>
-        <translation type="finished">Выберите изображение для обоев или папку как каталог обоев</translation>
+        <translation>Выберите изображение для обоев или папку как каталог обоев</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/WallpaperFileBrowser.qml" line="12" />
+        <location filename="../Modules/ControlCenter/WallpaperFileBrowser.qml" line="12"/>
         <source>This folder contains no selectable wallpapers</source>
-        <translation type="finished">В этой папке нет обоев для выбора</translation>
+        <translation>В этой папке нет обоев для выбора</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/WallpaperFileBrowser.qml" line="13" />
+        <location filename="../Modules/ControlCenter/WallpaperFileBrowser.qml" line="13"/>
         <source>Select a wallpaper or folder</source>
-        <translation type="finished">Выберите обои или папку</translation>
+        <translation>Выберите обои или папку</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/WallpaperFileBrowser.qml" line="14" />
+        <location filename="../Modules/ControlCenter/WallpaperFileBrowser.qml" line="14"/>
         <source>Apply</source>
-        <translation type="finished">Применить</translation>
+        <translation>Применить</translation>
     </message>
 </context>
 <context>
     <name>WallpaperPage</name>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2059" />
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="323" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2161"/>
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="333"/>
         <source>Desktop wallpaper manager</source>
-        <translation type="finished">Менеджер обоев рабочего стола</translation>
+        <translation>Менеджер обоев рабочего стола</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2060" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2162"/>
         <source>Current wallpaper</source>
-        <translation type="finished">Текущие обои</translation>
+        <translation>Текущие обои</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2061" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2163"/>
         <source>Transition</source>
-        <translation type="finished">Переход</translation>
+        <translation>Переход</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2062" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2164"/>
         <source>Parallax effects</source>
-        <translation type="finished">Эффекты параллакса</translation>
+        <translation>Эффекты параллакса</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2063" />
+        <location filename="../Common/generated/SearchCatalog.js" line="2165"/>
         <source>Overview background</source>
-        <translation type="finished">Фон обзора</translation>
+        <translation>Фон обзора</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="38" />
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="38"/>
         <source>Global</source>
-        <translation type="finished">Глобально</translation>
+        <translation>Глобально</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="240" />
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="250"/>
         <source>Pause</source>
-        <translation type="finished">Пауза</translation>
+        <translation>Пауза</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="240" />
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="250"/>
         <source>Play</source>
-        <translation type="finished">Воспроизвести</translation>
+        <translation>Воспроизвести</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="244" />
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="254"/>
         <source>Reverse</source>
-        <translation type="finished">Обратное</translation>
+        <translation>Обратное</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="248" />
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="258"/>
         <source>Flip</source>
-        <translation type="finished">Отразить</translation>
+        <translation>Отразить</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="270" />
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="280"/>
         <source>Overview integration</source>
-        <translation type="finished">Интеграция обзора</translation>
+        <translation>Интеграция обзора</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="271" />
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="281"/>
         <source>Create or connect backdrop rules and make the global workspace background transparent.</source>
-        <translation type="finished">Создайте или подключите правила фона и сделайте глобальный фон рабочего стола прозрачным.</translation>
+        <translation>Создайте или подключите правила фона и сделайте глобальный фон рабочего стола прозрачным.</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="284" />
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="294"/>
         <source>Overview is already configured outside Clavis</source>
-        <translation type="finished">Обзор уже настроен вне Clavis</translation>
+        <translation>Обзор уже настроен вне Clavis</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="316" />
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="326"/>
         <source>Select an image wallpaper before switching to awww</source>
-        <translation type="finished">Сначала выберите обои-изображение, прежде чем переключаться на awww</translation>
+        <translation>Сначала выберите обои-изображение, прежде чем переключаться на awww</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="319" />
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="329"/>
         <source>The awww or awww-daemon command is missing</source>
-        <translation type="finished">Команда awww или awww-daemon отсутствует</translation>
+        <translation>Команда awww или awww-daemon отсутствует</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="320" />
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="330"/>
         <source>Detecting awww…</source>
-        <translation type="finished">Обнаружение awww…</translation>
+        <translation>Обнаружение awww…</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="376" />
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="386"/>
         <source>No wallpaper selected</source>
-        <translation type="finished">Обои не выбраны</translation>
+        <translation>Обои не выбраны</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="403" />
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="413"/>
         <source>Previous</source>
-        <translation type="finished">Назад</translation>
+        <translation>Назад</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="406" />
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="416"/>
         <source>Random</source>
-        <translation type="finished">Случайные</translation>
+        <translation>Случайные</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="409" />
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="419"/>
         <source>Next</source>
-        <translation type="finished">Далее</translation>
+        <translation>Далее</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="441" />
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="445" />
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="1028" />
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="1032" />
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="459"/>
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="463"/>
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="1057"/>
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="1061"/>
         <source>Per-monitor wallpapers</source>
-        <translation type="finished">Обои для каждого монитора</translation>
+        <translation>Обои для каждого монитора</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="454" />
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="1041" />
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="472"/>
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="1070"/>
         <source>Select output</source>
-        <translation type="finished">Выберите вывод</translation>
+        <translation>Выберите вывод</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="455" />
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="473"/>
         <source>Desktop wallpaper output</source>
-        <translation type="finished">Вывод обоев рабочего стола</translation>
+        <translation>Вывод обоев рабочего стола</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="489" />
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="1049" />
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="507"/>
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="1078"/>
         <source>Transition type</source>
-        <translation type="finished">Тип перехода</translation>
+        <translation>Тип перехода</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="572" />
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="590"/>
         <source>awww FPS</source>
-        <translation type="finished">awww FPS</translation>
+        <translation>awww FPS</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="580" />
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="598"/>
         <source>%1 FPS</source>
-        <translation type="finished">%1 FPS</translation>
+        <translation>%1 FPS</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="596" />
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="614"/>
         <source>awww transition FPS</source>
-        <translation type="finished">awww: FPS перехода</translation>
+        <translation>awww: FPS перехода</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="604" />
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="622"/>
         <source>The none transition does not use FPS.</source>
-        <translation type="finished">Переход «нет» не использует FPS.</translation>
+        <translation>Переход «нет» не использует FPS.</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="604" />
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="622"/>
         <source>Independent FPS is available only with awww.</source>
-        <translation type="finished">Независимый FPS доступен только с awww.</translation>
+        <translation>Независимый FPS доступен только с awww.</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="621" />
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="639"/>
         <source>Transition step</source>
-        <translation type="finished">Шаг перехода</translation>
+        <translation>Шаг перехода</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="629" />
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="647"/>
         <source>Step %1</source>
-        <translation type="finished">Шаг %1</translation>
+        <translation>Шаг %1</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="645" />
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="663"/>
         <source>awww transition step</source>
-        <translation type="finished">awww: шаг перехода</translation>
+        <translation>awww: шаг перехода</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="668" />
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="686"/>
         <source>Transition duration</source>
-        <translation type="finished">Длительность перехода</translation>
+        <translation>Длительность перехода</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="694" />
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="712"/>
         <source>Wallpaper transition duration</source>
-        <translation type="finished">Длительность перехода обоев</translation>
+        <translation>Длительность перехода обоев</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="701" />
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="719"/>
         <source>The current transition does not use duration.</source>
-        <translation type="finished">Текущий переход не использует длительность.</translation>
+        <translation>Текущий переход не использует длительность.</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="719" />
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="737"/>
         <source>Easing curve</source>
-        <translation type="finished">Кривая ускорения</translation>
+        <translation>Кривая ускорения</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="778" />
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="783" />
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="796"/>
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="801"/>
         <source>Edit Bézier curve</source>
-        <translation type="finished">Изменить кривую Bézier</translation>
+        <translation>Изменить кривую Bézier</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="806" />
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="824"/>
         <source>The current transition does not use an easing curve.</source>
-        <translation type="finished">Текущий переход не использует кривую ускорения.</translation>
+        <translation>Текущий переход не использует кривую ускорения.</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="836" />
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="841" />
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="854"/>
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="859"/>
         <source>Vertical parallax</source>
-        <translation type="finished">Вертикальный параллакс</translation>
+        <translation>Вертикальный параллакс</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="849" />
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="866" />
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="867"/>
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="884"/>
         <source>Follow workspaces</source>
-        <translation type="finished">Следовать за рабочими местами</translation>
+        <translation>Следовать за рабочими местами</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="873" />
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="891"/>
         <source>Enable vertical parallax first.</source>
-        <translation type="finished">Сначала включите вертикальный параллакс.</translation>
+        <translation>Сначала включите вертикальный параллакс.</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="881" />
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="886" />
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="899"/>
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="904"/>
         <source>Follow sidebars</source>
-        <translation type="finished">Следовать за боковыми панелями</translation>
+        <translation>Следовать за боковыми панелями</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="894" />
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="899" />
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="912"/>
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="917"/>
         <source>Follow tiled-window focus</source>
-        <translation type="finished">Следовать за фокусом мозаичных окон</translation>
+        <translation>Следовать за фокусом мозаичных окон</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="910" />
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="924" />
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="928"/>
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="942"/>
         <source>Wallpaper scale</source>
-        <translation type="finished">Масштаб обоев</translation>
+        <translation>Масштаб обоев</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="936" />
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="950" />
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="954"/>
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="968"/>
         <source>Horizontal travel columns</source>
-        <translation type="finished">Горизонтальный переход по колонкам</translation>
+        <translation>Горизонтальный переход по колонкам</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="958" />
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="976"/>
         <source>Desktop parallax is available only with Quickshell.</source>
-        <translation type="finished">Параллакс рабочего стола доступен только с Quickshell.</translation>
+        <translation>Параллакс рабочего стола доступен только с Quickshell.</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="1004" />
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="1008" />
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="1033"/>
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="1037"/>
         <source>Enable background</source>
-        <translation type="finished">Включить фон</translation>
+        <translation>Включить фон</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="1016" />
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="1020" />
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="1045"/>
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="1049"/>
         <source>Use desktop wallpaper</source>
-        <translation type="finished">Использовать обои рабочего стола</translation>
+        <translation>Использовать обои рабочего стола</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="1042" />
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="1071"/>
         <source>Overview wallpaper output</source>
-        <translation type="finished">Вывод обоев в обзоре</translation>
+        <translation>Вывод обоев в обзоре</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="1068" />
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="1097"/>
         <source>Image effects</source>
-        <translation type="finished">Эффекты изображения</translation>
+        <translation>Эффекты изображения</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="1076" />
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="1105"/>
         <source>Blur</source>
-        <translation type="finished">Размытие</translation>
+        <translation>Размытие</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="1089" />
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="1118"/>
         <source>Overview blur</source>
-        <translation type="finished">Размытие обзора</translation>
+        <translation>Размытие обзора</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="1100" />
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="1129"/>
         <source>Dim</source>
-        <translation type="finished">Затемнение</translation>
+        <translation>Затемнение</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="1113" />
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="1142"/>
         <source>Overview dimming</source>
-        <translation type="finished">Затемнение обзора</translation>
+        <translation>Затемнение обзора</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="1124" />
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="1153"/>
         <source>Saturation</source>
-        <translation type="finished">Насыщенность</translation>
+        <translation>Насыщенность</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="1137" />
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="1166"/>
         <source>Overview saturation</source>
-        <translation type="finished">Насыщенность обзора</translation>
+        <translation>Насыщенность обзора</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="1148" />
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="1177"/>
         <source>Contrast</source>
-        <translation type="finished">Контраст</translation>
+        <translation>Контраст</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="1161" />
+        <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="1190"/>
         <source>Overview contrast</source>
-        <translation type="finished">Контраст обзора</translation>
+        <translation>Контраст обзора</translation>
     </message>
     <message>
-        <location filename="../Widgets/common/WallpaperActions.qml" line="10" />
+        <location filename="../Widgets/common/WallpaperActions.qml" line="10"/>
         <source>Choose folder</source>
-        <translation type="finished">Выберите папку</translation>
+        <translation>Выберите папку</translation>
     </message>
     <message>
-        <location filename="../Widgets/common/WallpaperActions.qml" line="11" />
+        <location filename="../Widgets/common/WallpaperActions.qml" line="11"/>
         <source>Clear wallpaper</source>
-        <translation type="finished">Очистить обои</translation>
+        <translation>Очистить обои</translation>
     </message>
     <message>
-        <location filename="../Widgets/common/WallpaperActions.qml" line="67" />
+        <location filename="../Widgets/common/WallpaperActions.qml" line="67"/>
         <source>Choose color</source>
-        <translation type="finished">Выберите цвет</translation>
+        <translation>Выберите цвет</translation>
     </message>
     <message>
-        <location filename="../Widgets/common/WallpaperActions.qml" line="67" />
+        <location filename="../Widgets/common/WallpaperActions.qml" line="67"/>
         <source>Color and gradient wallpapers require the Quickshell backend</source>
-        <translation type="finished">Обои с цветом и градиентом требуют бэкенд Quickshell</translation>
+        <translation>Обои с цветом и градиентом требуют бэкенд Quickshell</translation>
     </message>
 </context>
 <context>
     <name>WallpaperPaletteSession</name>
     <message>
-        <location filename="../Services/WallpaperPaletteSession.qml" line="112" />
+        <location filename="../Services/WallpaperPaletteSession.qml" line="112"/>
         <source>Could not save the wallpaper. Try again.</source>
-        <translation type="finished">Не удалось сохранить обои. Попробуйте снова.</translation>
+        <translation>Не удалось сохранить обои. Попробуйте снова.</translation>
     </message>
 </context>
 <context>
     <name>WallpaperService</name>
     <message>
-        <location filename="../Services/WallpaperService.qml" line="53" />
+        <location filename="../Services/WallpaperService.qml" line="53"/>
         <source>Palette wallpaper</source>
-        <translation type="finished">Палитровые обои</translation>
+        <translation>Палитровые обои</translation>
     </message>
     <message>
-        <location filename="../Services/WallpaperService.qml" line="55" />
+        <location filename="../Services/WallpaperService.qml" line="55"/>
         <source>Solid-color wallpaper </source>
-        <translation type="finished">Однотонные обои </translation>
+        <translation>Однотонные обои </translation>
     </message>
     <message>
-        <location filename="../Services/WallpaperService.qml" line="184" />
-        <location filename="../Services/WallpaperService.qml" line="225" />
+        <location filename="../Services/WallpaperService.qml" line="184"/>
+        <location filename="../Services/WallpaperService.qml" line="225"/>
         <source>Global</source>
-        <translation type="finished">Глобально</translation>
+        <translation>Глобально</translation>
     </message>
 </context>
 <context>
     <name>WallpaperTransitionSurface</name>
     <message>
-        <location filename="../Modules/Wallpaper/WallpaperTransitionSurface.qml" line="223" />
+        <location filename="../Modules/Wallpaper/WallpaperTransitionSurface.qml" line="223"/>
         <source>Could not decode wallpaper: </source>
-        <translation type="finished">Не удалось декодировать обои: </translation>
+        <translation>Не удалось декодировать обои: </translation>
     </message>
 </context>
 <context>
     <name>WidgetPanel</name>
     <message>
-        <location filename="../Widgets/common/WidgetPanel.qml" line="33" />
+        <location filename="../Widgets/common/WidgetPanel.qml" line="33"/>
         <source>Back to Quick Settings</source>
-        <translation type="finished">Назад к быстрым настройкам</translation>
+        <translation>Назад к быстрым настройкам</translation>
     </message>
 </context>
 <context>
     <name>WizardHeader</name>
     <message>
-        <location filename="../Modules/ControlCenter/WizardHeader.qml" line="23" />
+        <location filename="../Modules/ControlCenter/WizardHeader.qml" line="23"/>
         <source>Back</source>
-        <translation type="finished">Назад</translation>
+        <translation>Назад</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/WizardHeader.qml" line="56" />
+        <location filename="../Modules/ControlCenter/WizardHeader.qml" line="56"/>
         <source>Close</source>
-        <translation type="finished">Закрыть</translation>
+        <translation>Закрыть</translation>
     </message>
 </context>
 <context>
     <name>Workspaces</name>
     <message>
-        <location filename="../Modules/Bar/Workspaces/Workspaces.qml" line="104" />
+        <location filename="../Modules/Bar/Workspaces/Workspaces.qml" line="104"/>
         <source>Workspace </source>
-        <translation type="finished">Рабочее место </translation>
+        <translation>Рабочее место </translation>
     </message>
     <message>
-        <location filename="../Modules/Bar/Workspaces/Workspaces.qml" line="104" />
+        <location filename="../Modules/Bar/Workspaces/Workspaces.qml" line="104"/>
         <source>
 Windows: </source>
-        <translation type="finished">
+        <translation>
 Окна: </translation>
     </message>
 </context>
 <context>
     <name>ZenPaletteEditor</name>
     <message>
-        <location filename="../Modules/ControlCenter/ZenPaletteEditor.qml" line="34" />
+        <location filename="../Modules/ControlCenter/ZenPaletteEditor.qml" line="34"/>
         <source>Single color</source>
-        <translation type="finished">Один цвет</translation>
+        <translation>Один цвет</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ZenPaletteEditor.qml" line="35" />
+        <location filename="../Modules/ControlCenter/ZenPaletteEditor.qml" line="35"/>
         <source>Complementary</source>
-        <translation type="finished">Дополнительная схема</translation>
+        <translation>Дополнительная схема</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ZenPaletteEditor.qml" line="36" />
-        <location filename="../Modules/ControlCenter/ZenPaletteEditor.qml" line="38" />
+        <location filename="../Modules/ControlCenter/ZenPaletteEditor.qml" line="36"/>
+        <location filename="../Modules/ControlCenter/ZenPaletteEditor.qml" line="38"/>
         <source>Analogous</source>
-        <translation type="finished">Аналоговая схема</translation>
+        <translation>Аналоговая схема</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ZenPaletteEditor.qml" line="37" />
+        <location filename="../Modules/ControlCenter/ZenPaletteEditor.qml" line="37"/>
         <source>Split complementary</source>
-        <translation type="finished">Расщеплённая дополнительная схема</translation>
+        <translation>Расщеплённая дополнительная схема</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ZenPaletteEditor.qml" line="39" />
+        <location filename="../Modules/ControlCenter/ZenPaletteEditor.qml" line="39"/>
         <source>Triadic</source>
-        <translation type="finished">Триадная схема</translation>
+        <translation>Триадная схема</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ZenPaletteEditor.qml" line="144" />
+        <location filename="../Modules/ControlCenter/ZenPaletteEditor.qml" line="144"/>
         <source>Primary color</source>
-        <translation type="finished">Основной цвет</translation>
+        <translation>Основной цвет</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ZenPaletteEditor.qml" line="144" />
+        <location filename="../Modules/ControlCenter/ZenPaletteEditor.qml" line="144"/>
         <source>Color %1</source>
-        <translation type="finished">Цвет %1</translation>
+        <translation>Цвет %1</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ZenPaletteEditor.qml" line="195" />
+        <location filename="../Modules/ControlCenter/ZenPaletteEditor.qml" line="195"/>
         <source>Add color</source>
-        <translation type="finished">Добавить цвет</translation>
+        <translation>Добавить цвет</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ZenPaletteEditor.qml" line="201" />
+        <location filename="../Modules/ControlCenter/ZenPaletteEditor.qml" line="201"/>
         <source>Remove color</source>
-        <translation type="finished">Удалить цвет</translation>
+        <translation>Удалить цвет</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ZenPaletteEditor.qml" line="222" />
+        <location filename="../Modules/ControlCenter/ZenPaletteEditor.qml" line="222"/>
         <source>Previous presets</source>
-        <translation type="finished">Предыдущие пресеты</translation>
+        <translation>Предыдущие пресеты</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ZenPaletteEditor.qml" line="313" />
+        <location filename="../Modules/ControlCenter/ZenPaletteEditor.qml" line="313"/>
         <source>Preset %1</source>
-        <translation type="finished">Пресет %1</translation>
+        <translation>Пресет %1</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ZenPaletteEditor.qml" line="322" />
+        <location filename="../Modules/ControlCenter/ZenPaletteEditor.qml" line="322"/>
         <source>Next presets</source>
-        <translation type="finished">Следующие пресеты</translation>
+        <translation>Следующие пресеты</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ZenPaletteEditor.qml" line="337" />
+        <location filename="../Modules/ControlCenter/ZenPaletteEditor.qml" line="337"/>
         <source>Opacity</source>
-        <translation type="finished">Непрозрачность</translation>
+        <translation>Непрозрачность</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ZenPaletteEditor.qml" line="428" />
+        <location filename="../Modules/ControlCenter/ZenPaletteEditor.qml" line="428"/>
         <source>Opacity: %1%</source>
-        <translation type="finished">Непрозрачность: %1%</translation>
+        <translation>Непрозрачность: %1%</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ZenPaletteEditor.qml" line="436" />
+        <location filename="../Modules/ControlCenter/ZenPaletteEditor.qml" line="436"/>
         <source>Grain</source>
-        <translation type="finished">Зерно</translation>
+        <translation>Зерно</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ZenPaletteEditor.qml" line="540" />
+        <location filename="../Modules/ControlCenter/ZenPaletteEditor.qml" line="540"/>
         <source>Grain: %1%</source>
-        <translation type="finished">Зерно: %1%</translation>
+        <translation>Зерно: %1%</translation>
     </message>
 </context>
 </TS>
