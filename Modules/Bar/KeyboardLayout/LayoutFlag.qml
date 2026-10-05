@@ -1,5 +1,4 @@
 import QtQuick
-import QtQuick.Effects
 import qs.Common
 
 // МОЙ МОДУЛЬ: флаг раскладки клавиатуры, нарисованный прямоугольниками.
@@ -36,12 +35,17 @@ Item {
     implicitWidth: 22
     implicitHeight: 15
 
-    Item {
+    // Рисуется напрямую, без слоя и маски: скрытый слой-источник для маски не
+    // всегда перерисовывался при смене раскладки, и флаг США оставался пустым
+    // («чёрное пятно»). Скругление — радиус 2 у обрезающего прямоугольника.
+    Rectangle {
         id: flagContent
 
         anchors.fill: parent
-        visible: false
-        layer.enabled: true
+        visible: root.drawn
+        radius: 2
+        clip: true
+        color: "transparent"
 
         // Полосатые флаги.
         Repeater {
@@ -50,75 +54,43 @@ Item {
             Rectangle {
                 required property int index
                 required property string modelData
-                readonly property int count: root.stripeFlag.colors.length
+                readonly property int count: root.stripeFlag ? root.stripeFlag.colors.length : 1
 
-                x: root.stripeFlag.horizontal ? 0 : index * flagContent.width / count
-                y: root.stripeFlag.horizontal ? index * flagContent.height / count : 0
-                width: root.stripeFlag.horizontal ? flagContent.width : Math.ceil(flagContent.width / count)
-                height: root.stripeFlag.horizontal ? Math.ceil(flagContent.height / count) : flagContent.height
+                x: root.stripeFlag && !root.stripeFlag.horizontal ? Math.round(index * flagContent.width / count) : 0
+                y: root.stripeFlag && root.stripeFlag.horizontal ? Math.round(index * flagContent.height / count) : 0
+                width: root.stripeFlag && !root.stripeFlag.horizontal ? Math.ceil(flagContent.width / count) :
+                                                                        flagContent.width
+                height: root.stripeFlag && root.stripeFlag.horizontal ? Math.ceil(flagContent.height / count) :
+                                                                        flagContent.height
                 color: modelData
             }
         }
 
-        // США: 13 полос и синий крыж; звёзды при таком размере — точки.
+        // США, упрощённо для 22×15: 7 полос вместо 13 (тонкие полосы сливались
+        // в бурое пятно) и синий крыж без звёзд.
         Item {
             anchors.fill: parent
             visible: root.code === "us"
 
             Repeater {
-                model: 13
+                model: 7
 
                 Rectangle {
                     required property int index
 
-                    y: index * flagContent.height / 13
+                    y: Math.round(index * flagContent.height / 7)
                     width: flagContent.width
-                    height: Math.ceil(flagContent.height / 13)
-                    color: index % 2 === 0 ? "#b22234" : "#ffffff"
+                    height: Math.ceil(flagContent.height / 7)
+                    color: index % 2 === 0 ? "#d22f42" : "#ffffff"
                 }
             }
 
             Rectangle {
-                width: flagContent.width * 0.42
-                height: flagContent.height * 7 / 13
-                color: "#3c3b6e"
-
-                Grid {
-                    anchors.centerIn: parent
-                    columns: 3
-                    rows: 3
-                    spacing: 1.2
-
-                    Repeater {
-                        model: 9
-
-                        Rectangle {
-                            width: 1.2
-                            height: 1.2
-                            radius: 0.6
-                            color: "#ffffff"
-                        }
-                    }
-                }
+                width: Math.round(flagContent.width * 0.45)
+                height: Math.round(flagContent.height * 4 / 7)
+                color: "#3c4a9e"
             }
         }
-    }
-
-    Rectangle {
-        id: flagMask
-
-        anchors.fill: parent
-        radius: 3
-        visible: false
-        layer.enabled: true
-    }
-
-    MultiEffect {
-        anchors.fill: parent
-        visible: root.drawn
-        source: flagContent
-        maskEnabled: true
-        maskSource: flagMask
     }
 
     // Тонкая обводка: белые полосы не сливаются со светлой панелью.
