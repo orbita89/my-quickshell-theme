@@ -27,6 +27,10 @@ import qs.Common
 // Данные раскладываются по часовым корзинам и лежат в
 // ~/.local/state/clavis/process-stats.json, поэтому переживают перезапуск
 // оболочки и перезагрузку.
+//
+// Сбор идёт, только пока виджет «Использование ресурсов» включён в главном
+// меню (active). Выключен — ps не запускается и файл не пишется; история за
+// это время не копится.
 Singleton {
     id: root
 
@@ -37,6 +41,12 @@ Singleton {
     readonly property int bucketMs: 3600000          // корзина — один час
     readonly property int keepBuckets: 24 * 7        // храним неделю
     readonly property int keepAppsPerBucket: 30      // в файл пишем только заметные
+
+    // Виджет включён: вкладка Dashboard и сам виджет (Центр управления →
+    // Keystone → Главное меню). До загрузки настроек не стартуем, чтобы не
+    // опросить систему ни разу у того, кто виджет выключил.
+    readonly property bool active: PersonalizationConfig.loaded && PersonalizationConfig.keystoneDashboardWidgetEnabled(
+                                       "resourceStats")
 
     property bool storeReady: false
     property bool ready: false
@@ -75,7 +85,22 @@ Singleton {
         root.buckets = root.buckets.filter(bucket => bucket.h > oldest);
     }
 
+    // При выключении сохраняем накопленное и забываем прошлую выборку:
+    // иначе первая разница после включения засчитала бы текущему часу всё
+    // время, пока сбор стоял.
+    onActiveChanged: {
+        if (root.active)
+            return;
+        if (root.dirty)
+            root.save();
+        root.previousCpu = {};
+        root.hasPreviousSample = false;
+    }
+
     function applySample(text) {
+        // Выборка, запущенная до выключения, уже не нужна.
+        if (!root.active)
+            return;
         const lines = String(text || "").split("\n");
         const seenCpu = {};
         // Программа вроде браузера живёт в двух десятках процессов; расход
@@ -219,7 +244,7 @@ Singleton {
 
     Timer {
         interval: root.sampleIntervalMs
-        running: true
+        running: root.active
         repeat: true
         triggeredOnStart: true
         onTriggered: {
@@ -232,7 +257,7 @@ Singleton {
     // весит сотни килобайт, и переписывать его каждые 15 секунд незачем.
     Timer {
         interval: 60000
-        running: true
+        running: root.active
         repeat: true
         onTriggered: {
             if (root.dirty)
