@@ -4,7 +4,16 @@ import Quickshell
 import qs.Services
 import qs.Widgets.common
 
-StyledListView {
+// ЛОКАЛЬНАЯ ПРАВКА: колонка групп в прокручиваемой области, а не ListView.
+//
+// У групп разная высота, и ListView угадывал размер ещё не созданных строк,
+// а по мере их появления сдвигал всё содержимое (originY гулял на сотни
+// пикселей). Контроллер колеса (WheelScrollController) в это время докручивал
+// к уже неверной цели: один щелчок уводил список на 600 px вниз, следующий —
+// за верхний край, и казалось, что прокрутка не работает вовсе. Групп немного
+// (по одной на приложение), поэтому все они создаются сразу, высота известна
+// точно и прыгать нечему.
+StyledFlickable {
     id: root
 
     property bool popup: false
@@ -16,24 +25,32 @@ StyledListView {
         root.dragDistance = 0;
     }
 
-    spacing: 3
-    animateMovement: false
+    contentWidth: width
+    contentHeight: groupsColumn.implicitHeight
+    flickableDirection: Flickable.VerticalFlick
 
-    remove: Transition {}
+    Column {
+        id: groupsColumn
 
-    model: ScriptModel {
-        values: root.popup ? NotificationManager.popupAppNameList : NotificationManager.appNameList
-    }
+        width: root.width
+        spacing: 3
 
-    delegate: NotificationGroup {
-        required property int index
-        required property var modelData
+        Repeater {
+            model: ScriptModel {
+                values: root.popup ? NotificationManager.popupAppNameList : NotificationManager.appNameList
+            }
 
-        delegateIndex: index
-        dragHost: root
-        popup: root.popup
-        width: ListView.view.width
-        notificationGroup: root.popup ? NotificationManager.popupGroupsByAppName[modelData] :
-                                        NotificationManager.groupsByAppName[modelData]
+            delegate: NotificationGroup {
+                required property int index
+                required property var modelData
+
+                delegateIndex: index
+                dragHost: root
+                popup: root.popup
+                width: groupsColumn.width
+                notificationGroup: root.popup ? NotificationManager.popupGroupsByAppName[modelData] :
+                                                NotificationManager.groupsByAppName[modelData]
+            }
+        }
     }
 }
