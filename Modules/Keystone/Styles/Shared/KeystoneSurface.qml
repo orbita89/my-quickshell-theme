@@ -114,18 +114,23 @@ Variants {
                 root.showHub = false;
                 return "HUB_CLOSED";
             }
+            // Все вкладки выключены в настройках — открывать нечего.
+            if (!root.hubAvailable)
+                return "HUB_EMPTY";
             closeAllOthers();
             root.showHub = true;
             return "HUB_OPENED";
         }
 
         function dashboard(): string {
-            if (root.showHub && root.hubTabIndex === 0) {
+            if (root.showHub && root.activeHubTabId === "dashboard") {
                 root.showHub = false;
                 return "DASHBOARD_CLOSED";
             }
+            if (!root.hubTabEnabled("dashboard"))
+                return "DASHBOARD_DISABLED";
             closeAllOthers();
-            root.hubTabIndex = 0;
+            root.hubTabId = "dashboard";
             root.showHub = true;
             return "DASHBOARD_OPENED";
         }
@@ -133,12 +138,14 @@ Variants {
         // МОЁ ДОБАВЛЕНИЕ: сразу вкладка «Media» — мини-плеер с обложкой,
         // перемоткой и кнопками. Открывается кликом по волне в панели.
         function media(): string {
-            if (root.showHub && root.hubTabIndex === 1) {
+            if (root.showHub && root.activeHubTabId === "media") {
                 root.showHub = false;
                 return "MEDIA_CLOSED";
             }
+            if (!root.hubTabEnabled("media"))
+                return "MEDIA_DISABLED";
             closeAllOthers();
-            root.hubTabIndex = 1;
+            root.hubTabId = "media";
             root.showHub = true;
             return "MEDIA_OPENED";
         }
@@ -218,20 +225,20 @@ Variants {
                 Shortcut {
                     enabled: root.isHubMode
                     sequence: "Tab"
-                    onActivated: hub.currentIndex = (hub.currentIndex + 1) % 4
+                    onActivated: hub.cycleTab(1)
                 }
 
                 Shortcut {
                     enabled: root.isHubMode
                     sequence: "Shift+Tab"
-                    onActivated: hub.currentIndex = (hub.currentIndex + 3) % 4
+                    onActivated: hub.cycleTab(-1)
                 }
 
                 // Ctrl+V на вкладке Upload ставит в очередь файлы и папки из
                 // буфера обмена — альтернатива перетаскиванию. Только здесь:
                 // на других вкладках вставка ничего не должна делать молча.
                 Shortcut {
-                    enabled: root.isHubMode && root.hubTabIndex === 2
+                    enabled: root.isHubMode && root.activeHubTabId === "upload"
                     // Paste — это несколько сочетаний сразу (Ctrl+V и
                     // Shift+Insert), а `sequence` привязал бы только одно.
                     sequences: [StandardKey.Paste]
@@ -512,15 +519,20 @@ Variants {
                         return;
                     // ЛОКАЛЬНАЯ ПРАВКА: "weather" убран вместе с погодой.
                     // "library" — вкладка Media хаба (полноценный плеер).
+                    // Действие → id вкладки хаба (Common/KeystoneHubRegistry.qml).
                     const tabs = {
-                        dashboard: 0,
-                        library: 1,
-                        upload: 2
+                        dashboard: "dashboard",
+                        library: "media",
+                        upload: "upload"
                     };
                     const isTab = Object.prototype.hasOwnProperty.call(tabs, action);
+                    // Вкладка выключена в настройках — действие ничего не делает,
+                    // как "none".
+                    if (isTab && !root.hubTabEnabled(tabs[action]))
+                        return;
                     const alreadyOpen = action === "lyrics" ? root.showLyrics : action === "tools"
                                                                ? root.showTools : isTab && root.showHub
-                                                                 && root.hubTabIndex === tabs[action];
+                                                                 && root.activeHubTabId === tabs[action];
                     keystoneWindow.closeAllOthers();
                     if (toggle && alreadyOpen)
                         return;
@@ -530,7 +542,7 @@ Variants {
                     else if (action === "tools")
                         root.showTools = true;
                     else if (isTab) {
-                        root.hubTabIndex = tabs[action];
+                        root.hubTabId = tabs[action];
                         root.showHub = true;
                     }
                 }
@@ -555,7 +567,7 @@ Variants {
                     // открыт Upload или пока над островком уже тащат файл,
                     // автозакрытие выключено: островок закрывается крестиком,
                     // Escape или кликом по свёрнутой полоске.
-                    readonly property bool suppressed: (root.isHubMode && root.hubTabIndex === 2)
+                    readonly property bool suppressed: (root.isHubMode && root.activeHubSticky)
                                                        || cloudUploadDropArea.containsDrag
 
                     interval: 450
@@ -646,7 +658,19 @@ Variants {
                 property bool showVolume: false
                 property bool showHub: false
                 property bool showTools: false
-                property int hubTabIndex: 0
+                // id вкладки хаба, которую просили открыть. Если её выключили в
+                // настройках, открывается первая включённая (activeHubTabId).
+                property string hubTabId: "dashboard"
+                readonly property var hubTabs: PersonalizationConfig.keystoneHubTabs
+                readonly property bool hubAvailable: hubTabs.length > 0
+                readonly property string activeHubTabId: hubTabs.indexOf(hubTabId) !== -1 ? hubTabId : (hubTabs[0]
+                                                                                                          || "")
+                readonly property var activeHubEntry: KeystoneHubRegistry.tab(activeHubTabId)
+                // Вкладка, в которую тащат файлы: хаб не закрывается от ухода курсора.
+                readonly property bool activeHubSticky: activeHubEntry !== null && activeHubEntry.stickyOpen === true
+                function hubTabEnabled(tabId) {
+                    return hubTabs.indexOf(tabId) !== -1;
+                }
                 property bool componentReady: false
                 property bool pillStopFusionMinimumActive: false
                 readonly property bool backendFinalizing: RecordingService.isFinalizing
@@ -676,7 +700,7 @@ Variants {
                 property bool isLyricsMode: showLyrics && !contentPresentationActive
                 property bool isToolsMode: !contentPresentationActive && showTools && !isLyricsMode
                 property bool isHubMode: !contentPresentationActive && showHub && !isToolsMode &&
-                                         !isLyricsMode
+                                         !isLyricsMode && hubAvailable
                 property bool isVolumeMode: !contentPresentationActive && showVolume && !expanded &&
                                             !isHubMode && !isToolsMode && !isLyricsMode
                 property bool isNotifMode: !contentPresentationActive && NotificationManager.hasNotifs &&
@@ -706,8 +730,8 @@ Variants {
                     if (keyboardInteractionActive)
                         root.requestKeyboardFocus();
                 }
-                readonly property bool dashboardTabActive: isHubMode && hubTabIndex === 0
-                readonly property bool showDashboardKeyhole: dashboardTabActive
+                readonly property bool dashboardTabActive: isHubMode && activeHubTabId === "dashboard"
+                readonly property bool showDashboardKeyhole: dashboardTabActive && hub.dashboardKeyholeVisible
                 property real pillMorphProgress: 0
                 property real recordingInfoProgress: 0
                 property real recordingActionProgress: 0
@@ -851,14 +875,6 @@ Variants {
                     event.accepted = true;
                 }
                 state: keystoneWindow.edge
-                // HubContent changes its own currentIndex when a tab is
-                // clicked. Keep the two pieces of state synchronized
-                // explicitly; a child assignment would otherwise break a
-                // binding installed on HubContent.currentIndex.
-                onHubTabIndexChanged: {
-                    if (hub.currentIndex !== root.hubTabIndex)
-                        hub.currentIndex = root.hubTabIndex;
-                }
                 clip: true
                 z: 100
                 width: targetW
@@ -1596,14 +1612,8 @@ Variants {
                         player: root.currentPlayer
                         screen: keystoneWindow.screen
                         dragActive: cloudUploadDropArea.containsDrag
-                        onCurrentIndexChanged: {
-                            if (root.hubTabIndex !== currentIndex)
-                                root.hubTabIndex = currentIndex;
-                        }
-                        Component.onCompleted: {
-                            if (currentIndex !== root.hubTabIndex)
-                                currentIndex = root.hubTabIndex;
-                        }
+                        currentTabId: root.activeHubTabId
+                        onTabRequested: tabId => root.hubTabId = tabId
                         onCloseRequested: root.showHub = false
                         onAvatarEditRequested: {
                             root.showHub = false;
@@ -1652,7 +1662,9 @@ Variants {
 
                     anchors.fill: parent
                     z: 20000
+                    // Принимает файлы, только если вкладка Upload включена.
                     enabled: !root.contentPresentationActive && (root.isCollapsedMode || root.isHubMode)
+                             && root.hubTabEnabled("upload")
                     onEntered: drag => {
                         const supportsUrls = drag.hasUrls && drag.formats.indexOf("text/uri-list") >= 0
                               && CloudUploadService.hasLocalUrls(drag.urls);
@@ -1664,7 +1676,7 @@ Variants {
                         root.showLyrics = false;
                         root.showVolume = false;
                         root.showTools = false;
-                        root.hubTabIndex = 2;
+                        root.hubTabId = "upload";
                         root.showHub = true;
                     }
                     onDropped: drop => {
@@ -1693,7 +1705,7 @@ Variants {
                 // Upload действительно открыт — там и нажали вставку.
                 Connections {
                     function onClipboardPasted(addedCount) {
-                        if (root.isHubMode && root.hubTabIndex === 2)
+                        if (root.isHubMode && root.activeHubTabId === "upload")
                             hub.finishCloudUploadDrop(addedCount);
                     }
 
@@ -1945,7 +1957,7 @@ Variants {
         MouseArea {
             id: dismissCatcher
 
-            readonly property bool armed: root.isHubMode && root.hubTabIndex === 2 && !root.isCollapsedMode
+            readonly property bool armed: root.isHubMode && root.activeHubSticky && !root.isCollapsedMode
 
             x: 0
             y: 0

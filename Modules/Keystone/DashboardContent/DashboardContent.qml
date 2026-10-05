@@ -6,6 +6,7 @@ Item {
     id: root
 
     property var screen: null
+    readonly property bool keyholeVisible: true
     readonly property var keyholeGlassItems: keyholeCardCarousel.blurBackgroundItems
     // ЛОКАЛЬНАЯ ПРАВКА: колонка с большими часами убрана — время и так есть
     // в плашке островка. Освободившиеся 184 px (160 колонка + 24 промежуток)
