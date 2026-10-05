@@ -268,6 +268,7 @@ FocusScope {
             return;
 
         root.toggled(root.optionValue(root.availableOptions[root.highlightedIndex]));
+        root.closeMenu();
     }
 
     function handleKey(event) {
@@ -702,7 +703,11 @@ FocusScope {
                             TapHandler {
                                 id: optionTap
 
-                                onTapped: root.toggled(optionChip.componentId)
+                                // ЛОКАЛЬНАЯ ПРАВКА: выбрал пункт — список сворачивается.
+                                onTapped: {
+                                    root.toggled(optionChip.componentId);
+                                    root.closeMenu();
+                                }
                             }
                         }
                     }
