@@ -1348,6 +1348,34 @@
     </message>
 </context>
 <context>
+    <name>BatteryAlertService</name>
+    <message>
+        <location filename="../Services/BatteryAlertService.qml" line="55"/>
+        <source>Plug in the charger now!</source>
+        <translation>Срочно подключите зарядку!</translation>
+    </message>
+    <message>
+        <location filename="../Services/BatteryAlertService.qml" line="55"/>
+        <source>Low battery</source>
+        <translation>Низкий заряд батареи</translation>
+    </message>
+    <message>
+        <location filename="../Services/BatteryAlertService.qml" line="56"/>
+        <source>%1% left — the laptop will shut down soon.</source>
+        <translation>Осталось %1% — ноутбук скоро выключится.</translation>
+    </message>
+    <message>
+        <location filename="../Services/BatteryAlertService.qml" line="57"/>
+        <source>%1% left. Connect the charger.</source>
+        <translation>Осталось %1%. Подключите зарядку.</translation>
+    </message>
+    <message>
+        <location filename="../Services/BatteryAlertService.qml" line="58"/>
+        <source>Battery</source>
+        <translation>Батарея</translation>
+    </message>
+</context>
+<context>
     <name>BezierCurveEditor</name>
     <message>
         <location filename="../Modules/ControlCenter/BezierCurveEditor.qml" line="801"/>

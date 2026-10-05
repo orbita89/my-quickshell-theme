@@ -88,6 +88,8 @@ Item {
         DisplayColor.evaluate();
         LyricsTrackService.initialize();
         SystemIdentityService.initialize();
+        // МОЁ ДОБАВЛЕНИЕ: уведомления о низком заряде (15% и 7%).
+        BatteryAlertService.initialize();
     }
 
     DisplayOverlays {}
