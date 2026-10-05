@@ -43,6 +43,8 @@ Item {
     // Папки для чипов и текущая; приходят от провайдера через LauncherWindow.
     property var fileDirs: []
     property string fileCurrentDir: ""
+    // Путь от вкладки до текущей подпапки («Загрузки / Проекты»), пусто в корне.
+    property string fileBrowseLabel: ""
     signal revealRequested(int index)
     signal fileDirRequested(string path)
     property bool expanded: mode !== "web"
@@ -1078,7 +1080,9 @@ Item {
             anchors.leftMargin: 12
             anchors.verticalCenter: parent.verticalCenter
             horizontalAlignment: Text.AlignRight
-            text: root.fileError ? root.fileError.message : qsTr("Enter — copy file · Ctrl+Enter — show in folder")
+            // В подпапке — где мы; в корне вкладки — подсказка по клавишам.
+            text: root.fileError ? root.fileError.message : root.fileBrowseLabel !== "" ? "← " + root.fileBrowseLabel :
+                                                                                          qsTr("Enter — copy · → open folder · ← back · Ctrl+Enter — show in folder")
             textFormat: Text.PlainText
             elide: Text.ElideRight
             font.family: Fonts.ui

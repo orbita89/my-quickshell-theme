@@ -936,6 +936,22 @@ PanelWindow {
             event.accepted = true;
             return;
         }
+        // МОЁ ДОБАВЛЕНИЕ: «Файлы» — ходить по папкам стрелками, пока строка
+        // поиска пустая (иначе ←/→ двигают курсор в тексте). → заходит в
+        // выбранную папку, ← — на уровень выше, и выделение встаёт на папку,
+        // из которой вышли.
+        if (root.mode === "files" && !root.modeRailExpanded && plainArrow && String(root.query).trim() === ""
+                && (event.key === Qt.Key_Left || event.key === Qt.Key_Right)) {
+            if (event.key === Qt.Key_Right) {
+                fileProvider.enterSelected(root.selectedResultIndex);
+            } else {
+                const from = fileProvider.browseDir;
+                if (fileProvider.goUp())
+                    root.selectedResultId = from;
+            }
+            event.accepted = true;
+            return;
+        }
         const gridNavigation = (root.mode === "wallpapers" || resultsPanel.appGridActive) && !control &&
               !shift;
         if (gridNavigation && event.key === Qt.Key_Left) {
@@ -1218,6 +1234,7 @@ PanelWindow {
             // Чипы выбора папки в шапке режима «Файлы».
             fileDirs: fileProvider.availableDirs
             fileCurrentDir: fileProvider.currentSearchDir
+            fileBrowseLabel: fileProvider.browseLabel
             onFileDirRequested: path => fileProvider.setSearchDir(path)
             loading: root.mode === "files" ? fileProvider.searchState === "loading" : root.clipboardMode
                                              && clipboardProvider.loading

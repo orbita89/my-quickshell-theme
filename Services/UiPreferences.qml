@@ -17,6 +17,14 @@ Singleton {
     property string spotlightAppOrder: "name"
     property string spotlightAppStyle: "list"
     property string spotlightClipboardStyle: "default"
+    // МОЁ ДОБАВЛЕНИЕ: поиск по файлам в Spotlight. Папки — вкладки режима
+    // «Файлы» (Настройки → Общие → Spotlight → Поиск по файлам).
+    readonly property var defaultSpotlightFileDirs: [Paths.homeDir + "/Downloads", Paths.homeDir + "/Documents",
+        Paths.homeDir + "/Pictures", Paths.homeDir]
+    property var spotlightFileDirs: root.defaultSpotlightFileDirs.slice()
+    property bool spotlightFileShowHidden: false
+    // recent — сначала новые (по времени изменения), name — папки, затем по имени.
+    property string spotlightFileSort: "recent"
     property bool dndEnabled: false
     property bool darkMode: false
     property string language: I18nManager.systemLanguage
@@ -105,6 +113,82 @@ Singleton {
             return;
 
         root.spotlightAppStyle = normalized;
+        root.save();
+    }
+
+    function normalizedFileDirs(value) {
+        if (!Array.isArray(value))
+            return root.defaultSpotlightFileDirs.slice();
+        const result = [];
+        for (let index = 0; index < value.length; index += 1) {
+            const path = String(value[index] || "").trim().replace(/\/+$/, "") || "";
+            if (path.startsWith("/") && result.indexOf(path) === -1)
+                result.push(path);
+        }
+        return result;
+    }
+
+    // Подпись папки: «Загрузки», «Документы»… для известных, иначе имя папки.
+    function spotlightFileDirLabel(path) {
+        const home = String(Paths.homeDir).replace(/\/+$/, "");
+        const known = {};
+        known[home] = qsTr("Home");
+        known[home + "/Downloads"] = qsTr("Downloads");
+        known[home + "/Documents"] = qsTr("Documents");
+        known[home + "/Pictures"] = qsTr("Pictures");
+        known[home + "/Videos"] = qsTr("Videos");
+        known[home + "/Music"] = qsTr("Music");
+        known[home + "/Desktop"] = qsTr("Desktop");
+        if (known[path])
+            return known[path];
+        const slash = String(path).lastIndexOf("/");
+        return slash >= 0 ? String(path).slice(slash + 1) : String(path);
+    }
+
+    function addSpotlightFileDir(path) {
+        const next = root.normalizedFileDirs(root.spotlightFileDirs.concat([path]));
+        if (next.length === root.spotlightFileDirs.length)
+            return false;
+        root.spotlightFileDirs = next;
+        root.save();
+        return true;
+    }
+
+    function removeSpotlightFileDir(path) {
+        const next = root.spotlightFileDirs.filter(value => value !== path);
+        if (next.length === root.spotlightFileDirs.length)
+            return false;
+        root.spotlightFileDirs = next;
+        root.save();
+        return true;
+    }
+
+    // Сдвинуть папку на delta позиций (−1 — выше, +1 — ниже).
+    function moveSpotlightFileDir(path, delta) {
+        const next = root.spotlightFileDirs.slice();
+        const index = next.indexOf(path);
+        const target = index + delta;
+        if (index < 0 || target < 0 || target >= next.length)
+            return false;
+        next.splice(index, 1);
+        next.splice(target, 0, path);
+        root.spotlightFileDirs = next;
+        root.save();
+        return true;
+    }
+
+    function setSpotlightFileShowHidden(value) {
+        if (root.spotlightFileShowHidden === !!value)
+            return;
+        root.spotlightFileShowHidden = !!value;
+        root.save();
+    }
+
+    function setSpotlightFileSort(value) {
+        const normalized = root.allowedValue(value, ["recent", "name"], "recent");
+        if (root.spotlightFileSort === normalized)
+            return;
+        root.spotlightFileSort = normalized;
         root.save();
     }
 
@@ -582,6 +666,9 @@ Singleton {
                                              "spotlightAppStyle": root.spotlightAppStyle,
                                              "spotlightAppOrder": root.spotlightAppOrder,
                                              "spotlightClipboardStyle": root.spotlightClipboardStyle,
+                                             "spotlightFileDirs": root.spotlightFileDirs,
+                                             "spotlightFileShowHidden": root.spotlightFileShowHidden,
+                                             "spotlightFileSort": root.spotlightFileSort,
                                              "weatherMapBaseProvider": root.weatherMapBaseProvider,
                                              "weatherMapOverlayProvider": root.weatherMapOverlayProvider,
                                              "systemMonitorGpuId": root.systemMonitorGpuId,
@@ -661,6 +748,9 @@ Singleton {
                 root.spotlightAppOrder = AppOrder.normalizedOrder(parsed.spotlightAppOrder);
                 root.spotlightAppStyle = root.allowedValue(parsed.spotlightAppStyle, ["list", "grid"],
                                                            "list");
+                root.spotlightFileDirs = root.normalizedFileDirs(parsed.spotlightFileDirs);
+                root.spotlightFileShowHidden = parsed.spotlightFileShowHidden === true;
+                root.spotlightFileSort = root.allowedValue(parsed.spotlightFileSort, ["recent", "name"], "recent");
                 root.weatherMapBaseProvider = root.normalizedWeatherMapBaseProvider(
                             parsed.weatherMapBaseProvider);
                 root.weatherMapOverlayProvider = root.normalizedWeatherMapOverlayProvider(

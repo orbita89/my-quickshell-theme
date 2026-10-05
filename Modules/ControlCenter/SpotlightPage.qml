@@ -3,15 +3,19 @@ import QtQuick.Layouts
 import qs.Common
 import qs.Services
 import qs.Widgets.common
+import qs.Modules.FilePicker
 
 StyledFlickable {
     id: root
+
+    property var parentModal: null
 
     function closeChildWindows() {
         appStylePicker.closeMenu();
         appOrderPicker.closeMenu();
         clipboardStylePicker.closeMenu();
         enginePicker.closeMenu();
+        fileDirPicker.dismiss();
     }
 
     Component.onCompleted: ClipboardService.loadHistoryConfig()
@@ -68,7 +72,7 @@ StyledFlickable {
             SettingsRow {
                 Layout.fillWidth: true
                 title: qsTr("Application order")
-                iconName: "sort"
+                iconName: "swap_vert"
                 trailing: SearchSelectMenuField {
                     id: appOrderPicker
                     Layout.preferredWidth: 220
@@ -209,6 +213,126 @@ StyledFlickable {
                 message: ClipboardService.historyConfigError ? ClipboardService.historyConfigError.message :
                                                                ""
             }
+        }
+
+        // МОЁ ДОБАВЛЕНИЕ: поиск по файлам — папки-вкладки, скрытые файлы,
+        // сортировка (UiPreferences.spotlightFile*, читает SpotlightFileProvider).
+        SettingsSection {
+            id: filesSection
+            Layout.fillWidth: true
+            flat: true
+            title: filesAnchor.title
+            SettingsSearchAnchor {
+                id: filesAnchor
+                target: filesSection
+                declaration:
+                    '{"id":"general.spotlight.section.files","route":"general.spotlight","title":"File search","context":"SpotlightPage","icon":"folder","aliases":["files","folders","файлы","папки"]}'
+            }
+            iconName: "folder"
+            supportingText: qsTr("Folders become tabs in Spotlight file mode. Enter or → opens a folder, ← goes back.")
+
+            Repeater {
+                model: UiPreferences.spotlightFileDirs
+
+                SettingsRow {
+                    id: dirRow
+
+                    required property int index
+                    required property string modelData
+
+                    Layout.fillWidth: true
+                    iconName: "folder"
+                    title: UiPreferences.spotlightFileDirLabel(dirRow.modelData)
+                    supportingText: dirRow.modelData
+
+                    trailing: Row {
+                        spacing: 2
+
+                        IconButton {
+                            iconName: "keyboard_arrow_up"
+                            iconSize: Metrics.iconS
+                            enabled: dirRow.index > 0
+                            accessibleName: qsTr("Move up")
+                            onClicked: UiPreferences.moveSpotlightFileDir(dirRow.modelData, -1)
+                        }
+
+                        IconButton {
+                            iconName: "keyboard_arrow_down"
+                            iconSize: Metrics.iconS
+                            enabled: dirRow.index < UiPreferences.spotlightFileDirs.length - 1
+                            accessibleName: qsTr("Move down")
+                            onClicked: UiPreferences.moveSpotlightFileDir(dirRow.modelData, 1)
+                        }
+
+                        IconButton {
+                            iconName: "close"
+                            iconSize: Metrics.iconS
+                            accessibleName: qsTr("Remove %1").arg(dirRow.title)
+                            onClicked: UiPreferences.removeSpotlightFileDir(dirRow.modelData)
+                        }
+                    }
+                }
+            }
+
+            SettingsActionRow {
+                Layout.fillWidth: true
+                iconName: "create_new_folder"
+                text: qsTr("Add folder")
+                description: qsTr("Choose a folder to search in")
+                onClicked: fileDirPicker.openAt(Paths.homeDir)
+            }
+
+            SettingsRow {
+                Layout.fillWidth: true
+                iconName: "visibility"
+                title: qsTr("Hidden files")
+                supportingText: qsTr("Show files and folders whose names start with a dot")
+
+                trailing: StyledSwitch {
+                    checked: UiPreferences.spotlightFileShowHidden
+                    Accessible.name: qsTr("Hidden files")
+                    onToggled: UiPreferences.setSpotlightFileShowHidden(checked)
+                }
+            }
+
+            SettingsRow {
+                Layout.fillWidth: true
+                iconName: "swap_vert"
+                title: qsTr("Sorting")
+
+                trailing: StyledButtonGroup {
+                    model: [({
+                                 "value": "recent",
+                                 "label": qsTr("Newest first")
+                             }), ({
+                                      "value": "name",
+                                      "label": qsTr("By name")
+                                  })]
+                    currentValue: UiPreferences.spotlightFileSort
+                    onValueSelected: value => UiPreferences.setSpotlightFileSort(value)
+                }
+            }
+        }
+    }
+
+    FilePickerWindow {
+        id: fileDirPicker
+
+        parentModal: root.parentModal
+        requiresParentWindow: true
+        selectionMode: FilePickerWindow.Folders
+        allowCurrentFolderSelection: true
+        dialogTitle: qsTr("Add folder")
+        description: qsTr("Spotlight will search in this folder")
+        nameFilters: []
+        windowIconName: "folder_open"
+        emptyStateText: qsTr("This folder is empty")
+        selectionPrompt: qsTr("Choose folder")
+        acceptLabel: qsTr("Choose")
+        formatSummary: qsTr("Choose the current folder or a selected subfolder")
+        onAccepted: function (path, isDirectory) {
+            if (isDirectory)
+                UiPreferences.addSpotlightFileDir(path);
         }
     }
 }

@@ -1941,6 +1941,25 @@ var catalog = {
       "title": "Clipboard"
     },
     {
+      "aliases": [
+        "files",
+        "folders",
+        "файлы",
+        "папки"
+      ],
+      "anchor": true,
+      "context": "SpotlightPage",
+      "icon": "folder",
+      "id": "general.spotlight.section.files",
+      "path": [
+        "general",
+        "spotlight"
+      ],
+      "route": "general.spotlight",
+      "source": "SpotlightPage.qml",
+      "title": "File search"
+    },
+    {
       "aliases": [],
       "anchor": true,
       "context": "ThemePage",
@@ -2173,6 +2192,7 @@ function title(id) {
     case "general.spotlight.section.applications": return qsTranslate("SpotlightPage", "Applications");
     case "general.spotlight.section.web-search": return qsTranslate("SpotlightPage", "Web search");
     case "general.spotlight.section.clipboard": return qsTranslate("SpotlightPage", "Clipboard");
+    case "general.spotlight.section.files": return qsTranslate("SpotlightPage", "File search");
     case "theme.section.matugen-color-scheme": return qsTranslate("ThemePage", "matugen color scheme");
     case "theme.section.super-key-appearance": return qsTranslate("ThemePage", "Super key appearance");
     case "theme.section.lock-screen": return qsTranslate("ThemePage", "Lock screen");

@@ -4,27 +4,27 @@
 <context>
     <name>AccountPage</name>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2115"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2134"/>
         <source>Language</source>
         <translation>Язык</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2116"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2135"/>
         <source>Bluetooth devices</source>
         <translation>Устройства Bluetooth</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2117"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2136"/>
         <source>Keyboard shortcuts</source>
         <translation>Сочетания клавиш</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2118"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2137"/>
         <source>Cloud storage</source>
         <translation>Облачное хранилище</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2119"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2138"/>
         <source>Personalization</source>
         <translation>Персонализация</translation>
     </message>
@@ -387,12 +387,12 @@
 <context>
     <name>AdvancedPage</name>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2120"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2139"/>
         <source>Cloud storage</source>
         <translation>Облачное хранилище</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2121"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2140"/>
         <source>Matugen template generation</source>
         <translation>Генерация шаблона Matugen</translation>
     </message>
@@ -704,12 +704,12 @@
 <context>
     <name>AutostartPage</name>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2122"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2141"/>
         <source>Add application to autostart</source>
         <translation>Добавить приложение в автозапуск</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2123"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2142"/>
         <source>User autostart applications</source>
         <translation>Приложения автозапуска пользователя</translation>
     </message>
@@ -1800,7 +1800,7 @@
 <context>
     <name>BluetoothPairingPage</name>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2124"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2143"/>
         <source>Nearby devices</source>
         <translation>Устройства поблизости</translation>
     </message>
@@ -2517,18 +2517,18 @@ Scroll to adjust</source>
 <context>
     <name>ConnectedDevicesPage</name>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2125"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2144"/>
         <source>Saved devices</source>
         <translation>Сохранённые устройства</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2126"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2145"/>
         <location filename="../Modules/ControlCenter/ConnectedDevicesPage.qml" line="155"/>
         <source>Bluetooth adapter</source>
         <translation>Адаптер Bluetooth</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2127"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2146"/>
         <source>Advanced settings</source>
         <translation>Дополнительные настройки</translation>
     </message>
@@ -2617,32 +2617,32 @@ Scroll to adjust</source>
 <context>
     <name>ControlCenterWindow</name>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2091"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2110"/>
         <source>Account</source>
         <translation>Аккаунт</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2092"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2111"/>
         <source>General</source>
         <translation>Общие</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2093"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2112"/>
         <source>Wallpaper</source>
         <translation>Обои</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2094"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2113"/>
         <source>Theme</source>
         <translation>Тема</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2095"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2114"/>
         <source>Keystone</source>
         <translation>Keystone</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2096"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2115"/>
         <source>Advanced</source>
         <translation>Дополнительно</translation>
     </message>
@@ -3035,22 +3035,22 @@ Scroll to adjust</source>
 <context>
     <name>DefaultAppsPage</name>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2128"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2147"/>
         <source>Internet</source>
         <translation>Интернет</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2129"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2148"/>
         <source>Utilities</source>
         <translation>Утилиты</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2130"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2149"/>
         <source>Documents</source>
         <translation>Документы</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2131"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2150"/>
         <source>Multimedia</source>
         <translation>Мультимедиа</translation>
     </message>
@@ -3435,12 +3435,12 @@ Scroll to adjust</source>
 <context>
     <name>DisplayConfigurationPage</name>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2132"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2151"/>
         <source>Layout</source>
         <translation>Раскладка</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2133"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2152"/>
         <source>Output settings</source>
         <translation>Настройки вывода</translation>
     </message>
@@ -3627,12 +3627,12 @@ Scroll to adjust</source>
 <context>
     <name>DisplaysPage</name>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2111"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2130"/>
         <source>Display configuration</source>
         <translation>Конфигурация дисплеев</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2112"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2131"/>
         <source>Gamma Control</source>
         <translation>Управление гаммой</translation>
     </message>
@@ -3905,17 +3905,17 @@ Scroll to adjust</source>
 <context>
     <name>GammaControlPage</name>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2134"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2153"/>
         <source>Color</source>
         <translation>Цвет</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2135"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2154"/>
         <source>Schedule</source>
         <translation>Расписание</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2136"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2155"/>
         <source>Current status</source>
         <translation>Текущий статус</translation>
     </message>
@@ -4072,12 +4072,12 @@ Scroll to adjust</source>
 <context>
     <name>GeneralBarPage</name>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2137"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2156"/>
         <source>Position</source>
         <translation>Положение</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2138"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2157"/>
         <source>Components</source>
         <translation>Компоненты</translation>
     </message>
@@ -4120,7 +4120,7 @@ Scroll to adjust</source>
 <context>
     <name>GeneralEffectsPage</name>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2139"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2158"/>
         <source>Background</source>
         <translation>Фон</translation>
     </message>
@@ -4165,17 +4165,17 @@ Scroll to adjust</source>
 <context>
     <name>GeneralOverviewPage</name>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2140"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2159"/>
         <source>Interface</source>
         <translation>Интерфейс</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2141"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2160"/>
         <source>System</source>
         <translation>Система</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2142"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2161"/>
         <source>Applications</source>
         <translation>Приложения</translation>
     </message>
@@ -4208,72 +4208,72 @@ Scroll to adjust</source>
 <context>
     <name>GeneralPage</name>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2097"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2116"/>
         <source>Displays</source>
         <translation>Дисплеи</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2098"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2117"/>
         <source>Bar</source>
         <translation>Полоса</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2099"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2118"/>
         <source>Sidebars</source>
         <translation>Боковые панели</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2100"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2119"/>
         <source>Spotlight</source>
         <translation>Spotlight</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2101"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2120"/>
         <source>Transparency and blur</source>
         <translation>Прозрачность и размытие</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2102"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2121"/>
         <source>Mouse &amp; touchpad</source>
         <translation>Мышь и тачпад</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2103"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2122"/>
         <source>Screen &amp; Sleep</source>
         <translation>Экран и сон</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2104"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2123"/>
         <source>Keyboard shortcuts</source>
         <translation>Сочетания клавиш</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2105"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2124"/>
         <source>Language &amp; region</source>
         <translation>Язык и регион</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2106"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2125"/>
         <source>Autostart</source>
         <translation>Автозапуск</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2107"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2126"/>
         <source>Default applications</source>
         <translation>Приложения по умолчанию</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2108"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2127"/>
         <source>Network</source>
         <translation>Сеть</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2109"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2128"/>
         <source>Connected devices</source>
         <translation>Подключённые устройства</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2110"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2129"/>
         <source>Pair new device</source>
         <translation>Сопрячь новое устройство</translation>
     </message>
@@ -4286,22 +4286,22 @@ Scroll to adjust</source>
 <context>
     <name>GeneralSidebarPage</name>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2143"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2162"/>
         <source>Sidebars</source>
         <translation>Боковые панели</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2144"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2163"/>
         <source>Desktop card layout</source>
         <translation>Раскладка карточек рабочего стола</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2145"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2164"/>
         <source>Clock style</source>
         <translation>Стиль часов</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2146"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2165"/>
         <source>System cards</source>
         <translation>Системные карточки</translation>
     </message>
@@ -4617,7 +4617,7 @@ Scroll to adjust</source>
 <context>
     <name>HorizontalClockPage</name>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2147"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2166"/>
         <source>Horizontal clock style</source>
         <translation>Стиль горизонтальных часов</translation>
     </message>
@@ -5030,17 +5030,17 @@ Scroll to adjust</source>
 <context>
     <name>KeystoneHubPage</name>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2148"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2167"/>
         <source>Tabs</source>
         <translation>Вкладки</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2149"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2168"/>
         <source>Dashboard widgets</source>
         <translation>Виджеты Dashboard</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2150"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2169"/>
         <source>Keyhole</source>
         <translation>Замочная скважина</translation>
     </message>
@@ -5102,44 +5102,44 @@ Scroll to adjust</source>
 <context>
     <name>KeystonePage</name>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2113"/>
-        <location filename="../Common/generated/SearchCatalog.js" line="2155"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2132"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2174"/>
         <source>Main menu</source>
         <translation>Главное меню</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2114"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2133"/>
         <location filename="../Modules/ControlCenter/KeystonePage.qml" line="342"/>
         <source>Horizontal clock style</source>
         <translation>Стиль горизонтальных часов</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2151"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2170"/>
         <source>Keystone style</source>
         <translation>Стиль Keystone</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2152"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2171"/>
         <source>Collapsed island</source>
         <translation>Свёрнутый островок</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2153"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2172"/>
         <source>Mouse actions</source>
         <translation>Действия мыши</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2154"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2173"/>
         <source>Keyboard indicators</source>
         <translation>Индикаторы клавиатуры</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2156"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2175"/>
         <source>Horizontal clock</source>
         <translation>Горизонтальные часы</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2157"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2176"/>
         <source>Recording</source>
         <translation>Запись</translation>
     </message>
@@ -5308,17 +5308,17 @@ Scroll to adjust</source>
 <context>
     <name>LanguageAndRegionPage</name>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2158"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2177"/>
         <source>Language</source>
         <translation>Язык</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2159"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2178"/>
         <source>Units</source>
         <translation>Единицы</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2160"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2179"/>
         <source>Time &amp; date</source>
         <translation>Время и дата</translation>
     </message>
@@ -5787,22 +5787,22 @@ we’ll be right back.</source>
 <context>
     <name>MouseTouchpadPage</name>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2161"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2180"/>
         <source>Mouse</source>
         <translation>Мышь</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2162"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2181"/>
         <source>Touchpad</source>
         <translation>Тачпад</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2163"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2182"/>
         <source>Trackpoint</source>
         <translation>Трекпоинт</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2164"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2183"/>
         <source>Pointer behavior</source>
         <translation>Поведение указателя</translation>
     </message>
@@ -6119,23 +6119,23 @@ Click to open network settings</source>
 <context>
     <name>NetworkPage</name>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2165"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2184"/>
         <source>Wired connections</source>
         <translation>Проводные подключения</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2166"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2185"/>
         <location filename="../Modules/ControlCenter/NetworkPage.qml" line="303"/>
         <source>Wi-Fi</source>
         <translation>Wi-Fi</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2167"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2186"/>
         <source>Other settings</source>
         <translation>Другие настройки</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2168"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2187"/>
         <source>Connection information</source>
         <translation>Сведения о подключении</translation>
     </message>
@@ -8597,22 +8597,22 @@ Click to open network settings</source>
 <context>
     <name>PowerAndSleepPage</name>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2169"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2188"/>
         <source>Screen &amp; Display</source>
         <translation>Экран и дисплей</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2170"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2189"/>
         <source>Screen Lock</source>
         <translation>Блокировка экрана</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2171"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2190"/>
         <source>Sleep &amp; Suspend</source>
         <translation>Сон и приостановка</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2172"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2191"/>
         <source>Idle Policy</source>
         <translation>Политика простоя</translation>
     </message>
@@ -9711,222 +9711,222 @@ Right click: Control Center</source>
 <context>
     <name>SpotlightActions</name>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2187"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2207"/>
         <source>Lock screen</source>
         <translation>Экран блокировки</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2188"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2208"/>
         <source>Search</source>
         <translation>Поиск</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2189"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2209"/>
         <source>Web search</source>
         <translation>Веб-поиск</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2190"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2210"/>
         <source>Find files</source>
         <translation>Найти файлы</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2191"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2211"/>
         <source>Applications</source>
         <translation>Приложения</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2192"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2212"/>
         <source>Clipboard history</source>
         <translation>История буфера обмена</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2193"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2213"/>
         <source>Wallpaper picker</source>
         <translation>Выбор обоев</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2194"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2214"/>
         <source>Reset wallpaper</source>
         <translation>Сбросить обои</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2195"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2215"/>
         <source>Previous wallpaper</source>
         <translation>Предыдущие обои</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2196"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2216"/>
         <source>Next wallpaper</source>
         <translation>Следующие обои</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2197"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2217"/>
         <source>Random wallpaper</source>
         <translation>Случайные обои</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2198"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2218"/>
         <source>Close Keystone panels</source>
         <translation>Закрыть панели Keystone</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2199"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2219"/>
         <source>Keystone dashboard</source>
         <translation>Дашборд Keystone</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2200"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2220"/>
         <source>Keystone hub</source>
         <translation>Хаб Keystone</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2201"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2221"/>
         <source>Lyrics</source>
         <translation>Текст песни</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2202"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2222"/>
         <source>Keystone tools</source>
         <translation>Инструменты Keystone</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2203"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2223"/>
         <source>Notifications</source>
         <translation>Уведомления</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2204"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2224"/>
         <source>Quick settings</source>
         <translation>Быстрые настройки</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2205"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2225"/>
         <source>Weather sidebar</source>
         <translation>Панель погоды</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2206"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2226"/>
         <source>Sidebar drawer</source>
         <translation>Выдвижная боковая панель</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2207"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2227"/>
         <source>Shortcut map</source>
         <translation>Карта сочетаний клавиш</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2208"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2228"/>
         <source>Power menu</source>
         <translation>Power menu</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2215"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2235"/>
         <source>Lock the current session</source>
         <translation>Заблокировать текущий сеанс</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2216"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2236"/>
         <source>Open Spotlight Search</source>
         <translation>Открыть поиск Spotlight</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2217"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2237"/>
         <source>Enter Spotlight Web search</source>
         <translation>Введите запрос веб-поиска Spotlight</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2218"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2238"/>
         <source>Open Spotlight Files</source>
         <translation>Открыть «Файлы» Spotlight</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2219"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2239"/>
         <source>Open the application launcher</source>
         <translation>Открыть лаунчер приложений</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2220"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2240"/>
         <source>Open clipboard history</source>
         <translation>Открыть историю буфера обмена</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2221"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2241"/>
         <source>Browse and apply wallpapers</source>
         <translation>Обзор и применение обоев</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2222"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2242"/>
         <source>Clear the global wallpaper selection</source>
         <translation>Очистить глобальный выбор обоев</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2223"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2243"/>
         <source>Apply the previous wallpaper</source>
         <translation>Применить предыдущие обои</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2224"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2244"/>
         <source>Apply the next wallpaper</source>
         <translation>Применить следующие обои</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2225"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2245"/>
         <source>Apply a random wallpaper</source>
         <translation>Применить случайные обои</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2226"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2246"/>
         <source>Dismiss open Keystone panels</source>
         <translation>Закрыть открытые панели Keystone</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2227"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2247"/>
         <source>Toggle the Keystone dashboard</source>
         <translation>Переключить дашборд Keystone</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2228"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2248"/>
         <source>Toggle the Keystone hub</source>
         <translation>Переключить хаб Keystone</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2229"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2249"/>
         <source>Toggle Keystone lyrics</source>
         <translation>Переключить текст песни Keystone</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2230"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2250"/>
         <source>Toggle the Keystone tools panel</source>
         <translation>Переключить панель инструментов Keystone</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2231"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2251"/>
         <source>Open the notifications sidebar</source>
         <translation>Открыть боковую панель уведомлений</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2232"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2252"/>
         <source>Open the Quick settings sidebar</source>
         <translation>Открыть боковую панель быстрых настроек</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2233"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2253"/>
         <source>Toggle the weather sidebar</source>
         <translation>Переключить панель погоды</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2234"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2254"/>
         <source>Toggle the sidebar drawer</source>
         <translation>Переключить выдвижную боковую панель</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2235"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2255"/>
         <source>Show keyboard shortcuts</source>
         <translation>Показать сочетания клавиш</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2236"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2256"/>
         <source>Choose a session or power action</source>
         <translation>Выберите сеанс или действие питания</translation>
     </message>
@@ -10314,32 +10314,17 @@ Right click: Control Center</source>
 <context>
     <name>SpotlightFileProvider</name>
     <message>
-        <location filename="../Modules/Launcher/SpotlightFileProvider.qml" line="40"/>
-        <source>Downloads</source>
-        <translation>Загрузки</translation>
+        <location filename="../Modules/Launcher/SpotlightFileProvider.qml" line="229"/>
+        <source>Folder</source>
+        <translation>Папка</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightFileProvider.qml" line="44"/>
-        <source>Documents</source>
-        <translation>Документы</translation>
-    </message>
-    <message>
-        <location filename="../Modules/Launcher/SpotlightFileProvider.qml" line="48"/>
-        <source>Pictures</source>
-        <translation>Изображения</translation>
-    </message>
-    <message>
-        <location filename="../Modules/Launcher/SpotlightFileProvider.qml" line="52"/>
-        <source>Home</source>
-        <translation>Дом</translation>
-    </message>
-    <message>
-        <location filename="../Modules/Launcher/SpotlightFileProvider.qml" line="286"/>
+        <location filename="../Modules/Launcher/SpotlightFileProvider.qml" line="421"/>
         <source>Search failed (code %1)</source>
         <translation>Поиск не удался (код %1)</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightFileProvider.qml" line="297"/>
+        <location filename="../Modules/Launcher/SpotlightFileProvider.qml" line="432"/>
         <source>Could not complete the action</source>
         <translation>Не удалось выполнить действие</translation>
     </message>
@@ -10347,191 +10332,278 @@ Right click: Control Center</source>
 <context>
     <name>SpotlightPage</name>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2173"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2192"/>
         <source>Applications</source>
         <translation>Приложения</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2174"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2193"/>
         <source>Web search</source>
         <translation>Веб-поиск</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2175"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2194"/>
         <source>Clipboard</source>
         <translation>Буфер обмена</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="45"/>
-        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="165"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2195"/>
+        <source>File search</source>
+        <translation>Поиск по файлам</translation>
+    </message>
+    <message>
+        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="49"/>
+        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="169"/>
         <source>Layout</source>
         <translation>Раскладка</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="55"/>
+        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="59"/>
         <source>List</source>
         <translation>Список</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="59"/>
+        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="63"/>
         <source>Grid</source>
         <translation>Сетка</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="64"/>
+        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="68"/>
         <source>Application layout</source>
         <translation>Раскладка приложений</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="70"/>
-        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="95"/>
+        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="74"/>
+        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="99"/>
         <source>Application order</source>
         <translation>Порядок приложений</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="78"/>
+        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="82"/>
         <source>Smart</source>
         <translation>Умный</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="82"/>
+        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="86"/>
         <source>Most used</source>
         <translation>Чаще используемые</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="86"/>
+        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="90"/>
         <source>Recently used</source>
         <translation>Недавно использованные</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="90"/>
+        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="94"/>
         <source>Name</source>
         <translation>Имя</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="116"/>
-        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="129"/>
+        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="120"/>
+        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="133"/>
         <source>Search engine</source>
         <translation>Поисковая система</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="173"/>
+        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="177"/>
         <source>Default</source>
         <translation>По умолчанию</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="177"/>
+        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="181"/>
         <source>Details</source>
         <translation>Сведения</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="182"/>
+        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="186"/>
         <source>Clipboard layout</source>
         <translation>Раскладка буфера обмена</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="189"/>
-        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="200"/>
+        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="193"/>
+        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="204"/>
         <source>History limit</source>
         <translation>Лимит истории</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="190"/>
+        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="194"/>
         <source>Oldest items are removed when new content is saved.</source>
         <translation>Старые элементы удаляются при сохранении нового содержимого.</translation>
+    </message>
+    <message>
+        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="232"/>
+        <source>Folders become tabs in Spotlight file mode. Enter or → opens a folder, ← goes back.</source>
+        <translation>Папки — это вкладки режима «Файлы» в Spotlight. Enter или → открывает папку, ← — назад.</translation>
+    </message>
+    <message>
+        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="255"/>
+        <source>Move up</source>
+        <translation>Выше</translation>
+    </message>
+    <message>
+        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="263"/>
+        <source>Move down</source>
+        <translation>Ниже</translation>
+    </message>
+    <message>
+        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="270"/>
+        <source>Remove %1</source>
+        <translation>Убрать «%1»</translation>
+    </message>
+    <message>
+        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="280"/>
+        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="325"/>
+        <source>Add folder</source>
+        <translation>Добавить папку</translation>
+    </message>
+    <message>
+        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="281"/>
+        <source>Choose a folder to search in</source>
+        <translation>Выберите папку для поиска</translation>
+    </message>
+    <message>
+        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="288"/>
+        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="293"/>
+        <source>Hidden files</source>
+        <translation>Скрытые файлы</translation>
+    </message>
+    <message>
+        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="289"/>
+        <source>Show files and folders whose names start with a dot</source>
+        <translation>Показывать файлы и папки, имена которых начинаются с точки</translation>
+    </message>
+    <message>
+        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="301"/>
+        <source>Sorting</source>
+        <translation>Сортировка</translation>
+    </message>
+    <message>
+        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="306"/>
+        <source>Newest first</source>
+        <translation>Сначала новые</translation>
+    </message>
+    <message>
+        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="309"/>
+        <source>By name</source>
+        <translation>По имени</translation>
+    </message>
+    <message>
+        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="326"/>
+        <source>Spotlight will search in this folder</source>
+        <translation>Spotlight будет искать в этой папке</translation>
+    </message>
+    <message>
+        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="329"/>
+        <source>This folder is empty</source>
+        <translation>Эта папка пуста</translation>
+    </message>
+    <message>
+        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="330"/>
+        <source>Choose folder</source>
+        <translation>Выберите папку</translation>
+    </message>
+    <message>
+        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="331"/>
+        <source>Choose</source>
+        <translation>Выбрать</translation>
+    </message>
+    <message>
+        <location filename="../Modules/ControlCenter/SpotlightPage.qml" line="332"/>
+        <source>Choose the current folder or a selected subfolder</source>
+        <translation>Выберите текущую папку или выбранную подпапку</translation>
     </message>
 </context>
 <context>
     <name>SpotlightResultsPanel</name>
     <message>
-        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="442"/>
+        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="444"/>
         <source>Open</source>
         <translation>Открыть</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="446"/>
+        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="448"/>
         <source>Show in file manager</source>
         <translation>Показать в файловом менеджере</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="680"/>
+        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="682"/>
         <source>wl-copy is missing: restore is unavailable</source>
         <translation>wl-copy отсутствует: восстановление недоступно</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="682"/>
+        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="684"/>
         <source>Clipboard history</source>
         <translation>История буфера обмена</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="697"/>
-        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="1168"/>
+        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="699"/>
+        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="1172"/>
         <source>Clear</source>
         <translation>Очистить</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="926"/>
+        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="928"/>
         <source>Delete clipboard entry</source>
         <translation>Удалить запись буфера обмена</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="959"/>
+        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="961"/>
         <source>Copied</source>
         <translation>Скопировано</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="959"/>
+        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="961"/>
         <source>Copy failed</source>
         <translation>Не удалось скопировать</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="1081"/>
-        <source>Enter — copy file · Ctrl+Enter — show in folder</source>
-        <translation>Enter — скопировать файл · Ctrl+Enter — показать в папке</translation>
+        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="1085"/>
+        <source>Enter — copy · → open folder · ← back · Ctrl+Enter — show in folder</source>
+        <translation>Enter — копировать · → открыть папку · ← назад · Ctrl+Enter — показать в папке</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="1120"/>
+        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="1124"/>
         <source>Searching…</source>
         <translation>Поиск…</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="1124"/>
+        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="1128"/>
         <source>Search files and folders</source>
         <translation>Поиск файлов и папок</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="1127"/>
+        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="1131"/>
         <source>Search stopped before completion — refine your search</source>
         <translation>Поиск остановлен до завершения — уточните запрос</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="1128"/>
-        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="1133"/>
+        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="1132"/>
+        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="1137"/>
         <source>No matching results</source>
         <translation>Нет подходящих результатов</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="1129"/>
+        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="1133"/>
         <source>Reading…</source>
         <translation>Чтение…</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="1132"/>
+        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="1136"/>
         <source>Current provider is unavailable</source>
         <translation>Текущий провайдер недоступен</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="1148"/>
+        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="1152"/>
         <source>Clear clipboard history?</source>
         <translation>Очистить историю буфера обмена?</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="1149"/>
+        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="1153"/>
         <source>This clears all clipboard history in cliphist and cannot be undone.</source>
         <translation>Это очистит всю историю буфера обмена в cliphist; отменить нельзя.</translation>
     </message>
     <message>
-        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="1162"/>
+        <location filename="../Modules/Launcher/SpotlightResultsPanel.qml" line="1166"/>
         <source>Cancel</source>
         <translation>Отмена</translation>
     </message>
@@ -11899,33 +11971,33 @@ detected</source>
 <context>
     <name>ThemePage</name>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2176"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2196"/>
         <source>matugen color scheme</source>
         <translation>цветовая схема matugen</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2177"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2197"/>
         <source>Super key appearance</source>
         <translation>Вид клавиши Super</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2178"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2198"/>
         <source>Lock screen</source>
         <translation>Экран блокировки</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2179"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2199"/>
         <source>Cursor theme</source>
         <translation>Тема курсора</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2180"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2200"/>
         <location filename="../Modules/ControlCenter/ThemePage.qml" line="663"/>
         <source>Icon theme</source>
         <translation>Тема значков</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2181"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2201"/>
         <source>Fonts</source>
         <translation>Шрифты</translation>
     </message>
@@ -12241,7 +12313,42 @@ detected</source>
 <context>
     <name>UiPreferences</name>
     <message>
-        <location filename="../Services/UiPreferences.qml" line="785"/>
+        <location filename="../Services/UiPreferences.qml" line="135"/>
+        <source>Home</source>
+        <translation>Дом</translation>
+    </message>
+    <message>
+        <location filename="../Services/UiPreferences.qml" line="136"/>
+        <source>Downloads</source>
+        <translation>Загрузки</translation>
+    </message>
+    <message>
+        <location filename="../Services/UiPreferences.qml" line="137"/>
+        <source>Documents</source>
+        <translation>Документы</translation>
+    </message>
+    <message>
+        <location filename="../Services/UiPreferences.qml" line="138"/>
+        <source>Pictures</source>
+        <translation>Изображения</translation>
+    </message>
+    <message>
+        <location filename="../Services/UiPreferences.qml" line="139"/>
+        <source>Videos</source>
+        <translation>Видео</translation>
+    </message>
+    <message>
+        <location filename="../Services/UiPreferences.qml" line="140"/>
+        <source>Music</source>
+        <translation>Музыка</translation>
+    </message>
+    <message>
+        <location filename="../Services/UiPreferences.qml" line="141"/>
+        <source>Desktop</source>
+        <translation>Рабочий стол</translation>
+    </message>
+    <message>
+        <location filename="../Services/UiPreferences.qml" line="875"/>
         <source>Unable to sync the system color scheme</source>
         <translation>Не удалось синхронизировать системную цветовую схему</translation>
     </message>
@@ -12427,28 +12534,28 @@ Scroll to adjust; click to open sound</source>
 <context>
     <name>WallpaperPage</name>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2182"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2202"/>
         <location filename="../Modules/ControlCenter/WallpaperPage.qml" line="333"/>
         <source>Desktop wallpaper manager</source>
         <translation>Менеджер обоев рабочего стола</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2183"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2203"/>
         <source>Current wallpaper</source>
         <translation>Текущие обои</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2184"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2204"/>
         <source>Transition</source>
         <translation>Переход</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2185"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2205"/>
         <source>Parallax effects</source>
         <translation>Эффекты параллакса</translation>
     </message>
     <message>
-        <location filename="../Common/generated/SearchCatalog.js" line="2186"/>
+        <location filename="../Common/generated/SearchCatalog.js" line="2206"/>
         <source>Overview background</source>
         <translation>Фон обзора</translation>
     </message>
