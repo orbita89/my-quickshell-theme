@@ -378,7 +378,7 @@ Singleton {
     property string keystoneDashboardKeyholeSide: "right"
     property string barPosition: "top"
     readonly property var barComponentIds: ["workspaces", "information", "activeWindow", "media", "tray",
-        "systemMonitor", "keyboardLayout", "quickSettings"]
+        "systemMonitor", "keyboardLayout", "clock", "quickSettings"]
     readonly property var defaultBarLeadingComponents: ["workspaces", "information", "activeWindow"]
     readonly property var defaultBarTrailingComponents: ["tray", "systemMonitor", "quickSettings"]
     readonly property var barComponentOptions: [({
@@ -415,7 +415,12 @@ Singleton {
                                                                                         "label": qsTr(
                                                                                                      "Keyboard layout"),
                                                                                         "icon": "keyboard"
-                                                                                    })]
+                                                                                    }), ({
+                                                                                             "value": "clock",
+                                                                                             "label": qsTr(
+                                                                                                          "Clock and date"),
+                                                                                             "icon": "schedule"
+                                                                                         })]
     readonly property var quickSettingsComponentIds: ["network", "bluetooth", "brightness", "volume",
         "microphone", "battery", "settings", "power"]
     readonly property var defaultQuickSettingsComponents: root.quickSettingsComponentIds.slice()

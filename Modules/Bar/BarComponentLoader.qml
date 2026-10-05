@@ -7,6 +7,7 @@ import qs.Modules.Bar.SysMonitor
 import qs.Modules.Bar.Media
 import qs.Modules.Bar.QuickSettings
 import qs.Modules.Bar.KeyboardLayout
+import qs.Modules.Bar.Clock
 
 Loader {
     id: root
@@ -39,6 +40,8 @@ Loader {
             return quickSettingsComponent;
         case "keyboardLayout":
             return keyboardLayoutComponent;
+        case "clock":
+            return clockComponent;
         default:
             return null;
         }
@@ -97,6 +100,15 @@ Loader {
 
         SysMonitor {
             ownerId: "bar-sysmonitor:" + root.screenName
+            vertical: root.vertical
+        }
+    }
+
+    // МОЁ ДОБАВЛЕНИЕ: часы и дата.
+    Component {
+        id: clockComponent
+
+        BarClock {
             vertical: root.vertical
         }
     }

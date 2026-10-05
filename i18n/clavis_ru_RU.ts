@@ -8192,82 +8192,87 @@ Click to open network settings</source>
         <translation>Раскладка клавиатуры</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="424"/>
+        <location filename="../Services/PersonalizationConfig.qml" line="420"/>
+        <source>Clock and date</source>
+        <translation>Часы и дата</translation>
+    </message>
+    <message>
+        <location filename="../Services/PersonalizationConfig.qml" line="429"/>
         <source>Network</source>
         <translation>Сеть</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="428"/>
+        <location filename="../Services/PersonalizationConfig.qml" line="433"/>
         <source>Bluetooth</source>
         <translation>Bluetooth</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="432"/>
+        <location filename="../Services/PersonalizationConfig.qml" line="437"/>
         <source>Brightness</source>
         <translation>Яркость</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="436"/>
+        <location filename="../Services/PersonalizationConfig.qml" line="441"/>
         <source>Volume</source>
         <translation>Громкость</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="440"/>
+        <location filename="../Services/PersonalizationConfig.qml" line="445"/>
         <source>Microphone</source>
         <translation>Микрофон</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="444"/>
+        <location filename="../Services/PersonalizationConfig.qml" line="449"/>
         <source>Battery</source>
         <translation>Батарея</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="449"/>
+        <location filename="../Services/PersonalizationConfig.qml" line="454"/>
         <source>Settings</source>
         <translation>Настройки</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="454"/>
+        <location filename="../Services/PersonalizationConfig.qml" line="459"/>
         <source>Power</source>
         <translation>Питание</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="481"/>
+        <location filename="../Services/PersonalizationConfig.qml" line="486"/>
         <source>Do not open</source>
         <translation>Не открывать</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="486"/>
+        <location filename="../Services/PersonalizationConfig.qml" line="491"/>
         <source>Main menu (last tab)</source>
         <translation>Главное меню (последняя вкладка)</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="490"/>
+        <location filename="../Services/PersonalizationConfig.qml" line="495"/>
         <source>Lyrics</source>
         <translation>Текст песни</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="494"/>
+        <location filename="../Services/PersonalizationConfig.qml" line="499"/>
         <source>Dashboard</source>
         <translation>Dashboard</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="498"/>
+        <location filename="../Services/PersonalizationConfig.qml" line="503"/>
         <source>Media library</source>
         <translation>Media library</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="502"/>
+        <location filename="../Services/PersonalizationConfig.qml" line="507"/>
         <source>Upload</source>
         <translation>Upload</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="506"/>
+        <location filename="../Services/PersonalizationConfig.qml" line="511"/>
         <source>Tools</source>
         <translation>Инструменты</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="513"/>
+        <location filename="../Services/PersonalizationConfig.qml" line="518"/>
         <source>Peak</source>
         <translation>Пик</translation>
     </message>
@@ -9693,12 +9698,12 @@ Right click: Control Center</source>
 <context>
     <name>SortableMultiSelectField</name>
     <message>
-        <location filename="../Widgets/common/SortableMultiSelectField.qml" line="538"/>
+        <location filename="../Widgets/common/SortableMultiSelectField.qml" line="470"/>
         <source>No components selected</source>
         <translation>Компоненты не выбраны</translation>
     </message>
     <message>
-        <location filename="../Widgets/common/SortableMultiSelectField.qml" line="714"/>
+        <location filename="../Widgets/common/SortableMultiSelectField.qml" line="665"/>
         <source>All widgets are in use</source>
         <translation>Все виджеты уже используются</translation>
     </message>
