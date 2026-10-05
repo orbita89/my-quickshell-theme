@@ -452,17 +452,6 @@ StyledFlickable {
         y: 28
         spacing: 30
 
-        NiriSetupPrompt {
-            Layout.fillWidth: true
-            title: qsTr("Cursor integration")
-            description: qsTr("Create or connect the Clavis cursor configuration.")
-            integrationState: NiriConfigService.state("cursor")
-            busy: NiriConfigService.busy && NiriConfigService.activeFeature === "cursor"
-            blocked: NiriConfigService.busy
-            error: NiriConfigService.error
-            onSetupRequested: NiriConfigService.setup("cursor")
-        }
-
         RowLayout {
             Layout.fillWidth: true
             spacing: 16
@@ -595,48 +584,67 @@ StyledFlickable {
             }
             iconName: "mouse"
 
-            CursorThemeSelect {
-                enabled: NiriConfigService.ready("cursor")
-                cursorThemes: ThemeService.availableCursorThemes
-                currentCursorTheme: PersonalizationConfig.cursorTheme
-                onAccepted: value => ThemeService.setCursorTheme(value)
-            }
-
-            InlineStatusBanner {
+            // ЛОКАЛЬНАЯ ПРАВКА: подключение интеграции стоит прямо в разделе
+            // курсора. Раньше карточка была в самом верху страницы, а элементы
+            // ниже выглядели обычными, хотя были выключены, — казалось, что
+            // курсор «не работает вообще».
+            NiriSetupPrompt {
                 Layout.fillWidth: true
-                visible: ThemeService.cursorLastError !== ""
-                tone: "error"
-                message: ThemeService.cursorLastError
+                title: qsTr("Cursor integration")
+                description: qsTr("Create or connect the Clavis cursor configuration.")
+                integrationState: NiriConfigService.state("cursor")
+                busy: NiriConfigService.busy && NiriConfigService.activeFeature === "cursor"
+                blocked: NiriConfigService.busy
+                error: NiriConfigService.error
+                onSetupRequested: NiriConfigService.setup("cursor")
             }
 
-            SliderSettingRow {
+            // Пока интеграция не подключена, настройки некуда записать.
+            ColumnLayout {
+                Layout.fillWidth: true
+                spacing: 10
                 enabled: NiriConfigService.ready("cursor")
-                title: qsTr("Cursor size")
-                from: 12
-                to: 128
-                stepSize: 1
-                suffix: qsTr("pixels")
-                value: PersonalizationConfig.cursorSize
-                onMoved: value => ThemeService.setCursorSize(Math.round(value))
-            }
+                opacity: enabled ? 1 : 0.45
 
-            ToggleSettingRow {
-                enabled: NiriConfigService.ready("cursor")
-                title: qsTr("Hide while typing")
-                checked: PersonalizationConfig.cursorHideWhenTyping
-                onToggled: checked => ThemeService.setCursorHideWhenTyping(checked)
-            }
+                CursorThemeSelect {
+                    cursorThemes: ThemeService.availableCursorThemes
+                    currentCursorTheme: PersonalizationConfig.cursorTheme
+                    onAccepted: value => ThemeService.setCursorTheme(value)
+                }
 
-            SliderSettingRow {
-                enabled: NiriConfigService.ready("cursor")
-                title: qsTr("Hide after timeout")
-                description: qsTr("Hide the cursor after inactivity; 0 disables this")
-                from: 0
-                to: 5000
-                stepSize: 100
-                suffix: qsTr("milliseconds")
-                value: PersonalizationConfig.cursorHideAfterInactiveMs
-                onMoved: value => ThemeService.setCursorHideAfterInactiveMs(Math.round(value))
+                InlineStatusBanner {
+                    Layout.fillWidth: true
+                    visible: ThemeService.cursorLastError !== ""
+                    tone: "error"
+                    message: ThemeService.cursorLastError
+                }
+
+                SliderSettingRow {
+                    title: qsTr("Cursor size")
+                    from: 12
+                    to: 128
+                    stepSize: 1
+                    suffix: qsTr("pixels")
+                    value: PersonalizationConfig.cursorSize
+                    onMoved: value => ThemeService.setCursorSize(Math.round(value))
+                }
+
+                ToggleSettingRow {
+                    title: qsTr("Hide while typing")
+                    checked: PersonalizationConfig.cursorHideWhenTyping
+                    onToggled: checked => ThemeService.setCursorHideWhenTyping(checked)
+                }
+
+                SliderSettingRow {
+                    title: qsTr("Hide after timeout")
+                    description: qsTr("Hide the cursor after inactivity; 0 disables this")
+                    from: 0
+                    to: 5000
+                    stepSize: 100
+                    suffix: qsTr("milliseconds")
+                    value: PersonalizationConfig.cursorHideAfterInactiveMs
+                    onMoved: value => ThemeService.setCursorHideAfterInactiveMs(Math.round(value))
+                }
             }
         }
 
