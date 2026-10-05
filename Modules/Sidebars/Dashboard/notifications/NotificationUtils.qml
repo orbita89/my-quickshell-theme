@@ -1,4 +1,5 @@
 import QtQuick
+import qs.Services
 
 QtObject {
     function getFriendlyNotifTimeString(timestamp, currentTime) {
@@ -25,7 +26,8 @@ QtObject {
         return Qt.formatDateTime(messageTime, "MMMM dd");
     }
 
+    // Без картинок и без ссылок: см. NotificationManager.displayBody.
     function processNotificationBody(body) {
-        return (body || "").replace(/<img\b[^>]*>/gi, "");
+        return NotificationManager.displayBody(body);
     }
 }

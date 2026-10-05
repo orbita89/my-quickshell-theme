@@ -95,7 +95,7 @@ MouseArea {
             if (mouse.button === Qt.MiddleButton)
                 root.destroyWithAnimation();
             else if (mouse.button === Qt.LeftButton && root.notificationCount === 1)
-                NotificationManager.invokeDefaultAction(root.notifications[0].notificationId);
+                NotificationManager.activateNotification(root.notifications[0].notificationId);
         }
         onDraggingChanged: {
             if (dragging && root.dragHost)

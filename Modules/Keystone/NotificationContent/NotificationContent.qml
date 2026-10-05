@@ -31,8 +31,9 @@ Item {
                                               > 0
             property real expiryProgress: 0
 
+            // Без картинок и без ссылок: см. NotificationManager.displayBody.
             function sanitizedBody() {
-                return (modelData ? modelData.body : "").replace(/<img\b[^>]*>/gi, "");
+                return root.manager.displayBody(modelData ? modelData.body : "");
             }
 
             function restartProgress() {
@@ -63,11 +64,12 @@ Item {
                 easing.type: Easing.Linear
             }
 
+            // Клик по карточке — к приложению и туда, откуда сообщение (чат,
+            // вкладка); см. NotificationManager.activateNotification.
             MouseArea {
                 anchors.fill: card
-                enabled: delegateRoot.hasDefaultAction
                 cursorShape: Qt.PointingHandCursor
-                onClicked: root.manager.invokeDefaultAction(delegateRoot.modelData.notificationId)
+                onClicked: root.manager.activateNotification(delegateRoot.modelData.notificationId)
             }
 
             RowLayout {

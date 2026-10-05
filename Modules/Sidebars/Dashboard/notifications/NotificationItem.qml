@@ -105,7 +105,7 @@ Item {
             if (mouse.button === Qt.MiddleButton)
                 root.destroyWithAnimation();
             else if (mouse.button === Qt.LeftButton && root.notificationObject)
-                NotificationManager.invokeDefaultAction(root.notificationObject.notificationId);
+                NotificationManager.activateNotification(root.notificationObject.notificationId);
         }
         onDraggingChanged: {
             if (dragging && root.dragHost)

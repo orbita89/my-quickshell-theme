@@ -562,6 +562,43 @@ Singleton {
             action.invoke();
     }
 
+    // МОЁ ДОБАВЛЕНИЕ: клик по карточке уведомления.
+    //
+    // Вызывает действие «default»: Telegram открывает чат, из которого пришло
+    // сообщение, браузер — вкладку (Slack, Gmail…). Чтобы поднять окно, приложению
+    // под Wayland нужен токен активации; если его не хватило, окно остаётся
+    // позади, и scripts/system/focus_notification_app.py через мгновение
+    // переключается на него сам. Уведомление без действия (из истории, после
+    // перезапуска приложения) просто показывает приложение, а если оно
+    // закрыто — запускает его.
+    function activateNotification(id) {
+        const notifObject = root.notificationById(id);
+        if (!notifObject)
+            return;
+        const action = root.defaultAction(notifObject);
+        if (action)
+            action.invoke();
+        const keys = [notifObject.desktopEntry, notifObject.appName].filter(key => String(key || "") !== "");
+        if (keys.length === 0)
+            return;
+        const launch = notifObject.desktopEntry || "";
+        Quickshell.execDetached(["python3", Paths.systemScriptsDir + "/focus_notification_app.py"].concat(
+                                    launch !== "" ? ["--launch", launch] : [], keys));
+    }
+
+    // МОЁ ДОБАВЛЕНИЕ: текст уведомления для показа.
+    //
+    // Браузеры (Chromium, Brave, Яндекс) первой строкой ставят ссылку на сайт —
+    // «<a href="https://app.slack.com/">app.slack.com</a>». Клик по ней открывал
+    // просто slack.com, а не чат. Эту строку убираем, остальные ссылки
+    // показываем обычным текстом: кликается вся карточка (activateNotification).
+    function displayBody(body) {
+        let text = String(body || "").replace(/<img\b[^>]*>/gi, "");
+        text = text.replace(/^\s*<a\b[^>]*>[^<]*<\/a>\s*(\n|<br\s*\/?>)+/i, "");
+        text = text.replace(/<a\b[^>]*>([\s\S]*?)<\/a>/gi, "$1");
+        return text.replace(/^\s+/, "");
+    }
+
     function invokeAction(action) {
         if (action)
             action.invoke();
