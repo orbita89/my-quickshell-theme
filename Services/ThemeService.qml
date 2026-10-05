@@ -30,6 +30,8 @@ Singleton {
                                               "value": ""
                                           })]
     property string systemDefaultIconTheme: ""
+    // Последняя тема значков, записанная в gsettings этим экземпляром.
+    property string appliedIconTheme: ""
     property string systemDefaultCursorTheme: ""
 
     readonly property bool isNiriSession: NiriConfigService.supported
@@ -186,6 +188,22 @@ Singleton {
         root.generateNiriCursorConfig();
     }
 
+    // ЛОКАЛЬНАЯ ПРАВКА: выбранная тема значков раньше только сохранялась в
+    // настройках и нигде не применялась. Значки берут из gsettings и
+    // приложения GTK, и сама оболочка (плагин Qt gtk3, см. system/bin/quickshell):
+    // новые значки грузятся уже из новой темы без перезапуска, показанные
+    // обновятся, когда их список откроется заново. «Системный по умолчанию»
+    // («») ничего не меняет — остаётся то, что задано в системе.
+    function applyIconTheme() {
+        const theme = PersonalizationConfig.iconTheme;
+        if (!PersonalizationConfig.ready || theme === "" || theme === root.appliedIconTheme)
+            return;
+        root.appliedIconTheme = theme;
+        iconThemeProcess.command = ["gsettings", "set", "org.gnome.desktop.interface", "icon-theme", theme];
+        iconThemeProcess.running = false;
+        iconThemeProcess.running = true;
+    }
+
     function generateNiriCursorConfig() {
         if (PersonalizationConfig.ready)
             NiriConfigService.update("cursor");
@@ -290,6 +308,11 @@ Singleton {
             if (root.pendingGeneration)
                 root.resumeGeneration();
             root.applyCursorSettings();
+            root.applyIconTheme();
+        }
+
+        function onIconThemeChanged() {
+            root.applyIconTheme();
         }
 
         function onCursorThemeChanged() {
@@ -310,6 +333,17 @@ Singleton {
     }
 
     onSystemDefaultCursorThemeChanged: root.applyCursorSettings()
+
+    Process {
+        id: iconThemeProcess
+
+        onExited: code => {
+            if (code !== 0) {
+                console.warn("ThemeService: gsettings icon-theme failed with code", code);
+                root.appliedIconTheme = "";
+            }
+        }
+    }
 
     Process {
         id: detectIconThemesProcess

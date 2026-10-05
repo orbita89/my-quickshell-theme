@@ -2619,18 +2619,18 @@ Scroll to adjust</source>
         <translation>Дополнительно</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ControlCenterWindow.qml" line="233"/>
+        <location filename="../Modules/ControlCenter/ControlCenterWindow.qml" line="237"/>
         <location filename="../Services/ControlCenterService.qml" line="43"/>
         <source>Settings</source>
         <translation>Настройки</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ControlCenterWindow.qml" line="317"/>
+        <location filename="../Modules/ControlCenter/ControlCenterWindow.qml" line="318"/>
         <source>Path copied</source>
         <translation>Путь скопирован</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ControlCenterWindow.qml" line="317"/>
+        <location filename="../Modules/ControlCenter/ControlCenterWindow.qml" line="318"/>
         <source>config file</source>
         <translation>файл конфигурации</translation>
     </message>
@@ -5670,7 +5670,7 @@ Scroll to adjust</source>
         <translation>Ничего не играет</translation>
     </message>
     <message>
-        <location filename="../Modules/Lock/Cards/MediaCard.qml" line="109"/>
+        <location filename="../Modules/Lock/Cards/MediaCard.qml" line="117"/>
         <source>Now playing</source>
         <translation>Сейчас играет</translation>
     </message>
@@ -11882,7 +11882,7 @@ detected</source>
     </message>
     <message>
         <location filename="../Common/generated/SearchCatalog.js" line="2180"/>
-        <location filename="../Modules/ControlCenter/ThemePage.qml" line="655"/>
+        <location filename="../Modules/ControlCenter/ThemePage.qml" line="663"/>
         <source>Icon theme</source>
         <translation>Тема значков</translation>
     </message>
@@ -11892,117 +11892,122 @@ detected</source>
         <translation>Шрифты</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ThemePage.qml" line="457"/>
+        <location filename="../Modules/ControlCenter/ThemePage.qml" line="593"/>
         <source>Cursor integration</source>
         <translation>Интеграция курсора</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ThemePage.qml" line="458"/>
+        <location filename="../Modules/ControlCenter/ThemePage.qml" line="594"/>
         <source>Create or connect the Clavis cursor configuration.</source>
         <translation>Создайте или подключите конфигурацию курсора Clavis.</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ThemePage.qml" line="471"/>
+        <location filename="../Modules/ControlCenter/ThemePage.qml" line="460"/>
         <source>Light</source>
         <translation>Светлый</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ThemePage.qml" line="478"/>
+        <location filename="../Modules/ControlCenter/ThemePage.qml" line="467"/>
         <source>Dark</source>
         <translation>Тёмный</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ThemePage.qml" line="614"/>
+        <location filename="../Modules/ControlCenter/ThemePage.qml" line="623"/>
         <source>Cursor size</source>
         <translation>Размер курсора</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ThemePage.qml" line="618"/>
+        <location filename="../Modules/ControlCenter/ThemePage.qml" line="627"/>
         <source>pixels</source>
         <translation>пикселей</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ThemePage.qml" line="625"/>
+        <location filename="../Modules/ControlCenter/ThemePage.qml" line="633"/>
         <source>Hide while typing</source>
         <translation>Скрывать при вводе</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ThemePage.qml" line="632"/>
+        <location filename="../Modules/ControlCenter/ThemePage.qml" line="639"/>
         <source>Hide after timeout</source>
         <translation>Скрывать по таймауту</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ThemePage.qml" line="633"/>
+        <location filename="../Modules/ControlCenter/ThemePage.qml" line="640"/>
         <source>Hide the cursor after inactivity; 0 disables this</source>
         <translation>Скрывать курсор после бездействия; 0 отключает</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ThemePage.qml" line="637"/>
+        <location filename="../Modules/ControlCenter/ThemePage.qml" line="644"/>
         <source>milliseconds</source>
         <translation>миллисекунды</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ThemePage.qml" line="658"/>
+        <location filename="../Modules/ControlCenter/ThemePage.qml" line="664"/>
+        <source>For the shell and GTK apps; open windows update when reopened</source>
+        <translation>Для оболочки и приложений GTK; открытые окна обновятся при следующем открытии</translation>
+    </message>
+    <message>
+        <location filename="../Modules/ControlCenter/ThemePage.qml" line="667"/>
         <source>Choose icon theme</source>
         <translation>Выберите тему значков</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ThemePage.qml" line="675"/>
+        <location filename="../Modules/ControlCenter/ThemePage.qml" line="684"/>
         <source>UI font</source>
         <translation>Шрифт интерфейса</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ThemePage.qml" line="676"/>
+        <location filename="../Modules/ControlCenter/ThemePage.qml" line="685"/>
         <source>Regular headings, body text, and controls</source>
         <translation>Обычные заголовки, основной текст и элементы управления</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ThemePage.qml" line="679"/>
+        <location filename="../Modules/ControlCenter/ThemePage.qml" line="688"/>
         <source>Select UI font</source>
         <translation>Выбрать шрифт интерфейса</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ThemePage.qml" line="685"/>
+        <location filename="../Modules/ControlCenter/ThemePage.qml" line="694"/>
         <source>Monospace font</source>
         <translation>Моноширинный шрифт</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ThemePage.qml" line="686"/>
+        <location filename="../Modules/ControlCenter/ThemePage.qml" line="695"/>
         <source>Commands, paths, and technical information</source>
         <translation>Команды, пути и техническая информация</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ThemePage.qml" line="689"/>
+        <location filename="../Modules/ControlCenter/ThemePage.qml" line="698"/>
         <source>Select monospace font</source>
         <translation>Выбрать моноширинный шрифт</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ThemePage.qml" line="695"/>
+        <location filename="../Modules/ControlCenter/ThemePage.qml" line="704"/>
         <source>Numeric font</source>
         <translation>Шрифт цифр</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ThemePage.qml" line="696"/>
+        <location filename="../Modules/ControlCenter/ThemePage.qml" line="705"/>
         <source>Time, percentages, and system values</source>
         <translation>Время, проценты и системные значения</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ThemePage.qml" line="699"/>
+        <location filename="../Modules/ControlCenter/ThemePage.qml" line="708"/>
         <source>Select numeric font</source>
         <translation>Выбрать шрифт цифр</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ThemePage.qml" line="705"/>
+        <location filename="../Modules/ControlCenter/ThemePage.qml" line="714"/>
         <source>Expressive font</source>
         <translation>Выразительный шрифт</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ThemePage.qml" line="706"/>
+        <location filename="../Modules/ControlCenter/ThemePage.qml" line="715"/>
         <source>Expressive visual components such as weather</source>
         <translation>Выразительные визуальные компоненты, например погода</translation>
     </message>
     <message>
-        <location filename="../Modules/ControlCenter/ThemePage.qml" line="709"/>
+        <location filename="../Modules/ControlCenter/ThemePage.qml" line="718"/>
         <source>Select expressive font</source>
         <translation>Выбрать выразительный шрифт</translation>
     </message>
@@ -12012,18 +12017,18 @@ detected</source>
     <message>
         <location filename="../Services/ThemeService.qml" line="25"/>
         <location filename="../Services/ThemeService.qml" line="29"/>
-        <location filename="../Services/ThemeService.qml" line="318"/>
-        <location filename="../Services/ThemeService.qml" line="328"/>
+        <location filename="../Services/ThemeService.qml" line="352"/>
+        <location filename="../Services/ThemeService.qml" line="362"/>
         <source>System default</source>
         <translation>Системный по умолчанию</translation>
     </message>
     <message>
-        <location filename="../Services/ThemeService.qml" line="372"/>
+        <location filename="../Services/ThemeService.qml" line="406"/>
         <source>Failed to generate Matugen colors</source>
         <translation>Не удалось сгенерировать цвета Matugen</translation>
     </message>
     <message>
-        <location filename="../Services/ThemeService.qml" line="375"/>
+        <location filename="../Services/ThemeService.qml" line="409"/>
         <source>Some Matugen templates failed to generate</source>
         <translation>Некоторые шаблоны Matugen не сгенерировались</translation>
     </message>

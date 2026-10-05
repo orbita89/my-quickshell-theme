@@ -661,6 +661,7 @@ StyledFlickable {
 
             SearchSelectSettingRow {
                 title: qsTr("Icon theme")
+                description: qsTr("For the shell and GTK apps; open windows update when reopened")
                 options: ThemeService.availableIconThemes
                 value: PersonalizationConfig.iconTheme
                 placeholder: qsTr("Choose icon theme")
