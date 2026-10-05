@@ -27,6 +27,10 @@ Singleton {
     // прочтения хранится в read-state.json — точка на колокольчике переживает
     // перезапуск оболочки. По нему горит красная точка на кнопке в панели.
     property double lastReadAt: 0
+    // Момент прочтения до текущего открытия центра уведомлений: всё, что
+    // пришло позже, на это открытие отмечается красной точкой (isNew), хотя
+    // уже засчитано прочитанным — при следующем открытии точек на нём нет.
+    property double highlightSince: 0
     property bool readStateLoaded: false
     // Кликнутое уведомление прочитано, даже если центр уведомлений не открывали.
     readonly property int unread: root.readStateLoaded ? root.list.filter(notif => notif && !notif.read
@@ -500,6 +504,17 @@ Singleton {
 
     function setSilent(value) {
         UiPreferences.setDndEnabled(value);
+    }
+
+    // Центр уведомлений открыли: запомнить, что было непрочитанным, и
+    // засчитать всё прочитанным.
+    function beginViewing() {
+        root.highlightSince = root.lastReadAt;
+        root.markAllRead();
+    }
+
+    function isNew(notifObject) {
+        return !!notifObject && !notifObject.read && notifObject.receivedAt > root.highlightSince;
     }
 
     function markAllRead() {

@@ -18,7 +18,7 @@ Item {
         SystemIdentityService.setUptimeConsumer("left-sidebar-info:" + root.screenName, root.isForeground);
         if (isForeground) {
             NotificationManager.hideAllPopups();
-            NotificationManager.markAllRead();
+            NotificationManager.beginViewing();
             Time.refreshNow();
         }
     }

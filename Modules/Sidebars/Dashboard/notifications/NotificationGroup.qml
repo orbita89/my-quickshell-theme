@@ -15,7 +15,9 @@ MouseArea {
                                 ? notificationGroup.notifications : []
     property int notificationCount: notifications.length
     property bool multipleNotifications: notificationCount > 1
-    property bool expanded: false
+    // ЛОКАЛЬНАЯ ПРАВКА: группы всегда раскрыты — все уведомления видны сразу,
+    // сворачивать нечего (кнопка свёртывания скрыта).
+    readonly property bool expanded: true
     property bool popup: false
     property real padding: 10
     property real dragConfirmThreshold: 70
@@ -46,10 +48,8 @@ MouseArea {
         destroyAnimation.running = true;
     }
 
-    function toggleExpanded() {
-        implicitHeightAnim.enabled = !root.multipleNotifications || root.expanded;
-        root.expanded = !root.expanded;
-    }
+    // Группы всегда раскрыты; оставлено для правого клика и кнопки.
+    function toggleExpanded() {}
 
     implicitHeight: background.implicitHeight
     hoverEnabled: true
@@ -215,6 +215,8 @@ MouseArea {
                     NotificationGroupExpandButton {
                         id: expandButton
 
+                        visible: false
+                        width: 0
                         anchors.right: parent.right
                         anchors.verticalCenter: parent.verticalCenter
                         count: root.notificationCount
@@ -227,7 +229,11 @@ MouseArea {
                     }
                 }
 
-                StyledListView {
+                // ЛОКАЛЬНАЯ ПРАВКА: колонка, а не ListView. ListView угадывал
+                // высоту ещё не созданных карточек, высота группы плясала, и
+                // прокрутка центра уведомлений в раскрытых группах прыгала (см.
+                // NotificationListView.qml).
+                Column {
                     id: notificationsColumn
 
                     property int dragIndex: -1
@@ -239,45 +245,28 @@ MouseArea {
                     }
 
                     Layout.fillWidth: true
-                    implicitHeight: contentHeight
-                    spacing: root.expanded ? 5 : 3
-                    interactive: false
-                    animateAppearance: true
-                    animateMovement: false
-                    showVerticalScrollBar: false
-                    clip: false
+                    spacing: 5
 
-                    remove: Transition {}
-
-                    Behavior on spacing {
-                        NumberAnimation {
-                            duration: Appearance.animation.expressiveDefaultEffects.duration
-                            easing.type: Appearance.animation.expressiveDefaultEffects.type
-                            easing.bezierCurve: Appearance.animation.expressiveDefaultEffects.bezierCurve
+                    Repeater {
+                        model: ScriptModel {
+                            values: root.notifications.slice().reverse()
+                            objectProp: "notificationId"
                         }
-                    }
 
-                    model: ScriptModel {
-                        values: root.expanded ? root.notifications.slice().reverse() : root.notifications.slice(
-                                                    ).reverse().slice(0, 2)
-                        objectProp: "notificationId"
-                    }
+                        delegate: NotificationItem {
+                            required property int index
+                            required property var modelData
 
-                    delegate: NotificationItem {
-                        required property int index
-                        required property var modelData
-
-                        delegateIndex: index
-                        dragHost: notificationsColumn
-                        width: notificationsColumn.width
-                        height: implicitHeight
-                        notificationObject: modelData
-                        expanded: root.expanded
-                        onlyNotification: root.notificationCount === 1
-                        opacity: (!root.expanded && index === 1 && root.notificationCount > 2) ? 0.5 : 1
-                        visible: root.expanded || index < 2
-                        onDismissGroup: left => {
-                            return root.destroyWithAnimation(left);
+                            delegateIndex: index
+                            dragHost: notificationsColumn
+                            width: notificationsColumn.width
+                            height: implicitHeight
+                            notificationObject: modelData
+                            expanded: root.expanded
+                            onlyNotification: root.notificationCount === 1
+                            onDismissGroup: left => {
+                                return root.destroyWithAnimation(left);
+                            }
                         }
                     }
                 }

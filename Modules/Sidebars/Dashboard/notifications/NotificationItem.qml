@@ -166,6 +166,24 @@ Item {
         implicitHeight: root.expanded ? contentColumn.implicitHeight + root.padding * 2 : root.onlyNotification
                                         ? notificationBodyText.implicitHeight : summaryRow.implicitHeight
 
+        // МОЁ ДОБАВЛЕНИЕ: красная точка — уведомление было непрочитанным, когда
+        // открыли центр уведомлений (NotificationManager.isNew). Уже засчитано
+        // прочитанным: при следующем открытии точки не будет.
+        Rectangle {
+            readonly property real size: 7
+
+            visible: NotificationManager.isNew(root.notificationObject)
+            z: 5
+            width: size
+            height: size
+            radius: size / 2
+            anchors.top: parent.top
+            anchors.right: parent.right
+            anchors.topMargin: root.onlyNotification ? 4 : 7
+            anchors.rightMargin: root.onlyNotification ? 0 : 7
+            color: "#f2453d"
+        }
+
         ColumnLayout {
             id: contentColumn
 
@@ -258,6 +276,12 @@ Item {
                         boundsBehavior: Flickable.StopAtBounds
                         flickableDirection: Flickable.HorizontalFlick
                         showVerticalScrollBar: false
+                        // ЛОКАЛЬНАЯ ПРАВКА: колесо не перехватываем. Контроллер
+                        // колеса превращал вертикальную прокрутку в горизонтальную
+                        // и у края съедал её — центр уведомлений не прокручивался
+                        // над раскрытыми карточками. Горизонтальный Flickable сам
+                        // отдаёт вертикальное колесо наверх.
+                        smoothWheelScrolling: false
 
                         RowLayout {
                             id: actionRowLayout
