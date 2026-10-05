@@ -16,7 +16,10 @@ FloatingWindow {
     property bool _wasShown: false
     property real contentPadding: 8
     property int currentPage: 0
-    property bool navExpanded: width > 900
+    // ЛОКАЛЬНАЯ ПРАВКА: панель вкладок всегда узкая, только значки.
+    // Подписи не влезали в ширину панели, а разворачивать её незачем:
+    // название вкладки видно в подсказке и в заголовке окна.
+    readonly property bool navExpanded: false
     property string pendingPageSection: ""
     readonly property var pages: SpotlightCatalog.routes.filter(entry => entry.path.length === 1).map(entry
                                                                                                       => Object.assign(
@@ -230,7 +233,8 @@ FloatingWindow {
 
                     anchors.horizontalCenter: parent.horizontalCenter
                     anchors.verticalCenter: parent.verticalCenter
-                    text: qsTr("Settings")
+                    // Название открытой вкладки вместо общего «Настройки».
+                    text: root.pages[root.currentPage] ? root.pages[root.currentPage].title : qsTr("Settings")
                     color: Appearance.colors.colOnLayer0
                     font.family: Fonts.ui
                     font.pixelSize: 24
@@ -303,21 +307,23 @@ FloatingWindow {
                         anchors.bottom: parent.bottom
                         spacing: 10
 
-                        NavigationRailExpandButton {
-                            expanded: root.navExpanded
-                            onClicked: root.navExpanded = !root.navExpanded
-                        }
-
                         FloatingActionButton {
                             id: configButton
 
                             property bool justCopied: copiedTimer.running
+
+                            readonly property string popupEdge: "left"
 
                             iconText: justCopied ? "check" : "edit"
                             buttonText: justCopied ? qsTr("Path copied") : qsTr("config file")
                             expanded: root.navExpanded
                             onClicked: root.openConfig()
                             onAltClicked: root.copyConfigPath()
+
+                            StyledToolTip {
+                                text: configButton.buttonText
+                                extraVisibleCondition: configButton.hovered || configButton.justCopied
+                            }
                         }
 
                         NavigationRailTabArray {
@@ -335,6 +341,7 @@ FloatingWindow {
                                     expanded: root.navExpanded
                                     buttonIcon: modelData.icon
                                     buttonText: modelData.title
+                                    showLabel: false
                                     showToggledHighlight: false
                                     onPressed: root.currentPage = index
                                 }

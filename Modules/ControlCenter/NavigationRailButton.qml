@@ -3,6 +3,7 @@ import QtQuick.Controls
 import QtQuick.Layouts
 import qs.Common
 import qs.Components
+import qs.Widgets.common
 
 TabButton {
     id: root
@@ -16,6 +17,13 @@ TabButton {
     property string buttonText: root.label
     property bool expanded: false
     property bool showToggledHighlight: true
+    // МОЁ ДОБАВЛЕНИЕ: подпись под значком в свёрнутой панели. Длинные
+    // названия («Дополнительно») в узкую панель не влезали — без подписи
+    // название показывает подсказка при наведении.
+    property bool showLabel: true
+    // Подсказка (StyledToolTip) ищет край по popupEdge у предков: панель
+    // слева, значит подсказка — справа от значка.
+    readonly property string popupEdge: "left"
     readonly property real visualWidth: root.expanded ? root.baseSize + 20 + itemText.implicitWidth : root.baseSize
 
     property real baseSize: 56
@@ -124,6 +132,7 @@ TabButton {
             anchors.topMargin: 2
             anchors.horizontalCenter: itemIconBackground.horizontalCenter
             text: root.buttonText
+            visible: root.expanded || root.showLabel
             color: root.toggled ? Appearance.m3colors.m3onSecondaryContainer : Appearance.colors.colOnLayer1
             font.family: Fonts.ui
             font.pixelSize: 14
@@ -158,5 +167,10 @@ TabButton {
                 }
             }
         }
+    }
+
+    StyledToolTip {
+        text: root.buttonText
+        extraVisibleCondition: !root.expanded && !root.showLabel && root.hovered
     }
 }
