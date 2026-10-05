@@ -525,12 +525,16 @@ Variants {
                         library: "media",
                         upload: "upload"
                     };
-                    const isTab = Object.prototype.hasOwnProperty.call(tabs, action);
+                    // "hub" — главное меню на последней открытой вкладке
+                    // (hubTabId помнит её, пока работает оболочка).
+                    const isTab = action === "hub" || Object.prototype.hasOwnProperty.call(tabs, action);
                     // Вкладка выключена в настройках — открываем хаб на первой
                     // включённой (порядок из настроек), иначе наведение и клик
-                    // перестали бы открывать меню вовсе.
-                    const tabId = isTab ? (root.hubTabEnabled(tabs[action]) ? tabs[action] : (root.hubTabs[0]
-                                                                                               || "")) : "";
+                    // перестали бы открывать меню вовсе. activeHubTabId делает
+                    // этот откат сам.
+                    const tabId = !isTab ? "" : action === "hub" ? root.activeHubTabId : root.hubTabEnabled(
+                                                                       tabs[action]) ? tabs[action] : (root.hubTabs[0]
+                                                                                                       || "");
                     if (isTab && tabId === "")
                         return;
                     const alreadyOpen = action === "lyrics" ? root.showLyrics : action === "tools"

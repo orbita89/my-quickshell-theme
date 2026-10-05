@@ -461,6 +461,11 @@ Singleton {
             value: "none",
             label: qsTr("Do not open")
         },
+        // Главное меню на той вкладке, что была открыта последней.
+        {
+            value: "hub",
+            label: qsTr("Main menu (last tab)")
+        },
         {
             value: "lyrics",
             label: qsTr("Lyrics")

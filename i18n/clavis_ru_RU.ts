@@ -8154,32 +8154,37 @@ Click to open network settings</source>
         <translation>Не открывать</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="466"/>
+        <location filename="../Services/PersonalizationConfig.qml" line="467"/>
+        <source>Main menu (last tab)</source>
+        <translation>Главное меню (последняя вкладка)</translation>
+    </message>
+    <message>
+        <location filename="../Services/PersonalizationConfig.qml" line="471"/>
         <source>Lyrics</source>
         <translation>Текст песни</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="470"/>
+        <location filename="../Services/PersonalizationConfig.qml" line="475"/>
         <source>Dashboard</source>
         <translation>Dashboard</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="474"/>
+        <location filename="../Services/PersonalizationConfig.qml" line="479"/>
         <source>Media library</source>
         <translation>Media library</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="478"/>
+        <location filename="../Services/PersonalizationConfig.qml" line="483"/>
         <source>Upload</source>
         <translation>Upload</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="482"/>
+        <location filename="../Services/PersonalizationConfig.qml" line="487"/>
         <source>Tools</source>
         <translation>Инструменты</translation>
     </message>
     <message>
-        <location filename="../Services/PersonalizationConfig.qml" line="489"/>
+        <location filename="../Services/PersonalizationConfig.qml" line="494"/>
         <source>Peak</source>
         <translation>Пик</translation>
     </message>

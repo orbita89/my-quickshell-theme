@@ -101,7 +101,9 @@ PersonalizationConfig (что включено) ─┴─> HubContent ──> Lo
 ## Наведение и клики по островку
 
 Действия мыши (Центр управления → Keystone → Действия мыши) ссылаются на
-вкладки: `dashboard` → Dashboard, `library` → Media, `upload` → Upload. Если
+вкладки: `hub` → последняя открытая вкладка (`hubTabId` в KeystoneSurface,
+помнится до перезапуска оболочки), `dashboard` → Dashboard, `library` →
+Media, `upload` → Upload. Если
 вкладка выключена, действие открывает хаб на **первой включённой** вкладке
 (по порядку из настроек) — иначе наведение перестало бы открывать меню.
 Логика — `activateMouseAction` в `Styles/Shared/KeystoneSurface.qml`.
