@@ -28,7 +28,8 @@ Singleton {
     // перезапуск оболочки. По нему горит красная точка на кнопке в панели.
     property double lastReadAt: 0
     property bool readStateLoaded: false
-    readonly property int unread: root.readStateLoaded ? root.list.filter(notif => notif
+    // Кликнутое уведомление прочитано, даже если центр уведомлений не открывали.
+    readonly property int unread: root.readStateLoaded ? root.list.filter(notif => notif && !notif.read
                                                                               && notif.receivedAt
                                                                               > root.lastReadAt).length : 0
     readonly property bool centerOpen: WidgetState.dashboardSidebarOpen && WidgetState.dashboardSidebarView
@@ -73,6 +74,8 @@ Singleton {
         property double popupExpiresAt: 0
         property double popupStartedAt: 0
         property double receivedAt: Date.now()
+        // Прочитано по клику на само уведомление (см. activateNotification).
+        property bool read: false
         property string summary: ""
         property string localKind: ""
         property string filePath: ""
@@ -323,6 +326,7 @@ Singleton {
                                                                           "Notification"),
                                                            "receivedAt": Number(notif.receivedAt
                                                                                 || notif.time) || Date.now(),
+                                                           "read": notif.read === true,
                                                            "urgency": notif.urgency
                                                                       ?? NotificationUrgency.Normal
                                                        });
@@ -415,6 +419,7 @@ Singleton {
             "desktopEntry": notif.desktopEntry,
             "image": root.durableHistorySource(notif.image),
             "receivedAt": notif.receivedAt,
+            "read": notif.read,
             "summary": notif.summary,
             "urgency": notif.urgency
         };
@@ -619,6 +624,12 @@ Singleton {
         const notifObject = root.notificationById(id);
         if (!notifObject)
             return;
+        // Клик — это прочтение: точка на колокольчике за это уведомление гаснет.
+        if (!notifObject.read) {
+            notifObject.read = true;
+            root.triggerListChange();
+            root.saveNotifications();
+        }
         const action = root.defaultAction(notifObject);
         if (action)
             action.invoke();
