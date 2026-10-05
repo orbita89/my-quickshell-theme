@@ -213,7 +213,9 @@ FocusScope {
     function toggleMenu() {
         if (root.expanded)
             root.closeMenu();
-        else
+        // Клик по самому полю сначала закрыл список (клик вне его), этот же
+        // клик не должен открыть его снова.
+        else if (!closedByPressTimer.running)
             root.openMenu();
     }
 
@@ -539,6 +541,12 @@ FocusScope {
         id: chipModel
     }
 
+    Timer {
+        id: closedByPressTimer
+
+        interval: 250
+    }
+
     Popup {
         id: optionsPopup
 
@@ -547,8 +555,12 @@ FocusScope {
         modal: false
         dim: false
         focus: true
-        closePolicy: Popup.CloseOnEscape
-        onClosed: root.expanded = false
+        // ЛОКАЛЬНАЯ ПРАВКА: клик в любом месте вне списка его закрывает.
+        closePolicy: Popup.CloseOnEscape | Popup.CloseOnPressOutside
+        onClosed: {
+            root.expanded = false;
+            closedByPressTimer.restart();
+        }
 
         background: Item {}
 
