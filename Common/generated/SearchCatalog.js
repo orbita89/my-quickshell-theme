@@ -655,6 +655,24 @@ var catalog = {
       "title": "Gamma Control"
     },
     {
+      "aliases": [
+        "hub",
+        "главное меню",
+        "dashboard",
+        "tabs",
+        "widgets"
+      ],
+      "context": "KeystonePage",
+      "icon": "dashboard",
+      "id": "keystone.hub",
+      "path": [
+        "keystone",
+        "hub"
+      ],
+      "source": "KeystoneHubPage.qml",
+      "title": "Main menu"
+    },
+    {
       "aliases": [],
       "context": "KeystonePage",
       "icon": "schedule",
@@ -986,6 +1004,26 @@ var catalog = {
       "route": "general.displays.gamma",
       "source": "GammaControlPage.qml",
       "title": "Gamma Control"
+    },
+    {
+      "aliases": [
+        "hub",
+        "главное меню",
+        "dashboard",
+        "tabs",
+        "widgets"
+      ],
+      "anchor": false,
+      "context": "KeystonePage",
+      "icon": "dashboard",
+      "id": "keystone.hub",
+      "path": [
+        "keystone",
+        "hub"
+      ],
+      "route": "keystone.hub",
+      "source": "KeystoneHubPage.qml",
+      "title": "Main menu"
     },
     {
       "aliases": [],
@@ -1459,6 +1497,63 @@ var catalog = {
       "title": "Horizontal clock style"
     },
     {
+      "aliases": [
+        "hub tabs",
+        "dashboard",
+        "media",
+        "upload",
+        "developer"
+      ],
+      "anchor": true,
+      "context": "KeystoneHubPage",
+      "icon": "tab",
+      "id": "keystone.hub.section.tabs",
+      "path": [
+        "keystone",
+        "hub"
+      ],
+      "route": "keystone.hub",
+      "source": "KeystoneHubPage.qml",
+      "title": "Tabs"
+    },
+    {
+      "aliases": [
+        "resource usage",
+        "calendar",
+        "widgets"
+      ],
+      "anchor": true,
+      "context": "KeystoneHubPage",
+      "icon": "widgets",
+      "id": "keystone.hub.section.dashboard-widgets",
+      "path": [
+        "keystone",
+        "hub"
+      ],
+      "route": "keystone.hub",
+      "source": "KeystoneHubPage.qml",
+      "title": "Dashboard widgets"
+    },
+    {
+      "aliases": [
+        "cards",
+        "quick settings",
+        "pomodoro",
+        "to-do"
+      ],
+      "anchor": true,
+      "context": "KeystoneHubPage",
+      "icon": "view_carousel",
+      "id": "keystone.hub.section.keyhole",
+      "path": [
+        "keystone",
+        "hub"
+      ],
+      "route": "keystone.hub",
+      "source": "KeystoneHubPage.qml",
+      "title": "Keyhole"
+    },
+    {
       "aliases": [],
       "anchor": true,
       "context": "KeystonePage",
@@ -1499,17 +1594,20 @@ var catalog = {
       "title": "Keyboard indicators"
     },
     {
-      "aliases": [],
+      "aliases": [
+        "hub",
+        "keyhole"
+      ],
       "anchor": true,
       "context": "KeystonePage",
-      "icon": "settings",
-      "id": "keystone.section.keyhole",
+      "icon": "dashboard",
+      "id": "keystone.section.main-menu",
       "path": [
         "keystone"
       ],
       "route": "keystone",
       "source": "KeystonePage.qml",
-      "title": "Keyhole"
+      "title": "Main menu"
     },
     {
       "aliases": [],
@@ -1992,6 +2090,7 @@ function title(id) {
     case "general.bluetooth-pairing": return qsTranslate("GeneralPage", "Pair new device");
     case "general.displays.configuration": return qsTranslate("DisplaysPage", "Display configuration");
     case "general.displays.gamma": return qsTranslate("DisplaysPage", "Gamma Control");
+    case "keystone.hub": return qsTranslate("KeystonePage", "Main menu");
     case "keystone.horizontal-clock": return qsTranslate("KeystonePage", "Horizontal clock style");
     case "account.section.language": return qsTranslate("AccountPage", "Language");
     case "account.section.bluetooth-devices": return qsTranslate("AccountPage", "Bluetooth devices");
@@ -2026,10 +2125,13 @@ function title(id) {
     case "general.sidebar.section.clock-style": return qsTranslate("GeneralSidebarPage", "Clock style");
     case "general.sidebar.section.system-cards": return qsTranslate("GeneralSidebarPage", "System cards");
     case "keystone.horizontal-clock.section.horizontal-clock-style": return qsTranslate("HorizontalClockPage", "Horizontal clock style");
+    case "keystone.hub.section.tabs": return qsTranslate("KeystoneHubPage", "Tabs");
+    case "keystone.hub.section.dashboard-widgets": return qsTranslate("KeystoneHubPage", "Dashboard widgets");
+    case "keystone.hub.section.keyhole": return qsTranslate("KeystoneHubPage", "Keyhole");
     case "keystone.section.keystone-style": return qsTranslate("KeystonePage", "Keystone style");
     case "keystone.section.mouse-actions": return qsTranslate("KeystonePage", "Mouse actions");
     case "keystone.section.keyboard-indicators": return qsTranslate("KeystonePage", "Keyboard indicators");
-    case "keystone.section.keyhole": return qsTranslate("KeystonePage", "Keyhole");
+    case "keystone.section.main-menu": return qsTranslate("KeystonePage", "Main menu");
     case "keystone.section.horizontal-clock": return qsTranslate("KeystonePage", "Horizontal clock");
     case "keystone.section.recording": return qsTranslate("KeystonePage", "Recording");
     case "general.language-region.section.language": return qsTranslate("LanguageAndRegionPage", "Language");

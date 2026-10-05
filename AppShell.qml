@@ -344,6 +344,12 @@ Item {
                     return ControlCenterService.open(pageId || "") ? "OK" : "UNAVAILABLE";
                 }
 
+                // Открыть конкретный раздел настроек по id из каталога поиска,
+                // например "keystone.hub.section.tabs" — как результат Spotlight.
+                function openSetting(settingId: string): string {
+                    return ControlCenterService.openSearch(settingId || "") ? "OK" : "UNAVAILABLE";
+                }
+
                 function close(): string {
                     return ControlCenterService.close() ? "OK" : "CLOSED";
                 }

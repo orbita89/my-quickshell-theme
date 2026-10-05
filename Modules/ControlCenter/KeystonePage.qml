@@ -58,6 +58,27 @@ Item {
         directoryPicker.openAt(root.directoryValue(key));
     }
 
+    // Действия мыши, открывающие вкладку хаба, и сама вкладка.
+    readonly property var actionTabs: ({
+                                           "dashboard": "dashboard",
+                                           "library": "media",
+                                           "upload": "upload"
+                                       })
+
+    // Варианты действий с пометкой у тех, чья вкладка выключена. Сами
+    // варианты не убираем: иначе сохранённый выбор сбросился бы при
+    // нормализации, а после включения вкладки не вернулся.
+    function markedActionOptions(options) {
+        return options.map(option => {
+                               const tabId = root.actionTabs[option.value];
+                               if (!tabId || PersonalizationConfig.keystoneHubTabEnabled(tabId))
+                                   return option;
+                               const marked = Object.assign({}, option);
+                               marked.label = qsTr("%1 (tab is off)").arg(option.label);
+                               return marked;
+                           });
+    }
+
     function openSection(section) {
         root.currentSection = String(section || "overview");
     }
@@ -147,21 +168,21 @@ Item {
 
                 SearchSelectSettingRow {
                     title: qsTr("Hover")
-                    options: PersonalizationConfig.keystoneHoverActionOptions
+                    options: root.markedActionOptions(PersonalizationConfig.keystoneHoverActionOptions)
                     value: PersonalizationConfig.keystoneHoverAction
                     onAccepted: value => PersonalizationConfig.setKeystoneAction("hover", value)
                 }
 
                 SearchSelectSettingRow {
                     title: qsTr("Left click")
-                    options: PersonalizationConfig.keystoneActionOptions
+                    options: root.markedActionOptions(PersonalizationConfig.keystoneActionOptions)
                     value: PersonalizationConfig.keystoneLeftClickAction
                     onAccepted: value => PersonalizationConfig.setKeystoneAction("left", value)
                 }
 
                 SearchSelectSettingRow {
                     title: qsTr("Middle click")
-                    options: PersonalizationConfig.keystoneActionOptions
+                    options: root.markedActionOptions(PersonalizationConfig.keystoneActionOptions)
                     value: PersonalizationConfig.keystoneMiddleClickAction
                     onAccepted: value => PersonalizationConfig.setKeystoneAction("middle", value)
                 }
@@ -207,26 +228,19 @@ Item {
                     id: extraSearchAnchor1
                     target: extraSearchSection1
                     declaration:
-                        '{"id":"keystone.section.keyhole","route":"keystone","title":"Keyhole","context":"KeystonePage","icon":"settings","aliases":[]}'
+                        '{"id":"keystone.section.main-menu","route":"keystone","title":"Main menu","context":"KeystonePage","icon":"dashboard","aliases":["hub","keyhole"]}'
                 }
-                iconName: "view_carousel"
+                iconName: "dashboard"
 
-                SortableMultiSelectField {
-                    id: keyholeCardsField
-
+                // Вкладки хаба, виджеты Dashboard и плашка — на отдельной
+                // странице KeystoneHubPage.qml.
+                SettingsActionRow {
                     Layout.fillWidth: true
-                    Layout.leftMargin: Metrics.spacingS
-                    Layout.rightMargin: Metrics.spacingS
-                    values: PersonalizationConfig.keystoneKeyholeCards
-                    options: PersonalizationConfig.keystoneKeyholeCardOptions
-                    zone: "keyhole"
-                    dragCoordinator: keyholeDragCoordinator
-                    onToggled: cardId => {
-                        return PersonalizationConfig.toggleKeystoneKeyholeCard(cardId);
-                    }
-                    onRemoved: cardId => {
-                        return PersonalizationConfig.removeKeystoneKeyholeCard(cardId);
-                    }
+                    iconName: "tune"
+                    text: SpotlightCatalog.title("keystone.hub")
+                    description: qsTr("Tabs, Dashboard widgets and the keyhole")
+                    trailingIconName: "chevron_right"
+                    onClicked: root.openSection("hub")
                 }
             }
 
@@ -333,18 +347,6 @@ Item {
         source: {
             const route = SpotlightCatalog.route("keystone." + root.currentSection);
             return route ? Qt.resolvedUrl(route.source) : "";
-        }
-    }
-
-    BarLayoutDragCoordinator {
-        id: keyholeDragCoordinator
-
-        anchors.fill: parent
-        z: 1000
-        fields: [keyholeCardsField]
-        onDropped: (cardId, targetZone, targetIndex) => {
-            if (targetZone === "keyhole")
-                PersonalizationConfig.moveKeystoneKeyholeCard(cardId, targetIndex);
         }
     }
 

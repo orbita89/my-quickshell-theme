@@ -276,6 +276,24 @@
       ]
     },
     {
+      "id": "keystone.hub",
+      "title": "Main menu",
+      "context": "KeystonePage",
+      "icon": "dashboard",
+      "source": "KeystoneHubPage.qml",
+      "path": [
+        "keystone",
+        "hub"
+      ],
+      "aliases": [
+        "hub",
+        "главное меню",
+        "dashboard",
+        "tabs",
+        "widgets"
+      ]
+    },
+    {
       "id": "keystone.horizontal-clock",
       "title": "Horizontal clock style",
       "context": "KeystonePage",
