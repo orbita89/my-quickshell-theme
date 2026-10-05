@@ -20,7 +20,20 @@ Singleton {
 
     property bool historyReady: false
     property var pendingSavedFiles: []
-    property int unread: 0
+    // МОЁ ДОБАВЛЕНИЕ: непрочитанные — всё, что пришло после последнего
+    // открытия центра уведомлений (lastReadAt). Считается от списка, поэтому
+    // смахнутое уведомление перестаёт быть непрочитанным само, а «Не
+    // беспокоить» не мешает: пропущенное в тишине тоже непрочитано. Момент
+    // прочтения хранится в read-state.json — точка на колокольчике переживает
+    // перезапуск оболочки. По нему горит красная точка на кнопке в панели.
+    property double lastReadAt: 0
+    property bool readStateLoaded: false
+    readonly property int unread: root.readStateLoaded ? root.list.filter(notif => notif
+                                                                              && notif.receivedAt
+                                                                              > root.lastReadAt).length : 0
+    readonly property bool centerOpen: WidgetState.dashboardSidebarOpen && WidgetState.dashboardSidebarView
+                                       === "info"
+    readonly property string readStatePath: notificationsDir + "/read-state.json"
     property int idOffset: 0
     // Deliberately `var` and not `list<Notif>`. Notif is an inline component,
     // so its type identity belongs to the compilation unit and is minted anew
@@ -161,8 +174,8 @@ Singleton {
                                                            interval: root.defaultPopupTimeoutMs
                                                        });
         root.list = [...root.list, notif];
-        if (notif.popup)
-            root.unread++;
+        if (root.centerOpen)
+            Qt.callLater(root.markAllRead);
         root.trimPopupList(3);
         root.saveNotifications();
         root.notify(notif);
@@ -237,10 +250,11 @@ Singleton {
                                                                         });
             }
 
-            if (!root.popupInhibited) {
+            if (!root.popupInhibited)
                 newNotifObject.popup = true;
-                root.unread++;
-            }
+            // Центр уведомлений открыт — уведомление уже на глазах.
+            if (root.centerOpen)
+                Qt.callLater(root.markAllRead);
 
             root.list = [...root.list.filter(notif => notif.serverNotificationId !== notification.id),
                          newNotifObject,];
@@ -248,6 +262,28 @@ Singleton {
             root.trimPopupList(3);
             root.saveNotifications();
             root.notify(newNotifObject);
+        }
+    }
+
+    FileView {
+        id: readStateFile
+
+        path: root.readStatePath
+        printErrors: false
+
+        onLoaded: {
+            try {
+                const saved = JSON.parse(readStateFile.text() || "{}");
+                root.lastReadAt = Number(saved.lastReadAt) || Date.now();
+            } catch (error) {
+                root.lastReadAt = Date.now();
+            }
+            root.readStateLoaded = true;
+        }
+        // Файла ещё нет (первый запуск) — всё, что уже в истории, прочитано.
+        onLoadFailed: {
+            root.markAllRead();
+            root.readStateLoaded = true;
         }
     }
 
@@ -392,6 +428,7 @@ Singleton {
 
     function refresh() {
         notifFileView.reload();
+        readStateFile.reload();
     }
 
     function saveNotifications() {
@@ -461,7 +498,10 @@ Singleton {
     }
 
     function markAllRead() {
-        root.unread = 0;
+        root.lastReadAt = Date.now();
+        readStateFile.setText(JSON.stringify({
+                                                 "lastReadAt": root.lastReadAt
+                                             }));
     }
 
     function detachNotification(id) {
