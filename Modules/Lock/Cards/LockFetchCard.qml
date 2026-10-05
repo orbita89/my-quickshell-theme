@@ -14,10 +14,14 @@ Rectangle {
     readonly property int topPadding: Metrics.lockOuterPadding
     readonly property int bottomPadding: detailLevel <= 1 ? Metrics.lockOuterPadding : Metrics.lockOuterPadding * 2
     readonly property int promptSize: 45
-    readonly property int fetchFontSize: width >= 533 ? 20 : 17
-    readonly property int headerFontSize: width >= 533 ? 20 : 17
-    readonly property int lineHeight: width >= 533 ? 31 : 27
-    readonly property int lineLabelWidth: width >= 533 ? 61 : 53
+    // ЛОКАЛЬНАЯ ПРАВКА: третья, узкая ступень. На экране 1536×864 карточка
+    // шириной ~200 px, и на значение («Ubuntu 24.04 LTS») оставалось 70 px.
+    readonly property bool narrow: width < 260
+    readonly property int fetchFontSize: width >= 533 ? 20 : narrow ? 14 : 17
+    readonly property int headerFontSize: width >= 533 ? 20 : narrow ? 14 : 17
+    readonly property int lineHeight: width >= 533 ? 31 : narrow ? 22 : 27
+    readonly property int lineLabelWidth: width >= 533 ? 61 : narrow ? 42 : 53
+    readonly property int lineIconSize: narrow ? 18 : 24
     readonly property int bodySpacing: Math.max(18, Math.min(32, Math.floor(bodyRow.height * 0.15)))
     readonly property int contentWidth: Math.max(0, width - sidePadding * 2)
     readonly property int logoColumnWidth: Math.max(118, Math.floor(contentWidth * 0.42))
@@ -137,6 +141,9 @@ Rectangle {
                     font.family: Fonts.numeric
                     font.pixelSize: root.fetchFontSize
                     font.bold: true
+                    // Не влезает — переносим, а не обрезаем многоточием.
+                    wrapMode: Text.Wrap
+                    maximumLineCount: 2
                     elide: Text.ElideRight
                 }
 
@@ -232,21 +239,27 @@ Rectangle {
         property string value: ""
         property color accent: Appearance.colors.colPrimary
 
-        implicitHeight: root.lineHeight
-        spacing: 7
+        // Высоту RowLayout считает сам: не меньше lineHeight (значок и метка),
+        // больше — если значение перенеслось на вторую строку.
+        spacing: root.narrow ? 5 : 7
 
         Text {
-            Layout.preferredWidth: 22
+            Layout.preferredWidth: root.lineIconSize
+            Layout.preferredHeight: root.lineHeight
+            Layout.alignment: Qt.AlignTop
             text: line.icon
             color: line.accent
             font.family: Fonts.materialSymbolsOutlined
-            font.pixelSize: 24
+            font.pixelSize: root.lineIconSize
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
         }
 
         Text {
             Layout.preferredWidth: root.lineLabelWidth
+            Layout.preferredHeight: root.lineHeight
+            Layout.alignment: Qt.AlignTop
+            verticalAlignment: Text.AlignVCenter
             text: line.label + ":"
             color: line.accent
             font.family: Fonts.numeric
@@ -255,13 +268,26 @@ Rectangle {
             elide: Text.ElideRight
         }
 
+        // Длинное значение переносится на вторую строку, дальше — многоточие.
         Text {
+            id: valueText
+
             Layout.fillWidth: true
+            Layout.alignment: Qt.AlignTop
+            Layout.topMargin: Math.max(0, (root.lineHeight - fontMetrics.height) / 2)
             text: line.value || "--"
             color: Appearance.colors.colOnSurface
             font.family: Fonts.numeric
             font.pixelSize: root.fetchFontSize
+            wrapMode: Text.Wrap
+            maximumLineCount: 2
             elide: Text.ElideRight
+
+            FontMetrics {
+                id: fontMetrics
+
+                font: valueText.font
+            }
         }
 
     }

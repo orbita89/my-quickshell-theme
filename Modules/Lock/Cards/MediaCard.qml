@@ -16,6 +16,14 @@ Rectangle {
     property string title: (player && player.trackTitle) ? player.trackTitle : qsTr("No media")
     property string artist: (player && player.trackArtist) ? player.trackArtist : qsTr("Not playing")
 
+    // ЛОКАЛЬНАЯ ПРАВКА: кнопки и текст сжимаются под ширину карточки. На
+    // экране 1536×864 внутри карточки ~250 px, а три кнопки занимали 302 —
+    // «вперёд» обрезалась по краю. 302 = 69 + 20 + 124 + 20 + 69, где 124 —
+    // кнопка воспроизведения с запасом под анимацию нажатия (64 + 20 + 40,
+    // см. PlayPauseButton.implicitWidth).
+    readonly property real controlScale: Math.max(0.5, Math.min(1, contentLayout.width / 302))
+    readonly property bool narrow: controlScale < 1
+
     Layout.fillWidth: true
     implicitHeight: contentLayout.implicitHeight + Metrics.lockOuterPadding * 2
     color: Appearance.colors.colLayer2
@@ -114,14 +122,17 @@ Rectangle {
             elide: Text.ElideRight
         }
 
+        // Не влезает в строку — переносится на вторую, дальше многоточие.
         Text {
             Layout.fillWidth: true
             text: root.artist
             color: Appearance.colors.colPrimary
             font.family: Fonts.numeric
-            font.pixelSize: 24
+            font.pixelSize: root.narrow ? 18 : 24
             font.weight: 600
             horizontalAlignment: Text.AlignHCenter
+            wrapMode: Text.Wrap
+            maximumLineCount: 2
             elide: Text.ElideRight
         }
 
@@ -130,15 +141,17 @@ Rectangle {
             text: root.title
             color: Appearance.colors.colOnSurface
             font.family: Fonts.numeric
-            font.pixelSize: 20
+            font.pixelSize: root.narrow ? 15 : 20
             horizontalAlignment: Text.AlignHCenter
+            wrapMode: Text.Wrap
+            maximumLineCount: 2
             elide: Text.ElideRight
         }
 
         RowLayout {
             Layout.alignment: Qt.AlignHCenter
             Layout.topMargin: root.compact ? Metrics.spacingS : Metrics.spacingXL
-            spacing: Metrics.lockOuterPadding
+            spacing: Math.round(Metrics.lockOuterPadding * root.controlScale)
 
             PlayerControl {
                 icon: "skip_previous"
@@ -162,11 +175,11 @@ Rectangle {
                 pausedFg: Appearance.colors.colOnPrimaryContainer
                 stateLayerPlaying: Appearance.colors.colOnPrimary
                 stateLayerPaused: Appearance.colors.colOnPrimaryContainer
-                buttonSize: 64
-                iconSize: 31
+                buttonSize: Math.round(64 * root.controlScale)
+                iconSize: Math.round(31 * root.controlScale)
                 iconFontFamily: Fonts.materialSymbolsRounded
-                morphExpandWidth: Metrics.lockOuterPadding
-                morphPressWidth: Metrics.lockOuterPadding * 2
+                morphExpandWidth: Math.round(Metrics.lockOuterPadding * root.controlScale)
+                morphPressWidth: Math.round(Metrics.lockOuterPadding * 2 * root.controlScale)
                 morphPlayingRadius: Appearance.rounding.normal
                 morphPressRadius: Appearance.rounding.normal
                 spatialAnimationDuration: Appearance.animation.expressiveFastSpatial.duration
@@ -213,13 +226,13 @@ Rectangle {
         property bool active: false
         property bool canUse: true
         property string colour: "Secondary"
-        readonly property int baseWidth: 69
-        readonly property int baseHeight: 59
-        readonly property int iconBoxSize: Metrics.controlHeightM
+        readonly property int baseWidth: Math.round(69 * root.controlScale)
+        readonly property int baseHeight: Math.round(59 * root.controlScale)
+        readonly property int iconBoxSize: Math.round(Metrics.controlHeightM * root.controlScale)
 
         signal clicked
 
-        Layout.preferredWidth: baseWidth + (active ? Metrics.lockOuterPadding : 0)
+        Layout.preferredWidth: baseWidth + (active ? Math.round(Metrics.lockOuterPadding * root.controlScale) : 0)
         implicitWidth: baseWidth
         implicitHeight: baseHeight
         color: active ? Appearance.colors[`col${colour}`] : Appearance.colors[`col${colour}Container`]
@@ -253,7 +266,7 @@ Rectangle {
             color: control.active ? Appearance.colors[`colOn${control.colour}`] : Appearance.colors[`colOn${control.colour
                                                                                                     }Container`]
             font.family: Fonts.materialSymbolsRounded
-            font.pixelSize: 29
+            font.pixelSize: Math.round(29 * root.controlScale)
             font.weight: 500
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
