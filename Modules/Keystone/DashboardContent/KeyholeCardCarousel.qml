@@ -257,43 +257,20 @@ Item {
                     }
                 }
 
-                // ЛОКАЛЬНАЯ ПРАВКА: при четырёх карточках подписи («Быстрые
-                // настройки», «Секундомер») не влезали в кнопку и налезали на
-                // соседей. Не влезает — остаётся только значок, название в
-                // подсказке.
-                readonly property bool labelFits: 16 + 5 + labelMetrics.advanceWidth <= switcherTab.width - 16
-
-                TextMetrics {
-                    id: labelMetrics
-
-                    text: switcherTab.option.label
-                    font.family: Fonts.ui
-                    font.pixelSize: 12
-                    font.weight: Font.Medium
-                }
-
+                // ЛОКАЛЬНАЯ ПРАВКА: на кнопках только значки, название — в
+                // подсказке. С подписями кнопки не влезали («Быстрые
+                // настройки», «Секундомер»), а смесь значков и подписей
+                // выглядела неровно.
                 Row {
                     anchors.centerIn: parent
-                    spacing: 5
 
                     MaterialSymbol {
                         anchors.verticalCenter: parent.verticalCenter
                         text: switcherTab.option.icon
-                        iconSize: 16
+                        iconSize: 18
                         fill: switcherTab.selected ? 1 : 0
                         color: switcherTab.selected ? Appearance.colors.colOnPrimary :
                                                       Appearance.colors.colSubtext
-                    }
-
-                    Text {
-                        anchors.verticalCenter: parent.verticalCenter
-                        visible: switcherTab.labelFits
-                        text: switcherTab.option.label
-                        color: switcherTab.selected ? Appearance.colors.colOnPrimary :
-                                                      Appearance.colors.colSubtext
-                        font.family: Fonts.ui
-                        font.pixelSize: 12
-                        font.weight: switcherTab.selected ? Font.Medium : Font.Normal
                     }
                 }
 
@@ -308,7 +285,7 @@ Item {
 
                 StyledToolTip {
                     text: switcherTab.option.label
-                    extraVisibleCondition: !switcherTab.labelFits && tabHover.containsMouse
+                    extraVisibleCondition: tabHover.containsMouse
                 }
             }
         }
