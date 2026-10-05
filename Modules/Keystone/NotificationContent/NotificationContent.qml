@@ -97,6 +97,18 @@ Item {
                     Layout.fillHeight: true
                     spacing: 2
 
+                    // Откуда уведомление: «Brave · Slack», «Telegram».
+                    Text {
+                        text: root.manager.sourceLabel(delegateRoot.modelData)
+                        visible: text !== ""
+                        color: Appearance.colors.colPrimary
+                        font.family: Fonts.ui
+                        font.pixelSize: 11
+                        font.weight: Font.Medium
+                        Layout.fillWidth: true
+                        elide: Text.ElideRight
+                    }
+
                     Text {
                         text: delegateRoot.modelData ? delegateRoot.modelData.summary : ""
                         color: Appearance.colors.colOnSurface

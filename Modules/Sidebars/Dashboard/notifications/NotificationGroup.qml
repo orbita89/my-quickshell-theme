@@ -177,8 +177,13 @@ MouseArea {
 
                         Text {
                             Layout.fillWidth: true
-                            text: (topRow.showAppName ? (root.notificationGroup
-                                                         ? root.notificationGroup.appName : "") : (
+                            // Несколько уведомлений — шапка группы с источником
+                            // («Brave · Slack»), одно — его заголовок.
+                            text: (topRow.showAppName ? (root.notificationCount > 0
+                                                         ? NotificationManager.sourceLabel(
+                                                               root.notifications[root.notificationCount - 1])
+                                                         : root.notificationGroup
+                                                           ? root.notificationGroup.appName : "") : (
                                                             root.notificationCount > 0
                                                             ? root.notifications[0].summary : "")) || ""
                             font.family: Fonts.ui
@@ -192,9 +197,15 @@ MouseArea {
                         Text {
                             Layout.rightMargin: 10
                             horizontalAlignment: Text.AlignLeft
-                            text: notifUtils.getFriendlyNotifTimeString(root.notificationGroup
-                                                                        ? root.notificationGroup.receivedAt :
-                                                                          0, Time.now)
+                            // У одиночного уведомления источник — перед временем.
+                            text: {
+                                const source = !topRow.showAppName && root.notificationCount > 0
+                                        ? NotificationManager.sourceLabel(root.notifications[0]) : "";
+                                const time = notifUtils.getFriendlyNotifTimeString(root.notificationGroup
+                                                                                   ? root.notificationGroup.receivedAt
+                                                                                   : 0, Time.now);
+                                return source !== "" ? source + " · " + time : time;
+                            }
                             font.family: Fonts.numeric
                             font.pixelSize: topRow.fontSize
                             color: Appearance.colors.colSubtext

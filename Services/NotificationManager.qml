@@ -355,8 +355,12 @@ Singleton {
         return root.nativeActions(notifObject).find(action => action.identifier === "default") || null;
     }
 
+    // ЛОКАЛЬНАЯ ПРАВКА: кнопка «Настройки» (action «settings»), которую Chromium
+    // и Brave добавляют к каждому своему уведомлению, не показывается — она
+    // открывает настройки уведомлений сайта, а не сообщение.
     function normalActions(notifObject) {
-        return root.nativeActions(notifObject).filter(action => action.identifier !== "default");
+        return root.nativeActions(notifObject).filter(action => action.identifier !== "default"
+                                                     && action.identifier !== "settings");
     }
 
     function durableHistorySource(source) {
@@ -584,6 +588,52 @@ Singleton {
         const launch = notifObject.desktopEntry || "";
         Quickshell.execDetached(["python3", Paths.systemScriptsDir + "/focus_notification_app.py"].concat(
                                     launch !== "" ? ["--launch", launch] : [], keys));
+    }
+
+    // МОЁ ДОБАВЛЕНИЕ: откуда уведомление — «Brave · Slack», «Telegram».
+    //
+    // Приложение — appName (без хвоста «Desktop»: «Telegram Desktop» →
+    // «Telegram»). Сайт — из ссылки, которую браузер ставит первой строкой
+    // текста (см. displayBody): app.slack.com → Slack.
+    readonly property var knownSites: ({
+                                           "mail.google.com": "Gmail",
+                                           "calendar.google.com": "Google Календарь",
+                                           "web.telegram.org": "Telegram",
+                                           "web.whatsapp.com": "WhatsApp",
+                                           "github.com": "GitHub",
+                                           "gitlab.com": "GitLab",
+                                           "youtube.com": "YouTube",
+                                           "vk.com": "ВКонтакте",
+                                           "linkedin.com": "LinkedIn"
+                                       })
+
+    function siteName(body) {
+        const match = String(body || "").match(/^\s*<a\b[^>]*href=["']?([^"' >]+)/i);
+        if (!match)
+            return "";
+        let host = "";
+        try {
+            host = new URL(match[1]).hostname.toLowerCase();
+        } catch (error) {
+            return "";
+        }
+        host = host.replace(/^www\./, "");
+        if (root.knownSites[host])
+            return root.knownSites[host];
+        // app.slack.com → slack, discord.com → discord
+        const parts = host.split(".");
+        const name = parts.length >= 2 ? parts[parts.length - 2] : parts[0];
+        return name ? name.charAt(0).toUpperCase() + name.slice(1) : "";
+    }
+
+    function sourceLabel(notifObject) {
+        if (!notifObject)
+            return "";
+        const app = String(notifObject.appName || "").replace(/\s+Desktop$/i, "").trim();
+        const site = root.siteName(notifObject.body);
+        if (site === "" || site.toLowerCase() === app.toLowerCase())
+            return app;
+        return app === "" ? site : app + " · " + site;
     }
 
     // МОЁ ДОБАВЛЕНИЕ: текст уведомления для показа.
