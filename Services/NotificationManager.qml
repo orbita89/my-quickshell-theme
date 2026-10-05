@@ -53,7 +53,9 @@ Singleton {
     property var latestTimeForApp: ({})
     property var groupsByAppName: groupsForList(root.list)
     property var popupGroupsByAppName: groupsForList(root.popupList)
-    property list<string> appNameList: appNameListForGroups(root.groupsByAppName)
+    // В центре уведомлений группы с новыми (непрочитанными на момент открытия,
+    // см. isNew) уведомлениями идут первыми.
+    property list<string> appNameList: appNameListForGroups(root.groupsByAppName, true)
     property list<string> popupAppNameList: appNameListForGroups(root.popupGroupsByAppName)
 
     signal notify(notification: var)
@@ -444,8 +446,16 @@ Singleton {
         notifFileView.setText(root.stringifyList(root.list));
     }
 
-    function appNameListForGroups(groups) {
-        return Object.keys(groups).sort((a, b) => groups[b].receivedAt - groups[a].receivedAt);
+    function appNameListForGroups(groups, newFirst) {
+        const hasNew = name => newFirst && groups[name].notifications.some(notif => root.isNew(notif)) ? 1 : 0;
+        return Object.keys(groups).sort((a, b) => (hasNew(b) - hasNew(a)) || (groups[b].receivedAt
+                                                                                - groups[a].receivedAt));
+    }
+
+    // Уведомления группы для показа: новые первыми, дальше от свежих к старым.
+    function orderedForDisplay(notifications) {
+        return notifications.slice().sort((a, b) => ((root.isNew(b) ? 1 : 0) - (root.isNew(a) ? 1 : 0))
+                                                     || (b.receivedAt - a.receivedAt));
     }
 
     function groupsForList(notifications) {

@@ -249,7 +249,8 @@ MouseArea {
 
                     Repeater {
                         model: ScriptModel {
-                            values: root.notifications.slice().reverse()
+                            // Новые (с красной точкой) — первыми.
+                            values: NotificationManager.orderedForDisplay(root.notifications)
                             objectProp: "notificationId"
                         }
 
