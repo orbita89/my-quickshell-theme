@@ -63,6 +63,36 @@ matches_desktop() {
     return 1
 }
 
+# Ждём, пока сеанс поднимется. niri запускает этот скрипт одновременно с
+# niri-session-setup.sh, а тот пробрасывает окружение в systemd, ПЕРЕЗАПУСКАЕТ
+# порталы и только потом поднимает graphical-session.target. Программа,
+# стартовавшая раньше, спрашивала у портала светлую/тёмную тему
+# (org.freedesktop.appearance color-scheme), ответа не получала и
+# открывалась в светлой теме — так было с Warp. Поэтому ждём сеанс, а затем
+# первый ответ портала (запрос заодно поднимает его по D-Bus). Не дольше
+# 30 секунд: без systemd или порталов просто запускаем как есть.
+wait_for_session() {
+    tries=0
+    while [ $tries -lt 60 ]; do
+        systemctl --user is-active --quiet graphical-session.target 2>/dev/null && break
+        tries=$((tries + 1))
+        sleep 0.5
+    done
+    while [ $tries -lt 60 ]; do
+        gdbus call --session --timeout 2 --dest org.freedesktop.portal.Desktop \
+            --object-path /org/freedesktop/portal/desktop \
+            --method org.freedesktop.portal.Settings.ReadOne org.freedesktop.appearance color-scheme \
+            >/dev/null 2>&1 && return 0
+        tries=$((tries + 1))
+        sleep 0.5
+    done
+    log "сеанс или портал не ответили за 30 с — запускаю без ожидания"
+}
+
+if [ "$dry_run" = false ] && command -v systemctl >/dev/null 2>&1; then
+    wait_for_session
+fi
+
 for file in "$dir"/*.desktop; do
     [ -f "$file" ] || continue
     name=$(basename "$file" .desktop)
