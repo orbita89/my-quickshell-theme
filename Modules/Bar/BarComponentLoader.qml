@@ -6,6 +6,7 @@ import qs.Modules.Bar.Tray
 import qs.Modules.Bar.SysMonitor
 import qs.Modules.Bar.Media
 import qs.Modules.Bar.QuickSettings
+import qs.Modules.Bar.KeyboardLayout
 
 Loader {
     id: root
@@ -36,6 +37,8 @@ Loader {
             return systemMonitorComponent;
         case "quickSettings":
             return quickSettingsComponent;
+        case "keyboardLayout":
+            return keyboardLayoutComponent;
         default:
             return null;
         }
@@ -94,6 +97,15 @@ Loader {
 
         SysMonitor {
             ownerId: "bar-sysmonitor:" + root.screenName
+            vertical: root.vertical
+        }
+    }
+
+    // МОЁ ДОБАВЛЕНИЕ: раскладка клавиатуры флагом.
+    Component {
+        id: keyboardLayoutComponent
+
+        KeyboardLayout {
             vertical: root.vertical
         }
     }
