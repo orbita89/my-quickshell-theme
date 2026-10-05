@@ -354,6 +354,23 @@ Singleton {
                                                                            "icon": "checklist"
                                                                        })]
     property var keystoneKeyholeCards: root.defaultKeystoneKeyholeCards.slice()
+    // Главное меню (хаб островка). Список модулей — Common/KeystoneHubRegistry.qml.
+    // Хранится полный порядок и список выключенных: модуль, добавленный в
+    // реестр позже, сам допишется в конец порядка и будет включён.
+    property var keystoneHubTabOrder: KeystoneHubRegistry.tabIds.slice()
+    property var keystoneHubTabsDisabled: KeystoneHubRegistry.defaultDisabledTabIds.slice()
+    // Включённые вкладки в порядке показа — то, что читает хаб.
+    readonly property var keystoneHubTabs: root.keystoneHubTabOrder.filter(id => root.keystoneHubTabsDisabled.indexOf(
+                                                                               id) === -1)
+    property var keystoneDashboardColumnOrder: KeystoneHubRegistry.dashboardWidgetIds.slice()
+    property var keystoneDashboardColumnDisabled: KeystoneHubRegistry.defaultDisabledDashboardWidgetIds.slice()
+    // Включённые виджеты колонки Dashboard сверху вниз.
+    readonly property var keystoneDashboardColumn: root.keystoneDashboardColumnOrder.filter(id =>
+                                                                                            root.keystoneDashboardColumnDisabled.indexOf(
+                                                                                                id) === -1)
+    property bool keystoneDashboardKeyholeEnabled: true
+    readonly property var keystoneDashboardKeyholeSides: ["left", "right"]
+    property string keystoneDashboardKeyholeSide: "right"
     property string barPosition: "top"
     readonly property var barComponentIds: ["workspaces", "information", "activeWindow", "media", "tray",
         "systemMonitor", "quickSettings"]
@@ -1478,6 +1495,135 @@ Singleton {
         return root.moveKeystoneKeyholeCard(id, root.keystoneKeyholeCards.length);
     }
 
+    // Упорядоченный набор модулей хаба: {order, disabled}.
+    // order — все известные id без повторов (неизвестные отброшены,
+    // недостающие дописаны в конец), disabled — выключенные из них.
+    // Модуль, которого в сохранённом порядке не было, выключен, только если
+    // он явно перечислен в disabled или в реестре у него defaultEnabled: false.
+    function normalizedOrderedSet(raw, knownIds, defaultDisabledIds) {
+        const source = raw && typeof raw === "object" ? raw : {};
+        const savedOrder = Array.isArray(source.order) ? source.order : [];
+        const order = [];
+        for (let index = 0; index < savedOrder.length; index += 1) {
+            const id = String(savedOrder[index] || "");
+            if (knownIds.indexOf(id) !== -1 && order.indexOf(id) === -1)
+                order.push(id);
+        }
+        const appended = knownIds.filter(id => order.indexOf(id) === -1);
+        const savedDisabled = Array.isArray(source.disabled) ? source.disabled.map(id => String(id || "")) :
+                                                               defaultDisabledIds;
+        const disabled = order.filter(id => savedDisabled.indexOf(id) !== -1);
+        for (let index = 0; index < appended.length; index += 1) {
+            order.push(appended[index]);
+            if (savedDisabled.indexOf(appended[index]) !== -1 || defaultDisabledIds.indexOf(appended[index]) !== -1)
+                disabled.push(appended[index]);
+        }
+        return {
+            "order": order,
+            "disabled": disabled
+        };
+    }
+
+    // Переставляет id на позицию targetIndex среди включённых и включает его.
+    // Возвращает новый {order, disabled} или null, если id неизвестен.
+    function movedInOrderedSet(order, disabled, knownIds, id, targetIndex) {
+        if (knownIds.indexOf(id) === -1)
+            return null;
+        const nextDisabled = disabled.filter(value => value !== id);
+        const rest = order.filter(value => value !== id);
+        const enabled = rest.filter(value => nextDisabled.indexOf(value) === -1);
+        const numericIndex = Number(targetIndex);
+        const enabledIndex = isFinite(numericIndex) ? Math.max(0, Math.min(enabled.length, Math.round(
+                                                                               numericIndex))) : enabled.length;
+        // Вставляем перед тем включённым, чьё место занимаем; в конец — после
+        // последнего включённого, чтобы выключенные не путались под ногами.
+        let insertAt = rest.length;
+        if (enabledIndex < enabled.length)
+            insertAt = rest.indexOf(enabled[enabledIndex]);
+        else if (enabled.length > 0)
+            insertAt = rest.indexOf(enabled[enabled.length - 1]) + 1;
+        rest.splice(insertAt, 0, id);
+        return {
+            "order": rest,
+            "disabled": nextDisabled
+        };
+    }
+
+    function moveKeystoneHubTab(tabId, targetIndex) {
+        const next = root.movedInOrderedSet(root.keystoneHubTabOrder, root.keystoneHubTabsDisabled,
+                                            KeystoneHubRegistry.tabIds, String(tabId || ""), targetIndex);
+        if (!next)
+            return false;
+        root.keystoneHubTabOrder = next.order;
+        root.keystoneHubTabsDisabled = next.disabled;
+        root.save();
+        return true;
+    }
+
+    // Последнюю включённую вкладку выключить нельзя: пустой хаб открыть
+    // было бы нечем.
+    function removeKeystoneHubTab(tabId) {
+        const id = String(tabId || "");
+        if (root.keystoneHubTabs.indexOf(id) === -1 || root.keystoneHubTabs.length <= 1)
+            return false;
+        root.keystoneHubTabsDisabled = root.keystoneHubTabsDisabled.concat([id]);
+        root.save();
+        return true;
+    }
+
+    function toggleKeystoneHubTab(tabId) {
+        const id = String(tabId || "");
+        if (root.keystoneHubTabs.indexOf(id) !== -1)
+            return root.removeKeystoneHubTab(id);
+        return root.moveKeystoneHubTab(id, root.keystoneHubTabs.length);
+    }
+
+    function keystoneHubTabEnabled(tabId) {
+        return root.keystoneHubTabs.indexOf(String(tabId || "")) !== -1;
+    }
+
+    function moveKeystoneDashboardWidget(widgetId, targetIndex) {
+        const next = root.movedInOrderedSet(root.keystoneDashboardColumnOrder, root.keystoneDashboardColumnDisabled,
+                                            KeystoneHubRegistry.dashboardWidgetIds, String(widgetId || ""),
+                                            targetIndex);
+        if (!next)
+            return false;
+        root.keystoneDashboardColumnOrder = next.order;
+        root.keystoneDashboardColumnDisabled = next.disabled;
+        root.save();
+        return true;
+    }
+
+    function removeKeystoneDashboardWidget(widgetId) {
+        const id = String(widgetId || "");
+        if (root.keystoneDashboardColumn.indexOf(id) === -1)
+            return false;
+        root.keystoneDashboardColumnDisabled = root.keystoneDashboardColumnDisabled.concat([id]);
+        root.save();
+        return true;
+    }
+
+    function toggleKeystoneDashboardWidget(widgetId) {
+        const id = String(widgetId || "");
+        if (root.keystoneDashboardColumn.indexOf(id) !== -1)
+            return root.removeKeystoneDashboardWidget(id);
+        return root.moveKeystoneDashboardWidget(id, root.keystoneDashboardColumn.length);
+    }
+
+    function keystoneDashboardWidgetEnabled(widgetId) {
+        return root.keystoneHubTabEnabled("dashboard") && root.keystoneDashboardColumn.indexOf(String(widgetId
+                                                                                                         || "")) !== -1;
+    }
+
+    function setKeystoneDashboardKeyholeEnabled(value) {
+        setValue("keystoneDashboardKeyholeEnabled", !!value);
+    }
+
+    function setKeystoneDashboardKeyholeSide(value) {
+        setValue("keystoneDashboardKeyholeSide", root.keystoneDashboardKeyholeSides.indexOf(value) !== -1 ? value :
+                                                                                                              "right");
+    }
+
     function setKeystoneCapsLockOsd(value) {
         setValue("keystoneCapsLockOsd", !!value);
     }
@@ -1663,6 +1809,22 @@ Singleton {
                 "keyhole": {
                     "cards": root.keystoneKeyholeCards.slice()
                 },
+                "hub": {
+                    "tabs": {
+                        "order": root.keystoneHubTabOrder.slice(),
+                        "disabled": root.keystoneHubTabsDisabled.slice()
+                    },
+                    "dashboard": {
+                        "column": {
+                            "order": root.keystoneDashboardColumnOrder.slice(),
+                            "disabled": root.keystoneDashboardColumnDisabled.slice()
+                        },
+                        "keyhole": {
+                            "enabled": root.keystoneDashboardKeyholeEnabled,
+                            "side": root.keystoneDashboardKeyholeSide
+                        }
+                    }
+                },
                 "horizontalClock": {
                     "fontSize": root.horizontalClockFontSize,
                     "axes": root.cloneMap(root.horizontalClockAxes),
@@ -1782,6 +1944,24 @@ Singleton {
         root.keystoneMiddleClickAction = normalizedOption(root.keystoneActionOptions,
                                                           keystone.middleClickAction, "lyrics");
         root.keystoneKeyholeCards = root.normalizedKeystoneKeyholeCards(keyhole.cards);
+        const hub = keystone.hub && typeof keystone.hub === "object" ? keystone.hub : {};
+        const hubDashboard = hub.dashboard && typeof hub.dashboard === "object" ? hub.dashboard : {};
+        const hubKeyhole = hubDashboard.keyhole && typeof hubDashboard.keyhole === "object" ? hubDashboard.keyhole :
+                                                                                               {};
+        const hubTabs = root.normalizedOrderedSet(hub.tabs, KeystoneHubRegistry.tabIds,
+                                                  KeystoneHubRegistry.defaultDisabledTabIds);
+        // Хаб без вкладок открыть нечем — включаем все обратно.
+        if (hubTabs.disabled.length >= hubTabs.order.length)
+            hubTabs.disabled = [];
+        root.keystoneHubTabOrder = hubTabs.order;
+        root.keystoneHubTabsDisabled = hubTabs.disabled;
+        const dashboardColumn = root.normalizedOrderedSet(hubDashboard.column, KeystoneHubRegistry.dashboardWidgetIds,
+                                                          KeystoneHubRegistry.defaultDisabledDashboardWidgetIds);
+        root.keystoneDashboardColumnOrder = dashboardColumn.order;
+        root.keystoneDashboardColumnDisabled = dashboardColumn.disabled;
+        root.keystoneDashboardKeyholeEnabled = typeof hubKeyhole.enabled === "boolean" ? hubKeyhole.enabled : true;
+        root.keystoneDashboardKeyholeSide = root.keystoneDashboardKeyholeSides.indexOf(hubKeyhole.side) !== -1
+                ? hubKeyhole.side : "right";
         root.horizontalClockFontSize = root.normalizedBoundedInt(horizontalClock.fontSize, 22, 16, 28);
         root.horizontalClockAxes = root.normalizedHorizontalClockAxes(horizontalClock.axes);
         root.horizontalClockDigits = root.normalizedHorizontalClockDigits(horizontalClock.digits);
