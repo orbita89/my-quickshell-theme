@@ -1402,16 +1402,18 @@ Variants {
                         const tr = Math.min(topRight, maxRadius);
                         const br = Math.min(bottomRight, maxRadius);
                         const bl = Math.min(bottomLeft, maxRadius);
+                        // ЛОКАЛЬНАЯ ПРАВКА: углы — дуги окружности (arcTo), а не
+                        // квадратичные кривые. Кривая Безье проходит ближе к углу,
+                        // чем дуга (0,25·r против 0,29·r), а стекло карточек под
+                        // вырезом и тень островка — обычные Rectangle с дугой. В
+                        // углах выреза оставался серп в 1–2 px, сквозь который
+                        // темнела тень, — «засор» в углах замочной скважины.
                         context.beginPath();
                         context.moveTo(x + tl, y);
-                        context.lineTo(x + width - tr, y);
-                        context.quadraticCurveTo(x + width, y, x + width, y + tr);
-                        context.lineTo(x + width, y + height - br);
-                        context.quadraticCurveTo(x + width, y + height, x + width - br, y + height);
-                        context.lineTo(x + bl, y + height);
-                        context.quadraticCurveTo(x, y + height, x, y + height - bl);
-                        context.lineTo(x, y + tl);
-                        context.quadraticCurveTo(x, y, x + tl, y);
+                        context.arcTo(x + width, y, x + width, y + height, tr);
+                        context.arcTo(x + width, y + height, x, y + height, br);
+                        context.arcTo(x, y + height, x, y, bl);
+                        context.arcTo(x, y, x + width, y, tl);
                         context.closePath();
                     }
 
@@ -1428,8 +1430,14 @@ Variants {
                         context.fill();
                         if (cutoutVisible) {
                             context.globalCompositeOperation = "destination-out";
-                            addRoundedRect(context, cutoutX, cutoutY, cutoutWidth, cutoutHeight, cutoutRadius,
-                                           cutoutRadius, cutoutRadius, cutoutRadius);
+                            // Вырез на 1 px меньше стекла карточки: края выреза и
+                            // стекла сглажены (полупрозрачны), и при точном совпадении
+                            // между ними просвечивала тень островка тонкой дугой.
+                            // Стекло лежит поверх фона и перекрывает этот пиксель.
+                            const inset = 1;
+                            addRoundedRect(context, cutoutX + inset, cutoutY + inset, cutoutWidth - inset * 2,
+                                           cutoutHeight - inset * 2, cutoutRadius - inset, cutoutRadius - inset,
+                                           cutoutRadius - inset, cutoutRadius - inset);
                             context.fillStyle = "white";
                             context.fill();
                             context.globalCompositeOperation = "source-over";
