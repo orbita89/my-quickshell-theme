@@ -31,6 +31,14 @@ for directory in "$@"; do
         if [[ "$require_cursor" == true && ! -d "$theme/cursors" ]]; then
             continue
         fi
+        # ЛОКАЛЬНАЯ ПРАВКА: тема значков обязана объявить каталоги значков
+        # (Directories= в index.theme). Иначе в список попадали темы одних
+        # курсоров (DMZ-White, redglass…): выбор такой «темы значков» ничего
+        # не менял — значков в ней нет, и всё бралось из запасной темы.
+        if [[ "$require_cursor" != true ]] \
+            && ! grep -Eq '^(Scaled)?Directories=.+' "$theme/index.theme" 2>/dev/null; then
+            continue
+        fi
         basename "$theme"
     done
 done | grep -Ev "$excluded" | sort -u
