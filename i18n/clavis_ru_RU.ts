@@ -7755,7 +7755,7 @@ Click to open network settings</source>
 <context>
     <name>NotificationContent</name>
     <message>
-        <location filename="../Modules/Keystone/NotificationContent/NotificationContent.qml" line="186"/>
+        <location filename="../Modules/Keystone/NotificationContent/NotificationContent.qml" line="200"/>
         <source>Close</source>
         <translation>Закрыть</translation>
     </message>
@@ -7771,59 +7771,64 @@ Click to open network settings</source>
 <context>
     <name>NotificationManager</name>
     <message>
-        <location filename="../Services/NotificationManager.qml" line="118"/>
+        <location filename="../Services/NotificationManager.qml" line="140"/>
         <source>File action failed</source>
         <translation>Действие с файлом не удалось</translation>
     </message>
     <message>
-        <location filename="../Services/NotificationManager.qml" line="118"/>
+        <location filename="../Services/NotificationManager.qml" line="140"/>
         <source>Could not open the saved file or its location: %1</source>
         <translation>Не удалось открыть сохранённый файл или его расположение: %1</translation>
     </message>
     <message>
-        <location filename="../Services/NotificationManager.qml" line="121"/>
+        <location filename="../Services/NotificationManager.qml" line="143"/>
         <source>File no longer exists</source>
         <translation>Файл больше не существует</translation>
     </message>
     <message>
-        <location filename="../Services/NotificationManager.qml" line="121"/>
+        <location filename="../Services/NotificationManager.qml" line="143"/>
         <source>Opened the containing folder: %1</source>
         <translation>Открыта содержащая папка: %1</translation>
     </message>
     <message>
-        <location filename="../Services/NotificationManager.qml" line="217"/>
-        <location filename="../Services/NotificationManager.qml" line="282"/>
-        <location filename="../Services/NotificationManager.qml" line="404"/>
+        <location filename="../Services/NotificationManager.qml" line="239"/>
+        <location filename="../Services/NotificationManager.qml" line="327"/>
+        <location filename="../Services/NotificationManager.qml" line="464"/>
         <source>System</source>
         <translation>Система</translation>
     </message>
     <message>
-        <location filename="../Services/NotificationManager.qml" line="224"/>
-        <location filename="../Services/NotificationManager.qml" line="286"/>
+        <location filename="../Services/NotificationManager.qml" line="246"/>
+        <location filename="../Services/NotificationManager.qml" line="331"/>
         <source>Notification</source>
         <translation>Уведомление</translation>
     </message>
     <message>
-        <location filename="../Services/NotificationManager.qml" line="335"/>
-        <location filename="../Services/NotificationManager.qml" line="340"/>
+        <location filename="../Services/NotificationManager.qml" line="381"/>
+        <location filename="../Services/NotificationManager.qml" line="386"/>
         <source>Show in folder</source>
         <translation>Показать в папке</translation>
     </message>
     <message>
-        <location filename="../Services/NotificationManager.qml" line="345"/>
+        <location filename="../Services/NotificationManager.qml" line="391"/>
         <source>Open</source>
         <translation>Открыть</translation>
+    </message>
+    <message>
+        <location filename="../Services/NotificationManager.qml" line="750"/>
+        <source>yesterday, %1</source>
+        <translation>вчера, %1</translation>
     </message>
 </context>
 <context>
     <name>NotificationUtils</name>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/notifications/NotificationUtils.qml" line="12"/>
+        <location filename="../Modules/Sidebars/Dashboard/notifications/NotificationUtils.qml" line="13"/>
         <source>Just now</source>
         <translation>Только что</translation>
     </message>
     <message>
-        <location filename="../Modules/Sidebars/Dashboard/notifications/NotificationUtils.qml" line="20"/>
+        <location filename="../Modules/Sidebars/Dashboard/notifications/NotificationUtils.qml" line="21"/>
         <source>Yesterday</source>
         <translation>Вчера</translation>
     </message>
@@ -9642,12 +9647,12 @@ Right click: Control Center</source>
 <context>
     <name>SidebarPillButton</name>
     <message>
-        <location filename="../Modules/Bar/ActiveWindow/SidebarPillButton.qml" line="29"/>
+        <location filename="../Modules/Bar/ActiveWindow/SidebarPillButton.qml" line="30"/>
         <source>Drawer</source>
         <translation>Выдвижная панель</translation>
     </message>
     <message>
-        <location filename="../Modules/Bar/ActiveWindow/SidebarPillButton.qml" line="29"/>
+        <location filename="../Modules/Bar/ActiveWindow/SidebarPillButton.qml" line="30"/>
         <source>Notification center</source>
         <translation>Центр уведомлений</translation>
     </message>

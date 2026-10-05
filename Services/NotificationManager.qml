@@ -725,6 +725,32 @@ Singleton {
         return text.replace(/^\s+/, "");
     }
 
+    // МОЁ ДОБАВЛЕНИЕ: чистый текст уведомления для копирования — без строки
+    // с адресом сайта (см. displayBody), без HTML-тегов, с раскодированными
+    // символами (&amp; → &).
+    function plainText(body) {
+        return root.displayBody(body).replace(/<br\s*\/?>/gi, "\n").replace(/<[^>]+>/g, "").replace(/&nbsp;/g, " ")
+            .replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, "\"").replace(/&#39;|&apos;/g, "'")
+            .replace(/&amp;/g, "&").trim();
+    }
+
+    // МОЁ ДОБАВЛЕНИЕ: когда пришло уведомление — «14:32», «вчера, 14:32»,
+    // «05.10 14:32». Time.now в аргументе — чтобы «сегодня/вчера» менялись
+    // в полночь без перезапуска.
+    function receivedTimeText(receivedAt, now) {
+        if (!receivedAt)
+            return "";
+        const date = new Date(receivedAt);
+        const today = new Date(now || Date.now());
+        const startOfToday = new Date(today.getFullYear(), today.getMonth(), today.getDate()).getTime();
+        const time = Qt.formatTime(date, "HH:mm");
+        if (receivedAt >= startOfToday)
+            return time;
+        if (receivedAt >= startOfToday - 86400000)
+            return qsTr("yesterday, %1").arg(time);
+        return Qt.formatDateTime(date, "dd.MM HH:mm");
+    }
+
     function invokeAction(action) {
         if (action)
             action.invoke();

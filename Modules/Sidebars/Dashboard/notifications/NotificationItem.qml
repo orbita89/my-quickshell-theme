@@ -212,6 +212,21 @@ Item {
                     elide: Text.ElideRight
                 }
 
+                // МОЁ ДОБАВЛЕНИЕ: когда пришло это уведомление.
+                Text {
+                    visible: root.expanded && !root.onlyNotification
+                    Layout.fillWidth: true
+                    Layout.alignment: Qt.AlignRight | Qt.AlignTop
+                    horizontalAlignment: Text.AlignRight
+                    // Место под красную точку «новое» в углу карточки.
+                    Layout.rightMargin: NotificationManager.isNew(root.notificationObject) ? 10 : 0
+                    text: root.notificationObject ? NotificationManager.receivedTimeText(
+                                                        root.notificationObject.receivedAt, Time.now) : ""
+                    font.family: Fonts.numeric
+                    font.pixelSize: root.fontSize - 1
+                    color: Appearance.colors.colSubtext
+                }
+
                 Text {
                     opacity: !root.expanded ? 1 : 0
                     visible: opacity > 0
@@ -316,8 +331,9 @@ Item {
                                 iconName: "content_copy"
                                 urgency: root.notificationUrgency
                                 onClicked: {
+                                    // Только текст: без ссылки на сайт и HTML.
                                     Quickshell.clipboardText = root.notificationObject
-                                            ? root.notificationObject.body : "";
+                                            ? NotificationManager.plainText(root.notificationObject.body) : "";
                                     copyButton.iconName = "inventory";
                                     copyIconTimer.restart();
                                 }

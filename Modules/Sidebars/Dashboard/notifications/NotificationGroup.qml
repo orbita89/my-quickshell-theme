@@ -197,13 +197,16 @@ MouseArea {
                         Text {
                             Layout.rightMargin: 10
                             horizontalAlignment: Text.AlignLeft
-                            // У одиночного уведомления источник — перед временем.
+                            // Одиночное уведомление: источник и время прихода. У группы
+                            // из нескольких время стоит у каждого уведомления
+                            // (NotificationItem), здесь его не повторяем.
+                            visible: text !== ""
                             text: {
-                                const source = !topRow.showAppName && root.notificationCount > 0
-                                        ? NotificationManager.sourceLabel(root.notifications[0]) : "";
-                                const time = notifUtils.getFriendlyNotifTimeString(root.notificationGroup
-                                                                                   ? root.notificationGroup.receivedAt
-                                                                                   : 0, Time.now);
+                                if (topRow.showAppName || root.notificationCount === 0)
+                                    return "";
+                                const source = NotificationManager.sourceLabel(root.notifications[0]);
+                                const time = NotificationManager.receivedTimeText(root.notifications[0].receivedAt,
+                                                                                  Time.now);
                                 return source !== "" ? source + " · " + time : time;
                             }
                             font.family: Fonts.numeric
