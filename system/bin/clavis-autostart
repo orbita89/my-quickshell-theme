@@ -1,0 +1,104 @@
+#!/bin/sh
+# Автозапуск программ пользователя при входе в сеанс niri.
+#
+# Запускается из niri: `spawn-at-startup "~/.local/bin/clavis-autostart"` в
+# ~/.config/niri/config.kdl (подключает scripts/install-fresh.sh niri).
+# Список — ~/.config/autostart/*.desktop, его редактирует Центр управления →
+# Общие → Автозапуск (Services/AutostartService.qml).
+#
+# Почему из niri, а не из systemd. Программы, которые запускает niri, получают
+# его окружение: верные WAYLAND_DISPLAY и DISPLAY от xwayland-satellite. Из
+# systemd --user программы получали чужой DISPLAY=:0 от gdm и молча падали
+# или висели невидимыми — поэтому запуск через systemd в
+# niri-session-setup.sh и был отключён. А xdg-desktop-autostart.target
+# целиком запустил бы и системные записи из /etc/xdg/autostart (blueman,
+# update-notifier, Evolution…), которые в niri не нужны: здесь читаются
+# только записи пользователя.
+#
+# Правила — как в спецификации XDG Autostart:
+#   Hidden=true или X-GNOME-Autostart-enabled=false  — запись выключена
+#                                                       (так её выключает
+#                                                       переключатель в настройках);
+#   OnlyShowIn / NotShowIn — сверяются с XDG_CURRENT_DESKTOP;
+#   TryExec                — программы нет, запись пропускается.
+#
+# Запуск — `gio launch`: он разбирает Exec= (коды %U, %f…) так же, как
+# файловые менеджеры, и сразу отпускает программу.
+#
+# Проверить без входа в сеанс:  clavis-autostart --dry-run
+
+set -u
+
+dry_run=false
+[ "${1:-}" = "--dry-run" ] && dry_run=true
+
+dir="${XDG_CONFIG_HOME:-$HOME/.config}/autostart"
+desktops=":${XDG_CURRENT_DESKTOP:-niri}:"
+
+[ -d "$dir" ] || exit 0
+
+log() {
+    printf 'clavis-autostart: %s\n' "$*" >&2
+}
+
+# Значение ключа из секции [Desktop Entry] (без локализованных вариантов).
+entry_value() {
+    awk -v key="$2" '
+        /^\[/ { inside = ($0 == "[Desktop Entry]"); next }
+        inside && index($0, key "=") == 1 { print substr($0, length(key) + 2); exit }
+    ' "$1"
+}
+
+# Есть ли в списке через «;» хоть один рабочий стол из XDG_CURRENT_DESKTOP.
+matches_desktop() {
+    list=$1
+    old_ifs=$IFS
+    IFS=';'
+    # Своё имя переменной: в sh нет local, а name занят в основном цикле.
+    for desktop_name in $list; do
+        [ -n "$desktop_name" ] || continue
+        case "$desktops" in *":$desktop_name:"*) IFS=$old_ifs; return 0 ;; esac
+    done
+    IFS=$old_ifs
+    return 1
+}
+
+for file in "$dir"/*.desktop; do
+    [ -f "$file" ] || continue
+    name=$(basename "$file" .desktop)
+
+    if [ "$(entry_value "$file" Hidden)" = true ]; then
+        log "$name: выключено (Hidden=true)"
+        continue
+    fi
+    if [ "$(entry_value "$file" X-GNOME-Autostart-enabled)" = false ]; then
+        log "$name: выключено (X-GNOME-Autostart-enabled=false)"
+        continue
+    fi
+
+    only=$(entry_value "$file" OnlyShowIn)
+    if [ -n "$only" ] && ! matches_desktop "$only"; then
+        log "$name: только для $only"
+        continue
+    fi
+    not=$(entry_value "$file" NotShowIn)
+    if [ -n "$not" ] && matches_desktop "$not"; then
+        log "$name: не для $not"
+        continue
+    fi
+
+    try=$(entry_value "$file" TryExec)
+    if [ -n "$try" ] && ! command -v "$try" >/dev/null 2>&1; then
+        log "$name: нет программы $try"
+        continue
+    fi
+
+    if [ "$dry_run" = true ]; then
+        log "$name: будет запущено"
+        continue
+    fi
+    log "$name: запускаю"
+    setsid -f gio launch "$file" >/dev/null 2>&1 || log "$name: не удалось запустить"
+done
+
+exit 0

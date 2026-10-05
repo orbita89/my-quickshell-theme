@@ -14,6 +14,7 @@
 #   system/bin/keytop               -> ~/.local/bin/   (то же для системного монитора)
 #   system/bin/cliphist             -> ~/.local/bin/   (обход несовместимости версий)
 #   system/bin/backlight-set        -> ~/.local/bin/   (яркость через logind)
+#   system/bin/clavis-autostart     -> ~/.local/bin/   (автозапуск программ из niri)
 #   ~/.local/bin/qs                 -> quickshell      (был отдельной копией)
 #
 # Обычные файлы, которые окажутся на пути, не удаляются, а сохраняются
@@ -57,7 +58,7 @@ link() {
     echo "связал: $target_path"
 }
 
-for name in quickshell keytop cliphist backlight-set; do
+for name in quickshell keytop cliphist backlight-set clavis-autostart; do
     link "$root/system/bin/$name" "$bin_dir/$name"
 done
 

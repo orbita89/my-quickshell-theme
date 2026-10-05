@@ -230,6 +230,33 @@ for feature in features:
     state = result.get("fragments", {}).get(feature, {}).get("state", "unknown")
     print("  подключён   %s (%s)" % (feature, state))
 PYEOF
+    step_niri_autostart
+}
+
+# МОЁ ДОБАВЛЕНИЕ: автозапуск программ пользователя (~/.config/autostart) —
+# из niri, см. system/bin/clavis-autostart. Строка дописывается в конец
+# config.kdl один раз, с резервной копией и проверкой `niri validate`.
+step_niri_autostart() {
+    command -v niri >/dev/null 2>&1 || return 0
+    config="${NIRI_CONFIG:-${XDG_CONFIG_HOME:-$HOME/.config}/niri/config.kdl}"
+    [ -f "$config" ] || { printf 'нет %s — автозапуск подключать некуда.\n' "$config"; return 0; }
+    if grep -q 'clavis-autostart' "$config"; then
+        printf '  есть        автозапуск программ (clavis-autostart)\n'
+        return 0
+    fi
+    if $check_only; then
+        printf '  НЕ ХВАТАЕТ  автозапуск программ (clavis-autostart)\n'
+        return 0
+    fi
+    backup="$config.bak-autostart-$(date +%Y%m%d-%H%M%S)"
+    cp -- "$config" "$backup"
+    printf '\n// Автозапуск программ из ~/.config/autostart (Настройки → Автозапуск).\n// Подключено scripts/install-fresh.sh niri, см. system/bin/clavis-autostart.\nspawn-at-startup "%s/.local/bin/clavis-autostart"\n' "$HOME" >> "$config"
+    if niri validate -c "$config" >/dev/null 2>&1; then
+        printf '  подключён   автозапуск программ (копия: %s)\n' "$backup"
+    else
+        cp -- "$backup" "$config"
+        printf '  ОШИБКА      автозапуск: niri validate не принял конфиг, вернул как было\n'
+    fi
 }
 
 for name in apt qt devroot cava quickshell m3shapes keytop keycli matugen fonts native links niri; do
