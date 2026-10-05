@@ -14,9 +14,10 @@
 #   scripts/install-fresh.sh --check        показать, чего не хватает
 #   scripts/install-fresh.sh                поставить недостающее
 #   scripts/install-fresh.sh qt quickshell  только выбранные шаги
+#   scripts/install-fresh.sh niri           только подключить фрагменты niri
 #
 # Шаги: apt, qt, devroot, cava, quickshell, m3shapes, keytop, keycli,
-#       matugen, fonts, native, links
+#       matugen, fonts, native, links, niri
 
 set -eu
 
@@ -31,7 +32,7 @@ devroot="$opt/devroot"
 
 check_only=false
 [ "${1:-}" = "--check" ] && { check_only=true; shift; }
-steps=${*:-"apt qt devroot cava quickshell m3shapes keytop keycli matugen fonts native links"}
+steps=${*:-"apt qt devroot cava quickshell m3shapes keytop keycli matugen fonts native links niri"}
 
 want() {
     for s in $steps; do [ "$s" = "$1" ] && return 0; done
@@ -175,7 +176,63 @@ step_links() {
     printf 'Запустить: systemctl --user start my-shell.service\n'
 }
 
-for name in apt qt devroot cava quickshell m3shapes keytop keycli matugen fonts native links; do
+# МОЁ ДОБАВЛЕНИЕ: фрагменты Clavis в конфиге niri. Без них часть настроек
+# в центре управления выключена: тема и размер курсора (cursor), обои обзора
+# (layer-rules), размытие (effects). Раньше их подключали кнопкой
+# «Настроить» на каждой странице по отдельности.
+#
+# Подключается то же, что и кнопкой: создаётся ~/.config/niri/clavis/<имя>.kdl
+# и в конец config.kdl дописывается include (с резервной копией и проверкой
+# `niri validate`). Уже подключённые фрагменты не трогаются.
+#
+# binds и outputs не подключаются нарочно: первый заменил бы свои горячие
+# клавиши набором Clavis, второй — раскладку мониторов из config.kdl.
+#
+# Курсор подключается с текущими XCURSOR_THEME/XCURSOR_SIZE сессии, чтобы
+# ничего не поменялось. Дальше значения задаёт оболочка (Тема → Тема курсора).
+niri_fragments="effects layer-rules cursor"
+
+step_niri() {
+    command -v niri >/dev/null 2>&1 || { printf 'niri не найден — фрагменты подключать некуда.\n'; return 0; }
+    python3 - "$root/scripts/system/niri_config.py" "$check_only" $niri_fragments <<'PYEOF'
+import json, os, subprocess, sys
+
+script, check_only, *features = sys.argv[1:]
+check_only = check_only == "true"
+
+def call(request):
+    out = subprocess.run(["python3", script, json.dumps(request)], capture_output=True, text=True).stdout
+    return json.loads(out or "{}")
+
+status = call({"operation": "status"})
+if status.get("error"):
+    sys.exit("niri_config: " + status["error"])
+fragments = status.get("fragments", {})
+
+print("фрагменты niri:")
+for feature in features:
+    state = fragments.get(feature, {}).get("state", "unknown")
+    if state == "ready":
+        print("  есть       ", feature)
+        continue
+    if check_only:
+        print("  НЕ ХВАТАЕТ  %s (%s)" % (feature, state))
+        continue
+    request = {"operation": "setup", "feature": feature}
+    if feature == "cursor":
+        size = os.environ.get("XCURSOR_SIZE", "24")
+        request.update(theme=os.environ.get("XCURSOR_THEME", ""), size=int(size) if size.isdigit() else 24,
+                       hideTyping=False, hideAfter=0)
+    result = call(request)
+    if result.get("error"):
+        print("  ОШИБКА      %s: %s" % (feature, result["error"]))
+        continue
+    state = result.get("fragments", {}).get(feature, {}).get("state", "unknown")
+    print("  подключён   %s (%s)" % (feature, state))
+PYEOF
+}
+
+for name in apt qt devroot cava quickshell m3shapes keytop keycli matugen fonts native links niri; do
     want "$name" || continue
     "step_$name"
 done
